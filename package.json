@@ -1,0 +1,28 @@
+{
+  "name": "trufi-osm-to-gtfs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trufi-association/trufi-osm-to-gtfs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trufi-association/trufi-osm-to-gtfs/issues"
+  },
+  "homepage": "https://github.com/trufi-association/trufi-osm-to-gtfs#readme",
+  "dependencies": {
+    "@turf/boolean-equal": "^6.5.0",
+    "@turf/helpers": "^6.5.0",
+    "debug": "^4.3.2",
+    "osm-pbf-parser": "^2.3.0",
+    "pbf2json": "^6.9.0",
+    "through2": "^4.0.2"
+  }
+}
