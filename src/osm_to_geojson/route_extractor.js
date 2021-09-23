@@ -54,14 +54,13 @@ module.exports = function (route_elements, ways, stops) {
                 "type": "way",
                 "id": current_way.id,
                 "tags": { ...current_way.tags },
-                "refs": [...current_way.refs],
                 "info": { ...current_way.info },
                 "nodes": [...current_way.nodes],
                 "geometry": [...current_way.geometry]
             })
         } else {
             const currentStop = stops[element.ref]
-            if (currentStop && currentStop.tags["public_transport"] && currentStop.tags["public_transport"] == "stop_position")
+            if (currentStop && currentStop.tags && currentStop.tags["public_transport"] == "stop_position")
                 routeStops.push(currentStop)
         }
     }
