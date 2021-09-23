@@ -1,5 +1,4 @@
 const fs = require('fs');
-const debug = require('debug')('geojson-to-gtfs');
 const jszip = require('jszip');
 
 function toCsv(entries) {
@@ -31,7 +30,6 @@ module.exports = function writeGtfs(data, outputPath, zipCompressionLevel = 1, z
   Object.keys(data).forEach(name => {
     const filename = `${name}.txt`;
     zip.file(filename, toCsv(data[name]));
-    debug(`Generated ${filename}`);
   });
 
   zip.generateNodeStream({
@@ -39,14 +37,12 @@ module.exports = function writeGtfs(data, outputPath, zipCompressionLevel = 1, z
     streamFiles: true,
     compression: zipCompressionLevel > 0 ? 'DEFLATE' : 'STORE',
     compressionOptions: {
-        level: zipCompressionLevel
+      level: zipCompressionLevel
     },
     comment: zipComment,
   })
     .pipe(fs.createWriteStream(outputPath))
-    .on('finish', () => {
-      debug(`Finished writing ${outputPath}`);
-    })
+    .on('finish', () => { })
     .on('error', (error) => {
       throw error;
     });
