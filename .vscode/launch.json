@@ -21,15 +21,6 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/examples/Colombia-Duitama/index.js"
-        },
-        {
-            "type": "pwa-node",
-            "request": "launch",
-            "name": "Launch Nouakchott script",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}/examples/Mauritania-Nouakchott/index.js"
         }
     ]
 }

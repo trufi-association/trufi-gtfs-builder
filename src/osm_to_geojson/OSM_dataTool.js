@@ -1,6 +1,5 @@
 const { point } = require('@turf/helpers')
 const isEqual = require('@turf/boolean-equal').default
-const debug = require('../debug')
 const routeExtractor = require('./route_extractor')
 
 module.exports = function ({ routes, ways, stops }) {
@@ -11,18 +10,16 @@ module.exports = function ({ routes, ways, stops }) {
     for (const key in routes) {
         const current_route = routes[key]
         const name = current_route.tags.name
-        debug(`Processing route ${name}`)
 
         try {
             const data = routeExtractor(current_route, ways, stops)
 
             log_file.push({ id: current_route.id, tags: current_route.tags })
 
-            debug(`${data.points.length} points in route`)
             const tmp_filter = filterPointsAndNodes(data.points, data.nodes)
             data.points = tmp_filter.points
             data.nodes = tmp_filter.nodes
-            debug(`${data.points.length} points after filtering`)
+            
             geojson_features[`${current_route.id}_${current_route.tags.ref || ""}`] = {
                 "type": "FeatureCollection",
                 "features": [
@@ -60,7 +57,6 @@ module.exports = function ({ routes, ways, stops }) {
                 }
             })
         } catch (error) {
-            debug(`Error: ${error.extractor_error || error.message}`)
             log_file.push({
                 id: current_route.id,
                 error: error.extractor_error ? error : `${error}`,

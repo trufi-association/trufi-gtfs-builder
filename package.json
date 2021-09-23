@@ -19,8 +19,9 @@
   "homepage": "https://github.com/trufi-association/trufi-osm-to-gtfs#readme",
   "dependencies": {
     "@turf/boolean-equal": "^6.5.0",
+    "@turf/distance": "^6.5.0",
     "@turf/helpers": "^6.5.0",
-    "debug": "^4.3.2",
+    "jszip": "^3.7.1",
     "osm-pbf-parser": "^2.3.0",
     "pbf2json": "^6.9.0",
     "through2": "^4.0.2"

@@ -1,14 +1,16 @@
-const { osmToGeojson, OSMPBFReader } = require('../../')
+const { osmToGtfs, OSMPBFReader } = require('../../')
 const path = require('path')
 
-osmToGeojson({
-    outputDir: __dirname + '/out',
-    mapProperties: (tags) => ({
-        ...tags,
-        stroke: '#164154',
-        "stroke-width": 5,
-    }),
-    stopNameSeparator: ' y ',
-    stopNameFallback: 'innominada',
-    osmDataGetter: new OSMPBFReader(path.join(__dirname, "cochabamba.osm.pbf"))
+osmToGtfs(
+    __dirname + '/out', {
+    geojsonOptions: {
+        osmDataGetter: new OSMPBFReader(path.join(__dirname, "cochabamba.osm.pbf"))
+    }, gtfsOptions: {
+        stopNameBuilder: (stops) => {
+            if (!stops || stops.length == 0) {
+                stops = ["innominada"]
+            }
+            return stops.join(" y ")
+        },
+    }
 }).catch(error => console.error(error))
