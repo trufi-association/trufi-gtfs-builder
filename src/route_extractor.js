@@ -16,25 +16,32 @@ const checkFirstWay = (lastWay, currentWay) => {
     const checkConnection = (a, b) => a.nodes[a.nodes.length - 1] == b.nodes[0]
     // a -> b == b -> c
     let response = checkConnection(lastWay, currentWay)
-    if (!response && currentWay.tags.oneway != "yes") {
+    if (response) return response
+
+    if (currentWay.tags.oneway != "yes") {
         reverseWay(currentWay)
         // a -> b == c -> b
         response = checkConnection(lastWay, currentWay)
-        if (!response && lastWay.tags.oneway != "yes") {
-            reverseWay(lastWay)
-            // b -> c == c -> b
-            response = checkConnection(lastWay, currentWay)
-            if (!response && currentWay.tags.oneway != "yes") {
-                reverseWay(currentWay)
-                // b -> c == b -> c
-                response = checkConnection(lastWay, currentWay)
-            }
-        }
     }
+    if (response) return response
+
+    if (lastWay.tags.oneway != "yes") {
+        reverseWay(lastWay)
+        // b -> a == c -> b
+        response = checkConnection(lastWay, currentWay)
+    }
+    if (response) return response
+
+    if (currentWay.tags.oneway != "yes") {
+        reverseWay(currentWay)
+        // b -> a == b -> c
+        response = checkConnection(lastWay, currentWay)
+    }
+
     return response
 }
 module.exports = function (route_elements, ways, stops) {
-    
+
     const routeWays = []
     const routeStops = []
     for (const element of route_elements.members) {
@@ -43,7 +50,15 @@ module.exports = function (route_elements, ways, stops) {
             if (current_way == null) {
                 throw { extractor_error: extractor_error.way_not_exist, uri: `https://overpass-turbo.eu/?Q=${encodeURI(`//${extractor_error.way_not_exist}\nrel(${route_elements.id});out geom;way(${element.ref});out geom;`)}&R` }
             }
-            routeWays.push({ ...current_way })
+            routeWays.push({
+                "type": "way",
+                "id": current_way.id,
+                "tags": { ...current_way.tags },
+                "refs": [...current_way.refs],
+                "info": { ...current_way.info },
+                "nodes": [...current_way.nodes],
+                "geometry": [...current_way.geometry]
+            })
         } else {
             const currentStop = stops[element.ref]
             if (currentStop && currentStop.tags["public_transport"] && currentStop.tags["public_transport"] == "stop_position")
@@ -57,9 +72,6 @@ module.exports = function (route_elements, ways, stops) {
     for (let index = 1; index < routeWays.length; index++) {
         const lastWay = routeWays[index - 1]
         const currentWay = routeWays[index]
-        if (lastWay.id == currentWay.id) {
-            throw { extractor_error: extractor_error.duplicated, uri: `https://overpass-turbo.eu/?Q=${encodeURI(`//${extractor_error.duplicated}\nrel(${route_elements.id});out geom;\nway(${lastWay.id});out geom;`)}&R` }
-        }
         const checkCurrentWay = (index == 1) ? checkFirstWay(lastWay, currentWay) : normalizecurrentWay(lastWay, currentWay)
         if (!checkCurrentWay) {
             throw { extractor_error: extractor_error.not_next, uri: `https://overpass-turbo.eu/?Q=${encodeURI(`//${extractor_error.not_next}\nrel(${route_elements.id});out geom;\nway(${lastWay.id});out geom;\nway(${currentWay.id});out geom;`)}&R` }
