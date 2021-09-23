@@ -1,6 +1,6 @@
 const { point } = require('@turf/helpers')
 const isEqual = require('@turf/boolean-equal').default
-const debug = require('./debug')
+const debug = require('../debug')
 const routeExtractor = require('./route_extractor')
 
 module.exports = function ({ routes, ways, stops }) {
