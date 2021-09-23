@@ -1,8 +1,8 @@
 const { osmToGtfs, OSMPBFReader } = require('../../')
 const path = require('path')
 
-osmToGtfs(
-    __dirname + '/out', {
+osmToGtfs({
+    outputFiles: { outputDir: __dirname + '/out' },
     geojsonOptions: {
         osmDataGetter: new OSMPBFReader(path.join(__dirname, "duitama.osm.pbf"))
     }, gtfsOptions: {

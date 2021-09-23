@@ -26,14 +26,21 @@ const defatulgtfsOptions = {
         }
         return stops.join(" and ")
     },
-
 }
-async function osmToGtfs(outputDir = null, config) {
-
+const defaultOutFiles = {
+    outputDir: null,
+    routes: true,
+    log: false,
+    stops: false,
+    readme: true,
+    gtfs: true,
+}
+async function osmToGtfs(config) {
+    const outputFiles = Object.assign({}, defaultOutFiles, config.outputFiles || {})
     const geojsonOptions = Object.assign({}, defaultGeojsonOptions, config.geojsonOptions || {})
     const gtfsOptions = Object.assign({}, defatulgtfsOptions, config.gtfsOptions || {})
     const gtfsBuilders = Object.assign({}, gtfsDefaultBuilders, config.gtfsBuilders || {})
-
+    const { outputDir } = outputFiles
     if (outputDir && !fs.existsSync(path.dirname(outputDir))) {
         throw new Error('Output directory does not exist')
     }
@@ -46,16 +53,20 @@ async function osmToGtfs(outputDir = null, config) {
             fs.rmdirSync(path.join(outputDir), { recursive: true })
         }
         fs.mkdirSync(path.join(outputDir));
-        fs.mkdirSync(path.join(outputDir, `routes`));
-        for (const key in geojson.geojsonFeatures) {
-            const feature = geojson.geojsonFeatures[key]
-            fs.writeFileSync(path.join(outputDir, `/routes/${key}.geojson`), JSON.stringify(feature))
-        }
-        fs.writeFileSync(path.join(outputDir, 'log.json'), JSON.stringify(geojson.log))
-        fs.writeFileSync(path.join(outputDir, 'stops.json'), JSON.stringify(geojson.stops))
-        fs.writeFileSync(path.join(outputDir, 'README.md'), geojson.readme)
-
-        writeGtfs(gtfs, path.join(outputDir, 'gtfs.zip'), gtfsOptions.zipCompressionLevel, gtfsOptions.zipComment);
+        if (outputFiles.routes) {
+            fs.mkdirSync(path.join(outputDir, `routes`));
+            for (const key in geojson.geojsonFeatures) {
+                const feature = geojson.geojsonFeatures[key]
+                fs.writeFileSync(path.join(outputDir, `/routes/${key}.geojson`), JSON.stringify(feature))
+            }
+        } if (outputFiles.log)
+            fs.writeFileSync(path.join(outputDir, 'log.json'), JSON.stringify(geojson.log))
+        if (outputFiles.stops)
+            fs.writeFileSync(path.join(outputDir, 'stops.json'), JSON.stringify(geojson.stops))
+        if (outputFiles.readme)
+            fs.writeFileSync(path.join(outputDir, 'README.md'), geojson.readme)
+        if (outputFiles.gtfs)
+            writeGtfs(gtfs, path.join(outputDir, 'gtfs.zip'), gtfsOptions.zipCompressionLevel, gtfsOptions.zipComment);
     }
 }
 

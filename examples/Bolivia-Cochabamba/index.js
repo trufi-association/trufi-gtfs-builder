@@ -1,7 +1,7 @@
 const { osmToGtfs, OSMOverpassDownloader } = require('../../')
 
-osmToGtfs(
-    __dirname + '/out', {
+osmToGtfs({
+    outputFiles: { outputDir: __dirname + '/out' },
     geojsonOptions: {
         osmDataGetter: new OSMOverpassDownloader({
             south: -17.709721,
