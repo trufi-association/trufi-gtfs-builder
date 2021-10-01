@@ -1,6 +1,7 @@
 const { point } = require('@turf/helpers')
 const isEqual = require('@turf/boolean-equal').default
 const routeExtractor = require('./route_extractor')
+const extractor_error = require('./extractor_error')
 
 module.exports = function ({ routes, ways, stops }) {
     const mainStops = {}
@@ -9,18 +10,18 @@ module.exports = function ({ routes, ways, stops }) {
 
     for (const key in routes) {
         const current_route = routes[key]
-        const name = current_route.tags.name
 
         try {
-            const data = routeExtractor(current_route, ways, stops)
+            if (!current_route.tags["ref"])
+                throw { extractor_error: extractor_error.no_ref_defined, uri: `https://overpass-turbo.eu/?Q=${encodeURI(`//${extractor_error.no_ref_defined}\nrel(${current_route.id});out geom;`)}&R` }
 
+            const data = routeExtractor(current_route, ways, stops)
             log_file.push({ id: current_route.id, tags: current_route.tags })
 
             const tmp_filter = filterPointsAndNodes(data.points, data.nodes)
             data.points = tmp_filter.points
             data.nodes = tmp_filter.nodes
-            
-            geojson_features[`${current_route.id}_${current_route.tags.ref || ""}`] = {
+            geojson_features[`${current_route.tags.ref}`] = {
                 "type": "FeatureCollection",
                 "features": [
                     {
