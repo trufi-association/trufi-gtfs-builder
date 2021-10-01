@@ -1,12 +1,12 @@
 ### Count
-**Total**: 440  **Correct**: 99  **With error**: 341
+**Total**: 440  **Correct**: 97  **With error**: 343
 
 
 | Id | Name | Ref | From | To | State |
 | -- | ---- | --- | ---- | -- | ----- |
-[2084702](https://www.openstreetmap.org/relation/2084702) | Bus Carril: Cochabamba → Aiquile | undefined | Cochabamba | Aiquile | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(2084702);out%20geom;%0Away(400544668);out%20geom;%0Away(424448076);out%20geom;&R)
-[6925236](https://www.openstreetmap.org/relation/6925236) | Teleférico: Parque de la Autonomía → Cristo de la Concordia | undefined | Parque de la Autonomía | Cristo de la Concordia | ✅
-[6925237](https://www.openstreetmap.org/relation/6925237) | Teleférico: Cristo de la Concordia → Parque de la Autonomía | undefined | Cristo de la Concordia | Parque de la Autonomía | ✅
+[2084702](https://www.openstreetmap.org/relation/2084702) | Bus Carril: Cochabamba → Aiquile | undefined | Cochabamba | Aiquile | [route without ref](https://overpass-turbo.eu/?Q=//route%20without%20ref%0Arel(2084702);out%20geom;&R)
+[6925236](https://www.openstreetmap.org/relation/6925236) | Teleférico: Parque de la Autonomía → Cristo de la Concordia | undefined | Parque de la Autonomía | Cristo de la Concordia | [route without ref](https://overpass-turbo.eu/?Q=//route%20without%20ref%0Arel(6925236);out%20geom;&R)
+[6925237](https://www.openstreetmap.org/relation/6925237) | Teleférico: Cristo de la Concordia → Parque de la Autonomía | undefined | Cristo de la Concordia | Parque de la Autonomía | [route without ref](https://overpass-turbo.eu/?Q=//route%20without%20ref%0Arel(6925237);out%20geom;&R)
 [4269608](https://www.openstreetmap.org/relation/4269608) | MicroBus A: Villa Israel → Río Taquiña | A | Villa Israel | Río Taquiña | ✅
 [4269609](https://www.openstreetmap.org/relation/4269609) | MicroBus A: Río Taquiña → Villa Israel | A | Río Taquiña | Villa Israel | ✅
 [4247869](https://www.openstreetmap.org/relation/4247869) | MicroBus B: Calle Las Buganvillas → Aeropuerto → Pasaje F | B | Calle Las Buganvillas | Pasaje F | ✅
