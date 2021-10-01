@@ -1,0 +1,53 @@
+route_id,agency_id,route_short_name,route_long_name,route_type
+6525438,0,A1,A1 - Juan Grande - Once de Mayo,3
+6525439,0,A1,A1 - Once de Mayo - Juan Grande,3
+6536901,0,A2,A2 - Once de Mayo - Juan Grande,3
+6537339,0,A2,A2 - Juan Grande - Once de Mayo,3
+6537685,0,A3,A3 - Cerro Pino - San Luis,3
+6537708,0,A3,A3 - San Luis - Cerro Pino,3
+6553806,0,A10,A10 - Barrio Colombia - Ciudadela Industrial,3
+6553807,0,A10,A10 - Ciudadela Industrial - Barrio Colombia,3
+6553862,0,A13,A13 - Cerro Pino - La Frontera San Luis,3
+6553863,0,A13,A13 - La Frontera San Luis - Cerro Pino,3
+6577793,0,A7,A7 - Cerro pino - San antonio norte,3
+6577794,0,A7,A7 - San antonio norte - Cerro pino,3
+6577914,0,C8,C8 - San Antonio Norte - Urbanizacion Guadalupe,3
+6577915,0,C8,C8 - Urbanizacion Guadalupe - San Antonio Norte,3
+6577923,0,A6,A6 - La Trinidad - Santa Lucia,3
+6577924,0,A6,A6 - Santa Lucia - La Trinidad,3
+6577928,0,A5,A5 - Villa del Prado - Barrio El Progreso,3
+6577929,0,A5,A5 - Barrio El Progreso - Villa del Prado,3
+6577937,0,B4,B4 - Colegio Seminario - Villas del mundial,3
+6577953,0,B4,B4 - Villas del mundial - Colegio Seminario,3
+6577983,0,B1,B1 - Barrio La Esperanza - Colegio San Diego,3
+6578057,0,C5,C5 - Ruta Mundial - Juan Grande,3
+6578061,0,C2,C2 - Vereda Siratá - La Esperanza,3
+6578069,0,B2,B2 - Pueblito Boyacense - Parroquia San Cayetano,3
+6578111,0,C1,C1 - Barrio El Cargua - Ciudadela Industrial,3
+6578112,0,C1,C1 - Ciudadela Industrial - Barrio El Cargua,3
+6578116,0,B2,B2 - Parroquia San Cayetano - Pueblito Boyacense,3
+6578132,0,B1,B1 - Colegio San Diego - Barrio La Esperanza,3
+6578133,0,C5,C5 - Juan Grande - Ruta Mundial,3
+6580945,0,A4,A4 - Tocogua - Cerro Pino,3
+6580948,0,A4,A4 - Cerro Pino - Tocogua,3
+6581619,0,A8,A8 - Cerro Pino - Postobon,3
+6581632,0,A8,A8 - Postobon - Cerro Pino,3
+6583165,0,A9,A9 - Terminal de Transportes Nuevo - Cerro Pino,3
+6583179,0,A9,A9 - Cerro Pino - Terminal de Transportes Nuevo,3
+6583715,0,A11,A11 - Terminal Antiguo - Vereda La Trinidad,3
+6583741,0,A11,A11 - Vereda La Trinidad - Terminal Antiguo,3
+6585999,0,A12,A12 - Higueras - San Pedro,3
+6586139,0,A12,A12 - San Pedro - Higueras,3
+6593890,0,B3,B3 - Villa Korina - Centro,3
+6593895,0,B3,B3 - Centro - Villa Korina,3
+6593910,0,B6,B6 - Simon Bolivar - Barrio La Gruta,3
+6593970,0,B6,B6 - Barrio La Gruta - Simon Bolivar,3
+6594023,0,B5,B5 - Juan Grande - Barrio El Recreo,3
+6594040,0,B5,B5 - Barrio El Recreo - Juan Grande,3
+6594043,0,C2,C2 - La Esperanza - Vereda Siratá,3
+6594044,0,B7,B7 - Colegio Seminario - Urb Paraiso,3
+6594055,0,B7,B7 - Urb Paraiso - Colegio Seminario,3
+6594070,0,C7,C7 - San Luis - Juan Grande,3
+6594071,0,C3,C3 - Ciudadela Industrial - Barrio Primero de Mayo,3
+6594078,0,C3,C3 - Barrio Primero de Mayo - Ciudadela Industrial,3
+6594080,0,C7,C7 - Juan Grande - San Luis,3
