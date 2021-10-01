@@ -16,8 +16,8 @@ const defaultGeojsonOptions = {
 const defatulgtfsOptions = {
     agencyTimezone: "America/La_Paz",
     agencyUrl: "https://www.example.com/",
-    defaultCalendar: () => "Mo-Su 00:00-24:00",
-    frequencyHeadwaySecs: 300, // every 10 minutes
+    defaultCalendar: () => "Mo-Su 06:00-23:00",
+    frequencyHeadway: () => "00:10",
     vehicleSpeed: () => 50,
     skipStopsWithinDistance: 100,
     stopNameBuilder: (stops) => {
@@ -65,8 +65,10 @@ async function osmToGtfs(config) {
             fs.writeFileSync(path.join(outputDir, 'stops.json'), JSON.stringify(geojson.stops))
         if (outputFiles.readme)
             fs.writeFileSync(path.join(outputDir, 'README.md'), geojson.readme)
-        if (outputFiles.gtfs)
-            writeGtfs(gtfs, path.join(outputDir, 'gtfs.zip'), gtfsOptions.zipCompressionLevel, gtfsOptions.zipComment);
+        if (outputFiles.gtfs) {
+            fs.mkdirSync(path.join(outputDir, `gtfs`));
+            writeGtfs(gtfs, path.join(outputDir, 'gtfs'));
+        }
     }
 }
 
