@@ -4,8 +4,8 @@
 
 | Id | Name | Ref | From | To | State |
 | -- | ---- | --- | ---- | -- | ----- |
-[13217723](https://www.openstreetmap.org/relation/13217723) | Directo Duitama-Bogota | undefined | Duitama | Bogotá | [way not exists, way out of bbox](https://overpass-turbo.eu/?Q=//way%20not%20exists,%20way%20out%20of%20bbox%0Arel(13217723);out%20geom;way(936232266);out%20geom;&R)
-[13225141](https://www.openstreetmap.org/relation/13225141) | undefined | undefined | undefined | undefined | [way not exists, way out of bbox](https://overpass-turbo.eu/?Q=//way%20not%20exists,%20way%20out%20of%20bbox%0Arel(13225141);out%20geom;way(42559276);out%20geom;&R)
+[13217723](https://www.openstreetmap.org/relation/13217723) | Directo Duitama-Bogota | undefined | Duitama | Bogotá | [route without ref](https://overpass-turbo.eu/?Q=//route%20without%20ref%0Arel(13217723);out%20geom;&R)
+[13225141](https://www.openstreetmap.org/relation/13225141) | undefined | undefined | undefined | undefined | [route without ref](https://overpass-turbo.eu/?Q=//route%20without%20ref%0Arel(13225141);out%20geom;&R)
 [6525438](https://www.openstreetmap.org/relation/6525438) | A1 - Juan Grande - Once de Mayo | A1 | Juan Grande | 11 de Mayo | ✅
 [6525439](https://www.openstreetmap.org/relation/6525439) | A1 - Once de Mayo - Juan Grande | A1 | 11 de Mayo | Juan Grande | ✅
 [6553806](https://www.openstreetmap.org/relation/6553806) | A10 - Barrio Colombia - Ciudadela Industrial | A10 | Barrio Colombia | Ciudadela Industrial | ✅
