@@ -1,5 +1,5 @@
 {
-  "name": "trufi-osm-to-gtfs",
+  "name": "trufi-gtfs-builder",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/trufi-association/trufi-osm-to-gtfs.git"
+    "url": "git+https://github.com/trufi-association/trufi-gtfs-builder.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/trufi-association/trufi-osm-to-gtfs/issues"
+    "url": "https://github.com/trufi-association/trufi-gtfs-builder/issues"
   },
-  "homepage": "https://github.com/trufi-association/trufi-osm-to-gtfs#readme",
+  "homepage": "https://github.com/trufi-association/trufi-gtfs-builder#readme",
   "dependencies": {
     "@turf/boolean-equal": "^6.5.0",
     "@turf/distance": "^6.5.0",
