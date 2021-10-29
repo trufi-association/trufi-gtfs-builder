@@ -11,7 +11,8 @@ const geojsonToGtfs = require('./src/geojson_to_gtfs')
 
 const defaultGeojsonOptions = {
     osmDataGetter: null,
-    transformTypes: ["bus", "share_taxi", "aerialway", "train", "subway", "monorail", "tram", "trolleybus", "ferry"]
+    transformTypes: ["bus", "share_taxi", "aerialway", "train", "subway", "monorail", "tram", "trolleybus", "ferry"],
+    skipRoute: () => true
 }
 const defatulgtfsOptions = {
     agencyTimezone: "America/La_Paz",

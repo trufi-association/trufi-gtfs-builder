@@ -7,6 +7,7 @@ async function osmToGeojson(options) {
     const {
         transformTypes,
         osmDataGetter,
+        skipRoute,
     } = options;
 
     if (options.osmDataGetter == null) {
@@ -16,7 +17,7 @@ async function osmToGeojson(options) {
     const routes = await osmDataGetter.getRoutes(transformTypes)
     const ways = await osmDataGetter.getWays()
     const stops = await osmDataGetter.getStops()
-    const data = convertGeoJSON({ routes, ways, stops })
+    const data = convertGeoJSON({ routes, ways, stops, skipRoute })
     const readme = readmeGenerator(data)
     data["readme"] = readme
 

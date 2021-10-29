@@ -3,7 +3,7 @@ const isEqual = require('@turf/boolean-equal').default
 const routeExtractor = require('./route_extractor')
 const extractor_error = require('./extractor_error')
 
-module.exports = function ({ routes, ways, stops }) {
+module.exports = function ({ routes, ways, stops, skipRoute }) {
     const mainStops = {}
     const geojson_features = {}
     const log_file = []
@@ -12,6 +12,8 @@ module.exports = function ({ routes, ways, stops }) {
         const current_route = routes[key]
 
         try {
+            if (!skipRoute(current_route))
+                throw { extractor_error: extractor_error.route_skipped, uri: `https://overpass-turbo.eu/?Q=${encodeURI(`//${extractor_error.route_skipped}\nrel(${current_route.id});out geom;`)}&R` }
             if (!current_route.tags["ref"])
                 throw { extractor_error: extractor_error.no_ref_defined, uri: `https://overpass-turbo.eu/?Q=${encodeURI(`//${extractor_error.no_ref_defined}\nrel(${current_route.id});out geom;`)}&R` }
 
