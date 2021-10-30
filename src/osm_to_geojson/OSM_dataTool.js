@@ -23,7 +23,7 @@ module.exports = function ({ routes, ways, stops, skipRoute }) {
             const tmp_filter = filterPointsAndNodes(data.points, data.nodes)
             data.points = tmp_filter.points
             data.nodes = tmp_filter.nodes
-            geojson_features[`${current_route.tags.ref}`] = {
+            geojson_features[`${current_route.id}`] = {
                 "type": "FeatureCollection",
                 "features": [
                     {
