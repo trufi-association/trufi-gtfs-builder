@@ -8,6 +8,7 @@ const {
     OSMPBFReader
 } = require('./src/osm_to_geojson')
 const geojsonToGtfs = require('./src/geojson_to_gtfs')
+const geojsonToTrufiTPData = require('./src/geojson_to_trufi_tp_data')
 
 const defaultGeojsonOptions = {
     osmDataGetter: null,
@@ -30,11 +31,12 @@ const defatulgtfsOptions = {
 }
 const defaultOutFiles = {
     outputDir: null,
-    routes: true,
+    routes: false,
     log: false,
     stops: false,
     readme: true,
-    gtfs: true,
+    gtfs: false,
+    trufiTPData: false
 }
 async function osmToGtfs(config) {
     const outputFiles = Object.assign({}, defaultOutFiles, config.outputFiles || {})
@@ -47,7 +49,8 @@ async function osmToGtfs(config) {
     }
 
     const geojson = await osmToGeojson(geojsonOptions)
-    const gtfs = await geojsonToGtfs(geojson.geojsonFeatures, geojson.stops, gtfsOptions, gtfsBuilders)
+    const gtfs = (outputFiles.gtfs) ? await geojsonToGtfs(geojson.geojsonFeatures, geojson.stops, gtfsOptions, gtfsBuilders) : null
+    const trufiTPData = (outputFiles.trufiTPData) ? await geojsonToTrufiTPData(geojson.geojsonFeatures, geojson.stops) : null
 
     if (outputDir) {
         if (fs.existsSync(path.join(outputDir))) {
@@ -69,6 +72,12 @@ async function osmToGtfs(config) {
         if (outputFiles.gtfs) {
             fs.mkdirSync(path.join(outputDir, `gtfs`));
             writeGtfs(gtfs, path.join(outputDir, 'gtfs'));
+        }
+        if (outputFiles.trufiTPData) {
+            fs.mkdirSync(path.join(outputDir, `trufiTPData`));
+            fs.writeFileSync(path.join(outputDir, 'trufiTPData', 'routes.json'), JSON.stringify(trufiTPData.routes))
+            fs.writeFileSync(path.join(outputDir, 'trufiTPData', 'stops.json'), JSON.stringify(trufiTPData.stops))
+            fs.writeFileSync(path.join(outputDir, 'trufiTPData', 'stops_data.json'), JSON.stringify(geojson.stops))
         }
     }
 }
