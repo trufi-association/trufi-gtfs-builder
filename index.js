@@ -77,7 +77,7 @@ async function osmToGtfs(config) {
             fs.mkdirSync(path.join(outputDir, `trufiTPData`));
             fs.writeFileSync(path.join(outputDir, 'trufiTPData', 'routes.json'), JSON.stringify(trufiTPData.routes))
             fs.writeFileSync(path.join(outputDir, 'trufiTPData', 'stops.json'), JSON.stringify(trufiTPData.stops))
-            fs.writeFileSync(path.join(outputDir, 'trufiTPData', 'stops_data.json'), JSON.stringify(geojson.stops))
+            fs.writeFileSync(path.join(outputDir, 'trufiTPData', 'search.json'), JSON.stringify(geojson.stops))
         }
     }
 }
