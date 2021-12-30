@@ -152,34 +152,42 @@ function routeBuilder(features) {
     return routes
 }
 
-function tripBuilder(features, featureFrequency) {
+function tripBuilder(features) {
     const trips = []
     for (let feature of features) {
         feature = feature[0]
-        feature.gtfs.trips = []
-        const secondsFrequency = timeToSeconds(featureFrequency(feature))
         for (const service of feature.gtfs.services) {
-            const startTimeSencods = timeToSeconds(service.startTime)
-            const endTimeSencods = timeToSeconds(service.endTime)
-            let tempStartTime = startTimeSencods
-            while (tempStartTime <= endTimeSencods) {
-                const trip = {
-                    trip_id: trips.length,
-                    route_id: feature.gtfs.route_id,
-                    service_id: service.service_id,
-                    shape_id: feature.properties.id
-                }
-                trips.push(trip)
-                feature.gtfs.trips.push({
-                    trip_id: trip.trip_id,
-                    offset: tempStartTime
-                })
-                tempStartTime += secondsFrequency
+            const trip = {
+                trip_id: trips.length,
+                route_id: feature.gtfs.route_id,
+                service_id: service.service_id,
+                shape_id: feature.properties.id
             }
+            trips.push(trip)
+            service.trip_id = trip.trip_id
         }
     }
     return trips
 }
+
+function frequenciesBuilder(features, frequencyHeadwaySecs) {
+    const frequencies = []
+    for (let feature of features) {
+        feature = feature[0]
+        for (const service of feature.gtfs.services) {
+            const frequency = {
+                trip_id: service.trip_id,
+                start_time: service.startTime + ":00",
+                end_time: service.endTime + ":00",
+                headway_secs: frequencyHeadwaySecs,
+                exact_times: 1
+            }
+            frequencies.push(frequency)
+        }
+    }
+    return frequencies
+}
+
 function stopsBuilder(features, inputStops, maxStopsDistance, stopNameBuilder) {
     const stops = []
     for (let feature of features) {
@@ -238,10 +246,10 @@ function stopTimesBuilder(features, vehicleSpeed) {
     for (let feature of features) {
         feature = feature[0]
         const speed = vehicleSpeed(feature) / 60 / 60 * 1000;
-        for (const trip of feature.gtfs.trips) {
+        for (const service of feature.gtfs.services) {
             let previousCoords
             let distance = 0
-            let seconds = trip.offset
+            let seconds = 0
             const { nodes, coordinates } = feature.gtfs.filteredStops
             for (const index in nodes) {
                 const coords = coordinates[index]
@@ -252,7 +260,7 @@ function stopTimesBuilder(features, vehicleSpeed) {
                 previousCoords = coords
                 const arrival_time = secondsToTime(seconds)
                 stopTimes.push({
-                    trip_id: trip.trip_id,
+                    trip_id: service.trip_id,
                     stop_sequence: index,
                     stop_id: nodes[index],
                     arrival_time: arrival_time,
@@ -268,6 +276,7 @@ module.exports = {
     calendarBuilder,
     routeBuilder,
     tripBuilder,
+    frequenciesBuilder,
     stopsBuilder,
     shapesBuilder,
     stopTimesBuilder,

@@ -19,7 +19,7 @@ const defatulgtfsOptions = {
     agencyTimezone: "America/La_Paz",
     agencyUrl: "https://www.example.com/",
     defaultCalendar: () => "Mo-Su 06:00-23:00",
-    frequencyHeadway: () => "00:10",
+    frequencyHeadway: () => 300,
     vehicleSpeed: () => 50,
     skipStopsWithinDistance: 100,
     stopNameBuilder: (stops) => {
