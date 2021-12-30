@@ -179,7 +179,7 @@ function frequenciesBuilder(features, frequencyHeadwaySecs) {
                 trip_id: service.trip_id,
                 start_time: service.startTime + ":00",
                 end_time: service.endTime + ":00",
-                headway_secs: frequencyHeadwaySecs,
+                headway_secs: frequencyHeadwaySecs(),
                 exact_times: 1
             }
             frequencies.push(frequency)

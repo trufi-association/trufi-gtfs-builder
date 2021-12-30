@@ -20,7 +20,7 @@ function geojsonToGtfs(features, inputStops, gtfsConfig, gtfsBuilders) {
   const calendar = calendarBuilder(features, gtfsConfig.defaultCalendar)
   const routes = routeBuilder(features)
   const trips = tripBuilder(features);
-  const frequencies = frequenciesBuilder(features, gtfsConfig.frequencyHeadwaySecs);
+  const frequencies = frequenciesBuilder(features, gtfsConfig.frequencyHeadway);
   const stops = stopsBuilder(
     features,
     inputStops,
