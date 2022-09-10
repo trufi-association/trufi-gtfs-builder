@@ -1,0 +1,537 @@
+route_id,agency_id,route_short_name,route_long_name,route_type
+7406209,0,31,Trotro 31 : 37 → Abeka Lapaz,3
+7406251,0,282,Trotro 282 : Shalom → Kaneshie,3
+7406252,0,282,Trotro 282 : Kaneshie → Shalom,3
+7407644,0,31,Trotro 31 : Abeka Lapaz → 37,3
+7407962,0,56,Trotro 56 : Race Course → Abeka Lapaz,3
+7415754,0,11,Trotro 11 : Abeka Lapaz → Circle Accra,3
+7415862,0,11,Trotro 11 : Circle Accra → Abeka Lapaz,3
+7416050,0,15,Trotro 15 : Abeka Lapaz → Dome Kwabenya,3
+7416141,0,15,Trotro 15 : Dome Kwabenya → Abeka Lapaz,3
+7418029,0,6,Trotro 6 : Sakumono Estate → Abeka Lapaz,3
+7418430,0,209,Trotro 209 : Circle → Swanlake Last Stop,3
+7418496,0,209,Trotro 209 : Swanlake Last Stop → Circle,3
+7418634,0,211,Trotro 211 : Circle → Tema (Motorway),3
+7418705,0,211,Trotro 211 : Tema (Motorway) → Circle,3
+7420174,0,76,Trotro 76 : Achimota → 37,3
+7420410,0,76,Trotro 76 : 37 → Achimota,3
+7420681,0,20,Trotro 20 : Abeka Lapaz → Accra UTC,3
+7420795,0,20,Trotro 20 : Accra UTC → Abeka Lapaz,3
+7420887,0,2,Trotro 2 : 37 Lorry Park → Osu (37 Station),3
+7421011,0,2,Trotro 2 : Osu (37 Station) → 37 Lorry Park,3
+7421169,0,46,Trotro 46 : Abeka Lapaz → Kaneshie,3
+7421637,0,46,Trotro 46 : Kaneshie → Abeka Lapaz,3
+7422764,0,281,Trotro 281 : Kaneshie → Russia,3
+7422797,0,281,Trotro 281 : Russia → Kaneshie,3
+7423269,0,275,Trotro 275 : Madina-Adenta → Kaneshie,3
+7423503,0,276,Trotro 276 : Kaneshie → Mamponse,3
+7423570,0,276,Trotro 276 : Mamponse → Kaneshie,3
+7423593,0,277,Trotro 277 : Kaneshie → Mamprobi Alhaji,3
+7423604,0,277,Trotro 277 : Mamprobi Alhaji → Kaneshie,3
+7423715,0,278,Trotro 278 : Kaneshie → New town,3
+7424841,0,278,Trotro 278 : New Town → Kaneshie,3
+7425044,0,998,Trotro 998 : Circle Overhead → Ashaiaman,3
+7425103,0,998,Trotro 998 : Ashaiaman → Circle Overhead,3
+7425316,0,72,Trotro 72 : Accra New Town → Caprice,3
+7425333,0,72,Trotro 72 : Caprice → Accra New Town,3
+7425735,0,242,Trotro 242 : Dansoman → Odorkor,3
+7426645,0,242,Trotro 242 : Odorkor → Dansoman,3
+7426665,0,264,Trotro 264 : Hansonic → Dansoman Last Stop,3
+7426676,0,264,Trotro 264 : Dansoman Last Stop → Hansonic,3
+7431595,0,454,Trotro 454 : Osu → Circle,3
+7431798,0,454,Trotro 454 : Circle → Osu,3
+7431880,0,420,Trotro 420 : Accra New Tema Station → Kotobabi Down,3
+7432100,0,420,Trotro 420 : Kotobabi Down → Accra New Tema Station,3
+7432263,0,422,Trotro 422 : Circle Odorna → Madina,3
+7432422,0,422,Trotro 422 : Madina → Circle Odorna,3
+7435456,0,4,Trotro 4 : Abeka Lapaz → Ashaiman Main Station,3
+7435650,0,4,Trotro 4 : Ashaiman Main Station → Abeka Lapaz,3
+7435911,0,7,Trotro 7 : Abeka Lapaz → Taifa,3
+7436014,0,7,Trotro 7 : Taifa → Abeka Lapaz,3
+7437084,0,8,Trotro 8 : Abeka Lapaz → Tema Community One Market,3
+7437093,0,8,Trotro 8 : Tema Community One Market → Abeka Lapaz,3
+7437119,0,10,Trotro 10 : Abeka Lapaz → Amasaman,3
+7437138,0,10,Trotro 10 : Amasaman → Abeka Lapaz,3
+7437182,0,18,Trotro 18 : Abeka Lapaz → Kasoa,3
+7437218,0,18,Trotro 18 : Kasoa → Abeka Lapaz,3
+7439696,0,19,Lapaz Asofan Amasaman Branch of G.P.R.T.U. 19 Abeka Lapaz - Kotokuo,3
+7439745,0,19,Trotro 19 : Kotokuo → Abeka Lapaz,3
+7440716,0,16,Trotro 16 : Abeka Lapaz → Sapeiman,3
+7440783,0,16,Trotro 16 : Sapeiman → Abeka Lapaz,3
+7441963,0,21,Trotro 21 : Abeka Lapaz → Dome,3
+7441989,0,21,Trotro 21 : Dome → Abeka Lapaz,3
+7442032,0,23,Trotro 23 : Abeka Lapaz → Teshie Nungua,3
+7442237,0,23,Trotro 23 : Teshie Nungua → Abeka Lapaz,3
+7442512,0,26,Trotro 26 : Abeka Main Market → Accra U.T.C,3
+7442727,0,26,Trotro 26 : Accra U.T.C → Abeka Main Market,3
+7443792,0,48,Trotro 48 : Abeka Lapaz → Korle Bu,3
+7443807,0,48,Trotro 48 : Korle Bu → Abeka Lapaz,3
+7444960,0,28,Trotro 28 : Abeka Main Market → Circle Indust. Area,3
+7445107,0,28,Trotro 28 : Circle Industrial Area → Abeka Main Market,3
+7445185,0,35,Trotro 35 : Abeka Lapaz → Agape,3
+7445272,0,35,Trotro 35 : Agape → Abeka Lapaz,3
+7451462,0,58,Trotro 58 : Abeka Lapaz → Six to Six Market,3
+7451488,0,58,Trotro 58 : Six to Six Market → Abeka Lapaz,3
+7452016,0,84,Trotro 84 : Achimota → Kuntunse/Satelite,3
+7452112,0,84,Trotro 84 : Kuntunse/Satelite → Achimota,3
+7452373,0,70,Trotro 70 : Accra End of the Motorway → Adjringanor/Otanor,3
+7452530,0,70,Trotro 70 : Adjringanor/Otanor → Accra End of the Motorway,3
+7452793,0,214,Trotro 214 : WAEC → Circle,3
+7452834,0,214,Trotro 214 : Circle → WAEC,3
+7453016,0,81,Trotro 81 : Adenta Station → Achimota,3
+7453599,0,88,Trotro 88 : Achimota → Asofan,3
+7453708,0,88,Trotro 88 : Asofan → Achimota,3
+7454843,0,93,Trotro 93 : Achimota → Dome Pillar 2,3
+7454866,0,93,Trotro 93 : Dome Pillar 2 → Achimota,3
+7454990,0,990,Trotro 990 : Circle Odorna → SSNIT Flats,3
+7455013,0,98,Trotro 98 : Achimota → Abeka Lapaz,3
+7455393,0,98,Trotro 98 : Abeka Lapaz → Achimota,3
+7455566,0,535,Trotro 535 : Zambrama Line → Agbogbloshie 2,3
+7456342,0,535,Trotro 535 : Agbogbloshie 2 → Zambrama Line,3
+7456407,0,39,Trotro 39 : Abeka Lapaz → Antie-Eku Pallas Town,3
+7456423,0,39,Trotro 39 : Antie-Eku Pallas Town → Abeka Lapaz,3
+7456453,0,524,Trotro 524 : Accra New Tema Station → Banana Inn,3
+7456456,0,41,Trotro 41 : Abeka Lapaz → Asofan,3
+7456492,0,41,Trotro 41 : Asofan → Abeka Lapaz,3
+7456496,0,524,Trotro 524 : Banana Inn → Accra New Tema Station,3
+7457497,0,43,Trotro 43 : Abeka Lapaz → Bubiashie,3
+7457633,0,523,Trotro 523 : Accra New Tema Station → Trade Fair (La),3
+7457668,0,43,Trotro 43 : Bubiashie → Abeka Lapaz,3
+7457867,0,522,Trotro 522 : Accra New Tema Station → Sukura,3
+7458019,0,522,Trotro 522 : Sukura → Accra New Tema Station,3
+7458035,0,52,Trotro 52 : Abeka Lapaz → Mayera,3
+7458155,0,492,Trotro 492 : Tabora Alhaji → Kaneshie Station,3
+7458272,0,52,Trotro 52 : Mayera → Abeka Lapaz,3
+7458319,0,492,Trotro 492 : Kaneshie Station → Tabora Alhaji,3
+7458410,0,488,Trotro 488 : Sukura → Arena,3
+7458464,0,55,Trotro 55 : Abeka Lapaz → Osu,3
+7458534,0,55,Trotro 55 : Osu → Abeka Lapaz,3
+7458710,0,488,Trotro 488 : Arena → Sukura,3
+7458953,0,486,Trotro 486 : Soko → Accra Post Office,3
+7458997,0,486,Trotro 486 : Accra Post Office → Soko,3
+7459268,0,283,Trotro 283 : Kaneshie Foot Bridge → Makola Tudu,3
+7459269,0,476,Trotro 476 : Accra Salaga → Camara,3
+7459274,0,476,Trotro 476 : Camara → Accra Salaga,3
+7459789,0,283,Trotro 283 : Makola Tudu → Kaneshie Foot Bridge,3
+7459883,0,470,Trotro 470 : Accra Rawlings Park → Osu Penta Hotel,3
+7459937,0,470,Trotro 470 : Osu Penta Hotel → Accra Rawlings Park,3
+7459943,0,284,Trotro 284 : Kaneshie Market Station → Agyapa Ye North Kaneshie,3
+7459984,0,284,Trotro 284 : Agyapa Ye North Kaneshie → Kaneshie Market Station,3
+7460020,0,456,Trotro 456 : Osu → Madina,3
+7460118,0,456,Trotro 456 : Madina → Osu,3
+7460211,0,286,Trotro 286 : Kaneshie Market Station → New Fadama,3
+7460240,0,455,Trotro 455 : Osu → Kaneshie,3
+7460301,0,286,Trotro 286 : New Fadama → Kaneshie Market Station,3
+7460368,0,455,Trotro 455 : Kaneshie → Osu,3
+7460472,0,287,Trotro 287 : Kaneshie Market Station → North Industrial Area,3
+7460522,0,452,Trotro 452 : Orgle-Road → Kaneshie,3
+7460557,0,287,Trotro 287 : North Industrial Area → Kaneshie Market Station,3
+7460577,0,452,Trotro 452 : Kaneshie → Orgle-Road,3
+7460627,0,288,Trotro 288 : Kaneshie → Swanlake,3
+7460658,0,288,Trotro 288 : Swanlake → Kaneshie,3
+7460801,0,290,Trotro 290 : Kaneshie Takoradi Station → Dansoman Last Stop,3
+7460874,0,290,Trotro 290 : Dansoman Last Stop → Kaneshie Takoradi Station,3
+7460910,0,291,Trotro 291 : Kaneshie Takoradi Station → Korle Bu,3
+7460916,0,291,Trotro 291 : Korle Bu → Kaneshie Takoradi Station,3
+7461508,0,447,Trotro 447 : Opetekwei → Accra New Tema Station,3
+7461550,0,447,Trotro 447 : Accra New Tema Station → Opetekwei,3
+7461636,0,293,Trotro 293 : Kaneshie Takoradi Station → Mamprobi C Lante,3
+7461655,0,293,Trotro 293 : Mamprobi C Lante → Kaneshie Takoradi Station,3
+7461665,0,436,Trotro 436 : Odorkor → Official Town,3
+7461690,0,295,Trotro 295 : Kaneshie Takoradi Station → New Russia Last Stop,3
+7461708,0,436,Trotro 436 : Official Town → Odorkor,3
+7461711,0,295,Trotro 295 : New Russia Last Stop → Kaneshie Takoradi Station,3
+7461768,0,296,Trotro 296 : Kaneshie Takoradi Station → Russia Last Stop,3
+7461775,0,296,Trotro 296 : Russia Last Stop → Kaneshie Takoradi Station,3
+7461834,0,435,Trotro 435 : Odorkor → Kasoa,3
+7461838,0,435,Trotro 435 : Kasoa → Odorkor,3
+7461911,0,299,Trotro 299 : Korle Bu → Abeka Lapaz,3
+7461922,0,299,Trotro 299 : Abeka Lapaz → Korle Bu,3
+7462285,0,301,Trotro 301 : Korle Bu → Kasoa,3
+7462383,0,301,Trotro 301 : Kasoa → Korle Bu,3
+7462748,0,431,Trotro 431 : Circle Odorna → Korle Bu,3
+7462792,0,305,Trotro 305 : Kaneshie → Dansoman,3
+7462917,0,431,Trotro 431 : Korle Bu → Circle Odorna,3
+7462990,0,305,Trotro 305 : Dansoman → Kaneshie,3
+7463052,0,428,Trotro 428 : Circle Odorna → Tsui Bleoo,3
+7463167,0,99,Trotro 99 : Achimota → Legon,3
+7463339,0,99,Trotro 99 : Legon → Achimota,3
+7463403,0,423,Trotro 423 : Odorna → Nima Mamobi,3
+7463516,0,423,Trotro 423 : Nima Mamobi → Odorna,3
+7463559,0,419,Trotro 419 : Odorna → Agblezah,3
+7463937,0,416,Trotro 416 : Accra New Tema Station → Cantonments,3
+7463965,0,416,Trotro 416 : Cantonments → Accra New Tema Station,3
+7464613,0,66,Trotro 66 : Accra → Nima,3
+7465662,0,66,Trotro 66 : Nima → Accra,3
+7465985,0,71,Trotro 71 : Accra End of the Motorway → American House,3
+7466032,0,71,Trotro 71 : American House → Accra End of the Motorway,3
+7466448,0,415,Trotro 415 : Nima Station → Nyaho,3
+7466632,0,415,Trotro 415 : Nyaho → Nima Station,3
+7466810,0,90,Trotro 90 : Achimota → Darkuman,3
+7466825,0,90,Trotro 90 : Darkuman → Achimota,3
+7466879,0,414,Trotro 414 : Nima Station → Madina,3
+7466923,0,414,Trotro 414 : Madina → Nima Station,3
+7467149,0,410,Trotro 410 : Nima Overhead → Sukura Station,3
+7467238,0,410,Trotro 410 : Sukura Station → Nima Overhead,3
+7467358,0,405,Trotro 405 : Nima Overhead → Lapaz-Nii Boi Junction,3
+7467377,0,405,Trotro 405 : Lapaz-Nii Boi Junction → Nima Overhead,3
+7467662,0,107,Trotro 107 : Achimota → Ofankor,3
+7467671,0,107,Trotro 107 : Ofankor → Achimota,3
+7467775,0,192,Trotro 192 : Circle → Fadama Last stop,3
+7467835,0,192,Trotro 192 : Fadama Last stop → Circle,3
+7467942,0,200,Trotro 200 : Circle → New Melcom,3
+7467945,0,200,Trotro 200 : New Melcom → Circle,3
+7467968,0,202,Trotro 202 : Circle → Novotel,3
+7467970,0,202,Trotro 202 : Novotel → Circle,3
+7468317,0,204,Trotro 204 : Circle → Osu Presby,3
+7468337,0,204,Trotro 204 : Osu Presby → Circle,3
+7471262,0,205,Trotro 205 : Circle → Osu RE,3
+7471278,0,205,Trotro 205 : Osu RE → Circle,3
+7471344,0,206,Trotro 206 : Circle → Osu RE,3
+7471361,0,206,Trotro 206 : Osu RE → Circle,3
+7471386,0,207,Trotro 207 : Circle → Ridge Hospital,3
+7471405,0,207,Trotro 207 : Ridge Hospital → Circle,3
+7471482,0,208,Trotro 208 : Circle → Stadium,3
+7471608,0,208,Trotro 208 : Stadium → Circle,3
+7471704,0,210,Trotro 210 : Circle → Teachers Hall,3
+7471821,0,210,Trotro 210 : Teachers Hall → Circle,3
+7471894,0,404,Trotro 404 : Nima Overhead → Dome Railway Crossing,3
+7471917,0,404,Trotro 404 : Dome Railway Crossing → Nima Overhead,3
+7472024,0,402,Trotro 402 : Nima Overhead → Awoshie Last Stop,3
+7472071,0,402,Trotro 402 : Awoshie Last Stop → Nima Overhead,3
+7472135,0,401,Trotro 401 : Nima Overhead → Israel Lomnava,3
+7472169,0,401,Trotro 401 : Israel Lomnava → Nima Overhead,3
+7472219,0,398,Trotro 398 : Nima Mamobi → Ashiaman,3
+7472286,0,398,Trotro 398 : Ashiaman → Nima Mamobi,3
+7473233,0,65,Trotro 65 : Accra → Darkuman,3
+7473304,0,65,Trotro 65 : Darkuman → Accra,3
+7473376,0,92,Trotro 92 : Achimota → Dome /Ashongman Estates,3
+7473495,0,92,Trotro 92 : Dome /Ashongman Estates → Achimota,3
+7473673,0,100,Trotro 100 : Achimota → Legon Station,3
+7473677,0,212,Trotro 212 : Circle → Accra New Tema Station,3
+7473822,0,100,Trotro 100 : Legon Station → Achimota,3
+7473828,0,188,Trotro 188 : Circle → Asore Danho,3
+7473839,0,212,Trotro 212 : Accra New Tema Station → Circle,3
+7473842,0,188,Trotro 188 : Asore Danho → Circle,3
+7473851,0,219,Trotro 219 : Circle Overhead → Abeka Lapaz,3
+7473852,0,219,Trotro 219 : Abeka Lapaz → Circle Overhead,3
+7474572,0,102,Trotro 102 : Achimota → Madina Station,3
+7474605,0,102,Trotro 102 : Madina Station → Achimota,3
+7474787,0,103,Trotro 103 : Achimota → Mallam Attah,3
+7474823,0,103,Trotro 103 : Mallam Attah → Achimota,3
+7475274,0,112,Trotro 112 : Achimota → Ashaiman Main Station,3
+7475327,0,112,Trotro 112 : Ashaiman Main Station → Achimota,3
+7475602,0,155,Trotro 155 : Akoto Lante → Kaneshie,3
+7475644,0,155,Trotro 155 : Kaneshie → Akoto Lante,3
+7475767,0,157,Trotro 157 : Alajo → Circle,3
+7475834,0,157,Trotro 157 : Circle → Alajo,3
+7476011,0,163,Trotro 163 : Apapa → Accra New Tema Station,3
+7476130,0,163,Trotro 163 : Accra New Tema Station → Apapa,3
+7476413,0,167,Trotro 167 : Atico → Kaneshie,3
+7476521,0,167,Trotro 167 : Kaneshie → Atico,3
+7476928,0,395,Trotro 395 : Nima → Circle,3
+7476945,0,395,Trotro 395 : Circle → Nima,3
+7477001,0,391,Trotro 391 : Accra New Town → Nima Maamobi,3
+7477057,0,391,Trotro 391 : Nima Maamobi → Accra New Town,3
+7477078,0,389,Trotro 389 : Accra New Town → Madina,3
+7477084,0,389,Trotro 389 : Madina → Accra New Town,3
+7477090,0,351,Trotro 351 : Legon → Dome,3
+7477507,0,351,Trotro 351 : Dome → Legon,3
+7477561,0,356,Trotro 356 : Mallam Atta → Achimota,3
+7477758,0,356,Trotro 356 : Achimota → Mallam Atta,3
+7477825,0,114,Trotro 114 : Achimota → Taifa,3
+7477990,0,170,Trotro 170 : Banana Inn → Accra Post Office,3
+7478023,0,170,Trotro 170 : Accra Post Office → Banana Inn,3
+7478121,0,174,Trotro 174 : Bubiashie Ayigbe Town → Circle,3
+7478156,0,114,Trotro 114 : Taifa → Achimota,3
+7478379,0,174,Trotro 174 : Circle → Bubiashie Ayigbe Town,3
+7479340,0,193,Trotro 193 : Circle → Immesco Rice,3
+7479355,0,193,Trotro 193 : Immesco Rice → Circle,3
+7479429,0,196,Trotro 196 : Circle → Kotobabi Down Polo Park,3
+7479571,0,196,Trotro 196 : Kotobabi Down Polo Park → Circle,3
+7479872,0,226,Trotro 226 : Circle → Pigfarm,3
+7479893,0,226,Trotro 226 : Pigfarm → Circle,3
+7480068,0,231,Trotro 231 : Accra CMB → Weija,3
+7480160,0,231,Trotro 231 : Weija → Accra CMB,3
+7480173,0,308,Trotro 308 : Kotobabi Down → Accra CMB,3
+7480239,0,308,Trotro 308 : Accra CMB → Kotobabi Down,3
+7480327,0,309,Trotro 309 : Kotobabi Down → Circle Lido,3
+7480336,0,309,Trotro 309 : Circle Lido → Kotobabi Down,3
+7480355,0,996,Trotro 996 : Nima - Maamobi → Circle,3
+7480395,0,996,Trotro 996 : Circle → Nima - Maamobi,3
+7480400,0,331,Trotro 331 : Abeka Lapaz → Accra,3
+7480536,0,331,Trotro 331 : Accra → Abeka Lapaz,3
+7480574,0,336,Trotro 336 : Abeka Lapaz → Alhaji,3
+7480603,0,336,Trotro 336 : Alhaji → Abeka Lapaz,3
+7480775,0,338,Trotro 338 : Abeka Lapaz → Lomnava,3
+7480897,0,338,Trotro 338 : Lomnava → Abeka Lapaz,3
+7480923,0,348,Trotro 348 : Abeka Lapaz → Tetteh Quarshie,3
+7480992,0,348,Trotro 348 : Tetteh Quarshie → Abeka Lapaz,3
+7481021,0,385,Trotro 385 : Accra New Town → 37,3
+7481044,0,349,Trotro 349 : Abeka Lapaz → Yellow House,3
+7481099,0,385,Trotro 385 : 37 → Accra New Town,3
+7481118,0,349,Trotro 349 : Yellow House → Abeka Lapaz,3
+7481244,0,380,Trotro 380 : Abeka Lapaz → Haatso,3
+7481384,0,380,Trotro 380 : Haatso → Abeka Lapaz,3
+7481499,0,378,Trotro 378 : Abeka Lapaz → Awoshie,3
+7481510,0,378,Trotro 378 : Awoshie → Abeka Lapaz,3
+7481598,0,369,Trotro 369 : Accra New Tema Station → Agbogbloshie,3
+7481930,0,369,Trotro 369 : Agbogbloshie → Accra New Tema Station,3
+7482055,0,344,Trotro 344 : Abeka Lapaz → Santa Maria,3
+7482123,0,344,Trotro 344 : Santa Maria → Abeka Lapaz,3
+7482333,0,343,Trotro 343 : Abeka Lapaz → Race Course,3
+7482394,0,343,Trotro 343 : Race Course → Abeka Lapaz,3
+7482996,0,339,Trotro 339 : Abeka Lapaz → Madina,3
+7483083,0,339,Trotro 339 : Madina → Abeka Lapaz,3
+7484395,0,333,Trotro 333 : Abeka Lapaz → Adenta,3
+7484459,0,333,Trotro 333 : Adenta → Abeka Lapaz,3
+7484622,0,326,Trotro 326 : Kwashieman Junction → Sowutuom,3
+7484676,0,326,Trotro 326 : Sowutuom → Kwashieman Junction,3
+7484705,0,324,Trotro 324 : Kwashieman Junction → Antie Aku,3
+7484796,0,324,Trotro 324 : Antie Aku → Kwashieman Junction,3
+7485090,0,322,Trotro 322 : Kwashieman Junction → Accra CMB,3
+7485198,0,322,Trotro 322 : Accra CMB → Kwashieman Junction,3
+7485266,0,313,Trotro 313 : Kwashieman → A Lang,3
+7485322,0,313,Trotro 313 : A Lang → Kwashieman,3
+7485362,0,314,Trotro 314 : Kwashieman → Achimota,3
+7485396,0,314,Trotro 314 : Achimota → Kwashieman,3
+7485401,0,317,Trotro 317 : Kwashieman → Abeka Lapaz,3
+7485406,0,317,Trotro 317 : Abeka Lapaz → Kwashieman,3
+7485479,0,271,Trotro 271 : Kaneshie → Chorkor,3
+7485569,0,310,Trotro 310 : Kotobabi Down → Abeka Lapaz,3
+7485604,0,271,Trotro 271 : Chorkor → Kaneshie,3
+7485960,0,310,Trotro 310 : Abeka Lapaz → Kotobabi Down,3
+7486056,0,307,Trotro 307 : Kotobabi Down → 37,3
+7486142,0,307,Trotro 307 : 37 → Kotobabi Down,3
+7487993,0,274,Trotro 274 : Kaneshie → Maamobi,3
+7488056,0,274,Trotro 274 : Maamobi → Kaneshie,3
+7488101,0,273,Trotro 273 : Kaneshie → Korlebu,3
+7488142,0,273,Trotro 273 : Korlebu → Kaneshie,3
+7488222,0,272,Trotro 272 : Kaneshie → Good Shepherd,3
+7488258,0,270,Trotro 270 : Kaneshie → Camara,3
+7488287,0,270,Trotro 270 : Camara → Kaneshie,3
+7488437,0,269,Trotro 269 : Kaneshie → Bubuashie,3
+7488446,0,269,Trotro 269 : Bubuashie → Kaneshie,3
+7488505,0,267,Trotro 267 : Kaneshie → Appiah Danquah/ Soko,3
+7488563,0,267,Trotro 267 : Appiah Danquah/ Soko → Kaneshie,3
+7488596,0,266,Trotro 266 : Kaneshie → Afropa,3
+7488646,0,265,Trotro 265 : Kaneshie → Sukura,3
+7488659,0,265,Trotro 265 : Sukura → Kaneshie,3
+7488728,0,243,Trotro 243 : Dansoman → Santa Maria,3
+7488767,0,243,Trotro 243 : Santa Maria → Dansoman,3
+7492875,0,254,Trotro 254 : Dzorwulu → Circle,3
+7492898,0,254,Trotro 254 : Circle → Dzorwulu,3
+7492973,0,255,Trotro 255 : East Legon → Circle,3
+7492987,0,255,Trotro 255 : Circle → East Legon,3
+7493136,0,262,Trotro 262 : Glefe → Accra Bishop,3
+7493196,0,262,Trotro 262 : Accra Bishop → Glefe,3
+7495665,0,176,Trotro 176 : Bubiashie Control (Old Station ) → Circle,3
+7495671,0,176,Trotro 176 : Circle → Bubiashie Control (Old Station ),3
+7495720,0,177,Trotro 177 : Bubiashie-Atico → Circle,3
+7495749,0,177,Trotro 177 : Circle → Bubiashie-Atico,3
+7496940,0,56,Trotro 56 : Abeka Lapaz → Race Course,3
+7496996,0,221,Trotro 221 : Circle Overhead → Madina,3
+7496999,0,240,Trotro 240 : Dansoman → Nyamekye,3
+7497041,0,221,Trotro 221 : Madina → Circle Overhead,3
+7497095,0,222,Trotro 222 : Circle Overhead → Nima mamobi,3
+7497115,0,222,Trotro 222 : Nima mamobi → Circle Overhead,3
+7497295,0,225,Trotro 225 : Accra CMB → Fan-Milk,3
+7497484,0,225,Trotro 225 : Fan-Milk → Accra CMB,3
+7497752,0,235,Trotro 235 : Dansoman → Achimota,3
+7497987,0,235,Trotro 235 : Achimota → Dansoman,3
+7498111,0,238,Trotro 238 : Dansoman → Circle,3
+7498214,0,238,Trotro 238 : Circle → Dansoman,3
+7498362,0,241,Trotro 241 : Circle Overhead → Bawaleshie,3
+7498573,0,241,Trotro 241 : Bawaleshie → Circle Overhead,3
+7498817,0,251,Trotro 251 : Darkuman → Accra Post - Office,3
+7499139,0,251,Trotro 251 : Accra Post - Office → Darkuman,3
+7499245,0,306,Trotro 306 : Korle Bu → Darkuman,3
+7499292,0,306,Trotro 306 : Darkuman → Korle Bu,3
+7499451,0,116,Trotro 116 : Achimota → Tema,3
+7499478,0,116,Trotro 116 : Tema → Achimota,3
+7499756,0,337,Trotro 337 : Abeka Lapaz → Ashaiman,3
+7499799,0,337,Trotro 337 : Ashaiman → Abeka Lapaz,3
+7501558,0,64,Trotro 64 : Abossey-Okai → Kasoa,3
+7501597,0,64,Trotro 64 : Kasoa → Abossey-Okai,3
+7502108,0,373,Trotro 373 : Accra New Tema Station → Dzorwulu,3
+7502371,0,373,Trotro 373 : Dzorwulu → Accra New Tema Station,3
+7502705,0,425,Trotro 425 : Circle Odorna → Nungua,3
+7516584,0,266,Trotro 266 : Afropa → Kaneshie,3
+7516796,0,272,Trotro 272 : Good Shepherd → Kaneshie,3
+7517050,0,9,Trotro 9 : Abeka Lapaz → Adeyman,3
+7517271,0,9,Trotro 9 : Adeyman → Abeka Lapaz,3
+7517381,0,29,Trotro 29 : Abeka Main Market → Kaneshie,3
+7517511,0,29,Trotro 29 : Kaneshie → Abeka Main Market,3
+7517635,0,36,Trotro 36 : Abeka Lapaz → Agbogbloshie,3
+7517718,0,36,Trotro 36 : Agbogbloshie → Abeka Lapaz,3
+7518611,0,38,Trotro 38 : Abeka Lapaz → Amasaman,3
+7518920,0,40,Trotro 40 : Abeka Lapaz → Ashiaman,3
+7518969,0,40,Trotro 40 : Ashiaman → Abeka Lapaz,3
+7519008,0,82,Trotro 82 : Achimota → Adjiringanor,3
+7519055,0,82,Trotro 82 : Adjiringanor → Achimota,3
+7541588,0,85,Trotro 85 : Achimota → Akweteman Zongo,3
+7541688,0,85,Trotro 85 : Akweteman Zongo → Achimota,3
+7541816,0,104,Trotro 104 : Achimota → Mayera/Adusa,3
+7541864,0,104,Trotro 104 : Mayera/Adusa → Achimota,3
+7541922,0,105,Trotro 105 : Achimota → Medie/Kotoku,3
+7541947,0,105,Trotro 105 : Medie/Kotoku → Achimota,3
+7541972,0,117,Trotro 117 : Achimota → Accra New Tema Station,3
+7542012,0,117,Trotro 117 : Accra New Tema Station → Achimota,3
+7542086,0,118,Trotro 118 : Achimota → Teshie-Nungua,3
+7542139,0,118,Trotro 118 : Teshie-Nungua → Achimota,3
+7546679,0,159,Trotro 159 : Alajo Junction → Kotobabi Police Station,3
+7546702,0,159,Trotro 159 : Kotobabi Police Station → Alajo Junction,3
+7546832,0,164,Trotro 164 : Arena → Kaneshie,3
+7546841,0,164,Trotro 164 : Kaneshie → Arena,3
+7547356,0,166,Trotro 166 : Arena → Russia,3
+7547497,0,166,Trotro 166 : Russia → Arena,3
+7547555,0,173,Trotro 173 : Accra Bishop → Cantonment,3
+7547613,0,173,Trotro 173 : Cantonment → Accra Bishop,3
+7547642,0,175,Trotro 175 : Agbogbloshie → Banana Inn/Dansoman,3
+7547673,0,175,Trotro 175 : Banana Inn/Dansoman → Agbogbloshie,3
+7547692,0,178,Trotro 178 : Bubuashie Ayigbe Town → Accra CMB,3
+7547754,0,178,Trotro 178 : Accra CMB → Bubuashie Ayigbe Town,3
+7548047,0,185,Trotro 185 : Chorkor → Agbogbloshie,3
+7548092,0,185,Trotro 185 : Agbogbloshie → Chorkor,3
+7548748,0,224,Trotro 224 : Accra CMB → Alajo,3
+7548760,0,224,Trotro 224 : Alajo → Accra CMB,3
+7548867,0,227,Trotro 227 : Accra CMB → Manhean,3
+7548979,0,227,Trotro 227 : Manhean → Accra CMB,3
+7549754,0,228,Trotro 228 : Accra CMB → Odorkor,3
+7549779,0,228,Trotro 228 : Odorkor → Accra CMB,3
+7551863,0,172,Trotro 172 : Banana Inn → Accra New Tema Station,3
+7551890,0,172,Trotro 172 : Accra New Tema Station → Banana Inn,3
+7551926,0,203,Trotro 203 : Circle → Orgle Road,3
+7552151,0,236,Trotro 236 : Arena → Dansoman,3
+7552443,0,237,Trotro 237 : Dansoman → Awoshie,3
+7552492,0,237,Trotro 237 : Awoshie → Dansoman,3
+7552552,0,247,Trotro 247 : Darkuman → Agbogbloshie,3
+7552566,0,247,Trotro 247 : Agbogbloshie → Darkuman,3
+7553835,0,249,Trotro 249 : Darkuman → Accra CMB,3
+7553865,0,249,Trotro 249 : Accra CMB → Darkuman,3
+7553913,0,260,Trotro 260 : Ebenezer → Accra Bishop,3
+7554095,0,260,Trotro 260 : Accra Bishop → Ebenezer,3
+7554291,0,256,Trotro 256 : Adjiringanor → Accra New Tema Station,3
+7554533,0,256,Trotro 256 : Accra New Tema Station → Adjiringanor,3
+7554945,0,30,Trotro 30 : Abeka Main Market → Mallam Atta,3
+7554979,0,30,Trotro 30 : Mallam Atta → Abeka Main Market,3
+7558873,0,51,Trotro 51 : Abeka Lapaz → Manhia Afuaman,3
+7558983,0,51,Trotro 51 : Manhia Afuaman → Abeka Lapaz,3
+7559191,0,61,Trotro 61 : Abelemkpe → Accra,3
+7559224,0,61,Trotro 61 : Accra → Abelemkpe,3
+7559285,0,298,Trotro 298 : Kokomlemle → Dzorwulu,3
+7559352,0,298,Trotro 298 : Dzorwulu → Kokomlemle,3
+7559376,0,302,Trotro 302 : Korle Bu → Kwashieman/Santa Maria,3
+7559519,0,302,Trotro 302 : Kwashieman/Santa Maria → Korle Bu,3
+7560155,0,347,Trotro 347 : Abeka Lapaz → Tema,3
+7563404,0,999,Trotro 999 : Abeka Lapaz → Sowutuom,3
+7563449,0,999,Trotro 999 : Sowutuom → Abeka Lapaz,3
+7563473,0,995,Trotro 995 : Accra New Tema Station → Zamrama Line,3
+7563496,0,995,Trotro 995 : Zamrama Line → Accra New Tema Station,3
+7563654,0,994,Trotro 994 : Accra Rawlings Park → Chemuna,3
+7563692,0,994,Trotro 994 : Chemuna → Accra Rawlings Park,3
+7563747,0,542,Trotro 542 : Zongo Junction → Chorkor,3
+7563757,0,542,Trotro 542 : Chorkor → Zongo Junction,3
+7564674,0,347,Trotro 347 : Tema → Abeka Lapaz,3
+7570146,0,540,Trotro 540 : Zongo Junction → Agege,3
+7570157,0,540,Trotro 540 : Agege → Zongo Junction,3
+7570218,0,539,Trotro 539 : Zambrama Line → Odorna-Circle,3
+7570241,0,539,Trotro 539 : Odorna-Circle → Zambrama Line,3
+7570881,0,538,Trotro 538 : Zambrama Line → Kaneshie,3
+7571009,0,538,Trotro 538 : Kaneshie → Zambrama Line,3
+7571129,0,536,Trotro 536 : Zambrama Line → Arena,3
+7571153,0,536,Trotro 536 : Arena → Zambrama Line,3
+7571202,0,521,Trotro 521 : Accra New Tema Station → Chemuna,3
+7571211,0,521,Trotro 521 : Chemuna → Accra New Tema Station,3
+7571239,0,520,Trotro 520 : Accra New Tema Station → Camara,3
+7571256,0,520,Trotro 520 : Camara → Accra New Tema Station,3
+7571303,0,480,Trotro 480 : Shiabu → Agbogbloshie,3
+7571322,0,480,Trotro 480 : Agbogbloshie → Shiabu,3
+7571363,0,474,Trotro 474 : Accra Salaga → Appiah Danquah,3
+7571392,0,474,Trotro 474 : Appiah Danquah → Accra Salaga,3
+7571466,0,473,Trotro 473 : Accra Salaga → Chemuna,3
+7571472,0,473,Trotro 473 : Chemuna → Accra Salaga,3
+7573166,0,469,Trotro 469 : Accra Rawlings Park → Nungua Authority,3
+7573398,0,468,Trotro 468 : Accra Rawlings Park → La Olympia,3
+7573602,0,463,Trotro 463 : Accra Post Office → Mamprobi,3
+7573618,0,463,Trotro 463 : Mamprobi → Accra Post Office,3
+7573640,0,441,Trotro 441 : Okponglo → American House,3
+7573652,0,441,Trotro 441 : American House → Okponglo,3
+7574244,0,458,Trotro 458 : Pigfarm → Accra CMB,3
+7574340,0,458,Trotro 458 : Accra CMB → Pigfarm,3
+7574368,0,445,Trotro 445 : Opetekwei → Circle,3
+7574384,0,445,Trotro 445 : Circle → Opetekwei,3
+7575476,0,442,Trotro 442 : Okponglo → Bawaleshie,3
+7575482,0,442,Trotro 442 : Bawaleshie → Okponglo,3
+7579862,0,443,Trotro 443 : Okponglo → Christian Centre,3
+7579927,0,443,Trotro 443 : Christian Centre → Okponglo,3
+7580677,0,303,Trotro 303 : Korle Bu → Mallam,3
+7580704,0,303,Trotro 303 : Mallam → Korle Bu,3
+7582417,0,318,Trotro 318 : Madina → Kwashieman,3
+7582466,0,318,Trotro 318 : Kwashieman → Madina,3
+7582514,0,325,Trotro 325 : Kwashieman Junction → Santa Maria,3
+7582562,0,325,Trotro 325 : Santa Maria → Kwashieman Junction,3
+7582694,0,328,Trotro 328 : Kwashieman Junction → Rawlings Park,3
+7582819,0,328,Trotro 328 : Rawlings Park → Kwashieman Junction,3
+7582921,0,357,Trotro 357 : Mallam Attah → Kotobabi Down/Polo park,3
+7582938,0,357,Trotro 357 : Kotobabi Down/Polo park → Mallam Attah,3
+7582985,0,363,Trotro 363 : Mataheko → Kaneshie,3
+7582989,0,363,Trotro 363 : Kaneshie → Mataheko,3
+7584059,0,367,Trotro 367 : New Fadama → Accra CMB,3
+7584105,0,367,Trotro 367 : Accra CMB → New Fadama,3
+7584311,0,368,Trotro 368 : Accra New Tema Station → Abelemkpe,3
+7584339,0,368,Trotro 368 : Abelemkpe → Accra New Tema Station,3
+7584453,0,376,Trotro 376 : Accra New Tema Station → Pigfarm,3
+7584510,0,376,Trotro 376 : Pigfarm → Accra New Tema Station,3
+7584548,0,377,Trotro 377 : Abeka Lapaz → Ashongman,3
+7584596,0,377,Trotro 377 : Ashongman → Abeka Lapaz,3
+7584876,0,383,Trotro 383 : Accra New Tema Station → Ashaiman Main Station,3
+7584952,0,383,Trotro 383 : Ashaiman Main Station → Accra New Tema Station,3
+7585106,0,544,Trotro 544 : Zongo Junction → Korle Bu,3
+7585174,0,544,Trotro 544 : Korle Bu → Zongo Junction,3
+7586567,0,444,Trotro 444 : Agbogbloshie → Opetekwei,3
+7586571,0,444,Trotro 444 : Opetekwei → Agbogbloshie,3
+7586649,0,434,Trotro 434 : Odorkor → Anyah,3
+7586875,0,434,Trotro 434 : Anyah → Odorkor,3
+7587870,0,386,Trotro 386 : New Town → Adenta,3
+7587968,0,386,Trotro 386 : Adenta → New Town,3
+7588311,0,388,Trotro 388 : Accra New Town → Kasoa,3
+7588606,0,388,Trotro 388 : Kasoa → Accra New Town,3
+7588716,0,393,Trotro 393 : Nima → Accra,3
+7588792,0,393,Trotro 393 : Accra → Nima,3
+7589111,0,394,Trotro 394 : Nima → Ashaiman,3
+7589307,0,394,Trotro 394 : Ashaiman → Nima,3
+7589438,0,399,Trotro 399 : Nima Overhead Maamobi → Achimota Terminal,3
+7589522,0,399,Trotro 399 : Achimota Terminal → Nima Overhead Maamobi,3
+7593019,0,400,Trotro 400 : Nima Overhead Maamobi → Alajo Station,3
+7593076,0,400,Trotro 400 : Alajo Station → Nima Overhead Maamobi,3
+7593390,0,408,Trotro 408 : Nima Overhead → Pokuase Amasaman,3
+7594733,0,408,Trotro 408 : Pokuase Amasaman → Nima Overhead,3
+7594789,0,412,Trotro 412 : Nima Station → Agbogbloshie,3
+7594860,0,412,Trotro 412 : Agbogbloshie → Nima Station,3
+7594887,0,417,Trotro 417 : Nima Station → Accra New Tema Station,3
+7594940,0,417,Trotro 417 : Accra New Tema Station → Nima Station,3
+7597657,0,437,Trotro 437 : Odorkor → South Odorkor,3
+7597691,0,437,Trotro 437 : South Odorkor → Odorkor,3
+7597854,0,438,Trotro 438 : Odorkor → Accra New Tema Station,3
+7597893,0,438,Trotro 438 : Accra New Tema Station → Odorkor,3
+7598052,0,467,Trotro 467 : Accra Rawlings Park → Sakaman Blue Lagoon,3
+7598170,0,467,Trotro 467 : Sakaman Blue Lagoon → Accra Rawlings Park,3
+7598198,0,485,Trotro 485 : Soko → Accra Post Office,3
+7598207,0,485,Trotro 485 : Accra Post Office → Soko,3
+7599432,0,490,Trotro 490 : Nima-Mamobi → Sukura,3
+7599545,0,490,Trotro 490 : Sukura → Nima-Mamobi,3
+7604910,0,216,Trotro 216 : Circle Lido → Abeka Lapaz,3
+7604961,0,216,Trotro 216 : Abeka Lapaz → Circle Lido,3
+7605019,0,223,Trotro 223 : Accra CMB → Ablekuma,3
+7605150,0,223,Trotro 223 : Ablekuma → Accra CMB,3
+7605625,0,424,Trotro 424 : Odorna → Nungua,3
+7605686,0,449,Trotro 449 : Orgle Street → Kaneshie,3
+7605745,0,449,Trotro 449 : Kaneshie → Orgle Street,3
+9404547,0,525,Trotro 525 : Adenta Station → Accra New Tema Station,3
+9636138,0,24,Trotro 24 : Abeka Lapaz → Nsawam,3
+9636519,0,24,Trotro 24 : Nsawam → Abeka Lapaz,3
+9638821,0,119,Trotro 119 : Madina → St. Johns,3
+9642060,0,119,Trotro 119 : St. Johns → Madina,3
+9650278,0,120,Trotro 120 : Madina → Sowutuom,3
+9651062,0,120,Trotro 120 : Sowutuom → Madina,3

@@ -60,7 +60,7 @@ module.exports = function (route_elements, ways, stops) {
             })
         } else {
             const currentStop = stops[element.ref]
-            if (currentStop && currentStop.tags && currentStop.tags["public_transport"] == "stop_position")
+            if (currentStop && currentStop.tags && currentStop.tags["public_transport"] == "platform")
                 routeStops.push(currentStop)
         }
     }

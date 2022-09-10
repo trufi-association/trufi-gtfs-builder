@@ -21,6 +21,7 @@ const defatulgtfsOptions = {
     defaultCalendar: () => "Mo-Su 06:00-23:00",
     frequencyHeadway: () => 300,
     vehicleSpeed: () => 50,
+    fakeStops: () => false,
     skipStopsWithinDistance: 100,
     stopNameBuilder: (stops) => {
         if (!stops) {

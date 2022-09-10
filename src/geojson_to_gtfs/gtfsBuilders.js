@@ -188,38 +188,58 @@ function frequenciesBuilder(features, frequencyHeadwaySecs) {
     return frequencies
 }
 
-function stopsBuilder(features, inputStops, maxStopsDistance, stopNameBuilder) {
+function stopsBuilder(features, inputStops, maxStopsDistance, stopNameBuilder, fakeStops) {
     const stops = []
+    const checkList = {}
     for (let feature of features) {
-        feature = feature[0]
-        const { nodes, coordinates } = feature.geometry
-        const filteredStops = { nodes: [], coordinates: [] }
-        let previousCoords
-        let distance = 0
-        for (let index = 0; index < nodes.length; index++) {
-            const stopId = nodes[index]
-            const coords = coordinates[index]
-            if (previousCoords) {
-                distance = distance + distanceBetween(previousCoords, coords, { units: 'meters' });
-            }
-            if (distance > maxStopsDistance || index == nodes.length - 1 || index == 0) {
-                let stop = stops.find(value => value.stop_id === stopId);
-                if (!stop) {
-                    const stopName = stopNameBuilder(inputStops[stopId])
+        const routeFeature = feature[0]
+        if (fakeStops(routeFeature)) {
+            const filteredStops = { nodes: [], coordinates: [] }
+            for (let i = 1; i < feature.length; i++) {
+                const { geometry, properties } = feature[i]
+                if (!(checkList[properties.id])) {
+                    checkList[properties.id] = true
                     stops.push({
-                        stop_id: stopId,
-                        stop_name: stopName,
-                        stop_lat: coords[1],
-                        stop_lon: coords[0],
+                        stop_id: properties.id,
+                        stop_name: properties.name || "unnamed",
+                        stop_lat: geometry.coordinates[1],
+                        stop_lon: geometry.coordinates[0],
                     })
                 }
-                filteredStops.nodes.push(stopId)
-                filteredStops.coordinates.push(coords)
-                distance = 0
+                filteredStops.nodes.push(properties.id)
+                filteredStops.coordinates.push(geometry.coordinates)
             }
-            previousCoords = coords
+            routeFeature.gtfs.filteredStops = filteredStops
+        } else {
+            const { nodes, coordinates } = routeFeature.geometry
+            const filteredStops = { nodes: [], coordinates: [] }
+            let previousCoords
+            let distance = 0
+            for (let index = 0; index < nodes.length; index++) {
+                const stopId = nodes[index]
+                const coords = coordinates[index]
+                if (previousCoords) {
+                    distance = distance + distanceBetween(previousCoords, coords, { units: 'meters' });
+                }
+                if (distance > maxStopsDistance || index == nodes.length - 1 || index == 0) {
+                    if (!(checkList[properties.id])) {
+                        checkList[properties.id] = true
+                        const stopName = stopNameBuilder(inputStops[stopId])
+                        stops.push({
+                            stop_id: stopId,
+                            stop_name: stopName || "unnamed",
+                            stop_lat: coords[1],
+                            stop_lon: coords[0],
+                        })
+                    }
+                    filteredStops.nodes.push(stopId)
+                    filteredStops.coordinates.push(coords)
+                    distance = 0
+                }
+                previousCoords = coords
+            }
+            routeFeature.gtfs.filteredStops = filteredStops
         }
-        feature.gtfs.filteredStops = filteredStops
     }
     return stops
 }
