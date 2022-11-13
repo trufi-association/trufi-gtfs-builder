@@ -8,6 +8,7 @@ route_id,agency_id,route_short_name,route_long_name,route_type
 7415862,0,11,Trotro 11 : Circle Accra → Abeka Lapaz,3
 7416050,0,15,Trotro 15 : Abeka Lapaz → Dome Kwabenya,3
 7416141,0,15,Trotro 15 : Dome Kwabenya → Abeka Lapaz,3
+7416294,0,6,Trotro 6 : Abeka Lapaz → Sakumono Estate,3
 7418029,0,6,Trotro 6 : Sakumono Estate → Abeka Lapaz,3
 7418430,0,209,Trotro 209 : Circle → Swanlake Last Stop,3
 7418496,0,209,Trotro 209 : Swanlake Last Stop → Circle,3
@@ -23,6 +24,7 @@ route_id,agency_id,route_short_name,route_long_name,route_type
 7421637,0,46,Trotro 46 : Kaneshie → Abeka Lapaz,3
 7422764,0,281,Trotro 281 : Kaneshie → Russia,3
 7422797,0,281,Trotro 281 : Russia → Kaneshie,3
+7423029,0,275,Trotro 275 : Kaneshie → Madina-Adenta,3
 7423269,0,275,Trotro 275 : Madina-Adenta → Kaneshie,3
 7423503,0,276,Trotro 276 : Kaneshie → Mamponse,3
 7423570,0,276,Trotro 276 : Mamponse → Kaneshie,3
@@ -58,6 +60,8 @@ route_id,agency_id,route_short_name,route_long_name,route_type
 7439745,0,19,Trotro 19 : Kotokuo → Abeka Lapaz,3
 7440716,0,16,Trotro 16 : Abeka Lapaz → Sapeiman,3
 7440783,0,16,Trotro 16 : Sapeiman → Abeka Lapaz,3
+7441225,0,3,Trotro 3 : 37 Lorry Park → Tse Addo,3
+7441865,0,3,Trotro 3 : Tse Addo → 37 Lorry Park,3
 7441963,0,21,Trotro 21 : Abeka Lapaz → Dome,3
 7441989,0,21,Trotro 21 : Dome → Abeka Lapaz,3
 7442032,0,23,Trotro 23 : Abeka Lapaz → Teshie Nungua,3
@@ -66,6 +70,8 @@ route_id,agency_id,route_short_name,route_long_name,route_type
 7442727,0,26,Trotro 26 : Accra U.T.C → Abeka Main Market,3
 7443792,0,48,Trotro 48 : Abeka Lapaz → Korle Bu,3
 7443807,0,48,Trotro 48 : Korle Bu → Abeka Lapaz,3
+7443857,0,50,Trotro 50 : Abeka Lapaz → Mallam Gbawe,3
+7443865,0,50,Trotro 50 : Mallam Gbawe → Abeka Lapaz,3
 7444960,0,28,Trotro 28 : Abeka Main Market → Circle Indust. Area,3
 7445107,0,28,Trotro 28 : Circle Industrial Area → Abeka Main Market,3
 7445185,0,35,Trotro 35 : Abeka Lapaz → Agape,3
@@ -78,6 +84,7 @@ route_id,agency_id,route_short_name,route_long_name,route_type
 7452530,0,70,Trotro 70 : Adjringanor/Otanor → Accra End of the Motorway,3
 7452793,0,214,Trotro 214 : WAEC → Circle,3
 7452834,0,214,Trotro 214 : Circle → WAEC,3
+7452960,0,81,Trotro 81 : Achimota → Adenta Station,3
 7453016,0,81,Trotro 81 : Adenta Station → Achimota,3
 7453599,0,88,Trotro 88 : Achimota → Asofan,3
 7453708,0,88,Trotro 88 : Asofan → Achimota,3
@@ -85,6 +92,7 @@ route_id,agency_id,route_short_name,route_long_name,route_type
 7454866,0,93,Trotro 93 : Dome Pillar 2 → Achimota,3
 7454990,0,990,Trotro 990 : Circle Odorna → SSNIT Flats,3
 7455013,0,98,Trotro 98 : Achimota → Abeka Lapaz,3
+7455309,0,990,Trotro 990 : SSNIT Flats → Circle Odorna,3
 7455393,0,98,Trotro 98 : Abeka Lapaz → Achimota,3
 7455566,0,535,Trotro 535 : Zambrama Line → Agbogbloshie 2,3
 7456342,0,535,Trotro 535 : Agbogbloshie 2 → Zambrama Line,3
@@ -97,6 +105,7 @@ route_id,agency_id,route_short_name,route_long_name,route_type
 7457497,0,43,Trotro 43 : Abeka Lapaz → Bubiashie,3
 7457633,0,523,Trotro 523 : Accra New Tema Station → Trade Fair (La),3
 7457668,0,43,Trotro 43 : Bubiashie → Abeka Lapaz,3
+7457804,0,523,Trotro 523 : Trade Fair (La) → Accra New Tema Station,3
 7457867,0,522,Trotro 522 : Accra New Tema Station → Sukura,3
 7458019,0,522,Trotro 522 : Sukura → Accra New Tema Station,3
 7458035,0,52,Trotro 52 : Abeka Lapaz → Mayera,3
@@ -155,10 +164,12 @@ route_id,agency_id,route_short_name,route_long_name,route_type
 7462990,0,305,Trotro 305 : Dansoman → Kaneshie,3
 7463052,0,428,Trotro 428 : Circle Odorna → Tsui Bleoo,3
 7463167,0,99,Trotro 99 : Achimota → Legon,3
+7463255,0,428,Trotro 428 : Tsui Bleoo → Circle Odorna,3
 7463339,0,99,Trotro 99 : Legon → Achimota,3
 7463403,0,423,Trotro 423 : Odorna → Nima Mamobi,3
 7463516,0,423,Trotro 423 : Nima Mamobi → Odorna,3
 7463559,0,419,Trotro 419 : Odorna → Agblezah,3
+7463689,0,419,Trotro 419 : Agblezah → Odorna,3
 7463937,0,416,Trotro 416 : Accra New Tema Station → Cantonments,3
 7463965,0,416,Trotro 416 : Cantonments → Accra New Tema Station,3
 7464613,0,66,Trotro 66 : Accra → Nima,3
@@ -281,6 +292,8 @@ route_id,agency_id,route_short_name,route_long_name,route_type
 7482123,0,344,Trotro 344 : Santa Maria → Abeka Lapaz,3
 7482333,0,343,Trotro 343 : Abeka Lapaz → Race Course,3
 7482394,0,343,Trotro 343 : Race Course → Abeka Lapaz,3
+7482578,0,342,Trotro 342 : Abeka Lapaz → Omanjor,3
+7482702,0,342,Trotro 342 : Omanjor → Abeka Lapaz,3
 7482996,0,339,Trotro 339 : Abeka Lapaz → Madina,3
 7483083,0,339,Trotro 339 : Madina → Abeka Lapaz,3
 7484395,0,333,Trotro 333 : Abeka Lapaz → Adenta,3
@@ -347,6 +360,7 @@ route_id,agency_id,route_short_name,route_long_name,route_type
 7499139,0,251,Trotro 251 : Accra Post - Office → Darkuman,3
 7499245,0,306,Trotro 306 : Korle Bu → Darkuman,3
 7499292,0,306,Trotro 306 : Darkuman → Korle Bu,3
+7499295,0,240,Trotro 240 : Nyamekye → Dansoman,3
 7499451,0,116,Trotro 116 : Achimota → Tema,3
 7499478,0,116,Trotro 116 : Tema → Achimota,3
 7499756,0,337,Trotro 337 : Abeka Lapaz → Ashaiman,3
@@ -356,6 +370,7 @@ route_id,agency_id,route_short_name,route_long_name,route_type
 7502108,0,373,Trotro 373 : Accra New Tema Station → Dzorwulu,3
 7502371,0,373,Trotro 373 : Dzorwulu → Accra New Tema Station,3
 7502705,0,425,Trotro 425 : Circle Odorna → Nungua,3
+7502901,0,425,Trotro 425 : Nungua → Circle Odorna,3
 7516584,0,266,Trotro 266 : Afropa → Kaneshie,3
 7516796,0,272,Trotro 272 : Good Shepherd → Kaneshie,3
 7517050,0,9,Trotro 9 : Abeka Lapaz → Adeyman,3
@@ -365,6 +380,7 @@ route_id,agency_id,route_short_name,route_long_name,route_type
 7517635,0,36,Trotro 36 : Abeka Lapaz → Agbogbloshie,3
 7517718,0,36,Trotro 36 : Agbogbloshie → Abeka Lapaz,3
 7518611,0,38,Trotro 38 : Abeka Lapaz → Amasaman,3
+7518804,0,38,Trotro 38 : Amasaman → Abeka Lapaz,3
 7518920,0,40,Trotro 40 : Abeka Lapaz → Ashiaman,3
 7518969,0,40,Trotro 40 : Ashiaman → Abeka Lapaz,3
 7519008,0,82,Trotro 82 : Achimota → Adjiringanor,3
@@ -399,9 +415,12 @@ route_id,agency_id,route_short_name,route_long_name,route_type
 7548979,0,227,Trotro 227 : Manhean → Accra CMB,3
 7549754,0,228,Trotro 228 : Accra CMB → Odorkor,3
 7549779,0,228,Trotro 228 : Odorkor → Accra CMB,3
+7549814,0,230,Trotro 230 : Accra CMB → Omanjor,3
+7549829,0,230,Trotro 230 : Omanjor → Accra CMB,3
 7551863,0,172,Trotro 172 : Banana Inn → Accra New Tema Station,3
 7551890,0,172,Trotro 172 : Accra New Tema Station → Banana Inn,3
 7551926,0,203,Trotro 203 : Circle → Orgle Road,3
+7552018,0,236,Trotro 236 : Dansoman → Arena,3
 7552151,0,236,Trotro 236 : Arena → Dansoman,3
 7552443,0,237,Trotro 237 : Dansoman → Awoshie,3
 7552492,0,237,Trotro 237 : Awoshie → Dansoman,3
@@ -452,7 +471,9 @@ route_id,agency_id,route_short_name,route_long_name,route_type
 7571466,0,473,Trotro 473 : Accra Salaga → Chemuna,3
 7571472,0,473,Trotro 473 : Chemuna → Accra Salaga,3
 7573166,0,469,Trotro 469 : Accra Rawlings Park → Nungua Authority,3
+7573254,0,469,Trotro 469 : Nungua Authority → Accra Rawlings Park,3
 7573398,0,468,Trotro 468 : Accra Rawlings Park → La Olympia,3
+7573423,0,468,Trotro 468 : La Olympia → Accra Rawlings Park,3
 7573602,0,463,Trotro 463 : Accra Post Office → Mamprobi,3
 7573618,0,463,Trotro 463 : Mamprobi → Accra Post Office,3
 7573640,0,441,Trotro 441 : Okponglo → American House,3
@@ -489,6 +510,8 @@ route_id,agency_id,route_short_name,route_long_name,route_type
 7584952,0,383,Trotro 383 : Ashaiman Main Station → Accra New Tema Station,3
 7585106,0,544,Trotro 544 : Zongo Junction → Korle Bu,3
 7585174,0,544,Trotro 544 : Korle Bu → Zongo Junction,3
+7585780,0,406,Trotro 406 : Nima Overhead → Mallam,3
+7585935,0,406,Trotro 406 : Mallam → Nima Overhead,3
 7586567,0,444,Trotro 444 : Agbogbloshie → Opetekwei,3
 7586571,0,444,Trotro 444 : Opetekwei → Agbogbloshie,3
 7586649,0,434,Trotro 434 : Odorkor → Anyah,3
@@ -526,8 +549,10 @@ route_id,agency_id,route_short_name,route_long_name,route_type
 7605019,0,223,Trotro 223 : Accra CMB → Ablekuma,3
 7605150,0,223,Trotro 223 : Ablekuma → Accra CMB,3
 7605625,0,424,Trotro 424 : Odorna → Nungua,3
+7605660,0,424,Trotro 424 : Nungua → Odorna,3
 7605686,0,449,Trotro 449 : Orgle Street → Kaneshie,3
 7605745,0,449,Trotro 449 : Kaneshie → Orgle Street,3
+9404546,0,525,Trotro 525 : Accra New Tema Station → Adenta Station,3
 9404547,0,525,Trotro 525 : Adenta Station → Accra New Tema Station,3
 9636138,0,24,Trotro 24 : Abeka Lapaz → Nsawam,3
 9636519,0,24,Trotro 24 : Nsawam → Abeka Lapaz,3
@@ -535,3 +560,5 @@ route_id,agency_id,route_short_name,route_long_name,route_type
 9642060,0,119,Trotro 119 : St. Johns → Madina,3
 9650278,0,120,Trotro 120 : Madina → Sowutuom,3
 9651062,0,120,Trotro 120 : Sowutuom → Madina,3
+9652081,0,526,Trotro 526 : Accra New Tema Station → Mateytse,3
+9652571,0,526,Trotro 526 : Mateytse → Accra New Tema Station,3

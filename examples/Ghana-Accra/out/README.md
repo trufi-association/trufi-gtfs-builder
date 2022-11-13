@@ -1,19 +1,19 @@
 ### Count
-**Total**: 567  **Correct**: 536  **With error**: 31
+**Total**: 567  **Correct**: 563  **With error**: 4
 
 
 | Id | Name | Ref | From | To | State |
 | -- | ---- | --- | ---- | -- | ----- |
-[14019708](https://www.openstreetmap.org/relation/14019708) | Trotro: Pokuase - Kwabenya - Madina | undefined | Pokuase Junction | Madina | [route without ref](https://overpass-turbo.eu/?Q=//route%20without%20ref%0Arel(14019708);out%20geom;&R)
-[14435104](https://www.openstreetmap.org/relation/14435104) | Nsawan - Accra | undefined | Nsawan | Accra | [route without ref](https://overpass-turbo.eu/?Q=//route%20without%20ref%0Arel(14435104);out%20geom;&R)
-[14435107](https://www.openstreetmap.org/relation/14435107) | Accra - Nsawan | undefined | Accra | Nsawan | [route without ref](https://overpass-turbo.eu/?Q=//route%20without%20ref%0Arel(14435107);out%20geom;&R)
+[14019708](https://www.openstreetmap.org/relation/14019708) | Trotro: Pokuase - Kwabenya - Madina | undefined | Pokuase Junction | Madina | [route skipped](https://overpass-turbo.eu/?Q=//route%20skipped%0Arel(14019708);out%20geom;&R)
+[14435104](https://www.openstreetmap.org/relation/14435104) | Nsawan - Accra | undefined | Nsawan | Accra | [route skipped](https://overpass-turbo.eu/?Q=//route%20skipped%0Arel(14435104);out%20geom;&R)
+[14435107](https://www.openstreetmap.org/relation/14435107) | Accra - Nsawan | undefined | Accra | Nsawan | [route skipped](https://overpass-turbo.eu/?Q=//route%20skipped%0Arel(14435107);out%20geom;&R)
 [7420887](https://www.openstreetmap.org/relation/7420887) | Trotro 2 : 37 Lorry Park → Osu (37 Station) | 2 | 37 Lorry Park | Osu (37 Station) | ✅
 [7421011](https://www.openstreetmap.org/relation/7421011) | Trotro 2 : Osu (37 Station) → 37 Lorry Park | 2 | Osu (37 Station) | 37 Lorry Park | ✅
-[7441225](https://www.openstreetmap.org/relation/7441225) | Trotro 3 : 37 Lorry Park → Tse Addo | 3 | 37 Lorry Park | Tse Addo | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7441225);out%20geom;%0Away(448340014);out%20geom;%0Away(382061791);out%20geom;&R)
-[7441865](https://www.openstreetmap.org/relation/7441865) | Trotro 3 : Tse Addo → 37 Lorry Park | 3 | Tse Addo | 37 Lorry Park | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7441865);out%20geom;%0Away(518607280);out%20geom;%0Away(448340014);out%20geom;&R)
+[7441225](https://www.openstreetmap.org/relation/7441225) | Trotro 3 : 37 Lorry Park → Tse Addo | 3 | 37 Lorry Park | Tse Addo | ✅
+[7441865](https://www.openstreetmap.org/relation/7441865) | Trotro 3 : Tse Addo → 37 Lorry Park | 3 | Tse Addo | 37 Lorry Park | ✅
 [7435456](https://www.openstreetmap.org/relation/7435456) | Trotro 4 : Abeka Lapaz → Ashaiman Main Station | 4 | Abeka Lapaz | Ashaiman Main Station | ✅
 [7435650](https://www.openstreetmap.org/relation/7435650) | Trotro 4 : Ashaiman Main Station → Abeka Lapaz | 4 | Ashaiman Main Station | Abeka Lapaz | ✅
-[7416294](https://www.openstreetmap.org/relation/7416294) | Trotro 6 : Abeka Lapaz → Sakumono Estate | 6 | Abeka Lapaz | Sakumono Estate | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7416294);out%20geom;%0Away(527131322);out%20geom;%0Away(448343623);out%20geom;&R)
+[7416294](https://www.openstreetmap.org/relation/7416294) | Trotro 6 : Abeka Lapaz → Sakumono Estate | 6 | Abeka Lapaz | Sakumono Estate | ✅
 [7418029](https://www.openstreetmap.org/relation/7418029) | Trotro 6 : Sakumono Estate → Abeka Lapaz | 6 | Sakumono Estate | Abeka Lapaz | ✅
 [7435911](https://www.openstreetmap.org/relation/7435911) | Trotro 7 : Abeka Lapaz → Taifa | 7 | Abeka Lapaz | Taifa | ✅
 [7436014](https://www.openstreetmap.org/relation/7436014) | Trotro 7 : Taifa → Abeka Lapaz | 7 | Taifa | Abeka Lapaz | ✅
@@ -56,7 +56,7 @@
 [7517635](https://www.openstreetmap.org/relation/7517635) | Trotro 36 : Abeka Lapaz → Agbogbloshie | 36 | Abeka Lapaz | Agbogbloshie | ✅
 [7517718](https://www.openstreetmap.org/relation/7517718) | Trotro 36 : Agbogbloshie → Abeka Lapaz | 36 | Agbogbloshie | Abeka Lapaz | ✅
 [7518611](https://www.openstreetmap.org/relation/7518611) | Trotro 38 : Abeka Lapaz → Amasaman | 38 | Abeka Lapaz | Amasaman | ✅
-[7518804](https://www.openstreetmap.org/relation/7518804) | Trotro 38 : Amasaman → Abeka Lapaz | 38 | Amasaman | Abeka Lapaz | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7518804);out%20geom;%0Away(693381558);out%20geom;%0Away(601596010);out%20geom;&R)
+[7518804](https://www.openstreetmap.org/relation/7518804) | Trotro 38 : Amasaman → Abeka Lapaz | 38 | Amasaman | Abeka Lapaz | ✅
 [7456407](https://www.openstreetmap.org/relation/7456407) | Trotro 39 : Abeka Lapaz → Antie-Eku Pallas Town | 39 | Abeka Lapaz | Antie-Eku Pallas Town | ✅
 [7456423](https://www.openstreetmap.org/relation/7456423) | Trotro 39 : Antie-Eku Pallas Town → Abeka Lapaz | 39 | Antie-Eku Pallas Town | Abeka Lapaz | ✅
 [7518920](https://www.openstreetmap.org/relation/7518920) | Trotro 40 : Abeka Lapaz → Ashiaman | 40 | Abeka Lapaz | Ashiaman | ✅
@@ -69,8 +69,8 @@
 [7421637](https://www.openstreetmap.org/relation/7421637) | Trotro 46 : Kaneshie → Abeka Lapaz | 46 | Kaneshie | Abeka Lapaz | ✅
 [7443792](https://www.openstreetmap.org/relation/7443792) | Trotro 48 : Abeka Lapaz → Korle Bu | 48 | Abeka Lapaz | Korle Bu | ✅
 [7443807](https://www.openstreetmap.org/relation/7443807) | Trotro 48 : Korle Bu → Abeka Lapaz | 48 | Korle Bu | Abeka Lapaz | ✅
-[7443857](https://www.openstreetmap.org/relation/7443857) | Trotro 50 : Abeka Lapaz → Mallam Gbawe | 50 | Abeka Lapaz | Mallam Gbawe | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7443857);out%20geom;%0Away(215588482);out%20geom;%0Away(215548930);out%20geom;&R)
-[7443865](https://www.openstreetmap.org/relation/7443865) | Trotro 50 : Mallam Gbawe → Abeka Lapaz | 50 | Mallam Gbawe | Abeka Lapaz | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7443865);out%20geom;%0Away(512730538);out%20geom;%0Away(561287370);out%20geom;&R)
+[7443857](https://www.openstreetmap.org/relation/7443857) | Trotro 50 : Abeka Lapaz → Mallam Gbawe | 50 | Abeka Lapaz | Mallam Gbawe | ✅
+[7443865](https://www.openstreetmap.org/relation/7443865) | Trotro 50 : Mallam Gbawe → Abeka Lapaz | 50 | Mallam Gbawe | Abeka Lapaz | ✅
 [7558873](https://www.openstreetmap.org/relation/7558873) | Trotro 51 : Abeka Lapaz → Manhia Afuaman | 51 | Abeka Lapaz | Manhia Afuaman | ✅
 [7558983](https://www.openstreetmap.org/relation/7558983) | Trotro 51 : Manhia Afuaman → Abeka Lapaz | 51 | Manhia Afuaman | Abeka Lapaz | ✅
 [7458035](https://www.openstreetmap.org/relation/7458035) | Trotro 52 : Abeka Lapaz → Mayera | 52 | Abeka Lapaz | Mayera | ✅
@@ -97,7 +97,7 @@
 [7425333](https://www.openstreetmap.org/relation/7425333) | Trotro 72 : Caprice → Accra New Town | 72 | Caprice | Accra New Town | ✅
 [7420174](https://www.openstreetmap.org/relation/7420174) | Trotro 76 : Achimota → 37 | 76 | Achimota | 37 | ✅
 [7420410](https://www.openstreetmap.org/relation/7420410) | Trotro 76 : 37 → Achimota | 76 | 37 | Achimota | ✅
-[7452960](https://www.openstreetmap.org/relation/7452960) | Trotro 81 : Achimota → Adenta Station | 81 | Achimota | Adenta Station | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7452960);out%20geom;%0Away(518607158);out%20geom;%0Away(510761658);out%20geom;&R)
+[7452960](https://www.openstreetmap.org/relation/7452960) | Trotro 81 : Achimota → Adenta Station | 81 | Achimota | Adenta Station | ✅
 [7453016](https://www.openstreetmap.org/relation/7453016) | Trotro 81 : Adenta Station → Achimota | 81 | Adenta Station | Achimota | ✅
 [7519008](https://www.openstreetmap.org/relation/7519008) | Trotro 82 : Achimota → Adjiringanor | 82 | Achimota | Adjiringanor | ✅
 [7519055](https://www.openstreetmap.org/relation/7519055) | Trotro 82 : Adjiringanor → Achimota | 82 | Adjiringanor | Achimota | ✅
@@ -229,20 +229,20 @@
 [7548979](https://www.openstreetmap.org/relation/7548979) | Trotro 227 : Manhean → Accra CMB | 227 | Manhean | Accra CMB | ✅
 [7549754](https://www.openstreetmap.org/relation/7549754) | Trotro 228 : Accra CMB → Odorkor | 228 | Accra CMB | Odorkor | ✅
 [7549779](https://www.openstreetmap.org/relation/7549779) | Trotro 228 : Odorkor → Accra CMB | 228 | Odorkor | Accra CMB | ✅
-[7549814](https://www.openstreetmap.org/relation/7549814) | Trotro 230 : Accra CMB → Omanjor | 230 | Accra CMB | Omanjor | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7549814);out%20geom;%0Away(637559596);out%20geom;%0Away(476699877);out%20geom;&R)
-[7549829](https://www.openstreetmap.org/relation/7549829) | Trotro 230 : Omanjor → Accra CMB | 230 | Omanjor | Accra CMB | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7549829);out%20geom;%0Away(476699877);out%20geom;%0Away(637559596);out%20geom;&R)
+[7549814](https://www.openstreetmap.org/relation/7549814) | Trotro 230 : Accra CMB → Omanjor | 230 | Accra CMB | Omanjor | ✅
+[7549829](https://www.openstreetmap.org/relation/7549829) | Trotro 230 : Omanjor → Accra CMB | 230 | Omanjor | Accra CMB | ✅
 [7480068](https://www.openstreetmap.org/relation/7480068) | Trotro 231 : Accra CMB → Weija | 231 | Accra CMB | Weija | ✅
 [7480160](https://www.openstreetmap.org/relation/7480160) | Trotro 231 : Weija → Accra CMB | 231 | Weija | Accra CMB | ✅
 [7497752](https://www.openstreetmap.org/relation/7497752) | Trotro 235 : Dansoman → Achimota | 235 | Dansoman | Achimota | ✅
 [7497987](https://www.openstreetmap.org/relation/7497987) | Trotro 235 : Achimota → Dansoman | 235 | Achimota | Dansoman | ✅
-[7552018](https://www.openstreetmap.org/relation/7552018) | Trotro 236 : Dansoman → Arena | 236 | Dansoman | Arena | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7552018);out%20geom;%0Away(29548318);out%20geom;%0Away(513961948);out%20geom;&R)
+[7552018](https://www.openstreetmap.org/relation/7552018) | Trotro 236 : Dansoman → Arena | 236 | Dansoman | Arena | ✅
 [7552151](https://www.openstreetmap.org/relation/7552151) | Trotro 236 : Arena → Dansoman | 236 | Arena | Dansoman | ✅
 [7552443](https://www.openstreetmap.org/relation/7552443) | Trotro 237 : Dansoman → Awoshie | 237 | Dansoman | Awoshie | ✅
 [7552492](https://www.openstreetmap.org/relation/7552492) | Trotro 237 : Awoshie → Dansoman | 237 | Awoshie | Dansoman | ✅
 [7498111](https://www.openstreetmap.org/relation/7498111) | Trotro 238 : Dansoman → Circle | 238 | Dansoman | Circle | ✅
 [7498214](https://www.openstreetmap.org/relation/7498214) | Trotro 238 : Circle → Dansoman | 238 | Circle | Dansoman | ✅
 [7496999](https://www.openstreetmap.org/relation/7496999) | Trotro 240 : Dansoman → Nyamekye | 240 | Dansoman | Nyamekye | ✅
-[7499295](https://www.openstreetmap.org/relation/7499295) | Trotro 240 : Nyamekye → Dansoman | 240 | Nyamekye | Dansoman | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7499295);out%20geom;%0Away(363458501);out%20geom;%0Away(832460722);out%20geom;&R)
+[7499295](https://www.openstreetmap.org/relation/7499295) | Trotro 240 : Nyamekye → Dansoman | 240 | Nyamekye | Dansoman | ✅
 [7498362](https://www.openstreetmap.org/relation/7498362) | Trotro 241 : Circle Overhead → Bawaleshie | 241 | Circle Overhead | Bawaleshie | ✅
 [7498573](https://www.openstreetmap.org/relation/7498573) | Trotro 241 : Bawaleshie → Circle Overhead | 241 | Bawaleshie | Circle Overhead | ✅
 [7425735](https://www.openstreetmap.org/relation/7425735) | Trotro 242 : Dansoman → Odorkor | 242 | Dansoman | Odorkor | ✅
@@ -285,7 +285,7 @@
 [7488142](https://www.openstreetmap.org/relation/7488142) | Trotro 273 : Korlebu → Kaneshie | 273 | Korlebu | Kaneshie | ✅
 [7487993](https://www.openstreetmap.org/relation/7487993) | Trotro 274 : Kaneshie → Maamobi | 274 | Kaneshie | Maamobi | ✅
 [7488056](https://www.openstreetmap.org/relation/7488056) | Trotro 274 : Maamobi → Kaneshie | 274 | Maamobi | Kaneshie | ✅
-[7423029](https://www.openstreetmap.org/relation/7423029) | Trotro 275 : Kaneshie → Madina-Adenta | 275 | Kaneshie | Madina-Adenta | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7423029);out%20geom;%0Away(518607158);out%20geom;%0Away(510761658);out%20geom;&R)
+[7423029](https://www.openstreetmap.org/relation/7423029) | Trotro 275 : Kaneshie → Madina-Adenta | 275 | Kaneshie | Madina-Adenta | ✅
 [7423269](https://www.openstreetmap.org/relation/7423269) | Trotro 275 : Madina-Adenta → Kaneshie | 275 | Madina-Adenta | Kaneshie | ✅
 [7423503](https://www.openstreetmap.org/relation/7423503) | Trotro 276 : Kaneshie → Mamponse | 276 | Kaneshie | Mamponse | ✅
 [7423570](https://www.openstreetmap.org/relation/7423570) | Trotro 276 : Mamponse → Kaneshie | 276 | Mamponse | Kaneshie | ✅
@@ -369,8 +369,8 @@
 [7480897](https://www.openstreetmap.org/relation/7480897) | Trotro 338 : Lomnava → Abeka Lapaz | 338 | Lomnava | Abeka Lapaz | ✅
 [7482996](https://www.openstreetmap.org/relation/7482996) | Trotro 339 : Abeka Lapaz → Madina | 339 | Abeka Lapaz | Madina | ✅
 [7483083](https://www.openstreetmap.org/relation/7483083) | Trotro 339 : Madina → Abeka Lapaz | 339 | Madina | Abeka Lapaz | ✅
-[7482578](https://www.openstreetmap.org/relation/7482578) | Trotro 342 : Abeka Lapaz → Omanjor | 342 | Abeka Lapaz | Omanjor | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7482578);out%20geom;%0Away(637559596);out%20geom;%0Away(476699877);out%20geom;&R)
-[7482702](https://www.openstreetmap.org/relation/7482702) | Trotro 342 : Omanjor → Abeka Lapaz | 342 | Omanjor | Abeka Lapaz | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7482702);out%20geom;%0Away(476699877);out%20geom;%0Away(637559596);out%20geom;&R)
+[7482578](https://www.openstreetmap.org/relation/7482578) | Trotro 342 : Abeka Lapaz → Omanjor | 342 | Abeka Lapaz | Omanjor | ✅
+[7482702](https://www.openstreetmap.org/relation/7482702) | Trotro 342 : Omanjor → Abeka Lapaz | 342 | Omanjor | Abeka Lapaz | ✅
 [7482333](https://www.openstreetmap.org/relation/7482333) | Trotro 343 : Abeka Lapaz → Race Course | 343 | Abeka Lapaz | Race Course | ✅
 [7482394](https://www.openstreetmap.org/relation/7482394) | Trotro 343 : Race Course → Abeka Lapaz | 343 | Race Course | Abeka Lapaz | ✅
 [7482055](https://www.openstreetmap.org/relation/7482055) | Trotro 344 : Abeka Lapaz → Santa Maria | 344 | Abeka Lapaz | Santa Maria | ✅
@@ -437,8 +437,8 @@
 [7471917](https://www.openstreetmap.org/relation/7471917) | Trotro 404 : Dome Railway Crossing → Nima Overhead | 404 | Dome Railway Crossing | Nima Overhead | ✅
 [7467358](https://www.openstreetmap.org/relation/7467358) | Trotro 405 : Nima Overhead → Lapaz-Nii Boi Junction | 405 | Nima Overhead | Lapaz-Nii Boi Junction | ✅
 [7467377](https://www.openstreetmap.org/relation/7467377) | Trotro 405 : Lapaz-Nii Boi Junction → Nima Overhead | 405 | Lapaz-Nii Boi Junction | Nima Overhead | ✅
-[7585780](https://www.openstreetmap.org/relation/7585780) | Trotro 406 : Nima Overhead → Mallam | 406 | Nima Overhead | Mallam | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7585780);out%20geom;%0Away(215588482);out%20geom;%0Away(215548930);out%20geom;&R)
-[7585935](https://www.openstreetmap.org/relation/7585935) | Trotro 406 : Mallam → Nima Overhead | 406 | Mallam | Nima Overhead | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7585935);out%20geom;%0Away(512730538);out%20geom;%0Away(561287370);out%20geom;&R)
+[7585780](https://www.openstreetmap.org/relation/7585780) | Trotro 406 : Nima Overhead → Mallam | 406 | Nima Overhead | Mallam | ✅
+[7585935](https://www.openstreetmap.org/relation/7585935) | Trotro 406 : Mallam → Nima Overhead | 406 | Mallam | Nima Overhead | ✅
 [7593390](https://www.openstreetmap.org/relation/7593390) | Trotro 408 : Nima Overhead → Pokuase Amasaman | 408 | Nima Overhead | Pokuase Amasaman | ✅
 [7594733](https://www.openstreetmap.org/relation/7594733) | Trotro 408 : Pokuase Amasaman → Nima Overhead | 408 | Pokuase Amasaman | Nima Overhead | ✅
 [7467149](https://www.openstreetmap.org/relation/7467149) | Trotro 410 : Nima Overhead → Sukura Station | 410 | Nima Overhead | Sukura Station | ✅
@@ -454,7 +454,7 @@
 [7594887](https://www.openstreetmap.org/relation/7594887) | Trotro 417 : Nima Station → Accra New Tema Station | 417 | Nima Station | Accra New Tema Station | ✅
 [7594940](https://www.openstreetmap.org/relation/7594940) | Trotro 417 : Accra New Tema Station → Nima Station | 417 | Accra New Tema Station | Nima Station | ✅
 [7463559](https://www.openstreetmap.org/relation/7463559) | Trotro 419 : Odorna → Agblezah | 419 | Odorna | Agblezah | ✅
-[7463689](https://www.openstreetmap.org/relation/7463689) | Trotro 419 : Agblezah → Odorna | 419 | Agblezah | Odorna | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7463689);out%20geom;%0Away(569762861);out%20geom;%0Away(591065394);out%20geom;&R)
+[7463689](https://www.openstreetmap.org/relation/7463689) | Trotro 419 : Agblezah → Odorna | 419 | Agblezah | Odorna | ✅
 [7431880](https://www.openstreetmap.org/relation/7431880) | Trotro 420 : Accra New Tema Station → Kotobabi Down | 420 | Accra New Tema Station | Kotobabi Down | ✅
 [7432100](https://www.openstreetmap.org/relation/7432100) | Trotro 420 : Kotobabi Down → Accra New Tema Station | 420 | Kotobabi Down | Accra New Tema Station | ✅
 [7432263](https://www.openstreetmap.org/relation/7432263) | Trotro 422 : Circle Odorna → Madina | 422 | Circle Odorna | Madina | ✅
@@ -462,11 +462,11 @@
 [7463403](https://www.openstreetmap.org/relation/7463403) | Trotro 423 : Odorna → Nima Mamobi | 423 | Odorna | Nima Mamobi | ✅
 [7463516](https://www.openstreetmap.org/relation/7463516) | Trotro 423 : Nima Mamobi → Odorna | 423 | Nima Mamobi | Odorna | ✅
 [7605625](https://www.openstreetmap.org/relation/7605625) | Trotro 424 : Odorna → Nungua | 424 | Odorna | Nungua | ✅
-[7605660](https://www.openstreetmap.org/relation/7605660) | Trotro 424 : Nungua → Odorna | 424 | Nungua | Odorna | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7605660);out%20geom;%0Away(569762861);out%20geom;%0Away(591065394);out%20geom;&R)
+[7605660](https://www.openstreetmap.org/relation/7605660) | Trotro 424 : Nungua → Odorna | 424 | Nungua | Odorna | ✅
 [7502705](https://www.openstreetmap.org/relation/7502705) | Trotro 425 : Circle Odorna → Nungua | 425 | Circle Odorna | Nungua | ✅
-[7502901](https://www.openstreetmap.org/relation/7502901) | Trotro 425 : Nungua → Circle Odorna | 425 | Nungua | Circle Odorna | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7502901);out%20geom;%0Away(569762861);out%20geom;%0Away(591065394);out%20geom;&R)
+[7502901](https://www.openstreetmap.org/relation/7502901) | Trotro 425 : Nungua → Circle Odorna | 425 | Nungua | Circle Odorna | ✅
 [7463052](https://www.openstreetmap.org/relation/7463052) | Trotro 428 : Circle Odorna → Tsui Bleoo | 428 | Circle Odorna | Tsui Bleoo | ✅
-[7463255](https://www.openstreetmap.org/relation/7463255) | Trotro 428 : Tsui Bleoo → Circle Odorna | 428 | Tsui Bleoo | Circle Odorna | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7463255);out%20geom;%0Away(173162208);out%20geom;%0Away(591065394);out%20geom;&R)
+[7463255](https://www.openstreetmap.org/relation/7463255) | Trotro 428 : Tsui Bleoo → Circle Odorna | 428 | Tsui Bleoo | Circle Odorna | ✅
 [7462748](https://www.openstreetmap.org/relation/7462748) | Trotro 431 : Circle Odorna → Korle Bu | 431 | Circle Odorna | Korle Bu | ✅
 [7462917](https://www.openstreetmap.org/relation/7462917) | Trotro 431 : Korle Bu → Circle Odorna | 431 | Korle Bu | Circle Odorna | ✅
 [7586649](https://www.openstreetmap.org/relation/7586649) | Trotro 434 : Odorkor → Anyah | 434 | Odorkor | Anyah | ✅
@@ -508,9 +508,9 @@
 [7598052](https://www.openstreetmap.org/relation/7598052) | Trotro 467 : Accra Rawlings Park → Sakaman Blue Lagoon | 467 | Accra Rawlings Park | Sakaman Blue Lagoon | ✅
 [7598170](https://www.openstreetmap.org/relation/7598170) | Trotro 467 : Sakaman Blue Lagoon → Accra Rawlings Park | 467 | Sakaman Blue Lagoon | Accra Rawlings Park | ✅
 [7573398](https://www.openstreetmap.org/relation/7573398) | Trotro 468 : Accra Rawlings Park → La Olympia | 468 | Accra Rawlings Park | La Olympia | ✅
-[7573423](https://www.openstreetmap.org/relation/7573423) | Trotro 468 : La Olympia → Accra Rawlings Park | 468 | La Olympia | Accra Rawlings Park | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7573423);out%20geom;%0Away(140589651);out%20geom;%0Away(569762861);out%20geom;&R)
+[7573423](https://www.openstreetmap.org/relation/7573423) | Trotro 468 : La Olympia → Accra Rawlings Park | 468 | La Olympia | Accra Rawlings Park | ✅
 [7573166](https://www.openstreetmap.org/relation/7573166) | Trotro 469 : Accra Rawlings Park → Nungua Authority | 469 | Accra Rawlings Park | Nungua Authority | ✅
-[7573254](https://www.openstreetmap.org/relation/7573254) | Trotro 469 : Nungua Authority → Accra Rawlings Park | 469 | Nungua Authority | Accra Rawlings Park | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7573254);out%20geom;%0Away(569762861);out%20geom;%0Away(591065394);out%20geom;&R)
+[7573254](https://www.openstreetmap.org/relation/7573254) | Trotro 469 : Nungua Authority → Accra Rawlings Park | 469 | Nungua Authority | Accra Rawlings Park | ✅
 [7459883](https://www.openstreetmap.org/relation/7459883) | Trotro 470 : Accra Rawlings Park → Osu Penta Hotel | 470 | Accra Rawlings Park | Osu Penta Hotel | ✅
 [7459937](https://www.openstreetmap.org/relation/7459937) | Trotro 470 : Osu Penta Hotel → Accra Rawlings Park | 470 | Osu Penta Hotel | Accra Rawlings Park | ✅
 [7571466](https://www.openstreetmap.org/relation/7571466) | Trotro 473 : Accra Salaga → Chemuna | 473 | Accra Salaga | Chemuna | ✅
@@ -538,13 +538,13 @@
 [7457867](https://www.openstreetmap.org/relation/7457867) | Trotro 522 : Accra New Tema Station → Sukura | 522 | Accra New Tema Station | Sukura | ✅
 [7458019](https://www.openstreetmap.org/relation/7458019) | Trotro 522 : Sukura → Accra New Tema Station | 522 | Sukura | Accra New Tema Station | ✅
 [7457633](https://www.openstreetmap.org/relation/7457633) | Trotro 523 : Accra New Tema Station → Trade Fair (La) | 523 | Accra New Tema Station | Trade Fair (La) | ✅
-[7457804](https://www.openstreetmap.org/relation/7457804) | Trotro 523 : Trade Fair (La) → Accra New Tema Station | 523 | Trade Fair (La) | Accra New Tema Station | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7457804);out%20geom;%0Away(140589651);out%20geom;%0Away(569762861);out%20geom;&R)
+[7457804](https://www.openstreetmap.org/relation/7457804) | Trotro 523 : Trade Fair (La) → Accra New Tema Station | 523 | Trade Fair (La) | Accra New Tema Station | ✅
 [7456453](https://www.openstreetmap.org/relation/7456453) | Trotro 524 : Accra New Tema Station → Banana Inn | 524 | Accra New Tema Station | Banana Inn | ✅
 [7456496](https://www.openstreetmap.org/relation/7456496) | Trotro 524 : Banana Inn → Accra New Tema Station | 524 | Banana Inn | Accra New Tema Station | ✅
-[9404546](https://www.openstreetmap.org/relation/9404546) | Trotro 525 : Accra New Tema Station → Adenta Station | 525 | Accra New Tema Station | Adenta Station | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(9404546);out%20geom;%0Away(518607158);out%20geom;%0Away(510761658);out%20geom;&R)
+[9404546](https://www.openstreetmap.org/relation/9404546) | Trotro 525 : Accra New Tema Station → Adenta Station | 525 | Accra New Tema Station | Adenta Station | ✅
 [9404547](https://www.openstreetmap.org/relation/9404547) | Trotro 525 : Adenta Station → Accra New Tema Station | 525 | Adenta Station | Accra New Tema Station | ✅
-[9652081](https://www.openstreetmap.org/relation/9652081) | Trotro 526 : Accra New Tema Station → Mateytse | 526 | Accra New Tema Station | Mateytse | [way not exists, way out of bbox](https://overpass-turbo.eu/?Q=//way%20not%20exists,%20way%20out%20of%20bbox%0Arel(9652081);out%20geom;way(205452821);out%20geom;&R)
-[9652571](https://www.openstreetmap.org/relation/9652571) | Trotro 526 : Mateytse → Accra New Tema Station | 526 | Mateytse | Accra New Tema Station | [way not exists, way out of bbox](https://overpass-turbo.eu/?Q=//way%20not%20exists,%20way%20out%20of%20bbox%0Arel(9652571);out%20geom;way(694514937);out%20geom;&R)
+[9652081](https://www.openstreetmap.org/relation/9652081) | Trotro 526 : Accra New Tema Station → Mateytse | 526 | Accra New Tema Station | Mateytse | ✅
+[9652571](https://www.openstreetmap.org/relation/9652571) | Trotro 526 : Mateytse → Accra New Tema Station | 526 | Mateytse | Accra New Tema Station | ✅
 [7455566](https://www.openstreetmap.org/relation/7455566) | Trotro 535 : Zambrama Line → Agbogbloshie 2 | 535 | Zambrama Line | Agbogbloshie 2 | ✅
 [7456342](https://www.openstreetmap.org/relation/7456342) | Trotro 535 : Agbogbloshie 2 → Zambrama Line | 535 | Agbogbloshie 2 | Zambrama Line | ✅
 [7571129](https://www.openstreetmap.org/relation/7571129) | Trotro 536 : Zambrama Line → Arena | 536 | Zambrama Line | Arena | ✅
@@ -560,7 +560,7 @@
 [7585106](https://www.openstreetmap.org/relation/7585106) | Trotro 544 : Zongo Junction → Korle Bu | 544 | Zongo Junction | Korle Bu | ✅
 [7585174](https://www.openstreetmap.org/relation/7585174) | Trotro 544 : Korle Bu → Zongo Junction | 544 | Korle Bu | Zongo Junction | ✅
 [7454990](https://www.openstreetmap.org/relation/7454990) | Trotro 990 : Circle Odorna → SSNIT Flats | 990 | Circle Odorna | SSNIT Flats | ✅
-[7455309](https://www.openstreetmap.org/relation/7455309) | Trotro 990 : SSNIT Flats → Circle Odorna | 990 | SSNIT Flats | Circle Odorna | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(7455309);out%20geom;%0Away(29548318);out%20geom;%0Away(513961948);out%20geom;&R)
+[7455309](https://www.openstreetmap.org/relation/7455309) | Trotro 990 : SSNIT Flats → Circle Odorna | 990 | SSNIT Flats | Circle Odorna | ✅
 [7563654](https://www.openstreetmap.org/relation/7563654) | Trotro 994 : Accra Rawlings Park → Chemuna | 994 | Accra Rawlings Park | Chemuna | ✅
 [7563692](https://www.openstreetmap.org/relation/7563692) | Trotro 994 : Chemuna → Accra Rawlings Park | 994 | Chemuna | Accra Rawlings Park | ✅
 [7563473](https://www.openstreetmap.org/relation/7563473) | Trotro 995 : Accra New Tema Station → Zamrama Line | 995 | Accra New Tema Station | Zamrama Line | ✅
