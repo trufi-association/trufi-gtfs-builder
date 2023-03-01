@@ -140,11 +140,14 @@ function routeBuilder(features) {
     const routes = []
     for (let feature of features) {
         feature = feature[0]
+        let route_color = feature.properties.colour || ""
+        route_color = route_color.replace("#", "")
         routes.push({
             route_id: feature.properties.id,
             agency_id: feature.gtfs.agency_id,
             route_short_name: feature.properties.ref || feature.properties.name,
             route_long_name: feature.properties.name,
+            route_color: route_color,
             route_type: getRouteType(feature),
         })
         feature.gtfs.route_id = feature.properties.id
@@ -222,8 +225,8 @@ function stopsBuilder(features, inputStops, maxStopsDistance, stopNameBuilder, f
                     distance = distance + distanceBetween(previousCoords, coords, { units: 'meters' });
                 }
                 if (distance > maxStopsDistance || index == nodes.length - 1 || index == 0) {
-                    if (!(checkList[properties.id])) {
-                        checkList[properties.id] = true
+                    if (!(checkList[stopId])) {
+                        checkList[stopId] = true
                         const stopName = stopNameBuilder(inputStops[stopId])
                         stops.push({
                             stop_id: stopId,
