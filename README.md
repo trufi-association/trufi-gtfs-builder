@@ -23,7 +23,7 @@ There is a login required to use this method. There is no login required to use 
 + Step 7: Type npm install in the console to install all node dependencies.
 
 + Step 8: Create a folder for the city you will generate a map for. This is where you will later put your completed map. 
-+ Step 9: Navigate to boundingbox.info. Adjust the box to capture all the routes you want to include in your map. 
++ Step 9: Navigate to [boundingbox](https://boundingbox.klokantech.com/). Adjust the box to capture all the routes you want to include in your map. 
 
 + Step 10: Select Dublincore.
 
