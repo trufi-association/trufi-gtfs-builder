@@ -1,0 +1,449 @@
+route_id,agency_id,route_short_name,route_long_name,route_color,route_type
+4204592,0,270,MiniBus 270: Avenida Blanco Galindo → Tupuraya,,3
+4205962,0,260,MiniBus 260: Avenida Blanco Galindo → Calle Litoral,,3
+4207829,0,201,MiniBus 201: Plaza Bolivar → Calle Litoral,,3
+4220716,0,205,Bus 205: Belzu → Plaza Bolívar,,3
+4223772,0,270,MiniBus 270: Calle Jose Martinez → Avenida Blanco Galindo,,3
+4237142,0,260,MiniBus 260: Calle Litoral → Avenida Blanco Galindo,,3
+4247869,0,B,MicroBus B: Calle Las Buganvillas → Aeropuerto → Pasaje F,,3
+4269608,0,A,MicroBus A: Villa Israel → Río Taquiña,,3
+4269609,0,A,MicroBus A: Río Taquiña → Villa Israel,,3
+4420888,0,203,MicroBus 203: Avenida Belzu → Plaza Hernando Siles,,3
+4420889,0,B,MicroBus B: Pasaje F → Aeropuerto → Calle Las Buganvillas,,3
+4430244,0,C,MicroBus C: Avenida Pedro de la Gasca → Calle Manuel Carrasco Jimenez,,3
+4431661,0,203,MicroBus 203: Plaza Hernando Siles → Avenida Belzu,,3
+4433300,0,C,MicroBus C: Calle Manuel Carrasco Jimenez → Avenida Pedro de la Gasca,,3
+4436907,0,211,"MiniBus 211: Calle C. Serruto, Quillacollo → Parque Ecoturístico Pairumani",,3
+4443362,0,E,MicroBus E: Avenida Chacancalle → Avenida Circunvalación Beijing,,3
+4443363,0,E,MicroBus E: Avenida Circunvalación Beijing → Avenida Chacancalle,,3
+4480208,0,106,Trufi 106: Plaza Principal El Paso → Avenida Ayacucho,,3
+4655384,0,290,Trufi 290: Avenida Blanco Galindo → Chilimarca,,3
+4770039,0,201,MiniBus 201: Calle Litoral → Avenida Blanco Galindo,,3
+5149360,0,LL,MicroBus LL: La Concordia → Charles Darwin,,3
+5386695,0,W,MicroBus W: Calle Poopó → Huachi Rancho,,3
+5386696,0,W,MicroBus W: Huachi Rancho → Calle Poopó,,3
+5387552,0,G,MicroBus G: Calle Alipio Valencia Vega → Avenida Arquímedes,,3
+5387555,0,G,MicroBus G: Avenida Arquímedes → Calle Alipio Valencia Vega,,3
+5457000,0,H,MicroBus H: Avenida Chapare → Avenida Río Parapeti,,3
+5457001,0,H,MicroBus H: Avenida Río Parapeti → Avenida Chapare,,3
+5457263,0,Q,MicroBus Q: Villa Urkupiña Calvario → Avenida Circuito Bolivia,,3
+5470046,0,LL,MicroBus LL: Charles Darwin → La Concordia,,3
+6714096,0,106,Trufi 106: Avenida Ayacucho → Plaza Principal El Paso,,3
+6925236,0,Teleférico,Teleférico: Parque de la Autonomía → Cristo de la Concordia,yellow,6
+6925237,0,Teleférico,Teleférico: Cristo de la Concordia → Parque de la Autonomía,yellow,6
+9074378,0,V,Tranvía Verde: Quillacollo → San Antonio,forestgreen,0
+9083839,0,R,Tranvía Roja: San Antonio → Agronomía,red,0
+9085564,0,J,MicroBus J: Calle Gran Chaco → Avenida Chiquicollo,,3
+9101527,0,J,MicroBus J: Avenida Chiquicollo → Calle Gran Chaco,,3
+9118342,0,16,MiniBus 16: Avenida Silala → OTB Ecológica,,3
+9118541,0,16,MiniBus 16: OTB Ecológica → Avenida Silala,,3
+9119233,0,R,Trufi R: Bello Horizonte → Avenida Arquímedes,,3
+9123985,0,R,Trufi R: Avenida Arquímedes → Bello Horizonte,,3
+9124161,0,1,MiniBus 1: Avenida Humberto Asin → Calle Ciudad del niño,,3
+9124195,0,1,MiniBus 1: Calle Ciudad del niño → Avenida Humberto Asin,,3
+9133720,0,136,Trufi 136: Villa San Andres → Avenida Segunda,,3
+9133722,0,136,Trufi 136: Avenida Segunda → Villa San Andres,,3
+9136633,0,102,Trufi 102: Calle María Luisa Pacheco → Tamborada B,,3
+9144377,0,108,Trufi 108: Avenida Benjo Cruz → Avenida París,,3
+9144378,0,108,Trufi 108: Avenida París → Avenida Benjo Cruz,,3
+9184012,0,10,MiniBus 10: Calle Faustino Suarez → Cerro Calomani,,3
+9184014,0,10,MiniBus 10: Cerro Calomani → Calle Faustino Suarez,,3
+9193250,0,1001,MiniBus 1001: Avenida Río Caine → OTB Ecológica,,3
+9193252,0,1001,MiniBus 1001: OTB Ecológica → Avenida Río Caine,,3
+9196557,0,101,Trufi 101: Río Taquiña → Avenida Río Caine,,3
+9196558,0,101,Trufi 101: Avenida Río Caine → Río Taquiña,,3
+9219406,0,104,Trufi 104: Calle Monseñor Óscar Arnulfo Romero → Calle Pozo de Gas Boquerón,,3
+9219407,0,104,Trufi 104: Calle Pozo de Gas Boquerón → Calle Monseñor Óscar Arnulfo Romero,,3
+9219433,0,107,Trufi 107: Calle Yanacuna → Maica Quenamari,,3
+9219457,0,109,Trufi 109: Calle Abelia → Torrentera Pajcha,,3
+9219458,0,109,Trufi 109: Torrentera Pajcha → Calle Abelia,,3
+9312059,0,121,Trufi 121: Calle Juan Aldon → Calle Sora Sora,,3
+9321521,0,M,MicroBus M: Calle Jose Curtinas → Calle Pozo Petrolero Buena Vista,,3
+9342276,0,11,MiniBus 11: Los Ceibos → Calle Viena,,3
+9342277,0,11,MiniBus 11: Calle Viena → Los Ceibos,,3
+9373042,0,Z,MiniBus Z: Avenida Ecológica → Calle Diego Veizaga,,3
+9373675,0,Z12,MiniBus Z12: Calle Diego Veizaga → Avenida Ecológica,,3
+9377625,0,232,MiniBus 232: Calle Isla del Sol → Avenida Eliodoro Villazón,,3
+9377626,0,232,MiniBus 232: Avenida Eliodoro Villazón → Calle Isla del Sol,,3
+9377675,0,240,MiniBus 240: Calle Trojes → Plaza de Sacaba,,3
+9377676,0,240,MiniBus 240: Plaza de Sacaba → Calle Trojes,,3
+9377783,0,230,Trufi 230: Calle Grover Suarez → Plaza de Sacaba,,3
+9377784,0,230,Trufi 230: Plaza de Sacaba → Calle Grover Suarez,,3
+9377826,0,250,MicroBus 250: Avenida Blanco Galindo → Avenida Mártires de la Democracia,,3
+9377827,0,250,MicroBus 250: Avenida Mártires de la Democracia → Avenida Blanco Galindo,,3
+9379871,0,290,Trufi 290: Chilimarca → Avenida Blanco Galindo,,3
+9380021,0,252,Trufi 252: Calle Litoral → Avenida Blanco Galindo,,3
+9380023,0,252,Trufi 252: Avenida Blanco Galindo → Calle Litoral,,3
+9380122,0,200,MicroBus 200: Calle Litoral → Avenida Blanco Galindo,,3
+9380123,0,200,MicroBus 200: Avenida Blanco Galindo → Calle Litoral,,3
+9380213,0,118,MiniBus 118: Calle Tupac Katari → Avenida Ecológica,,3
+9380215,0,118,MiniBus 118: Avenida Ecológica → Calle Tupac Katari,,3
+9380270,0,116,Trufi 116: Alto Buena Vista → Torrentera Logustani,,3
+9380272,0,116,Trufi 116: Torrentera Logustani → Alto Buena Vista,,3
+9383241,0,Y,MicroBus Y: Avenida Melchor Pérez de Olguín → Achumani,,3
+9386184,0,Taquiña,Trufi Taquiña: Cruce Taquiña → Planta Taquiña,,3
+9386225,0,W,MicroBus W: Irincollo → Calle Poopó,,3
+9392695,0,113,Trufi 113: Puente Khora → La Serena Calicanto,,3
+9392697,0,113,Trufi 113: La Serena Calicanto → Puente Khora,,3
+9397731,0,01,Trufi 01: Calle Calamarca → Calle Pintumayu,,3
+9397733,0,01,Trufi 01: Calle Pintumayu → Calle Calamarca,,3
+9397822,0,03,Trufi 03: Calle Curupau → Calle Luis Zegarra,,3
+9397824,0,03,Trufi 03: Calle Luis Zegarra → Calle Curupau,,3
+9397897,0,010,Trufi 010: Calle Provincia F. Baldivieso → Los Ceibos,,3
+9397899,0,010,Trufi 010: Los Ceibos → Calle Provincia F. Baldivieso,,3
+9400927,0,45,MiniBus 45: Calle Serranía de Caíza → Torrentera Arocagua Mayu,,3
+9405802,0,016,Trufi 016: Puente Khora → Calle Litoral,,3
+9405804,0,016,Trufi 016: Calle Litoral → Puente Khora,,3
+9417509,0,3V,MicroBus 3V: Río Taquiña → Calle Tómas Gamboa,,3
+9417539,0,V,MicroBus V: Calle Tómas Gamboa → Río Taquiña,,3
+9420548,0,112,Trufi 112: Calle Volcán Tolima → Calle Francisco de Goya,,3
+9421021,0,212,Trufi 212: Hipódromo Sud → Molino Blanco,,3
+9421022,0,212,Trufi 212: Molino Blanco → Hipódromo Sud,,3
+9426749,0,114,Trufi 114: Avenida Uncia → Calle Ruminawi,,3
+9426751,0,114,Trufi 114: Calle Ruminawi → Avenida Uncia,,3
+9427015,0,122,Trufi 122: Buena Vista → Calle Qhochapampa,,3
+9427978,0,134,Trufi 134: Avenida Chiquicollo → Calle Antofagasta,,3
+9427980,0,134,Trufi 134: Calle Antofagasta → Avenida Chiquicollo,,3
+9429035,0,135,Trufi 135: Calle Combate de Chacaltaya → Calle Los Olivos,,3
+9429037,0,135,Trufi 135: Calle Los Olivos → Calle Combate de Chacaltaya,,3
+9430327,0,311,Trufi 311: Pampita Mejillones → Calle Canichana,,3
+9430329,0,311,Trufi 311: Calle Canichana → Pampita Mejillones,,3
+9430922,0,119,Trufi 119: Loma Pampa → Villa Taquiña,,3
+9430924,0,119,Trufi 119: Villa Taquiña → Loma Pampa,,3
+9431000,0,123,Trufi 123: Mineros San Juan → Calle Wawaki,,3
+9431002,0,123,Trufi 123: Calle Wawaki → Mineros San Juan,,3
+9435838,0,012,Trufi 012: Nueva Jerusalén → Calle Grover Suarez,,3
+9435839,0,012,Trufi 012: Calle Grover Suarez → Nueva Jerusalén,,3
+9435998,0,115,Trufi 115: Avenida Inca Camacho → Sindicato Agrario Taquiña,,3
+9436000,0,115,Trufi 115: Sindicato Agrario Taquiña → Avenida Inca Camacho,,3
+9436031,0,160,MiniBus 160: Rocas Blancas → Calle T. Achu,,3
+9436032,0,160,MiniBus 160: Calle T. Achu → Rocas Blancas,,3
+9436054,0,112,Trufi 112: Calle Francisco de Goya → Calle Volcán Tolima,,3
+9436088,0,122,Trufi 122: Calle Qhochapampa → Buena Vista,,3
+9458409,0,233,MiniBus 233: Calle Nicolás Maldonado → Calle Manuel P. Laredo,,3
+9458419,0,233,MiniBus 233: Calle Manuel P. Laredo → Calle Nicolás Maldonado,,3
+9458460,0,220,MicroBus 220: Sacaba → Calle Eric Asplund,,3
+9458471,0,220,MicroBus 220: Calle Eric Asplund → Sacaba,,3
+9466782,0,6,MiniBus 6: Avenida Sexta → Avenida Conchupata,,3
+9466783,0,6,MiniBus 6: Avenida Conchupata → Avenida Sexta,,3
+9582565,0,125,Trufi 125: Calle Canasita → Calle R. Levano,,3
+9582567,0,125,Trufi 125: Calle R. Levano → Calle Canasita,,3
+9582571,0,131,Trufi 131: Calle La Rioja → Calle Lucia Alcocer,,3
+9582573,0,131,Trufi 131: Calle Lucia Alcocer → Calle La Rioja,,3
+9582854,0,19,MiniBus 19: Calle Pascual Canaviri → Calle 7,,3
+9582856,0,19,MiniBus 19: Calle 7 → Calle Pascual Canaviri,,3
+9582857,0,2,MiniBus 2: Calle Capitán Luis Garcia → Calle Las Begonias,,3
+9582859,0,2,MiniBus 2: Calle Las Begonias → Calle Capitán Luis Garcia,,3
+9582860,0,20,MiniBus 20: Calle Provincia Barron → Dora Halkier,,3
+9582862,0,20,MiniBus 20: Dora Halkier → Calle Provincia Barron,,3
+9645302,0,Q,MicroBus Q: Avenida Circuito Bolivia → Villa Urkupiña Calvario,,3
+9715360,0,130,Trufi 130: Centenario → Aeropuerto → Centenario,,3
+9717256,0,130,Trufi 130: Centenario → Aeropuerto → Centenario,,3
+9718061,0,202,MiniBus 202: Plaza Bolívar → Calle Villamontes,,3
+9718162,0,202,MiniBus 202: Calle Villamontes → Plaza Bolívar,,3
+9985626,0,I,MicroBus I: Avenida Circunvalación Beijing → Calle La Rioja,,3
+9985684,0,M,MicroBus M: Calle Pozo Petrolero Buena Vista → Calle Jose Curtinas,,3
+10176999,0,P,Trufi P: Calle Gran Chaco → Puente Quinamari,,3
+10380049,0,110,Trufi 110: Torrentera Logustani → Calle Portugal,,3
+10387641,0,110,Trufi 110: Calle Wanka → Calle Francia,,3
+10392482,0,110,Trufi 110: Avenida Centenario → Calle Noruega,,3
+10392586,0,110,Trufi 110: Calle Portugal → Torrentera Logustani,,3
+10395472,0,110,Trufi 110: Calle Francia → Calle Wanka,,3
+10395597,0,110,Trufi 110: Calle Noruega → Avenida Centenario,,3
+10396238,0,111,Trufi 111: Calle Albert Einstein → Calle Combate del Desaguadero,,3
+10396580,0,111,Trufi 111: Calle Albert Einstein → Avenida Río Parapeti,,3
+10397583,0,111,Trufi 111: Calle Albert Einstein → Sivingani,,3
+10397705,0,111,Trufi 111: Calle Albert Einstein → San Nicolás,,3
+10407407,0,203,MicroBus 203: Avenida Blanco Galindo → Avenida Circuito Bolivia,,3
+10407466,0,203,MicroBus 203: Avenida Circuito Bolivia → Avenida Blanco Galindo,,3
+10411209,0,212,MiniBus 212: Calle La Cascada → Avenida Circunvalación,ffffff,3
+10411245,0,212,MiniBus 212: Avenida Circunvalación → Calle La Cascada,ffffff,3
+10411266,0,211,MiniBus 211: Calle Achachairú → Plaza Bolívar,,3
+10413052,0,211,MiniBus 211: Plaza Bolívar → Calle Achachairú,,3
+10413127,0,210,MiniBus 210: Calle República de Nicaragua → Avenida Blanco Galindo,,3
+10413255,0,210,MiniBus 210: Avenida Blanco Galindo → Calle República de Nicaragua,,3
+10413337,0,209,MiniBus 209: Calle Héroes de Boquerón → Avenida Blanco Galindo,,3
+10413473,0,209,MiniBus 209: Avenida Blanco Galindo → Calle Héroes de Boquerón,,3
+10414461,0,207,MiniBus 207: Calle 10 → Avenida Gualberto Villarroel,,3
+10414549,0,206,MiniBus 206: Plaza Bolívar → Calle Litoral,,3
+10414582,0,206,MiniBus 206: Calle Litoral → Plaza Bolívar,,3
+10443585,0,P,Trufi P: Calle Gran Chaco → Maica Central,,3
+10620338,0,111,Trufi 111: Calle Combate del Desaguadero → Calle Albert Einstein,,3
+10620494,0,111,Trufi 111: Avenida Río Parapeti → Calle Albert Einstein,,3
+10621633,0,111,Trufi 111: Sivingani → Calle Albert Einstein,,3
+10623351,0,111,Trufi 111: San Nicolás → Calle Albert Einstein,,3
+10623700,0,46,MiniBus 46: Calle Antolín Salinas → Santo Domingo,,3
+10623782,0,46,MiniBus 46: Calle Antolín Salinas → Calle Cocoroco,,3
+10626424,0,46,MiniBus 46: Santo Domingo → Calle Antolín Salinas,,3
+10626619,0,46,MiniBus 46: Calle Cocoroco → Calle Antolín Salinas,,3
+10626711,0,51,MiniBus 51: Villa San Alfonso → Buena Vista,,3
+10626821,0,51,MiniBus 51: Villa San Alfonso → Calle Parinacota,,3
+10628899,0,51,MiniBus 51: Villa San Alfonso → Avenida Autonomía,,3
+10630690,0,51,MiniBus 51: Buena Vista → Villa San Alfonso,,3
+10630984,0,51,MiniBus 51: Calle Parinacota → Villa San Alfonso,,3
+10631287,0,51,MiniBus 51: Avenida Autonomía → Villa San Alfonso,,3
+10667060,0,X10,MicroBus X10: Loma Pampa → Avenida Sexta,,3
+10667214,0,X,MicroBus X: Avenida Sexta → Loma Pampa,,3
+10667322,0,X,MicroBus X: Mineros San Juan → Avenida Sexta,,3
+10667416,0,X,MicroBus X: Avenida Sexta → Mineros San Juan,,3
+10667926,0,Y,MicroBus Y: Achumani → Avenida Melchor Pérez de Olguín,,3
+10668749,0,P,Trufi P: Maica Central → Calle Gran Chaco,,3
+10668794,0,S,MicroBus S: Calle Mendoza → Avenida Blanco Galindo,,3
+10677513,0,S,MicroBus S: Avenida Blanco Galindo → Calle Mendoza,,3
+10677554,0,T,Trufi T: Villa Coña Coña → Calle Sacaca,,3
+10686843,0,8,MiniBus 8: El Abra → Lomas de Santa Bárbara,0000ff,3
+10687570,0,8,MiniBus 8: El Abra → Avenida YPFB,ff0000,3
+10688684,0,8,MiniBus 8: Lomas de Santa Bárbara → El Abra,0000ff,3
+10688740,0,8,MiniBus 8: Avenida YPFB → El Abra,ff0000,3
+10688766,0,9,MiniBus 9: Calle María Nuñez del Prado → San Marcos,,3
+10688865,0,9,MiniBus 9: San Marcos → Calle María Nuñez del Prado,,3
+10691722,0,14,MiniBus 14: Calle Raul Rivero Torres → Caico Alto,,3
+10691728,0,14,MiniBus 14: Calle Raul Rivero Torres → Azurimarca,,3
+10691742,0,14,MiniBus 14: Caico Alto → Calle Raul Rivero Torres,,3
+10692360,0,14,MiniBus 14: Azurimaca → Calle Raul Rivero Torres,,3
+10692381,0,15,MiniBus 15: Torrentera Pajcha → Alto Valle Hermoso 5 de octubre,,3
+10692412,0,15,MiniBus 15: Alto Valle Hermoso 5 de octubre → Torrentera Pajcha,,3
+10692537,0,101,Trufi 101: Río Taquiña → Hospital del sur,,3
+10692554,0,101,Trufi 101: Avenida Cuenca Madre de Dios → Río Taquiña,,3
+10692726,0,102,Trufi 102: Tamborada B → Calle María Luisa Pacheco,,3
+10692795,0,103,Trufi 103: Calle Alfredo Guillén → Tamborada B,,3
+10692844,0,103,Trufi 103: Calle Alfredo Guillén → Villa America,,3
+10692867,0,103,Trufi 103: Avenida Panamericana → Calle Sófocles,,3
+10693034,0,103,Trufi 103: Tamborada B → Calle Alfredo Guillén,,3
+10693057,0,103,Trufi 103: Villa America → Calle Alfredo Guillén,,3
+10693249,0,107,Trufi 107: Maica Sud → Calle Lalliy Pacha,,3
+10694643,0,5,MiniBus 5: Avenida Circuncalación II → Ch'aska Rumi,,3
+10694841,0,107,Trufi 107: Maica Quenamari → Calle Yanacuna,,3
+10694992,0,108,Trufi 108: Avenida República → Calle Provincia Guarayos,,3
+10695023,0,108,Trufi 108: Calle Provincia Guarayos → Avenida República,,3
+10695765,0,132,Trufi 132: Torrentera Arocagua Mayu → Avenida Autonomía,,3
+10696073,0,132,Trufi 132: Torrentera Arocagua Mayu → Calle Libertad,,3
+10696152,0,132,Trufi 132: Torrentera Arocagua Mayu → Avenida París,,3
+10696170,0,132,Trufi 132: Avenida Autonomía → Torrentera Arocagua Mayu,,3
+10696193,0,132,Trufi 132: Calle Libertad → Torrentera Arocagua Mayu,,3
+10696237,0,132,Trufi 132: Avenida París → Torrentera Arocagua Mayu,,3
+10705506,0,W,MicroBus W: Calle Poopó → Irincollo,,3
+10706216,0,K,MicroBus K: Avenida del Ruiseñor → Avenida Arquímedes,,3
+10707888,0,18,MiniBus 18: Avenida Benjo Cruz → Avenida Uncia,,3
+10707969,0,31,MiniBus 31: Oncológico → 1 de Mayo Tamborada,,3
+10708320,0,31,MiniBus 31: Calle Río Rositas → Avenida Malteria,,3
+10708454,0,35,MiniBus 35: Calle Ricardo Mujia → Calle Pueblo de Machaca,,3
+10708489,0,35,MiniBus 35: Calle Pueblo de Machaca → Calle Ricardo Mujia,,3
+10708849,0,N,MicroBus N: Calle Severo Fernandez A. → Avenida Eliodoro Villazón,,3
+10709216,0,N,MicroBus N: Avenida Eliodoro Villazón → Calle Severo Fernandez A.,,3
+10709736,0,O,MicroBus O: Sau Sau Loma → Avenida Circuncalación II Doctor Martín Cárdenas Hermosa,,3
+10712108,0,O,MicroBus O: Avenida Circuncalación II Doctor Martín Cárdenas Hermosa → Sau Sau Loma,,3
+10712236,0,U,MicroBus U: Calle Manuel Virreira → Avenida Circuncalación II,,3
+10712279,0,U,MicroBus U: Avenida Circuncalación II → Calle Manuel Virreira,,3
+10712334,0,13,MiniBus 13: Avenida Chilimarca → Villa San Miguel,,3
+10712377,0,17,MiniBus 17: Calle Raúl G. Prada → San Nicolás,,3
+10712656,0,17,MiniBus 17: San Nicolás → Calle Raúl G. Prada,,3
+10716517,0,36,MiniBus 36: Calle T'ikallajta → Calle Lisandro Quiroga,,3
+10716534,0,36,MiniBus 36: Calle Lisandro Quiroga → Calle T'ikallajta,,3
+10717486,0,40,MiniBus 40: Ciudad del niño → Buena Vista,,3
+10718919,0,40,MiniBus 40: Buena Vista → Ciudad del niño,,3
+10718946,0,45,MiniBus 45: Torrentera Arocagua Mayu → Calle Serranía de Caíza,,3
+10718967,0,109,Trufi 109: Calle Alipio Valencia Vega → 14 de abril,,3
+10719010,0,52,MiniBus 52: Arrumani → Arrumani,,3
+10719025,0,120,Trufi 120: Univalle entrada → Calle Tupac Katari,,3
+10719035,0,120,Trufi 120: Calle Tupac Katari → Univalle entrada,,3
+10719095,0,120,Trufi 120: Calle Gualberto Villaroel → Calle Tupac Katari,,3
+10719128,0,120,Trufi 120: Calle Tupac Katari → Calle Gualberto Villaroel,,3
+10720842,0,133,MiniBus 133: Calle José F. Guevara → Avenida Sexta,,3
+10720900,0,133,MiniBus 133: Calle Federico del Carpio → Avenida Tadeo Haenke,,3
+10721050,0,133,MiniBus 133: Avenida Sexta → Calle José F. Guevara,,3
+10721087,0,133,MiniBus 133: Avenida Tadeo Haenke → Calle Federico del Carpio,,3
+10721128,0,138,Trufi 138: Calle Ivan Bluske → Calle Vitchi,,3
+10721298,0,138,Trufi 138: Calle Vitichi → Calle Ivan Bluske,,3
+10721694,0,108,Trufi 108: Calle Esteban Arce → Villa San Andres,,3
+10721734,0,108,Trufi 108: Villa San Andres → Calle Esteban Arce,,3
+10721776,0,150,Trufi 150: Univalle entrada → Avenida República,,3
+10721892,0,217,Bus 217: Manuel Ugarte → 12 de Septiembre,,3
+10722066,0,217,Bus 217: 12 de Septiembre → Manuel Ugarte,,3
+10722104,0,241,MiniBus 241: Avenida Eliodoro Villazón → Avenida Pedro deToledo,,3
+10722148,0,241,MiniBus 241: Avenida Pedro deToledo → Avenida Eliodoro Villazón,,3
+10723654,0,204,MiniBus 204: Plaza Bolívar → Calle Litoral,,3
+10723671,0,204,MiniBus 204: Calle Litoral → Plaza Bolívar,,3
+10724349,0,205,Bus 205: Plaza Bolívar → Belzu,,3
+10724411,0,208,MiniBus 208: Avenida Blanco Galindo → Calle Ignacio Warnes,,3
+10724434,0,208,MiniBus 208: Calle Ignacio Warnes → Avenida Blanco Galindo,,3
+10724599,0,265,MiniBus 265: Avenida Blanco Galindo → Calle Camiri,,3
+10742219,0,27,MiniBus 27: Bella Vista → Calle Francis Peyton Rous,,3
+10742249,0,27,MiniBus 27: Calle Francis Peyton Rous → Bella Vista,,3
+10742265,0,265,MiniBus 265: Calle Camiri → Avenida Blanco Galindo,,3
+10742276,0,261,MiniBus 261: Calle Camiri → Avenida Blanco Galindo,,3
+10742335,0,261,MiniBus 261: Avenida Blanco Galindo → Calle Camiri,,3
+10742513,0,244,MiniBus 244: Calle Paucarpata → Avenida Eliodoro Villazón,,3
+10742585,0,244,MiniBus 244: Avenida Eliodoro Villazón → Calle Paucarpata,,3
+10742625,0,242,MiniBus 242: Calle Trojes → Avenida Eliodoro Villazón,,3
+10742692,0,242,MiniBus 242: Avenida Eliodoro Villazón → Calle Trojes,,3
+10744108,0,18,MiniBus 18: Avenida Uncia → Avenida Benjo Cruz,,3
+10768014,0,43,MiniBus 43: Avenida Humberto Asín Rivero → OTB 27 de mayo,,3
+10768603,0,121,Trufi 121: Calle Sora Sora → Calle Juan Aldon,,3
+10786869,0,K,MicroBus K: Avenida Arquímedes → Avenida del Ruiseñor,,3
+10786894,0,I,MicroBus I: Calle La Rioja → Avenida Circunvalación Beijing,,3
+10786928,0,3,MiniBus 3: Calle Valeriana → Calle Francis Peyton Rous,,3
+10786946,0,3,MiniBus 3: Francis Peyton Rous → Aeropuerto → Valeriana,,3
+10786973,0,5,MiniBus 5: Ch'aska Rumi → Avenida Circuncalación II,,3
+10788634,0,245,MiniBus 245: Calle Litoral → Avenida Blanco Galindo,,3
+10788739,0,245,MiniBus 245: Avenida Blanco Galindo → Calle Litoral,,3
+10789860,0,Taquiña,Trufi Taquiña: Planta Taquiña → Cruce Taquiña,,3
+10795881,0,103,Trufi 103: Calle Sófocles → Avenida Panamericana,,3
+10799951,0,109,Trufi 109: 14 de abril → Calle Alipio Valencia Vega,,3
+10807446,0,T,Trufi T: Calle Sacaca → Villa Coña Coña,,3
+10813739,0,107,Trufi 107: Calle Lalliy Pacha → Maica Sud,,3
+11015397,0,150,Trufi 150: Avenida República → Univalle entrada,,3
+11015473,0,207,MiniBus 207: Avenida Gualberto Villarroel → Calle 10,,3
+11015478,0,211,MiniBus 211: Parque Ecoturístico Pairumani → Calle C. Serruto,,3
+11096956,0,106,Trufi 106: Calle M. Cossio → Calle Pablo Jaimes,,3
+11096957,0,106,Trufi 106: Calle Pablo Jaimes → Calle M. Cossio,,3
+11103749,0,F,Microbus F: La Maica Chica → Calle 2,,3
+11103802,0,F,MicroBus F: Calle 2 → La Maica Chica,,3
+11104191,0,L,MicroBus L: Sumunpaya → Ticti Norte,,3
+11104667,0,L,MicroBus L: Ticti Norte → Sumunpaya,,3
+11105465,0,148,Trufi 148: Villa San Andres → Calle 16 de julio,,3
+11105494,0,148,Trufi 148: Calle 16 de julio → Villa San Andres,,3
+11105559,0,39,Microbus 39: Tajra → Sindicato mixto de transporte público 6 de mayo,,3
+11105576,0,39,Microbus 39: Calle Cardenal Richard James Cushing → Tajra,,3
+11106317,0,50,MiniBus 50: Calle La Rioja → Calle Beni,,3
+11106342,0,50,MiniBus 50: Calle Beni → Calle La Rioja,,3
+11106387,0,137,Trufi 137: Alonso Yañez Mendoza → Félix Capriles,,3
+11106451,0,137,Trufi 137: Félix Capriles → Alonso Yañez Mendoza,,3
+11106937,0,W,Microbus W: Calle Poopó → Villa Marquina,,3
+11106983,0,W,Microbus W: Villa Marquina → Calle Poopó,,3
+11107825,0,201,MiniBus 201: Calle Litoral → Avenida Thomas Bata,,3
+11107845,0,201,MiniBus 201: Avenida Thomas Bata → Calle Litoral,,3
+11107858,0,201,MiniBus 201: Calle Litoral → Villa Asunción,,3
+11107907,0,201,MiniBus 201: Villa Asunción → Calle Litoral,,3
+11108080,0,203,MiniBus 203: Avenida Manuel Isidoro Belzu → Illataco,,3
+11109737,0,203,MiniBus 203: Illataco → Avenida Manuel Isidoro Belzu,,3
+11109791,0,204,MiniBus 204: Calle Litoral → Calle 23 de marzo,,3
+11109832,0,204,MiniBus 204: Villa Urkupiña Calvario → Calle Litoral,,3
+11109969,0,204,MiniBus 204: Calle Litoral → Villa Urkupiña Calvario,,3
+11110061,0,204,MiniBus 204: Calle Tres Chorros → Calle Litoral,,3
+11110089,0,204,MiniBus 204: Calle Litoral → Pandoja,,3
+11110129,0,204,MiniBus 204: Pandoja → Calle Litoral,,3
+11110301,0,205,Bus 205: Litoral → Plaza Bolívar → Jacaranda,,3
+11110740,0,205,Bus 205: Jacaranda → Plaza Bolívar → Litoral,,3
+11110748,0,205,Bus 205: Litoral → Plaza Bolívar → Demetrio Canelas,,3
+11110787,0,205,Bus 205: Demetrio Canelas → Plaza Bolívar → Litoral,,3
+11110800,0,205,Bus 205: Litoral → Plaza Bolívar → Villa Urkupiña Calvario,,3
+11110845,0,205,Bus 205: Villa Urkupiña Calvario → Plaza Bolívar → Litoral,,3
+11111001,0,206,MiniBus 206: Calle Litoral → Villa Urkupiña Calvario,,3
+11111525,0,206,MiniBus 206: Villa Urkupiña Calvario → Calle Litoral,,3
+11111544,0,206,MiniBus 206: Calle Litoral → Avenida Suarez Miranda,,3
+11111548,0,206,MiniBus 206: Avenida Suarez Miranda → Calle Litoral,,3
+11111558,0,206,MiniBus 206: Calle Litoral → Calle Antofagasta,,3
+11111618,0,206,MiniBus 206: Calle Antofagasta → Calle Litoral,,3
+11111697,0,206,MiniBus 206: Calle Litoral → Entre Rios,,3
+11111712,0,206,MiniBus 206: Entre Rios → Calle Litoral,,3
+11111885,0,207,MiniBus 207: Avenida Gualberto Villarroel → Calle Santo Domingo,,3
+11114966,0,207,MiniBus 207: Calle Santo Domingo → Avenida Gualberto Villarroel,,3
+11115013,0,207,MiniBus 207: Avenida Gualberto Villarroel → Cota,,3
+11115066,0,207,MiniBus 207: Cota → Avenida Gualberto Villarroel,,3
+11115157,0,207,MiniBus 207: Avenida Gualberto Villarroel → Avenida Ferrocarril,,3
+11115218,0,207,MiniBus 207: Avenida Ferrocarril → Avenida Gualberto Villarroel,,3
+11115617,0,208,MiniBus 208: Calle Camiri → Calle Severino Salvatierra,,3
+11115682,0,208,MiniBus 208: Calle Severino Salvatierra → Calle Camiri,,3
+11116618,0,208,MiniBus 208: Calle Camiri → Payacollo,,3
+11116658,0,208,MiniBus 208: Payacollo → Calle Camiri,,3
+11116667,0,208,MiniBus 208: Calle Camiri → Suticollo,,3
+11116706,0,208,MiniBus 208: Suticollo → Calle Camiri,,3
+11116711,0,208,MiniBus 208: Calle Camiri → Quiros Rancho,,3
+11116744,0,208,MiniBus 208: Quiros Rancho → Calle Camiri,,3
+11116752,0,208,MiniBus 208: Calle Camiri → Llave Grande,,3
+11116758,0,208,MiniBus 208: Llave Grande → Calle Camiri,,3
+11116767,0,208,MiniBus 208: Calle Camiri → Comunidad Montecato,,3
+11116770,0,208,MiniBus 208: Comunidad Montecato → Calle Camiri,,3
+11116822,0,211,MiniBus 211: Calle Victor Paz Estenssoro → Calle Tupiyan,,3
+11116951,0,210,MiniBus 210: República de Nicaragua → UE El Paso,,3
+11118282,0,201,MiniBus 201: Calle Litoral → Illataco,,3
+11118368,0,201,MiniBus 201: Illataco → 9 de Abril,,3
+11118440,0,210,MiniBus 210: El Paso → República de Nicaragua,,3
+11118511,0,211,MiniBus 211: Calle Tupiyan → Calle Victor Paz Estenssoro,,3
+11118564,0,211,MiniBus 211: Calle Victor Paz Estenssoro → Illataco,,3
+11118579,0,211,MiniBus 211: Illataco → Calle Victor Paz Estenssoro,,3
+11118609,0,211,MiniBus 211: Calle Victor Paz Estenssoro → Florida,,3
+11118616,0,211,MiniBus 211: Florida → Calle Victor Paz Estenssoro,,3
+11118642,0,211,MiniBus 211: Calle Victor Paz Estenssoro → Combuyo,,3
+11118647,0,211,MiniBus 211: Combuyo → Calle Victor Paz Estenssoro,,3
+11118654,0,211,MiniBus 211: Calle Victor Paz Estenssoro → Avenida Santa Cruz,,3
+11118661,0,211,MiniBus 211: Avenida Santa Cruz → Calle Victor Paz Estenssoro,,3
+11121479,0,245,MiniBus 245: Calle Litoral → Viloma,,3
+11123095,0,245,MiniBus 245: Viloma → Calle Litoral,,3
+11123109,0,245,MiniBus 245: Calle Litoral → Mallco Chapi,,3
+11123178,0,245,MiniBus 245: Mallco Chapi → Calle Litoral,,3
+11123198,0,245,MiniBus 245: Calle Litoral → Amiraya,,3
+11123202,0,245,Minibus 245: Amiraya → Calle Litoral,,3
+11123215,0,245,MiniBus 245: Calle Litoral → Viloma Cala Cala,,3
+11123230,0,245,MiniBus 245: Viloma Cala Cala → Calle M. Cossio,,3
+11123257,0,245,MiniBus 245: Calle Litoral → Siqui Siquia,,3
+11123281,0,245,MiniBus 245: Siqui Siquia → Calle M. Cossio,,3
+11124771,0,245,MiniBus 245: Vinto → Pirque,,3
+11124782,0,245,MiniBus 245: Pirque → Vinto,,3
+11126026,0,260,MiniBus 260: Calle Litoral → Mallco Rancho,,3
+11127257,0,260,MiniBus 260: Mallco Rancho → Calle Litoral,,3
+11127304,0,260,MiniBus 260: Calle Litoral → Mallco Chapi,,3
+11127350,0,260,MiniBus 260: Mallco Chapi → Calle Litoral,,3
+11127379,0,260,MiniBus 260: Calle Litoral → Amiraya,,3
+11127392,0,260,MiniBus 260: Amiraya → Calle Litoral,,3
+11127395,0,260,MiniBus 260: Calle Litoral → Viloma Cala Cala,,3
+11127419,0,260,MiniBus 260: Viloma Cala Cala → Calle Litoral,,3
+11127460,0,260,MiniBus 260: Calle Litoral → Siqui Siquia,,3
+11127465,0,260,MiniBus 260: Siqui Siquia → Calle Litoral,,3
+11129178,0,260,MiniBus 260: Vinto → Parotani,,3
+11129182,0,260,MiniBus 260: Parotani → Vinto,,3
+11129203,0,265,MiniBus 265: Calle Moxos → Avenida Santa Cruz,,3
+11129238,0,265,MiniBus 265: Avenida Santa Cruz → Avenida Republica,,3
+11130832,0,265,MiniBus 265: Calle Moxos → Litoral,,3
+11130922,0,265,MiniBus 265: Litoral → Avenida Republica,,3
+11131143,0,120,Trufi 120: Calle Tupac Katari → Encanto Pampa,,3
+11131214,0,120,Trufi 120: Encanto Pampa → Calle Tupac Katari,,3
+11131266,0,250,MiniBus 250: Avenida Mártires de la Democracia → Encanto Pampa,,3
+11131445,0,250,Minibus 250: Univalle → Avenida Mártires de la Democracia,,3
+11131446,0,250,MiniBus 250: Encanto Pampa → Plaza Esteban Arze,,3
+11132626,0,N,Microbus N: Calle Severo Fernandez A. → El Abra,,3
+11132650,0,N,MicroBus N: El Abra → Calle Severo Fernandez A.,,3
+11132731,0,212,MiniBus 212: Maica Central → Catachilla Baja,,3
+11133890,0,212,MiniBus 212: Catachilla Baja → Maica Central,,3
+11134008,0,233,MiniBus 233: Calle Manuel P. Laredo → Chiñata,,3
+11134477,0,233,Minibus 233: Chiñata → Calle Jose M. Carrasco,,3
+11137986,0,233,MiniBus 233: Calle A. Moreno → Curubamba,,3
+11138009,0,233,MiniBus 233: Curubamba → Calle A. Moreno,,3
+11138032,0,233,MiniBus 233: Calle A. Moreno → Calle Bolívar,,3
+11138084,0,233,MiniBus 233: Calle Max Fernandez → Calle Jose M. Carrasco,,3
+11138128,0,233,MiniBus 233: Calle Manuel P. Laredo → Calle Max Fernandez,,3
+11138764,0,233,MiniBus 233: Avenida Tunel → Calle Manuel P. Laredo,ff0000,3
+11138791,0,233,MiniBus 233: Calle Manuel P. Laredo → Avenida Tunel,ff0000,3
+11140017,0,241,MiniBus 241: Avenida Pedro deToledo → Tutimayo,,3
+11140123,0,241,MiniBus 241: Tutimayo → Avenida Pedro deToledo,,3
+11140612,0,241,MiniBus 241: Avenida Pedro de Toledo → Calle Colombia,,3
+11140643,0,241,MiniBus 241: Calle Colombia → Avenida Pedro deToledo,,3
+11140668,0,241,MiniBus 241: Avenida Pedro de Toledo → Molino Blanco,,3
+11140677,0,241,MiniBus 241: Molino Blanco → Avenida Pedro deToledo,,3
+11142143,0,244,MiniBus 244: Calle Pocona → Lava Lava Alta,,3
+11142168,0,244,MiniBus 244: Lava Lava Alta → Calle Pocona,,3
+11142205,0,244,MiniBus 244: Calle Pocona → Avenida Gualberto Villarroel,,3
+11142224,0,244,MiniBus 244: Avenida Gualberto Villarroel → Calle Pocona,,3
+11142238,0,244,MiniBus 244: Calle Pocona → Calle Bolívar,,3
+11142249,0,244,MiniBus 244: Calle Bolívar → Calle Pocona,,3
+11148102,0,120,Trufi 120: Apote → Estadio Colcapirhua,,3
+11148108,0,120,Trufi 120: Estadio Colcapirhua → Apote,,3
+11151933,0,103,Trufi 103: Río Seco → Calle Augusto Guzman Martinez,,3
+11151958,0,103,Trufi 103: Calle Augusto Guzman Martinez → Río Seco,,3
+14576926,0,V,Tranvía Verde: San Antonio → Quillacollo,forestgreen,0
+14576927,0,R,Tranvía Roja: Agronomía → San Antonio,red,0
+15749345,0,P,Trufi P: Puente Quinamari → Calle Gran Chaco,,3
+15749364,0,13,MiniBus 13: Villa San Miguel → Avenida Chilimarca,,3
+15749404,0,43,MiniBus 43: OTB 27 de Mayo → Avenida Humberto Asín Rivero,,3
+16144238,0,233,MiniBus 233: Calle Manuel P. Laredo → El Abra,ffff00,3
+16144313,0,212,MiniBus 212: Calle La Cascada → Avenida de Túnel,0000ff,3
+16147024,0,212,MiniBus 212: Avenida Túnel → Calle La Cascada,0000ff,3
+16283966,0,233,MiniBus 233: El Abra → Calle Manuel P. Laredo,ffff00,3
+16289273,0,212,MiniBus 212: Hipódromo Sud → Esmeralda Norte,ff0000,3
+16294397,0,212,MiniBus 212: Esmeralda Norte → Hipódromo Sud,ff0000,3
+16294409,0,212,MiniBus 212: Calle La Cascada → Sacaba,00ccff,3
+16294410,0,212,MiniBus 212: Sacaba → Calle La Cascada,00ccff,3
+16306401,0,250,MiniBus 250: Avenida Mártires de la Democracia → Univalle,,3
+16306421,0,270,MiniBus 270: Tupuraya → Avenida Blanco Galindo,,3
+16306422,0,270,MiniBus 270: Avenida Blanco Galindo → Calle Jose Martinez,,3

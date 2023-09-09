@@ -48,7 +48,9 @@ function calendarBuilder(features, defaultCalendar) {
     for (let feature of features) {
         feature = feature[0]
         feature.gtfs.services = []
-        const opening_hours = feature.properties.opening_hours || defaultCalendar(feature)
+        // TODO:
+        // const opening_hours = feature.properties.opening_hours || defaultCalendar(feature)
+        const opening_hours =  defaultCalendar(feature)
         const times = opening_hours.split(";");
         times.map((value) => {
             const dualTimeMatch = value.match("((Mo|Tu|We|Th|Fr|Sa|Su)-(Mo|Tu|We|Th|Fr|Sa|Su)) (([01][0-9]|2[0-4]):([0-5][0-9]))-(([01][0-9]|2[0-4]):([0-5][0-9]))")
