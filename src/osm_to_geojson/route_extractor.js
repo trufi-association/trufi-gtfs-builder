@@ -45,7 +45,7 @@ module.exports = function (route_elements, ways, stops) {
     const routeWays = []
     const routeStops = []
     for (const element of route_elements.members) {
-        if (element.type == "way") {
+        if (element.type == "way" && !element.role) {
             const current_way = ways[element.ref]
             if (current_way == null) {
                 throw { extractor_error: extractor_error.way_not_exist, uri: `https://overpass-turbo.eu/?Q=${encodeURI(`//${extractor_error.way_not_exist}\nrel(${route_elements.id});out geom;way(${element.ref});out geom;`)}&R` }
@@ -58,7 +58,7 @@ module.exports = function (route_elements, ways, stops) {
                 "nodes": [...current_way.nodes],
                 "geometry": [...current_way.geometry]
             })
-        } else {
+        } else if (element.type == "node") {
             const currentStop = stops[element.ref]
             if (currentStop && currentStop.tags && currentStop.tags["public_transport"] == "platform")
                 routeStops.push(currentStop)

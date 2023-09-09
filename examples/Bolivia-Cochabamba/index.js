@@ -8,7 +8,9 @@ osmToGtfs({
             west: -66.440262,
             north: -17.261759,
             east: -65.577835,
-        })
+        }), skipRoute: (route) => {
+            return ![2084702].includes(route.id)
+        }
     }, gtfsOptions: {
         stopNameBuilder: (stops) => {
             if (!stops || stops.length == 0) {

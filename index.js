@@ -12,7 +12,7 @@ const geojsonToTrufiTPData = require('./src/geojson_to_trufi_tp_data')
 
 const defaultGeojsonOptions = {
     osmDataGetter: null,
-    transformTypes: ["bus", "share_taxi", "aerialway", "train", "subway", "monorail", "tram", "trolleybus", "ferry"],
+    transformTypes: ["bus", "share_taxi", "aerialway", "train", "subway", "monorail", "tram", "trolleybus", "ferry", "light_rail"],
     skipRoute: () => true
 }
 const defatulgtfsOptions = {
