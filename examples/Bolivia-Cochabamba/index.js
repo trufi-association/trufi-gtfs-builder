@@ -12,7 +12,7 @@ osmToGtfs({
             return ![2084702].includes(route.id)
         }
     }, gtfsOptions: {
-        fakeStops: (route) => [9083839, 14576927, 9074378, 14576926].includes(route.id),
+        fakeStops: (routeFeature) => [9083839, 14576927, 9074378, 14576926].includes(routeFeature.properties.id),
         stopNameBuilder: (stops) => {
             if (!stops || stops.length == 0) {
                 stops = ["innominada"]
