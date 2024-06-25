@@ -1,0 +1,188 @@
+route_id,agency_id,route_short_name,route_long_name,route_color,route_type
+17445532,0,Transcayma - Enace,Custer Transcayma - Enace : Urb. Dean Valdivia → Av. Venezuela,,3
+17445672,0,Transcayma - Enace,Custer Transcayma - Enace : Av. Venezuela → Urb. Dean Valdivia,,3
+17511052,0,3 de Octubre - B,Custer 3 de Octubre - B : La campiña II → Parque Selva Alegre,,3
+17511191,0,Cotaspa 4 Cayma,Custer Cotaspa 4 Cayma : El Golf → Enace,,3
+17515510,0,Transcayma - San miguel,Custer Transcayma - San miguel : Sector 7 Dean Valdivia → Las convenciones,,3
+17518939,0,Uniín Aqp - Graficos San Luis A,Custer Uniín Aqp - Graficos San Luis A : San Luis → Ormeño,,3
+17581799,0,C4 -Unión Aqp C,Custer C4 -Unión Aqp C : Señor de los milagros → Ormeño,,3
+17607753,0,Cono Norte - Cettar,Custer Cono Norte - Cettar : Ciudad Municipal → Terminal Terrestre,,3
+17608042,0,Unión Aqp - Villa Ecológica,Custer Unión Aqp - Villa Ecológica : Villa Ecológica → Ormeño,,3
+17608045,0,Cono Norte - Los Angeles BR,Custer Cono Norte - Los Angeles BR : Apipa → Terminal Terrestre,,3
+17608051,0,Cono Norte - Peruarbo,Custer Cono Norte - Peruarbo : Peruarbo → Sepúlveda,,3
+17608055,0,Cono Norte - Canarios A,Custer Cono Norte - Canarios A : El Naranjal → Angeles del sur Zona A,,3
+17608110,0,Cono Norte - Santa Clara,Custer Cono Norte - Santa Clara : Fundo Cabrería → Villa Miguel Grau,,3
+17619994,0,C4 -Unión Aqp B,Custer C4 -Unión Aqp B : Señor de los milagros → Terminal Terrestre,,3
+17620010,0,Cono Norte - Los Angeles 4A,Custer Cono Norte - Los Angeles 4A : Ciudad de Dios → Terminal Terrestre,,3
+17626535,0,Uniín Aqp - Graficos San Luis B,Custer Uniín Aqp - Graficos San Luis B : San Luis → Avelino,,3
+17633924,0,Unión Aqp - San Luis D,Custer Unión Aqp - San Luis D : San Luis → Terminal Terrestre,,3
+17633927,0,C4 - Unión Aqp Gráficos Umacollo,Custer C4 - Unión Aqp Gráficos Umacollo : San Luis → Umacollo,,3
+17633932,0,C4 - Unión Aqp B,Custer C4 - Unión Aqp B : El mirador → Avelino,,3
+17633933,0,C4 - Unión Aqp A1,Custer C4 - Unión Aqp A1 : El mirador → Ruta del sillar,,3
+17633936,0,C4 - Unión Aqp A15,Custer C4 - Unión Aqp A15 : Revolución → Av La Paz,,3
+17633938,0,Unión Grau B2,Custer Unión Grau B2 : Miguel Grau → Terminal Terrestre,,3
+17634339,0,Unión Grau A,Custer Unión Grau A : Miguel Grau → La Merced,,3
+17634360,0,AqpMasivo - 3,Custer AqpMasivo - 3 : Baños de Jesús → Aeropuerto,,3
+17636285,0,Unión Grau B2 A,Custer Unión Grau B2 A : Miguel Grau → Terminal Terrestre,,3
+17636304,0,AqpMasivo - B,Combi AqpMasivo - B : Villa Santa Rosa → Terminal Terrestre,,3
+17636305,0,Unión Grau C,Custer Unión Grau C : Miguel Grau → Plaza las Américas,,3
+17636328,0,Unión Grau B,Custer Unión Grau B : Miguel Grau → Cementerio Apacheta,,3
+17636366,0,MegaBus A - Avelino,Custer MegaBus A - Avelino : Av Paisajista → Ciudad Blanca,,3
+17636375,0,Bus Characato - LA,Custer Bus Characato - LA : Characato → La paz,,3
+17636635,0,Unión Grau H,Custer Unión Grau H : Miguel Grau → Alto de la Alianza,,3
+17642932,0,Bus Characato T San Antorio,Custer Bus Characato T San Antorio : San Antonio → Terminal Terrestre,,3
+17643025,0,Bus Characato - A,Custer Bus Characato - A : Penal → Filtro,,3
+17643070,0,Correcaminos - Dolores,Custer Correcaminos - Dolores : La campiña III → La Salle,,3
+17644902,0,Ciudad mi trabajo A,Custer Ciudad mi trabajo A : El pasto → Pachacutec,,3
+17644912,0,Ciudad mi trabajo M,Custer Ciudad mi trabajo M : La mansión → La Salle,,3
+17644947,0,Cotaspa Alto Libertad,Custer Cotaspa Alto Libertad : Av Paisajista → Alto Libertad,,3
+17653490,0,Cono Norte - Los Angeles 4C,Custer Cono Norte - Los Angeles 4C : Villa Milagros → Avenida Venezuela,,3
+17653560,0,Cono Norte Los Angeles 4B,Custer Cono Norte Los Angeles 4B : Villa Hermosa → Terminal Terrestre,,3
+17653636,0,Transcayma - 11 de Mayo,Custer Transcayma - 11 de Mayo : Mujeres con esperanza → Terminal Terrestre,,3
+17654231,0,Socabaya B,Custer Socabaya B : Horacio Zevallos → Pachacutec,,3
+17654414,0,4 de Octubre Independencia,Custer 4 de Octubre Independencia : El Golf → C. Teniente Palacios,,3
+17658187,0,MegaBus Corazón 7 de Junio,Custer MegaBus Corazón 7 de Junio : Alata → Av Paucarpata,,3
+17658190,0,Monterrey Corbacho,Custer Monterrey Corbacho : Av Paisajista → Av La Paz,,3
+17658204,0,Mega Bus 33 - 13,Custer Mega Bus 33 - 13 : San Hilarión → Av Paucarpata,,3
+17658205,0,Mega Bus 38,Custer Mega Bus 38 : Av Tahuantinsuyo → Av Progreso,,3
+17658212,0,Cotum A Pachacutec,Custer Cotum A Pachacutec : Semirual Pachacutec → Av EE.UU.,,3
+17658213,0,Cotum B Pachacutec,Custer Cotum B Pachacutec : Semirual Pachacutec → Av EE.UU.,,3
+17658215,0,Cotum M Pachacutec,Custer Cotum M Pachacutec : Semirual Pachacutec → La salle,,3
+17658252,0,MegaBus M Upis,Custer MegaBus M Upis : Mansión → Av Paucarpata,,3
+17658522,0,Cono Norte - C,Custer Cono Norte - C : Sor Ana → Alto San Martín,,3
+17658549,0,Cono Norte - S,Custer Cono Norte - S : Alto San Martín → Sor Ana,,3
+17658550,0,Cono Norte - CIMA Ciudad Municipal,Custer Cono Norte - CIMA Ciudad Municipal : Ciudad Municipal → Ciudad Blanca,,3
+17658558,0,Cono Norte - CIMA Ciudad Municipal,Custer Cono Norte - CIMA Ciudad Municipal : Ciudad Blanca → Ciudad Municipal,,3
+17658664,0,Transcayma - Zamacola,M3 Transcayma - Zamacola : Terminal Terrestre → Terminal Pesquero,,3
+17658669,0,Cono Norte - El Litoral,Custer Cono Norte - El Litoral : Chachani → Salaverry,,3
+17659504,0,Transcayma - Zamacola,M3 Transcayma - Zamacola : Terminal Pesquero → Terminal Terrestre,,3
+17659544,0,Transcayma - Embajada,M3 Transcayma - Embajada : Los Pioneros → Terminal Terrestre,,3
+17664509,0,Transcayma - Chapi,Custer Transcayma - Chapi : Primero de Junio → Av. Venezuela,,3
+17664511,0,Transcayma - Chapi,Custer Transcayma - Chapi : Av. Venezuela → Primero de Junio,,3
+17664629,0,Transcayma - Casimiro,Custer Transcayma - Casimiro : Casimiro → Coliseo Arequipa,,3
+17664645,0,Transcayma - Casimiro,Custer Transcayma - Casimiro : Coliseo Arequipa → Casimiro,,3
+17664646,0,Unión Aqp - Gráficos,Custer Unión Aqp - Gráficos : Av. Emancipación → Salaverry,,3
+17664647,0,Unión Aqp - Gráficos,Custer Unión Aqp - Gráficos : Salaverry → Av. Emancipación,,3
+17664648,0,Unión Aqp - Juan XXIII,Custer Unión Aqp - Juan XXIII : La galaxia → Avelino,,3
+17664649,0,Unión Aqp - Juan XXIII,Custer Unión Aqp - Juan XXIII : Avelino → La galaxia,,3
+17664775,0,Unión Aqp - Alto Selva Alegre,Custer Unión Aqp - Alto Selva Alegre : San Luis → Palacio de Bellas Artes,,3
+17664776,0,Unión Aqp - Alto Selva Alegre,Custer Unión Aqp - Alto Selva Alegre : Palacio de Bellas Artes → San Luis,,3
+17664787,0,EtraBus - Cenepa,M3 EtraBus - Cenepa : Heroes del Cenepa → Estadio Melgar,,3
+17664788,0,EtraBus - Cenepa,M3 EtraBus - Cenepa : Estadio Melgar → Heroes del cenepa,,3
+17664789,0,EtraBus - Olivos,Custer EtraBus - Olivos : Los Olivos → Terminal Terrestre,,3
+17664790,0,EtraBus - Olivos,Custer EtraBus - Olivos : Terminal Terrestre → Los Olivos,,3
+17664791,0,EtraBus - Miguel Grau,Custer EtraBus - Miguel Grau : Miguel Grau → Estadio Melgar,,3
+17664792,0,EtraBus - Miguel Grau,Custer EtraBus - Miguel Grau : Estadio Melgar → Miguel Grau,,3
+17664793,0,EtraBus - C Atalaya,Custer EtraBus - C Atalaya : Atalaya → Terminal Terrestre,,3
+17664794,0,EtraBus - C Atalaya,Custer EtraBus - C Atalaya : Terminal Terrestre → Atalaya,,3
+17664795,0,EtraBus - Atalaya,Combi EtraBus - Atalaya : Atalaya → Estadio Melgar,,3
+17664821,0,EtraBus - Atalaya,Combi EtraBus - Atalaya : Estadio Melgar → Atalaya,,3
+17664822,0,EtraBus - Mirador Berlín,Custer EtraBus - Mirador Berlín : Berlín → Estadio Melgar,,3
+17664823,0,EtraBus - Mirador Berlín,Custer EtraBus - Mirador Berlín : Estadio Melgar → Berlín,,3
+17664824,0,EtraBus - A,Combi EtraBus - A : Jerusalen → Estadio Melgar,,3
+17664825,0,EtraBus - A,Combi EtraBus - A : Estadio Melgar → Jerusalen,,3
+17664826,0,EtraBus - C,Custer EtraBus - C : Los Olivos → Estadio Melgar,,3
+17664827,0,EtraBus - C,Custer EtraBus - C : Estadio Melgar → Los Olivos,,3
+17664828,0,AqpMasivo - 01,Custer AqpMasivo - 01 : Plaza Paucarpata → C. José Olaya,,3
+17664829,0,AqpMasivo - 01,Custer AqpMasivo - 01 : C. José Olaya → Plaza Paucarpata,,3
+17664830,0,AqpMasivo - 02,Custer AqpMasivo - 02 : Plaza Paucarpata → C. José Olaya,,3
+17664831,0,AqpMasivo - 02,Custer AqpMasivo - 02 : C. José Olaya → Plaza Paucarpata,,3
+17664971,0,AqpMasivo - 05,Custer AqpMasivo - 05 : Campo de Marte → Alto Libertad,,3
+17664972,0,AqpMasivo - 05,Custer AqpMasivo - 05 : Alto Libertad → Campo de Marte,,3
+17664973,0,AqpMasivo - 06,Custer AqpMasivo - 06 : Huacsapata → Avelino,,3
+17664974,0,AqpMasivo - 06,Custer AqpMasivo - 06 : Avelino → Huacsapata,,3
+17664976,0,AqpMasivo - 07,M3 AqpMasivo - 07 : Vallecito → Guardia Civil,,3
+17664977,0,AqpMasivo - 09,M3 AqpMasivo - 09 : Campo de Marte → La Católica,,3
+17664978,0,AqpMasivo - 09,M3 AqpMasivo - 09 : La Católica → Campo de Marte,,3
+17664981,0,3 de Octubre - A,Custer 3 de Octubre - A : La campiña II → Tahuantinsuyo,,3
+17664982,0,3 de Octubre - A,Custer 3 de Octubre - A : Tahuantinsuyo → La campiña II,,3
+17664983,0,3 de Octubre - C,Custer 3 de Octubre - C : La Campiña II → Mariano Melgar,,3
+17664984,0,3 de Octubre - C,Custer 3 de Octubre - C : Mariano Melgar → La Campiña II,,3
+17664985,0,3 de Octubre - D,Custer 3 de Octubre - D : La Campiña II → Alto Misti,,3
+17664986,0,3 de Octubre - D,Custer 3 de Octubre - D : La Campiña II → La Campiña II,,3
+17664987,0,Correcaminos - San Martín,Custer Correcaminos - San Martín : La Campiña III → La Salle,,3
+17664988,0,Correcaminos - San Martín,Custer Correcaminos - San Martín : La Salle → La Campiña III,,3
+17677829,0,AqpMasivo - C,Combi AqpMasivo - C : Israel → Terminal Terrestre,,3
+17677911,0,Bus Characato T Quequeña,Custer Bus Characato T Quequeña : Quequeña → Terminal Terrestre,,3
+17679511,0,Cono Norte - El Litoral,Custer Cono Norte - El Litoral : Salaverry → Chachani,,3
+17681083,0,Unión Aqp - San Luis D Huaranguillo,Custer Unión Aqp - San Luis D Huaranguillo : San Luis → Huaranguillo,,3
+17683264,0,Transcayma - 11 de Mayo,Custer Transcayma - 11 de Mayo : Terminal Terrestre → Mujeres con esperanza,,3
+17683265,0,Unión Aqp - San Luis D,Custer Unión Aqp - San Luis D : Terminal terrestre → San Luis,,3
+17683266,0,C4 - Unión Aqp Gráficos Umacollo,Custer C4 - Unión Aqp Gráficos Umacollo : Umacollo → San Luis,,3
+17683267,0,Cono Norte - Cettar,Custer Cono Norte - Cettar : Terminal Terrestre → Ciudad Municipal,,3
+17683268,0,Cono Norte - Peruarbo,Custer Cono Norte - Peruarbo : Sepúlveda → Peruarbo,,3
+17683269,0,Cono Norte - Los Angeles 4D,Custer Cono Norte - Los Angeles 4D : Villa Los Milagros → Avelino,,3
+17683270,0,Cono Norte - Los Angeles 4D,Custer Cono Norte - Los Angeles 4D : Óvalo Mariscal Castilla → Villa Los Milagros,,3
+17683271,0,Cono Norte - CIMA Bustamante,Custer Cono Norte - CIMA Bustamante : Apipa → Óvalo Mariscal Castilla,,3
+17683272,0,Cono Norte - CIMA Bustamante,Custer Cono Norte - CIMA Bustamante : Óvalo Mariscal Castilla → Apipa,,3
+17683273,0,Cono Norte - Los Angeles 4B,Custer Cono Norte - Los Angeles 4B : Terminal Terreste → Villa Hermosa,,3
+17683274,0,Unión Aqp - San Luis D Huaranguillo,Custer Unión Aqp - San Luis D Huaranguillo : Huaranguillo → San Luis,,3
+17684885,0,Cono Norte - Santa Clara,Custer Cono Norte - Santa Clara : Villa Miguel Grau → Fundo Cabrería,,3
+17684886,0,Cono Norte - Canarios A,Custer Cono Norte - Canarios A : Angeles del sur Zona A → El Naranjal,,3
+17684887,0,Cono Norte - Canarios C,Custer Cono Norte - Canarios C : La isla → Angeles del sur Zona A,,3
+17684888,0,Cono Norte - Los Angeles 4A,Custer Cono Norte - Los Angeles 4A : Terminal Terrestre → Ciudad de Dios,,3
+17684889,0,Cono Norte - Los Angeles BR,Custer Cono Norte - Los Angeles BR : Terminal Terrestre → Apipa,,3
+17684890,0,Cono Norte - Los Angeles 4C,Custer Cono Norte - Los Angeles 4C : Avenida Venezuela → Villa Milagros,,3
+17684891,0,Bus Characato LB Mollebaya,Custer Bus Characato LB Mollebaya : 2 de Mayo → Mollebaya,,3
+17684893,0,Transcayma - San miguel,Custer Transcayma - San miguel : Las convenciones → Sector 7 Dean Valdivia,,3
+17684894,0,Uniín Aqp - Graficos San Luis A,Custer Uniín Aqp - Graficos San Luis A : Ormeño → San Luis,,3
+17684907,0,Uniín Aqp - Graficos San Luis B,Custer Uniín Aqp - Graficos San Luis B : Avelino → San Luis,,3
+17686763,0,Transcayma - Embajada,M3 Transcayma - Embajada : Terminal Terrestre → Los Pioneros,,3
+17687840,0,Cotum - B,Custer Cotum - B : Alto Libertad → Ovalo Apacheta,,3
+17687934,0,Etrabus A - San Jeronimo,Custer Etrabus A - San Jeronimo : San Jerónimo → Estadio Melgar,,3
+17687963,0,MegaBus P30 Huayco,M3 MegaBus P30 Huayco : Plaza Huayco → La Salle,,3
+17687966,0,MegaBus P30 Huayco,M3 MegaBus P30 Huayco : La Salle → Plaza Huayco,,3
+17687967,0,Unión Aqp - Villa Ecológica,Custer Unión Aqp - Villa Ecológica : Ormeño → Villa Ecológica,,3
+17687970,0,Cotum - A,Custer Cotum - A : Ovalo Apacheta → Alto Libertad,,3
+17688012,0,C4 - Unión Aqp A1,Custer C4 - Unión Aqp A1 : Ruta del sillar → El mirador,,3
+17688013,0,C4 - Unión Aqp B,Custer C4 - Unión Aqp B : Avelino → El mirador,,3
+17688014,0,C4 - Unión Aqp A15,Custer C4 - Unión Aqp A15 : Av La Paz → Revolución,,3
+17688016,0,C4 -Unión Aqp C,Custer C4 -Unión Aqp C : Ormeño → Señor de los milagros,,3
+17688018,0,Etrabus A - Señor de Huanca,Custer Etrabus A - Señor de Huanca : Señor de Huanca → Estadio Melgar,,3
+17688019,0,Unión Grau B2,Custer Unión Grau B2 : Terminal Terrestre → Miguel Grau,,3
+17688020,0,Unión Grau B2 A,Custer Unión Grau B2 A : Terminal Terrestre → Miguel Grau,,3
+17688021,0,Unión Grau C,Custer Unión Grau C : Plaza las Américas → Miguel Grau,,3
+17688022,0,Unión Grau B,Cementerio Apacheta,,3
+17688023,0,Unión Grau H,Custer Unión Grau H : Alto de la Alianza → Miguel Grau,,3
+17688024,0,Unión Grau A,Custer Unión Grau A : La Merced → Miguel Grau,,3
+17688025,0,AqpMasivo - 7-04,Custer AqpMasivo - 7-04 : Aeropuerto → Baños de Jesús,,3
+17688026,0,AqpMasivo - B,Combi AqpMasivo - B : Terminal Terrestre → Villa Santa Rosa,,3
+17688027,0,AqpMasivo - C,Combi AqpMasivo - C : Terminal Terrestre → Israel,,3
+17688028,0,Bus Characato LB Mollebaya,Custer Bus Characato LB Mollebaya : Mollebaya → 2 de Mayo,,3
+17688029,0,Bus Characato LBCerrillos,Custer Bus Characato LBCerrillos : C. Milagro → 2 de Mayo,,3
+17688030,0,Bus Characato - LA,Custer Bus Characato - LA : La Paz → Characato,,3
+17688031,0,Bus Characato T San Antorio,Custer Bus Characato T San Antorio : Terminal Terrestre → San Antonio,,3
+17688038,0,Bus Characato T Quequeña,Custer Bus Characato T Quequeña : Terminal Terrestre → Quequeña,,3
+17688039,0,Bus Characato - A,Custer Bus Characato - A : Filtro → Penal,,3
+17688040,0,3 de Octubre - B,Custer 3 de Octubre - B : Parque Selva Alegre → La campiña II,,3
+17688041,0,Correcaminos - Dolores,Custer Correcaminos - Dolores : La Salle → La campiña III,,3
+17688044,0,Ciudad mi trabajo A,Custer Ciudad mi trabajo A : Pachacutec → El pasto,,3
+17688045,0,Ciudad mi trabajo M,Custer Ciudad mi trabajo M : La Salle → La mansión,,3
+17688046,0,Cotaspa Alto Libertad,Custer Cotaspa Alto Libertad : Alto Libertad → Av Paisajista,,3
+17688047,0,Socabaya B,Custer Socabaya B : Pachacutec → Horacio Zevallos,,3
+17688048,0,Cotaspa 4 Cayma,Custer Cotaspa 4 Cayma : Enace → El Golf,,3
+17688049,0,C9 Simon Bolivar Horario,Custer C9 Simon Bolivar Horario : Cruce Sabandía → Av Independencia,,3
+17688050,0,C9 Simon Bolivar AntiHorario,Custer C9 Simon Bolivar AntiHorario : Av Independencia → Cruce Sabandía,,3
+17688051,0,Monterrey Corbacho,Custer Monterrey Corbacho : Av La Paz → Av Paisajista,,3
+17688052,0,MegaBus Tiabaya A,M3 MegaBus Tiabaya A : Tiabaya → Paucarpata,,3
+17688053,0,MegaBus Tiabaya A,M3 MegaBus Tiabaya A : Paucarpata → Tiabaya,,3
+17688054,0,MegaBus A - Avelino,Custer MegaBus A - Avelino : Ciudad Blanca → Av Paisajista,,3
+17688055,0,MegaBus D,Custer MegaBus D : Av. Paisajista → Los Alpes,,3
+17688056,0,MegaBus Corazón 7 de Junio,Custer MegaBus Corazón 7 de Junio : Av Paucarpata → Alata,,3
+17688057,0,MegaBus Tahuaycani,Custer MegaBus Tahuaycani : Urb. Micael Bastidas → Calle Peral,,3
+17688058,0,Mega Bus 33 - 13,Custer Mega Bus 33 - 13 : Av Paucarpata → San Hilarión,,3
+17688059,0,Mega Bus 38,Custer Mega Bus 38 : Av Progreso → Av Tahuantinsuyo,,3
+17688060,0,MegaBus M Upis,Custer MegaBus M Upis : Av Paucarpata → Mansión,,3
+17688061,0,Cotum - A,Custer Cotum - A : Alto Libertad → Ovalo Apacheta,,3
+17688062,0,Cotum A Pachacutec,Custer Cotum A Pachacutec : Av EE.UU. → Semirual Pachacutec,,3
+17688063,0,Cotum B Pachacutec,Custer Cotum B Pachacutec : Av EE.UU. → Semirual Pachacutec,,3
+17688064,0,Cotum M Pachacutec,Custer Cotum M Pachacutec : La salle → Semirual Pachacutec,,3
+17688065,0,Cotum Cural,Custer Cotum Cural : El Cural → La isla,,3
+17688066,0,Cotum Uchumayo,Custer Cotum Uchumayo : Uchumayo → La salle,,3
+17688180,0,Etrabus A - San Jeronimo,Custer Etrabus A - San Jeronimo : Estadio Melgar → San Jerónimo,,3
+17688206,0,4 de Octubre Independencia,Custer 4 de Octubre Independencia : C. Teniente Palacios → El Golf,,3
+17688207,0,Etrabus A - Señor de Huanca,Custer Etrabus A - Señor de Huanca : Estadio Melgar → Señor de Huanca,,3
+17688208,0,MegaBus Tahuaycani,Custer MegaBus Tahuaycani : Calle Peral → Urb. Micael Bastidas,,3
+17688209,0,Cotum Cural,Custer Cotum Cural : La isla → El Cural,,3
+17688210,0,Cotum Uchumayo,Custer Cotum Uchumayo : La salle → Uchumayo,,3
+17688229,0,MegaBus D,Custer MegaBus D : Los Alpes → Av. Paisajista,,3

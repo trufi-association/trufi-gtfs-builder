@@ -27,7 +27,7 @@ function agencyBuilder(features, defaultAgencyInfo) {
     const agencies = []
     for (let feature of features) {
         feature = feature[0]
-        const agencyName = feature.properties.operators || "default"
+        const agencyName = feature.properties.operator || "default"
         let agency = agencies.find(value => value.agency_name === agencyName);
         if (!agency) {
             agency = {
@@ -49,8 +49,8 @@ function calendarBuilder(features, defaultCalendar) {
         feature = feature[0]
         feature.gtfs.services = []
         // TODO:
-        // const opening_hours = feature.properties.opening_hours || defaultCalendar(feature)
-        const opening_hours =  defaultCalendar(feature)
+        const opening_hours = feature.properties.opening_hours || defaultCalendar(feature)
+        // const opening_hours =  defaultCalendar(feature)
         const times = opening_hours.split(";");
         times.map((value) => {
             const dualTimeMatch = value.match("((Mo|Tu|We|Th|Fr|Sa|Su)-(Mo|Tu|We|Th|Fr|Sa|Su)) (([01][0-9]|2[0-4]):([0-5][0-9]))-(([01][0-9]|2[0-4]):([0-5][0-9]))")
@@ -184,7 +184,7 @@ function frequenciesBuilder(features, frequencyHeadwaySecs) {
                 trip_id: service.trip_id,
                 start_time: service.startTime + ":00",
                 end_time: service.endTime + ":00",
-                headway_secs: frequencyHeadwaySecs(),
+                headway_secs: frequencyHeadwaySecs(feature),
                 exact_times: 1
             }
             frequencies.push(frequency)
