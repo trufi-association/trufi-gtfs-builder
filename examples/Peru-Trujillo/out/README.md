@@ -1,10 +1,10 @@
 ### Count
-**Total**: 102  **Correct**: 100  **With error**: 2
+**Total**: 102  **Correct**: 102  **With error**: 0
 
 
 | Id | Name | Ref | From | To | State |
 | -- | ---- | --- | ---- | -- | ----- |
-[17350695](https://www.openstreetmap.org/relation/17350695) | C-01 "B" : Av. Miguel Grau → Av. Miguel Grau | C-01 "B" | Av. Miguel Grau | Av. Miguel Grau | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(17350695);out%20geom;%0Away(1263077313);out%20geom;%0Away(1263077312);out%20geom;&R)
+[17350695](https://www.openstreetmap.org/relation/17350695) | C-01 "B" : Av. Miguel Grau → Av. Miguel Grau | C-01 "B" | Av. Miguel Grau | Av. Miguel Grau | ✅
 [17491518](https://www.openstreetmap.org/relation/17491518) | C-03 "JJ" : Av. César Vallejo → Av. César Vallejo | C-03 "JJ" | Av. César Vallejo | Av. César Vallejo | ✅
 [17492018](https://www.openstreetmap.org/relation/17492018) | C-05 "B1" : Av. José Faustino Sánchez Carrión → Av. José Faustino Sánchez Carrión | C-05 "B1" | Av. José Faustino Sánchez Carrión | Av. José Faustino Sánchez Carrión | ✅
 [17419574](https://www.openstreetmap.org/relation/17419574) | C-06 "K" : Vía Panamericana Norte → Vía Panamericana Norte | C-06 "K" | Vía Panamericana Norte | Vía Panamericana Norte | ✅
@@ -33,7 +33,7 @@
 [17521145](https://www.openstreetmap.org/relation/17521145) | C-35 "S3" : Av. Julián Arce → Av. Julián Arce | C-35 "S3" | Av. Julián Arce | Av. Julián Arce | ✅
 [17521283](https://www.openstreetmap.org/relation/17521283) | C-38 "S4" : Av. Julián Arce → Av. Julián Arce | C-38 "S4" | Av. Julián Arce | Av. Julián Arce | ✅
 [17612352](https://www.openstreetmap.org/relation/17612352) | C-41 "Z2" : Pasaje A → Pasaje A | C-41 "Z2" | Pasaje A | Pasaje A | ✅
-[17522621](https://www.openstreetmap.org/relation/17522621) | C-42 "B2" : Ca. Los Robles → Ca. Los Robles | C-42 "B2" | Ca. Los Robles | Ca. Los Robles | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(17522621);out%20geom;%0Away(1263077313);out%20geom;%0Away(1263077312);out%20geom;&R)
+[17522621](https://www.openstreetmap.org/relation/17522621) | C-42 "B2" : Ca. Los Robles → Ca. Los Robles | C-42 "B2" | Ca. Los Robles | Ca. Los Robles | ✅
 [17612420](https://www.openstreetmap.org/relation/17612420) | C-43 "A" : Av. Albania → Av. Albania | C-43 "A" | Av. Albania | Av. Albania | ✅
 [17522705](https://www.openstreetmap.org/relation/17522705) | C-44 "T2" : Vía Panamericana → Av. Dinamarca | C-44 "T2" | Vía Panamericana | Av. Dinamarca | ✅
 [17522730](https://www.openstreetmap.org/relation/17522730) | C-44 "T2" : Av. Dinamarca → Vía Panamericana | C-44 "T2" | Av. Dinamarca | Vía Panamericana | ✅
