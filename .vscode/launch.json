@@ -30,6 +30,15 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/examples/Ghana-Accra/index.js"
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Launch Peru-Trujillo script",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/examples/Peru-Trujillo/index.js"
         }
     ]
 }
