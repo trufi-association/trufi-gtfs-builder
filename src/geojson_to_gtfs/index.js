@@ -5,6 +5,8 @@ function geojsonToGtfs(features, inputStops, gtfsConfig, gtfsBuilders) {
     agencyBuilder,
     calendarBuilder,
     routeBuilder,
+    fareBuilder,
+    feedBuilder,
     tripBuilder,
     frequenciesBuilder,
     stopsBuilder,
@@ -19,6 +21,8 @@ function geojsonToGtfs(features, inputStops, gtfsConfig, gtfsBuilders) {
   })
   const calendar = calendarBuilder(features, gtfsConfig.defaultCalendar)
   const routes = routeBuilder(features)
+  const fare = fareBuilder(features, gtfsConfig.defaultFares)
+  const feeds = feedBuilder(gtfsConfig.feed)
   const trips = tripBuilder(features);
   const frequencies = frequenciesBuilder(features, gtfsConfig.frequencyHeadway);
   const stops = stopsBuilder(
@@ -40,6 +44,9 @@ function geojsonToGtfs(features, inputStops, gtfsConfig, gtfsBuilders) {
     "stops": stops,
     'stop_times': stopTimes,
     "shapes": shapePoints,
+    "fare_attributes": fare.attributes,
+    "fare_rules": fare.rules,
+    "feed_info": feeds
   };
 };
 

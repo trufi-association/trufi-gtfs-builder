@@ -1,2 +1,82 @@
 agency_id,agency_name,agency_timezone,agency_url
-0,default,America/La_Paz,https://www.example.com/
+0,Enace,America/Lima,https://arequipabus.app/
+1,B,America/Lima,https://arequipabus.app/
+2,Cotaspa 4,America/Lima,https://arequipabus.app/
+3,San miguel,America/Lima,https://arequipabus.app/
+4,A,America/Lima,https://arequipabus.app/
+5,C,America/Lima,https://arequipabus.app/
+6,Cettar,America/Lima,https://arequipabus.app/
+7,Villa Ecológica,America/Lima,https://arequipabus.app/
+8,BR,America/Lima,https://arequipabus.app/
+9,Peruarbo,America/Lima,https://arequipabus.app/
+10,Santa Clara,America/Lima,https://arequipabus.app/
+11,Royal Bus B,America/Lima,https://arequipabus.app/
+12,4A,America/Lima,https://arequipabus.app/
+13,San Luis B,America/Lima,https://arequipabus.app/
+14,D,America/Lima,https://arequipabus.app/
+15,Umacollo,America/Lima,https://arequipabus.app/
+16,Transpol B,America/Lima,https://arequipabus.app/
+17,A1,America/Lima,https://arequipabus.app/
+18,A15,America/Lima,https://arequipabus.app/
+19,B2,America/Lima,https://arequipabus.app/
+20,3,America/Lima,https://arequipabus.app/
+21,B2 A,America/Lima,https://arequipabus.app/
+22,Avelino,America/Lima,https://arequipabus.app/
+23,LA,America/Lima,https://arequipabus.app/
+24,H,America/Lima,https://arequipabus.app/
+25,T San Antorio,America/Lima,https://arequipabus.app/
+26,Dolores,America/Lima,https://arequipabus.app/
+27,Ciudad mi trabajo A,America/Lima,https://arequipabus.app/
+28,Ciudad mi trabajo M,America/Lima,https://arequipabus.app/
+29,Alto Libertad,America/Lima,https://arequipabus.app/
+30,4C,America/Lima,https://arequipabus.app/
+31,4B,America/Lima,https://arequipabus.app/
+32,11 de Mayo,America/Lima,https://arequipabus.app/
+33,Socabaya B,America/Lima,https://arequipabus.app/
+34,Independencia,America/Lima,https://arequipabus.app/
+35,7 de Junio,America/Lima,https://arequipabus.app/
+36,Monterrey Corbacho,America/Lima,https://arequipabus.app/
+37,13,America/Lima,https://arequipabus.app/
+38,38,America/Lima,https://arequipabus.app/
+39,A Pachacutec,America/Lima,https://arequipabus.app/
+40,B Pachacutec,America/Lima,https://arequipabus.app/
+41,M Pachacutec,America/Lima,https://arequipabus.app/
+42,M Upis,America/Lima,https://arequipabus.app/
+43,S,America/Lima,https://arequipabus.app/
+44,CIMA,America/Lima,https://arequipabus.app/
+45,Zamacola,America/Lima,https://arequipabus.app/
+46,El Litoral,America/Lima,https://arequipabus.app/
+47,Embajada,America/Lima,https://arequipabus.app/
+48,Chapi,America/Lima,https://arequipabus.app/
+49,Casimiro,America/Lima,https://arequipabus.app/
+50,Gráficos,America/Lima,https://arequipabus.app/
+51,Juan XXIII,America/Lima,https://arequipabus.app/
+52,Alto Selva Alegre,America/Lima,https://arequipabus.app/
+53,Cenepa,America/Lima,https://arequipabus.app/
+54,Olivos,America/Lima,https://arequipabus.app/
+55,Miguel Grau,America/Lima,https://arequipabus.app/
+56,C Atalaya,America/Lima,https://arequipabus.app/
+57,Atalaya,America/Lima,https://arequipabus.app/
+58,Mirador Berlín,America/Lima,https://arequipabus.app/
+59,01,America/Lima,https://arequipabus.app/
+60,02,America/Lima,https://arequipabus.app/
+61,05,America/Lima,https://arequipabus.app/
+62,06,America/Lima,https://arequipabus.app/
+63,07,America/Lima,https://arequipabus.app/
+64,09,America/Lima,https://arequipabus.app/
+65,San Martín,America/Lima,https://arequipabus.app/
+66,T Quequeña,America/Lima,https://arequipabus.app/
+67,D Huaranguillo,America/Lima,https://arequipabus.app/
+68,4D,America/Lima,https://arequipabus.app/
+69,CIMA Bustamante,America/Lima,https://arequipabus.app/
+70,LB Mollebaya,America/Lima,https://arequipabus.app/
+71,San Jeronimo,America/Lima,https://arequipabus.app/
+72,P30,America/Lima,https://arequipabus.app/
+73,LB Cerrillos,America/Lima,https://arequipabus.app/
+74,Señor de Huanca,America/Lima,https://arequipabus.app/
+75,7-04,America/Lima,https://arequipabus.app/
+76,Simon Bolivar Horario,America/Lima,https://arequipabus.app/
+77,Simon Bolivar AntiHorario,America/Lima,https://arequipabus.app/
+78,Tahuaycani,America/Lima,https://arequipabus.app/
+79,Cural,America/Lima,https://arequipabus.app/
+80,Uchumayo,America/Lima,https://arequipabus.app/

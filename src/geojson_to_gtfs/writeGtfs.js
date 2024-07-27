@@ -12,7 +12,7 @@ function toCsv(entries, writeLine) {
     const row = keys.map(key => entry[key]);
     const quotedRow = row.map(d => {
       if (d && d.match && d.match(/,/)) {
-        return `"${d}"`;
+        return `"${d.replace(/\"/gm, "'")}"`;
       }
       return d;
     });

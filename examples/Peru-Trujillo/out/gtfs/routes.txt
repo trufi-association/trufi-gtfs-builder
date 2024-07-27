@@ -12,9 +12,9 @@ route_id,agency_id,route_short_name,route_long_name,route_color,route_type
 17434472,4,M-20 "C",M-20 "C" : Prolong. Av. 12 de Noviembre → Prolong. Av. 12 de Noviembre,,3
 17463346,8,C-10 "M",C-10 "M" : E. Campiña de Moche → E. Campiña de Moche,,3
 17463348,9,C-14 "S",C-14 "S" : E. Campiña de Moche → E. Campiña de Moche,,3
-17463362,5,C-20 "UI","C-20 "UI" : Alto Trujillo, Barrio 6D → Alto Trujillo, Barrio 6D",,3
+17463362,5,C-20 "UI","C-20 'UI' : Alto Trujillo, Barrio 6D → Alto Trujillo, Barrio 6D",,3
 17463369,5,C-21 "R",C-21 "R" : Ca. Del Cacicazgo Mansiche → Ca. Del Cacicazgo Mansiche,,3
-17463385,5,C-22 "M","C-22 "M" : Alto Trujillo, Barrio 6D → Alto Trujillo, Barrio 6D",,3
+17463385,5,C-22 "M","C-22 'M' : Alto Trujillo, Barrio 6D → Alto Trujillo, Barrio 6D",,3
 17463445,10,M-23 "B <3",M-23 "B <3" : Calle Desamparados → Calle Desamparados,,3
 17463462,10,M-23 "B",M-23 "B" : Calle Desamparados → Calle Desamparados,,3
 17491518,0,C-03 "JJ",C-03 "JJ" : Av. César Vallejo → Av. César Vallejo,,3

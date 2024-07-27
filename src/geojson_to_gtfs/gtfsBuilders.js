@@ -1,4 +1,5 @@
 const distanceBetween = require('@turf/distance').default;
+const formatTime = require('./time/formater')
 
 function secondsToTime(seconds) {
     let hh = Math.floor(seconds / 3600);
@@ -52,7 +53,7 @@ function calendarBuilder(features, defaultCalendar) {
         const opening_hours = feature.properties.opening_hours || defaultCalendar(feature)
         // const opening_hours =  defaultCalendar(feature)
         const times = opening_hours.split(";");
-        times.map((value) => {
+        times.map(formatTime).map((value) => {
             const dualTimeMatch = value.match("((Mo|Tu|We|Th|Fr|Sa|Su)-(Mo|Tu|We|Th|Fr|Sa|Su)) (([01][0-9]|2[0-4]):([0-5][0-9]))-(([01][0-9]|2[0-4]):([0-5][0-9]))")
             if (dualTimeMatch && dualTimeMatch.length == 10) {
                 const serviceId = dualTimeMatch[1]
@@ -108,6 +109,7 @@ function calendarBuilder(features, defaultCalendar) {
                         endTime: singleTimeMatch[5],
                     })
                 } else {
+                    console.log('value => ', value)
                     throw new Error(`No correct opening_hours for https://www.osm.org/relation/${feature.properties.id}`)
                 }
             }
@@ -155,6 +157,48 @@ function routeBuilder(features) {
         feature.gtfs.route_id = feature.properties.id
     }
     return routes
+}
+
+function fareBuilder(features, defaultFares) {
+    const fare = {
+        attributes: [],
+        rules: []
+    }
+    for (let feature of features) {
+        feature = feature[0]
+
+        let fareId = fare.attributes.length
+        let price = parseFloat(feature.properties.fee)
+
+        fare.attributes.push({
+            agency_id: feature.gtfs.agency_id,
+            fare_id: fareId,
+            price: price || 0,
+            currency_type: defaultFares.currencyType,
+            payment_method: feature.properties.paymentMethod || 0
+        });
+
+        fare.rules.push({ fare_id: fareId, route_id: feature.properties.id });
+    }
+    return fare
+}
+
+function feedBuilder(feed) {
+    const feeds = [];
+
+    feeds.push({
+        feed_publisher_url: feed.publisherUrl,
+        feed_publisher_name: feed.publisherName,
+        feed_lang: feed.lang,
+        feed_version: feed.version,
+        feed_contact_email: feed.contactEmail,
+        feed_contact_url: feed.contactUrl,
+        feed_start_date: feed.startDate,
+        feed_end_date: feed.endDate,
+        feed_id: feed.id
+    });
+
+    return feeds
 }
 
 function tripBuilder(features) {
@@ -290,6 +334,7 @@ function stopTimesBuilder(features, vehicleSpeed) {
                     stop_id: nodes[index],
                     arrival_time: arrival_time,
                     departure_time: arrival_time,
+                    timepoint: 0
                 })
             }
         }
@@ -300,6 +345,8 @@ module.exports = {
     agencyBuilder,
     calendarBuilder,
     routeBuilder,
+    fareBuilder,
+    feedBuilder,
     tripBuilder,
     frequenciesBuilder,
     stopsBuilder,

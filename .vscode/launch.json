@@ -5,7 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "pwa-node",
+            "name": "Launch Arequipa script",
+            "program": "${workspaceFolder}/examples/Peru-Arequipa/index.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "type": "node",
             "request": "launch",
             "name": "Launch Cochabamba script",
             "skipFiles": [
@@ -14,7 +23,7 @@
             "program": "${workspaceFolder}/examples/Bolivia-Cochabamba/index.js"
         },
         {
-            "type": "pwa-node",
+            "type": "node",
             "request": "launch",
             "name": "Launch Duitama script",
             "skipFiles": [
@@ -23,7 +32,7 @@
             "program": "${workspaceFolder}/examples/Colombia-Duitama/index.js"
         },
         {
-            "type": "pwa-node",
+            "type": "node",
             "request": "launch",
             "name": "Launch Ghana-Accra script",
             "skipFiles": [
@@ -32,7 +41,7 @@
             "program": "${workspaceFolder}/examples/Ghana-Accra/index.js"
         },
         {
-            "type": "pwa-node",
+            "type": "node",
             "request": "launch",
             "name": "Launch Peru-Trujillo script",
             "skipFiles": [

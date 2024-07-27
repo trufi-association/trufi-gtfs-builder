@@ -1,0 +1,2 @@
+feed_publisher_url,feed_publisher_name,feed_lang,feed_version,feed_contact_email,feed_contact_url,feed_start_date,feed_end_date,feed_id
+https://trujillobus.app,Trujillo Bus,es,"Thu, 25 Jul 2024 02:03:57 GMT",email@trujillobus.app,http://support.trujillobus.app,20000101,21000101,trujillo-pe

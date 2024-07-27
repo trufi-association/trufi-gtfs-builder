@@ -11,13 +11,28 @@ osmToGtfs({
         }), skipRoute: (route) => {
             return ![2084702].includes(route.id)
         }
-    }, gtfsOptions: {
+    },
+    gtfsOptions: {
         fakeStops: (routeFeature) => [].includes(routeFeature.properties.id),
         stopNameBuilder: (stops) => {
             if (!stops || stops.length == 0) {
-                stops = ["innominada"]
+                stops = ["Innominada"]
             }
             return stops.join(" y ")
         },
+        agencyTimezone: "America/Lima",
+        agencyUrl: "https://arequipabus.app/",
+        defaultFares: { currencyType: "PEN" },
+        feed: {
+            publisherUrl: "https://arequipabus.app",
+            publisherName: "Arequipa Bus",
+            lang: "es",
+            version: new Date().toUTCString(),
+            contactEmail: "email@arequipabus.app",
+            contactUrl: "http://support.arequipabus.app",
+            startDate: "20000101",
+            endDate: "21000101",
+            id: "arequipa-pe"
+        }
     }
 }).catch(error => console.error(error))

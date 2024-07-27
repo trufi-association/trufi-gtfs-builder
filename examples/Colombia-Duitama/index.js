@@ -9,7 +9,7 @@ osmToGtfs({
         agencyTimezone: "America/Bogota",
         stopNameBuilder: (stops) => {
             if (!stops || stops.length == 0) {
-                stops = ["innominada"]
+                stops = ["Innominada"]
             }
             return stops.join(" y ")
         },

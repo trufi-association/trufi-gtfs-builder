@@ -1,57 +1,57 @@
 agency_id,agency_name,agency_timezone,agency_url
-0,Nuevos Girasoles,America/Lima,https://www.example.com/
-1,Titanic Express,America/Lima,https://www.example.com/
-2,Nuevo California,America/Lima,https://www.example.com/
-3,Arco Iris Express,America/Lima,https://www.example.com/
-4,Salaverry Express,America/Lima,https://www.example.com/
-5,Luz Divina,America/Lima,https://www.example.com/
-6,San Isidro Labrador,America/Lima,https://www.example.com/
-7,Esperanza Express,America/Lima,https://www.example.com/
-8,Mochica Chimu,America/Lima,https://www.example.com/
-9,Sol y Luna,America/Lima,https://www.example.com/
-10,Virgen de la Puerta,America/Lima,https://www.example.com/
-11,Moderno Girasoles,America/Lima,https://www.example.com/
-12,Santa Lucia de Moche,America/Lima,https://www.example.com/
-13,Mochica,America/Lima,https://www.example.com/
-14,Nuevo Diamante,America/Lima,https://www.example.com/
-15,Virgen del Arco,America/Lima,https://www.example.com/
-16,Santa Catalina,America/Lima,https://www.example.com/
-17,El Aguila,America/Lima,https://www.example.com/
-18,Caballito de Totora,America/Lima,https://www.example.com/
-19,Señor de la Misericordia,America/Lima,https://www.example.com/
-20,Corazon de Jesus,America/Lima,https://www.example.com/
-21,Los Girasoles,America/Lima,https://www.example.com/
-22,California,America/Lima,https://www.example.com/
-23,Miramar,America/Lima,https://www.example.com/
-24,Huanchaco,America/Lima,https://www.example.com/
-25,Serv. Multiples Moderno Express S.A.,America/Lima,https://www.example.com/
-26,Esperanza Tours S.R.L.,America/Lima,https://www.example.com/
-27,El Cortijo,America/Lima,https://www.example.com/
-28,La Libertad,America/Lima,https://www.example.com/
-29,Señor de los Milagros,America/Lima,https://www.example.com/
-30,Expreso Buenos Aires S.A.C.,America/Lima,https://www.example.com/
-31,Larco Express S.A.,America/Lima,https://www.example.com/
-32,Alfa y Omega S.A.C.,America/Lima,https://www.example.com/
-33,Serv. Generales Lider Express S.A.,America/Lima,https://www.example.com/
-34,Empresa de Transportes Horizonte Ecologico S.A.,America/Lima,https://www.example.com/
-35,Serv. Generales Salaverry S.R.L.,America/Lima,https://www.example.com/
-36,Jose Emilio Lefebvre S.A.,America/Lima,https://www.example.com/
-37,Amigos Unidos S.A.C.,America/Lima,https://www.example.com/
-38,Serv. Generales nuevo Gran Chimu,America/Lima,https://www.example.com/
-39,Huracan S.A.C.,America/Lima,https://www.example.com/
-40,El Icaro,America/Lima,https://www.example.com/
-41,N° 1 Florencia Express S.A.,America/Lima,https://www.example.com/
-42,San Pedro del Amor S.A.,America/Lima,https://www.example.com/
-43,COVISA S.A.C.,America/Lima,https://www.example.com/
-44,Victor Larco S.A.,America/Lima,https://www.example.com/
-45,Reyna Larco S.A.,America/Lima,https://www.example.com/
-46,Turismo Dios es mi guia S.R.L.,America/Lima,https://www.example.com/
-47,Turismo y serv. Los Pinos S.A.C.,America/Lima,https://www.example.com/
-48,Los Halcones S.A.,America/Lima,https://www.example.com/
-49,Rio Seco S.A.,America/Lima,https://www.example.com/
-50,Hermelinda Express S.R.L.,America/Lima,https://www.example.com/
-51,Los Diamantes,America/Lima,https://www.example.com/
-52,Nuestra Señora de Guadalupe S.A.,America/Lima,https://www.example.com/
-53,Serv. e industria Vista Alegre S.A.,America/Lima,https://www.example.com/
-54,Emp. Transp. Wichanzao S.A.,America/Lima,https://www.example.com/
-55,Nueva Hermelinda S.A.C.,America/Lima,https://www.example.com/
+0,Nuevos Girasoles,America/Lima,https://trujillobus.app/
+1,Titanic Express,America/Lima,https://trujillobus.app/
+2,Nuevo California,America/Lima,https://trujillobus.app/
+3,Arco Iris Express,America/Lima,https://trujillobus.app/
+4,Salaverry Express,America/Lima,https://trujillobus.app/
+5,Luz Divina,America/Lima,https://trujillobus.app/
+6,San Isidro Labrador,America/Lima,https://trujillobus.app/
+7,Esperanza Express,America/Lima,https://trujillobus.app/
+8,Mochica Chimu,America/Lima,https://trujillobus.app/
+9,Sol y Luna,America/Lima,https://trujillobus.app/
+10,Virgen de la Puerta,America/Lima,https://trujillobus.app/
+11,Moderno Girasoles,America/Lima,https://trujillobus.app/
+12,Santa Lucia de Moche,America/Lima,https://trujillobus.app/
+13,Mochica,America/Lima,https://trujillobus.app/
+14,Nuevo Diamante,America/Lima,https://trujillobus.app/
+15,Virgen del Arco,America/Lima,https://trujillobus.app/
+16,Santa Catalina,America/Lima,https://trujillobus.app/
+17,El Aguila,America/Lima,https://trujillobus.app/
+18,Caballito de Totora,America/Lima,https://trujillobus.app/
+19,Señor de la Misericordia,America/Lima,https://trujillobus.app/
+20,Corazon de Jesus,America/Lima,https://trujillobus.app/
+21,Los Girasoles,America/Lima,https://trujillobus.app/
+22,California,America/Lima,https://trujillobus.app/
+23,Miramar,America/Lima,https://trujillobus.app/
+24,Huanchaco,America/Lima,https://trujillobus.app/
+25,Serv. Multiples Moderno Express S.A.,America/Lima,https://trujillobus.app/
+26,Esperanza Tours S.R.L.,America/Lima,https://trujillobus.app/
+27,El Cortijo,America/Lima,https://trujillobus.app/
+28,La Libertad,America/Lima,https://trujillobus.app/
+29,Señor de los Milagros,America/Lima,https://trujillobus.app/
+30,Expreso Buenos Aires S.A.C.,America/Lima,https://trujillobus.app/
+31,Larco Express S.A.,America/Lima,https://trujillobus.app/
+32,Alfa y Omega S.A.C.,America/Lima,https://trujillobus.app/
+33,Serv. Generales Lider Express S.A.,America/Lima,https://trujillobus.app/
+34,Empresa de Transportes Horizonte Ecologico S.A.,America/Lima,https://trujillobus.app/
+35,Serv. Generales Salaverry S.R.L.,America/Lima,https://trujillobus.app/
+36,Jose Emilio Lefebvre S.A.,America/Lima,https://trujillobus.app/
+37,Amigos Unidos S.A.C.,America/Lima,https://trujillobus.app/
+38,Serv. Generales nuevo Gran Chimu,America/Lima,https://trujillobus.app/
+39,Huracan S.A.C.,America/Lima,https://trujillobus.app/
+40,El Icaro,America/Lima,https://trujillobus.app/
+41,N° 1 Florencia Express S.A.,America/Lima,https://trujillobus.app/
+42,San Pedro del Amor S.A.,America/Lima,https://trujillobus.app/
+43,COVISA S.A.C.,America/Lima,https://trujillobus.app/
+44,Victor Larco S.A.,America/Lima,https://trujillobus.app/
+45,Reyna Larco S.A.,America/Lima,https://trujillobus.app/
+46,Turismo Dios es mi guia S.R.L.,America/Lima,https://trujillobus.app/
+47,Turismo y serv. Los Pinos S.A.C.,America/Lima,https://trujillobus.app/
+48,Los Halcones S.A.,America/Lima,https://trujillobus.app/
+49,Rio Seco S.A.,America/Lima,https://trujillobus.app/
+50,Hermelinda Express S.R.L.,America/Lima,https://trujillobus.app/
+51,Los Diamantes,America/Lima,https://trujillobus.app/
+52,Nuestra Señora de Guadalupe S.A.,America/Lima,https://trujillobus.app/
+53,Serv. e industria Vista Alegre S.A.,America/Lima,https://trujillobus.app/
+54,Emp. Transp. Wichanzao S.A.,America/Lima,https://trujillobus.app/
+55,Nueva Hermelinda S.A.C.,America/Lima,https://trujillobus.app/

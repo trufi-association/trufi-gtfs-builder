@@ -12,7 +12,8 @@ osmToGtfs({
         }), skipRoute: (route) => {
             return ![].includes(route.id)
         }
-    }, gtfsOptions: {
+    },
+    gtfsOptions: {
         agencyTimezone: "America/Lima",
         fakeStops: (routeFeature) => [].includes(routeFeature.properties.id),
         vehicleSpeed: (routeFeature) => {
@@ -35,9 +36,22 @@ osmToGtfs({
         },
         stopNameBuilder: (stops) => {
             if (!stops || stops.length == 0) {
-                stops = ["innominada"]
+                stops = ["Innominada"]
             }
             return stops.join(" y ")
         },
+        agencyUrl: "https://trujillobus.app/",
+        defaultFares: { currencyType: "PEN" },
+        feed: {
+            publisherUrl: "https://trujillobus.app",
+            publisherName: "Trujillo Bus",
+            lang: "es",
+            version: new Date().toUTCString(),
+            contactEmail: "email@trujillobus.app",
+            contactUrl: "http://support.trujillobus.app",
+            startDate: "20000101",
+            endDate: "21000101",
+            id: "trujillo-pe"
+        }
     }
 }).catch(error => console.error(error))
