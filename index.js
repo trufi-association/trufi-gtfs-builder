@@ -55,8 +55,8 @@ async function osmToGtfs(config) {
 
     if (outputDir) {
         if (fs.existsSync(path.join(outputDir))) {
-            fs.rmdirSync(path.join(outputDir), { recursive: true })
-        }
+            fs.rmSync(path.join(outputDir), { recursive: true, force: true });
+        }        
         fs.mkdirSync(path.join(outputDir));
         if (outputFiles.routes) {
             fs.mkdirSync(path.join(outputDir, `routes`));
