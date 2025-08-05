@@ -1,0 +1,2 @@
+feed_publisher_url,feed_publisher_name,feed_lang,feed_version,feed_contact_email,feed_contact_url,feed_start_date,feed_end_date,feed_id
+https://nexion.com.bo,Nexion Transport,es,1.0,soporte@nexion.com.bo,https://nexion.com.bo/contacto,20250101,20251231,nexion_feed
