@@ -1,40 +1,29 @@
 import 'dart:convert';
 import 'dart:io';
-import '../lib/osm_data_tool.dart';
-import '../lib/overpass_downloader.dart';
+import '../lib/geojson_to_gtfs.dart';
+import '../lib/write_gtfs.dart';
 
-Future<void> main(List<String> args) async {
-  final downloader = OSMOverpassDownloader(
-    bounds: {"north": -16.45, "south": -16.55, "east": -68.10, "west": -68.20},
-  );
+Future<void> main() async {
+  final geojsonFile = File('output.geojson');
+  if (!geojsonFile.existsSync()) {
+    print("❌ output.geojson no encontrado.");
+    exit(1);
+  }
 
-  print("Descargando rutas...");
-  final routes = await downloader.getRoutes(["bus"]);
-  print("Total de rutas: ${routes.length}");
+  final geojson = jsonDecode(await geojsonFile.readAsString());
 
-  print("Descargando ways...");
-  final ways = await downloader.getWays();
-  print("Total de ways: ${ways.length}");
+  final config = {
+    'agencyTimezone': 'America/La_Paz',
+    'agencyUrl': 'https://nexion.com.bo',
+    'defaultAgency': 'Nexion',
+  };
 
-  print("Descargando paradas...");
-  final stops = await downloader.getStops();
-  print("Total de paradas: ${stops.length}");
+  final gtfsData = geojsonToGtfs(geojson, {}, config);
 
-  print("Procesando datos...");
-  final data = osmDataTool(
-    routes: routes,
-    ways: ways,
-    stops: stops,
-    skipRoute: (route) => true, // Aquí puedes filtrar rutas
-  );
+  final outputDir = Directory('gtfs_output');
+  if (!outputDir.existsSync()) outputDir.createSync();
 
-  print("Generando README...");
-  File("README.md").writeAsStringSync(data['readme']);
+  writeGtfs(gtfsData, outputDir.path);
 
-  print("Exportando a GeoJSON...");
-  final geojsonFile = File("output.geojson");
-  geojsonFile.writeAsStringSync(
-    const JsonEncoder.withIndent("  ").convert(data['geojsonFeatures']),
-  );
-  print("✅ Proceso finalizado. Revisa README.md");
+  print("✅ GTFS generado en: ${outputDir.path}");
 }

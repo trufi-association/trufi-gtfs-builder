@@ -1,6 +1,7 @@
-import 'extractor_error.dart';
+import 'dart:collection';
 import 'route_extractor.dart';
-import 'readme_generator.dart';
+import '../extractor_error.dart';
+import '../readme_generator.dart';
 
 Map<String, dynamic> osmDataTool({
   required Map<int, dynamic> routes,
@@ -16,11 +17,12 @@ Map<String, dynamic> osmDataTool({
     final currentRoute = entry.value as Map<String, dynamic>;
     try {
       if (!skipRoute(currentRoute)) {
-        throw {
-          "extractor_error": ExtractorError.routeSkipped,
-          "uri":
-              "https://overpass-turbo.eu/?Q=//${ExtractorError.routeSkipped}%0Arel(${currentRoute['id']});out geom;&R"
-        };
+        continue;
+        // throw {
+        //   "extractor_error": ExtractorError.routeSkipped,
+        //   "uri":
+        //       "https://overpass-turbo.eu/?Q=//${ExtractorError.routeSkipped}%0Arel(${currentRoute['id']});out geom;&R"
+        // };
       }
       if (!(currentRoute['tags']?.containsKey("ref") ?? false)) {
         throw {
@@ -41,11 +43,11 @@ Map<String, dynamic> osmDataTool({
             "properties": {...currentRoute['tags'], "id": currentRoute['id']},
             "geometry": {
               "type": "LineString",
-              "coordinates": data.points,
-              "nodes": data.nodes,
+              "coordinates": data['points'],
+              "nodes": data['nodes'],
             }
           },
-          ...data.routeStops.map((element) => {
+          ...data['routeStops'].map((element) => {
                 "type": "Feature",
                 "properties": {...element['tags'], "id": element['id']},
                 "geometry": {
@@ -56,7 +58,7 @@ Map<String, dynamic> osmDataTool({
         ]
       };
 
-      data.stops.forEach((stopId, names) {
+      data['stops'].forEach((stopId, names) {
         mainStops.putIfAbsent(stopId, () => []).addAll(names);
       });
     } catch (error) {

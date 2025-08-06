@@ -1,0 +1,2 @@
+feed_publisher_name,feed_publisher_url,feed_lang,feed_version,feed_start_date,feed_end_date,feed_id
+Nexion GTFS Tool,https://nexion.com.bo,es,1.0.0,20250101,20251231,nexion_feed

@@ -1,21 +1,7 @@
-import 'extractor_error.dart';
-
-class RouteExtractorResult {
-  final List<int> nodes;
-  final Map<String, List<String>> stops;
-  final List<List<double>> points;
-  final List<Map<String, dynamic>> routeStops;
-
-  RouteExtractorResult({
-    required this.nodes,
-    required this.stops,
-    required this.points,
-    required this.routeStops,
-  });
-}
+import '../extractor_error.dart';
 
 class RouteExtractor {
-  static RouteExtractorResult extract(
+  static Map<String, dynamic> extract(
     Map<String, dynamic> routeElements,
     Map<int, dynamic> ways,
     Map<int, dynamic> stops,
@@ -24,7 +10,8 @@ class RouteExtractor {
     final routeStops = <Map<String, dynamic>>[];
 
     for (var element in routeElements['members']) {
-      if (element['type'] == "way" && (element['role'] == null || element['role'] == "")) {
+      if (element['type'] == "way" &&
+          (element['role'] == null || element['role'] == "")) {
         final currentWay = ways[element['ref']];
         if (currentWay == null) {
           throw {
@@ -66,11 +53,11 @@ class RouteExtractor {
           .map((pt) => [pt['lon'] as double, pt['lat'] as double]));
     }
 
-    return RouteExtractorResult(
-      nodes: tmpNodes,
-      stops: tmpStops,
-      points: tmpPoints,
-      routeStops: routeStops,
-    );
+    return {
+      'nodes': tmpNodes,
+      'stops': tmpStops,
+      'points': tmpPoints,
+      'routeStops': routeStops,
+    };
   }
 }

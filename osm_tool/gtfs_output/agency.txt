@@ -1,0 +1,17 @@
+agency_id,agency_name,agency_timezone,agency_url
+La Paz Bus,La Paz Bus,America/La_Paz,https://nexion.com.bo
+SETRAM,SETRAM,America/La_Paz,https://nexion.com.bo
+Sistema Municipal de Transporte (SETRAM). GAMLP,Sistema Municipal de Transporte (SETRAM). GAMLP,America/La_Paz,https://nexion.com.bo
+GAMLP,GAMLP,America/La_Paz,https://nexion.com.bo
+GMLP,GMLP,America/La_Paz,https://nexion.com.bo
+Asociacion Señor de Mayo,Asociacion Señor de Mayo,America/La_Paz,https://nexion.com.bo
+default,default,America/La_Paz,https://nexion.com.bo
+Sindicato Litoral,Sindicato Litoral,America/La_Paz,https://nexion.com.bo
+Sindicato Simón Bolívar,Sindicato Simón Bolívar,America/La_Paz,https://nexion.com.bo
+SINDICATO RO ABAJO - PALCA,SINDICATO RO ABAJO - PALCA,America/La_Paz,https://nexion.com.bo
+SINDICATO SEOR DE LAGUNAS,SINDICATO SEOR DE LAGUNAS,America/La_Paz,https://nexion.com.bo
+Sindicato de transporte mixto "Simón Bolivar",Sindicato de transporte mixto "Simón Bolivar",America/La_Paz,https://nexion.com.bo
+Sindicato de Transporte Eduardo Avaroa,Sindicato de Transporte Eduardo Avaroa,America/La_Paz,https://nexion.com.bo
+Sindicato Villa Victoria,Sindicato Villa Victoria,America/La_Paz,https://nexion.com.bo
+LaPazBus-Sistema Municipal de Transporte (SETRAM)-GAMLP,LaPazBus-Sistema Municipal de Transporte (SETRAM)-GAMLP,America/La_Paz,https://nexion.com.bo
+Sindicato Pedro Domingo Murillo,Sindicato Pedro Domingo Murillo,America/La_Paz,https://nexion.com.bo

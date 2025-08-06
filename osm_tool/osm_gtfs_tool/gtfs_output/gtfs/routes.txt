@@ -1,0 +1,4 @@
+route_id,agency_id,route_short_name,route_long_name,route_type,route_color
+9085564,Sindicato de colectiveros y microbuses radio urbano y suburbano ciudad de Cochabamba,J,MicroBus J: Calle Gran Chaco → Avenida Chiquicollo,3,
+9118342,Sindicato mixto de transporte público 6 de mayo,16,MiniBus 16: Avenida Silala → OTB Ecológica,3,
+9144378,Asociación de transporte libre mixto Oruro,108,Trufi 108: Avenida París → Avenida Benjo Cruz,3,
