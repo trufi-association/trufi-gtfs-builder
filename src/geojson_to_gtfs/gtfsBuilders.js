@@ -110,7 +110,7 @@ function calendarBuilder(features, defaultCalendar) {
                     })
                 } else {
                     console.log('value => ', value)
-                    throw new Error(`No correct opening_hours for https://www.osm.org/relation/${feature.properties.id}`)
+                    // throw new Error(`No correct opening_hours for https://www.osm.org/relation/${feature.properties.id}`)
                 }
             }
         })
@@ -262,15 +262,15 @@ function stopsBuilder(features, inputStops, maxStopsDistance, stopNameBuilder, f
         } else {
             const { nodes, coordinates } = routeFeature.geometry
             const filteredStops = { nodes: [], coordinates: [] }
-            let previousCoords
-            let distance = 0
+            // let previousCoords
+            // let distance = 0
             for (let index = 0; index < nodes.length; index++) {
                 const stopId = nodes[index]
                 const coords = coordinates[index]
-                if (previousCoords) {
-                    distance = distance + distanceBetween(previousCoords, coords, { units: 'meters' });
-                }
-                if (distance > maxStopsDistance || index == nodes.length - 1 || index == 0) {
+                // if (previousCoords) {
+                //     distance = distance + distanceBetween(previousCoords, coords, { units: 'meters' });
+                // }
+             
                     if (!(checkList[stopId])) {
                         checkList[stopId] = true
                         const stopName = stopNameBuilder(inputStops[stopId])
@@ -283,9 +283,9 @@ function stopsBuilder(features, inputStops, maxStopsDistance, stopNameBuilder, f
                     }
                     filteredStops.nodes.push(stopId)
                     filteredStops.coordinates.push(coords)
-                    distance = 0
-                }
-                previousCoords = coords
+                    // distance = 0
+             
+                // previousCoords = coords
             }
             routeFeature.gtfs.filteredStops = filteredStops
         }

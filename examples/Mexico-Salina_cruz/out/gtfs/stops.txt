@@ -1,0 +1,2268 @@
+stop_id,stop_name,stop_lat,stop_lon
+1284120680,Calzada Teniente José Azueta,16.1620137,-95.2274685
+6302416768,Innominada,16.1621194,-95.2274926
+1284120916,Innominada,16.1627189,-95.227552
+5094624416,Innominada,16.1637334,-95.2275546
+5093304050,Innominada,16.1694304,-95.2275102
+8482329066,Innominada,16.1702909,-95.2274988
+8482361687,Innominada,16.1704275,-95.227497
+1284120692,Innominada,16.1714151,-95.227484
+5090541567,Innominada,16.1722822,-95.2274752
+1371144761,Entronque Carretero (Pinotepa - Salina Cruz) - Salinas del Marqués,16.1734144,-95.2274886
+4482907772,Entronque Carretero (Pinotepa - Salina Cruz) - Salinas del Marqués,16.1746502,-95.227485
+8482343819,Entronque Carretero (Pinotepa - Salina Cruz) - Salinas del Marqués,16.1747628,-95.227482
+8482329116,Entronque Carretero (Pinotepa - Salina Cruz) - Salinas del Marqués,16.1753735,-95.2274655
+5095448311,Entronque Carretero (Pinotepa - Salina Cruz) - Salinas del Marqués,16.1755536,-95.2274606
+8482343820,Entronque Carretero (Pinotepa - Salina Cruz) - Salinas del Marqués,16.1762544,-95.2274428
+5095448329,Entronque Carretero (Pinotepa - Salina Cruz) - Salinas del Marqués,16.1763116,-95.2274414
+1284120899,Entronque Carretero (Pinotepa - Salina Cruz) - Salinas del Marqués,16.1781107,-95.2274195
+5090541569,Entronque Carretero (Pinotepa - Salina Cruz) - Salinas del Marqués,16.1785542,-95.2274235
+6302416622,Innominada,16.17886,-95.2273571
+6302416621,Innominada,16.1791705,-95.2273169
+6302416115,Innominada,16.1797732,-95.2273116
+6302416114,Innominada,16.1801855,-95.227274
+6415120916,Innominada,16.1803554,-95.2272069
+6302416113,Innominada,16.1804765,-95.2271131
+6302416112,Innominada,16.1806002,-95.226936
+6302416111,Carretera Acceso al Puerto Salina Cruz,16.1806675,-95.226732
+2921628438,Carretera Acceso al Puerto Salina Cruz,16.1806547,-95.2263921
+2921628441,Carretera Acceso al Puerto Salina Cruz,16.1806449,-95.2257921
+5090541929,Carretera Acceso al Puerto Salina Cruz,16.1806259,-95.2255037
+5101786266,Carretera Acceso al Puerto Salina Cruz,16.1805834,-95.2250062
+2921628440,Carretera Acceso al Puerto Salina Cruz,16.1805054,-95.2244747
+2921628442,Carretera Acceso al Puerto Salina Cruz,16.180433,-95.22407
+6422122229,Carretera Acceso al Puerto Salina Cruz,16.1803284,-95.2236074
+2921628439,Carretera Acceso al Puerto Salina Cruz,16.1802125,-95.2232003
+6422122230,Carretera Acceso al Puerto Salina Cruz,16.180054,-95.2226566
+5101786267,Carretera Acceso al Puerto Salina Cruz,16.1798583,-95.222104
+6422122231,Carretera Acceso al Puerto Salina Cruz,16.1796882,-95.2217258
+2921628443,Carretera Acceso al Puerto Salina Cruz,16.1793945,-95.2211766
+2921628444,Carretera Acceso al Puerto Salina Cruz,16.1790399,-95.2205403
+1675110685,Carretera Acceso al Puerto Salina Cruz,16.178574,-95.2196835
+1675110666,Carretera Acceso al Puerto Salina Cruz,16.1778307,-95.2182657
+1675110650,Carretera Acceso al Puerto Salina Cruz,16.1771581,-95.2170551
+5101766876,Carretera Acceso al Puerto Salina Cruz,16.1770105,-95.2167637
+6301774472,Carretera Acceso al Puerto Salina Cruz,16.176932,-95.2165995
+5101766875,Carretera Acceso al Puerto Salina Cruz,16.1767748,-95.2162502
+2921628445,Carretera Acceso al Puerto Salina Cruz,16.1764648,-95.215455
+5101766874,Carretera Acceso al Puerto Salina Cruz,16.1762455,-95.2147897
+1675110635,Carretera Acceso al Puerto Salina Cruz,16.1760692,-95.2141033
+1675110618,Carretera Acceso al Puerto Salina Cruz,16.1752862,-95.209773
+5101492789,Carretera Acceso al Puerto Salina Cruz,16.1750958,-95.2090643
+6422122232,Carretera Acceso al Puerto Salina Cruz,16.1749793,-95.2086917
+5101766860,Carretera Acceso al Puerto Salina Cruz,16.1747616,-95.2081043
+5101785255,Carretera Acceso al Puerto Salina Cruz,16.1746496,-95.2078964
+5101785257,Carretera Acceso al Puerto Salina Cruz,16.1745413,-95.2076435
+5101785254,Carretera Acceso al Puerto Salina Cruz,16.1744023,-95.2073331
+5101785258,Carretera Acceso al Puerto Salina Cruz,16.1742825,-95.2070615
+5101785259,Carretera Acceso al Puerto Salina Cruz,16.1742143,-95.2069194
+5101785253,Carretera Acceso al Puerto Salina Cruz,16.1739837,-95.2064198
+5101785252,Carretera Acceso al Puerto Salina Cruz,16.1738381,-95.2060926
+5101785251,Carretera Acceso al Puerto Salina Cruz,16.1737351,-95.205819
+5101785250,Carretera Acceso al Puerto Salina Cruz,16.1736346,-95.2055173
+5101785249,Carretera Acceso al Puerto Salina Cruz,16.173556,-95.2052397
+5101785248,Carretera Acceso al Puerto Salina Cruz,16.1734955,-95.2049527
+5101785247,Carretera Acceso al Puerto Salina Cruz,16.1734556,-95.2047113
+5101785246,Carretera Acceso al Puerto Salina Cruz,16.1734144,-95.2043961
+5101785245,Carretera Acceso al Puerto Salina Cruz,16.173386,-95.2040903
+5101785244,Carretera Acceso al Puerto Salina Cruz,16.1733551,-95.2038167
+5101785243,Carretera Acceso al Puerto Salina Cruz,16.1733036,-95.2035324
+5101785242,Carretera Acceso al Puerto Salina Cruz,16.1732096,-95.2031542
+5101785235,Carretera Acceso al Puerto Salina Cruz,16.1731503,-95.202945
+5101847131,Carretera Acceso al Puerto Salina Cruz y Calzada Teniente José Azueta,16.1729821,-95.2024397
+5101785238,Calzada Teniente José Azueta,16.1729584,-95.2023777
+5101785241,Calzada Teniente José Azueta,16.1728038,-95.2020318
+5101785240,Calzada Teniente José Azueta,16.1727279,-95.2017689
+8496464830,Calzada Teniente José Azueta,16.172687,-95.2015814
+5101780643,Calzada Teniente José Azueta,16.1726725,-95.2014712
+5101780642,Calzada Teniente José Azueta,16.1726299,-95.2011627
+5101780641,Calzada Teniente José Azueta,16.1725839,-95.2007567
+5101780640,Calzada Teniente José Azueta,16.1724818,-95.1999236
+5101780639,Calzada Teniente José Azueta,16.172429,-95.1994917
+5101806173,Calzada Teniente José Azueta,16.1724123,-95.199265
+5101806172,Calzada Teniente José Azueta,16.1724033,-95.1991215
+5101806171,Calzada Teniente José Azueta,16.1724187,-95.1989365
+5101806170,Calzada Teniente José Azueta,16.1724509,-95.1987983
+5101806169,Calzada Teniente José Azueta,16.1725211,-95.1986139
+5101806168,Calzada Teniente José Azueta,16.1726093,-95.1984738
+5101806167,Calzada Teniente José Azueta,16.1727059,-95.1983564
+5101806166,Calzada Teniente José Azueta,16.1730099,-95.198054
+5101806165,Calzada Teniente José Azueta,16.1734305,-95.1976188
+5109393510,Calzada Teniente José Azueta y Calle Virgilio Uribe,16.1734969,-95.1975477
+5101806164,Calzada Teniente José Azueta,16.1735676,-95.1974519
+5101806163,Calzada Teniente José Azueta,16.1736758,-95.1972708
+5101806162,Calzada Teniente José Azueta,16.1737364,-95.1971541
+5101806161,Calzada Teniente José Azueta,16.1738323,-95.1969248
+5101806159,Calzada Teniente José Azueta,16.1742851,-95.1957835
+5101806157,Calzada Teniente José Azueta,16.174486,-95.1952444
+5101806156,Calzada Teniente José Azueta,16.1745208,-95.1951022
+5101806155,Calzada Teniente José Azueta,16.1745349,-95.1949601
+5101806154,Calzada Teniente José Azueta,16.1745279,-95.194826
+5101847164,Calzada Teniente José Azueta,16.1745043,-95.194701
+5101806153,Calzada Teniente José Azueta,16.1744822,-95.1946134
+5101806152,Calzada Teniente José Azueta,16.1744519,-95.1945323
+5101847174,Calzada Teniente José Azueta,16.1744705,-95.1943754
+5101847173,Calzada Teniente José Azueta,16.1744899,-95.1943278
+5101847172,Calzada Teniente José Azueta,16.1745291,-95.1942848
+6422122279,Calzada Teniente José Azueta,16.1745736,-95.1942627
+5101847171,Calzada Teniente José Azueta,16.1746232,-95.1942453
+6422122278,Calzada Teniente José Azueta,16.1746831,-95.1942728
+5101847180,Calzada Teniente José Azueta,16.1747066,-95.1942855
+5101847182,Calzada Teniente José Azueta,16.1747797,-95.1943315
+5101847157,Calzada Teniente José Azueta,16.174951,-95.194421
+5101847156,Calzada Teniente José Azueta,16.1750311,-95.1944511
+5101847155,Calzada Teniente José Azueta,16.175082,-95.1944672
+5101847154,Calzada Teniente José Azueta,16.1751255,-95.1944672
+5101847153,Calzada Teniente José Azueta,16.1751626,-95.1944545
+5101847158,Calzada Teniente José Azueta,16.1752378,-95.1943943
+1284123810,Calzada Teniente José Azueta,16.1753445,-95.194185
+5091984096,Calzada Teniente José Azueta y Transístmica,16.1753698,-95.1941354
+8547539525,Transístmica,16.1754572,-95.1941393
+8547539524,Transístmica,16.1755255,-95.1941454
+5104048783,Transístmica y Calle Mazatlán,16.1764707,-95.19449
+5104048784,Transístmica y Calle Guaymas,16.1775329,-95.1948953
+8433730940,Calle Guaymas,16.1775875,-95.1947294
+8433730939,Calle Guaymas y Avenida Tampico,16.1775943,-95.1946155
+6422094570,Calle Guaymas,16.1776249,-95.1945283
+1675110665,Calle Guaymas y Avenida Manuel Ávila Camacho,16.1779633,-95.1935838
+6422122256,Avenida 5 de Mayo,16.1773866,-95.1920382
+12989848632,Avenida 5 de Mayo,16.178146,-95.1923289
+1675110676,Avenida 5 de Mayo,16.1783807,-95.1924188
+6422094565,Avenida 5 de Mayo y Calle Guaymas,16.1784426,-95.1924436
+1675110692,Avenida 5 de Mayo y Calle Progreso,16.1794342,-95.1928192
+8430812301,Avenida 5 de Mayo y Calle Progreso,16.1794989,-95.1928456
+6422094572,Calle Progreso y Avenida 5 de Mayo,16.179484,-95.1929177
+6422094573,Calle Progreso y Avenida Manuel Ávila Camacho,16.1791164,-95.1939365
+12986147693,Avenida Manuel Ávila Camacho,16.1793393,-95.1940272
+6422094743,Avenida Manuel Ávila Camacho,16.1801159,-95.1943434
+8436654160,Avenida Manuel Ávila Camacho y Calle Manzanillo,16.1801844,-95.1943713
+6422094557,Avenida Manuel Ávila Camacho,16.1811681,-95.1947242
+6422094558,Avenida Manuel Ávila Camacho,16.1812412,-95.1947523
+6422094742,Avenida Manuel Ávila Camacho,16.1822178,-95.1951398
+6422094725,Avenida Manuel Ávila Camacho y Calle Tuxpan,16.1822945,-95.1951706
+6422094741,Avenida Manuel Ávila Camacho,16.1833455,-95.1955602
+6422094740,Avenida Manuel Ávila Camacho,16.1843745,-95.1959572
+8433805199,Avenida Manuel Ávila Camacho,16.1844346,-95.1959816
+6422094739,Avenida Manuel Ávila Camacho,16.1854116,-95.1963747
+8488353640,Avenida Manuel Ávila Camacho,16.1854932,-95.1964056
+6422094553,Avenida Manuel Ávila Camacho,16.1864639,-95.1967502
+6422094554,Avenida Manuel Ávila Camacho y Calle Constancia,16.186526,-95.1967775
+6422094737,Calle Constancia,16.1864958,-95.1968447
+6422094736,Calle Constancia y Avenida Tampico,16.1861253,-95.1978827
+8523084131,Calle Constancia,16.1861041,-95.1979527
+8523084132,Calle Constancia y Avenida del Trabajo,16.1857428,-95.1989892
+8523084121,Avenida del Trabajo y Obrero,16.1867434,-95.199354
+8523084119,Obrero y Tanque de Agua,16.1867882,-95.199257
+1675110820,Tanque de Agua y Obrero,16.1868431,-95.199273
+8552500852,Tanque de Agua,16.1869987,-95.1992704
+5147981224,Tanque de Agua,16.187085,-95.1992784
+1675110823,Tanque de Agua,16.1874946,-95.1993455
+5147981226,Tanque de Agua,16.1879454,-95.1994461
+5090490813,Tanque de Agua,16.1882377,-95.1995333
+5147981225,Tanque de Agua,16.1884335,-95.199599
+6131581877,Tanque de Agua,16.1885893,-95.199654
+1675110854,Tanque de Agua,16.1890388,-95.1998216
+1675110856,Tanque de Agua,16.1894284,-95.1999671
+1675110858,Tanque de Agua,16.189601,-95.1999738
+5090601621,Tanque de Agua,16.1898386,-95.199953
+1675110860,Tanque de Agua y Calle División del Norte,16.1898907,-95.1999275
+5090486000,Calle División del Norte,16.1896622,-95.1998082
+5090486001,Calle División del Norte,16.1894806,-95.1997264
+1675110853,Calle División del Norte,16.1892075,-95.1996446
+5090486002,Calle División del Norte,16.1890852,-95.1995829
+1675110850,Calle División del Norte,16.1888868,-95.1993844
+5090486003,Calle División del Norte,16.1887658,-95.1992932
+5101637527,Calle División del Norte,16.1886614,-95.1991926
+1675110846,Calle División del Norte,16.1885301,-95.1989485
+1675110845,Calle División del Norte,16.1884567,-95.1988815
+1675110844,Calle División del Norte,16.1883124,-95.1987943
+5148081551,Calle División del Norte,16.1881965,-95.1987353
+5090493023,Calle División del Norte,16.1880986,-95.1986642
+1675110842,Calle División del Norte y Avenida Tampico,16.187993,-95.1985415
+8509250154,Calle División del Norte,16.1879312,-95.198333
+5131521335,Calle División del Norte,16.187899,-95.1982525
+1675110839,Calle División del Norte,16.1877998,-95.1981184
+5090493024,Calle División del Norte,16.1877019,-95.1979373
+1675110831,Calle División del Norte,16.1876208,-95.197598
+1675110824,Calle División del Norte,16.1876105,-95.1974787
+5148003479,Calle División del Norte,16.187653,-95.1973338
+5131521331,Calle División del Norte,16.1877844,-95.1969838
+8552520475,Calle División del Norte,16.1878294,-95.1968738
+1675110834,Calle División del Norte,16.1878835,-95.1967867
+1675110841,Calle División del Norte y Calle Benito Juárez y Lomas de Oriente y Avenida 5 de Mayo,16.1880355,-95.1966056
+5090485328,Calle Benito Juárez,16.1884567,-95.1967625
+5131521336,Calle Benito Juárez,16.1885533,-95.1968376
+5090503340,Calle Benito Juárez,16.1886428,-95.1969966
+5090485332,Calle Benito Juárez,16.1888031,-95.1972936
+8552520474,Calle Benito Juárez,16.1888933,-95.1973982
+5090485333,Calle Benito Juárez,16.1890298,-95.1974787
+5090485335,Calle Benito Juárez,16.189288,-95.1975729
+5131575000,Calle Benito Juárez,16.1893244,-95.1975322
+8547584742,Calle Benito Juárez,16.1895411,-95.1973392
+5090485337,Calle Benito Juárez,16.1896195,-95.1973025
+5090503361,Calle Benito Juárez,16.1898843,-95.1972834
+8547584743,Calle Benito Juárez,16.1900047,-95.1972976
+5090485339,Calle Benito Juárez,16.190102,-95.1973311
+5090503358,Calle Benito Juárez,16.1905796,-95.1975409
+5090503359,Calle Benito Juárez,16.1907627,-95.1975904
+5090485343,Calle Benito Juárez,16.1909016,-95.1976292
+5148023644,Calle Benito Juárez,16.191075,-95.1976692
+5155505492,Calle Benito Juárez,16.1911064,-95.1976751
+5155515230,Calle Benito Juárez,16.1915985,-95.1977806
+1675110868,Calle Benito Juárez,16.1916387,-95.1977846
+5155505480,Calle Benito Juárez,16.191983,-95.1976959
+5090485350,Calle Benito Juárez,16.1921465,-95.1977241
+6131581913,Calle Benito Juárez,16.1927583,-95.1982422
+5155566428,Calle Benito Juárez,16.1929747,-95.1984255
+5090485355,Calle Benito Juárez,16.1930669,-95.1984772
+5090485356,Calle Benito Juárez,16.193169,-95.1985138
+5091824010,Calle Benito Juárez,16.1934522,-95.1985452
+5090658083,Calle Benito Juárez,16.1935781,-95.1986113
+5090658051,Calle Benito Juárez,16.1942328,-95.1990981
+6338693403,Calle Benito Juárez,16.1945671,-95.1992516
+5090658040,Calle Benito Juárez,16.1949939,-95.1994714
+5090485365,Calle Benito Juárez,16.1954933,-95.1997475
+5090485366,Calle Benito Juárez,16.1957132,-95.1998203
+8523084117,Obrero,16.1868091,-95.1994079
+5091984082,Obrero y Avenida del Trabajo,16.1867836,-95.1994722
+8523084120,Avenida del Trabajo,16.1867087,-95.1994408
+6422094735,Avenida del Trabajo,16.1857159,-95.1990626
+1675110806,Avenida del Trabajo y Calle Constancia,16.1856474,-95.1990397
+8523084133,Calle Constancia,16.1856745,-95.1989618
+8523084129,Calle Constancia,16.1860325,-95.197932
+1675110811,Calle Constancia,16.1860635,-95.1978492
+1675110815,Calle Constancia y Avenida Manuel Ávila Camacho,16.1864377,-95.1968243
+8488353645,Avenida Manuel Ávila Camacho,16.1854713,-95.1964659
+1675110800,Avenida Manuel Ávila Camacho,16.185391,-95.1964357
+8433805200,Avenida Manuel Ávila Camacho,16.184405,-95.1960648
+1675110786,Avenida Manuel Ávila Camacho,16.1843449,-95.1960437
+1675110774,Avenida Manuel Ávila Camacho,16.1833184,-95.1956399
+6422094726,Avenida Manuel Ávila Camacho y Calle Tuxpan,16.1822706,-95.1952404
+1675110760,Avenida Manuel Ávila Camacho y Calle Tuxpan,16.1821901,-95.1952095
+6422094556,Avenida Manuel Ávila Camacho,16.1812125,-95.1948312
+1675110727,Avenida Manuel Ávila Camacho,16.1811394,-95.1948031
+8436654161,Avenida Manuel Ávila Camacho y Calle Manzanillo,16.1801559,-95.1944483
+1675110701,Avenida Manuel Ávila Camacho,16.1800888,-95.1944226
+6422094574,Avenida Manuel Ávila Camacho y Calle Progreso,16.1790883,-95.1940158
+1675110689,Avenida Manuel Ávila Camacho y Calle Progreso,16.1790145,-95.1939875
+6422094568,Avenida Manuel Ávila Camacho,16.1780251,-95.1936086
+12986443614,Avenida Manuel Ávila Camacho,16.1772773,-95.1933204
+6422122253,Avenida Manuel Ávila Camacho y Calle Mazatlán,16.1769732,-95.1932036
+1675110642,Avenida Manuel Ávila Camacho,16.1769009,-95.1931759
+1675110620,Avenida Manuel Ávila Camacho,16.1759043,-95.1927882
+8457025166,Avenida Manuel Ávila Camacho y Calle Acapulco,16.1758383,-95.1927643
+6422094697,Avenida Manuel Ávila Camacho,16.1748559,-95.1923906
+1675110606,Avenida Manuel Ávila Camacho y Calle Coatzacoalcos,16.1747801,-95.1923615
+6422094584,Avenida Manuel Ávila Camacho,16.1737913,-95.1919821
+1675110551,Avenida Manuel Ávila Camacho y Calle Libertad,16.1737341,-95.1919602
+6422094749,Calle Libertad,16.1737622,-95.191881
+5107803965,Calle Libertad,16.1739331,-95.1914
+5107803967,Calle Libertad,16.1740165,-95.1911653
+6422094578,Calle Libertad y Avenida 5 de Mayo,16.1741167,-95.1908802
+1675110585,Calle Libertad y Avenida 5 de Mayo,16.1741431,-95.1908034
+6422094580,Avenida 5 de Mayo,16.1742029,-95.1908266
+8488471637,Calle Tuxpan,16.1821157,-95.1956694
+6422094727,Calle Tuxpan,16.1818888,-95.1962911
+6422094728,Calle Tuxpan,16.1815853,-95.1971429
+6422094730,Calle Tuxpan,16.1814901,-95.1972346
+1675110730,Calle Tuxpan y Avenida Tampico,16.181454,-95.1972729
+8496343583,Avenida Tampico,16.1817812,-95.1977965
+1675110750,Avenida Tampico,16.1819164,-95.1980245
+1675110759,Avenida Tampico,16.1822204,-95.1985301
+1675110763,Avenida Tampico,16.1824072,-95.1987956
+1675110766,Avenida Tampico,16.182612,-95.198974
+5091984072,Avenida Tampico,16.1828116,-95.1990786
+1675110773,Avenida Tampico,16.1831671,-95.1992181
+8433805191,Avenida Tampico,16.1832431,-95.199253
+5110952603,Avenida Tampico,16.1837157,-95.1994206
+1675110785,Avenida Tampico,16.1842219,-95.1996124
+8488353646,Avenida Tampico,16.1842992,-95.1996459
+1675110801,Avenida Tampico,16.1852832,-95.2000147
+6422094733,Avenida Tampico,16.1853695,-95.2000456
+5147934317,Avenida Tampico,16.186195,-95.200358
+8523084122,Avenida Tampico,16.1863483,-95.2004184
+5091984086,Avenida Tampico,16.1864243,-95.2004506
+1675110817,Avenida Tampico,16.1868223,-95.2006236
+5102155787,Avenida Tampico,16.1870361,-95.2007255
+5091984083,Avenida Tampico,16.1873323,-95.2008985
+1675110832,Avenida Tampico,16.1876504,-95.201097
+5090601629,Avenida Tampico,16.1882635,-95.201451
+5090601630,Avenida Tampico,16.1885584,-95.2015892
+1675110848,Avenida Tampico,16.1887799,-95.2016696
+8419048035,Avenida Tampico,16.1889551,-95.2017139
+8419048036,Avenida Tampico,16.189165,-95.2017528
+5090601631,Avenida Tampico,16.1893891,-95.2017716
+1675110857,Avenida Tampico,16.1897356,-95.2017689
+5090601639,Avenida Tampico,16.1908149,-95.2016562
+8509959737,Avenida Tampico,16.1912579,-95.2016281
+1675110871,Avenida Tampico,16.1920605,-95.2015942
+8548256576,Avenida Tampico,16.1928262,-95.2015238
+8548521878,Avenida Tampico,16.1929962,-95.2015095
+8548521876,Avenida Tampico,16.1931316,-95.2015026
+1675110877,Avenida Tampico,16.1934319,-95.2015038
+1675110879,Avenida Tampico,16.1939472,-95.2015224
+5090658060,Avenida Tampico,16.1942824,-95.2015366
+5090658057,Avenida Tampico,16.1949582,-95.2015846
+5111089766,Avenida Tampico,16.1961918,-95.2016482
+5100589206,Avenida Tampico y Carretera Coatzacoalcos - Salina Cruz y Carretera Santiago Pinotepa Nacional - Salina Cruz y 18 de Marzo,16.1965677,-95.201703
+5091984045,Carretera Coatzacoalcos - Salina Cruz,16.1967334,-95.2017149
+8548631772,Carretera Coatzacoalcos - Salina Cruz,16.1983386,-95.2018017
+5111089771,Carretera Coatzacoalcos - Salina Cruz,16.1986398,-95.201815
+1675110895,Carretera Coatzacoalcos - Salina Cruz,16.1998856,-95.2018799
+5095143990,Carretera Coatzacoalcos - Salina Cruz,16.20002,-95.2018829
+5095143989,Carretera Coatzacoalcos - Salina Cruz,16.2008204,-95.2019459
+5091823992,Carretera Coatzacoalcos - Salina Cruz,16.2010187,-95.2019888
+5095143988,Carretera Coatzacoalcos - Salina Cruz,16.2011617,-95.2020304
+5095143987,Carretera Coatzacoalcos - Salina Cruz,16.2013858,-95.2021042
+5095143986,Carretera Coatzacoalcos - Salina Cruz y Colima,16.2019382,-95.2022772
+5148049916,Carretera Coatzacoalcos - Salina Cruz,16.2026015,-95.2024783
+5148049917,Carretera Coatzacoalcos - Salina Cruz,16.2030947,-95.2026312
+5095143985,Carretera Coatzacoalcos - Salina Cruz y Miguel Hidalgo,16.2035699,-95.2027653
+5095144006,Carretera Coatzacoalcos - Salina Cruz,16.2042254,-95.2029598
+5095144007,Carretera Coatzacoalcos - Salina Cruz,16.2047535,-95.2031232
+5095144004,Carretera Coatzacoalcos - Salina Cruz y Calle Chiapas,16.2060593,-95.2035351
+8444555833,Carretera Coatzacoalcos - Salina Cruz,16.2066684,-95.2037255
+5095144003,Carretera Coatzacoalcos - Salina Cruz,16.2074619,-95.203983
+8444347881,Carretera Coatzacoalcos - Salina Cruz,16.2087597,-95.2043677
+6131582276,Carretera Coatzacoalcos - Salina Cruz,16.2094265,-95.2045705
+6131581760,Carretera Coatzacoalcos - Salina Cruz,16.2105054,-95.2048977
+8445027565,Carretera Coatzacoalcos - Salina Cruz,16.2108815,-95.205019
+5095144002,Carretera Coatzacoalcos - Salina Cruz,16.210998,-95.2050599
+5111667217,Carretera Coatzacoalcos - Salina Cruz,16.2115067,-95.2052195
+5111610419,Carretera Coatzacoalcos - Salina Cruz,16.2124465,-95.2055215
+5111638221,Carretera Coatzacoalcos - Salina Cruz,16.2137957,-95.2059514
+5111638223,Carretera Coatzacoalcos - Salina Cruz,16.2142528,-95.2060798
+5095144000,Carretera Coatzacoalcos - Salina Cruz,16.2150313,-95.2063152
+5100622554,Carretera Coatzacoalcos - Salina Cruz,16.2158902,-95.2065915
+5100622555,Carretera Coatzacoalcos - Salina Cruz,16.2159765,-95.2066203
+5111636868,Carretera Coatzacoalcos - Salina Cruz,16.2160448,-95.2066424
+5111636866,Carretera Coatzacoalcos - Salina Cruz,16.2163435,-95.2067511
+8445442971,Carretera Coatzacoalcos - Salina Cruz,16.2167935,-95.2068927
+8445443016,Carretera Coatzacoalcos - Salina Cruz,16.218167,-95.2073251
+5102633634,Carretera Coatzacoalcos - Salina Cruz,16.2184721,-95.2074194
+8496186290,Carretera Coatzacoalcos - Salina Cruz,16.2188205,-95.207527
+8496186294,Carretera Coatzacoalcos - Salina Cruz,16.2197863,-95.2078454
+5095143999,Carretera Coatzacoalcos - Salina Cruz,16.220414,-95.2080412
+5095143995,Carretera Coatzacoalcos - Salina Cruz,16.2213,-95.2083326
+8496945336,Carretera Coatzacoalcos - Salina Cruz,16.2213137,-95.2083375
+5095143994,Carretera Coatzacoalcos - Salina Cruz,16.2214867,-95.2083966
+5095143998,Carretera Coatzacoalcos - Salina Cruz,16.2220115,-95.2085763
+5095143997,Carretera Coatzacoalcos - Salina Cruz,16.2221763,-95.2086293
+5095143996,Carretera Coatzacoalcos - Salina Cruz,16.222974,-95.2088734
+8496345139,Carretera Coatzacoalcos - Salina Cruz,16.2236407,-95.2090712
+8496345140,Carretera Coatzacoalcos - Salina Cruz,16.2237708,-95.2091098
+5098823438,Carretera Coatzacoalcos - Salina Cruz,16.2239121,-95.2091517
+8496186304,Carretera Coatzacoalcos - Salina Cruz,16.2239999,-95.2091788
+8496186311,Carretera Coatzacoalcos - Salina Cruz,16.224651,-95.2093795
+5098823437,Carretera Coatzacoalcos - Salina Cruz,16.225722,-95.2097096
+5098950164,Carretera Coatzacoalcos - Salina Cruz,16.2262602,-95.2098772
+5098823436,Carretera Coatzacoalcos - Salina Cruz,16.2269774,-95.2100891
+5111558467,Carretera Coatzacoalcos - Salina Cruz,16.2277848,-95.2103439
+5111558450,Carretera Coatzacoalcos - Salina Cruz,16.2285281,-95.2105642
+8496222625,Carretera Coatzacoalcos - Salina Cruz,16.2287041,-95.2106179
+8496186314,Carretera Coatzacoalcos - Salina Cruz,16.2290446,-95.2107219
+8498730234,Carretera Coatzacoalcos - Salina Cruz,16.2292036,-95.2107705
+5098356185,Carretera Coatzacoalcos - Salina Cruz,16.2298007,-95.2109528
+5111542580,Carretera Coatzacoalcos - Salina Cruz,16.2305893,-95.2111889
+5111542579,Carretera Coatzacoalcos - Salina Cruz,16.2309641,-95.2113017
+5098950062,Carretera Coatzacoalcos - Salina Cruz,16.2311799,-95.2113667
+5098950061,Carretera Coatzacoalcos - Salina Cruz,16.2314567,-95.2114503
+5111542587,Carretera Coatzacoalcos - Salina Cruz,16.2317367,-95.2115344
+5098964894,Carretera Coatzacoalcos - Salina Cruz,16.2318635,-95.2115725
+5098964891,Carretera Coatzacoalcos - Salina Cruz,16.2319723,-95.2116052
+5111543828,Carretera Coatzacoalcos - Salina Cruz,16.2327484,-95.2118389
+5098964884,Carretera Coatzacoalcos - Salina Cruz,16.2333891,-95.2120318
+5098964887,Carretera Coatzacoalcos - Salina Cruz,16.2334828,-95.21206
+5098950073,Carretera Coatzacoalcos - Salina Cruz,16.2338111,-95.2121588
+5098950084,Carretera Coatzacoalcos - Salina Cruz,16.2346581,-95.2124138
+5098823430,Carretera Coatzacoalcos - Salina Cruz,16.2351482,-95.2126137
+5098391576,Carretera Coatzacoalcos - Salina Cruz,16.2355249,-95.2127358
+5098823429,Carretera Coatzacoalcos - Salina Cruz,16.2361204,-95.2129389
+5098218541,Carretera Coatzacoalcos - Salina Cruz,16.2386031,-95.2136918
+8454048587,Carretera Coatzacoalcos - Salina Cruz,16.2393546,-95.2139199
+5098823427,Carretera Coatzacoalcos - Salina Cruz,16.2400897,-95.2141269
+5098823422,Carretera Coatzacoalcos - Salina Cruz,16.2400492,-95.2142826
+5098699256,Carretera Coatzacoalcos - Salina Cruz,16.2357972,-95.2129684
+5090555906,Carretera Coatzacoalcos - Salina Cruz,16.2350658,-95.2127512
+5098950082,Carretera Coatzacoalcos - Salina Cruz,16.2346097,-95.212609
+5098950074,Carretera Coatzacoalcos - Salina Cruz,16.2337531,-95.2123488
+5098950081,Carretera Coatzacoalcos - Salina Cruz,16.2335645,-95.2122898
+5098964888,Carretera Coatzacoalcos - Salina Cruz,16.233426,-95.2122442
+5098964886,Carretera Coatzacoalcos - Salina Cruz,16.2333353,-95.2122151
+5098950060,Carretera Coatzacoalcos - Salina Cruz,16.2320135,-95.2117836
+5098964890,Carretera Coatzacoalcos - Salina Cruz,16.231916,-95.2117497
+5098964895,Carretera Coatzacoalcos - Salina Cruz,16.2318123,-95.2117189
+8496025176,Carretera Coatzacoalcos - Salina Cruz,16.2314047,-95.2116093
+5098698616,Carretera Coatzacoalcos - Salina Cruz,16.231125,-95.2115341
+8496025175,Carretera Coatzacoalcos - Salina Cruz,16.2305403,-95.2113232
+5111558436,Carretera Coatzacoalcos - Salina Cruz,16.2297794,-95.2110486
+5098426377,Carretera Coatzacoalcos - Salina Cruz,16.2262448,-95.2099503
+8564800197,Carretera Coatzacoalcos - Salina Cruz,16.2255634,-95.2097545
+8496345141,Carretera Coatzacoalcos - Salina Cruz,16.2237557,-95.2091865
+8496345142,Carretera Coatzacoalcos - Salina Cruz,16.2235788,-95.2091298
+5094745480,Carretera Coatzacoalcos - Salina Cruz,16.2227625,-95.2088891
+1284085211,Carretera Coatzacoalcos - Salina Cruz,16.2221718,-95.2087044
+1284085209,Carretera Coatzacoalcos - Salina Cruz,16.2219896,-95.2086427
+5095144008,Carretera Coatzacoalcos - Salina Cruz,16.2214687,-95.2084778
+1284085212,Carretera Coatzacoalcos - Salina Cruz,16.2213528,-95.2084449
+1282448559,Carretera Coatzacoalcos - Salina Cruz,16.2203509,-95.2081016
+8496186295,Carretera Coatzacoalcos - Salina Cruz,16.2197689,-95.2079202
+8496186291,Carretera Coatzacoalcos - Salina Cruz,16.2187989,-95.207618
+12146781009,Carretera Coatzacoalcos - Salina Cruz,16.2184732,-95.2075165
+1284097182,Carretera Coatzacoalcos - Salina Cruz,16.2159392,-95.2067269
+5100622553,Carretera Coatzacoalcos - Salina Cruz,16.2158542,-95.2066974
+5111610418,Carretera Coatzacoalcos - Salina Cruz,16.212459,-95.2056444
+5092405089,Carretera Coatzacoalcos - Salina Cruz,16.2124179,-95.2056323
+5092405095,Carretera Coatzacoalcos - Salina Cruz,16.2109626,-95.2051867
+6131581903,Carretera Coatzacoalcos - Salina Cruz,16.21062,-95.2050767
+8444347882,Carretera Coatzacoalcos - Salina Cruz,16.2087274,-95.204489
+1284097153,Carretera Coatzacoalcos - Salina Cruz,16.2074385,-95.2040863
+1284096993,Carretera Coatzacoalcos - Salina Cruz y Calle Chiapas,16.2060194,-95.2036665
+5122100016,Carretera Coatzacoalcos - Salina Cruz,16.2048655,-95.2032991
+1675111077,Carretera Coatzacoalcos - Salina Cruz,16.2046672,-95.203236
+5122100011,Carretera Coatzacoalcos - Salina Cruz,16.2044637,-95.2031717
+5091824000,Carretera Coatzacoalcos - Salina Cruz y Miguel Hidalgo,16.2035442,-95.2028766
+1675110965,Carretera Coatzacoalcos - Salina Cruz y Colima,16.2019086,-95.2023831
+5095143992,Carretera Coatzacoalcos - Salina Cruz,16.2013896,-95.2022034
+5095143991,Carretera Coatzacoalcos - Salina Cruz,16.2010483,-95.2020934
+5091823999,Carretera Coatzacoalcos - Salina Cruz,16.200841,-95.2020492
+6131582069,Carretera Coatzacoalcos - Salina Cruz,16.2004263,-95.2020156
+291496197,Carretera Coatzacoalcos - Salina Cruz,16.2001881,-95.2019995
+1284137600,Carretera Coatzacoalcos - Salina Cruz,16.1999189,-95.2019781
+5100622562,Carretera Coatzacoalcos - Salina Cruz,16.1993054,-95.2019591
+5111089770,Carretera Coatzacoalcos - Salina Cruz,16.1988486,-95.2019231
+8548631773,Carretera Coatzacoalcos - Salina Cruz,16.1983342,-95.2018957
+5091984044,Carretera Coatzacoalcos - Salina Cruz y Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1966238,-95.2017902
+5100589207,Carretera Coatzacoalcos - Salina Cruz y Avenida Tampico y Carretera Santiago Pinotepa Nacional - Salina Cruz,16.196433,-95.2017884
+5111089767,Avenida Tampico,16.1961261,-95.2017689
+291496199,Avenida Tampico,16.1939265,-95.2016037
+8548631771,Avenida Tampico,16.193437,-95.2015949
+5090702206,Avenida Tampico,16.193329,-95.2015929
+8611026961,Avenida Tampico,16.192976,-95.2016134
+6131582061,Avenida Tampico,16.1928187,-95.2016225
+5091823995,Avenida Tampico,16.1921203,-95.2016598
+5090601633,Avenida Tampico,16.1911677,-95.2017166
+1284121143,Avenida Tampico,16.1903332,-95.2017957
+1284120830,Avenida Tampico,16.1896081,-95.2018507
+5090601634,Avenida Tampico,16.1893827,-95.2018574
+1284121125,Avenida Tampico,16.1891341,-95.2018426
+1284121192,Avenida Tampico,16.1888495,-95.2017836
+1284120960,Avenida Tampico,16.1885726,-95.2016938
+8419048037,Avenida Tampico,16.1881823,-95.2015074
+291496200,Avenida Tampico,16.1871108,-95.200873
+5102155786,Avenida Tampico,16.1869137,-95.2007684
+5102155792,Avenida Tampico,16.1866793,-95.2006584
+1675110812,Avenida Tampico,16.1863316,-95.2005136
+291496201,Avenida Tampico,16.1856451,-95.2002461
+6422094732,Avenida Tampico,16.1853418,-95.2001341
+1675110798,Avenida Tampico,16.1852536,-95.2001005
+1675110783,Avenida Tampico,16.1840725,-95.1996472
+5110952604,Avenida Tampico,16.1836655,-95.1994944
+8433805204,Avenida Tampico,16.1832122,-95.1993307
+12744827665,Avenida Tampico,16.1831841,-95.1993198
+1675110771,Avenida Tampico,16.183122,-95.1992932
+5091984071,Avenida Tampico,16.1827588,-95.199147
+1284121210,Avenida Tampico,16.1825269,-95.199025
+1284121216,Avenida Tampico,16.1823415,-95.19886
+1675110758,Avenida Tampico,16.182167,-95.1986267
+1284121220,Avenida Tampico,16.1818913,-95.1981486
+8496343582,Avenida Tampico,16.1817792,-95.1979659
+1675110746,Avenida Tampico y Calle Tuxpan,16.1814044,-95.1973027
+5140380288,Avenida Tampico,16.1811809,-95.1969014
+5091984101,Avenida Tampico y Transístmica,16.1811459,-95.1968378
+8419046858,Transístmica,16.1810863,-95.1968269
+5091984100,Transístmica,16.1809949,-95.1967022
+5091984099,Transístmica,16.1808494,-95.1964863
+5091984089,Transístmica,16.1806916,-95.1962878
+8419046861,Transístmica,16.1806092,-95.1962046
+8419046859,Transístmica,16.1805306,-95.1961376
+8419046860,Transístmica,16.1804379,-95.1960772
+8419046857,Transístmica,16.180291,-95.1960008
+5091984097,Transístmica,16.1800721,-95.1958908
+8620435753,Transístmica,16.1799523,-95.1958378
+8436654163,Transístmica,16.1796947,-95.1957326
+5091984087,Transístmica y Calle Manzanillo,16.1796315,-95.1957079
+12986300943,Calle Manzanillo,16.1796317,-95.1957073
+12986300947,Calle Manzanillo,16.1796323,-95.1957056
+1284120662,Calle Manzanillo y Avenida Tampico,16.1797266,-95.1954358
+12986300942,Avenida Tampico,16.1797252,-95.1954353
+12986300946,Avenida Tampico,16.179724,-95.1954348
+1675110679,Avenida Tampico y Calle Progreso,16.1787256,-95.195053
+8430812303,Avenida Tampico y Calle Progreso,16.1786558,-95.1950213
+1675110652,Avenida Tampico y Calle Guaymas,16.1776536,-95.1946375
+8430812295,Avenida Tampico y Calle Mazatlán,16.1765961,-95.1942456
+1675110639,Avenida Tampico,16.1765383,-95.1942243
+12989875650,Avenida Tampico,16.1758931,-95.1939854
+1284123796,Avenida Tampico,16.1755371,-95.1938536
+8430812298,Avenida Tampico y Calle Acapulco,16.175463,-95.1938306
+8430812296,Avenida Tampico,16.1753606,-95.1937987
+6422094698,Avenida Tampico,16.1744808,-95.1934331
+1675110602,Avenida Tampico,16.1744046,-95.1934049
+8478342526,Avenida Tampico,16.1723866,-95.1926352
+1675110510,Avenida Tampico,16.1723208,-95.1926101
+8459845004,Avenida Tampico,16.171957,-95.1924736
+8478342530,Avenida Tampico,16.1717742,-95.192405
+8459845003,Avenida Tampico,16.171582,-95.1923328
+12994400619,Avenida Tampico,16.1714916,-95.1922986
+8478342520,Avenida Tampico,16.1713477,-95.1922441
+1675110500,Avenida Tampico,16.1712972,-95.192225
+5090446385,Avenida Tampico,16.1709371,-95.1920936
+1284123808,Avenida Tampico,16.1708126,-95.1920448
+1284137583,Avenida Tampico,16.1707431,-95.1919804
+12747288584,Avenida Tampico,16.1707013,-95.1918907
+12747288585,Avenida Tampico,16.170679,-95.1917901
+1284137526,Avenida Tampico,16.1706851,-95.1916774
+1675110491,Avenida Tampico,16.1709105,-95.1908762
+6422094755,Avenida Tampico y Avenida Manuel Ávila Camacho,16.1709324,-95.1907951
+6422094754,Avenida Manuel Ávila Camacho,16.1711463,-95.1908766
+6422094753,Avenida Manuel Ávila Camacho,16.1713009,-95.1909359
+6422122260,Calle Coatzacoalcos,16.1748018,-95.1923074
+5107803964,Calle Coatzacoalcos,16.1749959,-95.1918039
+5107803966,Calle Coatzacoalcos,16.1750844,-95.1915735
+6422122261,Calle Coatzacoalcos y Avenida 5 de Mayo,16.1751905,-95.1912989
+1675110615,Calle Coatzacoalcos y Avenida 5 de Mayo,16.1752189,-95.1912184
+6422094694,Avenida 5 de Mayo,16.175291,-95.1912465
+8496264280,Avenida 5 de Mayo,16.1756984,-95.1914099
+12994447355,Avenida 5 de Mayo,16.1761692,-95.191576
+1675110631,Avenida 5 de Mayo y Calle Acapulco,16.1762892,-95.1916183
+6422094722,Avenida 5 de Mayo,16.1767595,-95.1917983
+12986442704,Avenida 5 de Mayo,16.1772434,-95.1919834
+1675110647,Avenida 5 de Mayo,16.1773143,-95.1920105
+13000343364,Calle Progreso,16.1790884,-95.1940154
+6422094575,Calle Progreso,16.1787561,-95.1949724
+8430812302,Calle Progreso,16.1786488,-95.1951894
+5091984088,Calle Progreso y Transístmica,16.1786087,-95.1953113
+1284120677,Calle Progreso,16.1785714,-95.1954162
+5101387663,Calle Progreso,16.1785318,-95.1955271
+5091984110,Calle Progreso,16.1784529,-95.1957482
+5091984113,Calle Progreso,16.1782592,-95.1962917
+5091984109,Calle Progreso,16.1781535,-95.1965881
+8437207138,Calle Progreso,16.1781366,-95.1966379
+6131581815,Calle Progreso,16.1780459,-95.1968898
+5091984108,Calle Progreso,16.1779649,-95.1971209
+8437207146,Calle Progreso,16.177949,-95.1971621
+12745291666,Calle Progreso,16.1779365,-95.1971934
+1675110664,Calle Progreso y Calle Virgilio Uribe,16.1779213,-95.1972281
+5133433988,Calle Progreso,16.1777473,-95.1977274
+8436713386,Calle Progreso,16.1777066,-95.1979046
+8436713387,Calle Progreso y Calle Morelos,16.1777096,-95.1979819
+12744788531,Calle Morelos,16.1781055,-95.1981131
+1675110680,Calle Morelos,16.1787198,-95.1983166
+8436654170,Calle Morelos,16.1787772,-95.1983373
+1675110695,Calle Morelos,16.1797608,-95.1986951
+8437211951,Calle Morelos,16.1798376,-95.1987209
+1675110724,Calle Morelos,16.1808134,-95.199084
+8436769663,Calle Morelos,16.1809028,-95.1991135
+5117203598,Calle Morelos,16.181882,-95.1994545
+8436769664,Calle Morelos,16.1819607,-95.1994842
+5143066559,Calle Morelos,16.1823915,-95.1995907
+3360316686,Calle Morelos,16.1829605,-95.1997315
+5091984066,Calle Morelos,16.1840509,-95.2000568
+5144874265,Calle Morelos,16.1845665,-95.2002499
+5144874267,Calle Morelos,16.1848006,-95.2003407
+8436805719,Calle Morelos,16.1851405,-95.2004644
+5091984054,Calle Morelos,16.1852215,-95.2004971
+5091984043,Calle Morelos,16.1862126,-95.2008925
+5145082942,Calle Morelos,16.1864209,-95.2009915
+5145079561,Calle Morelos,16.1869643,-95.2012603
+5091984053,Calle Morelos,16.1878371,-95.201706
+4785332197,Calle Morelos y Avenida Hidalgo,16.1882409,-95.2018782
+5091984051,Calle Morelos,16.1883726,-95.2019372
+5145063509,Calle Morelos,16.1885365,-95.2019915
+1675110847,Calle Morelos,16.1887297,-95.2020505
+6131581971,Calle Morelos,16.1888353,-95.2020793
+8523166831,Calle Morelos,16.1889293,-95.2021048
+5145063506,Calle Morelos,16.1890085,-95.2021176
+5145063508,Calle Morelos,16.1891277,-95.2021296
+5145063507,Calle Morelos,16.1892835,-95.2021457
+1675110859,Calle Morelos,16.1894896,-95.2021565
+6131581934,Calle Morelos,16.189706,-95.2021538
+6131582394,Calle Morelos,16.1899674,-95.2021444
+5090601467,Calle Morelos y 20 de Noviembre,16.1904098,-95.2021343
+1675110865,20 de Noviembre,16.1909926,-95.2021337
+5091984047,20 de Noviembre,16.1911722,-95.2021766
+3360316687,20 de Noviembre,16.1914472,-95.2023067
+1675110870,20 de Noviembre y Calle 18 de Marzo,16.1918427,-95.2025813
+1675110873,Calle 18 de Marzo,16.1924094,-95.2024753
+5090601464,Calle 18 de Marzo,16.1927361,-95.2024294
+1675110878,Calle 18 de Marzo,16.1934578,-95.2023506
+5102155785,Calle 18 de Marzo,16.1940294,-95.2023343
+5100589211,Calle 18 de Marzo,16.1946399,-95.2023308
+5100589210,Calle 18 de Marzo,16.1953096,-95.2023375
+1675110881,Calle 18 de Marzo y Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1960083,-95.2023585
+1284121211,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1961765,-95.2021765
+5111089768,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1962563,-95.2020344
+5100589209,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1963206,-95.2019318
+5100589208,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1963747,-95.2018526
+1284096963,Calle Chiapas,16.2059602,-95.2038396
+1284097029,Calle Chiapas,16.2059203,-95.2040139
+1284120770,Calle Chiapas,16.2059049,-95.2043091
+1284097170,Calle Chiapas y Calle 5 de Septiembre,16.2059042,-95.2045323
+5103659142,Calle 5 de Septiembre,16.2053547,-95.2043883
+1284097095,Calle 5 de Septiembre,16.2051129,-95.2043183
+5095143983,Calle 5 de Septiembre,16.2050187,-95.204313
+5103659129,Calle 5 de Septiembre y Calle Veracruz,16.2049659,-95.2043418
+5095143984,Calle Veracruz,16.2049389,-95.204386
+1284097112,Calle Veracruz,16.2049274,-95.2044404
+5090459820,Calle Veracruz,16.2048874,-95.205355
+3108232290,Calle Veracruz,16.204783,-95.206355
+5090461222,Calle Veracruz,16.2047032,-95.2073963
+1675111087,Calle Veracruz,16.204638,-95.2084298
+4887283212,Calle Veracruz,16.2045526,-95.2094507
+5099182135,Calle Veracruz y Manuel Ávila Camacho,16.2044742,-95.2104732
+5105966407,Manuel Ávila Camacho,16.2040368,-95.2103558
+1675111045,Manuel Ávila Camacho,16.2035081,-95.2101937
+5105923325,Manuel Ávila Camacho y Calle Tlaxcala,16.2027083,-95.2099604
+1675110989,Calle Tlaxcala,16.2027483,-95.2100958
+5126100790,Calle Tlaxcala,16.2027741,-95.210195
+5105922313,Calle Tlaxcala y Calle Benito Juárez,16.2028772,-95.2105484
+5124941453,Calle Benito Juárez,16.2026434,-95.210761
+1675110971,Calle Benito Juárez,16.2023826,-95.2109762
+5103787056,Calle Benito Juárez,16.2022306,-95.2110883
+5111375605,Calle Benito Juárez,16.2019907,-95.211195
+6131581696,Calle Benito Juárez,16.2017885,-95.2112659
+5124941454,Calle Benito Juárez,16.2016956,-95.2112985
+1675110921,Calle Benito Juárez,16.2013537,-95.2114139
+1675110912,Calle Benito Juárez,16.2010445,-95.2114101
+5103787058,Calle Benito Juárez,16.2007959,-95.21139
+5103787059,Calle Benito Juárez,16.2006105,-95.2113551
+5117177707,Calle Benito Juárez,16.200445,-95.2113189
+5112455489,Calle Benito Juárez,16.2003626,-95.2114295
+5103787060,Calle Benito Juárez,16.2003065,-95.2115026
+5112455483,Calle Benito Juárez,16.2002447,-95.2116179
+5112455488,Calle Benito Juárez,16.2002248,-95.2116904
+8498821485,Calle Benito Juárez,16.2001926,-95.2118205
+5112455486,Calle Benito Juárez,16.2001559,-95.2119116
+5112455487,Calle Benito Juárez,16.1999288,-95.2123317
+6131581932,Innominada,16.1991713,-95.2123376
+5100832290,Innominada,16.1987993,-95.2123606
+5111089775,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1965132,-95.201862
+8548850912,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1964545,-95.201905
+5100589214,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1963077,-95.2020438
+1675110653,Calle Morelos y Calle Progreso y 20 de Noviembre,16.1776621,-95.1979662
+6422094756,Calle Progreso,16.1786746,-95.194948
+5090459790,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.195933,-95.2024456
+5090461239,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.195593,-95.2028377
+5434039540,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1953302,-95.2031348
+1284120661,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1952143,-95.2032763
+5090459776,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1950777,-95.2034482
+2921628464,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.195007,-95.2035807
+1284120689,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.194922,-95.2037671
+5107184307,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1947661,-95.2041829
+1284120712,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1946399,-95.2044725
+2921628463,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1944506,-95.2048333
+5149294869,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1941918,-95.2052571
+5107184308,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1940562,-95.2054788
+5090461240,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1939516,-95.2056516
+1284120738,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1938539,-95.2058191
+5090601575,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1935296,-95.2063808
+1284120741,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1932582,-95.2068353
+2921628462,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1930925,-95.2071255
+1284120756,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1930449,-95.2073051
+5434039531,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1930218,-95.2073982
+5090601583,Carretera Santiago Pinotepa Nacional - Salina Cruz y Adolfo López Mateos,16.1929914,-95.2075651
+5103657988,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1929827,-95.2078224
+5372945492,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1929816,-95.207914
+2921628461,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1929914,-95.20817
+5100832306,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1930069,-95.2083671
+1284120765,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1930275,-95.208689
+1284120778,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1930339,-95.2089384
+5100832288,Carretera Santiago Pinotepa Nacional - Salina Cruz y Calle 5 de Mayo,16.1930249,-95.2091217
+1284120785,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1930262,-95.2092697
+5107132611,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1930197,-95.2093582
+1284121073,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1929399,-95.2095647
+1284121121,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1927712,-95.20979
+1284121084,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.192569,-95.2099013
+5103787221,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1923925,-95.2099161
+1284121115,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1921247,-95.2098477
+2921628460,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1920087,-95.2097458
+6131582076,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1919031,-95.2096318
+1284121174,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1918014,-95.2095017
+5107132946,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1916906,-95.2093595
+1284121151,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1913931,-95.2088754
+1284121172,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1912373,-95.2086836
+8495686059,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1911008,-95.2085589
+1284121076,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1908818,-95.2084288
+5107133145,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1906139,-95.2083135
+1284121091,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1900035,-95.208056
+5107069391,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1898412,-95.208005
+1284121107,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1896995,-95.2079876
+1284121147,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1894548,-95.2080466
+1284121149,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1892037,-95.2082176
+5107081446,Carretera Santiago Pinotepa Nacional - Salina Cruz,16.1890923,-95.2083698
+5107069397,Carretera Santiago Pinotepa Nacional - Salina Cruz y 5 de Mayo,16.1890478,-95.2084422
+5107069398,5 de Mayo,16.1886936,-95.2084945
+5110965719,5 de Mayo,16.1883755,-95.2085508
+5107069399,5 de Mayo,16.1881926,-95.2085884
+5107069400,5 de Mayo,16.1880188,-95.2085991
+5107069401,5 de Mayo,16.1876144,-95.2085777
+5107069402,5 de Mayo,16.1874469,-95.2085602
+4785333772,5 de Mayo y Calle 5 de Mayo,16.1872769,-95.2085415
+4785333771,Calle 5 de Mayo,16.1870013,-95.2088861
+4785333770,Calle 5 de Mayo,16.186857,-95.2090095
+5107078892,Calle 5 de Mayo,16.1866523,-95.2090605
+4785333769,Calle 5 de Mayo,16.1865441,-95.2090725
+5117236031,Calle 5 de Mayo,16.1865138,-95.2090745
+5117236048,Calle 5 de Mayo,16.1860244,-95.2090658
+4785333768,Calle 5 de Mayo,16.1858087,-95.2090578
+5100811687,Calle 5 de Mayo,16.185611,-95.2090464
+5095736911,Calle 5 de Mayo,16.1853604,-95.2090243
+4785333767,Calle 5 de Mayo,16.1852085,-95.2090081
+4785333766,Calle 5 de Mayo,16.1847332,-95.2088928
+8495854105,Calle 5 de Mayo,16.1845684,-95.208858
+5095673700,Calle 5 de Mayo,16.1843623,-95.2088486
+4785333765,Calle 5 de Mayo,16.1841086,-95.2088512
+5095750319,Calle 5 de Mayo,16.1838941,-95.2088767
+8553344756,Calle 5 de Mayo,16.1837808,-95.2088801
+5090783151,Calle 5 de Mayo,16.1837003,-95.2088707
+4785333764,Calle 5 de Mayo,16.1833023,-95.2087976
+4785333763,Calle 5 de Mayo,16.1831684,-95.2087145
+8495854104,Calle 5 de Mayo,16.1830634,-95.2085931
+4785333762,Calle 5 de Mayo,16.1828257,-95.2082344
+5095736898,Calle 5 de Mayo,16.182771,-95.2082035
+5101363248,Calle 5 de Mayo,16.1826487,-95.2081251
+4785333761,Calle 5 de Mayo,16.1824175,-95.2079715
+5101363125,Calle 5 de Mayo,16.1821714,-95.2078052
+4785333760,Calle 5 de Mayo,16.1819794,-95.2076735
+5101363247,Calle 5 de Mayo,16.1818239,-95.2075531
+5126650430,Calle 5 de Mayo,16.1817795,-95.2073981
+4785333759,Calle 5 de Mayo y Calle San Juan,16.1817497,-95.2071899
+4785333758,Calle San Juan,16.1815856,-95.2070718
+5126757453,Calle San Juan,16.181551,-95.2070636
+5101332227,Calle San Juan,16.1814991,-95.2070512
+4785330306,Calle San Juan y Avenida Costera,16.1811352,-95.2070933
+5101332232,Avenida Costera,16.1811384,-95.2076188
+4785330307,Avenida Costera,16.1811502,-95.2079776
+5126757462,Avenida Costera,16.181115,-95.2080685
+5126757463,Avenida Costera,16.1809279,-95.208298
+5126757464,Avenida Costera,16.1809047,-95.2083444
+4785330308,Avenida Costera,16.1809069,-95.2084028
+4785330309,Avenida Costera y Oaxaca,16.1811103,-95.2088471
+4785335322,Oaxaca y Avenida Costera,16.1811451,-95.209123
+4785330310,Oaxaca,16.1811613,-95.2092863
+4785330311,Oaxaca,16.1811445,-95.209411
+8444750972,Oaxaca,16.18102,-95.2099483
+4785330312,Oaxaca,16.1809826,-95.2102481
+4785330313,Oaxaca,16.181143,-95.2106054
+6131581812,Oaxaca,16.18119,-95.2107167
+8496094250,Oaxaca,16.1812654,-95.2109387
+5090783264,Oaxaca,16.1812892,-95.211109
+8496094251,Oaxaca,16.1812924,-95.2112418
+4785330314,Oaxaca,16.1812851,-95.211269
+12987968269,Avenida Costera,16.1811226,-95.2112004
+4785330317,Avenida Costera,16.1811221,-95.2112002
+5090783262,Avenida Costera,16.1810252,-95.2110037
+4785330318,Avenida Costera,16.1809001,-95.2106886
+5090783261,Avenida Costera,16.1807457,-95.2104297
+4785330319,Avenida Costera,16.1805973,-95.2101441
+4785330320,Avenida Costera,16.1806864,-95.2097833
+4785335321,Avenida Costera,16.1807883,-95.2097138
+5435921239,Avenida Costera,16.1808989,-95.2095272
+5101310979,Avenida Costera,16.1811145,-95.2091639
+5111536195,Colima,16.2017912,-95.2029282
+1675110960,Colima,16.2017747,-95.2030025
+5090459812,Colima,16.2017213,-95.2032536
+5090459818,Colima,16.2015158,-95.2043049
+3108232292,Colima,16.2012892,-95.2053075
+1675110916,Colima,16.2012293,-95.2055863
+5090459814,Colima y Calle Tlaxcala,16.2011952,-95.2057271
+5101530370,Calle Tlaxcala,16.2010598,-95.2053294
+5101530382,Calle Tlaxcala y Porfirio Díaz,16.2008068,-95.2045853
+5101530383,Porfirio Díaz,16.2002872,-95.2048185
+5151730333,Porfirio Díaz,16.1997953,-95.2050157
+5101530384,Porfirio Díaz,16.1994694,-95.2051578
+5101530385,Porfirio Díaz y Calle Díaz Mirón,16.1990199,-95.2053448
+5100622559,Calle Díaz Mirón,16.1990225,-95.2049955
+5103787034,Calle Díaz Mirón y Juárez,16.1990526,-95.204598
+5103787033,Juárez,16.1990174,-95.2045329
+5103787032,Juárez,16.1989658,-95.2044793
+5103787031,Juárez,16.1988791,-95.2044482
+5107193416,Juárez,16.1986664,-95.2045002
+5153474055,Juárez,16.1986263,-95.2045089
+5103787035,Juárez,16.1983496,-95.2045745
+5434036105,Juárez,16.1982588,-95.2045957
+5103787036,Juárez,16.1981449,-95.2046221
+5103787037,Juárez y Pensador Mexicano,16.1980457,-95.2046623
+5103787038,Pensador Mexicano,16.1979749,-95.2047669
+5103787039,Pensador Mexicano,16.1979433,-95.204842
+5153474397,Pensador Mexicano,16.1979305,-95.2050562
+5103787040,Pensador Mexicano,16.1979408,-95.2051833
+5107184281,Pensador Mexicano,16.1979522,-95.2053122
+5103787041,Pensador Mexicano,16.1979266,-95.2054878
+5103787042,Pensador Mexicano,16.1978718,-95.2057104
+5103787029,Pensador Mexicano,16.1978439,-95.2058215
+5151011480,Pensador Mexicano y 5 de Junio,16.1978223,-95.2058781
+5151011481,5 de Junio,16.1977624,-95.2059397
+5103787028,5 de Junio,16.1976465,-95.2060463
+5103787027,5 de Junio,16.1976191,-95.2060618
+5153635158,5 de Junio,16.1975859,-95.2060611
+5103787026,5 de Junio,16.197566,-95.2060309
+5103787025,5 de Junio,16.19749,-95.2059397
+5103787024,5 de Junio,16.1974404,-95.2059129
+5103787023,5 de Junio y Calle 12 de Mayo,16.1973844,-95.2059008
+5103787022,Calle 12 de Mayo,16.1973487,-95.2059318
+5153635159,Calle 12 de Mayo,16.1972062,-95.2060764
+5103787021,Calle 12 de Mayo,16.1971487,-95.2061288
+5103786320,Calle 12 de Mayo,16.1970515,-95.2061831
+5103786319,Calle 12 de Mayo,16.1969575,-95.2062187
+5107184113,Calle 12 de Mayo,16.1962736,-95.2063233
+5107184114,Innominada,16.1964326,-95.2069556
+5107184115,Innominada,16.1964539,-95.207091
+5150455990,Innominada,16.1964668,-95.2071749
+5107184116,Innominada,16.1965061,-95.2072835
+5107184117,Innominada,16.1966258,-95.2075262
+8498864731,Innominada,16.1966381,-95.2075879
+5107184118,Innominada,16.1966645,-95.2076764
+5107184119,Innominada,16.1967392,-95.2077247
+8499243286,Innominada,16.196809,-95.2077324
+5107184120,Innominada,16.1970502,-95.2077589
+5107184421,Innominada,16.1971268,-95.207779
+5107184422,Innominada,16.1972363,-95.2078293
+5107184423,Innominada,16.1972994,-95.2078542
+5100832462,Lázaro Cárdenas,16.1974275,-95.2078984
+5100832461,Lázaro Cárdenas,16.1976606,-95.2080151
+5100832460,Lázaro Cárdenas,16.1979195,-95.2080902
+8499243285,Lázaro Cárdenas,16.1981391,-95.2081405
+5100832459,Lázaro Cárdenas,16.1981899,-95.2081747
+5100832458,Lázaro Cárdenas,16.1982891,-95.2083014
+5100832457,Lázaro Cárdenas,16.1983767,-95.2084543
+5100832456,Lázaro Cárdenas,16.1985151,-95.2085871
+5100832455,Lázaro Cárdenas,16.1986516,-95.2086736
+5100832454,Lázaro Cárdenas,16.1987688,-95.2087098
+5100832453,Lázaro Cárdenas,16.1988725,-95.2087178
+5103658125,Lázaro Cárdenas,16.1990052,-95.2087084
+5103658124,Lázaro Cárdenas,16.1991784,-95.2087037
+5103658123,Lázaro Cárdenas,16.1992653,-95.2087232
+5103658122,Lázaro Cárdenas,16.1996624,-95.2088556
+5103658121,Lázaro Cárdenas,16.1998617,-95.2089443
+5100622558,Juárez y Calle Díaz Mirón,16.1990805,-95.2043874
+1675110700,Calle Progreso y Avenida Puerto Ángel,16.1797893,-95.1918065
+6422094576,Calle Progreso,16.179495,-95.1925984
+8496264279,Calle Progreso,16.1794783,-95.192696
+13007861414,Avenida 5 de Mayo,16.1802885,-95.1931512
+1675110715,Avenida 5 de Mayo,16.1805142,-95.1932386
+8436654158,Avenida 5 de Mayo,16.1805757,-95.1932612
+8456570414,Avenida 5 de Mayo,16.1815632,-95.1936318
+1675110738,Avenida 5 de Mayo,16.1816331,-95.1936582
+1675110768,Avenida 5 de Mayo y Calle Tuxpan,16.1826261,-95.1940508
+8433805212,Calle Tuxpan,16.1827652,-95.1936887
+1675110769,Calle Tuxpan y Calle Benito Juárez,16.1827923,-95.1936083
+6422094723,Calle Benito Juárez,16.1828824,-95.1936471
+1675110777,Calle Benito Juárez,16.1838716,-95.1940374
+6131581831,Calle Benito Juárez,16.1842391,-95.1941767
+1675110794,Calle Benito Juárez y Calle Laborista y Lomas de Oriente,16.1848981,-95.1944002
+5395180398,Calle Laborista,16.1849678,-95.1942912
+5141452854,Calle Laborista,16.185075,-95.1938055
+5090760249,Calle Laborista y Avenida Puerto Ángel,16.1851608,-95.1934782
+5090760250,Avenida Puerto Ángel,16.1852787,-95.1934755
+5090760251,Avenida Puerto Ángel,16.1854255,-95.1934735
+5090760252,Avenida Puerto Ángel,16.1854751,-95.1934849
+5090760253,Avenida Puerto Ángel,16.1855421,-95.1935345
+5090760254,Avenida Puerto Ángel,16.1856721,-95.1936284
+5090760255,Avenida Puerto Ángel,16.185913,-95.1937477
+5090760256,Avenida Puerto Ángel,16.1861538,-95.193855
+5090760257,Avenida Puerto Ángel,16.1863869,-95.1939797
+5090760258,Avenida Puerto Ángel,16.1867952,-95.1941648
+5090760259,Avenida Puerto Ángel y Periférico Juárez,16.1872003,-95.1944049
+5155193268,Periférico Juárez,16.1871713,-95.1943251
+5090759278,Periférico Juárez,16.1871558,-95.1942654
+5090759277,Periférico Juárez,16.1871224,-95.1941514
+5090759276,Periférico Juárez,16.1870412,-95.1939717
+5122779448,Periférico Juárez,16.1869871,-95.1938483
+5090759275,Periférico Juárez,16.1869337,-95.1937444
+5090759274,Periférico Juárez,16.1868609,-95.1936176
+5090759273,Periférico Juárez,16.1866858,-95.1933736
+5090759272,Periférico Juárez,16.1866111,-95.1932368
+5155193228,Periférico Juárez,16.1865866,-95.1931657
+5155193227,Periférico Juárez,16.1865737,-95.1930664
+5090759271,Periférico Juárez,16.1865415,-95.1929297
+5090759270,Periférico Juárez,16.1865203,-95.1928753
+6131581638,Periférico Juárez,16.1864649,-95.1928244
+5090759269,Periférico Juárez,16.1863689,-95.1927714
+5090759268,Periférico Juárez,16.1862157,-95.1926856
+5090759267,Periférico Juárez,16.1861004,-95.1926279
+5090759266,Periférico Juárez,16.186045,-95.1925662
+5090759265,Periférico Juárez,16.1860122,-95.1924824
+5155193267,Periférico Juárez,16.1860257,-95.1924127
+5090759264,Periférico Juárez,16.1860733,-95.1923496
+5090759263,Periférico Juárez,16.1861635,-95.1922524
+5155193264,Periférico Juárez,16.1862285,-95.1921478
+5090759285,Periférico Juárez y Calle Benito Juárez,16.1863053,-95.1920474
+5090759286,Calle Benito Juárez,16.186074,-95.1918588
+5090759287,Calle Benito Juárez,16.1858937,-95.1916784
+5090759288,Calle Benito Juárez,16.1857971,-95.1916053
+5155625663,Calle Benito Juárez,16.1857501,-95.1915537
+5090759289,Calle Benito Juárez,16.1857288,-95.1914974
+5155625664,Calle Benito Juárez,16.1857404,-95.191441
+1675110813,Calle Benito Juárez,16.1857732,-95.191376
+1675110808,Calle Benito Juárez,16.1858145,-95.1913136
+5155625661,Calle Benito Juárez,16.1858447,-95.1912506
+5155625665,Calle Benito Juárez,16.1858634,-95.1911855
+1675110809,Calle Benito Juárez,16.1858557,-95.1911044
+5155625668,Calle Benito Juárez,16.1858376,-95.1909817
+1675110810,Calle Benito Juárez,16.1857996,-95.1908872
+5155625667,Calle Benito Juárez,16.1857185,-95.1907799
+5155625662,Calle Benito Juárez y Calle Frontera,16.1856316,-95.1906786
+5090648578,Calle Frontera,16.1857282,-95.190639
+5090648571,Calle Frontera,16.1857984,-95.1906297
+5090648579,Calle Frontera,16.1859162,-95.1906424
+5155625669,Calle Frontera,16.1860456,-95.1906672
+5090648580,Calle Frontera,16.186195,-95.1907155
+5090648581,Calle Frontera,16.1864835,-95.1908469
+5090648582,Calle Frontera,16.1865557,-95.1908442
+5090648583,Calle Frontera,16.1869456,-95.1906319
+5090648584,Calle Frontera y Calle Tuxpan,16.1870502,-95.1906028
+5090648577,Calle Tuxpan,16.1870225,-95.189992
+5090648576,Calle Tuxpan,16.1869871,-95.1899296
+5090648575,Calle Tuxpan,16.1869356,-95.1899035
+5090648574,Calle Tuxpan,16.1866368,-95.1900302
+5090648570,Calle Tuxpan y Calle Benito Juárez,16.1864404,-95.1901415
+5090648569,Calle Benito Juárez,16.1862633,-95.1898505
+6131581791,Calle Benito Juárez,16.1862388,-95.1897378
+5090648568,Calle Benito Juárez,16.1861899,-95.1893422
+12989843629,Calle Benito Juárez,16.1862085,-95.1892412
+5090649498,Calle Benito Juárez y 20 de Noviembre,16.1862247,-95.1891531
+5090649497,20 de Noviembre,16.1858087,-95.1890901
+5090649496,20 de Noviembre,16.1856567,-95.1890498
+5090649495,20 de Noviembre,16.1856254,-95.1890418
+1675110807,Calle Benito Juárez y Camino al Tanque de Agua,16.1855642,-95.1906164
+8431136726,Camino al Tanque de Agua,16.1855073,-95.1905693
+5090649472,Camino al Tanque de Agua,16.1852407,-95.1903588
+5090649471,Camino al Tanque de Agua,16.1850243,-95.1901643
+5090649470,Camino al Tanque de Agua,16.1847538,-95.1900449
+5090649469,Camino al Tanque de Agua,16.184616,-95.1900074
+5100578059,Camino al Tanque de Agua,16.184549,-95.1899859
+5100578060,Camino al Tanque de Agua,16.1844653,-95.1899457
+5100578061,Camino al Tanque de Agua,16.1843011,-95.1898371
+5090649468,Camino al Tanque de Agua,16.1839334,-95.1895762
+5100578058,Camino al Tanque de Agua,16.1838484,-95.1895494
+5090649467,Camino al Tanque de Agua,16.1838175,-95.1895487
+5100578057,Camino al Tanque de Agua,16.1837885,-95.1895528
+5100578056,Camino al Tanque de Agua,16.1837634,-95.1895588
+5090649466,Camino al Tanque de Agua,16.1837331,-95.1895648
+5100578054,Camino al Tanque de Agua,16.1836967,-95.1895739
+5100578055,Camino al Tanque de Agua,16.1836558,-95.1895816
+5090649465,Camino al Tanque de Agua,16.1836069,-95.1895836
+5100578053,Camino al Tanque de Agua,16.1835232,-95.1895642
+5100578051,Camino al Tanque de Agua,16.1834498,-95.1895266
+5100578052,Camino al Tanque de Agua,16.1833764,-95.1894756
+5090649464,Camino al Tanque de Agua,16.1832804,-95.1894321
+5090649463,Camino al Tanque de Agua,16.18316,-95.1894193
+5091984316,Camino al Tanque de Agua,16.1829315,-95.1894513
+5148099003,Camino al Tanque de Agua,16.1828581,-95.1894557
+5091984317,Camino al Tanque de Agua,16.1828013,-95.1894595
+5141607453,Camino al Tanque de Agua,16.1827369,-95.1894498
+5148099019,Camino al Tanque de Agua,16.1826857,-95.1894327
+1675110803,Calle Benito Juárez,16.185526,-95.1903844
+6131581676,Calle Benito Juárez,16.1854538,-95.1901375
+1675110802,Calle Benito Juárez,16.185336,-95.1897673
+1675110796,Calle Benito Juárez,16.1852767,-95.1897177
+1675110793,Calle Benito Juárez,16.1848178,-95.1896771
+5100578065,Calle Benito Juárez,16.1846881,-95.1896212
+1675110789,Calle Benito Juárez,16.1845892,-95.1895483
+5100578064,Calle Benito Juárez,16.1844743,-95.1894341
+1675110787,Calle Benito Juárez,16.1843753,-95.1893033
+5100578063,Calle Benito Juárez,16.1843056,-95.1891853
+5090649487,Calle Benito Juárez,16.184238,-95.1890358
+5100578062,Calle Benito Juárez,16.1841903,-95.1889043
+5100578068,Calle Benito Juárez,16.1841575,-95.1887682
+5100578067,Calle Benito Juárez,16.1841266,-95.1886307
+1675110782,Calle Benito Juárez,16.1840802,-95.1884732
+5100578069,Calle Benito Juárez,16.1840313,-95.1884021
+5100578070,Calle Benito Juárez,16.1839392,-95.1883652
+1675110781,Calle Benito Juárez,16.1837666,-95.1883451
+5100578074,Calle Benito Juárez y Porfirio Díaz,16.1835934,-95.1883337
+5100578075,Porfirio Díaz,16.1834375,-95.1883721
+1675110772,Porfirio Díaz,16.1831982,-95.1884223
+5148112192,Porfirio Díaz,16.1830733,-95.1884271
+5091984305,Porfirio Díaz,16.1829539,-95.1884148
+5111215653,Porfirio Díaz,16.1825306,-95.1883713
+5090579153,Porfirio Díaz y Calle de Manzanillo,16.1824452,-95.1883404
+5141607441,Calle de Manzanillo,16.1821946,-95.1889627
+1675110754,Calle de Manzanillo,16.1819125,-95.1892872
+1675110747,Calle de Manzanillo,16.1818076,-95.1896735
+1675110740,Calle de Manzanillo,16.1816891,-95.1897975
+5141607421,Calle de Manzanillo,16.1816035,-95.1899095
+8428297152,Calle de Manzanillo,16.1815391,-95.1903078
+1675110739,Calle de Manzanillo,16.1815365,-95.1904432
+8428297150,Calle de Manzanillo,16.1815339,-95.1905009
+8428297151,Calle de Manzanillo,16.1816086,-95.1908563
+5141607455,Calle de Manzanillo,16.1818176,-95.1913012
+1675110745,Calle de Manzanillo y Avenida la Paz,16.1818063,-95.19138
+5141607456,Avenida la Paz,16.1817567,-95.1913807
+1675110741,Avenida la Paz,16.1816911,-95.1913767
+1675110737,Avenida la Paz,16.1815983,-95.1912814
+5141607442,Avenida la Paz,16.1814502,-95.1911755
+8428297156,Avenida la Paz,16.1813357,-95.1911101
+5091984297,Avenida la Paz,16.1812905,-95.1910843
+6131582419,Avenida la Paz,16.1809852,-95.1909743
+5139480687,Avenida la Paz,16.1807136,-95.1908726
+5091984292,Avenida la Paz y Calle Progreso,16.180285,-95.1907075
+5091984293,Calle Progreso,16.1798995,-95.1916811
+8437259211,Calle Progreso y Avenida Puerto Ángel,16.1798383,-95.1918159
+12989856623,Avenida Manuel Ávila Camacho,16.1767998,-95.1930493
+12986147694,Avenida Manuel Ávila Camacho,16.1769262,-95.1930954
+6422094746,Avenida Manuel Ávila Camacho,16.1769291,-95.1930965
+6422122254,Avenida Manuel Ávila Camacho y Calle Mazatlán,16.1770013,-95.1931243
+6422094745,Avenida Manuel Ávila Camacho,16.1779917,-95.1935045
+6422094567,Avenida Manuel Ávila Camacho y Calle Guaymas,16.1780535,-95.1935294
+6422094744,Avenida Manuel Ávila Camacho y Calle Progreso,16.1790426,-95.1939081
+1284097169,Innominada,16.2157481,-95.2073465
+1284096982,Calle 5 de Septiembre,16.2156765,-95.2075961
+1284097098,Calle 5 de Septiembre,16.2167853,-95.2078991
+5103795296,Calle 5 de Septiembre,16.2180027,-95.2082738
+12146781008,Calle 5 de Septiembre,16.2182302,-95.2083438
+1284097038,Calle 5 de Septiembre y Calle Santa Cruz,16.2187852,-95.2085147
+5103796646,Calle Santa Cruz,16.2189046,-95.2099415
+5104703835,Calle Santa Cruz,16.2189777,-95.2107261
+1284097092,Calle Santa Cruz,16.219042,-95.2112619
+5104637459,Calle Santa Cruz y Calle Manuel Ávila Camacho,16.2190806,-95.2117078
+1284097009,Calle Manuel Ávila Camacho,16.2192802,-95.2122208
+1284097068,Calle Manuel Ávila Camacho y Calle Venus,16.2193259,-95.2124561
+5101548599,Calle Venus,16.2206954,-95.2122489
+8475847170,Calle Venus,16.2208248,-95.2122121
+8496025164,Calle Venus,16.2209449,-95.2121547
+5101559057,Calle Venus y Calle Francisco I. Madero,16.2209839,-95.2121356
+6422026491,Calle Francisco I. Madero,16.2210869,-95.2121101
+5101565127,Calle Francisco I. Madero,16.2215914,-95.212016
+5101554618,Calle Francisco I. Madero,16.2218365,-95.2119793
+5438773054,Calle Francisco I. Madero,16.2218556,-95.2119767
+5101548598,Calle Francisco I. Madero,16.2224007,-95.2119137
+8475847181,Calle Francisco I. Madero,16.2227145,-95.2118862
+1675112571,Calle Francisco I. Madero,16.2228111,-95.2118821
+1675112583,Calle Francisco I. Madero,16.2230757,-95.2118895
+5101387200,Calle Francisco I. Madero,16.2232303,-95.2119344
+1675112605,Calle Francisco I. Madero,16.223529,-95.2121101
+5101387199,Calle Francisco I. Madero,16.223632,-95.2122201
+8495800496,Calle Francisco I. Madero,16.2238783,-95.212705
+5438773059,Calle Francisco I. Madero,16.2240441,-95.2130315
+5101342982,Calle Francisco I. Madero,16.2241664,-95.2132957
+1675112626,Calle Francisco I. Madero,16.2242231,-95.2134271
+1675112628,Calle Francisco I. Madero,16.2242868,-95.2135552
+8475847176,Calle Francisco I. Madero,16.2243074,-95.213704
+8475847175,Calle Francisco I. Madero,16.224292,-95.213814
+5101342964,Calle Francisco I. Madero,16.2242508,-95.2139253
+5101342962,Calle Francisco I. Madero,16.224028,-95.2143689
+5101342977,Calle Francisco I. Madero,16.2239939,-95.2144373
+1675112609,Calle Francisco I. Madero,16.223961,-95.2144993
+1675112587,Calle Francisco I. Madero,16.2235522,-95.2153355
+1675112585,Calle Francisco I. Madero,16.223499,-95.2159758
+1675112607,Calle Francisco I. Madero,16.2236192,-95.216521
+5090619228,Calle Francisco I. Madero,16.2238097,-95.2168804
+5090618683,Calle Francisco I. Madero,16.2238999,-95.2170441
+1675112622,Calle Francisco I. Madero y Calle Benito Juárez,16.2241329,-95.2174571
+1675112624,Calle Francisco I. Madero,16.2241484,-95.2175537
+1675112620,Calle Francisco I. Madero,16.2240492,-95.2178675
+1675112617,Calle Francisco I. Madero,16.2239359,-95.2182202
+6422026490,Calle Francisco I. Madero,16.2238883,-95.2184844
+1675112611,Calle Francisco I. Madero,16.223905,-95.2186078
+12989855973,Calle Francisco I. Madero,16.2239137,-95.2187097
+5090609818,Calle Francisco I. Madero,16.2239372,-95.2189846
+1675112613,Calle Francisco I. Madero,16.2239308,-95.2193226
+8428709969,Calle Francisco I. Madero,16.2239279,-95.2193542
+1675112615,Calle Francisco I. Madero,16.2239012,-95.2196485
+5090592263,Calle Francisco I. Madero,16.2239179,-95.2197397
+1675112582,Calle Benito Juárez,16.2230686,-95.2175208
+5095022749,Calle Benito Juárez y Calle Nogales,16.2223315,-95.2175993
+1675112560,Calle Nogales,16.2218454,-95.2176142
+1675112553,Calle Nogales,16.2213438,-95.2176419
+1675112520,Calle Nogales,16.2203334,-95.2174654
+5095091160,Calle Nogales,16.2199612,-95.2173921
+1675112501,Calle Nogales y Calle del Bosque,16.2193774,-95.2172948
+1675112504,Calle del Bosque,16.2194907,-95.2162609
+1675112506,Calle del Bosque,16.2195217,-95.2159524
+1675112508,Calle del Bosque,16.219586,-95.2152121
+6422026492,Calle del Bosque,16.2197206,-95.2141721
+1284096991,Calle del Bosque y Calle Manuel Ávila Camacho,16.2197296,-95.2140856
+5098967116,Calle Manuel Ávila Camacho,16.2196797,-95.214046
+1284097010,Calle Manuel Ávila Camacho,16.2195748,-95.2139629
+6422026489,Calle Manuel Ávila Camacho,16.2195358,-95.2139065
+1284097077,Calle Manuel Ávila Camacho,16.2194899,-95.2136745
+1675112503,Calle Manuel Ávila Camacho,16.219483,-95.2135733
+1675112502,Calle Manuel Ávila Camacho,16.2194116,-95.2130103
+5100622552,Calle 5 de Septiembre,16.2155831,-95.2075712
+5100622556,Innominada,16.2156591,-95.2073177
+1284097047,Calle 5 de Septiembre y Calle Puebla,16.2073163,-95.2049326
+1284096987,Calle Puebla y Benito Juárez,16.207322,-95.2060948
+5121811823,Calle Puebla,16.2073021,-95.2071189
+1284097160,Calle Puebla,16.2073026,-95.2071904
+5105992964,Calle Puebla,16.207299,-95.2081484
+1675111446,Calle Puebla,16.207295,-95.2091775
+1284097116,Calle Puebla,16.2072917,-95.210242
+1284097130,Calle Puebla,16.2072729,-95.211429
+1284096971,Calle Puebla,16.207302,-95.2124695
+1284097117,Calle Puebla,16.2072905,-95.2134874
+1284097184,Calle Puebla,16.2072735,-95.2145162
+1675111429,Calle Puebla,16.2072487,-95.2150885
+1675111427,Calle Puebla,16.2072338,-95.215306
+1675111424,Calle Puebla,16.2072222,-95.2157378
+1675111420,Calle Puebla,16.2072125,-95.2161723
+1675111416,Calle Puebla,16.2072072,-95.2165777
+5121593337,Calle Puebla,16.2072054,-95.2167799
+5102690210,Calle Puebla y Arturo Lona Reyes,16.2071925,-95.2171274
+1675111406,Calle Puebla,16.2071913,-95.2171808
+1675111404,Calle Puebla,16.2071868,-95.2175954
+5102697369,Calle Puebla,16.2071735,-95.2180256
+1675111401,Calle Puebla,16.2071684,-95.2182419
+1675111398,Calle Puebla y Rodrigo Carrasco,16.2071628,-95.2186629
+1675111485,Rodrigo Carrasco,16.2081723,-95.2186917
+1675111591,Rodrigo Carrasco,16.209398,-95.2187267
+5091881729,Rodrigo Carrasco y Benito Juárez,16.2097392,-95.2187367
+1675111630,Benito Juárez y Víctor Henestroza,16.2097978,-95.2191831
+1675111632,Benito Juárez,16.2098308,-95.2195321
+5109787236,Benito Juárez y Avenida Revolución,16.2098428,-95.2196204
+1675111647,Benito Juárez,16.2099102,-95.2202493
+5109908244,Benito Juárez,16.2099286,-95.2204263
+1675111650,Benito Juárez y José Vasconcelos,16.2099673,-95.2207989
+1675111706,Benito Juárez,16.2099975,-95.2212361
+5100792458,Benito Juárez,16.2099999,-95.2213106
+5100792454,Benito Juárez y Fredy León y Calle El Diamante,16.210043,-95.2224074
+5100792453,Fredy León,16.2104477,-95.2224128
+1675111786,Fredy León,16.210855,-95.2224166
+13008754963,Fredy León,16.2110095,-95.222421
+1675111917,Fredy León,16.2112881,-95.222429
+5100792463,Fredy León,16.2117063,-95.2224514
+1675112093,Fredy León,16.2123124,-95.2224423
+1675112143,Fredy León y Calle Leñador,16.2126938,-95.2224118
+1675112146,Calle Leñador,16.2127906,-95.2228215
+5108379600,Calle Leñador,16.212866,-95.2233503
+1675112249,Calle Leñador,16.2128989,-95.2235865
+5108379599,Calle Leñador,16.212955,-95.2239103
+1675112251,Calle Leñador,16.2130536,-95.2244797
+5107970368,Calle Leñador,16.2130455,-95.2245498
+1675112250,Calle Leñador y Independencia y Libertad,16.2130071,-95.2248814
+1675112264,Independencia y Francisco I. Madero,16.213522,-95.2246441
+1675112273,Francisco I. Madero,16.2136573,-95.2250344
+1675112283,Francisco I. Madero,16.2137932,-95.2254392
+12989875877,Francisco I. Madero,16.2138848,-95.2257138
+1675112349,Francisco I. Madero,16.2140737,-95.2262402
+1675112347,Francisco I. Madero,16.2139932,-95.2260391
+5107990085,Francisco I. Madero,16.2139259,-95.2258372
+1675111623,Calle El Diamante y Avenida Revolución,16.209512,-95.2224035
+5109792447,Avenida Revolución y José Vasconcelos,16.2094666,-95.2209088
+1675111610,Avenida Revolución,16.2094797,-95.2206396
+5109908246,Avenida Revolución,16.2096263,-95.220347
+5091881015,Avenida Revolución,16.2096654,-95.2202833
+1675111627,Avenida Revolución,16.2097064,-95.2201232
+5091881014,Avenida Revolución,16.2097817,-95.2197041
+1675111619,Víctor Henestroza y Calle 5 de Abril,16.2094372,-95.2191791
+1675111482,Víctor Henestroza,16.2081649,-95.2191415
+1675111395,Víctor Henestroza y Calle Puebla,16.2071501,-95.219108
+5102690209,Arturo Lona Reyes,16.2066981,-95.2167423
+1675111249,Arturo Lona Reyes,16.2060168,-95.216686
+1675111167,Arturo Lona Reyes y Calle Chiapas,16.2051192,-95.2168134
+1284097131,Calle Chiapas,16.2051914,-95.2157754
+5121593346,Calle Chiapas,16.2052055,-95.2154267
+1675111168,Calle Chiapas,16.2052132,-95.2150096
+1675111169,Calle Chiapas,16.2052822,-95.2145142
+12431699130,Calle Chiapas,16.2053307,-95.2138804
+1284096975,Calle Chiapas,16.2053687,-95.2134394
+1284097140,Calle Chiapas,16.205409,-95.2124628
+1284097076,Calle Chiapas,16.205459,-95.2114152
+1284097081,Calle Chiapas,16.2055764,-95.2097404
+1675111173,Calle Chiapas,16.2056461,-95.2087103
+5090461223,Calle Chiapas,16.2056896,-95.207681
+3108232293,Calle Chiapas,16.2057529,-95.2066602
+5090461221,Calle Chiapas y Benito Juárez,16.205841,-95.205644
+8496945337,Innominada,16.2213144,-95.2083314
+5095143993,Innominada,16.2214622,-95.2083195
+1284085189,Innominada,16.2215534,-95.2083078
+5094747033,Innominada,16.2216313,-95.208285
+5094747032,Innominada,16.2217011,-95.2082461
+1284085207,Innominada,16.2217668,-95.2081824
+5094747031,Innominada,16.2218054,-95.208118
+5094747030,Innominada,16.2218305,-95.2080432
+1284085204,Innominada,16.2218363,-95.2079497
+5094747029,Innominada,16.2218267,-95.2078515
+1284085249,Innominada,16.2217977,-95.2077368
+5094747028,Innominada,16.2217488,-95.2076101
+1284085271,Innominada,16.2216509,-95.2074163
+5094747027,Innominada,16.2215756,-95.2072446
+1284085246,Innominada,16.2215266,-95.2071141
+5094747026,Innominada,16.2214867,-95.2069764
+1284085254,Innominada,16.2214531,-95.2067421
+5094747045,Innominada,16.221428,-95.2065515
+5094747025,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2213909,-95.2059849
+5111610557,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2213444,-95.2055803
+5094747044,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.220868,-95.2013813
+5094747037,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2205486,-95.198573
+5094747038,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2204424,-95.1976222
+5094747039,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2203329,-95.1966687
+5094747040,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2202362,-95.195751
+5111617753,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2200606,-95.194275
+8456548189,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.219983,-95.1936419
+5094747041,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2198487,-95.1925474
+5094747043,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2198054,-95.1921091
+8460627307,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.219698,-95.191063
+6331625668,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2196627,-95.1907198
+5094747042,Carretera Ramal a Refinería Pemex (Refinería del Pacifico) y Avenida Oleoducto,16.2196028,-95.1901361
+1282443067,Avenida Oleoducto y Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2197122,-95.1900677
+12994385511,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2197336,-95.190293
+6331625670,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2197726,-95.1907043
+8460627308,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2198125,-95.1910454
+5092276014,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.219846,-95.1913313
+5092278628,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2199827,-95.1924938
+8460627309,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2201098,-95.1936138
+5111617752,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2201833,-95.1942614
+8496569589,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2204384,-95.1965882
+5092311145,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2204475,-95.1966767
+8496569591,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2205189,-95.1973369
+5092311136,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2205486,-95.1976121
+5092311132,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.22066,-95.198561
+5111610553,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2207392,-95.1992442
+5092406928,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2208499,-95.200183
+5092406922,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2209393,-95.200928
+8496569588,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2209427,-95.2009586
+5092311155,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2209814,-95.2013063
+5092406939,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2210025,-95.2015597
+5092406943,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.221103,-95.2023744
+5092406942,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2211942,-95.2032438
+5111610554,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2213084,-95.2042995
+1282448567,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2214449,-95.2055722
+1284085225,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2215619,-95.2065341
+1282448571,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2216364,-95.206794
+1284097080,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2217213,-95.2069891
+5094747023,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2218473,-95.2072366
+5094747022,Carretera Ramal a Refinería Pemex (Refinería del Pacifico),16.2219271,-95.2073894
+5094745498,Innominada,16.2219876,-95.2075839
+5094745497,Innominada,16.222043,-95.2077851
+5094745496,Innominada,16.2220829,-95.2080506
+5094745495,Innominada,16.222101,-95.2082732
+5094745494,Innominada,16.2221241,-95.2084979
+5094745493,Innominada,16.2221602,-95.208811
+5094745492,Innominada,16.2222259,-95.208984
+5094745491,Innominada,16.2223405,-95.2091282
+5094745490,Innominada,16.2224731,-95.209218
+5094745489,Innominada,16.2226006,-95.2092737
+5094745488,Innominada,16.2227203,-95.2093032
+5094745487,Innominada,16.2227937,-95.2092938
+5094745486,Innominada,16.2228723,-95.2092657
+5094745485,Innominada,16.2229135,-95.2092201
+5094745484,Innominada,16.2229315,-95.2091517
+5094745483,Innominada,16.2229392,-95.2090658
+5094745482,Innominada,16.2229209,-95.2090135
+5094745481,Innominada,16.2228794,-95.2089646
+8523166826,Avenida Hidalgo y Calle el Chamizal,16.188178,-95.2019215
+5091984048,Calle el Chamizal,16.1884786,-95.2020941
+8552334322,Calle el Chamizal,16.1885075,-95.2021518
+4785332198,Calle el Chamizal,16.188505,-95.2022181
+4785332199,Calle el Chamizal y 25 de Diciembre,16.1881682,-95.2032012
+4785332200,25 de Diciembre y Lázaro Cárdenas,16.1884054,-95.2033026
+4785332191,Lázaro Cárdenas,16.1885214,-95.203277
+5153410357,Lázaro Cárdenas,16.1888894,-95.2031938
+8552244562,Lázaro Cárdenas,16.1890163,-95.2031676
+6131581646,Lázaro Cárdenas,16.1891727,-95.2031395
+4785332192,Lázaro Cárdenas,16.1894967,-95.2031013
+5090601540,Lázaro Cárdenas,16.1899661,-95.2029973
+4785332193,Lázaro Cárdenas,16.1902134,-95.2029276
+5090601469,Lázaro Cárdenas,16.1903976,-95.2028793
+4785332194,Lázaro Cárdenas y 15 de Septiembre,16.1908252,-95.2027814
+8552183784,15 de Septiembre,16.1908264,-95.2030939
+5155873088,15 de Septiembre,16.1908174,-95.2031777
+5155873089,15 de Septiembre,16.1908007,-95.2032609
+5090601614,15 de Septiembre,16.1907434,-95.2034419
+5090601613,15 de Septiembre,16.1906513,-95.2036732
+5090601612,15 de Septiembre,16.1906629,-95.2040072
+5090601611,15 de Septiembre,16.1906545,-95.2041708
+5090601610,15 de Septiembre,16.1906229,-95.2042499
+5090601609,15 de Septiembre,16.1905534,-95.2043317
+5090601608,15 de Septiembre,16.1903093,-95.2045584
+5090601607,15 de Septiembre,16.1902791,-95.2046744
+5137519252,15 de Septiembre,16.1902778,-95.2047964
+5090601606,15 de Septiembre y Vicente Lombardo Toledano,16.1902874,-95.2049285
+5137519251,Vicente Lombardo Toledano,16.1903905,-95.205011
+5137491166,Vicente Lombardo Toledano,16.1904652,-95.2050834
+5090601605,Vicente Lombardo Toledano,16.1906846,-95.2052993
+5090601604,Vicente Lombardo Toledano,16.191021,-95.2052697
+5090601476,Vicente Lombardo Toledano,16.1911239,-95.2052557
+8509105359,Vicente Lombardo Toledano,16.1911619,-95.205288
+5090601603,Vicente Lombardo Toledano,16.1912064,-95.2053275
+6131581916,Vicente Lombardo Toledano,16.1913483,-95.2054742
+5090601602,Vicente Lombardo Toledano,16.1915644,-95.2057339
+5090601601,Vicente Lombardo Toledano,16.1916559,-95.2058499
+5100663995,Vicente Lombardo Toledano,16.1917524,-95.2060544
+5090601600,Vicente Lombardo Toledano,16.1918001,-95.2062274
+5090601599,Vicente Lombardo Toledano,16.1918156,-95.2063917
+5090601598,Vicente Lombardo Toledano,16.1917226,-95.2067319
+5090601597,Vicente Lombardo Toledano y Adolfo López Mateos,16.1915599,-95.2072956
+5090601580,Adolfo López Mateos,16.1916861,-95.2073338
+5090601581,Adolfo López Mateos,16.1918117,-95.207368
+6131582385,Adolfo López Mateos,16.1919546,-95.2073962
+5107081457,Adolfo López Mateos,16.1922047,-95.2074514
+5090601582,Adolfo López Mateos,16.1922998,-95.2074713
+5090601499,Adolfo López Mateos,16.1928748,-95.2075477
+5100832287,Calle 5 de Mayo,16.193315,-95.2092113
+5100832286,Calle 5 de Mayo,16.1933892,-95.2092791
+5100832285,Calle 5 de Mayo,16.1935103,-95.20962
+5100832284,Calle 5 de Mayo,16.1936336,-95.2099119
+5100832283,Calle 5 de Mayo,16.1938381,-95.2103568
+5100832282,Calle 5 de Mayo,16.1939126,-95.2105146
+5434039539,Calle 5 de Mayo,16.1939839,-95.2106648
+5100832281,Calle 5 de Mayo,16.1941105,-95.2109793
+5103787114,Calle 5 de Mayo,16.1941783,-95.2111501
+5100832280,Calle 5 de Mayo,16.1943175,-95.2115209
+5100832429,Calle 5 de Mayo,16.1943772,-95.211693
+5100832279,Calle 5 de Mayo,16.1943803,-95.2117645
+5100832278,Calle 5 de Mayo,16.1943965,-95.2119546
+5100832277,Calle 5 de Mayo,16.1943974,-95.2122144
+5100832276,Calle 5 de Mayo,16.1944274,-95.2125455
+5100832275,Calle 5 de Mayo,16.1944805,-95.2126401
+5100832434,Calle 5 de Mayo,16.1945282,-95.2127193
+5100832274,Calle 5 de Mayo,16.1945907,-95.2128618
+5100817908,Calle 5 de Mayo,16.1946275,-95.2130402
+5100817909,Calle 5 de Mayo,16.1946197,-95.2132241
+5100817910,Calle 5 de Mayo,16.1946322,-95.2133828
+5100817911,Calle 5 de Mayo,16.1945485,-95.2136417
+5100817912,Calle 5 de Mayo,16.1944972,-95.2138918
+5100817913,Calle 5 de Mayo,16.1944451,-95.2143865
+5100817877,Calle 5 de Mayo,16.1943932,-95.2149594
+1675110644,Calle Progreso,16.1773822,-95.198926
+8436713388,Calle Progreso y Avendia Hidalgo,16.1773637,-95.1989653
+6131581968,Avendia Hidalgo,16.1776074,-95.1990657
+6131582040,Avendia Hidalgo,16.1777475,-95.1991106
+1675110675,Avendia Hidalgo,16.1783577,-95.1993723
+8436654171,Avendia Hidalgo,16.1784015,-95.1993911
+1675110691,Avendia Hidalgo,16.1794117,-95.1997561
+8437211952,Avendia Hidalgo,16.1794765,-95.1997847
+1675110714,Avendia Hidalgo,16.1804793,-95.2001438
+8436769660,Avendia Hidalgo,16.1805364,-95.2001668
+5141129554,Avendia Hidalgo,16.180995,-95.2003391
+5141129553,Avendia Hidalgo,16.1814709,-95.2004747
+5117203599,Avendia Hidalgo,16.1815622,-95.2005054
+8436769666,Avendia Hidalgo,16.1816126,-95.2005297
+6131582221,Avendia Hidalgo,16.1820611,-95.2007044
+8436713400,Avendia Hidalgo y Calle Laborista,16.1825881,-95.2009072
+4785332219,Calle Laborista y Avenida Hidalgo,16.1826057,-95.2008534
+5143067274,Avenida Hidalgo,16.182869,-95.2010086
+5137512906,Avenida Hidalgo,16.1829627,-95.2010592
+8552471391,Avenida Hidalgo,16.1831452,-95.2011614
+4785332218,Avenida Hidalgo,16.1832125,-95.2012343
+4785332217,Avenida Hidalgo,16.1833017,-95.2013727
+4785333727,Avenida Hidalgo,16.1836462,-95.2015116
+5153140737,Avenida Hidalgo,16.1838001,-95.2015945
+4785332215,Avenida Hidalgo,16.1840582,-95.2017368
+5153140736,Avenida Hidalgo,16.184166,-95.2017606
+4785332214,Avenida Hidalgo y Calle Constancia,16.1846739,-95.2017878
+5107283770,Calle Constancia,16.1845904,-95.2020412
+5101505247,Calle Constancia,16.1845225,-95.2022471
+5091984060,Calle Constancia,16.1844614,-95.2024166
+5147165567,Calle Constancia y Belisario Domínguez,16.184301,-95.2029061
+12994447352,Belisario Domínguez,16.1843,-95.2029058
+6131582187,Belisario Domínguez,16.1841127,-95.2028485
+5143866856,Belisario Domínguez y Calle Primero de Mayo,16.1833174,-95.2026234
+5147295429,Calle Primero de Mayo,16.1832282,-95.2028881
+5101505233,Calle Primero de Mayo y Álvaro Obregón,16.1831349,-95.2031596
+6131581711,Álvaro Obregón,16.1836124,-95.2033507
+6131582279,Álvaro Obregón,16.1838753,-95.2034835
+5091984063,Álvaro Obregón,16.1841475,-95.2035885
+5101505232,Álvaro Obregón,16.1843146,-95.2036276
+5101505231,Álvaro Obregón,16.1844099,-95.2036303
+5101505230,Álvaro Obregón,16.1848285,-95.2035539
+8522941510,Álvaro Obregón,16.1849354,-95.2035539
+5101505229,Álvaro Obregón,16.1850513,-95.2035928
+5101505228,Álvaro Obregón y Oleoducto Uno,16.185345,-95.2039361
+4785332188,Oleoducto Uno,16.1859903,-95.2038637
+5145098297,Oleoducto Uno,16.1860972,-95.2038469
+4785332189,Oleoducto Uno,16.1865093,-95.2037034
+5101515928,Oleoducto Uno,16.1865982,-95.2036732
+5151123650,Oleoducto Uno,16.1866933,-95.203653
+4785332203,Oleoducto Uno y Tocuela,16.1867785,-95.203631
+5151123649,Tocuela,16.1868026,-95.2036973
+8552244565,Tocuela,16.1868461,-95.2037812
+5101515929,Tocuela,16.186868,-95.2038116
+5151123702,Tocuela,16.1868845,-95.2038396
+5101515930,Tocuela,16.1869426,-95.2039852
+5151123701,Tocuela,16.1869772,-95.204033
+6131581692,Tocuela,16.1871489,-95.204182
+5101515931,Tocuela,16.187226,-95.2042385
+5101515932,Tocuela,16.187349,-95.2043606
+8522902884,Tocuela,16.1874064,-95.2044672
+5090510798,Tocuela,16.1874637,-95.2046965
+8522902854,Tocuela,16.1875011,-95.2048941
+5090510801,Tocuela,16.1875429,-95.2052125
+5435982285,Tocuela,16.1875539,-95.205318
+5090510807,Tocuela,16.1875261,-95.2054187
+5435982284,Tocuela y Oleoducto,16.1874968,-95.2055061
+5121562806,Oleoducto,16.1873955,-95.2055004
+5090510932,Oleoducto,16.1872569,-95.2054886
+5090510813,Oleoducto,16.1871105,-95.2054783
+5090510814,Oleoducto,16.1869639,-95.2054663
+5121565805,Oleoducto,16.186754,-95.2054596
+5090510815,Oleoducto,16.1865685,-95.2054569
+5090510946,Oleoducto,16.1864308,-95.2054596
+12994447353,Oleoducto,16.1863354,-95.2054606
+1675110767,Calle Laborista y Avendia Hidalgo,16.1825715,-95.2009672
+8436713401,Avendia Hidalgo,16.1823672,-95.2008979
+8436713399,Avendia Hidalgo,16.1821023,-95.2008018
+8436769667,Avendia Hidalgo,16.181594,-95.2006006
+8436713383,Avendia Hidalgo,16.1815307,-95.2005782
+8436713398,Avendia Hidalgo,16.1814419,-95.2005452
+8436713397,Avendia Hidalgo,16.1809696,-95.2004049
+8436769658,Avendia Hidalgo,16.1805197,-95.2002119
+8436769659,Avendia Hidalgo,16.1804665,-95.200182
+8437211953,Avendia Hidalgo,16.1794555,-95.1998463
+8436713395,Avendia Hidalgo,16.1793925,-95.1998204
+8436713385,Avendia Hidalgo,16.1783866,-95.199445
+8436713394,Avendia Hidalgo,16.1783388,-95.1994273
+8436713393,Avendia Hidalgo,16.1777132,-95.1991755
+8436713392,Avendia Hidalgo,16.1775815,-95.199134
+8436713390,Avendia Hidalgo,16.1773416,-95.1990313
+8436713391,Avendia Hidalgo y Calle Progreso,16.1772951,-95.1990129
+8436713389,Calle Progreso,16.1773233,-95.198947
+6422122265,Avenida 5 de Mayo,16.1772906,-95.1920772
+6422094714,Avenida 5 de Mayo,16.1767357,-95.191865
+6422094715,Avenida 5 de Mayo y Calle Acapulco,16.1762646,-95.1916895
+8496264281,Avenida 5 de Mayo,16.1756719,-95.1914858
+6422094691,Avenida 5 de Mayo,16.1752614,-95.191327
+6422094717,Avenida 5 de Mayo,16.1741764,-95.1909048
+8478342524,Avenida 5 de Mayo,16.1731553,-95.1904942
+6422094718,Avenida 5 de Mayo,16.1730921,-95.19047
+8478342517,Avenida 5 de Mayo,16.1721056,-95.1900917
+6422094555,Avenida 5 de Mayo,16.1720547,-95.1900721
+6422094719,Avenida 5 de Mayo,16.1716669,-95.1899245
+6422094720,Avenida 5 de Mayo,16.1715003,-95.1898606
+6422094721,Avenida 5 de Mayo y Avenida Tampico,16.1712195,-95.1897633
+1675110498,Avenida Tampico y Avenida 5 de Mayo,16.1712428,-95.1896828
+5090713658,Avenida Tampico,16.1714385,-95.1890083
+5090713646,Avenida Tampico y Avenida Bahía de la Ventosa,16.1715731,-95.1884772
+1284137483,Avenida Bahía de la Ventosa,16.171615,-95.1884001
+5090713775,Avenida Bahía de la Ventosa y Del Panteón,16.1717193,-95.18828
+8478303014,Avenida Bahía de la Ventosa y Del Panteón,16.1718339,-95.1881848
+1284137568,Avenida Bahía de la Ventosa,16.1719524,-95.188095
+1284137547,Avenida Bahía de la Ventosa,16.1723466,-95.1877946
+1284137610,Avenida Bahía de la Ventosa,16.1725475,-95.1875827
+5117803237,Avenida Bahía de la Ventosa,16.1726467,-95.1874566
+1284137581,Avenida Bahía de la Ventosa,16.1728219,-95.187171
+1284137480,Avenida Bahía de la Ventosa,16.1729854,-95.1866788
+1284137629,Avenida Bahía de la Ventosa,16.1731349,-95.1857454
+1284137482,Avenida Bahía de la Ventosa,16.1732509,-95.1854399
+8428026530,Avenida Bahía de la Ventosa,16.1734525,-95.1852541
+1284137662,Avenida Bahía de la Ventosa,16.1735339,-95.1851791
+8478615787,Avenida Bahía de la Ventosa,16.1738349,-95.185088
+1284137630,Avenida Bahía de la Ventosa,16.1741366,-95.1849967
+8428297149,Avenida Bahía de la Ventosa,16.1749078,-95.1848515
+5098470472,Avenida Bahía de la Ventosa,16.1752885,-95.1847798
+1284137654,Avenida Bahía de la Ventosa,16.1759981,-95.184643
+5098470508,Avenida Bahía de la Ventosa,16.1764825,-95.1845612
+5098470501,Avenida Bahía de la Ventosa,16.1767835,-95.1845062
+1284137638,Avenida Bahía de la Ventosa,16.1771541,-95.1844534
+5098470506,Avenida Bahía de la Ventosa,16.1774548,-95.1844095
+6131284545,Avenida Bahía de la Ventosa,16.1779884,-95.1843059
+1284137566,Avenida Bahía de la Ventosa,16.1781056,-95.1842947
+1284137481,Avenida Bahía de la Ventosa,16.1785677,-95.1842205
+6131284579,Avenida Bahía de la Ventosa,16.1787114,-95.1842024
+1284137587,Avenida Bahía de la Ventosa,16.1789876,-95.184242
+5098538132,Avenida Bahía de la Ventosa,16.179204,-95.1842849
+1284137585,Avenida Bahía de la Ventosa,16.1800386,-95.1844284
+5098538174,Avenida Bahía de la Ventosa,16.1801468,-95.1844659
+1284137524,Avenida Bahía de la Ventosa,16.1805861,-95.1845816
+5098538346,Avenida Bahía de la Ventosa,16.1806407,-95.1846014
+6131284572,Avenida Bahía de la Ventosa,16.1808353,-95.1846782
+1284137505,Avenida Bahía de la Ventosa,16.1811592,-95.1848029
+1284137647,Avenida Bahía de la Ventosa,16.1814721,-95.1849474
+5098538177,Avenida Bahía de la Ventosa,16.1815713,-95.1850024
+1284137601,Avenida Bahía de la Ventosa,16.181812,-95.1850707
+5098538366,Avenida Bahía de la Ventosa,16.182373,-95.1851385
+5098538365,Avenida Bahía de la Ventosa,16.18242,-95.1851419
+5100551186,Avenida Bahía de la Ventosa,16.1827755,-95.1851499
+5100551184,Avenida Bahía de la Ventosa,16.1831696,-95.1851633
+5100551185,Avenida Bahía de la Ventosa,16.183359,-95.1851794
+1284137663,Avenida Bahía de la Ventosa,16.1836758,-95.1851928
+5100551179,Avenida Bahía de la Ventosa,16.1840892,-95.1852264
+5100551187,Avenida Bahía de la Ventosa,16.1842335,-95.1852143
+1284137597,Avenida Bahía de la Ventosa,16.1843636,-95.1851888
+5100551191,Avenida Bahía de la Ventosa,16.1844718,-95.1851633
+5100551190,Avenida Bahía de la Ventosa,16.1846134,-95.1851298
+1284137572,Avenida Bahía de la Ventosa,16.1847255,-95.1850882
+5100551189,Avenida Bahía de la Ventosa,16.1848955,-95.1850078
+1284137549,Avenida Bahía de la Ventosa,16.1851389,-95.1848643
+1284137536,Avenida Bahía de la Ventosa,16.1853862,-95.1847208
+5100551194,Avenida Bahía de la Ventosa,16.1855974,-95.1846215
+5100551193,Avenida Bahía de la Ventosa,16.1857056,-95.1845759
+5100551192,Avenida Bahía de la Ventosa,16.185904,-95.1845424
+1284137574,Avenida Bahía de la Ventosa,16.1860547,-95.184525
+1284137616,Avenida Bahía de la Ventosa,16.1862878,-95.1845142
+5100551197,Avenida Bahía de la Ventosa,16.1866407,-95.1845545
+1284137584,Avenida Bahía de la Ventosa,16.1870026,-95.1846027
+1284137677,Avenida Bahía de la Ventosa,16.1872666,-95.1846108
+5100551196,Avenida Bahía de la Ventosa,16.1875216,-95.1845947
+5100551123,Avenida Bahía de la Ventosa,16.187747,-95.1845678
+5100551195,Avenida Bahía de la Ventosa,16.1879286,-95.1845142
+1284137659,Avenida Bahía de la Ventosa,16.1881141,-95.1844633
+8496011062,Avenida Bahía de la Ventosa,16.1882044,-95.1844302
+5097664951,Avenida Bahía de la Ventosa,16.1883659,-95.1843781
+1284137555,Avenida Bahía de la Ventosa y Boca del Río,16.188525,-95.1843211
+5097664950,Boca del Río,16.1887799,-95.1842581
+1284137640,Boca del Río,16.1891058,-95.1841535
+5097664949,Boca del Río,16.1896776,-95.1839429
+5097664980,Boca del Río,16.190509,-95.1835748
+1284137613,Boca del Río,16.1905991,-95.1835299
+5097665014,Boca del Río,16.1908136,-95.1834266
+5097665013,Boca del Río,16.1909243,-95.1833542
+5097665012,Boca del Río,16.1910235,-95.1832616
+1284137501,Boca del Río,16.191079,-95.183201
+5097665011,Boca del Río,16.191518,-95.182685
+8496011066,Boca del Río,16.192341,-95.1815654
+5097664928,Boca del Río,16.1923797,-95.1815128
+5097664933,Boca del Río,16.1925806,-95.1812419
+1284137603,Boca del Río,16.1926925,-95.1810979
+8433686440,Boca del Río,16.1939071,-95.1796326
+5094266712,Boca del Río,16.1943798,-95.1789701
+5096313458,Boca del Río,16.1959955,-95.176922
+1284137646,Boca del Río,16.1962215,-95.1765913
+1284137614,Boca del Río,16.1965126,-95.1761756
+5094017527,Boca del Río,16.1987771,-95.1725198
+5091922599,Boca del Río,16.2004663,-95.169803
+5094202908,Boca del Río,16.2016097,-95.1679675
+5091922583,Boca del Río,16.2032218,-95.1653794
+5091922576,Boca del Río,16.2035799,-95.1648015
+1284137586,Boca del Río,16.2036872,-95.164622
+5094203118,Boca del Río,16.2037638,-95.164509
+5094203117,Boca del Río,16.2038436,-95.1644272
+5094203116,Boca del Río,16.2039189,-95.1643588
+1284137633,Boca del Río,16.2040511,-95.1642745
+5094203115,Boca del Río,16.2043748,-95.1640993
+5091922595,Boca del Río,16.2046826,-95.1639416
+5091882376,Boca del Río,16.2053141,-95.1636499
+5094166520,Boca del Río,16.2053858,-95.1636091
+5091882382,Boca del Río,16.2058226,-95.1633746
+5096073208,Boca del Río,16.2065036,-95.1630043
+1284137551,Boca del Río,16.2065745,-95.1629563
+5096073207,Boca del Río,16.2066407,-95.1628882
+1284137599,Boca del Río,16.2067187,-95.1628074
+5091882368,Boca del Río,16.2068477,-95.162061
+1284137502,Boca del Río,16.2069196,-95.1614368
+5091882378,Boca del Río y Calle Juan Mendoza,16.2070458,-95.1608035
+5091882380,Calle Juan Mendoza,16.2064482,-95.1606721
+5091882365,Innominada,16.2062984,-95.1613271
+13000335566,Innominada,16.2068111,-95.1614176
+5090446384,Avenida 5 de Mayo,16.1715237,-95.1897937
+5090446388,Avenida 5 de Mayo,16.171691,-95.1898579
+1675110504,Avenida 5 de Mayo,16.1720774,-95.190003
+8478303016,Avenida 5 de Mayo,16.1721292,-95.1900248
+1675110529,Avenida 5 de Mayo,16.1731159,-95.1904033
+8478342525,Avenida 5 de Mayo,16.1731791,-95.1904275
+13000332933,Calle Progreso,16.179366,-95.1929944
+6422094577,Calle Progreso,16.1793836,-95.1929446
+6422094711,Calle Progreso y Avenida 5 de Mayo,16.1794132,-95.1928799
+8433805194,Lomas de Oriente,16.1849625,-95.194425
+5155193293,Lomas de Oriente,16.1851106,-95.19448
+1675110799,Lomas de Oriente,16.1852542,-95.1945423
+5155193294,Lomas de Oriente,16.1853147,-95.1945806
+5141452826,Lomas de Oriente,16.1853611,-95.1946503
+8496011059,Lomas de Oriente,16.185396,-95.194676
+5141452839,Lomas de Oriente,16.1856502,-95.1948635
+5155193292,Lomas de Oriente,16.1859149,-95.1950325
+5155193290,Lomas de Oriente,16.1861984,-95.1952535
+5155193291,Lomas de Oriente,16.1864293,-95.1954224
+5155193288,Lomas de Oriente,16.1865984,-95.1955644
+5155193289,Lomas de Oriente,16.1866882,-95.1956389
+1675110816,Lomas de Oriente,16.1867908,-95.195708
+5155193286,Lomas de Oriente,16.1871649,-95.1959042
+1675110822,Lomas de Oriente,16.1872924,-95.1959941
+5155193287,Lomas de Oriente,16.1874096,-95.1961215
+1675110833,Lomas de Oriente,16.1876156,-95.196383
+1675110840,Lomas de Oriente,16.1878558,-95.1965184
+8433725901,Avenida 5 de Mayo,16.188097,-95.1965794
+1675110843,Avenida 5 de Mayo,16.1883111,-95.1964688
+5131521328,Avenida 5 de Mayo,16.1885288,-95.1963253
+5155193422,Avenida 5 de Mayo,16.1886125,-95.1962569
+5155193421,Avenida 5 de Mayo,16.1887374,-95.1961201
+5115264300,Avenida 5 de Mayo,16.1888302,-95.1959981
+6131581746,Avenida 5 de Mayo,16.1893724,-95.1958258
+5090503362,Avenida 5 de Mayo,16.1895321,-95.1957741
+1675110861,Avenida 5 de Mayo,16.1902125,-95.1955531
+5090617017,Avenida 5 de Mayo,16.1906762,-95.1950468
+1675110864,Avenida 5 de Mayo,16.1908973,-95.1948716
+5090617093,Avenida 5 de Mayo,16.1913365,-95.1946583
+5090617079,Avenida 5 de Mayo,16.1918716,-95.1945236
+5090503368,Avenida 5 de Mayo,16.1925486,-95.1943176
+5090617103,Avenida 5 de Mayo,16.1929657,-95.1942292
+1675110875,Avenida 5 de Mayo,16.1930957,-95.194189
+5090617096,Avenida 5 de Mayo,16.1933288,-95.1940642
+5124272704,Avenida 5 de Mayo,16.1936946,-95.1937678
+5124272703,Avenida 5 de Mayo,16.1939329,-95.1936069
+1675110880,Avenida 5 de Mayo,16.1941969,-95.1934809
+5106551690,Avenida 5 de Mayo,16.1947301,-95.193226
+5106558212,Avenida 5 de Mayo,16.195611,-95.1928854
+5106551426,Avenida 5 de Mayo,16.1957011,-95.1928478
+5090463010,Avenida 5 de Mayo y Camino Viejo a la Ventosa,16.1966323,-95.1924697
+5090463009,Camino Viejo a la Ventosa,16.1969624,-95.1934452
+5106551546,Camino Viejo a la Ventosa,16.1971706,-95.1940467
+1675110886,Camino Viejo a la Ventosa,16.1972837,-95.1944012
+5090472118,Camino Viejo a la Ventosa y Avenida Francisco Villa,16.1973322,-95.1945343
+5123941157,Avenida Francisco Villa,16.1976523,-95.1944987
+5103849338,Avenida Francisco Villa,16.1994913,-95.1943713
+5091899761,Avenida Francisco Villa,16.1996806,-95.1943579
+4887275151,Avenida Francisco Villa,16.2002693,-95.1943092
+5103849334,Avenida Francisco Villa,16.2006781,-95.1942694
+1675110907,Avenida Francisco Villa,16.2008151,-95.1942561
+5100613570,Avenida Francisco Villa,16.2011923,-95.1942213
+5100613092,Avenida Francisco Villa,16.2012728,-95.1942139
+1675110944,Avenida Francisco Villa,16.2017809,-95.1942351
+13000343365,Avenida Francisco Villa,16.2023447,-95.1941668
+1675110996,Avenida Francisco Villa,16.2027333,-95.1941197
+5100613096,Avenida Francisco Villa,16.2027954,-95.1941142
+8433805205,Lomas de Oriente,16.1852806,-95.1946282
+8433805206,Lomas de Oriente,16.1851763,-95.1945799
+8433805207,Lomas de Oriente,16.1850584,-95.1945309
+8433805195,Lomas de Oriente,16.1849432,-95.1944894
+8433805208,Lomas de Oriente y Calle Benito Juárez,16.1848762,-95.1944652
+8433805210,Calle Benito Juárez,16.1842168,-95.1942453
+8433805211,Calle Benito Juárez,16.1838471,-95.1941051
+8433805209,Calle Benito Juárez y Calle Tuxpan,16.1828515,-95.1937243
+6422094724,Calle Tuxpan y Avenida 5 de Mayo,16.182706,-95.1940857
+8433914291,Calle Tuxpan y Avenida 5 de Mayo,16.1826718,-95.1941735
+6422094709,Avenida 5 de Mayo,16.1825901,-95.194138
+6422094707,Avenida 5 de Mayo,16.1816073,-95.193729
+8430812299,Avenida 5 de Mayo,16.1815396,-95.1937043
+8436654159,Avenida 5 de Mayo,16.180552,-95.1933288
+6422094710,Avenida 5 de Mayo,16.180489,-95.1933052
+8457025165,Calle Acapulco,16.1758587,-95.1927064
+8457025164,Calle Acapulco,16.1759564,-95.1925845
+11765887248,Calle Acapulco,16.1762356,-95.1917822
+5090713774,Del Panteón,16.1718185,-95.1879515
+5090713776,Del Panteón y Prolongación Oriente de Playa Abierta,16.1719009,-95.1875022
+5090713777,Prolongación Oriente de Playa Abierta,16.171767,-95.1871964
+5090713778,Prolongación Oriente de Playa Abierta,16.171682,-95.1868987
+5090713779,Prolongación Oriente de Playa Abierta,16.1716072,-95.1866466
+5090713780,Prolongación Oriente de Playa Abierta,16.1713818,-95.1860002
+5090713781,Prolongación Oriente de Playa Abierta y Del Panteón,16.1712354,-95.1856389
+5391743342,Prolongación Oriente de Playa Abierta,16.1709109,-95.1846644
+5090817852,Prolongación Oriente de Playa Abierta,16.1706915,-95.1840596
+5090817842,Prolongación Oriente de Playa Abierta,16.1705652,-95.1837015
+5090817847,Prolongación Oriente de Playa Abierta,16.1700539,-95.182355
+5090817846,Prolongación Oriente de Playa Abierta,16.1699148,-95.182064
+5090817845,Prolongación Oriente de Playa Abierta,16.169643,-95.1815893
+5095008756,Prolongación Oriente de Playa Abierta,16.1693776,-95.1811293
+5095008757,Prolongación Oriente de Playa Abierta,16.169283,-95.1807719
+5095008758,Prolongación Oriente de Playa Abierta,16.1690509,-95.1803203
+8594934684,Prolongación Oriente de Playa Abierta,16.1690208,-95.180212
+5090817844,Prolongación Oriente de Playa Abierta,16.1690427,-95.1801221
+5095008759,Prolongación Oriente de Playa Abierta,16.1691677,-95.1799974
+5091805297,Prolongación Oriente de Playa Abierta y Oriente de Playa Abierta Benito Juárez,16.1694588,-95.1798499
+5091805298,Oriente de Playa Abierta Benito Juárez,16.1696237,-95.1796299
+5091805299,Oriente de Playa Abierta Benito Juárez,16.1697834,-95.1794127
+5110692120,Oriente de Playa Abierta Benito Juárez,16.1697171,-95.1787283
+8459845007,Oriente de Playa Abierta Benito Juárez,16.1697041,-95.1782565
+8454278849,Oriente de Playa Abierta Benito Juárez,16.1696984,-95.1780514
+5091805300,Oriente de Playa Abierta Benito Juárez,16.1696056,-95.1773366
+5091805295,Oriente de Playa Abierta Benito Juárez,16.1694555,-95.1771983
+5391639916,Oriente de Playa Abierta Benito Juárez y Avenida Benito Juárez,16.1691725,-95.1769685
+10011770811,Avenida Benito Juárez,16.1691561,-95.1769514
+5091805301,Avenida Benito Juárez,16.1689101,-95.1766956
+5091805250,Avenida Benito Juárez,16.1684243,-95.1753669
+5090658646,Avenida Benito Juárez,16.1681427,-95.1746112
+9448711450,Avenida Benito Juárez,16.1680916,-95.174467
+8454195265,Avenida Benito Juárez,16.1680615,-95.174382
+5090658645,Avenida Benito Juárez,16.1680076,-95.1742299
+5090658647,Avenida Benito Juárez,16.1680026,-95.1741989
+13000258090,Avenida Benito Juárez,16.1678694,-95.1735045
+5090713771,Del Panteón,16.1719039,-95.1860741
+10148472901,Del Panteón,16.1719242,-95.1860954
+10148472902,Del Panteón,16.1719547,-95.1861379
+5090713772,Del Panteón,16.1720729,-95.186345
+10148472904,Del Panteón,16.1721139,-95.1864118
+10148472903,Del Panteón,16.1721277,-95.1864491
+8478303011,Del Panteón,16.1721317,-95.1864785
+8478303012,Del Panteón,16.171944,-95.1875906
+8478303013,Del Panteón,16.17189,-95.1879468
+1675110616,Calle Coatzacoalcos,16.1753542,-95.1908362
+5091984238,Calle Coatzacoalcos y Avenida Puerto Ángel,16.1755737,-95.1902126
+6422094692,Avenida Puerto Ángel,16.1756658,-95.1902441
+5091984239,Avenida Puerto Ángel,16.1761701,-95.1904035
+1675110641,Avenida Puerto Ángel y Calle Acapulco,16.1766575,-95.1905829
+1675110636,Calle Acapulco,16.1764205,-95.191229
+13000501571,Calle Acapulco,16.1763825,-95.1913416
+13007511997,Calle Mazatlán,16.1772828,-95.1923306
+6422122252,Calle Mazatlán,16.1767643,-95.1937925
+6422122251,Calle Mazatlán,16.176628,-95.1941769
+8430812294,Calle Mazatlán,16.1765256,-95.1943338
+5133433991,20 de Noviembre,16.1767015,-95.1976556
+5098909051,20 de Noviembre,16.1766509,-95.1976217
+1675110637,20 de Noviembre y Calle Virgilio Uribe,16.1765947,-95.1975187
+5098909053,Calle Virgilio Uribe,16.1759999,-95.1975864
+8437383444,Calle Virgilio Uribe,16.1755423,-95.1976715
+5132719563,Calle Virgilio Uribe,16.1752543,-95.197708
+5132719562,Calle Virgilio Uribe,16.1752024,-95.1977164
+6131581970,Calle Virgilio Uribe,16.174746,-95.1977984
+5109393740,Calle Virgilio Uribe,16.1744837,-95.19784
+5109407842,Calle Virgilio Uribe,16.1741997,-95.1978842
+3360316684,Calle Virgilio Uribe,16.1740678,-95.1978756
+6422122268,Calle Virgilio Uribe,16.1740271,-95.1978741
+6415120897,Innominada,16.1737634,-95.1979373
+6415120896,Innominada,16.1737119,-95.1979555
+5109393509,Calzada Teniente José Azueta,16.1736194,-95.1979863
+5109393508,Calzada Teniente José Azueta,16.1735001,-95.1981252
+5101806138,Calzada Teniente José Azueta,16.1734897,-95.1981378
+6131582258,Calzada Teniente José Azueta,16.1732538,-95.1983983
+3360336097,Calzada Teniente José Azueta,16.1730071,-95.1986706
+5101806139,Calzada Teniente José Azueta,16.1727691,-95.1989707
+5101806140,Calzada Teniente José Azueta,16.1726531,-95.1991537
+5101847152,Calzada Teniente José Azueta,16.1726271,-95.1991951
+5101806141,Calzada Teniente José Azueta,16.172599,-95.1992738
+5101806142,Calzada Teniente José Azueta,16.1725733,-95.1993864
+3360336726,Calzada Teniente José Azueta,16.1725611,-95.1995324
+5101806143,Calzada Teniente José Azueta,16.172561,-95.1997049
+5101806144,Calzada Teniente José Azueta,16.1725887,-95.1999979
+5434362852,Calzada Teniente José Azueta,16.1725972,-95.2000705
+5101806145,Calzada Teniente José Azueta,16.1726306,-95.2004197
+5106585733,Calzada Teniente José Azueta,16.1726356,-95.2004729
+5434362858,Calzada Teniente José Azueta,16.172668,-95.2007233
+4541947905,Calzada Teniente José Azueta,16.1726892,-95.2008902
+5101806147,Calzada Teniente José Azueta,16.1727343,-95.2012351
+5101846202,Calzada Teniente José Azueta,16.1727567,-95.201387
+5101806148,Calzada Teniente José Azueta,16.1727716,-95.2014591
+8496464831,Calzada Teniente José Azueta,16.17279,-95.2015566
+5101806149,Calzada Teniente José Azueta,16.1728335,-95.20173
+5101846203,Calzada Teniente José Azueta,16.1728756,-95.2018749
+13007521423,Calzada Teniente José Azueta,16.1728887,-95.2019199
+5101785239,Calzada Teniente José Azueta,16.1728966,-95.2019472
+5101847142,Calzada Teniente José Azueta,16.1729204,-95.2020172
+5101847143,Calzada Teniente José Azueta,16.1730692,-95.2022865
+5101847144,Calzada Teniente José Azueta,16.1731632,-95.2024676
+5101785263,Calzada Teniente José Azueta,16.1732135,-95.2025799
+1284123813,Calzada Teniente José Azueta,16.1733746,-95.2029923
+1284123812,Calzada Teniente José Azueta y Calle Las Pilas,16.173466,-95.2031908
+5101846204,Calle Las Pilas,16.1735406,-95.203279
+5101846205,Calle Las Pilas,16.1736076,-95.2033474
+5101846206,Calle Las Pilas,16.1736642,-95.2034064
+4541947942,Calle Las Pilas,16.1738056,-95.2035181
+5104838755,Calle Las Pilas,16.1738813,-95.2035889
+5107860344,Calle Las Pilas,16.1738928,-95.2035997
+4541947941,Calle Las Pilas,16.1739732,-95.203675
+5101846212,Calle Las Pilas,16.1742129,-95.2038945
+5104838751,Calle Las Pilas,16.1743363,-95.2039484
+5107860560,Calle Las Pilas y Oleoducto,16.174845,-95.2041875
+5152716907,Calle Las Pilas,16.1752781,-95.2043787
+4541947940,Calle Las Pilas,16.1754437,-95.2044279
+5107023136,Calle Las Pilas,16.1756014,-95.2044425
+4541947939,Calle Las Pilas,16.1758222,-95.2044528
+5090506768,Calle Las Pilas,16.1759224,-95.2044735
+5090506766,Calle Las Pilas,16.1760171,-95.2045322
+5090506767,Calle Las Pilas,16.1760885,-95.2046149
+4541947956,Calle Las Pilas,16.176238,-95.204824
+5107038656,Calle Las Pilas,16.1763691,-95.205005
+4785333750,Calle Las Pilas y Josefa Ortiz de Domínguez,16.1765297,-95.2051759
+5107039314,Josefa Ortiz de Domínguez,16.1769174,-95.2052506
+5435921243,Josefa Ortiz de Domínguez,16.1773646,-95.2053635
+5107039315,Josefa Ortiz de Domínguez,16.1774162,-95.2053751
+5435921249,Josefa Ortiz de Domínguez,16.1779042,-95.2054638
+4785333751,Josefa Ortiz de Domínguez,16.178307,-95.205525
+5435921254,Josefa Ortiz de Domínguez,16.1786932,-95.205639
+5435921255,Josefa Ortiz de Domínguez,16.1789409,-95.2057101
+4785333752,Josefa Ortiz de Domínguez y El Pedregal,16.1791146,-95.2057599
+4785333744,El Pedregal,16.1792478,-95.2055924
+5126944770,El Pedregal,16.1793788,-95.205502
+5126944769,El Pedregal,16.1795216,-95.2054423
+5126944771,El Pedregal,16.1797186,-95.2053398
+4785333745,El Pedregal,16.1798637,-95.2052497
+5126944768,El Pedregal,16.1799989,-95.2051884
+5105309692,El Pedregal,16.1801558,-95.2051388
+4785333746,El Pedregal,16.1802043,-95.2051003
+4785333747,El Pedregal y Las Águilas,16.1803509,-95.205024
+5105311693,Las Águilas,16.1802389,-95.2046577
+4785333749,Las Águilas,16.1801022,-95.2043217
+5105906588,Las Águilas,16.180015,-95.204235
+4785333748,Las Águilas y Lázaro Cárdenas,16.1798478,-95.2040515
+4785332181,Lázaro Cárdenas y Jalisco,16.1791558,-95.2040762
+5107069017,Jalisco,16.1790634,-95.2038895
+5090506796,Jalisco,16.1789373,-95.2036694
+5107069826,Jalisco,16.1788939,-95.2035403
+5107214481,Jalisco,16.1784418,-95.2026848
+4785333730,Jalisco,16.1784002,-95.2026039
+4785333731,Jalisco,16.1780002,-95.2022152
+5108129931,Jalisco,16.1777669,-95.2019746
+5130663276,Jalisco,16.1776327,-95.2018516
+5101371311,Jalisco y Trujano,16.1775348,-95.2017824
+5434415957,Trujano,16.1776304,-95.2012729
+5090542874,Trujano y Benito Juárez,16.1776469,-95.2010641
+4541947925,Benito Juárez,16.1776096,-95.2010941
+4541947926,Benito Juárez y Balisas,16.1774967,-95.2010828
+3360347752,Balisas,16.177447,-95.2010462
+5101371310,Balisas,16.1773015,-95.2009737
+3360347753,Balisas,16.1770338,-95.2009003
+3360347754,Balisas,16.1766075,-95.2007768
+5101371011,Balisas,16.1763007,-95.2007303
+6131582053,Balisas,16.1762405,-95.2007188
+3360347755,Balisas,16.1760775,-95.2006878
+3360347756,Balisas,16.1757491,-95.200611
+8437431402,Balisas,16.1756323,-95.2005941
+3360347757,Balisas,16.1755644,-95.2005112
+3360344498,Balisas,16.1754703,-95.2003758
+5434415967,Balisas,16.1754119,-95.2002927
+3360347758,Balisas,16.1753787,-95.2002454
+3360328180,Balisas,16.1751102,-95.2000571
+5094672457,Balisas,16.1747619,-95.1997986
+3360347760,Balisas,16.1746736,-95.1997519
+3360333304,Balisas,16.1744881,-95.1997182
+3360347761,Balisas,16.1744291,-95.1996841
+13007557149,Balisas,16.1741883,-95.1995821
+3360357924,Balisas,16.174106,-95.1995472
+3360357925,Balisas,16.1739953,-95.1995098
+3360357926,Balisas,16.1738461,-95.1994983
+3360357940,Balisas,16.1737002,-95.1995385
+3360354943,Balisas,16.1736562,-95.1995834
+5109493424,Balisas,16.1736634,-95.1997173
+4785333743,El Pedregal,16.178845,-95.2063602
+4785333742,El Pedregal,16.1786058,-95.2067211
+4785333741,El Pedregal,16.1786825,-95.2069894
+4785333740,El Pedregal y Calle Las Pilas,16.178605,-95.2072465
+5135028100,Calle Las Pilas,16.1785059,-95.2071002
+4541947953,Calle Las Pilas,16.1783176,-95.2068225
+5107045667,Calle Las Pilas,16.1782663,-95.2067739
+5107045668,Calle Las Pilas,16.1781633,-95.2066907
+4541947962,Calle Las Pilas,16.1778014,-95.2063597
+4541947957,Calle Las Pilas,16.1772424,-95.2059496
+4541947954,Calle Las Pilas,16.1770154,-95.2057524
+4541947955,Calle Las Pilas,16.1766445,-95.2053527
+4541947984,Oleoducto,16.1744639,-95.2042383
+5101846211,Oleoducto,16.1739991,-95.2042352
+4541947933,Oleoducto,16.1736099,-95.204245
+8496094255,Oleoducto,16.1735522,-95.2041842
+10853471663,Oleoducto,16.1734891,-95.2039958
+5101785265,Oleoducto y Calzada Teniente José Azueta,16.1734401,-95.2038494
+6415120899,Oleoducto y Calle Las Pilas,16.1733667,-95.2037162
+6415120898,Calle Las Pilas,16.17331,-95.2037296
+5101847135,Calle Las Pilas,16.1732263,-95.2037108
+5101847133,Innominada,16.1731954,-95.2035204
+5101847132,Innominada,16.173131,-95.2031208
+8444362136,Calle Virgilio Uribe,16.1736101,-95.1976336
+8444362137,Calle Virgilio Uribe,16.1736906,-95.1976959
+1284123800,Calle Virgilio Uribe y Calzada Teniente José Azueta,16.1737838,-95.1977637
+6422122266,Calle Virgilio Uribe,16.1738484,-95.1978123
+6422122274,Calle Virgilio Uribe,16.1739103,-95.1978543
+6422122275,Calle Virgilio Uribe,16.1739501,-95.1978663
+5098909046,Calle Virgilio Uribe,16.1766662,-95.1974432
+5104004303,Calle Virgilio Uribe,16.1772939,-95.1972963
+5101846207,Calzada Teniente José Azueta,16.1734813,-95.2032682
+5101846208,Calzada Teniente José Azueta,16.1735032,-95.2033822
+1284123805,Calzada Teniente José Azueta,16.1735077,-95.2035953
+5101785266,Calzada Teniente José Azueta,16.1734182,-95.2039053
+1284123814,Calzada Teniente José Azueta,16.1733539,-95.2040209
+1284123801,Calzada Teniente José Azueta,16.1731942,-95.204198
+5101847122,Calzada Teniente José Azueta,16.173113,-95.2042566
+5101847126,Calzada Teniente José Azueta,16.1729907,-95.20432
+6422122246,Calzada Teniente José Azueta,16.172942,-95.2043354
+5101847125,Calzada Teniente José Azueta y Calle Venustiano Carranza,16.1728418,-95.2043551
+4541948007,Calle Venustiano Carranza,16.173029,-95.204937
+4541948008,Calle Venustiano Carranza,16.1729775,-95.2052213
+8448896924,Calle Venustiano Carranza,16.17283,-95.2055242
+5104003623,Calle Venustiano Carranza y Calle Francisco Villa,16.1727497,-95.205689
+6340552202,Calle Francisco Villa,16.172917,-95.2057991
+5104054299,Calle Francisco Villa,16.1729906,-95.2058713
+4541948004,Calle Francisco Villa,16.1732299,-95.206144
+4541948003,Calle Francisco Villa,16.1734244,-95.206329
+5109020069,Calle Francisco Villa,16.1734529,-95.2062848
+5108973995,Calle Francisco Villa,16.1740227,-95.2063588
+8496640518,Calle Francisco Villa,16.17461,-95.206453
+4541947986,Calle Francisco Villa y El Roble,16.174744,-95.2064764
+4541947987,El Roble,16.1747627,-95.2063626
+5101770011,El Roble,16.1747706,-95.2063072
+4541947988,El Roble,16.174742,-95.2062311
+5101770010,El Roble,16.1746818,-95.2061234
+5101770009,El Roble,16.1746251,-95.2060403
+4541947989,El Roble,16.1745682,-95.2059736
+5101770008,El Roble,16.1745272,-95.2059183
+5101770007,El Roble,16.1745182,-95.2058673
+5101770006,El Roble,16.1745671,-95.2058096
+5101770005,El Roble,16.1745993,-95.2057788
+5101770003,El Roble,16.174638,-95.2057613
+5101770004,El Roble,16.1746895,-95.2057694
+4541947990,El Roble,16.1747524,-95.20581
+4541947991,El Roble,16.1749172,-95.2059402
+5103796713,El Roble,16.1752972,-95.2061424
+4541947975,El Roble,16.1754613,-95.2062652
+5103796663,El Roble,16.1756158,-95.2064373
+4541947974,El Roble,16.1756553,-95.2065288
+4541947998,El Roble,16.175711,-95.2066406
+5103796662,El Roble,16.1760223,-95.2069269
+5434362866,El Roble,16.1760933,-95.2070364
+4541947973,El Roble,16.1761164,-95.207072
+4541947972,El Roble,16.1761782,-95.2072866
+4541947944,El Roble,16.1761888,-95.207406
+5103837480,El Roble,16.1761672,-95.2076376
+5103837483,El Roble,16.1761636,-95.2077866
+4541947971,El Roble,16.1761749,-95.207946
+4541947970,El Roble,16.17644,-95.2083833
+4541947969,El Roble,16.1764848,-95.2088154
+12147837136,El Roble,16.1765169,-95.208901
+5103837510,El Roble,16.1765329,-95.2089436
+4541947968,El Roble,16.1766136,-95.2091588
+5434362873,El Roble,16.1766592,-95.20922
+4541947966,El Roble,16.1768234,-95.2094406
+6340552197,Innominada,16.1729442,-95.2042406
+5101847138,Innominada,16.1730589,-95.2041547
+6422122249,Innominada,16.1731722,-95.2040273
+5101847136,Innominada,16.173216,-95.2039146
+6422122248,Innominada,16.1732289,-95.2038503
+6422122247,Innominada,16.1732327,-95.203798
+1675110654,Avenida Puerto Ángel,16.1776845,-95.1909873
+8457009261,Avenida Puerto Ángel y Calle Mazatlán,16.1777481,-95.1910147
+6422122259,Calle Mazatlán,16.1777202,-95.1910977
+6422122258,Calle Mazatlán,16.1776206,-95.1913784
+6422122257,Calle Mazatlán,16.1775222,-95.191656
+13007567139,Calle Mazatlán,16.177455,-95.1918455
+8523084126,Avenida Tampico,16.1861937,-95.1979514
+1675110821,Avenida Tampico,16.1870464,-95.1982907
+5147934435,Avenida Tampico,16.1871359,-95.198337
+5147934436,Avenida Tampico,16.1872235,-95.1983544
+5147934437,Avenida Tampico,16.1873329,-95.1983504
+5147934438,Avenida Tampico,16.1874134,-95.1983504
+5147934439,Avenida Tampico,16.1874778,-95.1983652
+5147934440,Avenida Tampico,16.1875429,-95.1983994
+5147934441,Avenida Tampico,16.1876201,-95.1984429
+5147934442,Avenida Tampico,16.1877129,-95.1984973
+5147934443,Avenida Tampico,16.1878069,-95.1985355
+5147934444,Avenida Tampico,16.18789,-95.1985435
+5097664948,Avenida Bahía de la Ventosa,16.1886225,-95.1842158
+5097664947,Avenida Bahía de la Ventosa,16.1887117,-95.1841253
+5097664946,Avenida Bahía de la Ventosa,16.1888237,-95.1840026
+1284137563,Avenida Bahía de la Ventosa,16.1888992,-95.1839043
+5097664945,Avenida Bahía de la Ventosa,16.1889789,-95.1837927
+5097664944,Avenida Bahía de la Ventosa,16.1890369,-95.183674
+1284137686,Avenida Bahía de la Ventosa,16.1890904,-95.1834906
+5097664943,Avenida Bahía de la Ventosa,16.1891174,-95.1832965
+5097664937,Avenida Bahía de la Ventosa,16.1891161,-95.1830323
+1284137500,Avenida Bahía de la Ventosa,16.1891071,-95.1826597
+1284137595,Avenida Bahía de la Ventosa,16.1890466,-95.1816097
+5097664941,Avenida Bahía de la Ventosa,16.1890188,-95.1814277
+5097664939,Avenida Bahía de la Ventosa,16.1889995,-95.1813237
+5097664940,Avenida Bahía de la Ventosa,16.1889718,-95.1812118
+1284137588,Avenida Bahía de la Ventosa,16.188894,-95.1809807
+5097664938,Avenida Bahía de la Ventosa,16.1887207,-95.1806223
+1284137522,Avenida Bahía de la Ventosa,16.188346,-95.1794639
+1284137627,Avenida Bahía de la Ventosa,16.1880987,-95.1787451
+1284137612,Avenida Bahía de la Ventosa,16.1879751,-95.1783481
+1284137617,Avenida Bahía de la Ventosa,16.187447,-95.1774818
+1284137644,Avenida Bahía de la Ventosa,16.1872886,-95.1771197
+1284137504,Avenida Bahía de la Ventosa,16.1872847,-95.1766208
+1284137661,Avenida Bahía de la Ventosa,16.1876454,-95.1752046
+1284137684,Avenida Bahía de la Ventosa,16.1877136,-95.1750799
+5093660493,Avenida Bahía de la Ventosa,16.1877714,-95.1749943
+1284137625,Avenida Bahía de la Ventosa,16.1880575,-95.1746252
+1284137521,Avenida Bahía de la Ventosa,16.18844,-95.1739507
+5096305348,Avenida Bahía de la Ventosa y Bahía la Ventosa,16.1885179,-95.1736292
+1284137675,Bahía la Ventosa,16.1884387,-95.1732841
+5096569505,Bahía la Ventosa,16.1881336,-95.172585
+5096569891,Bahía la Ventosa,16.1879112,-95.1720755
+5096569890,Bahía la Ventosa,16.1876646,-95.1715431
+5096569889,Bahía la Ventosa,16.1875236,-95.1712279
+5096569888,Bahía la Ventosa,16.1874308,-95.1710515
+1284137645,Bahía la Ventosa,16.1873453,-95.170909
+5096569887,Bahía la Ventosa,16.1872486,-95.1707666
+1284137602,Bahía la Ventosa,16.187136,-95.1706361
+5096569770,Bahía la Ventosa,16.1866871,-95.1701617
+5096569761,Bahía la Ventosa,16.1862524,-95.1697158
+5096569886,Bahía la Ventosa,16.1861024,-95.1695562
+5096569885,Bahía la Ventosa,16.1856329,-95.1690359
+1284137573,Bahía la Ventosa,16.1851416,-95.1684991
+5096283589,Bahía la Ventosa,16.1845412,-95.167757
+5096283585,Bahía la Ventosa,16.1832896,-95.1661509
+5096283582,Bahía la Ventosa,16.1830905,-95.165896
+5096941032,Bahía la Ventosa,16.1829145,-95.165671
+5096941053,Bahía la Ventosa,16.1828303,-95.1655684
+1284137539,Bahía la Ventosa,16.1827614,-95.1654843
+1284137670,Bahía la Ventosa,16.1823905,-95.1649907
+1284137648,Bahía la Ventosa,16.18229,-95.1648969
+5096941052,Bahía la Ventosa,16.1821921,-95.1648255
+5096941051,Bahía la Ventosa,16.1820607,-95.1647678
+5096941050,Bahía la Ventosa,16.1819029,-95.1647256
+5096941049,Bahía la Ventosa,16.1818018,-95.1647115
+1284137631,Bahía la Ventosa,16.1816924,-95.1647037
+5096941046,Bahía la Ventosa,16.1815854,-95.1646994
+1284137545,Bahía la Ventosa,16.1814439,-95.1647011
+5096941047,Bahía la Ventosa,16.1812415,-95.1647021
+5096941048,Bahía la Ventosa,16.181069,-95.1646753
+1284137632,Bahía la Ventosa,16.1808642,-95.1646126
+1284137676,Bahía la Ventosa,16.18072,-95.1645535
+5096941044,Bahía la Ventosa,16.1804765,-95.1644151
+5096941045,Bahía la Ventosa,16.1801094,-95.164171
+5096941040,Bahía la Ventosa,16.1800541,-95.1641315
+5092021400,Bahía la Ventosa,16.1795574,-95.1638077
+1284137570,Bahía la Ventosa,16.1792195,-95.1635879
+1284137672,Bahía la Ventosa,16.1790598,-95.163384
+1284137660,Bahía la Ventosa,16.1790341,-95.1631186
+5092021413,Bahía la Ventosa,16.1790444,-95.1628364
+5092025236,Bahía la Ventosa,16.1790477,-95.1626355
+1284137615,Bahía la Ventosa,16.179083,-95.1623219
+8454176264,Bahía la Ventosa,16.1790973,-95.162249
+5092025234,Bahía la Ventosa,16.1791175,-95.1621459
+1284137561,Bahía la Ventosa,16.1792066,-95.1620055
+1284137509,Bahía la Ventosa,16.1794629,-95.1617828
+1284137678,Bahía la Ventosa,16.1797463,-95.1615401
+8454132495,Bahía la Ventosa,16.1798505,-95.1613212
+1284137503,Bahía la Ventosa,16.1799176,-95.1610854
+5096238649,Bahía la Ventosa,16.1799493,-95.1607826
+1284137529,Bahía la Ventosa,16.1799588,-95.1603559
+5092021412,Bahía la Ventosa,16.1799166,-95.1601565
+1284137667,Bahía la Ventosa,16.1798764,-95.1600447
+1284137642,Bahía la Ventosa,16.1796523,-95.1597845
+5096249540,Bahía la Ventosa,16.178997,-95.1593741
+5090584423,Bahía la Ventosa,16.1789507,-95.1593477
+5109161953,Bahía la Ventosa,16.1783474,-95.1590118
+5109161952,Bahía la Ventosa,16.1780132,-95.158818
+5109182706,Bahía la Ventosa,16.1773376,-95.1584261
+5090583894,Bahía la Ventosa,16.1768963,-95.158174
+5091996530,Bahía la Ventosa,16.1765989,-95.1580041
+1284137557,Bahía la Ventosa,16.1765276,-95.1579634
+5093232666,Bahía la Ventosa,16.1762493,-95.1578115
+5093232665,Bahía la Ventosa,16.1760625,-95.1576921
+1284137533,Bahía la Ventosa,16.1759543,-95.1575929
+1284137619,Bahía la Ventosa,16.1758616,-95.1574816
+5090583891,Bahía la Ventosa,16.1758139,-95.1574051
+5090583879,Bahía la Ventosa,16.1757875,-95.1573374
+1675111294,Benito Juárez,16.2067754,-95.2059301
+1284097045,Calle Puebla,16.2071454,-95.2193374
+1284097149,Calle Puebla,16.2081765,-95.2194044
+5091881011,Calle Puebla,16.2088126,-95.2195117
+5091881012,Calle Puebla,16.2091668,-95.2195492
+1675111621,Calle Puebla y Calle 5 de Abril,16.2094758,-95.2195318
+1675111725,José Vasconcelos,16.2101945,-95.2207476
+1675111750,José Vasconcelos,16.2104199,-95.2206934
+1675111769,José Vasconcelos,16.2106629,-95.2206383
+1675111871,José Vasconcelos,16.2108826,-95.2205906
+1675111910,José Vasconcelos,16.2111286,-95.220537
+5109787237,José Vasconcelos,16.2114404,-95.220466
+1675112037,José Vasconcelos y Calle Leñador,16.2117727,-95.2203903
+5091881728,Calle Leñador,16.2119509,-95.2207904
+1675112079,Calle Leñador,16.2120747,-95.2210493
+1675112116,Calle Leñador,16.2123612,-95.2216745
+1675112134,Calle Leñador,16.2126298,-95.2222255
+5107970366,Libertad,16.2129899,-95.2249677
+1675112247,Libertad,16.2129045,-95.2253964
+1675112130,Libertad,16.2125897,-95.2259262
+1675112085,Libertad y Calle Independencia,16.2120905,-95.2265456
+1675112097,Calle Independencia,16.2122604,-95.2265225
+5103531306,Calle Independencia,16.2125012,-95.2263993
+1675112124,Calle Independencia,16.2125798,-95.2263591
+1675112246,Calle Independencia,16.2128332,-95.2263219
+1675112256,Calle Independencia,16.2131099,-95.2263586
+5107990087,Calle Independencia,16.2133226,-95.2264107
+1675112262,Calle Independencia,16.2134897,-95.2265075
+5438786971,Calle Independencia,16.2137265,-95.2268064
+1675112285,Calle Independencia,16.2138294,-95.2269364
+1675112353,Calle Independencia,16.2141247,-95.2278775
+6422094566,Avenida 5 de Mayo y Calle Guaymas,16.1784187,-95.1925103
+6422094712,Avenida 5 de Mayo,16.1783568,-95.1924854
+6422122255,Avenida 5 de Mayo,16.1773629,-95.1921049
+13008735045,Calle Guaymas,16.1784288,-95.1924821
+8457009260,Calle Manzanillo,16.1799396,-95.1950511
+8436654162,Calle Manzanillo y Avenida Tampico,16.1797933,-95.1954614
+1284121246,Avenida Tampico,16.1803119,-95.1956663
+5101860784,Avenida Tampico,16.1804301,-95.1957473
+5101860783,Avenida Tampico,16.1804919,-95.1957969
+6422094705,Avenida Tampico,16.1805621,-95.195862
+5101860782,Avenida Tampico,16.1806137,-95.1959123
+1675110721,Avenida Tampico,16.1806567,-95.1959718
+8437214408,Avenida Tampico,16.1807094,-95.1960212
+5101860785,Avenida Tampico,16.1807554,-95.1960806
+5101860787,Avenida Tampico,16.1810986,-95.1966405
+5140380289,Avenida Tampico,16.1812308,-95.1968709
+1675110884,18 de Marzo,16.1967553,-95.2016153
+8419048038,18 de Marzo,16.1968391,-95.20158
+8419048040,18 de Marzo,16.1969066,-95.2015536
+5090658114,18 de Marzo,16.1969783,-95.2015223
+1675110885,18 de Marzo,16.1976336,-95.2013312
+6131581672,18 de Marzo,16.1977963,-95.2012941
+8419048041,18 de Marzo,16.1979535,-95.2012465
+1675110887,18 de Marzo,16.1980409,-95.2012166
+8419048042,18 de Marzo,16.1981251,-95.2011816
+8419048043,18 de Marzo,16.1982191,-95.2011413
+5090666161,18 de Marzo,16.1984159,-95.2010483
+5090666163,18 de Marzo,16.1985802,-95.2009612
+5111089761,18 de Marzo,16.1988899,-95.2008088
+1675110891,18 de Marzo,16.199422,-95.2005681
+5105322068,18 de Marzo,16.1997489,-95.2003661
+1675110899,18 de Marzo,16.2001082,-95.200173
+5091899737,18 de Marzo,16.2010496,-95.1996848
+1675110918,18 de Marzo,16.2012853,-95.1995574
+1675110976,18 de Marzo,16.2024811,-95.1989403
+1675111050,18 de Marzo,16.2036459,-95.1983424
+5091899740,18 de Marzo y Avenida Oleoducto,16.203832,-95.1982487
+1675111093,Avenida Oleoducto,16.2048057,-95.1977441
+1675111141,Avenida Oleoducto,16.2051115,-95.1975846
+8444641277,Avenida Oleoducto,16.2058487,-95.1972261
+1675111188,Avenida Oleoducto,16.205991,-95.1971568
+1675111388,Avenida Oleoducto,16.2069355,-95.1966589
+8427868454,Avenida Oleoducto,16.2073521,-95.1964265
+5092405055,Avenida Oleoducto,16.2082283,-95.1959747
+6131581716,Avenida Oleoducto,16.2086788,-95.1957424
+5092405053,Avenida Oleoducto,16.2091494,-95.1954998
+5092405048,Avenida Oleoducto,16.210391,-95.1948596
+8431218839,Avenida Oleoducto,16.2110167,-95.1945392
+8431218842,Avenida Oleoducto,16.2114892,-95.1942973
+5092405066,Avenida Oleoducto,16.2115112,-95.194286
+1675112137,Avenida Oleoducto y Avenida Carlos A. Madrazo,16.2126751,-95.1936844
+1675112140,Avenida Carlos A. Madrazo,16.2127151,-95.1938976
+8436473471,Avenida Carlos A. Madrazo,16.2127674,-95.1941841
+5092320105,Avenida Carlos A. Madrazo,16.2128975,-95.194896
+5092405063,Avenida Carlos A. Madrazo,16.2129799,-95.1952572
+5092405061,Avenida Carlos A. Madrazo,16.2131241,-95.1957723
+5092320099,Avenida Carlos A. Madrazo,16.2131577,-95.1958866
+5092405058,Avenida Carlos A. Madrazo,16.2132476,-95.1962202
+5108032554,Avenida Carlos A. Madrazo,16.2133543,-95.1966923
+5108032553,Avenida Carlos A. Madrazo y 2 de Octubre,16.2133688,-95.1967645
+5092320081,2 de Octubre,16.2143483,-95.1965638
+5117186813,2 de Octubre,16.2148686,-95.1964482
+5092320080,2 de Octubre y Pípila,16.2153108,-95.1963504
+5092320087,Pípila,16.2155178,-95.1973581
+5092320086,Pípila y Salina Cruz,16.2157293,-95.1983678
+5092311140,Salina Cruz,16.2152474,-95.1984754
+13008735044,Salina Cruz,16.2150083,-95.1985289
+5092311141,Salina Cruz,16.214757,-95.1985851
+5092311142,Salina Cruz,16.2139288,-95.1987483
+5092311143,Salina Cruz,16.2137822,-95.1987451
+5092311144,Salina Cruz y Cerrito de Piedra,16.213181,-95.1987248
+5107269084,Cerrito de Piedra y Avenida Santa Cruz,16.2132156,-95.1988632
+5092278685,Avenida Santa Cruz,16.2123415,-95.1988963
+5107269085,Avenida Santa Cruz y Artículo 123,16.2115254,-95.1988922
+5092405068,Artículo 123,16.2115247,-95.1990505
+5107269083,Artículo 123,16.211526,-95.1992033
+5092405067,Artículo 123 y Francisco I. Madero,16.2114889,-95.2006781
+5107269053,Francisco I. Madero,16.211338,-95.2006169
+5090475096,Francisco I. Madero,16.2097817,-95.2005404
+5090475066,Francisco I. Madero,16.2093844,-95.2005222
+5090475093,Francisco I. Madero,16.2090406,-95.2005129
+1675111574,Francisco I. Madero,16.2082602,-95.2005056
+5090475097,Francisco I. Madero,16.2080927,-95.2004747
+1675111433,Francisco I. Madero,16.2073196,-95.2002404
+1675111260,Francisco I. Madero,16.2062748,-95.1999658
+1675111170,Francisco I. Madero,16.2053391,-95.1997185
+1675111071,Francisco I. Madero y Miguel Hidalgo,16.2043759,-95.19946
+1675111065,Miguel Hidalgo,16.2041228,-95.2004579
+5091899751,Miguel Hidalgo,16.2038816,-95.2014792
+6422094729,Calle Tuxpan,16.1815159,-95.1971152
+5115122030,Calle Tuxpan,16.1818151,-95.1962605
+8488471636,Calle Tuxpan,16.1820393,-95.195639
+12965539757,Calle Guaymas,16.1780063,-95.193661
+6422094569,Calle Guaymas,16.1776867,-95.1945531
+6422122280,Calzada Teniente José Azueta,16.175149,-95.1945693
+5101847159,Innominada,16.1750643,-95.194708
+5101847160,Innominada,16.1748158,-95.1951948
+5101847161,Calzada Teniente José Azueta,16.1747426,-95.1953473
+12965539756,Calzada Teniente José Azueta,16.1747423,-95.1953483
+5101387667,Calzada Teniente José Azueta,16.1747113,-95.1954343
+5101806133,Calzada Teniente José Azueta,16.1745401,-95.1958935
+5101806135,Calzada Teniente José Azueta,16.1741196,-95.1970502
+5109407835,Calzada Teniente José Azueta,16.1739739,-95.1974293
+5101806136,Calzada Teniente José Azueta,16.1738896,-95.1976148
+5107203348,Calzada Teniente José Azueta,16.1726705,-95.2044457
+1284123789,Calzada Teniente José Azueta,16.1723653,-95.2045953
+5104003377,Calzada Teniente José Azueta,16.1721921,-95.2046818
+1284123815,Calzada Teniente José Azueta,16.1718765,-95.2048212
+6422122244,Calzada Teniente José Azueta,16.1717618,-95.2048481
+6422122243,Calzada Teniente José Azueta,16.1716382,-95.2048574
+1284123786,Calzada Teniente José Azueta,16.1715389,-95.2048427
+6422122242,Calzada Teniente José Azueta,16.1714025,-95.2048145
+3360305709,Calzada Teniente José Azueta,16.1712776,-95.204777
+6422122241,Calzada Teniente José Azueta,16.1705517,-95.204496
+1284123802,Calzada Teniente José Azueta,16.1701634,-95.2043157
+3205779210,Calzada Teniente José Azueta,16.1700423,-95.2042418
+1284123783,Calzada Teniente José Azueta,16.1699407,-95.2041081
+6422122245,Calzada Teniente José Azueta,16.1698581,-95.2040045
+1284123794,Calzada Teniente José Azueta,16.1697667,-95.2038989
+1284123811,Calzada Teniente José Azueta,16.1693919,-95.2035449
+12747919329,Calzada Teniente José Azueta,16.1692577,-95.2034423
+12747919330,Calzada Teniente José Azueta,16.1690591,-95.2033361
+1284123784,Calzada Teniente José Azueta,16.1679584,-95.202818
+8444358812,Calzada Teniente José Azueta,16.1672729,-95.2024669
+12749907453,Calzada Teniente José Azueta,16.1671383,-95.202425
+12749907456,Calzada Teniente José Azueta,16.1670592,-95.2024128
+12749907452,Calzada Teniente José Azueta,16.1669847,-95.202404
+12749907462,Calzada Teniente José Azueta,16.1669182,-95.2024025
+1284120809,Calzada Teniente José Azueta,16.1668376,-95.2024066
+5094956303,Calzada Teniente José Azueta,16.1667062,-95.2024516
+5094956471,Calzada Teniente José Azueta,16.1666328,-95.2024716
+8445535459,Calzada Teniente José Azueta,16.1664199,-95.2025204
+8445513209,Calzada Teniente José Azueta,16.1659782,-95.2026323
+8445535460,Calzada Teniente José Azueta,16.1656398,-95.202712
+1284120869,Calzada Teniente José Azueta,16.1652793,-95.2027961
+5094907878,Calzada Teniente José Azueta,16.1650021,-95.2028163
+1284120920,Calzada Teniente José Azueta,16.1648221,-95.2028326
+12747919333,Calzada Teniente José Azueta,16.1647254,-95.2028603
+5094956261,Calzada Teniente José Azueta,16.1646312,-95.2029082
+1284121010,Calzada Teniente José Azueta,16.1644855,-95.2030583
+1284120894,Calzada Teniente José Azueta,16.1642862,-95.2032653
+5094956159,Calzada Teniente José Azueta,16.1641818,-95.2033334
+1284120826,Calzada Teniente José Azueta,16.1638905,-95.2034198
+1284120940,Calzada Teniente José Azueta,16.1638145,-95.2034708
+12747919334,Calzada Teniente José Azueta,16.1637617,-95.2035503
+1284120859,Calzada Teniente José Azueta,16.1636251,-95.2043237
+1284121203,Calzada Teniente José Azueta,16.1636702,-95.2046107
+1284121153,Calzada Teniente José Azueta,16.1637307,-95.2049419
+1284120720,Calzada Teniente José Azueta,16.1636908,-95.2050908
+1284120823,Calzada Teniente José Azueta,16.1633933,-95.205422
+1284121184,Calzada Teniente José Azueta,16.1632013,-95.2055025
+1284120866,Calzada Teniente José Azueta,16.1630583,-95.2054408
+1284120909,Calzada Teniente José Azueta,16.1629308,-95.2051498
+1284121156,Calzada Teniente José Azueta,16.1627866,-95.2047475
+1284120759,Calzada Teniente José Azueta,16.1625882,-95.2045839
+1284120711,Calzada Teniente José Azueta,16.1623022,-95.2044846
+1284120873,Calzada Teniente José Azueta,16.1621,-95.2045289
+5094956160,Calzada Teniente José Azueta,16.162006,-95.2046321
+1284120891,Calzada Teniente José Azueta,16.1619815,-95.2048776
+1284121182,Calzada Teniente José Azueta,16.1620845,-95.2052142
+8609496347,Calzada Teniente José Azueta,16.1624323,-95.205819
+1284120906,Calzada Teniente José Azueta,16.1625444,-95.2059612
+1284121088,Calzada Teniente José Azueta,16.1629012,-95.2062723
+5094956185,Calzada Teniente José Azueta,16.1629602,-95.2063231
+8609562831,Calzada Teniente José Azueta,16.1630049,-95.2063662
+1284120682,Calzada Teniente José Azueta,16.1630725,-95.2064855
+1284120728,Calzada Teniente José Azueta,16.1631884,-95.2067471
+1284120948,Calzada Teniente José Azueta,16.1632013,-95.2069442
+1284121028,Calzada Teniente José Azueta,16.1629785,-95.2078334
+1284120757,Calzada Teniente José Azueta,16.1629231,-95.2079581
+1284120939,Calzada Teniente José Azueta,16.1627273,-95.2080117
+1284121159,Calzada Teniente José Azueta,16.162556,-95.2079688
+1284120800,Calzada Teniente José Azueta,16.1623744,-95.2079567
+1284121007,Calzada Teniente José Azueta,16.1619905,-95.2080774
+1284120807,Calzada Teniente José Azueta,16.1618385,-95.208241
+1284121170,Calzada Teniente José Azueta,16.1617896,-95.2084945
+1284121218,Calzada Teniente José Azueta,16.1617921,-95.2086447
+1284121005,Calzada Teniente José Azueta,16.1618926,-95.2087587
+1284120865,Calzada Teniente José Azueta,16.1621477,-95.2088566
+1284121035,Calzada Teniente José Azueta,16.1622894,-95.2089478
+8609496348,Calzada Teniente José Azueta,16.1624233,-95.2092214
+1284120993,Calzada Teniente José Azueta,16.1625573,-95.2093072
+1284120713,Calzada Teniente José Azueta,16.1628419,-95.2094159
+1284121041,Calzada Teniente José Azueta,16.1629192,-95.2094843
+1284120819,Calzada Teniente José Azueta,16.1629282,-95.2096264
+1284120828,Calzada Teniente José Azueta,16.1628407,-95.2099255
+1284120854,Calzada Teniente José Azueta,16.1625895,-95.2109769
+1284120863,Calzada Teniente José Azueta,16.1625818,-95.2111365
+5095215544,Calzada Teniente José Azueta,16.1625998,-95.2112652
+1284120812,Calzada Teniente José Azueta,16.1628149,-95.212208
+5094919546,Calzada Teniente José Azueta,16.1629524,-95.2132016
+1284121000,Calzada Teniente José Azueta,16.163127,-95.2142785
+5094782155,Calzada Teniente José Azueta,16.1633667,-95.2151286
+4482907729,Calzada Teniente José Azueta,16.1634435,-95.2153677
+1284121047,Calzada Teniente José Azueta,16.1638586,-95.2165315
+4482907730,Calzada Teniente José Azueta,16.1639432,-95.2168226
+1284120861,Calzada Teniente José Azueta,16.1639726,-95.2169594
+4482907731,Calzada Teniente José Azueta,16.1639921,-95.2170633
+1284120896,Calzada Teniente José Azueta,16.1640029,-95.2171753
+5100797827,Calzada Teniente José Azueta,16.1637654,-95.2183139
+5100797822,Calzada Teniente José Azueta,16.1636582,-95.2188355
+5100797515,Calzada Teniente José Azueta,16.1636289,-95.2189684
+1284121048,Calzada Teniente José Azueta,16.1636113,-95.2190528
+5100797436,Calzada Teniente José Azueta,16.1635058,-95.2195408
+5095417067,Calzada Teniente José Azueta,16.1634652,-95.2197153
+6301889624,Calzada Teniente José Azueta,16.163362,-95.2201834
+4482907726,Calzada Teniente José Azueta,16.1633396,-95.2202848
+5100834383,Calzada Teniente José Azueta,16.1633158,-95.2203927
+5100990504,Calzada Teniente José Azueta,16.1632609,-95.2206497
+5100990501,Calzada Teniente José Azueta,16.1631983,-95.2209254
+5101017944,Calzada Teniente José Azueta,16.1630779,-95.2214703
+5101018012,Calzada Teniente José Azueta,16.1630524,-95.2215712
+1284121215,Calzada Teniente José Azueta,16.1629878,-95.2218799
+5101017941,Calzada Teniente José Azueta,16.1629483,-95.2221249
+5094782159,Calzada Teniente José Azueta,16.1629192,-95.2223439
+5102175758,Calzada Teniente José Azueta,16.1628332,-95.2229193
+5101071019,Calzada Teniente José Azueta,16.1628077,-95.2230902
+5094782167,Calzada Teniente José Azueta,16.1627838,-95.2232501
+5094782795,Calzada Teniente José Azueta,16.1626163,-95.2243749
+5094782796,Calzada Teniente José Azueta,16.1625901,-95.224551
+5094782157,Calzada Teniente José Azueta,16.1624204,-95.2257617
+1284120716,Calzada Teniente José Azueta,16.1622945,-95.2266088
+8482325150,Calzada Teniente José Azueta,16.1621812,-95.2270259

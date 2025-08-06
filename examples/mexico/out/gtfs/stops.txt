@@ -1,0 +1,3071 @@
+stop_id,stop_name,stop_lat,stop_lon
+1348384202,Calle Plan de Ayutla y Avenida Monte Albán,17.0587054,-96.7535659
+2333209304,Calle Plan de Ayutla,17.0596056,-96.7537667
+2333209321,Calle Plan de Ayutla,17.0605597,-96.7537676
+8449114373,Calle Plan de Ayutla,17.061713,-96.7532444
+2333209389,Avenida Oaxaca,17.0625688,-96.7524939
+5835380319,Avenida Oaxaca,17.0632682,-96.7516981
+2333209426,Avenida Oaxaca,17.0638611,-96.750986
+2333209439,Avenida Itandehui y Avenida Montoya,17.0643169,-96.7499842
+2333209434,Avenida Montoya,17.0640579,-96.7486498
+667631158,Avenida Montoya,17.0642028,-96.747656
+6319132428,Avenida Montoya,17.0632143,-96.7469613
+335885662,Avenida Montoya,17.0623681,-96.7463766
+8456088061,Avenida Montoya,17.0612361,-96.745474
+335885660,Avenida Montoya,17.0604232,-96.7449108
+335885656,Avenida la Paz y Avenida Mexicapan,17.0598584,-96.7441663
+6129509455,Avenida Mexicapan,17.0589825,-96.7433278
+2285079725,Calzada Valerio Trujano,17.0592904,-96.7422491
+8456088068,Calzada Valerio Trujano,17.060019,-96.7414112
+8456088067,Calzada Valerio Trujano,17.0607469,-96.7406246
+2333217730,Calzada Valerio Trujano,17.0613743,-96.7399098
+5176963596,Calzada Valerio Trujano,17.0615797,-96.7388262
+5176963594,Innominada,17.0616028,-96.7376627
+1364760131,Innominada,17.0610904,-96.7370645
+1348384485,Innominada,17.0598736,-96.7368692
+1340820319,Avenida Juárez Maza,17.058937,-96.736562
+1348384538,Avenida Juárez Maza,17.0593672,-96.7357514
+2387969399,Avenida Juárez Maza,17.0602001,-96.7344946
+1340820315,Avenida Juárez Maza y Juárez Maza y Boulevard Eduardo Mata,17.0607313,-96.7336493
+3023354985,Calle de Valerio Trujano,17.0612146,-96.7328161
+10795847044,Calle de Valerio Trujano,17.0612058,-96.7311848
+529036098,Calle de Valerio Trujano,17.0610415,-96.729818
+529036100,Calle de Valerio Trujano y Calle de Gustavo Díaz Ordáz,17.0608428,-96.7288404
+331525006,Calle de Gustavo Díaz Ordáz y Avenida Miguel Hidalgo,17.0617716,-96.7286409
+335800412,Calle de Gustavo Díaz Ordáz y Calle Manuel Sabino Crespo y Avenida de la Independencia,17.0626935,-96.7284603
+330950002,Calle Manuel Sabino Crespo,17.0636346,-96.7282822
+528982737,Calle Manuel Sabino Crespo,17.0645497,-96.7280889
+528982734,Calle Manuel Sabino Crespo,17.0654397,-96.7279119
+330950725,Calle Manuel Sabino Crespo,17.0664912,-96.7276909
+330950216,Calle Manuel Sabino Crespo,17.0675938,-96.7275006
+330950324,Calle Manuel Sabino Crespo,17.0686198,-96.7275568
+4328609899,Calle Manuel Sabino Crespo,17.0696223,-96.7277043
+12537591071,Calle Manuel Sabino Crespo,17.0705426,-96.7275325
+330950222,Calle Manuel Sabino Crespo,17.0729879,-96.7270654
+2596311044,Calzada Niños Héroes de Chapultepec,17.0729027,-96.7259852
+320018674,Calzada Niños Héroes de Chapultepec,17.0725437,-96.7247915
+320018675,Calzada Niños Héroes de Chapultepec,17.0723665,-96.7236788
+320018633,Calzada Niños Héroes de Chapultepec,17.072136,-96.7222568
+853977933,Calzada Niños Héroes de Chapultepec,17.0718926,-96.7211257
+330949231,Calzada Niños Héroes de Chapultepec y Calzada Porfirio Díaz,17.0716278,-96.7196412
+331521411,Calzada Niños Héroes de Chapultepec y Calle Nezahualcóyotl y Calle de José María Pino Suárez,17.0714008,-96.7186173
+331521960,Calle Nezahualcóyotl,17.0729736,-96.7176378
+683864911,Calle Nezahualcóyotl,17.0744154,-96.7173771
+683864907,Calle Nezahualcóyotl y Calle Emiliano Zapata,17.0754965,-96.7172579
+683864909,Calle Emiliano Zapata,17.0765894,-96.7171221
+683864905,Calle Emiliano Zapata,17.0776419,-96.7169841
+331521127,Calle Emiliano Zapata,17.0787007,-96.7168313
+683864901,Calle Emiliano Zapata,17.0798774,-96.7166862
+331526819,Calle Emiliano Zapata,17.080972,-96.7164956
+683865093,Prolongación de Avenida Fuerza Área Mexicana y Calle las Rosas,17.0813721,-96.7174963
+331520761,Calle las Rosas y Mario Pérez Ramirez,17.0825107,-96.717332
+1365146353,Mario Pérez Ramirez,17.0827265,-96.7186048
+2379788959,Innominada,17.0833978,-96.718933
+12583160606,Calzada San Felipe del Agua,17.0845333,-96.7185493
+8434050757,Calzada San Felipe del Agua,17.0855422,-96.7182297
+2333322663,Calzada San Felipe del Agua,17.0866589,-96.7178647
+3577915797,Calzada San Felipe del Agua,17.0877278,-96.7175237
+331518833,Calzada San Felipe del Agua y Avenida México 68 y San Felipe del Agua,17.088861,-96.7171699
+6131050722,Avenida México 68,17.0883832,-96.7160127
+4439729399,Avenida México 68,17.0876695,-96.7148049
+8424412959,Avenida México 68,17.087109,-96.7139324
+6131178471,Avenida México 68,17.0865568,-96.7128456
+1342940891,Innominada,17.0860936,-96.7120574
+1366010204,Proletariado mexicano,17.0871296,-96.7114213
+5842219900,Proletariado mexicano,17.0881145,-96.7108455
+1366010057,Proletariado mexicano,17.0890281,-96.7102451
+2333116325,Calle Zempoaltépetl,17.0899447,-96.7096907
+1366010101,Calle Zempoaltépetl,17.0917956,-96.7087444
+2333116351,Calle Zempoaltépetl,17.0927837,-96.7082306
+2333116369,Calle Zempoaltépetl,17.0940784,-96.7075787
+1366010520,Calle Soconusco y Carretera a Donají,17.0945401,-96.7066396
+2333116367,Calle Soconusco,17.0939185,-96.7053427
+2333116355,Calle Soconusco,17.09303,-96.7035142
+1366010355,Carretera a San Luis Beltrán,17.0929047,-96.7023709
+1366010429,Carretera a San Luis Beltrán,17.0926125,-96.7013678
+1366010358,Carretera a San Luis Beltrán,17.0928672,-96.7004591
+1366010000,Carretera a San Luis Beltrán,17.0937841,-96.6994822
+1366009979,Carretera a San Luis Beltrán,17.0939133,-96.6982597
+1366010718,Carretera a San Luis Beltrán,17.0939517,-96.697852
+5844771116,Carretera a San Luis Beltrán,17.0939362,-96.6988644
+5844532253,Carretera a San Luis Beltrán,17.0934675,-96.6998228
+1366010753,Carretera a San Luis Beltrán,17.0927596,-96.7006093
+8389466850,Carretera a San Luis Beltrán,17.0926663,-96.7015582
+1366010525,Carretera a San Luis Beltrán,17.0929919,-96.7027625
+6131119746,Calle Soconusco,17.0935123,-96.7045253
+2333116371,Calle Soconusco,17.0944497,-96.7064371
+1366010744,Calle Zempoaltépetl,17.0944439,-96.7073872
+2361297809,Calle Zempoaltépetl,17.0933415,-96.7079473
+2361297810,Calle Zempoaltépetl,17.0924623,-96.7084011
+2333116333,Calle Zempoaltépetl,17.0906727,-96.7093251
+1366010546,Proletariado mexicano y Calle Zempoaltépetl,17.0896114,-96.7098387
+1366010133,Proletariado mexicano,17.0888988,-96.7104806
+6131119920,Proletariado mexicano,17.0880204,-96.7110193
+1366009889,Proletariado mexicano,17.0871016,-96.711579
+331516580,Innominada,17.0863727,-96.7121701
+331517655,Boulevard Mártires de Chicago,17.085734,-96.7115525
+331517645,Boulevard Mártires de Chicago,17.0848147,-96.7113335
+6343597754,Boulevard Mártires de Chicago,17.0838622,-96.7116876
+2361313847,Boulevard Mártires de Chicago,17.0827463,-96.7120235
+343019242,Boulevard Mártires de Chicago y Avenida Heróico Colegio Militar,17.0814875,-96.7121567
+683863602,Avenida Heróico Colegio Militar y Avenida Fuerza Área Mexicana,17.0804467,-96.7123025
+1340837678,Avenida Heróico Colegio Militar,17.0793315,-96.7124677
+331516796,Avenida Heróico Colegio Militar,17.0782857,-96.7126183
+683863040,Avenida Heróico Colegio Militar,17.0771237,-96.7127872
+683862825,Avenida Heróico Colegio Militar,17.0760526,-96.7129376
+331521820,Avenida Heróico Colegio Militar,17.074966,-96.7130731
+331521899,Avenida Heróico Colegio Militar,17.0739004,-96.7132207
+683862649,Avenida Heróico Colegio Militar,17.0728754,-96.7133724
+8428269672,Avenida Heróico Colegio Militar,17.0716488,-96.7135378
+2596344370,Avenida Heróico Colegio Militar,17.0705095,-96.7136618
+331514130,Boulevard Eduardo Vasconcelos,17.0690906,-96.7138717
+8597375774,Boulevard Eduardo Vasconcelos,17.0669102,-96.7141472
+291216609,Boulevard Eduardo Vasconcelos,17.0659135,-96.714285
+335801585,Boulevard Eduardo Vasconcelos,17.0645137,-96.7142719
+330946676,Boulevard Eduardo Vasconcelos,17.0630526,-96.7141728
+8523278939,Boulevard Eduardo Vasconcelos,17.0621413,-96.7141288
+291216608,Boulevard Eduardo Vasconcelos,17.0610358,-96.7138849
+330943643,Boulevard Eduardo Vasconcelos,17.0595496,-96.7132688
+291216607,Boulevard Eduardo Vasconcelos,17.0586428,-96.7129235
+5826122017,Boulevard Eduardo Vasconcelos,17.0576245,-96.712934
+330945005,Boulevard Eduardo Vasconcelos,17.0567107,-96.713016
+330943416,Boulevard Eduardo Vasconcelos y Calle de Ignacio López Rayón,17.055742,-96.7131375
+6410302280,Boulevard Eduardo Vasconcelos,17.0547873,-96.7132286
+6641121753,Boulevard Eduardo Mata,17.0540595,-96.7137757
+2594571641,Boulevard Eduardo Mata y Avenida Eduardo Mata,17.053575,-96.7156444
+8495800492,Avenida Eduardo Mata,17.0532907,-96.7167388
+8425029984,Avenida Eduardo Mata,17.0530361,-96.7177462
+330951710,Avenida Eduardo Mata,17.052576,-96.7195664
+330953452,Avenida Eduardo Mata,17.0522414,-96.7209336
+330953502,Avenida Eduardo Mata,17.0519561,-96.7221058
+330953539,Avenida Eduardo Mata,17.0516966,-96.7231427
+330948528,Boulevard Eduardo Mata,17.0513482,-96.7245285
+319948373,Boulevard Eduardo Mata,17.0511342,-96.7255734
+2609090831,Boulevard Eduardo Mata,17.0508863,-96.7265612
+319948369,Boulevard Eduardo Mata,17.0506536,-96.727659
+335728226,Boulevard Eduardo Mata,17.0510757,-96.7285603
+330947474,Boulevard Eduardo Mata,17.0520106,-96.7290271
+8437653276,Boulevard Eduardo Mata,17.053126,-96.7293453
+1340571196,Boulevard Eduardo Mata,17.0550615,-96.729918
+320041283,Boulevard Eduardo Mata,17.0559659,-96.7302249
+320041281,Boulevard Eduardo Mata,17.0568539,-96.7307009
+683854405,Boulevard Eduardo Mata y Calle Galeana,17.0579055,-96.7314457
+330951240,Boulevard Eduardo Mata,17.0586595,-96.7320171
+330951306,Boulevard Eduardo Mata y Privada la Victoria,17.0601552,-96.7330486
+330945164,Boulevard Eduardo Mata,17.0611756,-96.7338003
+617911006,Boulevard Eduardo Mata,17.0619366,-96.7343625
+291209567,Boulevard Eduardo Mata,17.0630771,-96.7351837
+320041401,Boulevard Eduardo Mata,17.0639278,-96.7356887
+335884017,Boulevard Eduardo Mata,17.0649695,-96.7361453
+320041398,Boulevard Eduardo Mata,17.0658515,-96.7361963
+9531089159,Innominada,17.0663209,-96.7354104
+331515239,Calle Plazuela Vicente Guerrero y Calle División Oriente,17.0667669,-96.7344183
+331515240,Calle División Oriente,17.0674955,-96.7350706
+1340820313,Calle División Oriente,17.0682897,-96.7356104
+2868400041,Calle División Oriente,17.069259,-96.736085
+3379817093,Calle División Oriente y Calle Niños Héroes,17.0702086,-96.7364421
+331515244,Calle Niños Héroes,17.0713232,-96.7368457
+6129492341,Calle Niños Héroes,17.0721572,-96.7373081
+382550447,Calle Niños Héroes,17.073812,-96.7382334
+331515245,Calle Niños Héroes,17.0748121,-96.7388491
+331515247,Calle Niños Héroes,17.075731,-96.73957
+1367189659,Calle Niños Héroes,17.0766953,-96.740045
+6129428154,División Oriente,17.0779349,-96.7406349
+6129428155,División Oriente,17.0790256,-96.7411656
+6407361739,División Oriente,17.0799304,-96.7415541
+291209699,Carretera Panamericana,17.0808348,-96.7425945
+335730132,Carretera Panamericana,17.081648,-96.743132
+291207145,Carretera Panamericana y Calle Cuauhtémoc,17.0828745,-96.7436384
+2333139657,Carretera Panamericana,17.0839072,-96.7441141
+2333139675,Carretera Panamericana,17.0851317,-96.7446444
+2333139700,Carretera Panamericana,17.0859761,-96.7450003
+2333139743,Carretera Panamericana,17.0877157,-96.7457693
+1366167554,Carretera Panamericana,17.0888764,-96.7462863
+6401464395,Carretera Panamericana,17.0898201,-96.7466731
+2333139797,Carretera Panamericana y Calle Santa Magdalena,17.0909123,-96.7471532
+2333139811,Carretera Panamericana y Calle Gran Vía Santa Rosa,17.0920059,-96.7476271
+2333146250,Carretera Panamericana,17.0929578,-96.7480135
+2333146252,Carretera Panamericana,17.0938845,-96.7484121
+8434282968,Carretera Panamericana,17.0956816,-96.7491812
+2610458879,Carretera Panamericana,17.0971835,-96.7498326
+2333149310,Carretera Panamericana,17.098185,-96.7502639
+1364828301,Carretera Panamericana (Carretera internacional Cristóbal Colón) y Calle Abraham Castellanos,17.099396,-96.7508009
+8427818066,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1008374,-96.7514252
+8433786890,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1022313,-96.752028
+2610458876,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1035131,-96.7525705
+1366167568,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1045424,-96.7530137
+5353489833,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1056947,-96.753522
+8437297309,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1068156,-96.7539905
+5851788627,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1087808,-96.7548563
+8390031917,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1099953,-96.755378
+2333159239,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1108904,-96.7557576
+1394505209,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1117743,-96.7561439
+1380923142,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1126532,-96.7565386
+320019571,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1135128,-96.7570447
+8390031923,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1146262,-96.7578942
+2381676664,Carretera Panamericana (Carretera internacional Cristóbal Colón) y Calle José María Pino Suárez,17.1159772,-96.7589825
+8389739746,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1180048,-96.7606286
+8389739751,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1187835,-96.7612558
+1377045986,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1195298,-96.7618561
+1351954178,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1217996,-96.7636453
+6399604469,Carretera Panamericana (Carretera internacional Cristóbal Colón) y Carretera a Viguera y Carretera Panamericana,17.1226106,-96.7642859
+1342411944,Riveras del Atoyac y Mitla,17.1216952,-96.7651445
+2333159268,Riveras del Atoyac,17.1207826,-96.7662618
+1381458318,Riveras del Atoyac y Calle el Tule,17.1201142,-96.7670786
+2381635507,Calle el Tule,17.1210372,-96.7679346
+2333174698,Calle el Tule,17.1218932,-96.7687187
+2362412218,Calle el Tule,17.1227115,-96.7695046
+5850090714,Calle el Tule,17.1235779,-96.7703111
+1381458293,Calle el Tule y Avenida El Horizonte,17.1243559,-96.7711091
+6122462428,Avenida El Horizonte,17.1253713,-96.7720333
+8387123405,Avenida El Horizonte,17.1264543,-96.7730495
+2381635487,Avenida El Horizonte,17.1271701,-96.7737468
+2333164880,Avenida El Horizonte,17.1282073,-96.774624
+2333171774,Avenida El Horizonte,17.1293714,-96.7758018
+6122457167,Avenida El Horizonte,17.1304699,-96.7768066
+2380962050,Avenida Ferrocarril,17.1312955,-96.7775997
+2380956088,Avenida Ferrocarril,17.1324752,-96.7787054
+6122462207,Avenida Ferrocarril,17.133967,-96.7799136
+2333164932,Avenida Ferrocarril y Calzada San Lorenzo,17.1351804,-96.7805368
+2285129884,Calle Júpiter,17.0980872,-96.7693363
+1921399084,Afrodita y Avenida Libertad,17.097346,-96.7696999
+1921399082,Avenida Libertad,17.096074,-96.7690024
+6122262838,Avenida Libertad,17.0949827,-96.7683844
+1878065502,Avenida Libertad,17.0941867,-96.7679277
+1400153036,Avenida Libertad,17.0931516,-96.7673524
+1921402347,Avenida Libertad,17.0922398,-96.7668537
+1400153391,Avenida Libertad,17.0911503,-96.7662338
+1400153047,Avenida Libertad,17.0898905,-96.7655446
+1876536592,Avenida Libertad y Calle Pochutla,17.088873,-96.7650064
+1400153061,Avenida Libertad,17.0877729,-96.7643859
+8666969924,Avenida Libertad,17.0869778,-96.7639304
+1400153048,Avenida Libertad,17.0853247,-96.7630226
+6129164072,Avenida Libertad,17.0843005,-96.7624555
+2333190583,Avenida Libertad,17.0830328,-96.7617481
+2333190573,Avenida Libertad,17.0821846,-96.7612579
+2333190559,Avenida Libertad,17.081361,-96.7607962
+2333190550,Avenida Libertad,17.0805648,-96.7603554
+2333187859,Avenida Libertad,17.0796764,-96.7598692
+2333190533,Avenida Libertad,17.0787102,-96.7593392
+1400153253,Avenida Libertad,17.0774982,-96.7586466
+1400153403,Avenida Libertad,17.0759949,-96.7578147
+8427556595,Avenida Libertad,17.0751137,-96.7573162
+8666988770,Avenida Libertad,17.0742696,-96.7568424
+1364122448,Avenida Montoya,17.0733476,-96.7563377
+2333197483,Avenida Montoya,17.0722486,-96.7556536
+2333209530,Avenida Montoya,17.0713989,-96.7550904
+5838665904,Avenida Montoya,17.0704799,-96.7544229
+5838665895,Avenida Montoya,17.0696184,-96.7538075
+6319132392,Avenida Montoya,17.0686323,-96.7531921
+667631184,Avenida Montoya,17.0676362,-96.7529087
+8184913782,Avenida Montoya,17.066807,-96.7524194
+667631141,Avenida Montoya,17.0663642,-96.7515257
+2333209450,Avenida Montoya,17.0653643,-96.7511107
+6319132445,Avenida Montoya,17.0646182,-96.7503878
+667631170,Avenida Montoya,17.0640483,-96.7495779
+2333209435,Avenida Montoya,17.0640858,-96.7481798
+335885663,Avenida Montoya,17.063872,-96.7473744
+1348384182,Avenida Montoya,17.0625711,-96.74655
+335885661,Avenida Montoya,17.0617207,-96.7458013
+1720463903,Calzada del Panteón y Boulevard La Paz,17.0895226,-96.7171798
+8390290086,Calzada del Panteón,17.0905048,-96.716874
+1720464022,Calzada del Panteón,17.0913862,-96.7166129
+2333322678,Calle Guadalupe Victoria,17.0921574,-96.7173775
+1720464057,Calle Guadalupe Victoria,17.0922805,-96.7185282
+2333322690,Calle Emiliano Zapata,17.0931862,-96.7193953
+2333322710,Calle Emiliano Zapata,17.0942661,-96.7192782
+2333322735,Calle Emiliano Zapata y Calle Cuauhtémoc,17.0953936,-96.7190059
+2333322743,Cuauhtémoc,17.0954739,-96.7199468
+2333322761,Cuauhtémoc,17.0964541,-96.7201015
+2906590757,Cuauhtémoc,17.0974392,-96.7200583
+2333322804,Innominada,17.0986423,-96.7203391
+2333322815,Calle Plan de Ayala y Calle Cuauhtémoc,17.0995385,-96.7206668
+2333322822,Calle Cuauhtémoc,17.1003718,-96.7210056
+8411227708,Avenida Ferrocarril y Calzada San Lorenzo,17.1351773,-96.7807615
+2333164922,Avenida Ferrocarril,17.1336817,-96.7798793
+2333164908,Avenida Ferrocarril,17.1327429,-96.7791881
+2333164898,Avenida Ferrocarril,17.1316662,-96.7782218
+6122473990,Avenida Ferrocarril y Avenida El Horizonte,17.1309697,-96.7775317
+2333164881,Avenida El Horizonte,17.1292821,-96.7758923
+2333164878,Avenida El Horizonte,17.1275572,-96.7742824
+4021385600,Avenida El Horizonte,17.1266438,-96.7734321
+6122462393,Avenida El Horizonte,17.1245611,-96.7715225
+8389272741,Avenida Ferrocarril,17.123847,-96.77085
+6122457166,Avenida Ferrocarril,17.1228455,-96.7699106
+5851927790,Avenida Ferrocarril,17.12188,-96.7690141
+6124099063,Avenida Ferrocarril,17.1205256,-96.7677377
+1381458195,Riveras del Atoyac,17.1214098,-96.7654725
+1351953924,Mitla,17.1220998,-96.7645892
+2333159273,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1214882,-96.763695
+8393114460,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1203767,-96.7627518
+2333159260,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1196582,-96.762131
+2362484782,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1181515,-96.7609098
+1381458354,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1159262,-96.7591158
+1394505219,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1150829,-96.7584169
+1394505266,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1143044,-96.7577899
+1394505258,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1134805,-96.7571699
+1394505215,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1126032,-96.7566482
+1394505249,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1117154,-96.7562254
+1394505226,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1107876,-96.755828
+6124118640,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1094079,-96.7552319
+8434070847,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1077128,-96.7545084
+2610458860,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1048475,-96.7532873
+10054807578,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1039755,-96.7529162
+8433786892,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1030812,-96.7525283
+5850077784,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1020711,-96.7520951
+2610458866,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1012357,-96.7517152
+2333148308,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.0991665,-96.7508546
+2610458859,Carretera Panamericana,17.0973337,-96.7500229
+2333149307,Carretera Panamericana,17.0961017,-96.7495128
+2333149292,Carretera Panamericana,17.0945154,-96.748827
+2333149282,Carretera Panamericana,17.093592,-96.7484236
+2333149277,Carretera Panamericana,17.0926503,-96.7480232
+2333149271,Carretera Panamericana,17.0917706,-96.7476431
+2333149266,Carretera Panamericana,17.0908546,-96.7472779
+4743896274,Carretera Panamericana,17.0894572,-96.7466545
+8425374006,Carretera Panamericana,17.0881203,-96.7460781
+8425374005,Carretera Panamericana,17.0864648,-96.7453639
+8425170525,Carretera Panamericana,17.0851344,-96.7447815
+6401464394,Carretera Panamericana,17.0837755,-96.7441868
+8437322165,Carretera Panamericana y Calle Cuauhtémoc,17.0828183,-96.743784
+320019494,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.0818201,-96.7435864
+2610458897,Calzada Francisco I. Madero,17.0801704,-96.7434851
+6129428168,Calzada Francisco I. Madero,17.0792286,-96.7429829
+1367189646,Calzada Francisco I. Madero,17.0774455,-96.7419641
+6129492725,Calzada Francisco I. Madero,17.076536,-96.7414296
+6407398319,Calzada Francisco I. Madero,17.0756743,-96.7408741
+1364760078,Calzada Francisco I. Madero,17.074698,-96.7402816
+10138200468,Calzada Francisco I. Madero,17.0733987,-96.7393023
+320041533,Calzada Francisco I. Madero,17.0724897,-96.7386215
+320041535,Calzada Francisco I. Madero,17.0712261,-96.7379863
+2333351011,Calzada Francisco I. Madero,17.0698424,-96.737404
+1340820314,Calzada Francisco I. Madero,17.0679482,-96.7363445
+320041515,Calzada Francisco I. Madero y Boulevard Eduardo Mata,17.0671455,-96.7358758
+320041517,Boulevard Eduardo Mata,17.0662451,-96.7361078
+291214402,Boulevard Eduardo Mata,17.0652064,-96.7363895
+320041334,Boulevard Eduardo Mata,17.0639077,-96.7358271
+1364760119,Boulevard Eduardo Mata,17.0630492,-96.7353388
+1364760189,Boulevard Eduardo Mata,17.0621714,-96.7346969
+1308121293,Boulevard Eduardo Mata y Calle de Valerio Trujano,17.0611541,-96.7339645
+291214535,Boulevard Eduardo Mata,17.0600577,-96.7331539
+8427978118,Boulevard Eduardo Mata,17.0589965,-96.7323976
+7087123764,Boulevard Eduardo Mata,17.0579001,-96.731607
+1365137061,Boulevard Eduardo Mata,17.0570687,-96.731046
+320041297,Boulevard Eduardo Mata,17.0561251,-96.7304533
+529036068,Boulevard Eduardo Mata,17.0550873,-96.7301485
+5839116471,Boulevard Eduardo Mata,17.0540074,-96.7298307
+8437653277,Boulevard Eduardo Mata,17.0530505,-96.7294912
+8409576940,Boulevard Eduardo Mata,17.0520527,-96.7293367
+291214276,Boulevard Eduardo Mata,17.0512112,-96.7289583
+1340571153,Boulevard Eduardo Mata,17.0505432,-96.7280323
+1342967624,Boulevard Eduardo Mata,17.0506101,-96.7268744
+1342967652,Boulevard Eduardo Mata,17.0508789,-96.7257131
+8444670978,Boulevard Eduardo Mata,17.0511518,-96.7246261
+851261012,Boulevard Eduardo Mata y Avenida Eduardo Mata,17.0514408,-96.7235745
+851261015,Avenida Eduardo Mata,17.0516905,-96.7226212
+8425523035,Avenida Eduardo Mata,17.0520219,-96.7212454
+851361886,Avenida Eduardo Mata,17.0524352,-96.719577
+335890743,Avenida Eduardo Mata y Eduardo Mata,17.0527354,-96.7183431
+10707923740,Avenida Eduardo Mata,17.053184,-96.7164537
+2594571653,Avenida Eduardo Mata y Boulevard Eduardo Mata,17.0534186,-96.7154674
+2594571619,Boulevard Eduardo Mata,17.0538309,-96.7138318
+683856981,Avenida Universidad y Prolongación de la Noria,17.054194,-96.7129439
+1345262169,Boulevard Eduardo Vasconcelos,17.0557345,-96.7129192
+1345262190,Boulevard Eduardo Vasconcelos,17.0566862,-96.7128841
+1349021225,Boulevard Eduardo Vasconcelos,17.0577758,-96.7127712
+291216477,Boulevard Eduardo Vasconcelos,17.0588959,-96.7128391
+851505498,Boulevard Eduardo Vasconcelos,17.0599695,-96.7132698
+319950305,Boulevard Eduardo Vasconcelos,17.0611063,-96.7136139
+851361386,Boulevard Eduardo Vasconcelos,17.0630057,-96.7140786
+2609067877,Boulevard Eduardo Vasconcelos,17.0645307,-96.7141811
+2609067870,Boulevard Eduardo Vasconcelos,17.0655369,-96.7141638
+1917944686,Boulevard Eduardo Vasconcelos y Privada Eduardo Vasconcelos,17.0669003,-96.7140737
+1340586475,Boulevard Eduardo Vasconcelos,17.0682241,-96.7138711
+2596344354,Boulevard Eduardo Vasconcelos,17.0702558,-96.7136052
+8433845677,Avenida Heróico Colegio Militar,17.0713502,-96.7134833
+331527174,Avenida Heróico Colegio Militar,17.0724206,-96.7133425
+4694867835,Avenida Heróico Colegio Militar,17.0738951,-96.7131316
+331521821,Avenida Heróico Colegio Militar,17.0749586,-96.7130028
+683862666,Avenida Heróico Colegio Militar,17.07604,-96.7128522
+683862930,Avenida Heróico Colegio Militar,17.0771124,-96.7126995
+331516408,Avenida Heróico Colegio Militar,17.0781686,-96.7125124
+683863345,Avenida Heróico Colegio Militar,17.0793215,-96.7123641
+683863507,Avenida Heróico Colegio Militar y Avenida Fuerza Área Mexicana,17.0804346,-96.7122022
+331516410,Avenida Heróico Colegio Militar y Boulevard Mártires de Chicago y 7 de Enero,17.0814742,-96.7120527
+331516411,Boulevard Mártires de Chicago,17.0827905,-96.7119022
+331517583,Boulevard Mártires de Chicago,17.0836763,-96.7116769
+331517589,Boulevard Mártires de Chicago,17.0844775,-96.7112531
+6131271577,Boulevard Mártires de Chicago,17.0854571,-96.7112869
+331516588,Boulevard Mártires de Chicago,17.0862262,-96.7117771
+2333318189,Ignacio Mariscal y Marcos Pérez,17.0827973,-96.7237426
+3201073661,Ignacio Mariscal,17.0826591,-96.7227571
+2333318184,Ignacio Mariscal y José María del Castillo,17.0825431,-96.7217908
+3201074662,Avenida Félix Romero,17.0832238,-96.7221791
+2333318196,Matías Romero y Gerardo Varela,17.0845226,-96.7220159
+2333134388,Gerardo Varela,17.0840853,-96.7208581
+343021479,Gerardo Varela,17.0832648,-96.7201252
+343023087,Gerardo Varela y Mario Pérez Ramirez,17.0827985,-96.7193591
+2379788977,Calzada Porfirio Díaz,17.0820002,-96.7190442
+331526966,Calzada Porfirio Díaz,17.0809218,-96.7191019
+8436815996,Calzada Porfirio Díaz,17.0799985,-96.7191996
+1365932530,Innominada,17.0791283,-96.7193578
+8487809457,Calzada Porfirio Díaz,17.078246,-96.7194129
+1365932534,Calzada Porfirio Díaz,17.0768231,-96.7196037
+331521747,Calzada Porfirio Díaz,17.0757623,-96.7197018
+331519038,Calzada Porfirio Díaz,17.0747455,-96.7195182
+12582931197,Calzada Porfirio Díaz,17.073397,-96.7195108
+852368967,Calzada Porfirio Díaz,17.0718815,-96.7196248
+330949336,Avenida Benito Juárez,17.0708024,-96.7197651
+3205621261,Avenida Benito Juárez,17.069532,-96.7199382
+330947075,Avenida Benito Juárez,17.0679857,-96.7202389
+529036145,Avenida Benito Juárez y Calle de la Constitución,17.0652431,-96.7208055
+529036078,Avenida Benito Juárez,17.0642299,-96.7210375
+529036092,Avenida Benito Juárez,17.0631889,-96.721253
+529036133,Avenida Benito Juárez y Avenida de José María Morelos,17.0622529,-96.7214556
+335800418,Avenida Benito Juárez y Calle de Melchor Ocampo,17.0613203,-96.721688
+330949338,Calle de Melchor Ocampo,17.060369,-96.7218773
+529036166,Calle de Melchor Ocampo,17.0594446,-96.7221011
+335882418,Calle de Melchor Ocampo y Calle de Cristóbal Colón,17.0585258,-96.7223062
+335882309,Calle de Melchor Ocampo y Calle de Ignacio López Rayón,17.0575978,-96.7224983
+330947522,Calle de Melchor Ocampo y Calle de Arteaga,17.0566687,-96.7226552
+683855686,Calle de Arteaga y Calle de Manuel Fernández Fiallo,17.0568791,-96.7236811
+330947484,Calle de Arteaga y Calle de Francisco Javier Mina y Calle de Carlos María Bustamante,17.0572722,-96.7255644
+529036201,Calle de Francisco Javier Mina y Calle de Flores Magón,17.0574433,-96.7264958
+529036203,Calle de Flores Magón,17.0565112,-96.7266919
+529036206,Calle de Flores Magón y Calle de M. Arista,17.0555383,-96.7269013
+529036208,Calle de Flores Magón y Miguel Cabrera y Calle de Nuño del Mercado,17.0545603,-96.7270991
+6131723289,Miguel Cabrera,17.0519454,-96.7276674
+320038843,Boulevard Eduardo Mata y Miguel Cabrera,17.0507208,-96.7279337
+1340571130,Avenida Ferrocarril,17.0501529,-96.7287619
+1213230427,Carretera Oaxaca-Zimatlán de Álvarez,17.0495983,-96.7306821
+320042983,Carretera Oaxaca-Zimatlán de Álvarez,17.0490599,-96.7313777
+2333217427,Carretera Oaxaca-Zimatlán de Álvarez,17.0470745,-96.7311651
+2333273136,Carretera Oaxaca-Zimatlán de Álvarez,17.0461535,-96.7310213
+320042988,Carretera Oaxaca-Zimatlán de Álvarez,17.045018,-96.7307053
+8437297013,Boulevard Guadalupe Hinojosa de Murat,17.0429774,-96.7298213
+320042990,Boulevard Guadalupe Hinojosa de Murat,17.0419064,-96.7293929
+8437143809,Boulevard Guadalupe Hinojosa de Murat,17.0388444,-96.7288187
+5326566651,Boulevard Guadalupe Hinojosa de Murat,17.0374349,-96.7285727
+320042995,Boulevard Guadalupe Hinojosa de Murat,17.0363154,-96.7285031
+2600858665,Carretera Oaxaca-Zimatlán de Álvarez,17.0345527,-96.7286942
+1370792566,Carretera Oaxaca-Zimatlán de Álvarez,17.0330832,-96.7288725
+2333290717,Carretera Oaxaca-Zimatlán de Álvarez,17.0316637,-96.7290415
+2333290638,Carretera Oaxaca-Zimatlán de Álvarez,17.0305417,-96.7291876
+2333290615,Carretera Oaxaca-Zimatlán de Álvarez,17.029575,-96.7293094
+6195649980,Carretera Oaxaca-Zimatlán de Álvarez,17.0284849,-96.7294359
+5835259476,Carretera Oaxaca-Zimatlán de Álvarez,17.027507,-96.7295768
+1449325123,Carretera Oaxaca-Zimatlán de Álvarez,17.0259247,-96.7297567
+320042998,Carretera Oaxaca-Zimatlán de Álvarez,17.0236039,-96.7300738
+6196179194,Calle Porfirio Díaz,17.0234633,-96.7317304
+1449325169,Calle Porfirio Díaz,17.0239832,-96.7332705
+1558699572,Calle Porfirio Díaz,17.0244518,-96.7346244
+2600894211,Carretera Oaxaca - Zaachila,17.0246264,-96.7356981
+2600858689,Carretera Oaxaca - Zaachila,17.0238878,-96.737579
+8386452183,Carretera Oaxaca - Zaachila,17.0235223,-96.7385218
+6196037633,Carretera Oaxaca - Zaachila,17.0231567,-96.7394349
+2600859014,Carretera Oaxaca - Zaachila,17.0227679,-96.7404652
+2333330351,Carretera Oaxaca - Zaachila,17.0217947,-96.742929
+6345906985,Carretera Oaxaca - Zaachila,17.0209952,-96.7449646
+2333330313,Carretera Oaxaca - Zaachila,17.0204942,-96.7462361
+6193647345,Carretera Oaxaca - Zaachila,17.0201442,-96.747144
+2600858657,Carretera Oaxaca - Zaachila,17.019634,-96.7484039
+3307859045,Carretera Oaxaca - Zaachila y Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0193011,-96.749278
+528995520,Carretera Oaxaca - Zaachila,17.0181643,-96.7512444
+3307886639,Carretera Oaxaca - Zaachila,17.0173635,-96.7525931
+6193551898,Carretera Oaxaca - Zaachila,17.016667,-96.7537689
+2600858686,Carretera Oaxaca - Zaachila,17.0157909,-96.7551635
+8386956722,Carretera Oaxaca - Zaachila,17.0152407,-96.7561338
+4788576404,Carretera Oaxaca-Zaachila,17.0142724,-96.7577387
+6199371912,Carretera Oaxaca-Zaachila,17.0135218,-96.759031
+6199371991,Carretera Oaxaca-Zaachila,17.0127101,-96.7603621
+6193550974,Carretera Oaxaca-Zaachila,17.0114718,-96.7624168
+8386113899,Carretera Oaxaca-Zaachila,17.0108947,-96.763374
+6123879562,Carretera Oaxaca-Zaachila,17.0097399,-96.7652893
+6199372002,Carretera Oaxaca-Zaachila,17.0089761,-96.766524
+6322042992,Carretera Oaxaca-Zaachila,17.0082785,-96.7677096
+6334379163,Camino a Cuilapam de Guerrero,17.0076475,-96.7682514
+1350055060,Camino a Cuilapam de Guerrero,17.0070396,-96.7671463
+6199372057,Camino a Cuilapam de Guerrero,17.0068806,-96.7658803
+1350055207,Camino a Cuilapam de Guerrero,17.0063933,-96.7640698
+6123875524,Camino a Cuilapam de Guerrero,17.0060239,-96.7630801
+1350055099,Camino a Cuilapam de Guerrero y Avenida San Isidro,17.0058033,-96.7619401
+3308433761,Avenida San Isidro,17.0048928,-96.7613903
+3308447495,Avenida San Isidro,17.0039848,-96.7608592
+1350055011,Avenida San Isidro,17.0031332,-96.7602932
+1350055151,Avenida San Isidro,17.0024227,-96.7596361
+1350055066,Avenida San Isidro,17.0013736,-96.759384
+1350055245,Avenida Santa Cecilia,16.999791,-96.758574
+1350055258,Boulevard Guadalupe Hinojosa de Murat,16.997521,-96.7582065
+4336398591,Boulevard Guadalupe Hinojosa de Murat,16.9970912,-96.7564128
+2786439197,Boulevard Guadalupe Hinojosa de Murat,16.9969731,-96.7530633
+1381411637,Calle Independencia y Avenida Guerrero,17.1300983,-96.7461671
+1351954210,Calle Independencia,17.1302969,-96.7470914
+1381411785,Avenida Independencia y Calle Francisco I. Madero,17.1302969,-96.7483681
+1381411645,Calle Hidalgo,17.1310094,-96.7493123
+1381411743,Calle Hidalgo y Calle Morelos,17.13083,-96.7510101
+1381411747,Avenida Independencia,17.1298944,-96.7517214
+1351954473,Avenida Independencia,17.1297157,-96.7530931
+6345563463,Calle Independencia,17.130666,-96.7537594
+1351954220,Prolongación de Hidalgo y Avenida los Higos,17.1305789,-96.7546929
+1351954454,Avenida los Higos,17.1298201,-96.7555861
+1351954421,Avenida los Higos,17.1289179,-96.7566321
+5042508207,Avenida los Higos,17.1281522,-96.7575069
+8413452322,Avenida los Higos y Avenida a Viguera y Libramiento Norte,17.1274746,-96.7582786
+2362445390,Avenida a Viguera,17.1265996,-96.75931
+1351980428,Avenida a Viguera,17.125777,-96.7602865
+1381458287,Avenida a Viguera,17.1250841,-96.76112
+2333159302,Carretera a Viguera,17.1243355,-96.7619969
+2333159296,Carretera a Viguera,17.1236208,-96.7628502
+1342411947,Carretera a Viguera,17.1228486,-96.7637625
+6399603987,Mitla y Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1222524,-96.7643307
+4281287406,Calzada Francisco I. Madero,17.077415,-96.742022
+4281286905,Calzada Francisco I. Madero,17.076207,-96.7413179
+1367189661,Calzada Francisco I. Madero,17.0753253,-96.7407242
+6129492760,Calzada Francisco I. Madero,17.0742647,-96.7399602
+1541895948,Privada Eduardo Vasconcelos y Calle de los Derechos Humanos,17.0667239,-96.7124926
+4471900196,Calle de los Derechos Humanos,17.0678114,-96.7123713
+3285277769,Calle de los Derechos Humanos,17.0700399,-96.7121296
+3285278162,Carretera Internacional,17.0701691,-96.711365
+320018579,Carretera Internacional,17.0700877,-96.7102253
+12639545069,Carretera Internacional,17.0699567,-96.7090241
+343001160,Carretera Internacional,17.0698323,-96.7077942
+2596344356,Carretera Internacional,17.069655,-96.7056465
+6131388378,Carretera Internacional,17.0694705,-96.7033797
+529016265,Carretera Internacional,17.0693865,-96.7021489
+6131453464,Carretera Internacional,17.069283,-96.7011791
+2596344320,Carretera Internacional,17.0691726,-96.6998676
+5840083002,Carretera Internacional,17.0690187,-96.6980401
+1349021258,Carretera Internacional,17.0688969,-96.6970176
+8795750956,Carretera Internacional,17.0688319,-96.6959967
+8234290971,Carretera Internacional,17.0687431,-96.6949749
+6131453988,Carretera Internacional,17.0686232,-96.6933136
+1349021242,Carretera Internacional,17.0685391,-96.6921689
+320018564,Calle Siracuza,17.0683792,-96.6906154
+291210015,Innominada,17.0681817,-96.6893414
+2596344290,Innominada,17.0679432,-96.6883936
+8386216892,Innominada,17.0676625,-96.6874644
+6340617085,Innominada,17.0673285,-96.6863588
+8386216888,Innominada,17.0670329,-96.6853803
+385024693,Innominada,17.066747,-96.6844271
+8386216885,Innominada,17.0664651,-96.6834561
+6131592343,Innominada,17.0659787,-96.6817814
+6131592340,Innominada,17.0656326,-96.680619
+291213205,Innominada,17.065305,-96.6794708
+5504028042,Carretera Federal Oaxaca - Tuxtepec,17.0670517,-96.6775889
+9959935758,Carretera Federal Oaxaca - Tuxtepec,17.0695149,-96.6745516
+8393303480,Carretera Federal Oaxaca - Tuxtepec,17.0704887,-96.6733746
+1995785279,Carretera Federal Oaxaca - Tuxtepec,17.0713835,-96.672302
+8393007407,Carretera Federal Oaxaca - Tuxtepec,17.071986,-96.6715617
+1995785304,Carretera Federal Oaxaca - Tuxtepec,17.0731129,-96.6701664
+8394090612,Carretera Federal Oaxaca - Tuxtepec,17.073984,-96.6691198
+1995785312,Carretera Federal Oaxaca - Tuxtepec,17.0747603,-96.6681634
+8393007412,Carretera Federal Oaxaca - Tuxtepec,17.0756356,-96.6671148
+8393473237,Carretera Federal Oaxaca - Tuxtepec,17.0768692,-96.6656088
+8393303459,Carretera Federal Oaxaca - Tuxtepec,17.0776585,-96.6646452
+5334676412,Carretera Federal Oaxaca - Tuxtepec,17.0782839,-96.6638817
+6201868621,Carretera Federal Oaxaca - Tuxtepec,17.0819996,-96.6593647
+1995785267,Carretera Federal Oaxaca - Tuxtepec,17.082856,-96.6583215
+6340249068,Innominada,17.0835661,-96.6577832
+6340249071,Innominada,17.0842122,-96.657224
+6201868624,Calle Buenavista,17.0843032,-96.658148
+6201868553,Calle Buenavista,17.0853762,-96.6586348
+6201868740,Calle Buenavista,17.0858768,-96.6588471
+3308463784,Boulevard Guadalupe Hinojosa de Murat,16.9970685,-96.7541148
+3308460769,Boulevard Guadalupe Hinojosa de Murat,16.997128,-96.755628
+6199372621,Boulevard Guadalupe Hinojosa de Murat,16.9971783,-96.7566888
+8404319445,Boulevard Guadalupe Hinojosa de Murat,16.9972189,-96.7577462
+1350055070,Boulevard Guadalupe Hinojosa de Murat,16.9989715,-96.7586397
+3308408978,Avenida San Isidro y Avenida Santa Cecilia,17.0007632,-96.7590567
+1350055041,Avenida San Isidro,17.0018199,-96.7595717
+8386741915,Avenida San Isidro,17.0026795,-96.7598324
+6199371924,Avenida San Isidro,17.0038694,-96.7607841
+6323511409,Avenida San Isidro,17.0057751,-96.7618436
+1350055244,Camino a Cuilapam de Guerrero,17.0059521,-96.7628735
+1350055235,Camino a Cuilapam de Guerrero,17.0067318,-96.7650998
+6199372679,Camino a Cuilapam de Guerrero,17.0069011,-96.766355
+6338131715,Camino a Cuilapam de Guerrero,17.0073199,-96.767755
+6322042991,Carretera Oaxaca-Zaachila,17.0081964,-96.7676774
+8386638456,Carretera Oaxaca-Zaachila,17.0093369,-96.7657968
+6199372662,Carretera Oaxaca-Zaachila,17.0103997,-96.76402
+6199371899,Carretera Oaxaca-Zaachila,17.011448,-96.7622953
+8386638443,Carretera Oaxaca-Zaachila,17.012032,-96.7613242
+6199372350,Carretera Oaxaca-Zaachila,17.0126005,-96.7603788
+6322042994,Carretera Oaxaca-Zaachila,17.0134954,-96.7588985
+2333344214,Carretera Oaxaca-Zaachila,17.0147653,-96.7567723
+8386956719,Carretera Oaxaca - Zaachila,17.0152901,-96.7558716
+2600858701,Carretera Oaxaca - Zaachila,17.0161012,-96.7545252
+2600858683,Carretera Oaxaca - Zaachila,17.0168091,-96.7533664
+2600858718,Carretera Oaxaca - Zaachila,17.0173061,-96.7525544
+2600858709,Carretera Oaxaca - Zaachila,17.0179761,-96.7514312
+2600858668,Carretera Oaxaca - Zaachila,17.018489,-96.7505649
+2600858711,Carretera Oaxaca - Zaachila,17.0190571,-96.7495631
+6193551735,Carretera Oaxaca - Zaachila,17.0200067,-96.7472577
+2600858694,Carretera Oaxaca - Zaachila,17.0203677,-96.7463511
+2600858697,Carretera Oaxaca - Zaachila,17.0213821,-96.7437896
+2600858695,Carretera Oaxaca - Zaachila,17.0218552,-96.7425612
+2600858714,Carretera Oaxaca - Zaachila,17.0225246,-96.7408888
+2600858696,Carretera Oaxaca - Zaachila,17.0228773,-96.7399675
+2600858710,Carretera Oaxaca - Zaachila,17.0233145,-96.7388382
+8389835784,Carretera Oaxaca - Zaachila,17.0237354,-96.7377725
+3307796339,Carretera Oaxaca - Zaachila,17.0245538,-96.7357392
+12761843990,Calle Porfirio Díaz,17.0241138,-96.7336522
+1558699607,Calle Porfirio Díaz,17.0237158,-96.7325447
+320043577,Carretera Oaxaca-Zimatlán de Álvarez y Calle Porfirio Díaz,17.0231817,-96.730717
+320043645,Carretera Oaxaca-Zimatlán de Álvarez,17.0233157,-96.7299551
+2333290535,Carretera Oaxaca-Zimatlán de Álvarez,17.0249154,-96.7297348
+8386808192,Carretera Oaxaca-Zimatlán de Álvarez,17.0258255,-96.7296428
+2333290569,Carretera Oaxaca-Zimatlán de Álvarez,17.0276847,-96.7294116
+5825974881,Carretera Oaxaca-Zimatlán de Álvarez,17.0293787,-96.7292011
+8386637259,Carretera Oaxaca-Zimatlán de Álvarez,17.0310495,-96.7289973
+6195649975,Carretera Oaxaca-Zimatlán de Álvarez,17.0327103,-96.7287818
+2600858716,Carretera Oaxaca-Zimatlán de Álvarez,17.0345292,-96.7285602
+320042961,Carretera Oaxaca-Zimatlán de Álvarez y Boulevard Guadalupe Hinojosa de Murat,17.035811,-96.7284142
+8413297513,Boulevard Guadalupe Hinojosa de Murat,17.0367082,-96.7283567
+6132952892,Boulevard Guadalupe Hinojosa de Murat,17.0389226,-96.728666
+320042957,Boulevard Guadalupe Hinojosa de Murat,17.0411421,-96.7290723
+8437143806,Boulevard Guadalupe Hinojosa de Murat,17.0420987,-96.7293084
+1348384508,Boulevard Guadalupe Hinojosa de Murat,17.0430183,-96.7296694
+3219031840,Boulevard Guadalupe Hinojosa de Murat,17.0438923,-96.7300299
+3464356893,Boulevard Guadalupe Hinojosa de Murat,17.0447517,-96.7304071
+8425385711,Carretera Oaxaca-Zimatlán de Álvarez,17.0460349,-96.7308408
+6131723278,Carretera Oaxaca-Zimatlán de Álvarez,17.0473416,-96.7310769
+1348384329,Carretera Oaxaca-Zimatlán de Álvarez,17.048493,-96.7312852
+320043020,Carretera Oaxaca-Zimatlán de Álvarez,17.0493906,-96.7310601
+320042549,Avenida Ferrocarril,17.049892,-96.7295072
+8409576922,Innominada,17.050279,-96.7286941
+335726636,Boulevard Eduardo Mata,17.0512449,-96.7287062
+6131723292,Calle del 20 de Noviembre,17.0537823,-96.7283353
+330947937,Calle del 20 de Noviembre y Calle de Nuño del Mercado,17.0547933,-96.7280879
+529036234,Calle del 20 de Noviembre,17.0557336,-96.7278539
+529036236,Calle del 20 de Noviembre,17.0567184,-96.7276657
+330947483,Calle del 20 de Noviembre y Calle de Francisco Javier Mina,17.0576386,-96.7274826
+335800630,Calle del 20 de Noviembre,17.0586033,-96.7272834
+335800559,Calle del 20 de Noviembre,17.0595075,-96.7271045
+335800557,Calle del 20 de Noviembre,17.060434,-96.7269172
+330947472,Calle del 20 de Noviembre,17.061365,-96.7267049
+529036113,Calle del 20 de Noviembre y Calle del General Porfirio Díaz,17.0622974,-96.726531
+528982720,Calle del General Porfirio Díaz,17.0632265,-96.7263381
+528982721,Calle del General Porfirio Díaz,17.0641683,-96.7261476
+330947471,Calle del General Porfirio Díaz,17.0650954,-96.7259709
+331515539,Calle del General Porfirio Díaz,17.0660359,-96.7257929
+331515525,Calle del General Porfirio Díaz,17.0669873,-96.725588
+331515524,Calle del General Porfirio Díaz,17.0679148,-96.7253887
+330972364,Calle del General Porfirio Díaz,17.0688671,-96.7252102
+331515515,Calle del General Porfirio Díaz,17.0698343,-96.7250298
+852353570,Calle del General Porfirio Díaz,17.0713789,-96.7246676
+529036041,Calzada Niños Héroes de Chapultepec y Calle del General Porfirio Díaz,17.0724764,-96.7244381
+343021484,Gerardo Varela,17.0828296,-96.7195451
+343021478,Gerardo Varela,17.0835302,-96.7202412
+3291774262,Gerardo Varela,17.0842493,-96.72131
+8178300956,Matías Romero,17.0838782,-96.7221255
+3201065264,Avenida Félix Romero,17.0832879,-96.7226619
+1364828407,Avenida Félix Romero y Marcos Pérez,17.0834228,-96.723663
+8428745995,Carretera Oaxaca - Puerto Ángel,16.9851073,-96.7111923
+6199742600,Carretera Oaxaca - Puerto Ángel,16.9857938,-96.7118793
+320040725,Carretera Oaxaca - Puerto Ángel,16.9868703,-96.7129332
+5838017197,Carretera Oaxaca - Puerto Ángel,16.987762,-96.7134802
+8428589573,Carretera Oaxaca - Puerto Ángel,16.9890753,-96.7134789
+3151329972,Carretera Oaxaca - Puerto Ángel,16.9908173,-96.7134033
+3151329977,Carretera Oaxaca - Puerto Ángel,16.9921444,-96.7133637
+6199743758,Carretera Oaxaca - Puerto Ángel,16.9932556,-96.7133186
+6199743647,Carretera Oaxaca - Puerto Ángel,16.9945439,-96.7132939
+6199744022,Carretera Oaxaca - Puerto Ángel,16.9959045,-96.7132477
+3017421932,Carretera Oaxaca - Puerto Ángel,16.9974944,-96.7131702
+3017422341,Carretera Oaxaca - Puerto Ángel,16.9986495,-96.713153
+3017422349,Carretera Oaxaca - Puerto Ángel,16.9998523,-96.7131057
+3017422346,Avenida Símbolos Patrios,17.0008254,-96.7130424
+8393569048,Avenida Símbolos Patrios,17.0019008,-96.7130024
+8387197138,Avenida Símbolos Patrios,17.003255,-96.7129576
+8404111669,Avenida Símbolos Patrios,17.0049593,-96.7128913
+8393765828,Avenida Símbolos Patrios,17.0059277,-96.7128506
+6199742639,Avenida Símbolos Patrios,17.0070349,-96.7128226
+3017414130,Avenida Símbolos Patrios,17.0098298,-96.7127252
+3017414118,Avenida Símbolos Patrios,17.0111956,-96.7126643
+291216485,Avenida Símbolos Patrios,17.0123023,-96.7125905
+3017414122,Avenida Símbolos Patrios,17.0133084,-96.7124469
+6401464406,Avenida Símbolos Patrios,17.0148037,-96.7121445
+1349568999,Avenida Símbolos Patrios,17.0157345,-96.7119396
+1349568802,Avenida Símbolos Patrios,17.0170061,-96.7116647
+6401464404,Avenida Símbolos Patrios,17.0182719,-96.7113605
+8389241422,Avenida Símbolos Patrios,17.0191905,-96.7111327
+8389241421,Avenida Símbolos Patrios,17.0209178,-96.7107294
+8389241420,Avenida Símbolos Patrios,17.0231946,-96.7101978
+1340667703,Avenida Símbolos Patrios y Calzada Luis Echeverría Álvarez,17.0248335,-96.7098152
+291215709,Avenida Símbolos Patrios,17.0257561,-96.7095995
+1340667705,Avenida Símbolos Patrios,17.0268875,-96.7095512
+320041013,Avenida Símbolos Patrios,17.0280169,-96.7098793
+1340664134,Avenida Símbolos Patrios,17.0288877,-96.7104942
+2593157286,Avenida Símbolos Patrios,17.030096,-96.7113103
+1349445992,Avenida Símbolos Patrios,17.030988,-96.7119761
+3009790066,Avenida Símbolos Patrios,17.0321245,-96.7127551
+1350010637,Avenida Símbolos Patrios,17.0333092,-96.7135973
+2593157325,Avenida Universidad,17.0344771,-96.7130772
+8411660098,Avenida Universidad,17.0355327,-96.7123535
+6196325597,Avenida Universidad,17.0363303,-96.7118012
+8393833703,Avenida Universidad,17.0373766,-96.7110862
+3003976871,Avenida Universidad,17.0383507,-96.7106318
+8437527221,Avenida Universidad,17.0392328,-96.7109094
+3009787060,Avenida Universidad,17.0401899,-96.7116301
+8437527222,Avenida Universidad,17.0410424,-96.7122722
+3009787058,Avenida Universidad,17.0421114,-96.7130913
+291216475,Avenida Universidad,17.0429981,-96.7137311
+330943631,Avenida Universidad,17.0438135,-96.7142558
+1349446420,Avenida Universidad,17.0452526,-96.7141657
+3009787064,Avenida Universidad,17.0482336,-96.7137443
+3009787063,Avenida Universidad,17.0500387,-96.7134665
+4373184333,Avenida Universidad,17.0509667,-96.7133478
+6641124987,Avenida Universidad,17.0521453,-96.7131381
+1348383874,Avenida Universidad,17.0533633,-96.7128954
+683856975,Boulevard Eduardo Vasconcelos y Avenida Ferrocarril,17.0543957,-96.7130107
+343017703,7 de Enero,17.0813611,-96.7110613
+343018515,7 de Enero,17.0812406,-96.7100877
+5840651442,7 de Enero,17.0811317,-96.7090778
+5840651435,7 de Enero,17.0810145,-96.7080996
+10635095432,7 de Enero,17.0808704,-96.7069816
+888402289,Calle Escuadron 201,17.0802295,-96.7062503
+888402299,Avenida Fuerza Área Mexicana,17.0794789,-96.7049839
+888402251,Avenida Fuerza Área Mexicana,17.0793589,-96.7040374
+888402294,Prolongación Orquídeas,17.0798318,-96.703067
+888402173,Prolongación Orquídeas,17.0811127,-96.7028594
+2015644591,Prolongación Orquídeas y Calle Río Verde,17.0820134,-96.7027403
+2333318182,Calle Río Verde,17.0819691,-96.701548
+1966275878,Calle Río Verde y Andador Río Grijalva,17.0819123,-96.6998718
+2333111855,Andador Río Grijalva,17.0831685,-96.6999175
+8396370716,Avenida Central Oriente Poniente,17.0835739,-96.6992718
+8396403731,Avenida Central Oriente Poniente,17.0835247,-96.6981679
+8396403727,Avenida Central Oriente Poniente,17.0837356,-96.69721
+8396403723,Avenida Central Oriente Poniente,17.0841686,-96.696342
+8396403719,Avenida Central Oriente Poniente,17.0844548,-96.6953543
+8396403717,Avenida Central Oriente Poniente,17.0843958,-96.6943763
+6131352549,Avenida Oriente,17.0834321,-96.6946287
+5842291185,Avenida Oriente,17.0824409,-96.6950317
+5842286083,Calle Río Verde,17.0817437,-96.6955156
+2333111848,Calle Río Verde,17.0817851,-96.6966049
+2333197492,Prolongación de Ixtlán,17.080274,-96.7683385
+2333197497,Prolongación de Ixtlán y Avenida 7 Regiones,17.0815933,-96.7687044
+6122262495,Calle Guelatao,17.0826902,-96.7692521
+6122262370,Calle Guelatao,17.0835794,-96.7695298
+5852296343,Calle Ejutla y Calle Cañada,17.0853588,-96.7697548
+5852296347,Calle Cañada,17.0857589,-96.7684894
+1877839934,Calle la Cañada Grande y Calle Pochutla,17.0873046,-96.7686128
+1877839829,Calle Pochutla,17.0877329,-96.7676897
+1877839915,Calle Pochutla,17.0881415,-96.7667098
+8427723496,Calle Pochutla,17.0885012,-96.7658255
+1377031388,Calzada San Felipe del Agua,17.0912483,-96.7164748
+8389285284,Calzada San Felipe del Agua,17.0934649,-96.7157632
+8389437978,Calzada San Felipe del Agua,17.0943453,-96.7154812
+8389285283,Calzada San Felipe del Agua,17.0952236,-96.7152
+331518840,Calzada San Felipe del Agua,17.0961311,-96.7148928
+331518841,Calzada San Felipe del Agua y Calle Jacarandas,17.0972284,-96.7141043
+1720435577,Calle Jacarandas,17.0968348,-96.7124421
+1720435576,Calle Jacarandas,17.0965898,-96.7113717
+1366010122,Calle Jacarandas,17.0964446,-96.7103893
+1366010695,Prolongación de Colón,17.0971948,-96.7097422
+5597005474,Prolongación de Colón,17.0983244,-96.710211
+8390048199,Prolongación de Colón,17.0994575,-96.7105758
+8390048198,Prolongación de Colón,17.1004676,-96.710612
+8390048197,Prolongación de Colón,17.1014469,-96.7107408
+5521450679,Prolongación de Colón,17.1025899,-96.7106199
+5521450676,Prolongación de Colón,17.1036247,-96.7104097
+331518848,Calle Magnolia y Calle Hidalgo,17.1043386,-96.7114207
+1366010399,Calle Hidalgo,17.1055268,-96.7110291
+2905728870,Calle Hidalgo,17.1066407,-96.7108561
+1365147570,Prolongación Hidalgo,17.1080571,-96.7108025
+6331636543,Prolongación Hidalgo,17.1090773,-96.7105731
+1365147534,Prolongación Hidalgo,17.110186,-96.7103787
+1365147565,Prolongación Hidalgo,17.1115867,-96.7102894
+1365147557,Avenida de Jacalón y Calle de la Cruz y Carretera Al Parque Comunal,17.1125429,-96.7099145
+6331636783,Calle de la Cruz,17.1127444,-96.7096592
+8505677725,Innominada,17.1128688,-96.7098914
+1365147549,Prolongación Hidalgo y Avenida de Jacalón y Camino Jacalón,17.1119149,-96.7102491
+1365147554,Camino Jacalón,17.1108485,-96.7105388
+1365147563,Camino Jacalón,17.1099041,-96.7107622
+1365147539,Camino Jacalón,17.108962,-96.7110787
+6331636542,Camino Jacalón,17.1080071,-96.7111485
+1365147544,Calle Hidalgo y Prolongación Hidalgo y Camino Jacalón,17.1071047,-96.7108528
+331518850,Calle Hidalgo,17.105916,-96.7109084
+8390184960,Calle Hidalgo,17.1050449,-96.7111512
+5521450674,Calle Hidalgo,17.1037584,-96.7115617
+3196557261,Calle Hidalgo,17.1028479,-96.7118472
+6331636547,Calle Hidalgo,17.1016353,-96.7122147
+11746900901,Calle Hidalgo,17.1006696,-96.7125656
+8389437963,Calle Hidalgo,17.098873,-96.7133278
+6131050745,Calle Hidalgo,17.098041,-96.7136958
+5521450696,Calzada San Felipe del Agua,17.0920161,-96.7162128
+1366010254,Avenida México 68 y San Felipe del Agua y Calzada San Felipe del Agua,17.0891443,-96.7171138
+2333322672,Calzada San Felipe del Agua,17.0883728,-96.7174757
+2333322666,Calzada San Felipe del Agua,17.0874699,-96.7177468
+8477821217,Calzada San Felipe del Agua,17.0865227,-96.7180622
+2333322650,Calzada San Felipe del Agua,17.0854249,-96.7184223
+8436816002,Calzada San Felipe del Agua,17.084261,-96.7188133
+1365146347,Innominada,17.0833588,-96.7190448
+8444661820,Calzada Porfirio Díaz,17.0823956,-96.7190984
+2596311050,Innominada,17.0718871,-96.720526
+331522236,Calzada Niños Héroes de Chapultepec,17.0721533,-96.7217613
+8444641115,Calzada Niños Héroes de Chapultepec,17.0723393,-96.7227929
+330947422,Calzada Niños Héroes de Chapultepec,17.0725907,-96.7244272
+1365142455,Calzada Niños Héroes de Chapultepec,17.0728621,-96.7254955
+4449731793,Calle General Joaquín Amaro,17.0721014,-96.7258053
+330949590,Calle General Joaquín Amaro,17.0708943,-96.7260362
+330949847,Calle General Joaquín Amaro,17.0695407,-96.7263078
+330950348,Calle General Joaquín Amaro y Calle de Tinoco y Palacios,17.0686019,-96.7264451
+854228124,Calle de Tinoco y Palacios,17.0674656,-96.7265236
+529036032,Calle de Tinoco y Palacios,17.0661969,-96.7267166
+528982735,Calle de Tinoco y Palacios,17.0652696,-96.7269047
+528982736,Calle de Tinoco y Palacios,17.0643672,-96.7270949
+528982740,Calle de Tinoco y Palacios,17.0634226,-96.7272823
+335800411,Calle de Tinoco y Palacios y Calle de J.P. García y Avenida de la Independencia,17.0625049,-96.7274843
+529036033,Calle de J.P. García y Avenida Miguel Hidalgo,17.061587,-96.7276564
+529036104,Calle de J.P. García y Calle de Valerio Trujano,17.0606337,-96.7278871
+529036177,Calle de J.P. García y Calle de Fray Bartolomé de las Casas,17.0597083,-96.728053
+683858170,Calle de Fray Bartolomé de las Casas y Calle de Gustavo Díaz Ordáz,17.0599215,-96.7290337
+529036179,Calle de Fray Bartolomé de las Casas,17.0601253,-96.7299696
+330951083,Calle de Fray Bartolomé de las Casas,17.0604924,-96.7317946
+291209566,Juárez Maza y Dolores y Boulevard Eduardo Mata y Calle de Fray Bartolomé de las Casas,17.0607985,-96.7335176
+2910189101,Avenida Juárez Maza,17.0600696,-96.7348186
+2910189104,Avenida Juárez Maza,17.0595384,-96.7356363
+335729540,Innominada,17.0616054,-96.7375592
+335729531,Calzada Valerio Trujano,17.0615912,-96.7386577
+335729456,Calzada Valerio Trujano,17.0615272,-96.739679
+335885598,Avenida Mexicapan y Calzada Valerio Trujano,17.0586109,-96.7430016
+2333290827,Avenida Mexicapan,17.0593396,-96.7436782
+335885657,Avenida la Paz,17.0600019,-96.7443221
+1348383582,Avenida Montoya,17.061967,-96.7460224
+667631154,Avenida Montoya,17.0640207,-96.7474817
+667631173,Avenida Montoya,17.0641038,-96.7496904
+2333217745,Avenida Montoya,17.0648143,-96.7507902
+5835412828,Avenida Montoya,17.0658707,-96.7512891
+667631143,Avenida Montoya,17.0667608,-96.7523317
+2333209518,Avenida Montoya,17.0703966,-96.7543632
+8456347103,Avenida Montoya,17.0711695,-96.7549248
+667631196,Avenida Libertad y Avenida Montoya y Calle Ignacio Bernal,17.0742186,-96.756817
+8428242800,Avenida Libertad,17.0759572,-96.7577934
+8236653895,Avenida Libertad,17.0772067,-96.7584861
+1400153379,Avenida Libertad,17.0839135,-96.7622455
+1878057978,Avenida Libertad,17.0866459,-96.7637635
+6129164070,Avenida Libertad,17.0875992,-96.7642916
+1877839888,Calle Pochutla,17.0884761,-96.7658784
+1877839900,Calle Pochutla,17.087998,-96.7670867
+1877839921,Calle Pochutla,17.0876266,-96.7679469
+5852296349,Calle Cañada y Calle la Cañada Grande,17.0858361,-96.7682401
+8666988775,Calle Cañada,17.0855138,-96.7692599
+5852296344,Calle Huajuapam y Calle Ejutla,17.0839776,-96.769404
+2333197496,Avenida 7 Regiones y Calle Guelatao,17.0815129,-96.7688648
+1340602286,Innominada,17.0368499,-96.706295
+8393798323,Innominada,17.0373467,-96.7083764
+8393798327,Innominada,17.0377834,-96.7101964
+4356709590,Boulevard Eduardo Mata,17.0540152,-96.7139139
+10795856034,Innominada,17.0608317,-96.7336448
+6128934236,Avenida Libertad,17.090892,-96.7661121
+4168391564,Avenida Libertad,17.092037,-96.7667428
+8386306972,Avenida Libertad,17.0930944,-96.7673197
+1878065541,Avenida Libertad,17.0939342,-96.7677819
+4168391941,Avenida Libertad,17.0957814,-96.7688367
+5854823724,Avenida Libertad,17.0968429,-96.7694377
+5854834935,Avenida Libertad,17.0978555,-96.769968
+6122262361,Avenida Libertad,17.0989835,-96.7706152
+6407455290,Calle Miguel Cabrera,17.0996049,-96.7710945
+6122262782,Calle Miguel Cabrera,17.0991091,-96.7721153
+6122262068,Calle Miguel Cabrera,17.0984406,-96.773555
+5854834905,Calle Lázaro Cárdenas,17.0976699,-96.7738831
+5854834909,Calle Lázaro Cárdenas,17.0967459,-96.7739018
+5854834913,Calle Lázaro Cárdenas,17.0957952,-96.7738364
+5854803287,Las Rosas,17.0942016,-96.7733334
+6201868714,Calle Buenavista,17.0845109,-96.6582567
+6201868778,Carretera Federal Oaxaca - Tuxtepec,17.0821347,-96.659314
+8392715962,Carretera Federal Oaxaca - Tuxtepec,17.0803849,-96.6614362
+6201868697,Carretera Federal Oaxaca - Tuxtepec,17.0794619,-96.6625556
+1995785273,Carretera Federal Oaxaca - Tuxtepec,17.0757718,-96.6670905
+291051736,Carretera Federal Oaxaca - Tuxtepec,17.0747628,-96.6683257
+613139459,Carretera Federal Oaxaca - Tuxtepec,17.0731501,-96.6703078
+8393343802,Carretera Federal Oaxaca - Tuxtepec,17.0724521,-96.6711627
+291051737,Carretera Federal Oaxaca - Tuxtepec,17.0714425,-96.672361
+8393007405,Carretera Federal Oaxaca - Tuxtepec,17.0708042,-96.6731453
+9959935756,Carretera Federal Oaxaca - Tuxtepec,17.069969,-96.6741581
+5497520407,Carretera Federal Oaxaca - Tuxtepec,17.067217,-96.6775102
+8447845793,Carretera Federal Oaxaca - Tuxtepec,17.06637,-96.6785215
+291051738,Carretera Federal Oaxaca - Tuxtepec,17.0657234,-96.6793032
+8386690936,Innominada,17.065941,-96.681081
+8386690942,Innominada,17.0668948,-96.6842545
+3862318954,Innominada,17.0672547,-96.6854646
+2596344328,Innominada,17.068105,-96.6883493
+291052349,Innominada,17.0683322,-96.6892791
+320018553,Innominada,17.0685272,-96.6902851
+1349021293,Carretera Internacional,17.0686515,-96.6919853
+8386690944,Carretera Internacional,17.0687727,-96.6934773
+8819122886,Carretera Internacional,17.0688652,-96.6946245
+5835862502,Carretera Internacional,17.0688987,-96.6956085
+5835862499,Carretera Internacional,17.068973,-96.6969612
+2596344309,Carretera Internacional,17.0693278,-96.6998414
+6345481016,Carretera Internacional,17.0694985,-96.7016128
+1365034983,Carretera Internacional,17.0696397,-96.7033754
+8506372681,Carretera Internacional,17.0697151,-96.7043968
+8506800141,Carretera Internacional,17.0698286,-96.7058588
+888401864,Carretera Internacional,17.0699725,-96.7075647
+851467205,Carretera Internacional,17.0700551,-96.7085794
+320018580,Carretera Internacional,17.0702191,-96.7102219
+683888095,Carretera Internacional,17.0703065,-96.7114357
+8523114892,Innominada,17.0702463,-96.7123675
+2596344396,Innominada,17.0703089,-96.7133403
+1342411945,Carretera a Viguera,17.1225385,-96.7640558
+2333159291,Carretera a Viguera,17.1233316,-96.7631896
+2333159297,Carretera a Viguera,17.1239374,-96.7624761
+2333159306,Carretera a Viguera,17.1245513,-96.7617509
+2381676692,Avenida a Viguera,17.1252843,-96.7608793
+6124099074,Avenida a Viguera,17.126258,-96.7597155
+2333159365,Avenida a Viguera,17.1272788,-96.7584963
+2333159381,Avenida los Higos,17.1280433,-96.7576313
+1351954540,Avenida los Higos,17.1296202,-96.7558167
+1351954457,Avenida los Higos,17.1301969,-96.7549906
+6124032311,Prolongación de Hidalgo,17.1307659,-96.7541282
+6124032393,Calle Independencia,17.1301977,-96.7534981
+1381411712,Calle Morelos y Avenida Guerrero,17.129172,-96.7508122
+1381411590,Avenida Guerrero,17.1292839,-96.7498612
+1381411806,Avenida Guerrero,17.1294827,-96.7482524
+8413450910,Avenida Guerrero,17.1296919,-96.7464137
+330953000,Calle de Cuauhtémoc,17.0542884,-96.7139324
+330952737,Calle de Cuauhtémoc,17.0544598,-96.7152923
+330952530,Calle de Cuauhtémoc,17.0547264,-96.7171784
+330952194,Calle de Cuauhtémoc,17.0549133,-96.7181165
+330947555,Calle de Cuauhtémoc y Calle de González Ortega y Calle de la Noria,17.0552063,-96.7190978
+529036229,Calle de Arteaga,17.0563334,-96.7207536
+335800703,Calle de Francisco Javier Mina y Calle de J.P. García,17.0578229,-96.7284829
+335800702,Calle de Francisco Javier Mina y Calle de Gustavo Díaz Ordáz,17.0579787,-96.7294165
+6129548694,Calle de Francisco Javier Mina,17.0582348,-96.7308735
+6129548725,Calle Galeana,17.0588501,-96.7311919
+10795847034,Calle Galeana,17.0599226,-96.730954
+1380904055,Calle José María Pino Suárez,17.116486,-96.7576648
+1380923267,Calle José María Pino Suárez,17.1168837,-96.7566562
+1380904065,Calle José María Pino Suárez,17.1172652,-96.7557337
+2333159251,Calle José María Pino Suárez,17.1176897,-96.7547517
+1380904066,Calle José María Pino Suárez,17.1180771,-96.7538135
+2333159253,Calle José María Pino Suárez y Calle Porfirio Díaz,17.1184015,-96.7528907
+2333159258,Calle Independencia,17.1191797,-96.7529845
+1380923021,Calle Independencia y Avenida Nuevo México,17.1196234,-96.7518966
+1380923207,Calle San Ángel y Avenida Nuevo México,17.120318,-96.7519341
+1380923041,Avenida Nuevo México y Avenida La Paz,17.1212941,-96.7516529
+2333174694,Avenida La Paz,17.1213643,-96.7526728
+5851850071,Avenida La Paz y Calle Chicago,17.1214433,-96.7537182
+2333174703,Calle Chicago,17.1223604,-96.753464
+1380923170,Calle Chicago y Avenida Lago de Xochimilco,17.1226354,-96.7533785
+2906602707,Innominada,17.0976329,-96.7201133
+8403819071,Cuauhtémoc,17.0965631,-96.7200953
+2333322746,Cuauhtémoc,17.0956664,-96.7200504
+1720464058,Calle Guadalupe Victoria,17.092317,-96.7190262
+1720463974,Boulevard La Paz,17.0911684,-96.7189709
+1720463941,Boulevard La Paz,17.0898908,-96.7190862
+1876536586,Calle Júpiter y Afrodita,17.0974745,-96.7692029
+6345968418,Avenida Lago de Xochimilco,17.1225936,-96.7545163
+1380923199,Avenida Lago de Xochimilco,17.1223494,-96.7557724
+2333164868,Avenida Lago de Xochimilco,17.122477,-96.7570605
+5851850065,Avenida Lago de Xochimilco,17.122682,-96.7581099
+8389739760,Avenida Lago de Xochimilco y Camino Nacional,17.1226945,-96.7592572
+5042466783,Camino Nacional,17.1237848,-96.759692
+5042466786,Camino Nacional,17.1244763,-96.7603677
+1365150310,Avenida a Viguera y Carretera a Viguera y Camino Nacional y Calle Genaro V. Vásquez,17.125009,-96.7612155
+6641121765,Avenida Universidad,17.0538475,-96.7131508
+1365008345,Avenida Universidad,17.0528247,-96.7132205
+1348383560,Avenida Universidad,17.0513907,-96.7133908
+3009787054,Avenida Universidad,17.0501849,-96.7135415
+1348384520,Avenida Universidad,17.0491911,-96.7137102
+1348383823,Avenida Universidad,17.0482887,-96.7138416
+8424921565,Avenida Universidad,17.046007,-96.7141926
+291216606,Avenida Universidad,17.0443514,-96.7144472
+330943576,Avenida Universidad,17.0434443,-96.7142815
+8424921561,Avenida Universidad,17.0419932,-96.7132016
+3009787056,Avenida Universidad,17.0402485,-96.7118812
+3009781903,Avenida Universidad,17.0391268,-96.7110329
+335890682,Avenida Universidad,17.0382195,-96.7108194
+8393798326,Innominada,17.0376959,-96.71028
+6196325671,Innominada,17.0373506,-96.7088491
+8393792183,Innominada,17.0372563,-96.7084113
+6131274123,Avenida México 68,17.0864858,-96.7122675
+6131180009,Avenida México 68,17.0868542,-96.7132213
+4439743996,Avenida México 68,17.0873831,-96.7142643
+4439729598,Avenida México 68,17.0882202,-96.7157258
+4439780791,Avenida México 68,17.0889006,-96.716921
+331525456,Avenida Miguel Hidalgo,17.0619584,-96.7296496
+330950964,Avenida Miguel Hidalgo,17.0621511,-96.7305768
+330951174,Avenida Miguel Hidalgo y Calle de la Victoria,17.062406,-96.7318585
+9531089152,Calle de la Victoria,17.0633312,-96.7316671
+335884466,Calle División Oriente,17.0643682,-96.7322873
+8454069475,Calle División Oriente,17.0650703,-96.732885
+335884938,Calle División Oriente,17.0662477,-96.7338217
+6129548709,Calle División Oriente,17.0668792,-96.7345258
+6129492361,Calle División Oriente,17.0676989,-96.7352271
+331515241,Calle División Oriente,17.0689015,-96.7359136
+331515242,Calle División Oriente,17.06986,-96.7363149
+331515243,Calle Niños Héroes,17.0708482,-96.7366383
+8434041814,Avenida Eduardo Vasconcelos,17.1015898,-96.7508338
+1364828260,Avenida Eduardo Vasconcelos,17.1019732,-96.7498864
+2333146350,Avenida Eduardo Vasconcelos,17.1023711,-96.7486836
+1364828335,Avenida Eduardo Vasconcelos,17.1026642,-96.7476231
+2333146356,Avenida Eduardo Vasconcelos,17.1028674,-96.7464685
+2333146358,Avenida Eduardo Vasconcelos,17.1030906,-96.7456888
+2333146364,Calle Quetzalcóatl,17.1035114,-96.744899
+6123990787,Calle Quetzalcóatl,17.104426,-96.7448353
+1366167015,Calle Quetzalcóatl,17.1049473,-96.7452405
+1366167501,Calle Quetzalcóatl,17.1054344,-96.7458039
+1366167483,Calle Quetzalcóatl,17.1061317,-96.74595
+1366167457,Calle Quetzalcóatl y Avenida México,17.1067354,-96.747035
+1366166951,Calle Quetzalcóatl,17.1074558,-96.7470658
+1366167310,Calle Quetzalcóatl,17.1073467,-96.7461746
+1366167359,Calle Quetzalcóatl,17.1082414,-96.7461746
+6128664762,Avenida de las Torres,17.1091855,-96.7461949
+8416944527,Avenida de las Torres,17.1089145,-96.7453426
+8416944525,Avenida de las Torres y Calle Manzanal,17.1089275,-96.7451811
+320049657,Libramiento Norte,17.1272109,-96.748651
+1381458392,Libramiento Norte,17.1264014,-96.7492633
+320049661,Libramiento Norte,17.126202,-96.7503419
+8424378024,Libramiento Norte,17.1267621,-96.7513804
+1380928297,Libramiento Norte,17.1275653,-96.7527573
+8413541427,Libramiento Norte,17.1277603,-96.7537321
+5042482653,Libramiento Norte,17.1277119,-96.7547032
+2333159371,Libramiento Norte,17.1275885,-96.7569542
+1351953965,Libramiento Norte,17.1275177,-96.7579365
+6317108712,Innominada,17.0662707,-96.7359696
+335885028,Calzada Francisco I. Madero,17.065775,-96.7350178
+335729921,Calzada Francisco I. Madero,17.0649209,-96.7343613
+8424343902,Calzada Francisco I. Madero,17.0638834,-96.7332772
+335729927,Calzada Francisco I. Madero,17.0634484,-96.7323841
+2882634382,Avenida de la Independencia,17.063278,-96.7313876
+330950900,Avenida de la Independencia,17.063066,-96.7303514
+9531089106,Avenida de la Independencia,17.0628167,-96.7290882
+335800631,Calle de J.P. García,17.0587753,-96.7282639
+529036247,Calle de J.P. García,17.0568842,-96.7286545
+529036242,Calle de J.P. García,17.0558965,-96.7288474
+330949858,Calle de J.P. García y Calle de Nuño del Mercado,17.0549755,-96.7290397
+330947933,Calle de Nuño del Mercado y Calle de Xóchitl y Calle de Carlos María Bustamante,17.0544161,-96.7261534
+529036073,Calle de Xóchitl y Calle de Armenta y López,17.054243,-96.7251868
+330947795,Calle de Manuel Fernández Fiallo,17.0549318,-96.7241231
+330953704,Calle de Manuel Fernández Fiallo y Calle de la Noria,17.0560436,-96.7238575
+335882311,Calle de Manuel Fernández Fiallo y Calle de Ignacio López Rayón,17.0577801,-96.7234792
+335882306,Calle de Ignacio López Rayón y Calle de Xicoténcatl,17.0574033,-96.7214888
+335882307,Calle de Ignacio López Rayón,17.0572089,-96.7205441
+330943415,Calle de Ignacio López Rayón y Calle de González Ortega,17.0568409,-96.7188079
+529036159,Calle de Ignacio López Rayón,17.056649,-96.7178823
+335725986,Calle de Ignacio López Rayón,17.0564815,-96.7168662
+335725988,Calle de Ignacio López Rayón,17.0562824,-96.7159466
+335725880,Calle de Ignacio López Rayón,17.0560794,-96.7150288
+335725989,Calle de Ignacio López Rayón,17.0558331,-96.7137081
+330947530,Boulevard Eduardo Vasconcelos,17.0550014,-96.7132138
+683856958,Boulevard Eduardo Mata y Avenida Universidad,17.0540936,-96.7131629
+6124118257,Avenida de las Torres,17.1092948,-96.7459977
+1366166948,Calle Quetzalcóatl,17.1075084,-96.7470591
+1366167273,Calle Quetzalcóatl,17.1064648,-96.7461733
+1366167012,Calle Quetzalcóatl,17.1059382,-96.7455678
+1366167124,Calle Quetzalcóatl,17.1050806,-96.7457569
+1366167168,Calle Quetzalcóatl,17.1049525,-96.7448128
+1366167547,Calle Quetzalcóatl y Calle Cuitláhuac,17.1040808,-96.7449265
+2333146359,Avenida Eduardo Vasconcelos,17.1032529,-96.7453024
+1364828425,Innominada,17.1030428,-96.7461459
+1364828225,Avenida Eduardo Vasconcelos,17.102853,-96.7470858
+1364828219,Avenida Eduardo Vasconcelos,17.102589,-96.748199
+2333146348,Avenida Eduardo Vasconcelos,17.1022487,-96.7492652
+2333153694,Avenida Eduardo Vasconcelos,17.1016461,-96.7508624
+8434041816,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1013171,-96.7517504
+1340667708,Calzada Luis Echeverría Álvarez,17.0241378,-96.706258
+6196647207,Calzada Luis Echeverría Álvarez,17.0243481,-96.7072514
+6196646953,Calzada Luis Echeverría Álvarez,17.0246166,-96.7084209
+1340667696,Avenida Símbolos Patrios y Calzada Luis Echeverría Álvarez,17.0249287,-96.7097926
+2596415482,Avenida Símbolos Patrios,17.0261601,-96.7095459
+291215237,Avenida Símbolos Patrios,17.0273242,-96.7095955
+1340664210,Avenida Símbolos Patrios,17.0285273,-96.7102287
+330952037,Calle de González Ortega y Calle de Cristóbal Colón,17.0578098,-96.7186347
+335882416,Calle de Cristóbal Colón,17.0581423,-96.7203376
+335878624,Calle de Cristóbal Colón y Calle de Xicoténcatl,17.0583325,-96.721287
+335882415,Calle de Cristóbal Colón y Calle de Manuel Fernández Fiallo,17.058713,-96.7232573
+3899232019,Calle de Manuel Fernández Fiallo,17.0596398,-96.7230462
+331524296,Calle de Manuel Fernández Fiallo,17.0605774,-96.7228383
+12319880443,Calle de Manuel Fernández Fiallo,17.0615022,-96.7226382
+529036076,Calle de la Reforma,17.0624399,-96.7224547
+330948527,Calle de la Reforma,17.063397,-96.7222609
+330948526,Calle de la Reforma,17.0643974,-96.7220383
+330948525,Calle de la Reforma y Calle de la Constitución,17.0653917,-96.7218435
+529036143,Calle de la Constitución y Calle de José María Pino Suárez,17.0650896,-96.7197259
+330947018,Calle de José María Pino Suárez,17.0660273,-96.719508
+330946881,Calle de José María Pino Suárez,17.0669385,-96.7192968
+8427241486,Calle de José María Pino Suárez,17.0679784,-96.719077
+330949414,Calle de José María Pino Suárez,17.0693644,-96.7187856
+6131373924,Calle de José María Pino Suárez,17.0703027,-96.7186197
+4285170392,Calle de José María Pino Suárez,17.0712291,-96.7186459
+331521408,Calle Nezahualcóyotl,17.0720544,-96.718215
+8390290084,Prolongación Colón,17.1050739,-96.7103
+2905728867,Prolongación Colón,17.1061262,-96.7100765
+1366010321,Prolongación Colón,17.1074826,-96.7097904
+1366010253,Prolongación Colón,17.1085221,-96.7095558
+1365147530,Prolongación Hidalgo y Prolongación Colón,17.1093452,-96.710494
+6130980179,Prolongación Hidalgo,17.1106787,-96.7103904
+2593157320,Avenida Universidad,17.0368049,-96.7116446
+2593157303,Avenida Universidad,17.0356589,-96.7124188
+1350010677,Avenida Universidad,17.0348854,-96.712983
+320041087,Avenida Universidad,17.0336914,-96.7136694
+6641124995,Avenida Símbolos Patrios,17.030982,-96.7121016
+12723492036,Avenida Símbolos Patrios,17.029106,-96.7107791
+291166404,Avenida Símbolos Patrios,17.0279639,-96.7100446
+320038988,Avenida Símbolos Patrios,17.0270624,-96.7097167
+2596415478,Avenida Símbolos Patrios,17.0261629,-96.7096716
+6641124997,Avenida Símbolos Patrios,17.0249606,-96.7099322
+8389699972,Calzada Luis Echeverría Álvarez,17.0245575,-96.708737
+6196647035,Calzada Luis Echeverría Álvarez,17.0242427,-96.7074394
+2596415475,Calzada Luis Echeverría Álvarez,17.023961,-96.706305
+8403749215,Avenida Jorge L. Tamayo Castellanos,17.0435591,-96.714634
+8437527228,Avenida Jorge L. Tamayo Castellanos,17.0442917,-96.7154101
+5838995877,Calle Vicente Guerrero,17.0445558,-96.7163758
+851361614,Calle Vicente Guerrero,17.0446903,-96.7173788
+851361609,Calle Vicente Guerrero,17.0448442,-96.7185483
+6196325251,Calle Vicente Guerrero,17.0450722,-96.7197663
+851361603,Calle Puerto Márquez y Avenida Símbolos Patrios,17.045536,-96.7223342
+8437321628,Avenida Símbolos Patrios,17.0464458,-96.7229958
+851261065,Avenida Símbolos Patrios,17.0477301,-96.7239386
+2387962718,Avenida Símbolos Patrios,17.0485564,-96.7245392
+291215236,Avenida Símbolos Patrios,17.0493632,-96.7251469
+320041124,Innominada,17.0505158,-96.7260988
+320041127,Calle de Carlos María Bustamante,17.0514625,-96.7267248
+8425325347,Calle de Carlos María Bustamante,17.0525646,-96.7265166
+330947997,Calle de Carlos María Bustamante,17.0535034,-96.7263335
+330947724,Calle de Carlos María Bustamante y Calle de M. Arista,17.0553651,-96.7259774
+330947616,Calle de Carlos María Bustamante,17.0563522,-96.7257514
+330949924,Calle de Gustavo Díaz Ordáz,17.0589548,-96.7292231
+3201066362,Avenida Félix Romero,17.0835398,-96.7246494
+3201072369,Prolongación de Félix Romero,17.0836994,-96.7258698
+1364828174,Prolongación de Félix Romero,17.0838604,-96.72709
+6338366303,Prolongación de Félix Romero,17.0840045,-96.727988
+1364828205,Prolongación de Félix Romero,17.0841635,-96.729016
+1364828244,Prolongación de Félix Romero,17.0847852,-96.7298113
+1364828166,Calle Monte Blanco,17.0852768,-96.7306964
+1364828427,Calle Monte Blanco,17.0862024,-96.7313958
+1364828429,Calle Monte Blanco,17.0864299,-96.7322735
+1364828269,Calle Pico de Orizaba,17.0862511,-96.7331392
+1364828235,Calle Pico de Orizaba y Calle Popocatépetl,17.0856947,-96.7329448
+8041155885,Calle Pico de Orizaba,17.0856449,-96.7340637
+6129428178,Calle José Murat,17.0857216,-96.7348411
+8427984195,Calle José Murat,17.0865805,-96.7350785
+6129430402,Calle José Murat,17.0865959,-96.7360615
+1364828409,Calle José Murat,17.0861863,-96.7371169
+1364828453,Avenida José Murat,17.0869119,-96.7377209
+1364828224,Avenida José Murat,17.0878297,-96.737623
+1364828170,Avenida José Murat,17.0887886,-96.7376391
+1364828471,Avenida José Murat,17.08957,-96.737096
+1364828278,Avenida José Murat,17.0907525,-96.7364697
+1364828455,Avenida José Murat,17.0914011,-96.7369835
+1364828259,Avenida José Murat,17.0916857,-96.7379531
+1364828420,Avenida José Murat,17.0923676,-96.7385419
+1364828451,Avenida José Murat,17.093188,-96.7390998
+6129318182,Avenida José Murat,17.0944058,-96.7393331
+8427818069,Avenida José Murat,17.0960837,-96.7392258
+1364828437,Avenida José Murat,17.0970579,-96.7392346
+5850106591,Avenida José Murat,17.0983893,-96.7392623
+1364828184,Avenida José Murat,17.0990948,-96.7387215
+6123988956,Avenida José Murat,17.1000023,-96.738271
+8181540059,Innominada,17.1004573,-96.7375951
+8434070850,Calle Independencia,17.1010393,-96.7369768
+6123990884,Calle Independencia,17.1017601,-96.7363821
+6123990860,Calle Independencia,17.1025608,-96.7356249
+6123991016,Calle Independencia,17.1033356,-96.7351663
+6123990105,Calle Independencia,17.1018769,-96.7362634
+6123990966,Calle Independencia,17.0998616,-96.7373937
+9701832933,Calle Independencia,17.0989309,-96.7372963
+8389830486,Calle Independencia,17.0980441,-96.7369422
+6129318046,Calle Independencia,17.0971694,-96.7368605
+4443972554,Calle Independencia,17.0962279,-96.7358743
+6129318265,Calle Independencia,17.0951992,-96.7354077
+6129318003,Calle Independencia,17.094187,-96.7346838
+6321883226,Calle Independencia,17.0931675,-96.7342141
+4443938370,Calle Independencia,17.0919908,-96.7337858
+6321883225,Calle Independencia,17.0907858,-96.7335919
+4443938374,Calle Independencia,17.0898653,-96.7335981
+4443962546,Universo,17.0889584,-96.7337642
+4443965731,Fujiyama,17.0882015,-96.7331547
+4443962552,Fujiyama,17.0872375,-96.7326256
+1364828187,Calle Monte Blanco y Calle Pico de Orizaba y Fujiyama y Calle Pirineos,17.0863168,-96.7323855
+1364828462,Calle Monte Blanco,17.0863517,-96.7315413
+1364828359,Calle Monte Blanco,17.0855223,-96.7308801
+1364828216,Prolongación de Félix Romero,17.0849083,-96.7299782
+1364828265,Prolongación de Félix Romero,17.0842993,-96.729248
+3354612996,Prolongación de Félix Romero,17.0839558,-96.7283109
+3354611893,Innominada,17.0838682,-96.7272688
+3201063666,Prolongación de Félix Romero,17.0837597,-96.7263204
+1364828419,Avenida Félix Romero y Prolongación de Félix Romero,17.0835738,-96.7249337
+3201065765,Avenida Félix Romero,17.0834587,-96.7239272
+3201073664,Ignacio Mariscal,17.0827944,-96.7237238
+1877839938,Afrodita,17.097794,-96.7679826
+6122262660,Las Rosas,17.09504,-96.7736965
+5854834912,Calle Lázaro Cárdenas,17.0961166,-96.7738364
+5854834908,Calle Lázaro Cárdenas,17.0970271,-96.7738504
+5854834904,Calle Lázaro Cárdenas,17.0979837,-96.7739238
+6122501426,Calle Miguel Cabrera,17.099021,-96.7722644
+6122262092,Calle Miguel Cabrera,17.0995196,-96.7712532
+1400153306,Avenida Libertad,17.0980534,-96.7700722
+1365147550,Camino Jacalón,17.1116354,-96.7103564
+6331636772,Camino Jacalón,17.1106654,-96.7105785
+2015629733,Innominada,17.0655758,-96.6798659
+5851895481,Carretera Panamericana,17.1246628,-96.7660305
+2333159332,Carretera Panamericana,17.1256444,-96.7668472
+8386900902,Carretera Panamericana,17.1266014,-96.7676252
+2362412286,Carretera Panamericana,17.1273273,-96.7682139
+2362412235,Carretera Panamericana,17.1285164,-96.7691818
+1381458270,Carretera Panamericana,17.1294998,-96.7699781
+8389218306,Carretera Panamericana,17.1309508,-96.7711713
+8389218300,Carretera Panamericana,17.132479,-96.7724068
+8389218301,Carretera Panamericana,17.1333023,-96.7730819
+291207149,Carretera Panamericana,17.1344006,-96.7739762
+320019649,Carretera Panamericana,17.135561,-96.774686
+335730324,Carretera Panamericana,17.1364416,-96.7750457
+335730515,Carretera Panamericana y Calle San Pablo,17.1378809,-96.7756263
+2381635550,Calle San Pablo,17.1382984,-96.7745686
+6122462533,Calle San Pablo,17.1386723,-96.7735701
+6122462037,Calle San Pablo,17.1390317,-96.7725786
+1351932138,Calle San Pablo,17.1395803,-96.7711648
+1351932055,Calle San Pablo,17.1399369,-96.7702255
+8410383431,Calle San Pablo y Avenida Hidalgo,17.1404123,-96.7692505
+335730826,Avenida Hidalgo,17.1408721,-96.7681964
+335730829,Avenida Hidalgo,17.1411442,-96.7670024
+3233258683,Avenida Universidad,17.1420815,-96.7671186
+2333175662,Avenida Universidad y Calle 5 de Febrero,17.143305,-96.7675069
+2333175665,Calle 5 de Febrero,17.1436613,-96.7665587
+1366166918,Calle Cuitláhuac,17.1056203,-96.7427059
+2333146427,Calle Cuitláhuac,17.1049206,-96.7440176
+1366167148,Calle Cuitláhuac,17.104254,-96.7448169
+320041389,Calle Plazuela Vicente Guerrero y Calzada Francisco I. Madero,17.0663737,-96.7353712
+335729920,Calzada Francisco I. Madero,17.0655475,-96.7348701
+11649465670,Calzada Francisco I. Madero,17.0646515,-96.7341146
+331520383,Calzada Niños Héroes de Chapultepec y Calzada de la República,17.0710447,-96.7175932
+331514418,Calzada Niños Héroes de Chapultepec,17.0708339,-96.7166877
+1541887054,Calzada Niños Héroes de Chapultepec,17.070612,-96.7156713
+320018615,Calzada Niños Héroes de Chapultepec,17.0704687,-96.7146781
+291210013,Boulevard Eduardo Vasconcelos y Calzada Niños Héroes de Chapultepec,17.0703803,-96.7136794
+2596344384,Boulevard José Vasconcelos,17.0703103,-96.71248
+8498926199,Carretera Internacional,17.0701754,-96.7114498
+6131453453,Calle Siracuza,17.0676476,-96.6915955
+5839163783,Calle Siracuza y Avenida Juárez,17.0665824,-96.693028
+5809250879,Calle Siracuza,17.065142,-96.6940265
+1340646816,Avenida Lázaro Cárdenas,17.0648678,-96.6936271
+6131542424,Avenida Lázaro Cárdenas,17.0647889,-96.6922906
+1340611186,Avenida Lázaro Cárdenas y Avenida San Diego Hornos,17.0645404,-96.6903782
+2333360676,Avenida Lázaro Cárdenas,17.0643864,-96.6891429
+6340617117,Avenida Lázaro Cárdenas,17.0640818,-96.68663
+6340617120,Avenida Lázaro Cárdenas,17.0641063,-96.6851262
+8386690974,Avenida Lázaro Cárdenas,17.0642615,-96.6837631
+8386216881,Avenida Lázaro Cárdenas,17.0642567,-96.6825076
+1995785306,Avenida Lázaro Cárdenas y Juárez,17.0640949,-96.6815516
+6131592369,Calle Independencia,17.0626619,-96.6819808
+6131592373,Calle Independencia,17.0615295,-96.6823321
+2333304910,Juárez,17.0594532,-96.6834113
+6131592834,Juárez,17.0585565,-96.6836496
+2333304898,Juárez y Avenida Ferrocarril,17.0572668,-96.6839064
+5840224168,Calle Cruz del Río,17.0559647,-96.6842995
+2333304871,Calle Cruz del Norte,17.0555292,-96.6837335
+2333304869,Calle Cruz del Norte,17.0555253,-96.6826959
+5840222646,Calle Cruz del Norte,17.0555066,-96.6816211
+2333304868,Calle Cruz del Norte y Calle Cruz de Oriente,17.0555034,-96.6812777
+1364828439,Avenida José Murat,17.0951826,-96.7392538
+6129318260,Avenida José Murat,17.0939866,-96.7393667
+1364828172,Avenida José Murat,17.092624,-96.7386653
+6129318082,Avenida José Murat,17.0917715,-96.7381476
+1364828406,Avenida José Murat,17.0914383,-96.7371377
+1364828191,Avenida José Murat,17.0908802,-96.7364616
+1364828283,Avenida José Murat,17.0899167,-96.7367701
+1364828271,Avenida José Murat,17.0891476,-96.7373494
+1364828392,Avenida José Murat,17.0882874,-96.7377752
+8444767191,Calle José Murat,17.0861533,-96.737234
+1364828248,Calle José Murat,17.0865725,-96.7361916
+1377044405,Calle Popocatépetl,17.0856954,-96.731886
+1377044467,Calle Pirineos,17.0862017,-96.7321099
+1364828461,Calle Monte Blanco,17.0864799,-96.7317539
+1364828313,Calle Monte Blanco,17.0857269,-96.7310382
+1364828257,Prolongación de Félix Romero y Calle Monte Blanco,17.0850198,-96.7303276
+1364828246,Prolongación de Félix Romero,17.0845096,-96.7295256
+1364828226,Prolongación de Félix Romero,17.0839699,-96.728444
+3354612694,Prolongación de Félix Romero,17.0839455,-96.7275027
+1364828237,Prolongación de Félix Romero,17.0837835,-96.7264945
+3201063568,Prolongación de Félix Romero,17.0836379,-96.7254071
+3201074962,Avenida Félix Romero,17.0835122,-96.7244147
+2333318190,Marcos Pérez,17.0829847,-96.7237193
+3201073068,Ignacio Mariscal,17.0826931,-96.7229958
+3201073165,Ignacio Mariscal,17.0825713,-96.7220523
+1364828408,Avenida Félix Romero,17.0831597,-96.7217482
+3291775061,Matías Romero,17.0838456,-96.7221311
+3291775661,Gerardo Varela,17.0844243,-96.7217506
+330947614,Calle de Armenta y López,17.056382,-96.7247327
+330947738,Calle de Armenta y López,17.0551782,-96.7249734
+6318674282,Calle de Armenta y López,17.0533013,-96.725355
+8427850000,Calle de Armenta y López,17.0516163,-96.7257421
+320041165,Boulevard Eduardo Mata,17.0508076,-96.7259833
+2387940995,Innominada,17.0497691,-96.7254877
+1364183496,Avenida Símbolos Patrios,17.0488446,-96.7250277
+1349746389,Avenida Símbolos Patrios,17.0480792,-96.7245065
+1349746333,Avenida Símbolos Patrios,17.0473315,-96.7239587
+1349746295,Calle Eulalio Gutiérrez,17.0464355,-96.7233143
+6196325633,Calle Mártires de Tacubaya,17.0465509,-96.7223824
+6196325706,Calle Puerto Mazatlán,17.0463987,-96.7211668
+6196325616,Calle Puerto Mazatlán,17.0461668,-96.7194082
+8425029989,Calle Mártires de Tacuballa,17.046077,-96.7181531
+335890698,Calle Mártires de Tacuballa y Avenida Jorge L. Tamayo Castellanos,17.0459122,-96.7170733
+8437527237,Avenida Jorge L. Tamayo Castellanos,17.0450462,-96.7163509
+8250577396,Avenida Jorge L. Tamayo Castellanos,17.0442425,-96.7154419
+3003978433,Avenida Jorge L. Tamayo Castellanos,17.0435841,-96.7147567
+291216605,Avenida Universidad y Avenida Jorge L. Tamayo Castellanos,17.0429574,-96.7139302
+6326084176,Calle Álvaro Carillo,17.0142674,-96.7559829
+3308331956,Calle Álvaro Carillo y Camino Carretero,17.0134672,-96.7552988
+6199373405,Calle Macedonio Alcalá,17.0126467,-96.7553286
+6199372304,Calle Macedonio Alcalá,17.0115563,-96.7556239
+6199372908,Calle Uno,17.0105046,-96.7559413
+6199372602,Calle Uno,17.0095034,-96.7562333
+3308358210,Calle Valerio Trujano,17.0090881,-96.7555277
+3308358204,Calle Valerio Trujano y Calle Bella Vista,17.0088787,-96.7543701
+6199372638,Calle Buena Vista,17.0081128,-96.7546567
+6199373482,Calle Vista Hermosa y Avenida Observatorio,17.007019,-96.7553626
+3308318402,Francisco G. Bocanegra y Calle Quetzacóatl,17.0068001,-96.7543784
+3868741575,Calle Quetzacóatl,17.005797,-96.7545661
+5177043717,Calle Quetzacóatl,17.0048696,-96.7547929
+3308328070,Calle Quetzacóatl,17.0037981,-96.755094
+6338305486,Calle Cruz de Oriente,17.0554509,-96.6812931
+5840222635,Calle Cruz de Oriente,17.0563767,-96.681061
+5840184823,Avenida Ferrocarril,17.0572314,-96.6814495
+8389352710,Avenida Ferrocarril,17.057228,-96.682489
+319949194,Avenida Ferrocarril,17.0572261,-96.6835774
+5840174814,Juárez,17.0582862,-96.6837183
+6317223805,Calle Independencia y Juárez,17.0607391,-96.6826744
+2333304933,Calle Independencia,17.0618153,-96.6822378
+8386896561,Juárez y Calle Independencia,17.0638054,-96.6816357
+6131592849,Avenida Lázaro Cárdenas,17.0641191,-96.684995
+11443592674,Avenida Lázaro Cárdenas,17.0640266,-96.6859899
+6317223814,Avenida Lázaro Cárdenas,17.0642841,-96.6882537
+5839163784,Avenida Lázaro Cárdenas,17.0646978,-96.6915919
+2333318148,Avenida Lázaro Cárdenas,17.0648567,-96.6928964
+8386216893,Avenida Juárez,17.0656396,-96.6932998
+6131542073,Calle Siracuza,17.0674071,-96.6919263
+529016272,Calle Siracuza,17.0679645,-96.6911398
+8725861593,Innominada,17.0682915,-96.6900495
+8725861592,Innominada,17.0684724,-96.6900025
+8521973443,Boulevard José Vasconcelos,17.0704297,-96.7127565
+331520376,Calzada Niños Héroes de Chapultepec,17.0705114,-96.7144867
+1917941079,Calzada Niños Héroes de Chapultepec,17.0707042,-96.7156661
+331514416,Calzada Niños Héroes de Chapultepec,17.0709355,-96.7166779
+2596311045,Calzada Niños Héroes de Chapultepec,17.0711386,-96.7177522
+4285077397,Calzada Niños Héroes de Chapultepec,17.0713797,-96.7189414
+2596311057,Calzada Niños Héroes de Chapultepec,17.0716558,-96.7201987
+3493958394,Calzada Niños Héroes de Chapultepec,17.0720014,-96.7211027
+330949098,Calzada Niños Héroes de Chapultepec,17.0722459,-96.722203
+330948922,Calzada Niños Héroes de Chapultepec,17.0724762,-96.7236402
+320018683,Calzada Niños Héroes de Chapultepec,17.0726508,-96.7247909
+330949600,Calzada Niños Héroes de Chapultepec y Calle General Joaquín Amaro,17.0727823,-96.7256369
+1366167419,Calle Cuitláhuac,17.1043822,-96.744723
+1366167465,Calle Cuitláhuac,17.105314,-96.7433255
+4551287700,Carretera Al Parque Comunal,17.1125609,-96.7099475
+2904831864,Carretera Al Parque Comunal,17.113666,-96.7101386
+2904831860,Carretera Al Parque Comunal,17.1144004,-96.7100179
+4551287678,Carretera Al Parque Comunal y Libramiento Norte,17.115263,-96.7103733
+4551287684,Libramiento Norte,17.1157545,-96.7109614
+4551287686,Libramiento Norte,17.1148759,-96.7111887
+4551287689,Libramiento Norte,17.1145286,-96.7119344
+8502525543,Libramiento Norte,17.1137956,-96.7125831
+320049550,Libramiento Norte,17.1131443,-96.7132339
+1377031430,Prolongación de Iturbide,17.1120407,-96.713372
+1377031448,Prolongación de Iturbide,17.1110153,-96.7130354
+1377031432,Prolongación de Iturbide,17.1099579,-96.7129067
+8502615444,Prolongación de Iturbide,17.108972,-96.7130301
+1377031313,Prolongación de Iturbide,17.1077687,-96.7129402
+1377031213,Prolongación de Iturbide,17.1068278,-96.7130233
+6331636567,Prolongación de Iturbide,17.1060626,-96.7134753
+1377031154,Prolongación de Iturbide,17.1049462,-96.7131789
+6130979749,Prolongación de Iturbide,17.1042314,-96.7126362
+8211671310,Calle Iturbide,17.1035438,-96.7121058
+6196647445,Avenida Símbolos Patrios,17.0214058,-96.7107725
+6196646892,Avenida Símbolos Patrios,17.0197525,-96.7111624
+3516746393,Avenida Símbolos Patrios,17.0183529,-96.711476
+3516746293,Avenida Símbolos Patrios,17.0173364,-96.7117188
+12723591652,Avenida Símbolos Patrios,17.0161373,-96.7119799
+320043844,Avenida Símbolos Patrios y Avenida Reforma,17.0139853,-96.7124312
+291167095,Avenida Símbolos Patrios,17.0129196,-96.7126519
+320038984,Avenida Símbolos Patrios,17.011976,-96.7127479
+6199742598,Avenida Símbolos Patrios,17.0103369,-96.7128047
+11770982142,Avenida Símbolos Patrios,17.0087138,-96.7128678
+8386756209,Avenida Símbolos Patrios,17.0073203,-96.7129114
+12737028789,Avenida Símbolos Patrios,17.0063596,-96.7129573
+8404111670,Avenida Símbolos Patrios,17.0049878,-96.7130037
+2595684658,Avenida Símbolos Patrios,17.0040854,-96.7130328
+291166435,Avenida Símbolos Patrios,17.0028706,-96.7130795
+2596415493,Avenida Símbolos Patrios,17.0014245,-96.7130866
+8404111671,Carretera Oaxaca - Puerto Ángel,16.9986618,-96.7132868
+6199743632,Carretera Oaxaca - Puerto Ángel,16.9950187,-96.7134201
+12737028792,Carretera Oaxaca - Puerto Ángel,16.9938682,-96.7134452
+6199743808,Carretera Oaxaca - Puerto Ángel,16.9913983,-96.7135352
+2915394642,Carretera Oaxaca - Puerto Ángel,16.9898352,-96.7135901
+291166932,Carretera Oaxaca - Puerto Ángel,16.9883249,-96.7136458
+6641125009,Carretera Oaxaca - Puerto Ángel,16.9874196,-96.7135035
+6199743426,Carretera Oaxaca - Puerto Ángel,16.9863858,-96.7126545
+6199743424,Carretera Oaxaca - Puerto Ángel,16.98501,-96.7113278
+330949391,Calle de Xicoténcatl,17.0592312,-96.7210725
+335878625,Calle de Xicoténcatl,17.0601547,-96.7208789
+12319880439,Calle de Xicoténcatl,17.0610949,-96.7206626
+529036131,Calle de José María Pino Suárez y Avenida de José María Morelos,17.0620368,-96.720436
+529036090,Calle de José María Pino Suárez,17.0629895,-96.7202111
+330949392,Calle de José María Pino Suárez,17.0640405,-96.7199724
+6802099762,Innominada,17.0557344,-96.7130745
+2594571630,Innominada,17.0548018,-96.7131701
+2594571623,Innominada,17.0538112,-96.7130827
+2594571639,Innominada,17.0523368,-96.7132454
+320043842,Avenida Reforma,17.0142121,-96.7137939
+320043839,Camino al Tequio,17.0147461,-96.7146518
+320043836,Camino al Tequio,17.0156489,-96.7150558
+320043834,Camino al Tequio,17.0159371,-96.7159751
+320043829,Camino al Tequio,17.0168097,-96.7159402
+8389643207,Camino al Tequio,17.0171077,-96.7168302
+320043826,Camino al Tequio,17.0175284,-96.718429
+320043824,Camino al Tequio,17.0181608,-96.7194901
+8389835779,Camino al Tequio,17.0186362,-96.7212716
+8058132706,Camino al Tequio,17.0188468,-96.7222533
+8386637275,Camino al Tequio,17.0191574,-96.7239034
+320043821,Camino al Tequio,17.0195227,-96.7256382
+320043817,Camino Antiguo al Aeropuerto,17.0194389,-96.7267006
+320043816,Camino Antiguo al Aeropuerto,17.0196902,-96.7280222
+8390098743,Camino Antiguo al Aeropuerto,17.0214198,-96.7291314
+320043812,Camino Antiguo al Aeropuerto,17.0222475,-96.7295235
+320043628,Carretera Oaxaca-Zimatlán de Álvarez y Camino Antiguo al Aeropuerto y Boulevard Guadalupe Hinojosa de Murat,17.023053,-96.7300283
+6196179393,Boulevard Guadalupe Hinojosa de Murat,17.0209466,-96.7309787
+9604289736,Boulevard Guadalupe Hinojosa de Murat,17.0201173,-96.7313598
+6196179187,Boulevard Guadalupe Hinojosa de Murat,17.0186015,-96.7320418
+8428063170,Boulevard Guadalupe Hinojosa de Murat,17.0156473,-96.73338
+6196037642,Boulevard Guadalupe Hinojosa de Murat,17.0148012,-96.7337342
+6199570848,Boulevard Guadalupe Hinojosa de Murat,17.0131996,-96.7344625
+6199570834,Boulevard Guadalupe Hinojosa de Murat,17.0112845,-96.7353045
+6199570875,Boulevard Guadalupe Hinojosa de Murat,17.0100623,-96.7358663
+6199571156,Boulevard Guadalupe Hinojosa de Murat,17.0089293,-96.7363623
+11292756018,Boulevard Guadalupe Hinojosa de Murat,17.0080825,-96.7367438
+8428340372,Boulevard Guadalupe Hinojosa de Murat,17.0064878,-96.7374578
+2786439178,Boulevard Guadalupe Hinojosa de Murat,17.0051398,-96.7380613
+3308208046,Innominada,17.0037459,-96.7386933
+5177044751,Innominada,17.0019046,-96.7395296
+6199570844,Innominada,16.9983586,-96.7410987
+6407621853,Innominada,16.9972414,-96.741617
+6199571168,Boulevard Guadalupe Hinojosa de Murat,16.996812,-96.7443591
+8404368823,Boulevard Guadalupe Hinojosa de Murat,16.9968649,-96.7461327
+6199373441,Boulevard Guadalupe Hinojosa de Murat,16.9968976,-96.7470893
+6199372583,Boulevard Guadalupe Hinojosa de Murat,16.9969362,-96.7484882
+6199371983,Boulevard Guadalupe Hinojosa de Murat,16.9969776,-96.7497017
+6199372937,Boulevard Guadalupe Hinojosa de Murat,16.9970157,-96.7509621
+2786439177,Boulevard Guadalupe Hinojosa de Murat,16.9970375,-96.7529112
+8403871607,Boulevard Guadalupe Hinojosa de Murat,16.9969572,-96.7520394
+8404097010,Boulevard Guadalupe Hinojosa de Murat,16.996904,-96.7498541
+6199608509,Boulevard Guadalupe Hinojosa de Murat,16.9968099,-96.7466174
+8404026972,Boulevard Guadalupe Hinojosa de Murat,16.9966845,-96.7423598
+2786439181,Innominada,16.9970591,-96.7415909
+8404026967,Innominada,16.9983884,-96.7409977
+8424551844,Innominada,16.9995649,-96.7404773
+6199570841,Innominada,17.0012445,-96.7397214
+5177015315,Innominada,17.0033886,-96.7387654
+1368506726,Innominada,17.0043895,-96.738319
+8428135605,Boulevard Guadalupe Hinojosa de Murat,17.0073737,-96.7369777
+8427860139,Boulevard Guadalupe Hinojosa de Murat,17.0100309,-96.735796
+6199571172,Boulevard Guadalupe Hinojosa de Murat,17.0112596,-96.7352396
+8427860140,Boulevard Guadalupe Hinojosa de Murat,17.0131761,-96.7344086
+8427860141,Boulevard Guadalupe Hinojosa de Murat,17.0147496,-96.7336871
+8428141918,Boulevard Guadalupe Hinojosa de Murat,17.017211,-96.7325837
+8386637261,Boulevard Guadalupe Hinojosa de Murat,17.0192033,-96.731713
+8387130426,Boulevard Guadalupe Hinojosa de Murat,17.020173,-96.7312669
+8389667574,Boulevard Guadalupe Hinojosa de Murat,17.021197,-96.7308098
+1449325120,Boulevard Guadalupe Hinojosa de Murat,17.022763,-96.7301107
+6196179227,Camino Antiguo al Aeropuerto,17.0223152,-96.7295643
+8390594944,Camino Antiguo al Aeropuerto,17.0203052,-96.7286035
+8390098741,Camino al Tequio,17.0184069,-96.7201896
+320043825,Camino al Tequio,17.0176105,-96.7186178
+12723591650,Avenida Reforma,17.0142174,-96.7138209
+12723591647,Avenida Reforma,17.0140263,-96.7126589
+8437527232,Eduardo Mata,17.0529575,-96.7169563
+5826087169,Eduardo Mata,17.0531621,-96.7160165
+1349730039,Eduardo Mata y 1ra Privada de Universidad,17.053529,-96.7146154
+1349730060,Avenida Universidad y 1ra Privada de Universidad,17.0533128,-96.7131407
+4373184351,Avenida Universidad,17.0523478,-96.713305
+1340602287,Innominada,17.0367419,-96.7063221
+330953702,Calle de la Noria y Calle de Melchor Ocampo,17.0558984,-96.7228053
+330953139,Calle de la Noria y Calle de Xicoténcatl,17.0557272,-96.7218373
+4285208090,Calzada de la República,17.0711559,-96.7183468
+10795791139,Calzada Niños Héroes de Chapultepec,17.0709579,-96.7172934
+6131373934,Calzada Niños Héroes de Chapultepec,17.0707232,-96.716187
+331514247,Calzada Niños Héroes de Chapultepec,17.070509,-96.7150135
+2596344364,Innominada,17.0705199,-96.7137723
+5842286081,Calle Río Verde,17.0817548,-96.6958139
+2596344378,Calzada Niños Héroes de Chapultepec,17.0705599,-96.7147941
+8498926198,Calzada Niños Héroes de Chapultepec,17.070861,-96.7163798
+331520382,Calzada Niños Héroes de Chapultepec,17.0711564,-96.7175883
+2596311042,Calle de José María Pino Suárez y Calzada Niños Héroes de Chapultepec,17.0713157,-96.7186299
+291210012,Avenida Benito Juárez y Calzada Niños Héroes de Chapultepec,17.0715208,-96.719659
+2596311049,Calzada Niños Héroes de Chapultepec,17.0718943,-96.7206361
+1366167445,Avenida Circunvalación,17.1031649,-96.7447238
+6123991001,Avenida Central Oriente,17.1033002,-96.7438742
+2333146370,Avenida Central Oriente,17.1039271,-96.7426972
+2333146396,Avenida Central Oriente,17.1045143,-96.741585
+2333146404,Avenida Central Oriente,17.104533,-96.7406456
+6123990799,Avenida Central Oriente,17.1049449,-96.7398012
+2361290734,Avenida Central Oriente y Calle Benito Juárez,17.105564,-96.7391574
+8396370693,Avenida Oriente,17.0823873,-96.6949607
+8396370700,Avenida Oriente,17.0834276,-96.6945349
+8396370703,Avenida Oriente y Avenida Central Oriente Poniente,17.0843872,-96.6941069
+5842291199,Avenida Central Oriente Poniente,17.084508,-96.6950271
+5842297461,Avenida Central Oriente Poniente,17.0843801,-96.6960711
+8396403747,Avenida Central Oriente Poniente,17.0839699,-96.6969106
+2333111860,Avenida Central Oriente Poniente,17.0835868,-96.6977772
+8448036440,Avenida Central Oriente Poniente,17.0836381,-96.6987927
+2333111862,Avenida Central Oriente Poniente y Andador Río Grijalva,17.0836872,-96.6999437
+2015644589,Andador Río Grijalva,17.0825425,-96.6999025
+8434624689,Avenida Fuerza Área Mexicana,17.079431,-96.7040319
+8434624688,Avenida Fuerza Área Mexicana,17.0795497,-96.704982
+8434624687,Calle Escuadron 201 y Avenida Fuerza Área Mexicana,17.0797106,-96.7061938
+888402186,Avenida Fuerza Área Mexicana,17.0797866,-96.7071878
+1342931525,Avenida Fuerza Área Mexicana,17.0800186,-96.7090205
+343018025,Avenida Fuerza Área Mexicana,17.0801649,-96.7101107
+343017702,Avenida Fuerza Área Mexicana,17.0803016,-96.7112015
+1351954407,Carretera a Viguera,17.1226258,-96.7639812
+6123990971,Calle Benito Juárez,17.1056414,-96.7390373
+2333146438,Avenida Central Oriente,17.1050064,-96.7396617
+8430566329,Avenida Central Oriente,17.1045665,-96.7405701
+2333146397,Avenida Central Oriente,17.1045552,-96.7415084
+2333146357,Avenida Eduardo Vasconcelos,17.1029141,-96.7465353
+2333146354,Avenida Eduardo Vasconcelos,17.1027331,-96.7476539
+2333146352,Avenida Eduardo Vasconcelos,17.1024327,-96.7487191
+1364828268,Avenida Eduardo Vasconcelos,17.1020825,-96.7497545
+2333159450,Calle Esmeralda,17.1307003,-96.7641511
+6124099065,Calle Diamante,17.1298419,-96.7651148
+2362412228,Calle Diamante,17.1295204,-96.7663865
+1381458336,Calle Diamante y Calle Genaro V. Vásquez,17.1291212,-96.7679247
+2333159384,Calle Genaro V. Vásquez,17.128219,-96.7664384
+2333159374,Calle Genaro V. Vásquez,17.1276372,-96.7654505
+2333174733,Calle Genaro V. Vásquez,17.1270207,-96.764551
+2333159346,Calle Genaro V. Vásquez,17.126505,-96.7637673
+2333159333,Calle Genaro V. Vásquez,17.1259237,-96.7627497
+1351954380,Calle Genaro V. Vásquez,17.1252565,-96.761654
+1351953778,Carretera a Viguera,17.1227103,-96.764075
+1351953910,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1221143,-96.76421
+2333159269,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.120821,-96.763129
+6124099515,Calle Genaro V. Vásquez,17.1252137,-96.7615781
+5851893029,Calle Genaro V. Vásquez,17.1257354,-96.7624445
+2333159338,Calle Genaro V. Vásquez,17.1262456,-96.7633191
+2381676652,Calle Genaro V. Vásquez,17.1268224,-96.7642527
+1351954506,Calle Genaro V. Vásquez,17.1273556,-96.7650513
+5851895484,Calle Genaro V. Vásquez,17.127987,-96.7660536
+2333159395,Calle Genaro V. Vásquez,17.1287819,-96.7673832
+2362412232,Calle Diamante,17.1294889,-96.7665123
+2333159440,Calle Esmeralda,17.1303955,-96.7642783
+5833582953,Avenida Nezahualcóyotl,17.0579693,-96.7597434
+2333217649,Avenida Nezahualcóyotl,17.057951,-96.7586784
+6319130481,Avenida Nezahualcóyotl,17.0581385,-96.7574501
+6128919258,Avenida Nezahualcóyotl,17.0580968,-96.7564661
+1348384279,Avenida Monte Albán,17.0582489,-96.7555106
+2333217668,Avenida Monte Albán,17.0584669,-96.7545772
+1348383942,Avenida Monte Albán,17.05892,-96.7525001
+1348384112,Avenida Monte Albán y Calle las Razas,17.058918,-96.7515211
+1348383826,Avenida Monte Albán,17.0591328,-96.750471
+8478642196,Avenida Monte Albán,17.0592257,-96.7494215
+6319132431,Avenida Monte Albán,17.0592834,-96.7484111
+1348383911,Avenida Monte Albán,17.0587142,-96.7477606
+8447836304,Avenida Monte Albán,17.0590693,-96.7468138
+1348383758,Avenida Monte Albán,17.0598485,-96.7458318
+8447836308,Avenida Monte Albán,17.0602194,-96.7448846
+2338384795,Avenida Mexicapan,17.0595913,-96.7439137
+2387940981,Boulevard Eduardo Mata y Avenida Ferrocarril,17.0504798,-96.7275447
+335726585,Avenida Ferrocarril,17.0502328,-96.7284671
+335726324,Avenida Ferrocarril,17.0499415,-96.7295297
+2333330303,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0198048,-96.7501612
+528995514,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0201243,-96.7516838
+8386331151,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0203726,-96.7529826
+528995510,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.02059,-96.7544444
+528995505,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.020796,-96.7554128
+6193551536,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0213686,-96.7561989
+528995497,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0218732,-96.757183
+528995493,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0220117,-96.7585295
+6193552093,Avenida Monte Albán,17.0228476,-96.7585309
+4401860171,Avenida Monte Albán,17.0238157,-96.7582768
+6193550137,Calle Zapoteca,17.0243598,-96.7568343
+6193550913,Calle Mazateca,17.0245638,-96.7556428
+6193551268,Avenida del Bosque,17.024504,-96.754789
+6193551265,Avenida del Bosque,17.0256661,-96.7543198
+6193551493,Avenida del Bosque,17.0266879,-96.7540064
+6193550928,Avenida del Bosque,17.0277375,-96.753928
+6193551271,Avenida del Bosque,17.0282284,-96.7539933
+8447836309,Avenida Monte Albán,17.0601354,-96.7451817
+1348384306,Avenida Monte Albán,17.0596341,-96.7461104
+1348384382,Avenida Monte Albán,17.0589207,-96.7470803
+6319132432,Avenida Monte Albán,17.0588155,-96.7479698
+2333209292,Avenida Monte Albán,17.0592713,-96.7487014
+2333209291,Avenida Monte Albán,17.0591886,-96.7500056
+2333217640,Avenida Nezahualcóyotl,17.057927,-96.7592411
+5840601748,Calle Salina Cruz,17.0400674,-96.6928485
+2333299668,Calle Salina Cruz y Calle Tejupan,17.0409714,-96.6927183
+6196836319,Calle Salina Cruz,17.0422225,-96.6925394
+2333299693,Calle Salina Cruz y Circuito Sur 1,17.0432999,-96.6924004
+5840601737,Circuito Sur 1,17.0437457,-96.693227
+12140293323,Circuito Sur 1,17.0444109,-96.6944272
+2333299728,Circuito poniente 1,17.0455879,-96.6941696
+1830315347,Circuito poniente 1,17.0464792,-96.6939462
+1830315344,Circuito poniente 1,17.0473874,-96.6936957
+1349446137,La Hacienda,17.0480338,-96.6941468
+5840634830,Avenida El Rosario,17.0482958,-96.6952754
+5840625639,Avenida El Rosario,17.0485128,-96.6962061
+1340664683,Avenida El Rosario,17.0490599,-96.6973443
+1978027466,Avenida El Rosario,17.0493542,-96.6983916
+1978027499,Avenida El Rosario,17.049658,-96.6999631
+1349693164,Avenida El Rosario,17.0499032,-96.7012163
+6196325242,Avenida El Rosario,17.0501719,-96.702573
+5840641927,Avenida El Rosario,17.0504291,-96.703864
+1340664107,Avenida 16 de Septiembre,17.0507945,-96.7047393
+663044725,Avenida 16 de Septiembre,17.0521501,-96.7059937
+8510256926,Avenida 16 de Septiembre,17.0531025,-96.7066507
+683856705,Avenida 16 de Septiembre,17.0540898,-96.7073341
+663044723,Avenida 16 de Septiembre,17.0551132,-96.7080463
+1340592953,Avenida 16 de Septiembre,17.0561085,-96.708706
+1340592957,Avenida 16 de Septiembre,17.0569561,-96.709239
+1349021283,Avenida Ferrocarril,17.0572696,-96.7099974
+1349021223,Avenida Ferrocarril,17.0564958,-96.7106824
+1348384423,Avenida Ferrocarril,17.0555446,-96.7115226
+319948475,Avenida Ferrocarril,17.0549176,-96.712211
+2333139822,Calle Gran Vía Santa Rosa y Calle Santa Carolina,17.0923349,-96.7465545
+2333139826,Calle Gran Vía Santa Rosa,17.092715,-96.7453104
+2333139832,Calle Gran Vía Santa Rosa y Calle Cerro del Oro,17.0930226,-96.7443033
+2333139808,Calle Cerro del Oro y Zempoaltepetl,17.0918376,-96.7439015
+5844889679,Zempoaltepetl,17.0924425,-96.7429484
+1366166879,Zempoaltepetl,17.0927462,-96.7419041
+2333360700,Zempoaltepetl,17.0935033,-96.7416103
+6129363783,Zempoaltepetl,17.0945276,-96.741263
+1366166979,Zempoaltepetl,17.0953979,-96.7409894
+1366167385,Zempoaltepetl,17.0961808,-96.7414766
+1366167076,Circuito Santa Rosa,17.0959796,-96.7424142
+1366167199,Calle Agua Marina,17.0958809,-96.7434391
+1366167035,Calle Agua Marina,17.0958233,-96.7444205
+1366167476,Calle Agua Marina,17.096759,-96.7446539
+1366167537,Calle Agua Marina,17.0974743,-96.7441254
+1366166977,Calle Agua Marina,17.0971451,-96.7431083
+1366167326,Calle Cristal de Roca,17.0978834,-96.7429272
+1366167209,Calle Cristal de Roca,17.098891,-96.7432866
+1366167551,Calle Cristal de Roca,17.0999606,-96.7432223
+1366167265,Calle Cristal de Roca,17.1007163,-96.7431231
+6123990334,Calle Cristal de Roca,17.1008218,-96.743305
+1366167266,Calle Cristal de Roca,17.1000946,-96.7431258
+6123989673,Calle Cristal de Roca,17.0991477,-96.7433435
+6129318129,Calle Cristal de Roca,17.0982206,-96.7430496
+6129318014,Calle Agua Marina,17.0973638,-96.7426728
+1366166946,Calle Agua Marina,17.0972871,-96.7435957
+1366167546,Calle Agua Marina,17.0972743,-96.7444849
+1366167032,Calle Agua Marina,17.0964232,-96.7447075
+1366167490,Calle Agua Marina,17.0957899,-96.7440906
+5850106278,Circuito Santa Rosa,17.095871,-96.7430182
+1366167475,Circuito Santa Rosa,17.0961732,-96.7418121
+1366167357,Zempoaltepetl,17.095603,-96.7411617
+1366167345,Zempoaltepetl,17.0946583,-96.7412093
+6129317847,Zempoaltepetl,17.0936867,-96.7415419
+1366167262,Zempoaltepetl,17.092834,-96.7416805
+1366167463,Zempoaltepetl,17.0925443,-96.7427816
+6345955514,Zempoaltepetl,17.0918713,-96.7437889
+2333139802,Calle Santa Carolina y Calle Santa Magdalena,17.0914075,-96.7461732
+330953184,Calle de la Noria,17.0554463,-96.7203119
+1340592929,Prolongación de la Noria,17.0538607,-96.7111026
+1340592976,Prolongación de la Noria,17.0536599,-96.7097479
+663044732,Prolongación de la Noria,17.0535032,-96.7087453
+1345262178,Prolongación de la Noria,17.0533551,-96.707729
+663044724,Avenida 16 de Septiembre y Prolongación de la Noria,17.053192,-96.7067148
+1308121361,Avenida 16 de Septiembre,17.0513447,-96.7054548
+1342948303,Avenida 16 de Septiembre,17.0507829,-96.704709
+1340664668,Avenida El Rosario,17.0499829,-96.7016289
+1978027472,Avenida El Rosario,17.0497863,-96.7006188
+1340664682,Avenida El Rosario,17.0495152,-96.6992336
+1349693121,Avenida El Rosario,17.049242,-96.6978048
+1340664680,Avenida El Rosario,17.0487296,-96.6969234
+5840634832,Avenida El Rosario,17.0484129,-96.6957776
+8389570158,La Hacienda,17.0481806,-96.6948121
+1830315345,Circuito poniente 1 y La Hacienda,17.0478943,-96.6935464
+1830315346,Circuito poniente 1,17.0469548,-96.6938122
+1830315348,Circuito poniente 1,17.0460671,-96.6940414
+1349446220,Circuito Sur 1 y Circuito poniente 1,17.045153,-96.6942896
+6196837020,Circuito Sur 1,17.0440289,-96.6938013
+6338305252,Circuito Sur 1,17.0434821,-96.6927325
+6196836313,Calle Salina Cruz,17.0426583,-96.6924929
+2333299673,Calle Salina Cruz y Calle Juchitán,17.0415854,-96.6926401
+5840601755,Calle Tejupan,17.0408783,-96.6930935
+5840601745,Calle Juchatengo,17.0400836,-96.6938636
+6338305270,Calle Juchatengo,17.0391002,-96.693992
+5840601743,Calle Juchatengo,17.0381238,-96.6937665
+6196836565,Calle Salina Cruz,17.0380482,-96.6928259
+2333299645,Calle Salina Cruz,17.0389558,-96.6926541
+1366010272,Carretera a Donají,17.1088609,-96.7002385
+1366010723,Carretera a Donají,17.1078581,-96.7005208
+1366010689,Carretera a Donají,17.1068451,-96.7008528
+6131033211,Carretera a Donají,17.1058871,-96.7009834
+1366010578,Carretera a Donají,17.1046485,-96.7011122
+1366010201,Carretera a Donají y Calle Benito Juárez,17.1034757,-96.7012342
+2333318275,Calle Benito Juárez y Calle Venustiano Carranza,17.1037059,-96.7030043
+2333318269,Calle Venustiano Carranza,17.1020248,-96.7032558
+2333318258,Calle Venustiano Carranza,17.1010466,-96.703378
+2333318244,Calle Venustiano Carranza y Calle Guadalupe Victoria,17.1002381,-96.703932
+2333131209,Calle Guadalupe Victoria,17.0989563,-96.7041533
+2333131204,Calle Guadalupe Victoria,17.0980469,-96.7045936
+6131119745,Calle Guadalupe Victoria,17.096762,-96.7052599
+1366010746,Carretera a Donají,17.0963145,-96.7061944
+1366009975,Carretera a Donají,17.0965308,-96.707009
+1366010039,Carretera a Donají,17.0954338,-96.7063862
+2333139648,Calle Cuauhtémoc,17.0832587,-96.742718
+2333139655,Calle Cuauhtémoc,17.0837572,-96.741628
+1364799252,Cuauhtémoc,17.0845322,-96.7411233
+1364799249,Cuauhtémoc,17.0852718,-96.7402047
+1364799282,Cuauhtémoc,17.0861169,-96.7406733
+1364799174,Cuauhtémoc,17.0873267,-96.7411931
+1364799100,Calle Sexta Oriente,17.0880754,-96.7406888
+6129317804,Calle Sexta Oriente,17.0888565,-96.7400412
+5844898008,Insurgentes,17.0894672,-96.7405384
+6129317860,Insurgentes,17.0896636,-96.7417665
+1364799271,Insurgentes,17.0903148,-96.7425864
+6129317893,Insurgentes,17.0912859,-96.7428946
+1364799194,Zempoaltepetl y Insurgentes,17.0921518,-96.7434246
+1366167002,Zempoaltepetl,17.0926109,-96.7425402
+1366167496,Zempoaltepetl,17.0928506,-96.7416041
+1366167362,Zempoaltepetl,17.093943,-96.7414521
+6129318012,Zempoaltepetl,17.0949185,-96.7411114
+1366167488,Zempoaltepetl,17.0957412,-96.741285
+1366167179,Zempoaltepetl y Circuito Santa Rosa,17.0962151,-96.7415879
+320049764,Carretera al Panteón Jardín,17.0982831,-96.690734
+320049766,Carretera al Panteón Jardín,17.0978664,-96.6895603
+320049769,Carretera al Panteón Jardín,17.0966625,-96.6888871
+6131310939,Carretera al Panteón Jardín,17.0961024,-96.6881258
+6131312004,Carretera al Panteón Jardín,17.0955128,-96.6873698
+8386337120,Carretera al Panteón Jardín,17.0946818,-96.686741
+6131312006,Carretera al Panteón Jardín,17.0933445,-96.6864816
+6131311828,Carretera al Panteón Jardín,17.0923659,-96.6862793
+5002520697,Carretera al Panteón Jardín,17.0913299,-96.686065
+320049775,Carretera al Panteón Jardín,17.0899287,-96.6857753
+2359322501,Carretera al Panteón Jardín,17.0888815,-96.6859772
+6131310976,Carretera al Panteón Jardín,17.0881411,-96.6865236
+2359322462,Carretera al Panteón Jardín,17.0871253,-96.6873915
+3862318963,Carretera al Panteón Jardín,17.0858729,-96.6884399
+8445577360,Carretera al Panteón Jardín,17.0844041,-96.6896807
+8396550340,Carretera al Panteón Jardín,17.0833082,-96.6905824
+8445511410,Carretera al Panteón Jardín,17.0824059,-96.691343
+12384071137,Carretera al Panteón Jardín,17.0812053,-96.6923452
+8396550382,Carretera al Panteón Jardín,17.0790266,-96.6941408
+320049779,Carretera al Panteón Jardín,17.0782601,-96.6946321
+6131453441,Carretera al Panteón Jardín,17.0767557,-96.6948909
+6131453434,Carretera al Panteón Jardín,17.0758275,-96.6949929
+6131453420,Carretera al Panteón Jardín,17.074891,-96.6950981
+6131453438,Carretera al Panteón Jardín,17.073809,-96.6952282
+6131453463,Carretera al Panteón Jardín,17.0727578,-96.6953449
+6131453450,Carretera al Panteón Jardín,17.0717373,-96.6954733
+8389242101,Carretera al Panteón Jardín,17.0708079,-96.6956366
+6318674217,Carretera al Panteón Jardín,17.0698767,-96.6958386
+5835862501,Innominada,17.0690878,-96.6961143
+5835862509,Innominada,17.0691212,-96.6972675
+8666892698,Calle Ignacio Bernal,17.0735455,-96.757462
+2333351096,Calle Ignacio Bernal,17.073241,-96.7587044
+385018344,Calle Ignacio Bernal,17.073295,-96.7604007
+385018343,Calle Ignacio Bernal,17.0734214,-96.7614659
+2333351100,Calle Ignacio Bernal y Boulevard Los Álamos,17.0735183,-96.7624337
+2333351051,Boulevard Los Álamos,17.0711668,-96.7631431
+6128917419,Boulevard Los Álamos,17.070131,-96.7633583
+2333350991,Boulevard Los Álamos,17.0691335,-96.7627019
+6128919065,Boulevard Los Álamos,17.0680043,-96.761756
+2333197397,Calle Nizaa y Guigu,17.0676173,-96.7619658
+2333197375,Guigu,17.0666812,-96.7621074
+5837213452,Guigu,17.0656996,-96.7623468
+2333197333,Calle Xaquieya y Calle Yaa,17.0655569,-96.7633485
+2333197380,Calle Yaa,17.066803,-96.7635564
+6319132407,Guigu,17.0655079,-96.7624122
+2333197361,Guigu,17.0664088,-96.7621483
+8386555700,Boulevard Los Álamos,17.0679481,-96.7615066
+2333350987,Boulevard Los Álamos,17.0689488,-96.7623783
+2333351015,Boulevard Los Álamos,17.0699284,-96.7632075
+8389409257,Boulevard Los Álamos,17.0711516,-96.7630218
+2333351093,Boulevard Los Álamos,17.0732205,-96.7626281
+320037013,Calle Ignacio Bernal,17.0732194,-96.7594102
+2333197491,Calle Ignacio Bernal,17.0733093,-96.7580368
+8666892692,Calle Ignacio Bernal,17.0737944,-96.757222
+4095987229,Avenida Montoya,17.0734829,-96.7564111
+5835862511,Carretera al Panteón Jardín,17.0698646,-96.6957687
+6131453421,Carretera al Panteón Jardín,17.0747215,-96.6951172
+6131352536,Carretera al Panteón Jardín,17.077971,-96.6947246
+6131352561,Carretera al Panteón Jardín,17.0788562,-96.6942807
+3862318974,Carretera al Panteón Jardín,17.0805266,-96.6929095
+8396550351,Carretera al Panteón Jardín,17.0817535,-96.6918896
+8445511409,Carretera al Panteón Jardín,17.08291,-96.6909148
+8445514818,Carretera al Panteón Jardín,17.084064,-96.6899605
+6318725821,Carretera al Panteón Jardín,17.0869282,-96.6875521
+5002520692,Carretera al Panteón Jardín,17.0910114,-96.6859988
+6131312080,Carretera al Panteón Jardín,17.0919299,-96.6861967
+320049774,Carretera al Panteón Jardín,17.0945288,-96.6867265
+6131312229,Carretera al Panteón Jardín,17.09533,-96.6871281
+6131311994,Carretera al Panteón Jardín,17.0960221,-96.6880245
+320049767,Carretera al Panteón Jardín,17.0975895,-96.6892991
+2361305153,Carretera al Panteón Jardín,17.0982173,-96.6903733
+2333299629,Calle Juchatengo y Calle Salina Cruz,17.0377249,-96.6930058
+2333299641,Calle Salina Cruz,17.0386795,-96.6925665
+2333299654,Calle Salina Cruz,17.0395697,-96.6929192
+10173946788,Circuito Sur 1,17.0427821,-96.6914259
+2333299686,Circuito Sur 1,17.0422973,-96.6905062
+2333299681,Circuito Sur 1,17.0417645,-96.6895934
+1349446227,Circuito Sur 1 y Avenida Circuito 1 Oriente,17.0422142,-96.6887911
+2333299694,Avenida Circuito 1 Oriente,17.0433147,-96.6889834
+6196836404,Avenida Circuito 1 Oriente,17.0440846,-96.6894782
+1349446414,Avenida Circuito 1 Oriente,17.0455048,-96.6897991
+1830319152,Avenida Circuito 1 Oriente,17.0464841,-96.689927
+8389950505,La Hacienda,17.0472112,-96.690694
+8389950503,La Hacienda,17.0474336,-96.6916227
+8389950502,La Hacienda,17.0477908,-96.6931142
+320042511,Avenida Constituyentes,17.060691,-96.7371771
+8478038672,Avenida Constituyentes,17.0617117,-96.7377895
+9752676656,Riveras del Atoyac,17.0626271,-96.7381342
+1364760191,Riveras del Atoyac,17.0639835,-96.7387688
+1340830156,Riveras del Atoyac,17.0653971,-96.7394954
+1340830148,Riveras del Atoyac,17.067008,-96.740351
+1364760129,Riveras del Atoyac,17.0684943,-96.7411454
+2333185400,Riveras del Atoyac,17.0693533,-96.7415956
+6129492693,Riveras del Atoyac,17.0702551,-96.7420727
+8947414611,Riveras del Atoyac,17.0722326,-96.743143
+1340830153,Riveras del Atoyac,17.0744649,-96.7443554
+1364803818,Riveras del Atoyac,17.0754791,-96.7449378
+320042505,Riveras del Atoyac,17.076822,-96.7457412
+8437403317,Tecnológico,17.0785965,-96.7467359
+335729083,Calle Ignacio Bernal,17.0781878,-96.7477233
+385024153,Calle Ignacio Bernal,17.0769466,-96.7504352
+2333185480,Calle Ignacio Bernal,17.0757839,-96.7528986
+2333185464,Calle Ignacio Bernal,17.0753387,-96.7539097
+320037023,Calle Ignacio Bernal,17.0750073,-96.754888
+385018347,Calle Ignacio Bernal,17.0748081,-96.756148
+8236657421,Calle Ignacio Bernal,17.0741097,-96.7569147
+385018345,Calle Ignacio Bernal,17.0734207,-96.7576738
+5837213456,Calle Monte Albán,17.0671679,-96.7614689
+2333197366,Calle Mitla y Calle Lambityeco,17.0665758,-96.7607777
+2333197340,Calle Lambityeco,17.0658162,-96.7609083
+2333304894,Calle Cruz del Camino,17.0569058,-96.681603
+2333304893,Calle Cruz del Camino,17.0568952,-96.6826773
+12140273968,Calle Corintios,17.0570757,-96.6838034
+2333139869,Calle Diamante,17.0974448,-96.7480726
+2333153660,Calle Diamante,17.0978323,-96.7466638
+2333139875,Calle Diamante,17.0981196,-96.7456263
+2333139878,Calle Diamante,17.0982613,-96.7450967
+2333146291,Calle Diamante,17.0980047,-96.7460406
+2333153658,Calle Diamante,17.0976654,-96.7472994
+2610458875,Calle Diamante,17.0974311,-96.7495986
+8428041243,Carretera Panamericana,17.0979846,-96.7501853
+2610458896,Carretera Panamericana y Carretera Panamericana (Carretera internacional Cristóbal Colón),17.098954,-96.750605
+6199373459,Calle Buena Vista y Calle Vista Hermosa,17.0081941,-96.7550818
+6199367057,Calle Bella Vista,17.008771,-96.7543857
+3308331955,Calle Valerio Trujano y Avenida Morelos,17.0092872,-96.7565581
+6199373467,Avenida Morelos,17.010275,-96.7562579
+8386956720,Carretera Oaxaca - Zaachila,17.0151725,-96.7560885
+2600858707,Carretera Oaxaca - Zaachila,17.0156909,-96.7552011
+330947736,Calle de Gustavo Díaz Ordáz,17.0560077,-96.7297562
+683854317,Calle de Gustavo Díaz Ordáz,17.0570549,-96.7295878
+1348384358,Calle las Razas,17.0580026,-96.7514748
+5835276068,Calle las Razas,17.0578641,-96.7515566
+2333299637,Calle Juchatengo,17.0382572,-96.6940368
+5840601750,Calle Juchatengo,17.0392411,-96.6939736
+2333299660,Calle Tejupan y Calle Juchatengo,17.0408284,-96.6937921
+6196836704,Calle Juchatengo,17.0423896,-96.693642
+6196836403,Calle Juchatengo,17.0434143,-96.6935386
+1349446062,Avenida de Hornos,17.0501659,-96.6944656
+1349446230,Avenida de Hornos,17.0510909,-96.6942293
+5840633718,Avenida de Hornos,17.0520335,-96.6939649
+6196836172,Avenida de Hornos,17.0535715,-96.6935541
+6338305284,Avenida Hornos,17.0545102,-96.6933298
+8387107474,Avenida Hornos,17.0554724,-96.6930463
+8389242072,Avenida Hornos,17.0569773,-96.6926308
+11846318680,Avenida Hornos,17.058308,-96.6923599
+1349446299,Avenida Hornos,17.0599452,-96.6921336
+1340611195,Avenida San Diego Hornos,17.0608451,-96.691838
+3862319084,Avenida San Diego Hornos,17.0617932,-96.6914235
+2333318146,Avenida San Diego Hornos,17.0626759,-96.691099
+1340611182,Avenida San Diego Hornos,17.063501,-96.6907218
+6129510230,Calzada Valerio Trujano,17.057839,-96.7439145
+2338384774,Calzada Valerio Trujano,17.056873,-96.7449872
+12823945627,Calzada Valerio Trujano,17.0561596,-96.7457771
+8453974655,Calle Primero de Mayo,17.0550243,-96.7457342
+8453974656,Calle Primero de Mayo,17.0540524,-96.745466
+2338384782,Calle Primero de Mayo,17.0530304,-96.7451721
+1348384425,Calle Primero de Mayo,17.0521691,-96.7448222
+1348384186,Calle Primero de Mayo,17.0512716,-96.7442777
+1348383841,Calle Primero de Mayo,17.0510578,-96.7434138
+1348383995,Calle Primero de Mayo,17.0504972,-96.7426389
+1348384188,Calle Primero de Mayo,17.0496048,-96.7425369
+1348384383,Calle Primero de Mayo,17.0496935,-96.7415845
+1348383740,Calle Primero de Mayo,17.0494482,-96.7405173
+1348383591,Calle Primero de Mayo,17.049161,-96.7395517
+1348384297,Calle Primero de Mayo,17.0490969,-96.7386143
+1348383713,Calle Primero de Mayo,17.049181,-96.7375028
+1348384333,Calle Primero de Mayo,17.0491653,-96.7365313
+2333273166,Calle Primero de Mayo,17.0491839,-96.7361241
+2333197400,Calle Miguel Cabrera,17.0677118,-96.7602804
+2333197411,Calle Miguel Cabrera y Calle Abraham Castellanos,17.0681992,-96.7593107
+2333197438,Calle Abraham Castellanos,17.0690277,-96.7596857
+2333197449,Abraham Castellanos y Calle Margarita Maza y Calle Licenciado Marcos Pérez,17.0696925,-96.7592995
+2333197460,Calle Benito Juárez,17.0703753,-96.7579376
+2333197468,Calle Benito Juárez y Calle de Lima,17.0710108,-96.7565698
+2333197476,Avenida Montoya y Calle Benito Juárez,17.0715497,-96.7551904
+2333118719,Carretera a San Luis Beltrán,17.0944857,-96.6976567
+2333131161,Carretera a San Luis Beltrán,17.09533,-96.697303
+1366010458,Carretera a San Luis Beltrán,17.0964372,-96.6968153
+6131283710,Carretera a San Luis Beltrán,17.0971294,-96.6960851
+1366010769,Carretera a San Luis Beltrán,17.0978232,-96.6954348
+1366010071,Carretera a San Luis Beltrán,17.0989563,-96.6955876
+2333322813,Carretera a San Luis Beltrán,17.0995124,-96.6964859
+1366010006,Carretera a San Luis Beltrán y Calle Independencia,17.1000302,-96.6973383
+8386138323,Calle Independencia,17.1010606,-96.6970077
+2333322842,Calle Independencia,17.1024349,-96.6966071
+2333322851,Calle Independencia,17.1034669,-96.6963551
+2333322837,Calle Independencia,17.1014995,-96.6968741
+8387188004,Calle Independencia,17.1002981,-96.6972524
+1366009938,Carretera a San Luis Beltrán,17.0980049,-96.6954139
+5844771113,Carretera a San Luis Beltrán,17.0956105,-96.6971913
+2333131126,Carretera a San Luis Beltrán,17.0939186,-96.6993062
+2333118714,Carretera a San Luis Beltrán,17.0931701,-96.7001112
+1366010586,Carretera a San Luis Beltrán,17.092634,-96.7010921
+1366010033,Carretera a San Luis Beltrán,17.0928227,-96.7020182
+1366010330,Carretera a San Luis Beltrán,17.0929406,-96.7030536
+1348384026,Calle Primero de Mayo,17.0491606,-96.7371943
+1348383975,Calle Primero de Mayo,17.0491753,-96.7382977
+6131719557,Calle Primero de Mayo,17.0490841,-96.7392916
+1348384388,Calle Primero de Mayo,17.0493585,-96.7403108
+1348384514,Calle Primero de Mayo,17.049673,-96.7413055
+6131719596,Calle Primero de Mayo,17.0495238,-96.7423159
+1348383860,Calle Primero de Mayo,17.0502049,-96.7426764
+1348383901,Calle Primero de Mayo,17.0509449,-96.7430651
+1348384178,Calle Primero de Mayo,17.0510618,-96.7441349
+5832852864,Calle Primero de Mayo,17.0520612,-96.7447579
+1348384240,Calle Primero de Mayo,17.055913,-96.7459326
+2333217608,Calzada Valerio Trujano,17.0566118,-96.7452666
+2333217626,Calzada Valerio Trujano,17.0572611,-96.7445369
+12823945628,Calzada Valerio Trujano,17.0585699,-96.7430433
+6131592874,Avenida San Diego Hornos,17.0636775,-96.6906458
+6386694046,Avenida San Diego Hornos,17.0609404,-96.6917377
+8387025892,Avenida San Diego Hornos y Avenida Hornos y Avenida Ferrocarril,17.0600968,-96.6921762
+1349445976,Avenida Hornos,17.0590965,-96.6923592
+6401464402,Avenida Hornos,17.0580479,-96.6924981
+2333307419,Avenida Hornos,17.0571161,-96.69271
+1349446279,Avenida Hornos,17.056198,-96.692952
+8387107478,Avenida Hornos,17.0552832,-96.6931743
+1349445948,Avenida de Hornos,17.0541139,-96.6934519
+1349446406,Avenida de Hornos,17.0524873,-96.6938578
+1349446327,La Hacienda y Avenida El Rosario y Avenida de Hornos,17.0482306,-96.6950028
+8389570152,La Hacienda,17.0479792,-96.6939104
+2359843139,Avenida Crto. 1 Norte,17.0475443,-96.6924012
+2359843170,Avenida Crto. 1 Norte,17.0471827,-96.6908522
+1349446405,Avenida Circuito 1 Oriente,17.0444871,-96.6897285
+5365136431,Avenida Circuito 1 Oriente,17.0422651,-96.6887574
+2333299678,Circuito Sur 1,17.0416672,-96.6894053
+6196836298,Circuito Sur 1,17.0421834,-96.690311
+6196836454,Circuito Sur 1,17.0427353,-96.6913395
+2333299691,Calle Juchatengo,17.043044,-96.6935637
+2333299677,Calle Juchatengo,17.0416805,-96.6936918
+2610398487,Calle Riveras del Atoyac,17.1014738,-96.761069
+2610278960,Innominada,17.1012928,-96.759699
+5850062931,Camino a San Jacinto Amilpas,17.1017164,-96.7583217
+1364846464,Camino a San Jacinto Amilpas,17.1019879,-96.7574105
+1364846467,Camino a San Jacinto Amilpas,17.1022815,-96.7561672
+8425393389,Camino a San Jacinto Amilpas,17.102581,-96.75524
+2333153700,Camino a San Jacinto Amilpas,17.1028797,-96.7542451
+8434070849,Camino a San Jacinto Amilpas,17.1032252,-96.7532238
+2333197471,Calle Benito Juárez,17.0711942,-96.7557795
+2333197474,Calle de Lima y Calle Ignacio Mejía,17.0714022,-96.756838
+2333197481,Calle de Lima y Calle General Antonio de León,17.072192,-96.7573339
+2333197477,Calle General Antonio de León,17.0717765,-96.7581874
+2333197475,Calle Indio Nuyoo,17.0714768,-96.7592852
+2333197464,Calle Indio Nuyoo y Calle Benito Juárez,17.0706771,-96.7597966
+5838697892,Calle Indio Nuyoo y Calle Licenciado Marcos Pérez,17.0698447,-96.7602679
+2333197430,Calle Indio Nuyoo,17.0689682,-96.7605829
+2333197410,Privada de Matías Romero y Calle Matías Romero,17.068122,-96.7604917
+2333197394,Calle José Vasconcelos y Calle Miguel Cabrera,17.067489,-96.7607837
+2333197393,Calle José Vasconcelos,17.0673422,-96.7599178
+6129548691,Boulevard Eduardo Mata,17.0615802,-96.734104
+335728951,Camino a San Jacinto Amilpas,17.1030782,-96.7535696
+1364846480,Camino a San Jacinto Amilpas,17.1026457,-96.7550212
+6128629450,Camino a San Jacinto Amilpas,17.1014166,-96.7592438
+335728963,Calle Hidalgo,17.1010363,-96.760558
+2610398528,Calle Riveras del Atoyac,17.1015899,-96.7612255
+8437297300,Calle Abraham Castellanos,17.0998544,-96.7495752
+5369165223,Calle Abraham Castellanos,17.1002534,-96.7485256
+6345981829,Calle Abraham Castellanos,17.1006898,-96.7473615
+1364828277,Calle Abraham Castellanos,17.1013161,-96.746445
+1364828442,Avenida José Murat,17.1016938,-96.7457152
+1364828432,Avenida José Murat,17.1015866,-96.7448625
+6123990291,Avenida José Murat,17.102066,-96.7439613
+6123990868,Avenida José Murat,17.1024169,-96.7429732
+1364828210,Avenida José Murat,17.1019096,-96.7421749
+8434438001,Avenida José Murat,17.1015876,-96.7412763
+1364828405,Avenida José Murat,17.1016238,-96.7404449
+1364828485,Avenida José Murat,17.1024134,-96.7398386
+6123990739,Avenida José Murat,17.1018289,-96.7389804
+8181540058,Avenida José Murat,17.1011354,-96.7384829
+12797026010,Avenida José Murat,17.1004573,-96.7378606
+6124006738,Avenida José Murat,17.0996793,-96.7384185
+1364828273,Avenida José Murat,17.0988601,-96.7390529
+1364828186,Avenida José Murat,17.0978945,-96.7392726
+6129318057,Avenida José Murat,17.0968894,-96.7392366
+12797026012,Avenida José Murat,17.1008226,-96.7381167
+1364828390,Avenida José Murat,17.1016584,-96.7388396
+1364828143,Avenida José Murat,17.1024172,-96.7396937
+1364828458,Avenida José Murat,17.1017468,-96.7403537
+1364828414,Avenida José Murat,17.1015328,-96.7412362
+1364828261,Avenida José Murat,17.1016887,-96.745565
+2333146321,Calle Abraham Castellanos,17.1007068,-96.7473161
+6128665701,Calle Abraham Castellanos,17.1002916,-96.7484237
+2333146311,Calle Abraham Castellanos,17.0999021,-96.749451
+8444497510,Calle Abraham Castellanos,17.0994575,-96.7506333
+2333153692,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.1008047,-96.7515533
+6193551922,Avenida del Bosque,17.0273077,-96.7538301
+6193551755,Avenida del Bosque,17.0263957,-96.754097
+6345563583,Avenida del Bosque,17.0252852,-96.7544775
+6193550615,Calle Mazateca y Avenida del Bosque,17.0243938,-96.7548182
+6193550857,Calle Azteca y Calle Mazateca,17.0247753,-96.7565354
+4401860178,Avenida Monte Albán y Calle Zapoteca,17.0246742,-96.7582304
+4401860169,Avenida Monte Albán,17.0235316,-96.758325
+6193550182,Avenida Monte Albán,17.0225099,-96.7586297
+528995495,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0219091,-96.7579448
+528995499,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0218165,-96.7568934
+528995504,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0209807,-96.755681
+528995511,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0203807,-96.7530419
+2333330306,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0199099,-96.7506847
+3307859043,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.019606,-96.749764
+2600858692,Carretera Oaxaca - Zaachila,17.0193854,-96.7488362
+6131723269,Avenida Ferrocarril,17.0501662,-96.7284899
+2387940971,Avenida Ferrocarril,17.0504385,-96.7274654
+1340571119,Boulevard Eduardo Mata,17.0507433,-96.7262511
+8444670983,Boulevard Eduardo Mata,17.0509971,-96.7252586
+4443962549,Fujiyama,17.0880496,-96.7330273
+8487809450,Fujiyama,17.0887549,-96.7336116
+4443938366,Calle Independencia,17.0940511,-96.7345765
+8389830487,Calle Independencia,17.0947288,-96.7353366
+4443972022,Calle Independencia,17.0958429,-96.7355901
+4443938362,Calle Independencia,17.0966464,-96.7362374
+8389830485,Calle Independencia,17.0972547,-96.7369158
+6129318030,Calle Independencia,17.0984464,-96.7371977
+6123990560,Calle Independencia,17.0993572,-96.7372161
+3862319244,Calle Independencia,17.1003873,-96.7375504
+8396370705,Avenida Oriente,17.0850685,-96.6940293
+1366010775,Avenida Oriente,17.0866136,-96.6938496
+8396370687,Avenida Oriente,17.0865898,-96.6939208
+5844226033,Avenida Oriente,17.0856229,-96.6940413
+2333111871,Avenida Central Oriente Poniente y Avenida Oriente,17.0844599,-96.6941892
+10164195228,Avenida Central Oriente Poniente,17.0845237,-96.6955668
+5844217548,Avenida Central Oriente Poniente,17.0841519,-96.6965257
+5844212378,Avenida Central Oriente Poniente,17.0837186,-96.6974216
+5844192718,Avenida Central Oriente Poniente,17.083618,-96.6983919
+5844212361,Avenida Central Oriente Poniente,17.083668,-96.6995149
+1720435484,Avenida Benito Juárez,17.0704835,-96.719812
+335729459,Calzada Valerio Trujano y Calle Primero de Mayo y Antigua Carretera a Monte Albán,17.056041,-96.7458811
+2333299650,Calle Salina Cruz,17.0391891,-96.6927962
+5840603798,Calle Juchatengo,17.0380853,-96.6936941
+2333299643,Calle Juchatengo,17.0388504,-96.6940355
+2333299674,Calle Juchitán,17.0416223,-96.6920825
+2333299680,Calle Juchitán,17.0418008,-96.6908672
+2333299683,Circuito Sur 1 y Calle Juchitán,17.0419093,-96.6898196
+2333299682,Circuito Sur 1,17.0418773,-96.6890096
+1349446397,Avenida Circuito 1 Oriente,17.0428975,-96.6887213
+5837213449,Calle Luu Laa,17.0668477,-96.7617758
+2333197324,Calle Lambityeco,17.0653049,-96.7609898
+6319132399,Innominada,17.0644122,-96.7610131
+2333197469,Calle Margarita Maza y Calle Ignacio Mejía,17.0710105,-96.7590416
+2333197466,Calle Ignacio Mejía,17.0708452,-96.7580385
+667631194,Avenida Montoya,17.0713143,-96.7550321
+2333299638,Calle Juchatengo,17.0383189,-96.6940864
+2333299630,Calle Juchatengo,17.0377922,-96.6931422
+8386555703,Calle Lambityeco,17.0662427,-96.760835
+2333197376,Calle Mitla,17.0666797,-96.7614546
+2333197396,Calle Nizaa y Calle Monte Albán,17.0675917,-96.7614054
+6343597784,Calle Ignacio Bernal,17.0745346,-96.7565634
+8434501834,Calle Ignacio Bernal,17.0749291,-96.7555847
+320037025,Calle Ignacio Bernal,17.0750667,-96.7545339
+291245327,Calle Ignacio Bernal,17.075717,-96.7530294
+2333185511,Calle Ignacio Bernal,17.0768343,-96.750673
+2333185544,Calle Ignacio Bernal,17.0779759,-96.7481477
+335729076,Innominada,17.0785797,-96.7468762
+8448400665,Tecnológico,17.0790286,-96.7457825
+8448400663,Tecnológico,17.0795865,-96.7445608
+1364799097,Tecnológico,17.0800092,-96.7436238
+8396370704,Avenida Oriente y Avenida Central Oriente Poniente,17.0844548,-96.6940985
+2333111873,Avenida Central Oriente Poniente,17.0845109,-96.6950686
+2333209437,Avenida Oaxaca,17.0640836,-96.7507077
+2333209416,Avenida Oaxaca,17.063447,-96.7514916
+2333209371,Calle Plan de Ayutla,17.0618861,-96.7531666
+2333217704,Calle Plan de Ayutla,17.0600394,-96.7538615
+2333217561,Antigua Carretera a Monte Albán,17.0551557,-96.7450798
+8453974642,Antigua Carretera a Monte Albán,17.0544261,-96.7443931
+2333217510,Antigua Carretera a Monte Albán,17.0537832,-96.7436987
+320038714,Antigua Carretera a Monte Albán,17.0530784,-96.7428731
+320038717,Antigua Carretera a Monte Albán,17.0523004,-96.7423446
+5834831373,Antigua Carretera a Monte Albán,17.0522048,-96.7414212
+320038722,Antigua Carretera a Monte Albán,17.0522045,-96.7403825
+2338384744,Antigua Carretera a Monte Albán,17.051733,-96.7392352
+2333273221,Antigua Carretera a Monte Albán,17.0513225,-96.7382981
+320038729,Antigua Carretera a Monte Albán,17.0511826,-96.7373547
+6321831854,Antigua Carretera a Monte Albán,17.0512675,-96.7362047
+320038731,Antigua Carretera a Monte Albán,17.051347,-96.735199
+335885655,Avenida La Paz,17.0522512,-96.7361901
+8433879253,Avenida La Paz,17.0531891,-96.7372202
+2285079742,Avenida La Paz,17.054151,-96.7383195
+8478642215,Avenida La Paz,17.0549511,-96.7391589
+1348384506,Avenida La Paz y Avenida Mexicapan,17.0556813,-96.7398742
+1348384136,Avenida Mexicapan,17.0567509,-96.741132
+8478642212,Avenida Mexicapan,17.0574756,-96.74192
+6129510253,Avenida Mexicapan,17.0581411,-96.7425797
+1366167039,Zempoaltepetl,17.095496,-96.7410558
+1366167481,Zempoaltepetl,17.0935905,-96.7415741
+6129318099,Zempoaltepetl,17.0928059,-96.7417689
+6345955516,Insurgentes,17.091817,-96.7433397
+1364799264,Insurgentes,17.0910519,-96.7427487
+1364799209,Insurgentes,17.0899854,-96.7423544
+1364799119,Insurgentes,17.089547,-96.7412896
+6129364191,Insurgentes,17.0893933,-96.7402057
+1364799133,Cuauhtémoc,17.0854167,-96.7401523
+1364799218,Cuauhtémoc,17.0847321,-96.7409409
+1364799233,Calle Cuauhtémoc y Cuauhtémoc,17.0839142,-96.7412761
+1364799205,Calle Cuauhtémoc,17.0835297,-96.7421505
+2333151382,Calle Cuauhtémoc,17.0830436,-96.7431841
+291052326,Carretera Panamericana y Carretera Panamericana (Carretera internacional Cristóbal Colón),17.0824569,-96.7436099
+8445529919,Carretera Panamericana (Carretera internacional Cristóbal Colón),17.0813795,-96.7435831
+2333322760,Carretera a Donají,17.0963897,-96.7069344
+2333131189,Carretera a Donají,17.0963659,-96.7040963
+1366010069,Carretera a Donají,17.0969297,-96.7031166
+1366010553,Carretera a Donají,17.0983382,-96.7025807
+6130979675,Carretera a Donají,17.0997681,-96.7021713
+8390184925,Carretera a Donají,17.1004586,-96.7016575
+2333318267,Calle Emiliano Zapata,17.1018173,-96.7010241
+2333318270,Calle Emiliano Zapata,17.1029562,-96.7008939
+6131033590,Calle Emiliano Zapata,17.1039016,-96.7007681
+2333318281,Calle Emiliano Zapata y Callejón del Muerto,17.1050783,-96.7005969
+1366010332,Carretera a Donají,17.105706,-96.7009982
+6128919023,Calle Benito Juárez,17.070695,-96.7572369
+2333197461,Calle Margarita Maza y Calle Benito Juárez,17.0705712,-96.7591212
+2333197459,Calle Indio Nuyoo,17.0702489,-96.760062
+2333209341,Calle Plan de Ayutla,17.061222,-96.7535046
+2333209378,Calle Plan de Ayutla y Avenida Oaxaca,17.0620906,-96.7531429
+2333209403,Avenida Oaxaca,17.0630098,-96.7520039
+8396403736,Avenida Central Oriente Poniente y Avenida Oriente,17.0843878,-96.6941969
+8364627334,Carretera Panamericana,17.1388144,-96.7760279
+8411291809,Carretera Panamericana,17.1401002,-96.7765627
+8414093749,Carretera Panamericana,17.1410116,-96.776934
+8364627332,Carretera Panamericana,17.1419251,-96.777306
+12836746365,Carretera Oaxaca - México,17.1430703,-96.7777872
+291207110,Carretera Oaxaca - México,17.14399,-96.778144
+291206076,Carretera Oaxaca - México,17.1450132,-96.7783334
+1351932029,Carretera Internacional Oaxaca - México,17.1461228,-96.7784349
+8389313198,Carretera Internacional Oaxaca - México,17.1472002,-96.7788045
+1351932131,Carretera Internacional Oaxaca - México,17.1480391,-96.7793561
+320034801,Carretera Internacional Oaxaca - México,17.1490908,-96.7801034
+320034803,Carretera Internacional Oaxaca - México,17.1502038,-96.7807471
+8387036689,Carretera Internacional Oaxaca - México,17.1510912,-96.7811162
+320034911,Carretera Internacional Oaxaca - México,17.152521,-96.7817087
+291053139,Carretera Internacional Oaxaca - México,17.1542596,-96.7824255
+1350747959,Carretera Internacional Oaxaca - México,17.1553819,-96.7828354
+1350747724,Carretera Internacional Oaxaca - México,17.1564197,-96.783298
+1350747761,Carretera Internacional Oaxaca - México,17.1583594,-96.7841302
+6120012993,Carretera Internacional Oaxaca - México,17.1613005,-96.7853275
+8386661586,Carretera Internacional Oaxaca - México,17.1621521,-96.7856651
+6120126876,Carretera Internacional Oaxaca - México,17.1631197,-96.786062
+6120127073,Carretera Internacional Oaxaca - México,17.164313,-96.7865639
+8389640378,Carretera Internacional Oaxaca - México,17.1653601,-96.7869794
+1213434040,Carretera Internacional Oaxaca - México,17.1666491,-96.7875178
+8389597728,Carretera Internacional Oaxaca - México,17.170339,-96.7890961
+1368439377,Carretera Internacional Oaxaca - México,17.1713394,-96.7894921
+8389534152,Carretera a Nazareno,17.1713571,-96.7907475
+6120093807,Carretera a Nazareno,17.1712692,-96.7918535
+6120093719,Carretera a Nazareno,17.1710988,-96.7943332
+335731181,Carretera a Nazareno,17.1707388,-96.7981727
+8413788201,Carretera a Nazareno,17.1705107,-96.8006779
+335731182,Carretera a Nazareno,17.1703198,-96.8023302
+4565490657,Carretera a Nazareno,17.1698406,-96.8031804
+335731188,Calle Quinta Independencia,17.1694792,-96.8040468
+6120093448,Calle Quinta Independencia,17.1694407,-96.8050725
+6120093440,Calle Quinta Independencia,17.1694695,-96.8060678
+335731198,Calle Tercera Constitución y Calle Cuarta Constitución,17.1705094,-96.8080165
+6120093684,Calle Cuarta Constitución,17.1717406,-96.8085771
+6120093743,Calle Tercera Independencia,17.1723014,-96.8102494
+6120045869,Calle Segunda Independencia,17.1721151,-96.8115516
+8389528364,Calle Segunda Independencia,17.1716855,-96.8136707
+1368435140,Calle Segunda Independencia y Avenida Constitución,17.171379,-96.8151367
+6119897910,Avenida Constitución,17.171148,-96.8178843
+335731205,Avenida Constitución,17.171073,-96.8188228
+335731206,Avenida Constitución,17.171078,-96.8203572
+6338680140,Calle Libertad,17.1713377,-96.8211082
+2898343824,Calle Libertad,17.1722826,-96.8211488
+2898187524,Calle Libertad,17.1734038,-96.8211261
+2898187541,Calle Libertad,17.1743773,-96.8211396
+2898187601,Calle Libertad y Calle Guerrero,17.1757217,-96.8211609
+2898187655,Calle Guerrero y Calle Hidalgo,17.1773964,-96.8211295
+2898187678,Calle Morelos,17.178274,-96.8209284
+2898187750,Calle Morelos,17.1794479,-96.8209708
+2898187757,Calle Francisco I. Madero,17.179691,-96.8215782
+9810924890,Calle Francisco I. Madero,17.1793254,-96.8224931
+6119898215,Calle Francisco I. Madero,17.1789492,-96.823574
+6338680135,Calle Francisco I. Madero,17.1785324,-96.8246577
+6119897889,Calle Francisco I. Madero,17.1781654,-96.8255912
+2898187665,Calle Francisco I. Madero,17.1777849,-96.827136
+2898187661,Calle Francisco I. Madero y Calle Venustiano Carranza,17.1776718,-96.8282811
+2898187635,Calle Venustiano Carranza y Calle del Pozo,17.1767408,-96.8278476
+2898187631,Calle del Pozo,17.1765174,-96.8289116
+2898187603,Calle del Pozo,17.175718,-96.8294643
+6119898190,Calle del Pozo,17.175826,-96.8305566
+6119898030,Calle del Pozo,17.1759919,-96.8316893
+2898187617,Calle del Pozo,17.1762106,-96.8328552
+8410383388,Calle del Pozo,17.1763738,-96.8342018
+9812280637,Calle del Pozo,17.1763997,-96.8351885
+2898187626,Calle del Pozo,17.1763984,-96.8361561
+2898187619,Calle del Pozo,17.1762262,-96.8365329
+6119898533,Calle del Pozo,17.1763943,-96.8355184
+2898187627,Calle del Pozo,17.1763822,-96.8344994
+8410383383,Calle del Pozo,17.1762528,-96.8330942
+6340478619,Calle del Pozo,17.1760585,-96.8320989
+6119898041,Calle del Pozo,17.1758587,-96.8308642
+2898187643,Calle Francisco I. Madero,17.1769905,-96.8263174
+2898343838,Calle Hidalgo,17.1769882,-96.8253237
+2898187645,Calle Hidalgo,17.1771176,-96.8243173
+2898187649,Calle Hidalgo,17.1772147,-96.8232881
+2898187653,Calle Hidalgo,17.1773074,-96.8221111
+6119897396,Avenida Constitución,17.1710636,-96.8189778
+1368435143,Calle Segunda Independencia,17.171668,-96.813763
+1368435141,Calle Segunda Independencia,17.1719556,-96.8123367
+335731203,Calle Segunda Independencia,17.1721703,-96.8110098
+335731201,Calle Cuarta Constitución y Calle Tercera Independencia,17.1723794,-96.8090202
+6120093614,Calle Cuarta Constitución,17.1712757,-96.8083718
+335731197,Calle Tercera Constitución,17.1694728,-96.8069248
+335731193,Calle Quinta Independencia,17.1694765,-96.8058882
+9812517220,Calle Quinta Independencia,17.1694135,-96.8046937
+335731186,Carretera a Nazareno,17.1696151,-96.803572
+335731184,Carretera a Nazareno,17.1701673,-96.8027285
+6301724354,Carretera a Nazareno,17.1710168,-96.7952585
+335730870,Carretera a Nazareno y Carretera Internacional Oaxaca - México,17.1714771,-96.7896808
+6120093668,Carretera Internacional Oaxaca - México,17.1704412,-96.7892471
+6120093464,Carretera Internacional Oaxaca - México,17.1683681,-96.7883894
+292799628,Carretera Internacional Oaxaca - México,17.166597,-96.7876542
+8389640376,Carretera Internacional Oaxaca - México,17.1643484,-96.7867198
+8389534155,Carretera Internacional Oaxaca - México,17.1631371,-96.7862165
+6119963830,Carretera Internacional Oaxaca - México,17.1618312,-96.7856769
+6120012653,Carretera Internacional Oaxaca - México,17.1609037,-96.785244
+6120012467,Carretera Internacional Oaxaca - México,17.1592317,-96.7845947
+1350747906,Carretera Internacional Oaxaca - México,17.1583256,-96.7842377
+291207113,Carretera Internacional Oaxaca - México,17.1567566,-96.7835848
+8761698469,Carretera Internacional Oaxaca - México,17.1555948,-96.7831733
+6120012451,Carretera Internacional Oaxaca - México,17.1547032,-96.7827736
+1213434094,Carretera Internacional Oaxaca - México,17.1525492,-96.7818528
+1351020767,Carretera Internacional Oaxaca - México,17.1505647,-96.7810116
+1351020766,Carretera Internacional Oaxaca - México,17.149643,-96.7806233
+291206225,Carretera Internacional Oaxaca - México,17.1478204,-96.7798688
+8364627330,Carretera Internacional Oaxaca - México,17.1467465,-96.7794122
+1351932027,Carretera Oaxaca - México,17.1453252,-96.7788937
+291206045,Carretera Oaxaca - México,17.1439455,-96.7782827
+1368387298,Carretera Oaxaca - México,17.1425677,-96.7777165
+8410824523,Carretera Panamericana,17.1414508,-96.7772421
+8411397350,Carretera Panamericana,17.1402875,-96.7767709
+6122462399,Carretera Panamericana,17.1391214,-96.7762985
+8410824544,Carretera Panamericana,17.1376785,-96.7757092
+8411227715,Carretera Panamericana y Calzada San Lorenzo,17.1364869,-96.7752225
+2381635560,Carretera Panamericana,17.135546,-96.7748224
+291052411,Carretera Panamericana,17.1345988,-96.7742909
+1351932276,Carretera Panamericana,17.1328768,-96.7728932
+8386682646,Carretera Panamericana,17.1321011,-96.7722565
+6122462415,Carretera Panamericana,17.1312884,-96.771575
+8386682656,Carretera Panamericana,17.1301657,-96.770675
+1381458350,Carretera Panamericana,17.1291607,-96.7698458
+1381458300,Carretera Panamericana,17.1283156,-96.7691838
+2362412226,Carretera Panamericana,17.1259429,-96.7672325
+8670459326,Carretera Panamericana,17.124154,-96.7658193
+2333174711,Carretera Panamericana,17.1231671,-96.7650575
+1340820318,Boulevard Eduardo Mata y Avenida Juárez Maza,17.0608112,-96.7337102
+1281523529,Los Mártires y Calle la Paz,17.1025853,-96.6651472
+3317674422,Los Mártires,17.1012879,-96.6653605
+1281523454,Los Mártires y Carretera a San Andrés Huayapam,17.0999467,-96.6656276
+6340249036,Carretera a San Andrés Huayapam,17.097989,-96.6681549
+1281523337,Carretera a San Andrés Huayapam,17.0974689,-96.6692164
+8407078634,Carretera a San Andrés Huayapam,17.0976194,-96.670454
+1281523116,Carretera a San Andrés Huayapam,17.0981149,-96.6715661
+5002520483,Carretera a San Andrés Huayapam,17.0979775,-96.6725
+1281523419,Carretera a San Andrés Huayapam,17.0974291,-96.6737641
+1281523498,Carretera a San Andrés Huayapam,17.0969049,-96.674538
+1281523260,Carretera a San Andrés Huayapam,17.0964127,-96.6754606
+8407138957,Carretera a San Andrés Huayapam,17.0959915,-96.6764162
+1281523532,Carretera a San Andrés Huayapam,17.0958999,-96.6778102
+4429276424,Carretera a San Andrés Huayapam,17.0955454,-96.6788474
+2379801733,Carretera a San Andrés Huayapam,17.0949298,-96.6796917
+2379801742,Carretera a San Andrés Huayapam,17.0942896,-96.6804947
+5002520680,Carretera a San Andrés Huayapam,17.0935008,-96.6814846
+6131312079,Carretera a San Andrés Huayapam,17.0923726,-96.6826919
+6131310978,Carretera a San Andrés Huayapam,17.0916216,-96.6835858
+2359322483,Carretera a San Andrés Huayapam,17.0903518,-96.6847922
+2359322505,Carretera a San Andrés Huayapam,17.0894942,-96.6855516
+2359322442,Carretera al Panteón Jardín,17.0886164,-96.6861443
+6131362008,Carretera al Panteón Jardín,17.0876271,-96.6869694
+8445511381,Carretera al Panteón Jardín,17.0865593,-96.6878526
+8428702747,Boulevard Eduardo Mata,17.0608572,-96.7335644
+8411227714,Calzada San Lorenzo,17.1363015,-96.7759116
+8411227712,Calzada San Lorenzo,17.1360706,-96.7769637
+8411227711,Calzada San Lorenzo,17.1355917,-96.7790117
+8411227710,Calzada San Lorenzo,17.1352738,-96.7803735
+8410848681,Calzada San Lorenzo,17.1349917,-96.7814145
+8414179346,Calzada San Lorenzo,17.1347786,-96.7823537
+4731680233,Calzada San Lorenzo,17.134398,-96.7840724
+1368375597,Calzada San Lorenzo,17.1341093,-96.7852433
+335730455,Calzada San Lorenzo,17.133888,-96.7862231
+5177015271,Calzada San Lorenzo,17.1336316,-96.7873744
+5177015272,Calzada San Lorenzo,17.1333706,-96.7884726
+335730509,Calzada San Lorenzo,17.133078,-96.7898457
+6122351278,Calzada San Lorenzo,17.1327444,-96.7918648
+8404598941,Calzada San Lorenzo,17.1325756,-96.7930175
+8404598934,Calzada San Lorenzo,17.1324487,-96.7940549
+8404598938,Calzada San Lorenzo,17.132227,-96.7950735
+8404598925,Calzada San Lorenzo,17.1319258,-96.7960645
+8407024876,Calzada San Lorenzo,17.1313561,-96.7974539
+335730460,Calzada San Lorenzo,17.131003,-96.7985094
+4435003909,Calzada San Lorenzo y Avenida Zaragoza,17.1308118,-96.800096
+6122351333,Avenida Zaragoza,17.1307537,-96.8011245
+335730463,Avenida Zaragoza,17.1307017,-96.8021757
+6122351304,Calle Morelos,17.1299374,-96.8028344
+335730468,Calle Morelos y Calle Cuauhtémoc,17.1288242,-96.8028231
+6122351261,Calle Independencia,17.1268937,-96.8035958
+5866431521,Calle Independencia,17.1257612,-96.8037356
+2285114360,Calle Independencia y Avenida Eliseo Jiménez Ruiz,17.1248261,-96.8043049
+4701756205,Avenida Eliseo Jiménez Ruiz,17.1242112,-96.8058224
+6122351435,Avenida Eliseo Jiménez Ruiz,17.1236551,-96.8071059
+6122351139,Avenida Eliseo Jiménez Ruiz,17.1233092,-96.8079806
+6345444217,Avenida Eliseo Jiménez Ruiz,17.1228296,-96.8091303
+2285114419,Calzada de Guadalupe,17.1226942,-96.8100548
+2285114263,Calzada de Guadalupe,17.1230129,-96.8115662
+6122123334,Calzada de Guadalupe,17.1233594,-96.813122
+2285114317,Calzada de Guadalupe,17.1236721,-96.8143545
+2285114379,Calzada de Guadalupe,17.1235427,-96.8155427
+4692963967,Calzada de Guadalupe,17.122998,-96.8172124
+6122123175,Calzada de Guadalupe,17.1226583,-96.8182397
+2285114315,Calzada de Guadalupe,17.1221816,-96.819806
+6122123075,Calzada de Guadalupe,17.1217741,-96.8211638
+2285114296,Calzada de Guadalupe,17.1213049,-96.8226786
+2285114240,Calzada de Guadalupe,17.1209333,-96.8235369
+3287612393,Avenida Juárez,17.1214638,-96.8237168
+3287612396,Avenida Juárez,17.1224609,-96.8235424
+3287612415,Avenida Juárez,17.1241899,-96.822546
+3287612418,Avenida Juárez,17.1248954,-96.8221205
+10795856028,Innominada,17.0511445,-96.7290809
+320042547,Innominada,17.0502487,-96.7288934
+528995488,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0223144,-96.7600637
+528995482,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0226067,-96.7613619
+4788576617,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0229667,-96.7622479
+6193551584,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0234529,-96.763349
+8390217852,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0240184,-96.7648469
+528995474,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0242533,-96.7657553
+8389395733,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0244553,-96.7667008
+528995471,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0248278,-96.7681425
+528995470,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0250996,-96.7694407
+6123878327,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0253799,-96.7707648
+6123877403,Calle Congreso de la Unión,17.0264089,-96.7712878
+4788576672,Calle Congreso de la Unión y Calle los Virreyes,17.0280808,-96.7712053
+4788576696,Calle Revolución Mexicana,17.027247,-96.7721799
+528995464,Calle Revolución Mexicana y Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0262408,-96.7722195
+528995461,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0267872,-96.773067
+6333955217,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0277937,-96.7750615
+8393498640,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0283567,-96.7761089
+6123879263,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0289593,-96.7770396
+6123878300,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0304084,-96.7782399
+528995452,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0318279,-96.7792685
+8393498642,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0325049,-96.7800544
+10115295481,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.033305,-96.7811608
+8403980612,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0353602,-96.7842046
+6336587229,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.036016,-96.7851215
+528995429,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0380284,-96.7881068
+528995425,Innominada,17.0389752,-96.7880005
+528995420,Innominada,17.0395958,-96.7884913
+6123878618,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0335775,-96.7815899
+528995450,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0328012,-96.7804579
+528995451,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0322125,-96.779687
+3307868450,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0309315,-96.7786422
+528995454,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0295403,-96.7774672
+6123879882,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0286772,-96.7766708
+6123874824,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0278425,-96.7751527
+4788576677,Calle Constituyentes y Calle sl Correo Mayor,17.0272251,-96.7717069
+3307886638,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.025551,-96.7712083
+528995469,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0252637,-96.7702749
+6336245421,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0249774,-96.768864
+4788576608,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.024675,-96.7675688
+528995472,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0243559,-96.7663079
+528995476,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0240635,-96.7649721
+6193550585,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0236088,-96.7637108
+4788576448,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0230103,-96.7623539
+6193551734,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0223339,-96.7602186
+528995489,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0221553,-96.7592376
+8445183833,Innominada,17.0521542,-96.7291575
+320042525,Avenida Constituyentes,17.0529563,-96.729751
+1955833871,Avenida Constituyentes,17.0538213,-96.7304981
+320042522,Avenida Constituyentes,17.054351,-96.7315887
+8454128736,Avenida Constituyentes,17.0546583,-96.7333248
+320042520,Avenida Constituyentes,17.0548518,-96.7344991
+8424852807,Avenida Constituyentes,17.0554363,-96.7356698
+6131718082,Avenida Constituyentes,17.0560883,-96.7364188
+320042515,Avenida Constituyentes,17.0570391,-96.7371022
+1955834030,Avenida Constituyentes,17.0581291,-96.7372435
+9752676651,Avenida Constituyentes,17.0595552,-96.7370398
+2285079734,Avenida Constituyentes,17.0596734,-96.7370314
+8444670980,Innominada,17.0510496,-96.724695
+1995785264,Carretera Federal Oaxaca - Tuxtepec,17.0840751,-96.6568814
+1995785299,Carretera Federal Oaxaca - Tuxtepec,17.0850515,-96.6561079
+1995785293,Carretera Federal Oaxaca - Tuxtepec,17.0859768,-96.655695
+6201867959,Carretera Federal Oaxaca - Tuxtepec,17.0874459,-96.6553305
+1995785298,Carretera Federal Oaxaca - Tuxtepec,17.0899154,-96.6547269
+3017459955,Calle la Siempre Viva,17.0910127,-96.6545498
+1281523494,Calle la Siempre Viva,17.0919536,-96.6543768
+1281523130,Calle la Siempre Viva,17.0929111,-96.6546196
+4553062040,Calle la Siempre Viva,17.0962401,-96.6557823
+1281523174,Calle la Siempre Viva,17.097254,-96.6561444
+1281523371,Calle la Siempre Viva,17.0981154,-96.6566513
+6340054152,Calle la Siempre Viva,17.0990484,-96.6577361
+8411328972,Calle la Siempre Viva,17.1007125,-96.6597686
+1281523424,Calle la Siempre Viva,17.1013495,-96.6605499
+1281523121,Calle la Paz,17.1020732,-96.6618672
+3317674423,Calle la Paz,17.1022389,-96.6629845
+3317674398,Calle la Paz,17.1024309,-96.6641663
+1376495113,Los Mártires,17.1005605,-96.6654872
+2594571625,Avenida Eduardo Mata,17.0537643,-96.7143712
+2594571635,Avenida Eduardo Mata,17.0541447,-96.713254
+2594571626,Avenida Eduardo Mata,17.0546076,-96.7124341
+2594571628,Avenida Eduardo Mata y Avenida Ferrocarril,17.0551793,-96.7116931
+6641124990,Avenida Ferrocarril,17.0558794,-96.7110238
+1340592883,Avenida Ferrocarril,17.0571994,-96.7098632
+1340592890,Avenida Ferrocarril,17.0581916,-96.7090459
+319948123,Avenida Ferrocarril,17.0589207,-96.7083274
+319948122,Avenida Ferrocarril,17.059439,-96.7075415
+291214273,Avenida Ferrocarril,17.05989,-96.70648
+1340664118,Avenida Ferrocarril,17.0602002,-96.7053228
+1340658148,Avenida Ferrocarril,17.0606239,-96.7037782
+1345241114,Avenida Ferrocarril,17.0608983,-96.7027373
+6345331656,Avenida Ferrocarril,17.0611772,-96.7016659
+8519903127,Avenida Ferrocarril,17.0614818,-96.7005132
+6317176088,Avenida Ferrocarril,17.0618935,-96.6987682
+6317176085,Avenida Ferrocarril,17.061913,-96.6976851
+6317176083,Avenida Ferrocarril,17.0608452,-96.6946232
+6317176090,Avenida Ferrocarril,17.0600822,-96.6925031
+5840253067,Riveras del Río Salado,17.0532386,-96.6913365
+2359843072,Riveras del Río Salado,17.0525457,-96.6896537
+3797770740,Avenida Sabinos,17.0516457,-96.6895445
+2359843182,Avenida Sabinos,17.0505925,-96.689487
+1349446362,Avenida Sabinos,17.0495387,-96.6894951
+1349446078,Calle Palmeras y Calle Venustiano Carranza,17.0487635,-96.6892871
+8392831577,Calle Venustiano Carranza y Calle2,17.0483021,-96.6883999
+8389783157,Calle Benito Juárez,17.0480644,-96.6866249
+6196836865,Calle Benito Juárez,17.0480951,-96.6854904
+6196836786,Calle Benito Juárez,17.0483045,-96.6840464
+6196836879,Calle Benito Juárez,17.0485086,-96.6829246
+5840303370,Calle Benito Juárez,17.0485228,-96.6828449
+6196836504,Calle Benito Juárez,17.0481052,-96.6850189
+5840303363,Calle Benito Juárez,17.0480487,-96.6860453
+2333299743,Calle2 y Calle Benito Juárez,17.0481391,-96.6879783
+2333299750,Avenida Sabinos,17.0504662,-96.6894806
+3797770738,Avenida Sabinos,17.0514623,-96.6895407
+1349446413,Riveras del Río Salado y Avenida Sabinos,17.0525275,-96.6896042
+2359843184,Riveras del Río Salado,17.0531896,-96.6912157
+2359843111,Riveras del Río Salado,17.0538868,-96.692934
+1365124098,Avenida Hornos,17.0544336,-96.69336
+1340646955,Avenida Ferrocarril,17.0609718,-96.6946187
+291209247,Avenida Ferrocarril,17.0619428,-96.6971284
+319947996,Avenida Ferrocarril,17.0621546,-96.6981554
+319947994,Avenida Ferrocarril,17.0620037,-96.6992875
+8519903128,Avenida Ferrocarril,17.0616338,-96.7005696
+6345331657,Avenida Ferrocarril,17.0613063,-96.7017235
+1340602294,Avenida Ferrocarril,17.060777,-96.7037581
+851476971,Avenida Ferrocarril,17.060493,-96.7047658
+1349021264,Avenida Ferrocarril,17.0601936,-96.7059565
+851505436,Avenida Ferrocarril,17.0599051,-96.7068599
+343001510,Avenida Ferrocarril,17.0591836,-96.7081777
+851361428,Avenida Ferrocarril,17.0577977,-96.7095835
+1349021224,Avenida Ferrocarril,17.0569792,-96.7102589
+1349021261,Avenida Ferrocarril,17.0561859,-96.7109427
+319948476,Avenida Ferrocarril,17.0552685,-96.7117739
+6641121779,Avenida Ferrocarril,17.0545374,-96.71276
+6641121781,Boulevard Eduardo Mata,17.0540896,-96.7136818
+10795847069,Calle de Carlos María Bustamante,17.0546376,-96.7261145
+8427825216,Calle de M. Arista,17.0554676,-96.7265243
+2786376177,Carretera Oaxaca-Zaachila,17.0075603,-96.7689165
+2786376172,Carretera Oaxaca-Zaachila,17.0067831,-96.7695925
+6338130931,Carretera Oaxaca-Zaachila,17.0036326,-96.7700317
+6123879353,Carretera Oaxaca-Zaachila,17.0020021,-96.7702416
+2786376188,Carretera Oaxaca-Zaachila,17.0010351,-96.7706412
+6123878720,Carretera Oaxaca-Zaachila,16.9999526,-96.7716256
+6123875543,Carretera Oaxaca-Zaachila,16.9986688,-96.7728265
+2786376127,Carretera Oaxaca-Zaachila,16.9979391,-96.7735326
+2786376200,Carretera Oaxaca-Zaachila,16.9974261,-96.7746645
+2786376164,Carretera Oaxaca-Zaachila,16.9973696,-96.776062
+6123878311,Carretera Oaxaca-Zaachila,16.9969515,-96.7773387
+6123879566,Carretera Oaxaca-Zaachila,16.996477,-96.7785242
+320044427,Carretera Oaxaca-Zaachila,16.9960461,-96.7794362
+320044431,Carretera Oaxaca-Zaachila,16.9944249,-96.7794442
+320044434,Carretera Oaxaca-Zaachila,16.9936044,-96.7787728
+1350046181,Carretera Oaxaca-Zaachila,16.9920015,-96.7786451
+6123880215,Carretera a Zaachila,16.9904591,-96.7780082
+6123878459,Carretera a Zaachila,16.9896293,-96.7775227
+2786376180,Carretera a Zaachila,16.9884969,-96.7768291
+6123877623,Carretera a Zaachila,16.9875209,-96.7762032
+8403984483,Carretera a Zaachila,16.9848255,-96.7745729
+6336247452,Carretera a Zaachila,16.9836597,-96.7738712
+8404055431,Carretera a Zaachila,16.9827087,-96.7732993
+6123877790,Innominada,16.9803552,-96.771841
+8404726698,Innominada,16.9785496,-96.7707351
+8404726700,Innominada,16.9766992,-96.7696071
+8404726703,Innominada,16.9759025,-96.7691215
+8396822773,Innominada,16.9744036,-96.7682051
+6123880255,Innominada,16.9730823,-96.7673987
+6211376016,Innominada,16.9718653,-96.7667015
+6345650293,Innominada,16.9703519,-96.7657682
+6347483800,Innominada,16.9675985,-96.7640702
+8404547089,Innominada,16.9654173,-96.7627326
+8396195244,Carretera Zaachila Oaxaca,16.9627794,-96.7611381
+8396729413,Carretera Zaachila Oaxaca,16.9618304,-96.7605457
+8396729406,Carretera Zaachila Oaxaca,16.9608103,-96.7599553
+8389912898,Carretera Zaachila Oaxaca,16.9568775,-96.7575217
+4556321595,Carretera Zaachila Oaxaca,16.9548217,-96.7563533
+320045079,Carretera Zaachila Oaxaca,16.9532591,-96.7553353
+2786439232,Calzada Vicente Guerrero,16.9526953,-96.7543776
+2786405500,Calzada Vicente Guerrero,16.9523316,-96.7530549
+5319598661,Calzada Vicente Guerrero,16.9520617,-96.7520351
+6211376753,Calzada Vicente Guerrero,16.9517775,-96.750881
+10580081651,Calle Cosijoeza,16.9510449,-96.7508094
+8390339799,Calle Cosijoeza,16.9501361,-96.7513186
+5328351108,Calle Cosijoeza,16.949299,-96.75165
+2786405493,Calle Cosijoeza y Calle Vulcano,16.949097,-96.7516981
+6343597782,Avenida Libertad,17.0745686,-96.7570082
+8428242806,Avenida Libertad,17.0756054,-96.7575929
+6122500960,Avenida Libertad,17.0998697,-96.7711412
+1400153404,Avenida Libertad,17.1012477,-96.7721482
+6122500935,Avenida Libertad,17.1025951,-96.7734842
+2285129798,Avenida Libertad,17.103293,-96.7741846
+4435003689,Avenida Libertad,17.103749,-96.7751004
+1400153305,Avenida Libertad,17.1040999,-96.7768483
+1400153450,Avenida Libertad,17.1043548,-96.7778828
+2285129783,Avenida Libertad,17.1048052,-96.7793812
+6122501152,Avenida Libertad,17.105132,-96.7803964
+1400153261,Avenida Libertad,17.1056112,-96.7811982
+1400153423,Avenida Libertad y Carretera a Atzompa,17.106466,-96.7815694
+1400153028,Carretera a Atzompa,17.1065138,-96.7825716
+1400153397,Carretera a Atzompa,17.1071714,-96.7831725
+1400153393,Carretera a Atzompa,17.1080056,-96.7836981
+1400153374,Carretera a Atzompa,17.1090207,-96.7847012
+5529435046,Carretera a Atzompa,17.1095996,-96.7855021
+8389386454,Carretera a Atzompa,17.1100604,-96.7863112
+1400153302,Carretera a Atzompa,17.1106767,-96.7872493
+1400153378,Carretera a Atzompa,17.1119431,-96.7885153
+1400153399,Carretera a Atzompa,17.1130915,-96.7896043
+1400153368,Carretera a Atzompa,17.1138247,-96.790468
+1400153051,Carretera a Atzompa,17.1145373,-96.7915087
+1400153384,Carretera a Atzompa,17.1152087,-96.7923935
+8389386476,Carretera a Atzompa,17.1159488,-96.7932539
+8390405894,Carretera a Atzompa,17.117055,-96.7942042
+1400153519,Carretera a Atzompa,17.1180646,-96.7952852
+1400153481,Carretera a Atzompa,17.118808,-96.7958699
+1400153039,Carretera a Atzompa,17.119521,-96.7967829
+1400153493,Carretera a Atzompa,17.1206123,-96.7974146
+1400153364,Carretera a Atzompa,17.1215764,-96.7980479
+1400153267,Carretera a Atzompa,17.1228014,-96.7984124
+1400153409,Carretera a Atzompa,17.1236475,-96.7993032
+6122351441,Carretera a Atzompa,17.1246708,-96.8000329
+1400153288,Carretera a Atzompa y Calle Manuel Sabino Crespo,17.1251791,-96.8010812
+8390254077,Calle Manuel Sabino Crespo,17.1248419,-96.8020806
+4435003866,Calle Manuel Sabino Crespo,17.1245407,-96.8026648
+8444924397,Innominada,17.0649134,-96.6781436
+6201868976,Innominada,17.0636142,-96.6737994
+8444711795,Innominada,17.0628758,-96.6713381
+3005566364,Innominada,17.0624947,-96.6700505
+3005572538,Innominada,17.0616326,-96.6671383
+672022724,Carretera Oaxaca - Tehuantepec,17.0612992,-96.6660599
+291210016,Carretera Oaxaca - Tehuantepec,17.060543,-96.6635024
+319950454,Carretera Oaxaca - Tehuantepec,17.0599773,-96.6622066
+2596344330,Avenida Internacional,17.0594431,-96.6609503
+2596344376,Avenida Internacional,17.0589832,-96.6600555
+3005572539,Avenida Internacional,17.0581845,-96.6586611
+3005616285,Calzada Adolfo López Mateos,17.0590361,-96.6577403
+6321985531,Calzada Adolfo López Mateos,17.0624558,-96.6555497
+5455227230,Calzada Adolfo López Mateos,17.0640694,-96.654475
+8424360130,Calzada Adolfo López Mateos,17.0655487,-96.6535455
+6201869423,Calzada Adolfo López Mateos,17.0663533,-96.6529759
+8428760689,Calle Independencia,17.0669605,-96.6522338
+8428839513,Calle Francisco I. Madero,17.0679015,-96.6518703
+6201868758,Calle Francisco I. Madero,17.0694728,-96.6515402
+3005639357,Calle Francisco I. Madero y Calle Calvario,17.0705296,-96.6513702
+3005639342,Calle Calvario,17.0703258,-96.6502052
+3005639347,Calle Calvario y Calle Zaragoza,17.0700386,-96.6490598
+3005639349,Calle Zaragoza y Calle Vicente Guerrero,17.0710873,-96.6488426
+5455227243,Calle Vicente Guerrero y Calle Matamoros,17.0708874,-96.6476834
+6340249000,Calle Matamoros,17.0721316,-96.6474448
+3005639345,Calle Gregorio Chávez y Calle Zaragoza,17.0727449,-96.6485119
+6201869319,Calle Zaragoza,17.0737122,-96.6484105
+3005639354,Calle Zaragoza,17.0743333,-96.6483005
+3287612400,Avenida Juárez,17.1228903,-96.823293
+3287612394,Avenida Juárez,17.121939,-96.8236688
+3287612391,Avenida Juárez,17.1209271,-96.8237791
+6122123329,Calzada de Guadalupe,17.1216737,-96.8214793
+8397000681,Calzada de Guadalupe,17.1220224,-96.8203365
+4701756633,Calzada de Guadalupe,17.1224118,-96.8190586
+6122123105,Calzada de Guadalupe,17.1228035,-96.8177739
+2285114268,Calzada de Guadalupe,17.1231133,-96.8119378
+3287612397,Calzada de Guadalupe,17.1227497,-96.8103771
+2285114335,Avenida Eliseo Jiménez Ruiz,17.1227763,-96.8092645
+2285114302,Avenida Eliseo Jiménez Ruiz,17.1246337,-96.804725
+2285114327,Calle Independencia,17.1255377,-96.8037999
+335730471,Calle Independencia,17.1264551,-96.8036957
+3287612962,Calle Independencia,17.1281194,-96.8032394
+3287613038,Calle Morelos,17.12938,-96.8028198
+335730466,Calle Morelos,17.1304798,-96.8028886
+6122351344,Avenida Zaragoza,17.1307279,-96.8018279
+6122351453,Avenida Zaragoza,17.1307728,-96.8007256
+335730462,Calzada San Lorenzo,17.1308608,-96.7992993
+335730459,Calzada San Lorenzo,17.1310774,-96.7982344
+6122351334,Calzada San Lorenzo,17.1317156,-96.7965339
+9487710547,Calzada San Lorenzo,17.1320332,-96.7954374
+6122351464,Calzada San Lorenzo,17.1323107,-96.7943706
+6122351094,Calzada San Lorenzo,17.1325099,-96.7932056
+8411029629,Calzada San Lorenzo,17.1343448,-96.7842751
+8410900565,Calzada San Lorenzo,17.1347336,-96.782557
+1351932136,Calzada San Lorenzo,17.1352231,-96.7803062
+6120012612,Calzada San Lorenzo,17.1355132,-96.7790424
+8410824550,Calzada San Lorenzo,17.1360024,-96.7769441
+8410824536,Calzada San Lorenzo,17.1362408,-96.7758998
+2381635513,Carretera Panamericana,17.1362056,-96.7751053
+320019621,Carretera Panamericana,17.1351074,-96.7746169
+1308120860,Calle de Valerio Trujano,17.0611852,-96.7353894
+1348383614,Innominada,17.0615651,-96.7368715
+1348384063,Innominada,17.0604749,-96.7369738
+1340820320,Avenida Juárez Maza,17.0588377,-96.7365284
+2786405502,Calzada Vicente Guerrero y Calle Cosijoeza,16.9516962,-96.750594
+2786405521,Calle Cosijoeza,16.9508138,-96.7508892
+2786405559,Calle Cosijoeza,16.9499424,-96.7514434
+2786405516,Calle Vulcano y Calle Leobaa,16.9489912,-96.7524063
+10783564126,Calle Leobaa,16.9499489,-96.7531663
+6211382739,Calle Leobaa,16.9508634,-96.7539778
+2786405572,Calle Leobaa,16.9517487,-96.7547211
+529005910,Carretera Zaachila Oaxaca y Calzada Vicente Guerrero y Avenida Ferrocarril,16.9527608,-96.7546619
+8392819229,Carretera Zaachila Oaxaca,16.9544148,-96.7560576
+2786405509,Carretera Zaachila Oaxaca,16.9564251,-96.7572373
+8404492084,Carretera Zaachila Oaxaca,16.9646724,-96.7622752
+8404726692,Innominada,16.9783224,-96.7705965
+6336247515,Innominada,16.9795827,-96.7713648
+8404042560,Innominada,16.9819814,-96.7728485
+6123879703,Carretera a Zaachila,16.9867559,-96.7757347
+6336247337,Carretera a Zaachila,16.9912416,-96.7785081
+8411484348,Carretera Oaxaca-Zaachila,16.9928128,-96.7786184
+320044433,Carretera Oaxaca-Zaachila,16.9938938,-96.7790984
+320044430,Carretera Oaxaca-Zaachila,16.9952508,-96.7795831
+320044426,Carretera Oaxaca-Zaachila,16.9961641,-96.7790875
+1350046044,Carretera Oaxaca-Zaachila,16.9969131,-96.7772153
+320044423,Carretera Oaxaca-Zaachila,16.9972799,-96.7761317
+320044421,Carretera Oaxaca-Zaachila,16.9973414,-96.774635
+320044418,Carretera Oaxaca-Zaachila,16.9978326,-96.7734643
+8403884591,Carretera Oaxaca-Zaachila,16.9985964,-96.7727427
+8403884578,Carretera Oaxaca-Zaachila,16.9993215,-96.7720577
+8386749549,Carretera Oaxaca-Zaachila,17.0004156,-96.7710242
+320044416,Carretera Oaxaca-Zaachila,17.0011813,-96.7704052
+6123879106,Carretera Oaxaca-Zaachila,17.0031819,-96.7699948
+6322042916,Carretera Oaxaca-Zaachila,17.0041746,-96.7698714
+320044413,Carretera Oaxaca-Zaachila,17.0065138,-96.7695469
+320044409,Carretera Oaxaca-Zaachila,17.0074936,-96.7688388
+10795847076,Innominada,17.054893,-96.7259293
+528995466,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan y Calle Congreso de la Unión,17.0256356,-96.7713532
+320042524,Avenida Constituyentes,17.0534804,-96.7301643
+320042523,Avenida Constituyentes,17.0541483,-96.7310113
+320042521,Avenida Constituyentes,17.0544525,-96.732122
+1348384365,Innominada,17.0614309,-96.7370466
+6129548716,Calle de Mier y Terán,17.0576698,-96.7304106
+330950892,Boulevard Eduardo Mata y Calle de Mier y Terán,17.0566839,-96.7305681
+319954929,Innominada,17.060633,-96.6634646
+319954928,Innominada,17.0602604,-96.6625094
+319954924,Innominada,17.0593837,-96.6616513
+6424374899,Innominada,17.0578565,-96.6610327
+319954584,Innominada,17.0566152,-96.660529
+320018227,Innominada,17.0557448,-96.6601168
+8428353228,Innominada,17.0548666,-96.6595589
+672022719,Innominada,17.0534268,-96.6585913
+319954197,Innominada,17.0521407,-96.6576853
+8407938654,Innominada,17.0512625,-96.6570215
+1342973009,Innominada,17.0504338,-96.656331
+319954195,Innominada,17.0494867,-96.6554819
+8407938665,Innominada,17.0485135,-96.6545284
+8407938664,Innominada,17.0477583,-96.6537304
+8407938663,Innominada,17.0469172,-96.6529123
+8407938661,Innominada,17.0459107,-96.6519012
+8407938660,Innominada,17.0451875,-96.6511904
+319954190,Innominada,17.0443656,-96.6501644
+319954188,Innominada,17.0436514,-96.6490352
+319954185,Innominada,17.0430734,-96.647802
+319954183,Innominada,17.0424556,-96.6458033
+8407938656,Innominada,17.0421923,-96.6448496
+8407938655,Innominada,17.0416076,-96.6428219
+8410666495,Innominada,17.0412755,-96.641808
+8410666496,Innominada,17.0409383,-96.6408411
+319954179,Innominada,17.0405395,-96.6398031
+319954178,Innominada,17.0400676,-96.6386564
+1342973008,Innominada,17.0392516,-96.63684
+6208737563,Innominada,17.0387635,-96.6357531
+8410666491,Innominada,17.0383533,-96.6348584
+319954176,Innominada,17.037507,-96.6329741
+319954175,Innominada,17.0369441,-96.6316532
+319954173,Innominada,17.0366594,-96.6307224
+319954172,Innominada,17.0364665,-96.629504
+319954170,Innominada,17.0364331,-96.6281817
+6209057677,Innominada,17.0365261,-96.6270119
+8410666489,Innominada,17.0366941,-96.6254331
+319952792,Innominada,17.036988,-96.6223709
+319952845,Innominada,17.0371687,-96.6206394
+319952847,Innominada,17.0372051,-96.6190907
+6209058533,Innominada,17.0370799,-96.6180886
+319952849,Innominada,17.0368657,-96.6171714
+1281523403,Innominada,17.0363124,-96.6157101
+6209057636,Innominada,17.0358944,-96.6148241
+8404331279,Innominada,17.0332352,-96.6098247
+1372916302,Innominada,17.0327647,-96.6089417
+6209058298,Innominada,17.031596,-96.6067079
+2609112397,Innominada,17.0311254,-96.6058179
+8410683684,Innominada,17.0306447,-96.6049144
+3282929650,Innominada,17.0301712,-96.6040244
+8407150181,Innominada,17.0292255,-96.6022225
+8407150174,Innominada,17.0287869,-96.6013875
+3282929648,Innominada,17.0283083,-96.6005139
+319952254,Innominada,17.0277476,-96.5994546
+319952252,Innominada,17.02739,-96.5985413
+8403816781,Innominada,17.0271283,-96.5975519
+3282980073,Innominada,17.0263458,-96.5947992
+8403816775,Innominada,17.0258167,-96.5929082
+8403816795,Innominada,17.0254838,-96.5917426
+6217324428,Innominada,17.0252027,-96.590707
+6217324259,Innominada,17.0248468,-96.5894117
+6209058479,Innominada,17.0242919,-96.5874931
+8414174547,Innominada,17.0235409,-96.584794
+6217323911,Innominada,17.0229997,-96.5828068
+4021371136,Innominada,17.0222281,-96.5801212
+8414783675,Innominada,17.0219204,-96.5790139
+8414783671,Innominada,17.0215268,-96.577597
+1373005159,Innominada,17.0203688,-96.5734289
+12737881259,Innominada,17.0196324,-96.5708591
+1281523321,Innominada,17.0193641,-96.5699361
+8417396144,Innominada,17.0190961,-96.5689559
+12853922680,Innominada,17.0180994,-96.5654138
+319952249,Innominada,17.0177733,-96.5642259
+672022499,Innominada,17.0174301,-96.5632634
+319952248,Innominada,17.0169734,-96.5622205
+8410584351,Innominada,17.0159345,-96.5602943
+319952247,Innominada,17.0127269,-96.5544381
+6217205752,Innominada,17.0118898,-96.5528493
+2380897067,Innominada,17.0111066,-96.5514299
+12737881261,Innominada,17.0103196,-96.5499648
+319952245,Innominada,17.0084325,-96.546545
+8410604480,Innominada,17.0065169,-96.5435863
+6217221400,Innominada,17.0030478,-96.5382282
+6217217976,Innominada,17.0012658,-96.5354758
+8408116411,Innominada,17.0004039,-96.5341446
+1281523113,Innominada,16.9996288,-96.5329542
+4156782586,Innominada,16.998982,-96.5319484
+8760380057,Innominada,16.9979301,-96.5303314
+8760380056,Innominada,16.9971503,-96.5291338
+8760380055,Innominada,16.9963975,-96.5279616
+325553930,Innominada,16.9954843,-96.5265776
+1375282723,Innominada,16.9948585,-96.5256204
+2609112403,Innominada,16.9942816,-96.5247347
+8760380061,Innominada,16.9934836,-96.5235078
+2380530196,Innominada,16.9926268,-96.5221801
+8760380062,Innominada,16.9915623,-96.5205574
+8760380063,Innominada,16.9903515,-96.5187228
+8760380064,Innominada,16.989396,-96.5172797
+8760380065,Innominada,16.9885598,-96.5160352
+4642061217,Innominada,16.9878274,-96.5149087
+4642061221,Innominada,16.9871271,-96.5138385
+2380675841,Innominada,16.9861446,-96.5123392
+12737881267,Innominada,16.9848117,-96.5103468
+672022496,Innominada,16.9839232,-96.5090105
+2380675504,Innominada,16.9832062,-96.507943
+2380530207,Innominada,16.9824071,-96.5067628
+6217221306,Innominada,16.9818357,-96.5059038
+8760380066,Innominada,16.9807423,-96.5042764
+8760380067,Innominada,16.97967,-96.5026805
+12737881270,Innominada,16.9788242,-96.5014349
+2380557156,Innominada,16.978277,-96.5006179
+8403833655,Innominada,16.9777178,-96.4997783
+8760380068,Innominada,16.9771124,-96.4988583
+8403850136,Innominada,16.9765107,-96.4979921
+12737881272,Innominada,16.9720296,-96.4913646
+8407674784,Innominada,16.9711129,-96.4900151
+672022704,Innominada,16.9704984,-96.489105
+672022708,Innominada,16.9698651,-96.4881733
+2380530218,Innominada,16.9688207,-96.4867069
+2380530189,Innominada,16.967862,-96.485316
+5819678510,Innominada,16.9665899,-96.483461
+8407674801,Innominada,16.9657964,-96.482226
+1281523410,Innominada,16.9651262,-96.4812059
+2380530183,Innominada,16.9645682,-96.480381
+1281523230,Innominada,16.9636384,-96.4791741
+1281523460,Innominada,16.9626572,-96.478055
+2380530202,Carretera a Villa Díaz Ordaz,16.9616807,-96.4770969
+2380635006,Carretera a Villa Díaz Ordaz,16.9627781,-96.4767441
+8407596260,Carretera a Villa Díaz Ordaz,16.9637132,-96.4764734
+672022702,Carretera a Villa Díaz Ordaz,16.9650284,-96.4761046
+8424885179,Carretera a Villa Díaz Ordaz,16.9659733,-96.475851
+3269247499,Carretera a Villa Díaz Ordaz,16.9670024,-96.475547
+3269226380,Carretera a Villa Díaz Ordaz,16.96819,-96.4751007
+1827309582,Carretera a Villa Díaz Ordaz,16.9689531,-96.474333
+3269226385,Carretera a Villa Díaz Ordaz,16.9697388,-96.4731168
+2387978703,Carretera a Villa Díaz Ordaz,16.9705724,-96.4716093
+1827309630,Carretera a Villa Díaz Ordaz,16.9720663,-96.4690349
+1827309539,Carretera a Villa Díaz Ordaz,16.9726538,-96.4676321
+6225777910,Carretera a Villa Díaz Ordaz,16.9729988,-96.4665377
+6225777909,Carretera a Villa Díaz Ordaz,16.9741667,-96.4626962
+8425006221,Carretera a Villa Díaz Ordaz,16.9746058,-96.4613824
+12871269778,Carretera a Villa Díaz Ordaz,16.9749532,-96.460317
+6225700968,Carretera a Villa Díaz Ordaz,16.9756738,-96.4579735
+1827309575,Carretera a Villa Díaz Ordaz,16.9759818,-96.4569881
+4377940522,Avenida Tlacolula,16.9763037,-96.4579052
+4377940529,Avenida Tlacolula,16.97668,-96.4590991
+4377940538,Avenida Tlacolula,16.9770456,-96.4602582
+4377940556,Avenida Tlacolula,16.9776129,-96.462048
+4377940578,Calle Francisco I. Madero,16.9786195,-96.462737
+4377940597,Calle Francisco I. Madero,16.9796508,-96.4630964
+4377940614,Calle Francisco I. Madero,16.9806628,-96.4634545
+4377940632,Calle Francisco I. Madero,16.9816645,-96.4638005
+4377940634,Calle Antonio López de Santa Ana y Calle Porfirio Díaz,16.9818428,-96.465788
+4377940615,Calle Porfirio Díaz,16.9807782,-96.4655419
+4377940598,Calle Porfirio Díaz,16.9797393,-96.4651993
+4377940579,Calle Porfirio Díaz,16.9787157,-96.4648499
+4377940581,Calle Porfirio Díaz,16.9787673,-96.4657048
+8425001219,Calle Porfirio Díaz,16.9790851,-96.466822
+4377940601,Calle Porfirio Díaz,16.9798803,-96.4671902
+4377940618,Calle Porfirio Díaz,16.9809039,-96.4675684
+4377940644,Calle Porfirio Díaz,16.9822314,-96.4682168
+8760703187,Calle Porfirio Díaz,16.9837742,-96.4687271
+4377940637,Calle Porfirio Díaz,16.9841246,-96.4688471
+528995465,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0258947,-96.7718011
+528995463,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0265666,-96.7726325
+6333955246,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0384213,-96.7889795
+528995448,Carretera San Andrés Ixtlahuaca - Cruz Xoxocotlan,17.0384289,-96.7891645
+8411165074,Avenida Internacional,17.0577274,-96.6578346
+291214416,Avenida Internacional,17.0570861,-96.6565946
+8411165083,Avenida Internacional,17.0543342,-96.6517506
+319953697,Avenida Internacional,17.0531949,-96.6497295
+319953698,Avenida Internacional,17.0525141,-96.6485175
+3007770853,Avenida Internacional,17.0519869,-96.64756
+8407749398,Avenida Internacional,17.0512253,-96.6462015
+8407749399,Avenida Internacional,17.0505098,-96.6449381
+319953699,Avenida Internacional,17.0500316,-96.6440956
+8410666514,Avenida Internacional,17.0495456,-96.6432443
+8410666515,Avenida Internacional,17.0490687,-96.642386
+8410666516,Avenida Internacional,17.048266,-96.6409618
+2380875490,Avenida Internacional,17.0477183,-96.6399345
+8410666513,Calzada Benito Juárez,17.0470967,-96.6390909
+672022476,Calzada Benito Juárez,17.0461428,-96.6386484
+385192240,Calzada Benito Juárez,17.0457158,-96.6374642
+2380875390,Calle Vicente Guerrero,17.045241,-96.6361205
+8410666511,Calle Vicente Guerrero,17.04479,-96.6349496
+319951490,Calle Vicente Guerrero,17.0443695,-96.6339532
+319951487,Calle Vicente Guerrero,17.0444558,-96.6333682
+8410666510,Calle Vicente Guerrero,17.0445349,-96.6343407
+2380875496,Calle Vicente Guerrero,17.0449801,-96.6353921
+2380875461,Calzada Benito Juárez y Calle Vicente Guerrero,17.0454773,-96.6367829
+8410666512,Calzada Benito Juárez,17.0458735,-96.6379067
+319951492,Calzada Benito Juárez,17.0462597,-96.6388244
+319953696,Avenida Internacional y Calzada Benito Juárez,17.0472296,-96.6391522
+8410679417,Avenida Internacional,17.047916,-96.640082
+8410640044,Avenida Internacional,17.0486443,-96.6414339
+8407749400,Avenida Internacional,17.0498906,-96.6436333
+8407797398,Avenida Internacional,17.0504946,-96.6446921
+8407797395,Avenida Internacional,17.0511036,-96.6457734
+8407797381,Avenida Internacional,17.0516217,-96.6466945
+291052353,Avenida Internacional,17.0520897,-96.6475257
+8428522695,Avenida Internacional,17.0534361,-96.6499032
+3005616249,Avenida Internacional,17.0543956,-96.651638
+4829601621,Avenida Internacional,17.0554843,-96.6535823
+8411552303,Avenida Internacional,17.0568925,-96.6560018
+3005616274,Avenida Internacional,17.0574211,-96.6569459
+8428353225,Calzada Adolfo López Mateos y Avenida Internacional,17.0581445,-96.65828
+291213808,Avenida Internacional,17.0589799,-96.6598625
+3862319185,Avenida Internacional,17.0599329,-96.6616467
+319950396,Avenida Internacional,17.0605084,-96.6627034
+3862319170,Avenida Internacional,17.0608438,-96.6637672
+8444924401,Innominada,17.0611208,-96.6647514
+320018249,Innominada,17.0614721,-96.6660186
+3005572542,Innominada,17.0617617,-96.6670382
+8449232054,Innominada,17.0622714,-96.6687778
+5497405389,Innominada,17.0626672,-96.6700684
+2596344336,Innominada,17.0629938,-96.6712023
+2015629711,Carretera Federal Oaxaca - Tuxtepec,17.0654121,-96.6793126
+1349730038,Innominada,17.0611348,-96.7141519
+335726053,Avenida de José María Morelos,17.0611794,-96.7158874
+529036125,Avenida de José María Morelos,17.0613755,-96.7169919
+529036128,Avenida de José María Morelos,17.0615838,-96.7180309
+6772643085,Avenida de José María Morelos,17.0618437,-96.7194454
+330953856,Calle de Melchor Ocampo,17.0547412,-96.723037
+330953920,Calle de Melchor Ocampo,17.0538535,-96.7231953
+330948026,Calle de Melchor Ocampo,17.052161,-96.7234611
+330947621,Boulevard Eduardo Mata y Calle de Ignacio Zaragoza,17.0572873,-96.7310038
+8409576957,Boulevard Eduardo Mata,17.051808,-96.7292594
+1955833911,Boulevard Eduardo Mata,17.0509855,-96.728725
+2387940985,Boulevard Eduardo Mata,17.0504735,-96.7277707
+320041099,Boulevard Eduardo Mata,17.0506738,-96.7265756
+8425325341,Boulevard Eduardo Mata,17.0509709,-96.7253654
+4356816794,Boulevard Eduardo Mata,17.0539382,-96.7135413
+330943481,Boulevard Eduardo Vasconcelos,17.0545084,-96.7130218
+319951485,Calle Vicente Guerrero,17.0445977,-96.6329661
+6318674214,Avenida Carretera Internacional 190,17.0443295,-96.6320715
+2380875392,Avenida Carretera Internacional 190 y Camino de la Raya,17.0437932,-96.6306833
+6209057681,Camino de la Raya,17.0448946,-96.630278
+8410666504,Camino de la Raya,17.0460158,-96.6298869
+2380875511,Camino de la Raya,17.047021,-96.629549
+8411425630,Camino Nacional,17.0477642,-96.6291328
+8404248226,Camino Nacional,17.0471018,-96.6276379
+5333388061,Avenida Sabinos,17.0478686,-96.6272047
+6209057683,Avenida Sabinos,17.0489065,-96.6267964
+8427538442,Avenida Sabinos,17.0497611,-96.6264752
+3011821899,Avenida Sabinos,17.050647,-96.6262418
+8427538446,Avenida Sabinos,17.0516074,-96.6263437
+6209204658,Avenida Sabinos,17.0527498,-96.626076
+3009770668,Avenida Sabinos,17.0535939,-96.625682
+8417126080,Avenida Sabinos,17.0532547,-96.6245474
+3009770676,Avenida Sabinos,17.0529407,-96.6235516
+10749522058,Avenida Sabinos,17.0520495,-96.6236534
+10836398753,Avenida Sabinos,17.0511043,-96.6239128
+3009770689,Avenida Sabinos,17.0499843,-96.6242152
+6338329265,Avenida Sabinos,17.0494901,-96.6248767
+12654293756,Avenida Sabinos,17.0496274,-96.6258854
+8427734311,Avenida Sabinos,17.0486411,-96.6255914
+8404248228,Avenida Sabinos,17.0478813,-96.6250401
+6209058088,Avenida Sabinos,17.0469016,-96.6253389
+8410724532,Camino Nacional,17.0464071,-96.6260848
+8449047827,Camino Nacional,17.0469579,-96.627314
+2380875434,Camino Nacional,17.0473779,-96.628284
+2380875410,Camino de la Raya y Camino Nacional,17.0478167,-96.6292461
+2380875475,Camino de la Raya,17.0463825,-96.6297555
+8410666505,Camino de la Raya,17.0454004,-96.630127
+8410666507,Camino de la Raya,17.0444951,-96.6303845
+6209057647,Avenida Carretera Internacional 190,17.044157,-96.6316052
+291053148,Calle Vicente Guerrero y Avenida Carretera Internacional 190,17.0445892,-96.6327313
+9854001069,Calle Vicente Guerrero,17.0443323,-96.633642
+7535729997,Calzada Benito Juárez,17.0469384,-96.6390429
+529036245,Calle de Mier y Terán y Calle de Ignacio Zaragoza,17.0572117,-96.7304817
+8657036794,Calle Porfirio Díaz,16.9827778,-96.4683858
+4377940629,Calle Porfirio Díaz,16.9814824,-96.4679539
+4377940613,Calle Porfirio Díaz,16.980546,-96.4674336
+4377940596,Calle Porfirio Díaz,16.9795302,-96.4670768
+4377940583,Calle Porfirio Díaz,16.9788548,-96.4664754
+6324261203,Calle Porfirio Díaz,16.9784945,-96.4653244
+4377940580,Calle Porfirio Díaz,16.9787414,-96.464752
+4377940599,Calle Porfirio Díaz,16.9797721,-96.4650831
+4377940616,Calle Porfirio Díaz,16.9808186,-96.465434
+4377940647,Calle Francisco I. Madero y Calle Antonio López de Santa Ana,16.9823815,-96.4640366
+4377940625,Calle Francisco I. Madero,16.9813426,-96.4636932
+4377940608,Calle Francisco I. Madero,16.9803177,-96.4633311
+4377940591,Calle Francisco I. Madero,16.9793032,-96.4629798
+8431383997,Calle Francisco I. Madero,16.9781026,-96.4625788
+4377940547,Innominada,16.9774331,-96.4621389
+4377940536,Avenida Tlacolula,16.9769086,-96.4603212
+4377940528,Avenida Tlacolula,16.976606,-96.4593328
+4377940521,Avenida Tlacolula,16.9762299,-96.4581445
+4377940515,Carretera a Villa Díaz Ordaz y Avenida Tlacolula,16.9759228,-96.457174
+2387978701,Carretera a Villa Díaz Ordaz,16.970926,-96.4710526
+6225777793,Carretera a Villa Díaz Ordaz,16.970177,-96.4723445
+2387978733,Carretera a Villa Díaz Ordaz,16.9693326,-96.4737395
+3269226368,Carretera a Villa Díaz Ordaz,16.9686624,-96.4747092
+3269247497,Carretera a Villa Díaz Ordaz,16.9676196,-96.4753703
+3269247502,Carretera a Villa Díaz Ordaz,16.9666664,-96.4756506
+672022526,Carretera a Villa Díaz Ordaz,16.9618109,-96.4770014
+2380530211,Innominada,16.9629335,-96.4780874
+2380604184,Innominada,16.9636947,-96.4789732
+2380530220,Innominada,16.9643112,-96.4797531
+2380530195,Innominada,16.9649884,-96.4807053
+2380530226,Innominada,16.9659146,-96.4821416
+2380675676,Innominada,16.9669548,-96.483638
+2380530179,Innominada,16.9680048,-96.4851875
+2380530188,Innominada,16.9690035,-96.4867205
+2380530185,Innominada,16.9696144,-96.4876708
+6225626284,Innominada,16.9717974,-96.4910216
+6225653738,Innominada,16.9760971,-96.4973741
+12737881269,Innominada,16.9782591,-96.5005911
+8811529617,Innominada,16.9806137,-96.5040851
+1281523381,Innominada,16.9814939,-96.5053681
+8811499293,Innominada,16.9821774,-96.5064175
+2380530209,Innominada,16.9829176,-96.5075299
+2380675710,Innominada,16.9835641,-96.5084888
+12737881268,Innominada,16.9844414,-96.5097905
+6217221381,Innominada,16.986668,-96.5131572
+4642061228,Innominada,16.9875311,-96.5144607
+2380675640,Innominada,16.99399,-96.5242886
+1281523366,Innominada,16.9948057,-96.5250762
+8760380060,Innominada,16.9950508,-96.5259111
+1281523480,Innominada,16.9959165,-96.5272428
+8760380058,Innominada,16.9985213,-96.5312433
+12737881264,Innominada,16.9994724,-96.5327008
+8411456807,Innominada,17.0000448,-96.5335845
+8407971603,Innominada,17.0008095,-96.5347711
+8410604471,Innominada,17.0029477,-96.5380735
+12737881262,Innominada,17.0100129,-96.549402
+2380897063,Innominada,17.0109612,-96.5511732
+6217323910,Innominada,17.0228931,-96.5824669
+6217324134,Innominada,17.0234515,-96.5844683
+8406979501,Innominada,17.0241109,-96.5868715
+8406979506,Innominada,17.0247959,-96.5892359
+8403816798,Innominada,17.0257528,-96.5926794
+6209058358,Innominada,17.0261998,-96.5942806
+8407150175,Innominada,17.0282273,-96.6003608
+12634819150,Innominada,17.0310831,-96.6057384
+6209057622,Innominada,17.0324622,-96.6083714
+8396531533,Innominada,17.0329277,-96.6092317
+8404331280,Innominada,17.0356208,-96.6142966
+8630570956,Innominada,17.0362248,-96.6154317
+319952758,Innominada,17.036798,-96.6163081
+319952786,Innominada,17.0375138,-96.617303
+319952788,Innominada,17.0378547,-96.6183546
+319952789,Innominada,17.0377919,-96.619326
+6424374885,Innominada,17.0374211,-96.6205703
+8410666488,Innominada,17.0367787,-96.6246137
+8410666490,Innominada,17.036603,-96.6263196
+6209057668,Innominada,17.0364404,-96.6279979
+319954171,Innominada,17.0364325,-96.6290018
+8410666493,Innominada,17.0365671,-96.6302544
+319954182,Innominada,17.041991,-96.644112
+8408181551,Innominada,17.0423707,-96.6454958
+319954184,Innominada,17.0427967,-96.6470109
+319954186,Innominada,17.0433591,-96.6484612
+319954189,Innominada,17.0440246,-96.6496682
+8407938659,Innominada,17.04469,-96.6506097
+319954192,Innominada,17.0454106,-96.6514157
+8407938662,Innominada,17.0464582,-96.6524524
+319954193,Innominada,17.047551,-96.6535178
+8407938666,Innominada,17.0491572,-96.655211
+8407938669,Innominada,17.0498841,-96.6558534
+1342973007,Innominada,17.050924,-96.6567399
+672022716,Innominada,17.0531756,-96.6584041
+319954736,Innominada,17.0590686,-96.6614869
+6424374893,Innominada,17.0599463,-96.6619903
+6424374889,Innominada,17.0605771,-96.6630819
+4435003868,Calle Manuel Sabino Crespo,17.1251491,-96.8014491
+1400153030,Carretera a Atzompa,17.1249905,-96.8003919
+1400153304,Carretera a Atzompa,17.1241346,-96.7996089
+1400153360,Carretera a Atzompa,17.1229708,-96.7985253
+1400153277,Carretera a Atzompa,17.1218378,-96.7981659
+1400153229,Carretera a Atzompa,17.1210586,-96.7975919
+1400153418,Carretera a Atzompa,17.1199267,-96.797156
+1400153314,Carretera a Atzompa,17.1190204,-96.7960011
+1400153274,Carretera a Atzompa,17.1174032,-96.7945931
+8393433644,Carretera a Atzompa,17.1164922,-96.7937276
+1400153247,Carretera a Atzompa,17.1154858,-96.7927961
+1400153497,Carretera a Atzompa,17.1148757,-96.7920022
+6122433467,Carretera a Atzompa,17.1142951,-96.791155
+6122433620,Carretera a Atzompa,17.1122749,-96.7888182
+1400153344,Carretera a Atzompa,17.1110305,-96.7876624
+6122433727,Carretera a Atzompa,17.1103954,-96.7868568
+6122433740,Carretera a Atzompa,17.1097977,-96.7858499
+1400153375,Carretera a Atzompa,17.1082995,-96.7838828
+1400153262,Carretera a Atzompa,17.1073675,-96.7833133
+1400153062,Carretera a Atzompa,17.1065698,-96.7827628
+1400153365,Avenida Libertad,17.1016118,-96.7724754
+1400153401,Avenida Libertad,17.1003761,-96.7714723
+12586147769,Calle Ignacio Bernal,17.0749874,-96.7550646
+320037026,Calle Ignacio Bernal,17.0752107,-96.7541243
+1281523402,Calle la Siempre Viva,17.1016917,-96.6609778
+6340054153,Calle la Siempre Viva,17.0993531,-96.6581012
+8411461814,Calle la Siempre Viva,17.0984241,-96.6569881
+1281523512,Carretera Federal Oaxaca - Tuxtepec,17.0899372,-96.6548073
+4553062300,Carretera Federal Oaxaca - Tuxtepec,17.0876475,-96.6553522
+291051734,Carretera Federal Oaxaca - Tuxtepec,17.0865978,-96.6555798
+1995785268,Carretera Federal Oaxaca - Tuxtepec,17.0854733,-96.6559564
+1995785294,Carretera Federal Oaxaca - Tuxtepec,17.0846259,-96.6564924
+291051735,Calle Independencia y Carretera Federal Oaxaca - Tuxtepec,17.0833074,-96.6578734
+320049493,Libramiento Norte,17.1275568,-96.7575537
+1408674083,Libramiento Norte,17.1276862,-96.7551615
+1352847120,Libramiento Norte,17.1277441,-96.7540919
+320049491,Libramiento Norte,17.1276538,-96.7529425
+8425079177,Libramiento Norte,17.1269174,-96.7516467
+320049662,Libramiento Norte,17.1263414,-96.7506594
+320049660,Libramiento Norte,17.1261224,-96.7497484
+1352847158,Libramiento Norte,17.1269682,-96.7489452

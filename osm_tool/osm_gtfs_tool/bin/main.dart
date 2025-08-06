@@ -30,7 +30,7 @@ Future<void> main(List<String> args) async {
     routes: routes,
     ways: ways,
     stops: stops,
-    skipRoute: (route) => [9144378, 9085564, 9118342].contains(route["id"]),
+    skipRoute: (route) => [9085564, 9118342].contains(route["id"]),
   );
 
   final outputDir = Directory('gtfs_output');

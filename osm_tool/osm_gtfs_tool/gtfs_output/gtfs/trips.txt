@@ -1,4 +1,3 @@
 trip_id,route_id,service_id,shape_id
 trip_0,9085564,service_1,9085564
 trip_1,9118342,service_1,9118342
-trip_2,9144378,service_1,9144378

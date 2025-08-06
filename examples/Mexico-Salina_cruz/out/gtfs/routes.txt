@@ -1,0 +1,44 @@
+route_id,agency_id,route_short_name,route_long_name,route_color,route_type
+19298683,0,R01,R01: Salinas (Escolleras) → Centro,945A31,3
+19314052,0,R02,R02: Centro → Primero de mayo,70B2E3,3
+19314094,0,R02,R02: Primero de mayo → Centro,70B2E3,3
+19332793,0,R03,R03: Centro → Liverpool,7E858A,3
+19332888,0,R03,R03: Liverpool → Centro,7E858A,3
+19332950,0,R04,R04: Centro → Lombardo,E4821E,3
+19332988,0,R04,R04: Lombardo → Centro,E4821E,3
+19333033,0,R05,R05: Centro → San Pablo Norte,C22922,3
+19335338,0,R05,R05: San Pablo Norte → Centro,C22922,3
+19335385,0,R06,R06: Centro → Jesús Rasgagrdo,E4821E,3
+19336099,0,R06,R06: Jesús Rasgagrdo → Centro,E4821E,3
+19338099,0,R08,R08: Centro → Barrio Juárez (escuela),70B2E3,3
+19338129,0,R09,R09: Centro → Francisco I. Madero,F2CB30,3
+19338155,0,R09,R09: Francisco I. Madero → Centro,F2CB30,3
+19338186,0,R10,R10: Centro → H. Poniente (5 de diciembre),E4821E,3
+19338232,0,R10,R10: H. Poniente (5 de diciembre) → Centro,E4821E,3
+19344359,0,R11,R11: Centro → Refinería,D26EB7,3
+19344389,0,R11,R11: Refinería → Centro,D26EB7,3
+19344409,0,R12,R12: Centro → Cerro Alto,C22922,3
+19344429,0,R12,R12: Cerro Alto → Centro,C22922,3
+19344461,0,R13,R13: Centro → 5 de febrero,C22922,3
+19353306,0,R13,R13: 5 de febrero → Centro,C22922,3
+19353330,0,R14,R14: Centro → San Martín (parte baja) - Soledad Boca del Río,93BA2C,3
+19353331,0,R14,R14: San Martín (parte baja) - Soledad Boca del Río → Centro,93BA2C,3
+19353332,0,R15,R15: Centro → Juquilita,70B2E3,3
+19353348,0,R15,R15: Juquilita → Centro,70B2E3,3
+19353351,0,R17,R17: Centro → San Juan,3D6D31,3
+19353501,0,R17,R17: San Juan → Centro,3D6D31,3
+19362578,0,R19,R19: Centro → Las Pilas,945A31,3
+19362601,0,R19,R19: Las Pilas → Centro,945A31,3
+19362893,0,R20,R20: Centro → El Roble,945A31,3
+19362900,0,R20,R20: El Roble → Centro,945A31,3
+19363169,0,R21,R21: Centro → Petrolera,70B2E3,3
+19363178,0,R21,R21: Petrolera → Centro,70B2E3,3
+19364993,0,R24,R24: Centro → Ventosa,93BA2C,3
+19365002,0,R24,R24: Ventosa → Centro,93BA2C,3
+19365007,0,R25,R25: Centro → Hidalgo Poniente (Calle Puebla),E4821E,3
+19365103,0,R25,R25: Hidalgo Poniente (Calle Puebla) → Centro,E4821E,3
+19365123,0,R26,R26: Centro → Porfirio Díaz,5D22A6,3
+19365134,0,R26,R26: Porfirio Díaz → Centro,5D22A6,3
+19365144,0,R27,R27: Centro → Hidalgo Poniente (Calle Chiapas),E4821E,3
+19365151,0,R27,R27: Hidalgo Poniente (Calle Chiapas) → Centro,E4821E,3
+19370861,0,R01,R01: Centro → Salinas (Escolleras),945A31,3

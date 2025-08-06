@@ -13,7 +13,8 @@ module.exports = function ({ routes, ways, stops, skipRoute }) {
 
         try {
             if (!skipRoute(current_route))
-                throw { extractor_error: extractor_error.route_skipped, uri: `https://overpass-turbo.eu/?Q=${encodeURI(`//${extractor_error.route_skipped}\nrel(${current_route.id});out geom;`)}&R` }
+                continue
+                // throw { extractor_error: extractor_error.route_skipped, uri: `https://overpass-turbo.eu/?Q=${encodeURI(`//${extractor_error.route_skipped}\nrel(${current_route.id});out geom;`)}&R` }
             if (!current_route.tags["ref"])
                 throw { extractor_error: extractor_error.no_ref_defined, uri: `https://overpass-turbo.eu/?Q=${encodeURI(`//${extractor_error.no_ref_defined}\nrel(${current_route.id});out geom;`)}&R` }
 

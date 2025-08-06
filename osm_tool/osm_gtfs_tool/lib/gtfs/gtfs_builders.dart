@@ -14,7 +14,7 @@ class GtfsBuilders {
       final name = f.tags['operator'] ?? 'default';
       agencies.putIfAbsent(name, () {
         return GtfsAgency(
-          id: name,
+          id: agencies.length.toString(),
           name: name,
           timezone: tz,
           url: url,

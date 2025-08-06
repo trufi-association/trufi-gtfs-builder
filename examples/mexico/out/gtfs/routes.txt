@@ -1,0 +1,111 @@
+route_id,agency_id,route_short_name,route_long_name,route_color,route_type
+17966453,0,R54,R54: San Martín Secundaria → Volcanes Col.Jardín,,3
+17966890,1,R01,R01: Colonia Jardin → Fraccionamiento Esmeralda,,3
+17966892,1,R04,R04: Ejido Guadalupe Victoria → Col. Forestal,,3
+17966893,1,R01,R01: Fraccionamiento Esmeralda → Colonia Jardin,,3
+17966901,1,R03,R03: ISSSTE → CRIT,,3
+17966903,1,R05,R05: Trinidad de Viguera → CECYTE 01,,3
+17966909,1,R03,R03: CRIT → ISSSTE,,3
+17966914,1,R06,R06: Ánimas Trujano → Ricardo Flores Magon 1ª Etapa,,3
+17966915,1,R13,R13: San Felipe del Agua → Col. Guelaguetza,,3
+17966916,1,R13,R13: Col. Guelaguetza → San Felipe del Agua,,3
+17966922,1,R09,R09: Montoya-Forestal → Plaza del Valle,,3
+17966925,1,R05,R05: CECYTE 01 → Trinidad de Viguera,,3
+17966927,1,R14,R14: Plaza del Valle → Col. Los Angeles,,3
+17966936,1,R04,R04: Col. Forestal → Ejido Guadalupe Victoria,,3
+17966940,1,R14,R14: Col. Los Angeles → Plaza del Valle,,3
+17966959,1,R17,R17: Col. del Maestro (Manzana L) → Col. Volcanes,,3
+17966961,1,R16,R16: Libramiento Viguera → Plaza del Valle,,3
+17966964,1,R17,R17: Col. Volcanes → Col. del Maestro (Manzana L),,3
+17966970,2,R21,R21: San Felipe del Agua → La Experimental,,3
+17966978,2,R21,R21: La Experimental → San Felipe del Agua,,3
+17967149,2,R25,R25: Segunda sección de Guadalupe Victoria → Plaza del Valle,,3
+17967223,1,R18,R18: Ampliación Progreso → Mojonera,,3
+17967228,1,R09,R09: Plaza del Valle → Montoya-Forestal,,3
+17967239,2,R23,R23: Benito Juárez → Plaza del Valle,,3
+17967257,2,R23,R23: Plaza del Valle → Benito Juárez,,3
+17967267,2,R24,R24: Santa Cruz Amilpas → Col. Vista Hermosa,,3
+17969223,2,R25,R25: Plaza del Valle → Segunda sección de Guadalupe Victoria,,3
+17969239,1,R19,R19: Col. Volcanes → Col. Anáhuac,,3
+17969241,2,R24,R24: Col. Vista Hermosa → Santa Cruz Amilpas,,3
+17969243,2,R26,R26: Ánimas Trujano → Barrio la Chigulera,,3
+17969251,2,R26,R26: Barrio la Chigulera → Ánimas Trujano,,3
+17969269,2,R27,R27: CRIT → Col. Ampliación 7 Regiones,,3
+17969277,2,R27,R27: Col. Ampliación 7 Regiones → CRIT,,3
+17969278,2,R29,R29: Fraccionamiento Esmeralda → Plaza del Valle,,3
+17969284,2,R33,R33: Trinidad de Viguera → Ricardo Flores Magon 1ª Etapa,,3
+17969285,2,R29,R29: Plaza del Valle → Fraccionamiento Esmeralda,,3
+17969291,2,R30,R30: Col. Volcanes → fraccionamiento Esmeralda,,3
+17969292,2,R34,R34: Col. La Soledad → Ánimas Trujano,,3
+17969294,2,R33,R33: Ricardo Flores Magon 1ª Etapa → Trinidad de Viguera,,3
+17969301,2,R34,R34: Ánimas Trujano → Col. La Soledad,,3
+17969303,2,R35,R35: Col. La joya → Col. Jardin,,3
+17969309,2,R35,R35: Col. Jardin → Col. La joya,,3
+17969313,2,R37,R37: Col. Moctezuma → Mojonera,,3
+17969315,2,R36,R36: Col. Monte Bello → Col. Volcanes,,3
+17969316,2,R30,R30: fraccionamiento Esmeralda → Col. Volcanes,,3
+17969328,2,R37,R37: Mojonera → Col. Moctezuma,,3
+17969337,3,R42,R42: Rosario 2ª y 5ª Etapa → Bugambilias (Parte Alta),,3
+17969340,3,R42,R42: Bugambilias Parte Alta → Rosario 2ª y 5ª Etapa,,3
+17969412,3,R41,R41: Col. Cuauhtémoc → Ávila Camacho,,3
+17969420,3,R43,R43: Panteón Jardín → Álamos INFONAVIT,,3
+17969430,3,R43,R43: Álamos INFONAVIT → Panteón Jardin,,3
+17969431,3,R46,R46: Rosario 5ª Etapa → Álamos,,3
+17969434,3,R46,R46: Álamos → Rosario 5ª Etapa,,3
+17969435,3,R49,R49: Col. Bugambilias → Santa Cruz Amilpas,,3
+17969445,3,R49,R49: Santa Cruz Amilpas → Col. Bugambilias,,3
+17969491,1,R19,R19: Col. Anáhuac → Col. Volcanes,,3
+17969493,0,R54,R54: Volcanes Col.Jardín → San Martín Secundaria,,3
+17969495,3,R50,R50: Cuevita Parte Alta → Rosario 5ª Etapa,,3
+17969499,0,R56,R56: Montoya-Hospital → Col. Jardin,,3
+17969500,0,R61,R61: San luis Beltrán → Central de Abastos,,3
+17969502,0,R61,R61: Central de Abastos → San luis Beltrán,,3
+17969503,3,R50,R50: Rosario 5ª Etapa → Cuevita Parte Alta,,3
+17969507,0,R62,R62: Panteón Jardín → San Jacinto Amilpas,,3
+17969509,0,R56,R56: Col. Jardin → Montoya-Hospital,,3
+17969510,0,R62,R62: San Jacinto Amilpas → Panteón Jardín,,3
+17969533,0,R63,R63: Col. Heladio Ramírez → Periferico Col.Jardín,,3
+17969605,0,R63,R63: Periferico Col.Jardín → Col. Heladio Ramírez,,3
+17969618,2,R36,R36: Col. Volcanes → Col. Monte Bello,,3
+17969631,1,R18,R18: Mojonera → Ampliación Progreso,,3
+17969636,4,R69,R69: Ricardo Flores Magon 1ª Etapa → Central de Abastos,,3
+17969638,4,R69,R69: Central de Abastos → Ricardo Flores Magon 1ª Etapa,,3
+17969640,0,R68,R68: Rosario 2ª y 5ª Etapa → Montoya,,3
+17969816,4,R70,R70: San Martín → Ricardo Flores Magon 1ª Etapa,,3
+17969829,0,R68,R68: Montoya → Rosario 2ª y 5ª Etapa,,3
+17969830,4,R71,R71: Álamos → Rosario 5ª Etapa,,3
+17969835,4,R75,R75: Fracciionamiento el Rosario → Montoya,,3
+17969861,4,R71,R71: Rosario 5ª Etapa → Álamos,,3
+17969887,4,R77,R77: Ricardo Flores Magon 1ª Etapa → Montoya,,3
+17969888,4,R70,R70: Ricardo Flores Magon 1ª Etapa → San Martín,,3
+17969924,4,R76,R76: Central de Abastos → San luis Beltrán,,3
+17969956,4,R76,R76: San luis Beltrán → Central de Abastos,,3
+17989359,3,R41,R41: Ávila Camacho → Col. Cuauhtémoc,,3
+17989486,4,R75,R75: Montoya → Fracciionamiento el Rosario,,3
+17989539,4,R77,R77: Montoya → Ricardo Flores Magon 1ª Etapa,,3
+18660225,1,R06,R06: Ricardo Flores Magon 1ª Etapa → Ánimas Trujano,,3
+18898951,5,RS01,RS01: Oaxaca Centro → Nazareno Etla,,3
+18898984,5,RS01,RS01: Nazareno Etla → Oaxaca Centro,,3
+18910380,5,RS16,RS16: San Andrés Huayapam → Central de Abastos,,3
+18910381,5,RS05,RS05: Oaxaca Centro → San Lorenzo Cacaotepec Etla,,3
+18910389,5,RS18,RS18: Xoxocotlán-Puntos Intermedios → Oaxaca-Arrazola,,3
+18910390,5,RS18,RS18: Oaxaca-Arrazola → Xoxocotlán-Puntos Intermedios,,3
+18910391,5,RS16,RS16: Central de Abastos → San Andrés Huayapam,,3
+18910401,5,RS19,RS19: Central de Abastos → Av. Ferrocarril,,3
+18910406,5,RS19,RS19: Av. Ferrocarril → Central de Abastos,,3
+18910409,5,RS20,RS20: Xoxocotlán-Oaxaca → Villa Zaachila-San Lucas-Cuilapam,,3
+18910412,5,RS10,RS10: Oaxaca Centro → Santa María Atzompa,,3
+18910414,5,RS22,RS22: Central de Abastos → Tlalixtac,,3
+18910416,5,RS05,RS05: San Lorenzo Cacaotepec Etla → Oaxaca Centro,,3
+18910427,5,RS20,RS20: Villa Zaachila-San Lucas-Cuilapam → Xoxocotlán-Oaxaca,,3
+18910428,5,RS22,RS22: Tlalixtac → Central de Abastos,,3
+18910435,5,RS25,RS25: San Javier Xoxocotlán → Central de Abastos,,3
+18910455,5,RS26,RS26: Central de Abastos → Tlacolula Cd. Yagul,,3
+18910461,5,RS25,RS25: Central de Abastos → San Javier Xoxocotlán,,3
+18910469,5,RS24,RS24: El Tule → Central de Abastos,,3
+18910487,5,RS27,RS27: Central de Abastos → Huayapam,,3
+18910500,5,RS24,RS24: Central de Abastos → El Tule,,3
+18910506,5,RS26,RS26: Tlacolula Cd. Yagul → Central de Abastos,,3
+18910508,5,RS10,RS10: Santa María Atzompa → Oaxaca Centro,,3
+18910509,5,RS27,RS27: Huayapam → Central de Abastos,,3
+19133123,1,R16,R16: Plaza del Valle → Libramiento Viguera,,3

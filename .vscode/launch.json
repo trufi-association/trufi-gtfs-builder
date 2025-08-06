@@ -5,6 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Mexico script",
+            "program": "${workspaceFolder}/examples/mexico/index.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
             "name": "Launch Arequipa script",
             "program": "${workspaceFolder}/examples/Peru-Arequipa/index.js",
             "request": "launch",

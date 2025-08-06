@@ -1,0 +1,15 @@
+agency_id,agency_name,agency_timezone,agency_url
+0,Tusug (Martínez),America/Mexico_City,https://example.com/
+1,Tucdosa,America/Mexico_City,https://example.com/
+2,Choferes del Sur,America/Mexico_City,https://example.com/
+3,Tusug (Medina),America/Mexico_City,https://example.com/
+4,Sertexa,America/Mexico_City,https://example.com/
+5,SEMOVI,America/Mexico_City,https://example.com/
+6,Transportes Choferes del Sur,America/Mexico_City,https://example.com/
+7,TFMSA,America/Mexico_City,https://example.com/
+8,Soc.Coop. Urbanos Choferes del Sur S.C.L,America/Mexico_City,https://example.com/
+9,Valle de Oaxaca,America/Mexico_City,https://example.com/
+10,Transportes Monte Albán,America/Mexico_City,https://example.com/
+11,Atsa,America/Mexico_City,https://example.com/
+12,Empresa autotransportes del sureste,America/Mexico_City,https://example.com/
+13,Suc. De Autotransportes Huayapam,America/Mexico_City,https://example.com/
