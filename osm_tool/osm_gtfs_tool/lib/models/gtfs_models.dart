@@ -132,3 +132,135 @@ class GtfsShape {
         'shape_pt_sequence': sequence,
       };
 }
+
+class GtfsCalendar {
+  final String serviceId;
+  final int monday;
+  final int tuesday;
+  final int wednesday;
+  final int thursday;
+  final int friday;
+  final int saturday;
+  final int sunday;
+  final String startDate;
+  final String endDate;
+
+  GtfsCalendar({
+    required this.serviceId,
+    required this.monday,
+    required this.tuesday,
+    required this.wednesday,
+    required this.thursday,
+    required this.friday,
+    required this.saturday,
+    required this.sunday,
+    required this.startDate,
+    required this.endDate,
+  });
+
+  Map<String, dynamic> toCsv() => {
+        'service_id': serviceId,
+        'monday': monday,
+        'tuesday': tuesday,
+        'wednesday': wednesday,
+        'thursday': thursday,
+        'friday': friday,
+        'saturday': saturday,
+        'sunday': sunday,
+        'start_date': startDate,
+        'end_date': endDate,
+      };
+}
+
+class GtfsFrequency {
+  final String tripId;
+  final String startTime;
+  final String endTime;
+  final int headwaySecs;
+  final int exactTimes;
+
+  GtfsFrequency({
+    required this.tripId,
+    required this.startTime,
+    required this.endTime,
+    required this.headwaySecs,
+    required this.exactTimes,
+  });
+
+  Map<String, dynamic> toCsv() => {
+        'trip_id': tripId,
+        'start_time': startTime,
+        'end_time': endTime,
+        'headway_secs': headwaySecs,
+        'exact_times': exactTimes,
+      };
+}
+
+class GtfsFareAttribute {
+  final String id;
+  final String agencyId;
+  final double price;
+  final String currencyType;
+  final int paymentMethod;
+
+  GtfsFareAttribute({
+    required this.id,
+    required this.agencyId,
+    required this.price,
+    required this.currencyType,
+    required this.paymentMethod,
+  });
+
+  Map<String, dynamic> toCsv() => {
+        'fare_id': id,
+        'agency_id': agencyId,
+        'price': price,
+        'currency_type': currencyType,
+        'payment_method': paymentMethod,
+      };
+}
+
+class GtfsFareRule {
+  final String fareId;
+  final String routeId;
+
+  GtfsFareRule({
+    required this.fareId,
+    required this.routeId,
+  });
+
+  Map<String, dynamic> toCsv() => {
+        'fare_id': fareId,
+        'route_id': routeId,
+      };
+}
+
+class GtfsFeedInfo {
+  final String id;
+  final String publisherName;
+  final String publisherUrl;
+  final String language;
+  final String version;
+  final String startDate;
+  final String endDate;
+
+  GtfsFeedInfo({
+    required this.id,
+    required this.publisherName,
+    required this.publisherUrl,
+    required this.language,
+    required this.version,
+    required this.startDate,
+    required this.endDate,
+  });
+
+  Map<String, dynamic> toCsv() => {
+        'feed_id': id,
+        'feed_publisher_name': publisherName,
+        'feed_publisher_url': publisherUrl,
+        'feed_lang': language,
+        'feed_version': version,
+        'feed_start_date': startDate,
+        'feed_end_date': endDate,
+      };
+}

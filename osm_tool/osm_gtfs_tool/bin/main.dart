@@ -10,7 +10,7 @@ import '../lib/readme_generator.dart';
 Future<void> main(List<String> args) async {
   print("=== 🚍 OSM → GTFS Generator ===");
 
-  // Configuración del bounding box (ejemplo La Paz - puedes modificarlo)
+  // 📦 Bounding box (ejemplo: La Paz, Bolivia)
   final downloader = OSMOverpassDownloader(
     bounds: {
       "north": -17.31828,
@@ -19,7 +19,7 @@ Future<void> main(List<String> args) async {
       "west": -66.330903,
     },
   );
-  // westlimit=-66.330903; southlimit=-17.505838; eastlimit=-65.941028; northlimit=-17.31828
+
   print("🔄 Descargando rutas desde Overpass...");
   final routes = await downloader.getRoutes(["bus"]);
   final ways = await downloader.getWays();
@@ -36,7 +36,7 @@ Future<void> main(List<String> args) async {
   final outputDir = Directory('gtfs_output');
   if (!outputDir.existsSync()) outputDir.createSync();
 
-  // Guardar archivo GeoJSON
+  // Guardar archivo GeoJSON (opcional)
   final geojsonFile = File("${outputDir.path}/output.geojson");
   geojsonFile.writeAsStringSync(jsonEncode(osmData['geojsonFeatures']));
   print("✅ GeoJSON guardado en output.geojson");
@@ -46,6 +46,10 @@ Future<void> main(List<String> args) async {
     'agencyTimezone': 'America/La_Paz',
     'agencyUrl': 'https://nexion.com.bo',
     'defaultAgency': 'Nexion',
+    'vehicleSpeed': 30.0, // km/h por defecto
+    'defaultFares': {
+      'currencyType': 'BOB',
+    },
     'feed': {
       'feed_publisher_name': 'Nexion GTFS Tool',
       'feed_publisher_url': 'https://nexion.com.bo',
@@ -64,15 +68,14 @@ Future<void> main(List<String> args) async {
     config,
   );
 
-
   final gtfsDir = Directory('${outputDir.path}/gtfs');
   if (!gtfsDir.existsSync()) gtfsDir.createSync(recursive: true);
 
-  writeGtfs(gtfsData, gtfsDir.path);
+  writeGtfs(gtfsData, gtfsDir.path); // escribe los archivos .txt
 
-  // Crear README
+  // Crear README opcional
   final readmeText = readmeGenerator(osmData);
   File('${outputDir.path}/README.md').writeAsStringSync(readmeText);
 
-  print("✅ Archivos GTFS generados en: ${outputDir.path}");
+  print("✅ Archivos GTFS generados en: ${outputDir.path}/gtfs");
 }

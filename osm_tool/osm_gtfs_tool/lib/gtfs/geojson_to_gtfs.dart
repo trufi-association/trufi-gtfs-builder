@@ -7,73 +7,65 @@ Map<String, List<Map<String, dynamic>>> geojsonToGtfs(
   Map<String, dynamic> inputStops,
   Map<String, dynamic> config,
 ) {
-  // Convertir cada feature a un OsmFeature
-  final allFeatures = featuresByRouteId.values
-      .expand((e) => (e['features'] as List)
-          .map((f) => OsmFeature.fromGeoJson(f as Map<String, dynamic>)))
+  final groupedFeatures = featuresByRouteId.values
+      .map((e) => (e['features'] as List)
+          .map((f) => OsmFeature.fromGeoJson(f as Map<String, dynamic>))
+          .toList())
       .toList();
 
-  // Construcción de entidades GTFS
+  final allFeatures = groupedFeatures.expand((f) => f).toList();
+
   final agencies = GtfsBuilders.buildAgencies(
     allFeatures,
     config['agencyTimezone'],
     config['agencyUrl'],
   );
 
+  final calendar = GtfsBuilders.buildCalendar();
+
   final routes = GtfsBuilders.buildRoutes(
     allFeatures,
     config['defaultAgency'],
   );
+
+  final fareResult = GtfsBuilders.buildFare(
+    groupedFeatures,
+    config['defaultFares'],
+  );
+
+  final fareAttributes = fareResult['attributes']!.cast<GtfsFareAttribute>();
+  final fareRules = fareResult['rules']!.cast<GtfsFareRule>();
+
+  final feed = GtfsBuilders.buildFeedInfo(config['feed']);
+
+  final trips = GtfsBuilders.buildTrips(allFeatures);
+
+  final frequencies = GtfsBuilders.buildFrequencies(trips);
 
   final stops = GtfsBuilders.buildStops(
     allFeatures,
     inputStops,
   );
 
-  final trips = GtfsBuilders.buildTrips(allFeatures);
-
   final shapes = GtfsBuilders.buildShapes(allFeatures);
 
-  final stopTimes = GtfsBuilders.buildStopTimes(trips, stops);
+  final stopTimes = GtfsBuilders.buildStopTimes(
+    trips,
+    stops,
+    config['vehicleSpeed'] ?? 30.0,
+  );
 
-  // Calendario simple: todos los días activo
-  final calendar = [
-    {
-      'service_id': 'service_1',
-      'monday': 1,
-      'tuesday': 1,
-      'wednesday': 1,
-      'thursday': 1,
-      'friday': 1,
-      'saturday': 1,
-      'sunday': 1,
-      'start_date': config['feed']['feed_start_date'],
-      'end_date': config['feed']['feed_end_date'],
-    }
-  ];
-
-  // Info del feed
-  final feedInfo = [
-    {
-      'feed_publisher_name': config['feed']['feed_publisher_name'],
-      'feed_publisher_url': config['feed']['feed_publisher_url'],
-      'feed_lang': config['feed']['feed_lang'],
-      'feed_version': config['feed']['feed_version'],
-      'feed_start_date': config['feed']['feed_start_date'],
-      'feed_end_date': config['feed']['feed_end_date'],
-      'feed_id': config['feed']['feed_id'],
-    }
-  ];
-
-  // Retornar dataset GTFS completo
   return {
     'agency': agencies.map((a) => a.toCsv()).toList(),
+    'calendar': calendar.map((c) => c.toCsv()).toList(),
     'routes': routes.map((r) => r.toCsv()).toList(),
-    'stops': stops.map((s) => s.toCsv()).toList(),
+    'fare_attributes': fareAttributes.map((f) => f.toCsv()).toList(),
+    'fare_rules': fareRules.map((f) => f.toCsv()).toList(),
+    'feed_info': [feed.toCsv()],
     'trips': trips.map((t) => t.toCsv()).toList(),
-    'shapes': shapes.map((s) => s.toCsv()).toList(),
+    'frequencies': frequencies.map((f) => f.toCsv()).toList(),
+    'stops': stops.map((s) => s.toCsv()).toList(),
     'stop_times': stopTimes.map((s) => s.toCsv()).toList(),
-    'calendar': calendar,
-    'feed_info': feedInfo,
+    'shapes': shapes.map((s) => s.toCsv()).toList(),
   };
 }
