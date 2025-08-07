@@ -1,6 +1,19 @@
-
 import '../extractor_error.dart';
 import 'osm_models.dart';
+
+class RouteData {
+  final List<int> nodes;
+  final Map<String, List<String>> stops;
+  final List<List<double>> points;
+  final List<RouteStop> routeStops;
+
+  RouteData({
+    required this.nodes,
+    required this.stops,
+    required this.points,
+    required this.routeStops,
+  });
+}
 
 class RouteExtractor {
   static void _reverseWay(OsmWay way) {
@@ -14,7 +27,7 @@ class RouteExtractor {
 
   static bool _normalizeCurrentWay(OsmWay lastWay, OsmWay currentWay) {
     var response = _checkConnection(lastWay, currentWay);
-    if (!response && (currentWay.tags['oneway'] != "yes")) {
+    if (!response && !currentWay.isOneway) {
       _reverseWay(currentWay);
       response = _checkConnection(lastWay, currentWay);
     }
@@ -25,19 +38,19 @@ class RouteExtractor {
     var response = _checkConnection(lastWay, currentWay);
     if (response) return true;
 
-    if (currentWay.tags['oneway'] != "yes") {
+    if (!currentWay.isOneway) {
       _reverseWay(currentWay);
       response = _checkConnection(lastWay, currentWay);
     }
     if (response) return true;
 
-    if (lastWay.tags['oneway'] != "yes") {
+    if (!lastWay.isOneway) {
       _reverseWay(lastWay);
       response = _checkConnection(lastWay, currentWay);
     }
     if (response) return true;
 
-    if (currentWay.tags['oneway'] != "yes") {
+    if (!currentWay.isOneway) {
       _reverseWay(currentWay);
       response = _checkConnection(lastWay, currentWay);
     }
@@ -45,16 +58,16 @@ class RouteExtractor {
     return response;
   }
 
-  static Map<String, dynamic> extract(
+  static RouteData extract(
     OsmRelation route,
     Map<int, OsmWay> ways,
     Map<int, OsmStop> stops,
   ) {
     final routeWays = <OsmWay>[];
-    final routeStops = <Map<String, dynamic>>[];
+    final routeStops = <RouteStop>[];
 
     for (var member in route.members) {
-      if (member.type == "way" &&
+      if (member.elementType == OsmElementType.way &&
           (member.role == null || member.role!.isEmpty)) {
         final currentWay = ways[member.ref];
         if (currentWay == null) {
@@ -64,24 +77,16 @@ class RouteExtractor {
                 "https://overpass-turbo.eu/?Q=//${ExtractorError.wayNotExist}%0Arel(${route.id});out geom;way(${member.ref});out geom;&R",
           };
         }
-        // Clonar el way para evitar modificar el original original
         routeWays.add(OsmWay(
-          type: currentWay.type,
           id: currentWay.id,
-          tags: Map<String, dynamic>.from(currentWay.tags),
+          tags: Map<String, String>.from(currentWay.tags),
           nodes: List<int>.from(currentWay.nodes),
-          geometry: List<Map<String, dynamic>>.from(currentWay.geometry),
+          geometry: List<Map<String, double>>.from(currentWay.geometry),
         ));
-      } else if (member.type == "node") {
+      } else if (member.elementType == OsmElementType.node) {
         final currentStop = stops[member.ref];
-        if (currentStop != null &&
-            currentStop.tags['public_transport'] == "stop_position") {
-          routeStops.add({
-            'id': currentStop.id,
-            'lat': currentStop.lat,
-            'lon': currentStop.lon,
-            'tags': currentStop.tags,
-          });
+        if (currentStop != null && currentStop.isStopPosition) {
+          routeStops.add(RouteStop.fromOsmStop(currentStop));
         }
       }
     }
@@ -122,15 +127,15 @@ class RouteExtractor {
       }
       tmpNodes.addAll(way.nodes);
       tmpPoints.addAll(
-        way.geometry.map((pt) => [pt['lon'], pt['lat']]),
+        way.geometry.map((pt) => [pt['lon']!, pt['lat']!]),
       );
     }
 
-    return {
-      'nodes': tmpNodes,
-      'stops': tmpStops,
-      'points': tmpPoints,
-      'routeStops': routeStops,
-    };
+    return RouteData(
+      nodes: tmpNodes,
+      stops: tmpStops,
+      points: tmpPoints,
+      routeStops: routeStops,
+    );
   }
 }

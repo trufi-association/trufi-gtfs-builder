@@ -1,4 +1,3 @@
-
 enum RouteType {
   bus,
   tram,
@@ -30,82 +29,92 @@ extension RouteTypeExtension on RouteType {
   }
 }
 
+enum OsmElementType { node, way, relation }
+
+extension OsmElementTypeParser on OsmElementType {
+  static OsmElementType fromString(String value) {
+    switch (value) {
+      case 'node':
+        return OsmElementType.node;
+      case 'way':
+        return OsmElementType.way;
+      case 'relation':
+        return OsmElementType.relation;
+      default:
+        throw ArgumentError('Unknown element type: $value');
+    }
+  }
+}
+
 class OsmMember {
-  final String type;
+  final OsmElementType elementType;
   final int ref;
   final String? role;
 
-  OsmMember({required this.type, required this.ref, this.role});
+  OsmMember({required this.elementType, required this.ref, this.role});
 
   factory OsmMember.fromJson(Map<String, dynamic> json) => OsmMember(
-        type: json['type'],
+        elementType: OsmElementTypeParser.fromString(json['type']),
         ref: json['ref'],
         role: json['role'],
       );
 
   Map<String, dynamic> toJson() => {
-        'type': type,
+        'type': elementType.name,
         'ref': ref,
         if (role != null) 'role': role,
       };
 }
 
 class OsmRelation {
-  final String type;
+  final OsmElementType elementType = OsmElementType.relation;
   final int id;
   final List<OsmMember> members;
-  final Map<String, dynamic> tags;
+  final Map<String, String> tags;
 
   OsmRelation({
-    required this.type,
     required this.id,
     required this.members,
     required this.tags,
   });
 
   factory OsmRelation.fromJson(Map<String, dynamic> json) => OsmRelation(
-        type: json['type'],
         id: json['id'],
         members: (json['members'] as List)
             .map((m) => OsmMember.fromJson(m))
             .toList(),
-        tags: Map<String, dynamic>.from(json['tags'] ?? {}),
+        tags: Map<String, String>.from(json['tags'] ?? {}),
       );
 
   Map<String, dynamic> toJson() => {
-        'type': type,
+        'type': elementType.name,
         'id': id,
         'members': members.map((m) => m.toJson()).toList(),
         'tags': tags,
       };
 }
 
-
-class OsmStop {
-  final String type;
+class RouteStop {
   final int id;
   final double lat;
   final double lon;
-  final Map<String, dynamic> tags;
+  final Map<String, String> tags;
 
-  OsmStop({
-    required this.type,
+  RouteStop({
     required this.id,
     required this.lat,
     required this.lon,
     required this.tags,
   });
 
-  factory OsmStop.fromJson(Map<String, dynamic> json) => OsmStop(
-        type: json['type'],
-        id: json['id'],
-        lat: json['lat'],
-        lon: json['lon'],
-        tags: Map<String, dynamic>.from(json['tags'] ?? {}),
+  factory RouteStop.fromOsmStop(OsmStop stop) => RouteStop(
+        id: stop.id,
+        lat: stop.lat,
+        lon: stop.lon,
+        tags: stop.tags,
       );
 
   Map<String, dynamic> toJson() => {
-        'type': type,
         'id': id,
         'lat': lat,
         'lon': lon,
@@ -113,15 +122,46 @@ class OsmStop {
       };
 }
 
-class OsmWay {
-  final String type;
+class OsmStop {
+  final OsmElementType elementType = OsmElementType.node;
   final int id;
-   List<int> nodes;
-   List<Map<String, dynamic>> geometry;
-  final Map<String, dynamic> tags;
+  final double lat;
+  final double lon;
+  final Map<String, String> tags;
+
+  OsmStop({
+    required this.id,
+    required this.lat,
+    required this.lon,
+    required this.tags,
+  });
+
+  factory OsmStop.fromJson(Map<String, dynamic> json) => OsmStop(
+        id: json['id'],
+        lat: json['lat'],
+        lon: json['lon'],
+        tags: Map<String, String>.from(json['tags'] ?? {}),
+      );
+
+  Map<String, dynamic> toJson() => {
+        'type': elementType.name,
+        'id': id,
+        'lat': lat,
+        'lon': lon,
+        'tags': tags,
+      };
+
+  bool get isStopPosition => tags['public_transport'] == 'stop_position';
+}
+
+class OsmWay {
+  final OsmElementType elementType = OsmElementType.way;
+  final int id;
+  List<int> nodes;
+  List<Map<String, double>> geometry;
+  final Map<String, String> tags;
 
   OsmWay({
-    required this.type,
     required this.id,
     required this.nodes,
     required this.geometry,
@@ -129,18 +169,21 @@ class OsmWay {
   });
 
   factory OsmWay.fromJson(Map<String, dynamic> json) => OsmWay(
-        type: json['type'],
         id: json['id'],
         nodes: List<int>.from(json['nodes'] ?? []),
-        geometry: List<Map<String, dynamic>>.from(json['geometry'] ?? []),
-        tags: Map<String, dynamic>.from(json['tags'] ?? {}),
+        geometry: (json['geometry'] as List)
+            .map((e) => Map<String, double>.from(e))
+            .toList(),
+        tags: Map<String, String>.from(json['tags'] ?? {}),
       );
 
   Map<String, dynamic> toJson() => {
-        'type': type,
+        'type': elementType.name,
         'id': id,
         'nodes': nodes,
         'geometry': geometry,
         'tags': tags,
       };
+
+  bool get isOneway => tags['oneway'] == 'yes';
 }

@@ -1,7 +1,6 @@
 import 'dart:io';
 import 'dart:convert';
 
-
 import '../lib/osm/overpass_downloader.dart';
 import '../lib/osm/osm_data_tool.dart';
 import '../lib/gtfs/geojson_to_gtfs.dart';
@@ -12,7 +11,6 @@ import '../lib/osm/osm_models.dart';
 Future<void> main(List<String> args) async {
   print("=== 🚍 OSM → GTFS Generator ===");
 
-  // 📦 Bounding box (ejemplo: La Paz, Bolivia)
   final downloader = OSMOverpassDownloader(
     bounds: {
       "north": -17.31828,
@@ -33,19 +31,16 @@ Future<void> main(List<String> args) async {
   final rawOutputDir = Directory('${outputDir.path}/raw_osm');
   if (!rawOutputDir.existsSync()) rawOutputDir.createSync(recursive: true);
 
-  // ✅ Guardar rutas como JSON
   final routesJson = routes.map((k, v) => MapEntry(k.toString(), v.toJson()));
   final routesFile = File('${rawOutputDir.path}/routes.json');
   routesFile.writeAsStringSync(jsonEncode(routesJson));
   print("✅ Rutas guardadas en ${routesFile.path}");
 
-  // ✅ Guardar ways como JSON
   final waysJson = ways.map((k, v) => MapEntry(k.toString(), v.toJson()));
   final waysFile = File('${rawOutputDir.path}/ways.json');
   waysFile.writeAsStringSync(jsonEncode(waysJson));
   print("✅ Ways guardadas en ${waysFile.path}");
 
-  // ✅ Guardar stops como JSON
   final stopsJson = stops.map((k, v) => MapEntry(k.toString(), v.toJson()));
   final stopsFile = File('${rawOutputDir.path}/stops.json');
   stopsFile.writeAsStringSync(jsonEncode(stopsJson));
@@ -59,12 +54,10 @@ Future<void> main(List<String> args) async {
     skipRoute: (route) => ![9085564, 9118342].contains(route.id),
   );
 
-  // ✅ Guardar archivo GeoJSON
   final geojsonFile = File("${outputDir.path}/output.geojson");
-  geojsonFile.writeAsStringSync(jsonEncode(osmData['geojsonFeatures']));
+  geojsonFile.writeAsStringSync(jsonEncode(osmData.geojsonFeatures));
   print("✅ GeoJSON guardado en ${geojsonFile.path}");
 
-  // ✅ Configuración GTFS
   final config = {
     'agencyTimezone': 'America/La_Paz',
     'agencyUrl': 'https://nexion.com.bo',
@@ -84,8 +77,8 @@ Future<void> main(List<String> args) async {
 
   print("🛠️ Generando archivos GTFS...");
   final gtfsData = geojsonToGtfs(
-    osmData['geojsonFeatures'],
-    osmData['stops'],
+    osmData.geojsonFeatures,
+    osmData.stops,
     config,
   );
 
@@ -93,8 +86,7 @@ Future<void> main(List<String> args) async {
   if (!gtfsDir.existsSync()) gtfsDir.createSync(recursive: true);
   writeGtfs(gtfsData, gtfsDir.path);
 
-  // ✅ Crear README
-  final readmeText = readmeGenerator(osmData);
+  final readmeText = osmData.readme;
   File('${outputDir.path}/README.md').writeAsStringSync(readmeText);
 
   print("✅ Archivos GTFS generados en: ${gtfsDir.path}");

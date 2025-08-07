@@ -4,7 +4,21 @@ import 'route_extractor.dart';
 import '../extractor_error.dart';
 import '../readme_generator.dart';
 
-Map<String, dynamic> osmDataTool({
+class OsmDataResult {
+  final Map<String, dynamic> geojsonFeatures;
+  final Map<String, List<String>> stops;
+  final List<Map<String, dynamic>> log;
+  final String readme;
+
+  OsmDataResult({
+    required this.geojsonFeatures,
+    required this.stops,
+    required this.log,
+    required this.readme,
+  });
+}
+
+OsmDataResult osmDataTool({
   required Map<int, OsmRelation> routes,
   required Map<int, OsmWay> ways,
   required Map<int, OsmStop> stops,
@@ -40,22 +54,22 @@ Map<String, dynamic> osmDataTool({
             "properties": {...currentRoute.tags, "id": currentRoute.id},
             "geometry": {
               "type": "LineString",
-              "coordinates": data['points'],
-              "nodes": data['nodes'],
+              "coordinates": data.points,
+              "nodes": data.nodes,
             }
           },
-          ...data['routeStops'].map((element) => {
+          ...data.routeStops.map((stop) => {
                 "type": "Feature",
-                "properties": {...element['tags'], "id": element['id']},
+                "properties": {...stop.tags, "id": stop.id},
                 "geometry": {
                   "type": "Point",
-                  "coordinates": [element['lon'], element['lat']]
+                  "coordinates": [stop.lon, stop.lat]
                 }
               })
         ]
       };
 
-      data['stops'].forEach((stopId, names) {
+      data.stops.forEach((stopId, names) {
         mainStops.putIfAbsent(stopId, () => []).addAll(names);
       });
     } catch (error) {
@@ -67,10 +81,10 @@ Map<String, dynamic> osmDataTool({
     }
   }
 
-  return {
-    "geojsonFeatures": geojsonFeatures,
-    "stops": mainStops,
-    "log": logFile,
-    "readme": readmeGenerator({"log": logFile}),
-  };
+  return OsmDataResult(
+    geojsonFeatures: geojsonFeatures,
+    stops: mainStops,
+    log: logFile,
+    readme: readmeGenerator({"log": logFile}),
+  );
 }
