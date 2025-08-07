@@ -1,6 +1,8 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
+import 'osm_models.dart';
+
 class OSMOverpassDownloader {
   final String bbox;
 
@@ -17,34 +19,37 @@ class OSMOverpassDownloader {
     return jsonDecode(response.body);
   }
 
-  Map<int, dynamic> _indexElementsById(Map<String, dynamic> response) {
-    final map = <int, dynamic>{};
+  Map<int, T> _mapElementsById<T>(Map<String, dynamic> response, T Function(Map<String, dynamic>) fromJson) {
+    final map = <int, T>{};
     for (var element in response['elements']) {
-      map[element['id']] = element;
+      final id = element['id'];
+      map[id] = fromJson(element);
     }
     return map;
   }
 
-  Future<Map<int, dynamic>> getWays() async {
+  Future<Map<int, OsmWay>> getWays() async {
     final query = '[out:json];rel["type"="route"]($bbox);way(r);out geom;';
     final resp = await _overpassRequest(query);
-    return _indexElementsById(resp);
+    return _mapElementsById(resp, OsmWay.fromJson);
   }
 
-  Future<Map<int, dynamic>> getStops() async {
+  Future<Map<int, OsmStop>> getStops() async {
     final query = '[out:json];rel["type"="route"]($bbox);node(r);out geom;';
     final resp = await _overpassRequest(query);
-    return _indexElementsById(resp);
+    return _mapElementsById(resp, OsmStop.fromJson);
   }
 
-  Future<Map<int, dynamic>> getRoutes(List<String> transformTypes) async {
-    var routesFilter = "";
-    if (transformTypes.isNotEmpty) {
-      routesFilter = '["route"~"${transformTypes.join("|")}"]';
-    }
-    final query =
-        '[out:json];rel["type"="route"]$routesFilter($bbox);out body;';
-    final resp = await _overpassRequest(query);
-    return _indexElementsById(resp);
+Future<Map<int, OsmRelation>> getRoutes(List<RouteType> types) async {
+  var routesFilter = "";
+  if (types.isNotEmpty) {
+    final joined = types.map((e) => e.value).join("|");
+    routesFilter = '["route"~"$joined"]';
   }
+  final query =
+      '[out:json];rel["type"="route"]$routesFilter($bbox);out body;';
+  final resp = await _overpassRequest(query);
+  return _mapElementsById(resp, OsmRelation.fromJson);
+}
+
 }

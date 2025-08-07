@@ -1,46 +1,43 @@
 import 'dart:collection';
+import 'osm_models.dart';
 import 'route_extractor.dart';
 import '../extractor_error.dart';
 import '../readme_generator.dart';
 
 Map<String, dynamic> osmDataTool({
-  required Map<int, dynamic> routes,
-  required Map<int, dynamic> ways,
-  required Map<int, dynamic> stops,
-  required bool Function(Map<String, dynamic>) skipRoute,
+  required Map<int, OsmRelation> routes,
+  required Map<int, OsmWay> ways,
+  required Map<int, OsmStop> stops,
+  required bool Function(OsmRelation) skipRoute,
 }) {
   final mainStops = <String, List<String>>{};
   final geojsonFeatures = <String, dynamic>{};
   final logFile = <Map<String, dynamic>>[];
 
   for (var entry in routes.entries) {
-    final currentRoute = entry.value as Map<String, dynamic>;
+    final currentRoute = entry.value;
     try {
-      if (!skipRoute(currentRoute)) {
+      if (skipRoute(currentRoute)) {
         continue;
-        // throw {
-        //   "extractor_error": ExtractorError.routeSkipped,
-        //   "uri":
-        //       "https://overpass-turbo.eu/?Q=//${ExtractorError.routeSkipped}%0Arel(${currentRoute['id']});out geom;&R"
-        // };
       }
-      if (!(currentRoute['tags']?.containsKey("ref") ?? false)) {
+
+      if (!currentRoute.tags.containsKey("ref")) {
         throw {
           "extractor_error": ExtractorError.noRefDefined,
           "uri":
-              "https://overpass-turbo.eu/?Q=//${ExtractorError.noRefDefined}%0Arel(${currentRoute['id']});out geom;&R"
+              "https://overpass-turbo.eu/?Q=//${ExtractorError.noRefDefined}%0Arel(${currentRoute.id});out geom;&R"
         };
       }
 
       final data = RouteExtractor.extract(currentRoute, ways, stops);
-      logFile.add({"id": currentRoute['id'], "tags": currentRoute['tags']});
+      logFile.add({"id": currentRoute.id, "tags": currentRoute.tags});
 
-      geojsonFeatures["${currentRoute['id']}"] = {
+      geojsonFeatures["${currentRoute.id}"] = {
         "type": "FeatureCollection",
         "features": [
           {
             "type": "Feature",
-            "properties": {...currentRoute['tags'], "id": currentRoute['id']},
+            "properties": {...currentRoute.tags, "id": currentRoute.id},
             "geometry": {
               "type": "LineString",
               "coordinates": data['points'],
@@ -63,9 +60,9 @@ Map<String, dynamic> osmDataTool({
       });
     } catch (error) {
       logFile.add({
-        "id": currentRoute['id'],
+        "id": currentRoute.id,
         "error": error,
-        "tags": currentRoute['tags']
+        "tags": currentRoute.tags,
       });
     }
   }
@@ -74,6 +71,6 @@ Map<String, dynamic> osmDataTool({
     "geojsonFeatures": geojsonFeatures,
     "stops": mainStops,
     "log": logFile,
-    "readme": readmeGenerator({"log": logFile})
+    "readme": readmeGenerator({"log": logFile}),
   };
 }

@@ -1,47 +1,43 @@
+
 import '../extractor_error.dart';
+import 'osm_models.dart';
 
 class RouteExtractor {
-  static void _reverseWay(Map<String, dynamic> way) {
-    way['geometry'] = List.from(way['geometry'].reversed);
-    way['nodes'] = List.from(way['nodes'].reversed);
+  static void _reverseWay(OsmWay way) {
+    way.geometry = List.from(way.geometry.reversed);
+    way.nodes = List.from(way.nodes.reversed);
   }
 
-  static bool _checkConnection(Map<String, dynamic> a, Map<String, dynamic> b) {
-    return a['nodes'].last == b['nodes'].first;
+  static bool _checkConnection(OsmWay a, OsmWay b) {
+    return a.nodes.last == b.nodes.first;
   }
 
-  static bool _normalizeCurrentWay(
-    Map<String, dynamic> lastWay,
-    Map<String, dynamic> currentWay,
-  ) {
+  static bool _normalizeCurrentWay(OsmWay lastWay, OsmWay currentWay) {
     var response = _checkConnection(lastWay, currentWay);
-    if (!response && (currentWay['tags']?['oneway'] != "yes")) {
+    if (!response && (currentWay.tags['oneway'] != "yes")) {
       _reverseWay(currentWay);
       response = _checkConnection(lastWay, currentWay);
     }
     return response;
   }
 
-  static bool _checkFirstWay(
-    Map<String, dynamic> lastWay,
-    Map<String, dynamic> currentWay,
-  ) {
+  static bool _checkFirstWay(OsmWay lastWay, OsmWay currentWay) {
     var response = _checkConnection(lastWay, currentWay);
     if (response) return true;
 
-    if (currentWay['tags']?['oneway'] != "yes") {
+    if (currentWay.tags['oneway'] != "yes") {
       _reverseWay(currentWay);
       response = _checkConnection(lastWay, currentWay);
     }
     if (response) return true;
 
-    if (lastWay['tags']?['oneway'] != "yes") {
+    if (lastWay.tags['oneway'] != "yes") {
       _reverseWay(lastWay);
       response = _checkConnection(lastWay, currentWay);
     }
     if (response) return true;
 
-    if (currentWay['tags']?['oneway'] != "yes") {
+    if (currentWay.tags['oneway'] != "yes") {
       _reverseWay(currentWay);
       response = _checkConnection(lastWay, currentWay);
     }
@@ -50,38 +46,42 @@ class RouteExtractor {
   }
 
   static Map<String, dynamic> extract(
-    Map<String, dynamic> routeElements,
-    Map<int, dynamic> ways,
-    Map<int, dynamic> stops,
+    OsmRelation route,
+    Map<int, OsmWay> ways,
+    Map<int, OsmStop> stops,
   ) {
-    final routeWays = <Map<String, dynamic>>[];
+    final routeWays = <OsmWay>[];
     final routeStops = <Map<String, dynamic>>[];
 
-    for (var element in routeElements['members']) {
-      if (element['type'] == "way" &&
-          (element['role'] == null || element['role'] == "")) {
-        final currentWay = ways[element['ref']];
+    for (var member in route.members) {
+      if (member.type == "way" &&
+          (member.role == null || member.role!.isEmpty)) {
+        final currentWay = ways[member.ref];
         if (currentWay == null) {
           throw {
             "extractor_error": ExtractorError.wayNotExist,
             "uri":
-                "https://overpass-turbo.eu/?Q=//${ExtractorError.wayNotExist}%0Arel(${routeElements['id']});out geom;way(${element['ref']});out geom;&R",
+                "https://overpass-turbo.eu/?Q=//${ExtractorError.wayNotExist}%0Arel(${route.id});out geom;way(${member.ref});out geom;&R",
           };
         }
-        // Clonar el way para evitar modificar el original
-        routeWays.add({
-          "id": currentWay['id'],
-          "tags": Map<String, dynamic>.from(currentWay['tags'] ?? {}),
-          "nodes": List<int>.from(currentWay['nodes'] ?? []),
-          "geometry": List<Map<String, dynamic>>.from(
-            currentWay['geometry'] ?? [],
-          ),
-        });
-      } else if (element['type'] == "node") {
-        final currentStop = stops[element['ref']];
+        // Clonar el way para evitar modificar el original original
+        routeWays.add(OsmWay(
+          type: currentWay.type,
+          id: currentWay.id,
+          tags: Map<String, dynamic>.from(currentWay.tags),
+          nodes: List<int>.from(currentWay.nodes),
+          geometry: List<Map<String, dynamic>>.from(currentWay.geometry),
+        ));
+      } else if (member.type == "node") {
+        final currentStop = stops[member.ref];
         if (currentStop != null &&
-            currentStop['tags']?['public_transport'] == "stop_position") {
-          routeStops.add(currentStop);
+            currentStop.tags['public_transport'] == "stop_position") {
+          routeStops.add({
+            'id': currentStop.id,
+            'lat': currentStop.lat,
+            'lon': currentStop.lon,
+            'tags': currentStop.tags,
+          });
         }
       }
     }
@@ -90,7 +90,7 @@ class RouteExtractor {
       throw {
         "extractor_error": ExtractorError.routeWithEmptyWays,
         "uri":
-            "https://overpass-turbo.eu/?Q=//${ExtractorError.routeWithEmptyWays}%0Arel(${routeElements['id']});out geom;&R",
+            "https://overpass-turbo.eu/?Q=//${ExtractorError.routeWithEmptyWays}%0Arel(${route.id});out geom;&R",
       };
     }
 
@@ -105,7 +105,7 @@ class RouteExtractor {
         throw {
           "extractor_error": ExtractorError.notNext,
           "uri":
-              "https://overpass-turbo.eu/?Q=//${ExtractorError.notNext}%0Arel(${routeElements['id']});out geom;\nway(${lastWay['id']});out geom;\nway(${currentWay['id']});out geom;&R",
+              "https://overpass-turbo.eu/?Q=//${ExtractorError.notNext}%0Arel(${route.id});out geom;way(${lastWay.id});out geom;way(${currentWay.id});out geom;&R",
         };
       }
     }
@@ -114,17 +114,15 @@ class RouteExtractor {
     final tmpStops = <String, List<String>>{};
     final tmpPoints = <List<double>>[];
 
-    for (var element in routeWays) {
-      for (var nodeId in element['nodes']) {
+    for (var way in routeWays) {
+      for (var nodeId in way.nodes) {
         final stopId = nodeId.toString();
-        final stopName = element['tags']?['name'] ?? "";
+        final stopName = way.tags['name'] ?? "";
         tmpStops.putIfAbsent(stopId, () => []).add(stopName);
       }
-      tmpNodes.addAll(List<int>.from(element['nodes']));
+      tmpNodes.addAll(way.nodes);
       tmpPoints.addAll(
-        (element['geometry'] as List).map(
-          (pt) => [pt['lon'] as double, pt['lat'] as double],
-        ),
+        way.geometry.map((pt) => [pt['lon'], pt['lat']]),
       );
     }
 
