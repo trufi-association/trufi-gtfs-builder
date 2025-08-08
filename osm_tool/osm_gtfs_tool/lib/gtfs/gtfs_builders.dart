@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import '../models/gtfs_config.dart';
 import '../models/osm_models.dart';
 import '../models/gtfs_models.dart';
 
@@ -81,37 +82,43 @@ class GtfsBuilders {
     }
   }
 
-  static List<GtfsStop> buildStops(
-    List<OsmFeature> features,
-    Map<String, dynamic> stops,
-  ) {
-    final result = <GtfsStop>[];
-    final seen = <String>{};
+static List<GtfsStop> buildStops(
+  List<OsmFeature> features,
+  Map<String, List<String>> stops, // ✅ Tipado fuerte aquí
+) {
+  final result = <GtfsStop>[];
+  final seen = <String>{};
 
-    for (var f in features) {
-      if (f.geometryType == 'LineString' &&
-          f.lineCoordinates != null &&
-          f.nodes != null) {
-        for (int i = 0; i < f.nodes!.length; i++) {
-          final id = f.nodes![i];
-          if (seen.contains(id)) continue;
-          seen.add(id);
+  for (var f in features) {
+    if (f.geometryType == 'LineString' &&
+        f.lineCoordinates != null &&
+        f.nodes != null) {
+      for (int i = 0; i < f.nodes!.length; i++) {
+        final id = f.nodes![i];
+        if (seen.contains(id)) continue;
+        seen.add(id);
 
-          final coord = f.lineCoordinates![i];
+        final coord = f.lineCoordinates![i];
+        final stopNames = stops[id];
+        final stopName = (stopNames != null && stopNames.isNotEmpty)
+            ? stopNames.first
+            : 'unnamed';
 
-          final stopNames = stops[id] as List<String>?;
-          final stopName = (stopNames != null && stopNames.isNotEmpty)
-              ? stopNames.first
-              : 'unnamed';
-
-          result.add(
-            GtfsStop(id: id, name: stopName, lat: coord[1], lon: coord[0]),
-          );
-        }
+        result.add(
+          GtfsStop(
+            id: id,
+            name: stopName,
+            lat: coord[1],
+            lon: coord[0],
+          ),
+        );
       }
     }
-    return result;
   }
+
+  return result;
+}
+
 
   static List<GtfsTrip> buildTrips(List<OsmFeature> features) {
     final trips = <GtfsTrip>[];
@@ -196,49 +203,51 @@ class GtfsBuilders {
     return stopTimes;
   }
 
-  static Map<String, List<dynamic>> buildFare(
-    List<List<OsmFeature>> features,
-    Map<String, dynamic> defaultFares,
-  ) {
-    final attributes = <GtfsFareAttribute>[];
-    final rules = <GtfsFareRule>[];
-    int fareIdCounter = 0;
+static Map<String, List<dynamic>> buildFare(
+  List<List<OsmFeature>> features,
+  GtfsFareDefaults defaultFares, // ✅ cambio aquí
+) {
+  final attributes = <GtfsFareAttribute>[];
+  final rules = <GtfsFareRule>[];
+  int fareIdCounter = 0;
 
-    for (var routeFeatures in features) {
-      if (routeFeatures.isEmpty) continue;
-      final main = routeFeatures.first;
-      final fareId = 'fare_${fareIdCounter++}';
-      final price = double.tryParse(main.tags['fee'] ?? '') ?? 0;
+  for (var routeFeatures in features) {
+    if (routeFeatures.isEmpty) continue;
+    final main = routeFeatures.first;
+    final fareId = 'fare_${fareIdCounter++}';
+    final price = double.tryParse(main.tags['fee'] ?? '') ?? 0;
 
-      attributes.add(
-        GtfsFareAttribute(
-          id: fareId,
-          agencyId: main.tags['operator'] ?? '',
-          price: price,
-          currencyType: defaultFares['currencyType'],
-          paymentMethod: main.tags['paymentMethod'] != null
-              ? int.tryParse(main.tags['paymentMethod']) ?? 0
-              : 0,
-        ),
-      );
-
-      rules.add(GtfsFareRule(fareId: fareId, routeId: main.id));
-    }
-
-    return {'attributes': attributes, 'rules': rules};
-  }
-
-  static GtfsFeedInfo buildFeedInfo(Map<String, dynamic> config) {
-    return GtfsFeedInfo(
-      id: config['feed_id'],
-      publisherName: config['feed_publisher_name'],
-      publisherUrl: config['feed_publisher_url'],
-      language: config['feed_lang'],
-      version: config['feed_version'],
-      startDate: config['feed_start_date'],
-      endDate: config['feed_end_date'],
+    attributes.add(
+      GtfsFareAttribute(
+        id: fareId,
+        agencyId: main.tags['operator'] ?? '',
+        price: price,
+        currencyType: defaultFares.currencyType, // ✅ acceso tipado
+        paymentMethod: main.tags['paymentMethod'] != null
+            ? int.tryParse(main.tags['paymentMethod']) ?? 0
+            : 0,
+      ),
     );
+
+    rules.add(GtfsFareRule(fareId: fareId, routeId: main.id));
   }
+
+  return {'attributes': attributes, 'rules': rules};
+}
+
+
+static GtfsFeedInfo buildFeedInfo(GtfsFeed config) {
+  return GtfsFeedInfo(
+    id: config.feedId,
+    publisherName: config.feedPublisherName,
+    publisherUrl: config.feedPublisherUrl,
+    language: config.feedLang,
+    version: config.feedVersion,
+    startDate: config.feedStartDate,
+    endDate: config.feedEndDate,
+  );
+}
+
 
   static String _secondsToTime(int seconds) {
     final hh = (seconds ~/ 3600).toString().padLeft(2, '0');

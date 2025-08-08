@@ -1,11 +1,12 @@
 import 'dart:io';
 import 'dart:convert';
 
+import '../lib/models/gtfs_config.dart';
+
 import '../lib/osm/overpass_downloader.dart';
 import '../lib/osm/osm_data_tool.dart';
 import '../lib/gtfs/geojson_to_gtfs.dart';
 import '../lib/gtfs/write_gtfs.dart';
-import '../lib/readme_generator.dart';
 import '../lib/osm/osm_models.dart';
 
 Future<void> main(List<String> args) async {
@@ -58,22 +59,25 @@ Future<void> main(List<String> args) async {
   geojsonFile.writeAsStringSync(jsonEncode(osmData.geojsonFeatures));
   print("✅ GeoJSON guardado en ${geojsonFile.path}");
 
-  final config = {
-    'agencyTimezone': 'America/La_Paz',
-    'agencyUrl': 'https://nexion.com.bo',
-    'defaultAgency': 'Nexion',
-    'vehicleSpeed': 30.0,
-    'defaultFares': {'currencyType': 'BOB'},
-    'feed': {
-      'feed_publisher_name': 'Nexion GTFS Tool',
-      'feed_publisher_url': 'https://nexion.com.bo',
-      'feed_lang': 'es',
-      'feed_version': '1.0.0',
-      'feed_start_date': '20250101',
-      'feed_end_date': '20251231',
-      'feed_id': 'nexion_feed',
-    },
-  };
+final config = GtfsConfig(
+  agencyTimezone: 'America/La_Paz',
+  agencyUrl: 'https://nexion.com.bo',
+  defaultAgency: 'Nexion',
+  vehicleSpeed: 30.0,
+  defaultFares: GtfsFareDefaults(
+    currencyType: 'BOB',
+  ),
+  feed: GtfsFeed(
+    feedPublisherName: 'Nexion GTFS Tool',
+    feedPublisherUrl: 'https://nexion.com.bo',
+    feedLang: 'es',
+    feedVersion: '1.0.0',
+    feedStartDate: '20250101',
+    feedEndDate: '20251231',
+    feedId: 'nexion_feed',
+  ),
+);
+
 
   print("🛠️ Generando archivos GTFS...");
   final gtfsData = geojsonToGtfs(

@@ -1,4 +1,6 @@
-import 'package:osm_gtfs_tool/osm/osm_data_tool.dart';
+
+
+import '../osm/osm_data_tool.dart';
 
 class OsmStop {
   final String id;
