@@ -88,7 +88,7 @@ final config = GtfsConfig(
 
   final gtfsDir = Directory('${outputDir.path}/gtfs');
   if (!gtfsDir.existsSync()) gtfsDir.createSync(recursive: true);
-  writeGtfs(gtfsData, gtfsDir.path);
+  writeGtfs(gtfsData.toCsvMap(), gtfsDir.path);
 
   final readmeText = osmData.readme;
   File('${outputDir.path}/README.md').writeAsStringSync(readmeText);

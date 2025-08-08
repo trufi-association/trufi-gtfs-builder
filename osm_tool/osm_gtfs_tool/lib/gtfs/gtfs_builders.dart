@@ -203,9 +203,9 @@ static List<GtfsStop> buildStops(
     return stopTimes;
   }
 
-static Map<String, List<dynamic>> buildFare(
+static ({List<GtfsFareAttribute> attributes, List<GtfsFareRule> rules}) buildFare(
   List<List<OsmFeature>> features,
-  GtfsFareDefaults defaultFares, // ✅ cambio aquí
+  GtfsFareDefaults defaultFares,
 ) {
   final attributes = <GtfsFareAttribute>[];
   final rules = <GtfsFareRule>[];
@@ -222,7 +222,7 @@ static Map<String, List<dynamic>> buildFare(
         id: fareId,
         agencyId: main.tags['operator'] ?? '',
         price: price,
-        currencyType: defaultFares.currencyType, // ✅ acceso tipado
+        currencyType: defaultFares.currencyType,
         paymentMethod: main.tags['paymentMethod'] != null
             ? int.tryParse(main.tags['paymentMethod']) ?? 0
             : 0,
@@ -232,8 +232,9 @@ static Map<String, List<dynamic>> buildFare(
     rules.add(GtfsFareRule(fareId: fareId, routeId: main.id));
   }
 
-  return {'attributes': attributes, 'rules': rules};
+  return (attributes: attributes, rules: rules);
 }
+
 
 
 static GtfsFeedInfo buildFeedInfo(GtfsFeed config) {
