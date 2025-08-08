@@ -1,3 +1,5 @@
+import 'package:osm_gtfs_tool/osm/osm_data_tool.dart';
+
 class OsmStop {
   final String id;
   final String name;
@@ -73,6 +75,40 @@ class OsmFeature {
       );
     } else {
       throw UnsupportedError("Geometry type $type no soportado");
+    }
+  }
+  factory OsmFeature.fromGeoJsonModel(GeoJsonFeature feature) {
+    final geometry = feature.geometry;
+    final type = geometry.type;
+
+    switch (type) {
+      case GeoJsonGeometryType.lineString:
+        return OsmFeature(
+          id: feature.properties['id'].toString(),
+          tags: feature.properties,
+          geometryType: type.name,
+          lineCoordinates: (geometry.coordinates as List)
+              .map<List<double>>(
+                (c) => [(c[0] as num).toDouble(), (c[1] as num).toDouble()],
+              )
+              .toList(),
+          nodes: geometry.nodes?.map((n) => n.toString()).toList(),
+        );
+
+      case GeoJsonGeometryType.point:
+        final coords = geometry.coordinates;
+        return OsmFeature(
+          id: feature.properties['id'].toString(),
+          tags: feature.properties,
+          geometryType: type.name,
+          pointCoordinates: [
+            (coords[0] as num).toDouble(),
+            (coords[1] as num).toDouble(),
+          ],
+        );
+
+      default:
+        throw UnsupportedError("Geometry type ${type.name} no soportado");
     }
   }
 }

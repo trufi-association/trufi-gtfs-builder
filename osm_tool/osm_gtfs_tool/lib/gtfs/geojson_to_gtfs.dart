@@ -1,15 +1,17 @@
 import '../models/osm_models.dart';
 import '../models/gtfs_models.dart';
+import '../osm/osm_data_tool.dart';
 import 'gtfs_builders.dart';
 
 Map<String, List<Map<String, dynamic>>> geojsonToGtfs(
-  Map<String, dynamic> featuresByRouteId,
+  Map<String, GeoJsonFeatureCollection> featuresByRouteId,
   Map<String, dynamic> inputStops,
   Map<String, dynamic> config,
 ) {
+  // Agrupar todos los features por ruta
   final groupedFeatures = featuresByRouteId.values
-      .map((e) => (e['features'] as List)
-          .map((f) => OsmFeature.fromGeoJson(f as Map<String, dynamic>))
+      .map((fc) => fc.features
+          .map((f) => OsmFeature.fromGeoJsonModel(f))
           .toList())
       .toList();
 
