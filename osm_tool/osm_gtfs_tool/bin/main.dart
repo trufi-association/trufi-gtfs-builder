@@ -1,7 +1,6 @@
 import 'dart:io';
 import 'dart:convert';
 
-import '../lib/models/gtfs_config.dart';
 
 import '../lib/osm/overpass_downloader.dart';
 import '../lib/osm/osm_data_tool.dart';

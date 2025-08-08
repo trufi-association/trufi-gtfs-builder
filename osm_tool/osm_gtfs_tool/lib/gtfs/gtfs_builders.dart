@@ -1,8 +1,8 @@
 import 'dart:math';
 
-import '../models/gtfs_config.dart';
-import '../models/osm_models.dart';
-import '../models/gtfs_models.dart';
+import 'gtfs_models.dart';
+import '../osm/osm_models.dart';
+import 'geojson_to_gtfs.dart';
 
 class GtfsBuilders {
   static List<GtfsAgency> buildAgencies(
