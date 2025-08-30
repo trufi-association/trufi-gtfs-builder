@@ -2,52 +2,70 @@ route_id,agency_id,route_short_name,route_long_name,route_color,route_type
 19455302,0,1,1: Mercado → Las Huertas/Agua Escondida,1D3A72,3
 19455324,0,1,1: Las Huertas/Agua Escondida → Mercado,1D3A72,3
 19455371,0,2,2: Mercado → Xhixhata/Santa Martha de la Cruz,1D3A72,3
+19455382,0,4,4: Mercado → La Comunidad,1D3A72,3
 19455390,0,3,3: Mercado → Buenavista,1D3A72,3
 19512377,0,2,2: Xhixhata/Santa Martha de la Cruz → Mercado,1D3A72,3
-19512577,0,13,13: Mercado → El Huizache/El Banco,1D3A72,3
-19512581,0,13,13: El Huizache/El Banco → Mercado,1D3A72,3
+19512573,0,4,4: La Comunidad → Mercado,1D3A72,3
+19512577,1,13,13: Mercado → El Huizache/El Banco,1D3A72,3
+19512581,1,13,13: El Huizache/El Banco → Mercado,1D3A72,3
 19525478,0,3A,3A: Buenavista → Mercado,1D3A72,3
 19525486,0,3B,3B: Buenavista → Mercado,1D3A72,3
-19525567,1,6,6: Mercado → La Huaracha (vía Aldama),1D3A72,3
+19525563,0,5,5: Mercado → La Huaracha (vía Llano Grande),1D3A72,3
+19525565,0,5,5: La Huaracha (vía Llano Grande) → Mercado,1D3A72,3
+19525567,0,6,6: Mercado → La Huaracha (vía Aldama),1D3A72,3
 19525570,0,6,6: La Huaracha (vía Aldama) → Mercado,1D3A72,3
 19525601,0,7,7: Mercado → El Saltillo,1D3A72,3
 19525606,0,7,7: El Saltillo → Mercado,1D3A72,3
 19525611,0,8,8: Mercado → Calpulalplan,1D3A72,3
-19525623,2,8,8: Calpulalplan → Mercado,1D3A72,3
-19525638,3,9,9: Mercado → Xhimohay,99BF12,3
-19525651,4,9,9: Xhimohay → Mercado,"99BF12, FB0102",3
-19525663,2,10,10: Ejido San Lorenzo Octeyuco → Mercado,1D3A72,3
-19525667,0,11,11: Mercado → Doxhicho,"1D3A72, D1AE3B",3
-19525693,0,12,12: Mercado → San Lorenzo Octeyuco,1D3A72,3
-19525699,0,14,14: Mercado → San Pablo/El Pedregal,1D3A72,3
-19525710,0,12,12: San Lorenzo Octeyuco → Mercado,1D3A72,3
-19525711,0,14,14: San Pablo/El Pedregal → Mercado,1D3A72,3
-19525716,0,15,15: Mercado → Santiago Oxthoc,1D3A72,3
-19525723,2,16,16: Terminal → San Lorenzo Nenamicoyan,FB0102,3
-19525724,2,16,16: San Lorenzo Nenamicoyan → Terminal,FB0102,3
-19528431,3,17,17: Terminal → Km 107,99BF12,3
-19528433,3,17,17: Km 107 → Terminal,99BF12,3
-19528454,4,18,18: Terminal → San Juan Tuxtepec,"99BF12, FB0102",3
-19528476,2,19,19: Terminal → San Andrés Timilpan,FB0102,3
-19528491,4,21,21: Terminal → Ojo de Agua,"99BF12, FB0102",3
-19528506,4,21,21: Ojo de Agua → Terminal,"99BF12, #FB0102",3
-19528579,5,22,22: Terminal → Chapa de Mota (vía El Quinte),0165BB,3
-19528589,6,23,23: Terminal → Chapa de Mota (vía Chapa),A8A487,3
-19528662,7,24,24: Santiago Oxthoc/ El Xhiti → Terminal,A52136,3
-19528663,7,25,25: Terminal → Emiliano Zapata,A52136,3
-19528664,7,25,25: Emiliano Zapata → Terminal,A52136,3
-19528665,0,26,26: Enfrente Terminal → El Saltillito,1D3A72,3
-19531727,8,27,27: Enfrente Terminal → Ojo de Agua,D1AE3B,3
-19531729,5,28,28: Enfrente Terminal → San Juan Tuxtepec,0165BB,3
-19531731,5,29,29: Enfrente Terminal → Xhimohay,0165BB,3
-19531734,9,30,30: Aurrera → El Rosal,"D1AE3B, #A52136",3
-19531735,9,30,30: El Rosal → Aurrera,"D1AE3B, #A52136",3
-19531736,8,31,31: Aurrera → La Goleta/San Juan Daxthi,D1AE3B,3
-19531739,8,31A,31A: La Goleta/San Juan Daxthi → Aurrera,D1AE3B,3
-19531740,8,31B,31B: La Goleta/San Juan Daxthi → Aurrera,D1AE3B,3
-19531741,3,32,32: Aurrera → Acazuchitlán (San Juanico),99BF12,3
-19531742,3,32,32: Acazuchitlán (San Juanico) → Aurrera,99BF12,3
-19531743,3,33,33: Aurrera → Bella Vista,99BF12,3
-19531744,3,33,33: Bella Vista → Aurrera,99BF12,3
-19531747,8,34,34: Doxhicho → Aurrera,D1AE3B,3
-19531748,8,34,34: Doxhicho → Aurrera,D1AE3B,3
+19525623,0,8,8: Calpulalplan → Mercado,1D3A72,3
+19525638,2,9,9: Mercado → Xhimohay,99BF12,3
+19525651,3,9,9: Xhimohay → Mercado,99BF12,3
+19525659,0,10,10: Mercado → Ejido San Lorenzo Octeyuco,1D3A72,3
+19525663,0,10,10: Ejido San Lorenzo Octeyuco → Mercado,1D3A72,3
+19525667,4,11,11: Mercado → Doxhicho,1D3A72,3
+19525674,4,11,11: Doxhicho → Mercado,1D3A72,3
+19525693,1,12,12: Mercado → San Lorenzo Octeyuco,1D3A72,3
+19525699,1,14,14: Mercado → San Pablo/El Pedregal,1D3A72,3
+19525710,1,12,12: San Lorenzo Octeyuco → Mercado,1D3A72,3
+19525711,1,14,14: San Pablo/El Pedregal → Mercado,1D3A72,3
+19525716,1,15,15: Mercado → Santiago Oxthoc,1D3A72,3
+19525720,1,15,15: Santiago Oxthoc → Mercado,1D3A72,3
+19525723,5,16,16: Terminal → San Lorenzo Nenamicoyan,FB0102,3
+19525724,5,16,16: San Lorenzo Nenamicoyan → Terminal,FB0102,3
+19528431,2,17,17: Terminal → Km 107,99BF12,3
+19528433,6,17,17: Km 107 → Terminal,99BF12,3
+19528454,7,18,18: Terminal → San Juan Tuxtepec,"99BF12, FB0102",3
+19528471,7,18,18: San Juan Tuxtepec → Terminal,"99BF12, FB0102",3
+19528476,5,19,19: Terminal → San Andrés Timilpan,FB0102,3
+19528479,5,19,19: San Andrés Timilpan → Terminal,FB0102,3
+19528483,5,20,20: Terminal → San Martín Tuchicuitlapilco,FB0102,3
+19528489,5,20,20: San Martín Tuchicuitlapilco → Terminal,FB0102,3
+19528491,3,21,21: Terminal → Ojo de Agua,99BF12,3
+19528506,3,21,21: Ojo de Agua → Terminal,99BF12,3
+19528579,8,22,22: Terminal → Chapa de Mota (vía El Quinte),0165BB,3
+19528584,8,22,22: Chapa de Mota (vía El Quinte) → Terminal,0165BB,3
+19528589,9,23,23: Terminal → Chapa de Mota (vía Chapa),A8A487,3
+19528594,9,23,23: Chapa de Mota (vía Chapa) → Terminal,A8A487,3
+19528661,10,24,24: Terminal → Santiago Oxthoc/ El Xhiti,A52136,3
+19528662,10,24,24: Santiago Oxthoc/ El Xhiti → Terminal,A52136,3
+19528663,10,25,25: Terminal → Emiliano Zapata,A52136,3
+19528664,10,25,25: Emiliano Zapata → Terminal,A52136,3
+19528665,1,26,26: Enfrente Terminal → El Saltillito,1D3A72,3
+19528666,1,26,26: El Saltillito → Enfrente Terminal,1D3A72,3
+19531727,11,27,27: Enfrente Terminal → Ojo de Agua,D1AE3B,3
+19531728,11,27,27: Ojo de Agua → Enfrente Terminal,D1AE3B,3
+19531729,8,28,28: Enfrente Terminal → San Juan Tuxtepec,0165BB,3
+19531730,8,28,28: San Juan Tuxtepec → Enfrente Terminal,0165BB,3
+19531731,8,29,29: Enfrente Terminal → Xhimohay,0165BB,3
+19531732,8,29,29: Xhimohay → Enfrente Terminal,0165BB,3
+19531734,12,30,30: Aurrera → El Rosal,D1AE3B,3
+19531735,13,30,30: El Rosal → Aurrera,"D1AE3B, #A52136",3
+19531736,11,31,31: Aurrera → La Goleta/San Juan Daxthi,D1AE3B,3
+19531739,11,31A,31A: La Goleta/San Juan Daxthi → Aurrera,D1AE3B,3
+19531740,11,31B,31B: La Goleta/San Juan Daxthi → Aurrera,D1AE3B,3
+19531741,6,32,32: Aurrera → Acazuchitlán (San Juanico),99BF12,3
+19531742,6,32,32: Acazuchitlán (San Juanico) → Aurrera,99BF12,3
+19531743,6,33,33: Aurrera → Bella Vista,99BF12,3
+19531744,6,33,33: Bella Vista → Aurrera,99BF12,3
+19531747,11,34,34: Doxhicho → Aurrera,D1AE3B,3
+19531748,11,34,34: Doxhicho → Aurrera,D1AE3B,3
