@@ -1,3 +1,0 @@
-fare_id,agency_id,price,currency_type,payment_method
-fare_0,Sindicato de colectiveros y microbuses radio urbano y suburbano ciudad de Cochabamba,0.0,BOB,0
-fare_1,Sindicato mixto de transporte público 6 de mayo,0.0,BOB,0
