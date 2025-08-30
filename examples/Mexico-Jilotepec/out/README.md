@@ -72,5 +72,5 @@
 [19531742](https://www.openstreetmap.org/relation/19531742) | 32: Acazuchitlán (San Juanico) → Aurrera | 32 | Acazuchitlán (San Juanico) | Aurrera | ✅
 [19531743](https://www.openstreetmap.org/relation/19531743) | 33: Aurrera → Bella Vista | 33 | Aurrera | Bella Vista | ✅
 [19531744](https://www.openstreetmap.org/relation/19531744) | 33: Bella Vista → Aurrera | 33 | Bella Vista | Aurrera | ✅
-[19531747](https://www.openstreetmap.org/relation/19531747) | 34: Doxhicho → Aurrera | 34 | Doxhicho | Aurrera | ✅
+[19531747](https://www.openstreetmap.org/relation/19531747) | 34: Aurrera → Doxhicho | 34 | Aurrera | Doxhicho | ✅
 [19531748](https://www.openstreetmap.org/relation/19531748) | 34: Doxhicho → Aurrera | 34 | Doxhicho | Aurrera | ✅
