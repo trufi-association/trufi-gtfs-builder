@@ -1,5 +1,5 @@
 ### Count
-**Total**: 623  **Correct**: 573  **With error**: 50
+**Total**: 623  **Correct**: 616  **With error**: 7
 
 
 | Id | Name | Ref | From | To | State |
@@ -16,7 +16,7 @@
 [19355139](https://www.openstreetmap.org/relation/19355139) | 01-A011-05 : Toluca → Santa María Tlalmimilolpan | 01-A011-05 | Toluca | Santa María Tlalmimilolpan | ✅
 [18265967](https://www.openstreetmap.org/relation/18265967) | 01-A011-06 : Toluca → San Nicolas Peralta | 01-A011-06 | Toluca | San Nicolas Peralta | ✅
 [18334502](https://www.openstreetmap.org/relation/18334502) | 01-A011-06 : San Nicolas Peralta → Toluca | 01-A011-06 | San Nicolas Peralta | Toluca | ✅
-[18266002](https://www.openstreetmap.org/relation/18266002) | 01-A011-07 : Atarasquillo (Lerma) → Toluca Centro | 01-A011-07 | Atarasquillo (Lerma) | Toluca Centro | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18266002);out%20geom;%0Away(1067400365);out%20geom;%0Away(1069101110);out%20geom;&R)
+[18266002](https://www.openstreetmap.org/relation/18266002) | 01-A011-07 : Atarasquillo (Lerma) → Toluca Centro | 01-A011-07 | Atarasquillo (Lerma) | Toluca Centro | ✅
 [18291963](https://www.openstreetmap.org/relation/18291963) | 01-A011-07 : Toluca Centro → Atarasquillo (Lerma) | 01-A011-07 | Toluca Centro | Atarasquillo (Lerma) | ✅
 [18266023](https://www.openstreetmap.org/relation/18266023) | 01-A011-08 : Toluca → San Miguel Ameyalco | 01-A011-08 | Toluca | San Miguel Ameyalco | ✅
 [18291974](https://www.openstreetmap.org/relation/18291974) | 01-A011-08 : San Miguel Ameyalco → Toluca | 01-A011-08 | San Miguel Ameyalco | Toluca | ✅
@@ -108,9 +108,9 @@
 [19357066](https://www.openstreetmap.org/relation/19357066) | 01-A062-02 : La Huerta → Terminal | 01-A062-02 | La Huerta | Terminal | ✅
 [19358564](https://www.openstreetmap.org/relation/19358564) | 01-A062-03 : Santiago Tianguistenco → Terminal Toluca por Mexicaltzingo | 01-A062-03 | Santiago Tianguistenco | Terminal Toluca por Mexicaltzingo | ✅
 [19361995](https://www.openstreetmap.org/relation/19361995) | 01-A062-03 : Terminal Toluca por Mexicaltzingo → Santiago Tianguistenco | 01-A062-03 | Terminal Toluca por Mexicaltzingo | Santiago Tianguistenco | ✅
-[19363047](https://www.openstreetmap.org/relation/19363047) | 01-A062-04 : Almoloya del Rio → Terminal Toluca por Chapultepec | 01-A062-04 | Almoloya del Rio | Terminal Toluca por Chapultepec | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(19363047);out%20geom;%0Away(777180209);out%20geom;%0Away(1415196651);out%20geom;&R)
+[19363047](https://www.openstreetmap.org/relation/19363047) | 01-A062-04 : Almoloya del Rio → Terminal Toluca por Chapultepec | 01-A062-04 | Almoloya del Rio | Terminal Toluca por Chapultepec | ✅
 [19366753](https://www.openstreetmap.org/relation/19366753) | 01-A062-04 : Terminal Toluca por Chapultepec → Almoloya del Rio | 01-A062-04 | Terminal Toluca por Chapultepec | Almoloya del Rio | ✅
-[19366908](https://www.openstreetmap.org/relation/19366908) | 01-A062-05 : Xalatlaco → Toluca por Mexicaltzingo | 01-A062-05 | Xalatlaco | Toluca por Mexicaltzingo | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(19366908);out%20geom;%0Away(777180209);out%20geom;%0Away(1415196651);out%20geom;&R)
+[19366908](https://www.openstreetmap.org/relation/19366908) | 01-A062-05 : Xalatlaco → Toluca por Mexicaltzingo | 01-A062-05 | Xalatlaco | Toluca por Mexicaltzingo | ✅
 [19366979](https://www.openstreetmap.org/relation/19366979) | 01-A062-05 : Toluca por Mexicaltzingo → Xalatlaco | 01-A062-05 | Toluca por Mexicaltzingo | Xalatlaco | ✅
 [19367206](https://www.openstreetmap.org/relation/19367206) | 01-A062-06 : Toluca → Chalma por Chapultepec | 01-A062-06 | Toluca | Chalma por Chapultepec | ✅
 [19367447](https://www.openstreetmap.org/relation/19367447) | 01-A062-06 : Chalma por Chapultepec → Toluca | 01-A062-06 | Chalma por Chapultepec | Toluca | ✅
@@ -120,10 +120,10 @@
 [19367458](https://www.openstreetmap.org/relation/19367458) | 01-A062-08 : Cuernavaca por zempoala → Toluca | 01-A062-08 | Cuernavaca por zempoala | Toluca | ✅
 [19367460](https://www.openstreetmap.org/relation/19367460) | 01-A062-09 : Ahuatenco → Ocuilan de Arteaga (Limites del Estado de México con Morelos) | 01-A062-09 | Ahuatenco | Ocuilan de Arteaga (Limites del Estado de México con Morelos) | ✅
 [19367488](https://www.openstreetmap.org/relation/19367488) | 01-A062-09 : Ocuilan de Arteaga (Limites del Estado de México con Morelos) → Ahuatenco | 01-A062-09 | Ocuilan de Arteaga (Limites del Estado de México con Morelos) | Ahuatenco | ✅
-[18878155](https://www.openstreetmap.org/relation/18878155) | 01-A062-10 : Tenango → Toluca | 01-A062-10 | Tenango | Toluca | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18878155);out%20geom;%0Away(777180209);out%20geom;%0Away(1415196651);out%20geom;&R)
+[18878155](https://www.openstreetmap.org/relation/18878155) | 01-A062-10 : Tenango → Toluca | 01-A062-10 | Tenango | Toluca | ✅
 [18878159](https://www.openstreetmap.org/relation/18878159) | 01-A062-10 : Toluca → Tenango | 01-A062-10 | Toluca | Tenango | ✅
 [18878164](https://www.openstreetmap.org/relation/18878164) | 01-A062-11 : Toluca → Xochiaca | 01-A062-11 | Toluca | Xochiaca | ✅
-[18878236](https://www.openstreetmap.org/relation/18878236) | 01-A062-11 : Xochiaca → Toluca | 01-A062-11 | Xochiaca | Toluca | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18878236);out%20geom;%0Away(777180209);out%20geom;%0Away(1415196651);out%20geom;&R)
+[18878236](https://www.openstreetmap.org/relation/18878236) | 01-A062-11 : Xochiaca → Toluca | 01-A062-11 | Xochiaca | Toluca | ✅
 [19367696](https://www.openstreetmap.org/relation/19367696) | 01-A062-12 : Tenancingo → Chalma (por La Cumbre) | 01-A062-12 | Tenancingo | Chalma (por La Cumbre) | ✅
 [19369195](https://www.openstreetmap.org/relation/19369195) | 01-A062-12 : Chalma (por La Cumbre) → Tenancingo | 01-A062-12 | Chalma (por La Cumbre) | Tenancingo | ✅
 [19369172](https://www.openstreetmap.org/relation/19369172) | 01-A062-13 : San Simón El Alto → Tenancingo | 01-A062-13 | San Simón El Alto | Tenancingo | ✅
@@ -135,7 +135,7 @@
 [18878166](https://www.openstreetmap.org/relation/18878166) | 01-A062-16 : Chalma → Chalma | 01-A062-16 | Chalma | Chalma | ✅
 [18878247](https://www.openstreetmap.org/relation/18878247) | 01-A062-16 : Chalma → Chalma | 01-A062-16 | Chalma | Chalma | ✅
 [19369214](https://www.openstreetmap.org/relation/19369214) | 01-A062-17 : Toluca → Ixtapan | 01-A062-17 | Toluca | Ixtapan | ✅
-[19369233](https://www.openstreetmap.org/relation/19369233) | 01-A062-17 : Ixtapan → Toluca | 01-A062-17 | Ixtapan | Toluca | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(19369233);out%20geom;%0Away(777180209);out%20geom;%0Away(1415196651);out%20geom;&R)
+[19369233](https://www.openstreetmap.org/relation/19369233) | 01-A062-17 : Ixtapan → Toluca | 01-A062-17 | Ixtapan | Toluca | ✅
 [19369234](https://www.openstreetmap.org/relation/19369234) | 01-A062-18 : Coatepec Harinas (por Autopista) → Toluca | 01-A062-18 | Coatepec Harinas (por Autopista) | Toluca | ✅
 [19369250](https://www.openstreetmap.org/relation/19369250) | 01-A062-18 : Toluca → Coatepec Harinas (por Autopista) | 01-A062-18 | Toluca | Coatepec Harinas (por Autopista) | ✅
 [19369229](https://www.openstreetmap.org/relation/19369229) | 01-A062-19 : Ixtapan → Coatepec Harinas | 01-A062-19 | Ixtapan | Coatepec Harinas | ✅
@@ -159,11 +159,11 @@
 [19369540](https://www.openstreetmap.org/relation/19369540) | 01-A062-28 : Tenango → La Marquesa | 01-A062-28 | Tenango | La Marquesa | ✅
 [19369768](https://www.openstreetmap.org/relation/19369768) | 01-A062-28 : La Marquesa → Tenango | 01-A062-28 | La Marquesa | Tenango | ✅
 [19369279](https://www.openstreetmap.org/relation/19369279) | 01-A062-29 : Terminal Toluca → San Pedro Tlaltizapán | 01-A062-29 | Terminal Toluca | San Pedro Tlaltizapán | ✅
-[19369286](https://www.openstreetmap.org/relation/19369286) | 01-A062-29 : San Pedro Tlaltizapán → Terminal Toluca | 01-A062-29 | San Pedro Tlaltizapán | Terminal Toluca | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(19369286);out%20geom;%0Away(777180209);out%20geom;%0Away(1415196651);out%20geom;&R)
+[19369286](https://www.openstreetmap.org/relation/19369286) | 01-A062-29 : San Pedro Tlaltizapán → Terminal Toluca | 01-A062-29 | San Pedro Tlaltizapán | Terminal Toluca | ✅
 [19369292](https://www.openstreetmap.org/relation/19369292) | 01-A062-30 : Santiago Tianguistenco → Carretera Al Ajusco (Limites del Estado de México con el Distrito Federal) | 01-A062-30 | Santiago Tianguistenco | Carretera Al Ajusco (Limites del Estado de México con el Distrito Federal) | ✅
 [19369293](https://www.openstreetmap.org/relation/19369293) | 01-A062-30 : Carretera Al Ajusco (Limites del Estado de México con el Distrito Federal) → Santiago Tianguistenco | 01-A062-30 | Carretera Al Ajusco (Limites del Estado de México con el Distrito Federal) | Santiago Tianguistenco | ✅
 [19369426](https://www.openstreetmap.org/relation/19369426) | 01-A062-31 : Xalatlaco → Toluca | 01-A062-31 | Xalatlaco | Toluca | ✅
-[19369449](https://www.openstreetmap.org/relation/19369449) | 01-A062-31 : Toluca → Xalatlaco | 01-A062-31 | Toluca | Xalatlaco | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(19369449);out%20geom;%0Away(777180209);out%20geom;%0Away(1415196651);out%20geom;&R)
+[19369449](https://www.openstreetmap.org/relation/19369449) | 01-A062-31 : Toluca → Xalatlaco | 01-A062-31 | Toluca | Xalatlaco | ✅
 [18732687](https://www.openstreetmap.org/relation/18732687) | 01-A083-01 : Arbolito → Metepec | 01-A083-01 | Arbolito | Metepec | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18732687);out%20geom;%0Away(1415909942);out%20geom;%0Away(778078906);out%20geom;&R)
 [18732690](https://www.openstreetmap.org/relation/18732690) | 01-A083-01 : Metepec → Arbolito | 01-A083-01 | Metepec | Arbolito | ✅
 [18732693](https://www.openstreetmap.org/relation/18732693) | 01-A083-01B : El Arbolito → La Maquinita | 01-A083-01B | El Arbolito | La Maquinita | ✅
@@ -232,12 +232,12 @@
 [18782084](https://www.openstreetmap.org/relation/18782084) | 01-A084-17 : Toluca Centro por el Rastro → Central de Abasto | 01-A084-17 | Toluca Centro por el Rastro | Central de Abasto | ✅
 [19369432](https://www.openstreetmap.org/relation/19369432) | 01-A084-18 : Temoaya → Terminal Toluca por Libramiento Bicentenario | 01-A084-18 | Temoaya | Terminal Toluca por Libramiento Bicentenario | ✅
 [19369435](https://www.openstreetmap.org/relation/19369435) | 01-A084-18 : Terminal Toluca por Libramiento Bicentenario → Temoaya | 01-A084-18 | Terminal Toluca por Libramiento Bicentenario | Temoaya | ✅
-[19369465](https://www.openstreetmap.org/relation/19369465) | 01-A084-19-SC : Temoaya → Las Trojes | 01-A084-19-SC | Temoaya | Las Trojes | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(19369465);out%20geom;%0Away(948263791);out%20geom;%0Away(795330919);out%20geom;&R)
+[19369465](https://www.openstreetmap.org/relation/19369465) | 01-A084-19-SC : Temoaya → Las Trojes | 01-A084-19-SC | Temoaya | Las Trojes | ✅
 [19369544](https://www.openstreetmap.org/relation/19369544) | 01-A084-19-SC : Las Trojes → Temoaya | 01-A084-19-SC | Las Trojes | Temoaya | ✅
 [19369453](https://www.openstreetmap.org/relation/19369453) | 01-A084-20-SC : Ejido de Dolores → Temoaya | 01-A084-20-SC | Ejido de Dolores | Temoaya | ✅
-[19369473](https://www.openstreetmap.org/relation/19369473) | 01-A084-20-SC : Temoaya → Ejido de Dolores | 01-A084-20-SC | Temoaya | Ejido de Dolores | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(19369473);out%20geom;%0Away(948263791);out%20geom;%0Away(795330919);out%20geom;&R)
+[19369473](https://www.openstreetmap.org/relation/19369473) | 01-A084-20-SC : Temoaya → Ejido de Dolores | 01-A084-20-SC | Temoaya | Ejido de Dolores | ✅
 [19369476](https://www.openstreetmap.org/relation/19369476) | 01-A084-21-SC : San José Comalco → Terminal Temoaya | 01-A084-21-SC | San José Comalco | Terminal Temoaya | ✅
-[19369478](https://www.openstreetmap.org/relation/19369478) | 01-A084-21-SC : Terminal Temoaya → San José Comalco | 01-A084-21-SC | Terminal Temoaya | San José Comalco | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(19369478);out%20geom;%0Away(948263791);out%20geom;%0Away(795330919);out%20geom;&R)
+[19369478](https://www.openstreetmap.org/relation/19369478) | 01-A084-21-SC : Terminal Temoaya → San José Comalco | 01-A084-21-SC | Terminal Temoaya | San José Comalco | ✅
 [19369484](https://www.openstreetmap.org/relation/19369484) | 01-A084-22-SC : Terminaltemoaya → Temoaya | 01-A084-22-SC | Terminaltemoaya | Temoaya | ✅
 [19369486](https://www.openstreetmap.org/relation/19369486) | 01-A084-22-SC : Temoaya → Terminaltemoaya | 01-A084-22-SC | Temoaya | Terminaltemoaya | ✅
 [19369489](https://www.openstreetmap.org/relation/19369489) | 01-A084-23-SC : Temoaya → Temoaya | 01-A084-23-SC | Temoaya | Temoaya | ✅
@@ -255,13 +255,13 @@
 [18212716](https://www.openstreetmap.org/relation/18212716) | 01-A085-04 : Tlacotepec → Toluca Centro (Instituto Literario) | 01-A085-04 | Tlacotepec | Toluca Centro (Instituto Literario) | ✅
 [18212738](https://www.openstreetmap.org/relation/18212738) | 01-A085-04 : Toluca Centro (Instituto Literario) → Tlacotepec | 01-A085-04 | Toluca Centro (Instituto Literario) | Tlacotepec | ✅
 [18212734](https://www.openstreetmap.org/relation/18212734) | 01-A085-05 : Terminal Toluca → Zaragoza | 01-A085-05 | Terminal Toluca | Zaragoza | ✅
-[18212742](https://www.openstreetmap.org/relation/18212742) | 01-A085-05 : Zaragoza → Terminal Toluca | 01-A085-05 | Zaragoza | Terminal Toluca | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18212742);out%20geom;%0Away(777180209);out%20geom;%0Away(1415196651);out%20geom;&R)
-[18212744](https://www.openstreetmap.org/relation/18212744) | 01-A085-06 : San Andres Ocotlan → Terminal Toluca-(Mpio. de Calimaya) | 01-A085-06 | San Andres Ocotlan | Terminal Toluca-(Mpio. de Calimaya) | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18212744);out%20geom;%0Away(777180209);out%20geom;%0Away(1415196651);out%20geom;&R)
+[18212742](https://www.openstreetmap.org/relation/18212742) | 01-A085-05 : Zaragoza → Terminal Toluca | 01-A085-05 | Zaragoza | Terminal Toluca | ✅
+[18212744](https://www.openstreetmap.org/relation/18212744) | 01-A085-06 : San Andres Ocotlan → Terminal Toluca-(Mpio. de Calimaya) | 01-A085-06 | San Andres Ocotlan | Terminal Toluca-(Mpio. de Calimaya) | ✅
 [18212752](https://www.openstreetmap.org/relation/18212752) | 01-A085-06 : (Mpio. de Calimaya) → San Andres Ocotlan | 01-A085-06 | (Mpio. de Calimaya) | San Andres Ocotlan | ✅
-[18212798](https://www.openstreetmap.org/relation/18212798) | 01-A085-07 : La Huerta → Terminal | 01-A085-07 | La Huerta | Terminal | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18212798);out%20geom;%0Away(777180209);out%20geom;%0Away(1415196651);out%20geom;&R)
+[18212798](https://www.openstreetmap.org/relation/18212798) | 01-A085-07 : La Huerta → Terminal | 01-A085-07 | La Huerta | Terminal | ✅
 [18212821](https://www.openstreetmap.org/relation/18212821) | 01-A085-07 : Terminal → La Huerta | 01-A085-07 | Terminal | La Huerta | ✅
 [18212802](https://www.openstreetmap.org/relation/18212802) | 01-A085-08 : Centro Toluca → Calimaya | 01-A085-08 | Centro Toluca | Calimaya | ✅
-[18212806](https://www.openstreetmap.org/relation/18212806) | 01-A085-08 : Calimaya → Centro Toluca | 01-A085-08 | Calimaya | Centro Toluca | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18212806);out%20geom;%0Away(777180209);out%20geom;%0Away(1415196651);out%20geom;&R)
+[18212806](https://www.openstreetmap.org/relation/18212806) | 01-A085-08 : Calimaya → Centro Toluca | 01-A085-08 | Calimaya | Centro Toluca | ✅
 [18735441](https://www.openstreetmap.org/relation/18735441) | 01-A085-09 : Balderas → Terminal Toluca | 01-A085-09 | Balderas | Terminal Toluca | ✅
 [18735446](https://www.openstreetmap.org/relation/18735446) | 01-A085-09 : Terminal Toluca → Balderas | 01-A085-09 | Terminal Toluca | Balderas | ✅
 [18735457](https://www.openstreetmap.org/relation/18735457) | 01-A085-10 : El Refugio → Terminal | 01-A085-10 | El Refugio | Terminal | ✅
@@ -273,14 +273,14 @@
 [18739425](https://www.openstreetmap.org/relation/18739425) | 01-A085-15 : San Marcos → Terminal Toluca Por Zoologico | 01-A085-15 | San Marcos | Terminal Toluca Por Zoologico | ✅
 [18739458](https://www.openstreetmap.org/relation/18739458) | 01-A085-15 : Terminal Toluca Por Zoologico → San Marcos | 01-A085-15 | Terminal Toluca Por Zoologico | San Marcos | ✅
 [18739473](https://www.openstreetmap.org/relation/18739473) | 01-A085-16 : Colegio de Bachilleres – Capultitlan – Terminal → San Andres Ocotlan | 01-A085-16 | Colegio de Bachilleres – Capultitlan – Terminal | San Andres Ocotlan | ✅
-[18739527](https://www.openstreetmap.org/relation/18739527) | 01-A085-16 : San Andres Ocotlan → Colegio de Bachilleres – Capultitlan – Terminal | 01-A085-16 | San Andres Ocotlan | Colegio de Bachilleres – Capultitlan – Terminal | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18739527);out%20geom;%0Away(777180209);out%20geom;%0Away(1415196651);out%20geom;&R)
+[18739527](https://www.openstreetmap.org/relation/18739527) | 01-A085-16 : San Andres Ocotlan → Colegio de Bachilleres – Capultitlan – Terminal | 01-A085-16 | San Andres Ocotlan | Colegio de Bachilleres – Capultitlan – Terminal | ✅
 [18739571](https://www.openstreetmap.org/relation/18739571) | 01-A085-17 : Tlacotepec → Toluca Centro | 01-A085-17 | Tlacotepec | Toluca Centro | ✅
 [18765970](https://www.openstreetmap.org/relation/18765970) | 01-A085-17 : Toluca Centro → Tlacotepec | 01-A085-17 | Toluca Centro | Tlacotepec | ✅
 [18765988](https://www.openstreetmap.org/relation/18765988) | 01-A085-18 : Metepec → Toluca Centro | 01-A085-18 | Metepec | Toluca Centro | ✅
 [18765996](https://www.openstreetmap.org/relation/18765996) | 01-A085-18 : Toluca Centro → Metepec | 01-A085-18 | Toluca Centro | Metepec | ✅
-[18739465](https://www.openstreetmap.org/relation/18739465) | 01-A085-19 : Zaragoza → Centro | 01-A085-19 | Zaragoza | Centro | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18739465);out%20geom;%0Away(777180209);out%20geom;%0Away(1415196651);out%20geom;&R)
+[18739465](https://www.openstreetmap.org/relation/18739465) | 01-A085-19 : Zaragoza → Centro | 01-A085-19 | Zaragoza | Centro | ✅
 [18739475](https://www.openstreetmap.org/relation/18739475) | 01-A085-19 : Centro → Zaragoza | 01-A085-19 | Centro | Zaragoza | ✅
-[18739505](https://www.openstreetmap.org/relation/18739505) | 01-A085-20 : La Huerta → Centro | 01-A085-20 | La Huerta | Centro | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18739505);out%20geom;%0Away(777180209);out%20geom;%0Away(1415196651);out%20geom;&R)
+[18739505](https://www.openstreetmap.org/relation/18739505) | 01-A085-20 : La Huerta → Centro | 01-A085-20 | La Huerta | Centro | ✅
 [18739518](https://www.openstreetmap.org/relation/18739518) | 01-A085-20 : Centro → La Huerta | 01-A085-20 | Centro | La Huerta | ✅
 [18739474](https://www.openstreetmap.org/relation/18739474) | 01-A085-21-SC : General Motors Por Tollocan → Tlacotepec | 01-A085-21-SC | General Motors Por Tollocan | Tlacotepec | ✅
 [18739557](https://www.openstreetmap.org/relation/18739557) | 01-A085-21-SC : Tlacotepec → General Motors Por Tollocan | 01-A085-21-SC | Tlacotepec | General Motors Por Tollocan | ✅
@@ -324,7 +324,7 @@
 [18782085](https://www.openstreetmap.org/relation/18782085) | 01-A113-02 : Tenango del Valle → Toluca | 01-A113-02 | Tenango del Valle | Toluca | ✅
 [18782088](https://www.openstreetmap.org/relation/18782088) | 01-A113-03 : Toluca → San Pedro Atlapulco | 01-A113-03 | Toluca | San Pedro Atlapulco | ✅
 [18782097](https://www.openstreetmap.org/relation/18782097) | 01-A113-03 : San Pedro Atlapulco → Toluca | 01-A113-03 | San Pedro Atlapulco | Toluca | ✅
-[19369532](https://www.openstreetmap.org/relation/19369532) | 01-A113-04 : Almoloya del Rio → por Chapultepec | 01-A113-04 | Almoloya del Rio | por Chapultepec | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(19369532);out%20geom;%0Away(777180209);out%20geom;%0Away(1415196651);out%20geom;&R)
+[19369532](https://www.openstreetmap.org/relation/19369532) | 01-A113-04 : Almoloya del Rio → por Chapultepec | 01-A113-04 | Almoloya del Rio | por Chapultepec | ✅
 [19369569](https://www.openstreetmap.org/relation/19369569) | 01-A113-04 : por Chapultepec → Almoloya del Rio | 01-A113-04 | por Chapultepec | Almoloya del Rio | ✅
 [18768312](https://www.openstreetmap.org/relation/18768312) | 01-A113-05 : Toluca – Metepec → Crisa | 01-A113-05 | Toluca – Metepec | Crisa | ✅
 [18768314](https://www.openstreetmap.org/relation/18768314) | 01-A113-05 : Crisa → Toluca – Metepec | 01-A113-05 | Crisa | Toluca – Metepec | ✅
@@ -417,8 +417,8 @@
 [19369475](https://www.openstreetmap.org/relation/19369475) | 01-A130-14-SC : La Huanica → Plaza Benito Juárez en Xonacatlán | 01-A130-14-SC | La Huanica | Plaza Benito Juárez en Xonacatlán | ✅
 [19369480](https://www.openstreetmap.org/relation/19369480) | 01-A130-14-SC : Plaza Benito Juárez en Xonacatlán → La Huanica | 01-A130-14-SC | Plaza Benito Juárez en Xonacatlán | La Huanica | ✅
 [18796211](https://www.openstreetmap.org/relation/18796211) | 01-A134-02 : Centro Toluca → San Martin Totoltepec | 01-A134-02 | Centro Toluca | San Martin Totoltepec | ✅
-[18796222](https://www.openstreetmap.org/relation/18796222) | 01-A134-02 : San Martin Totoltepec → Centro Toluca | 01-A134-02 | San Martin Totoltepec | Centro Toluca | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18796222);out%20geom;%0Away(188000983);out%20geom;%0Away(261018604);out%20geom;&R)
-[18796207](https://www.openstreetmap.org/relation/18796207) | 01-A134-03 : Infonavit San Francisco → C.U. | 01-A134-03 | Infonavit San Francisco | C.U. | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18796207);out%20geom;%0Away(1067400365);out%20geom;%0Away(1069101110);out%20geom;&R)
+[18796222](https://www.openstreetmap.org/relation/18796222) | 01-A134-02 : San Martin Totoltepec → Centro Toluca | 01-A134-02 | San Martin Totoltepec | Centro Toluca | ✅
+[18796207](https://www.openstreetmap.org/relation/18796207) | 01-A134-03 : Infonavit San Francisco → C.U. | 01-A134-03 | Infonavit San Francisco | C.U. | ✅
 [18796213](https://www.openstreetmap.org/relation/18796213) | 01-A134-03 : C.U. → Infonavit San Francisco | 01-A134-03 | C.U. | Infonavit San Francisco | ✅
 [18796220](https://www.openstreetmap.org/relation/18796220) | 01-A134-04 : Infonavit San Francisco → C.U. | 01-A134-04 | Infonavit San Francisco | C.U. | ✅
 [18796238](https://www.openstreetmap.org/relation/18796238) | 01-A134-04 : C.U. → Infonavit San Francisco | 01-A134-04 | C.U. | Infonavit San Francisco | ✅
@@ -427,33 +427,32 @@
 [18796219](https://www.openstreetmap.org/relation/18796219) | 01-A134-06 : Cultural Mexiquense → Las Palomas | 01-A134-06 | Cultural Mexiquense | Las Palomas | ✅
 [18796237](https://www.openstreetmap.org/relation/18796237) | 01-A134-06 : Las Palomas → Cultural Mexiquense | 01-A134-06 | Las Palomas | Cultural Mexiquense | ✅
 [18796227](https://www.openstreetmap.org/relation/18796227) | 01-A134-07 : C. U. → San Pablo Autopan | 01-A134-07 | C. U. | San Pablo Autopan | ✅
-[18796248](https://www.openstreetmap.org/relation/18796248) | 01-A134-07 : San Pablo Autopan → C. U. | 01-A134-07 | San Pablo Autopan | C. U. | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18796248);out%20geom;%0Away(1067400365);out%20geom;%0Away(1069101110);out%20geom;&R)
-[18796223](https://www.openstreetmap.org/relation/18796223) | 01-A134-09 : Circuito → Tollocan Sur por Monumento a Colon | 01-A134-09 | Circuito | Tollocan Sur por Monumento a Colon | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18796223);out%20geom;%0Away(181767119);out%20geom;%0Away(1365552535);out%20geom;&R)
+[18796248](https://www.openstreetmap.org/relation/18796248) | 01-A134-07 : San Pablo Autopan → C. U. | 01-A134-07 | San Pablo Autopan | C. U. | ✅
+[18796223](https://www.openstreetmap.org/relation/18796223) | 01-A134-09 : Circuito → Tollocan Sur por Monumento a Colon | 01-A134-09 | Circuito | Tollocan Sur por Monumento a Colon | ✅
 [18796246](https://www.openstreetmap.org/relation/18796246) | 01-A134-09 : Tollocan Sur por Monumento a Colon → Circuito | 01-A134-09 | Tollocan Sur por Monumento a Colon | Circuito | ✅
 [18796233](https://www.openstreetmap.org/relation/18796233) | 01-A134-10 : Rancho La Mora → Toluca | 01-A134-10 | Rancho La Mora | Toluca | ✅
 [18796250](https://www.openstreetmap.org/relation/18796250) | 01-A134-10 : Toluca → Rancho La Mora | 01-A134-10 | Toluca | Rancho La Mora | ✅
-[18796234](https://www.openstreetmap.org/relation/18796234) | 01-A134-11 : Circuito Tollocan → Fraccionamiento Parque de la Hacienda | 01-A134-11 | Circuito Tollocan | Fraccionamiento Parque de la Hacienda | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18796234);out%20geom;%0Away(181767119);out%20geom;%0Away(316560500);out%20geom;&R)
+[18796234](https://www.openstreetmap.org/relation/18796234) | 01-A134-11 : Circuito Tollocan → Fraccionamiento Parque de la Hacienda | 01-A134-11 | Circuito Tollocan | Fraccionamiento Parque de la Hacienda | ✅
 [18796243](https://www.openstreetmap.org/relation/18796243) | 01-A134-11 : Fraccionamiento Parque de la Hacienda → Circuito Tollocan | 01-A134-11 | Fraccionamiento Parque de la Hacienda | Circuito Tollocan | ✅
-[18291965](https://www.openstreetmap.org/relation/18291965) | 01-A134-12 : SAN Pablo Autopan → TERMINAL | 01-A134-12 | undefined | undefined | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18291965);out%20geom;%0Away(145052604);out%20geom;%0Away(1334082481);out%20geom;&R)
 [18796241](https://www.openstreetmap.org/relation/18796241) | 01-A134-12 : San Pablo Autopan → Terminal | 01-A134-12 | San Pablo Autopan | Terminal | ✅
 [18796244](https://www.openstreetmap.org/relation/18796244) | 01-A134-12 : Terminal → San Pablo Autopan | 01-A134-12 | Terminal | San Pablo Autopan | ✅
 [18796245](https://www.openstreetmap.org/relation/18796245) | 01-A134-13 : Terminal → Mercado Hidalgo | 01-A134-13 | Terminal | Mercado Hidalgo | ✅
 [18796247](https://www.openstreetmap.org/relation/18796247) | 01-A134-13 : Mercado Hidalgo → Terminal | 01-A134-13 | Mercado Hidalgo | Terminal | ✅
 [18796253](https://www.openstreetmap.org/relation/18796253) | 01-A134-14 : C.U. → Barrio Guadalupe | 01-A134-14 | C.U. | Barrio Guadalupe | ✅
-[18796270](https://www.openstreetmap.org/relation/18796270) | 01-A134-14 : Barrio Guadalupe → C.U. | 01-A134-14 | Barrio Guadalupe | C.U. | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18796270);out%20geom;%0Away(1067400365);out%20geom;%0Away(1069101110);out%20geom;&R)
+[18796270](https://www.openstreetmap.org/relation/18796270) | 01-A134-14 : Barrio Guadalupe → C.U. | 01-A134-14 | Barrio Guadalupe | C.U. | ✅
 [18796264](https://www.openstreetmap.org/relation/18796264) | 01-A134-17 : Terminal → La Pilita | 01-A134-17 | Terminal | La Pilita | ✅
 [18796292](https://www.openstreetmap.org/relation/18796292) | 01-A134-17 : La Pilita → Terminal | 01-A134-17 | La Pilita | Terminal | ✅
 [18796252](https://www.openstreetmap.org/relation/18796252) | 01-A134-18 : La Pilita → Centro Cultural | 01-A134-18 | La Pilita | Centro Cultural | ✅
-[18796283](https://www.openstreetmap.org/relation/18796283) | 01-A134-18 : Centro Cultural → La Pilita | 01-A134-18 | Centro Cultural | La Pilita | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18796283);out%20geom;%0Away(181767119);out%20geom;%0Away(1365552535);out%20geom;&R)
+[18796283](https://www.openstreetmap.org/relation/18796283) | 01-A134-18 : Centro Cultural → La Pilita | 01-A134-18 | Centro Cultural | La Pilita | ✅
 [18796268](https://www.openstreetmap.org/relation/18796268) | 01-A134-20 : Unidad Habitacional Hank González → ciudad Universitaria | 01-A134-20 | Unidad Habitacional Hank González | ciudad Universitaria | ✅
 [18819389](https://www.openstreetmap.org/relation/18819389) | 01-A134-20 : ciudad Universitaria → Unidad Habitacional Hank González | 01-A134-20 | ciudad Universitaria | Unidad Habitacional Hank González | ✅
 [18796254](https://www.openstreetmap.org/relation/18796254) | 01-A134-21-SC : Unidad Habitacional Carlos Hank González (San Mateo Atenco) → C.U. | 01-A134-21-SC | Unidad Habitacional Carlos Hank González (San Mateo Atenco) | C.U. | ✅
-[18796261](https://www.openstreetmap.org/relation/18796261) | 01-A134-21-SC : C.U. → Unidad Habitacional Carlos Hank González (San Mateo Atenco) | 01-A134-21-SC | C.U. | Unidad Habitacional Carlos Hank González (San Mateo Atenco) | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18796261);out%20geom;%0Away(614296043);out%20geom;%0Away(1365552534);out%20geom;&R)
+[18796261](https://www.openstreetmap.org/relation/18796261) | 01-A134-21-SC : C.U. → Unidad Habitacional Carlos Hank González (San Mateo Atenco) | 01-A134-21-SC | C.U. | Unidad Habitacional Carlos Hank González (San Mateo Atenco) | ✅
 [18796282](https://www.openstreetmap.org/relation/18796282) | 01-A134-22 : San Antonio Buenavista → Barrio de Guadalupe | 01-A134-22 | San Antonio Buenavista | Barrio de Guadalupe | ✅
 [18796305](https://www.openstreetmap.org/relation/18796305) | 01-A134-22 : Barrio de Guadalupe → San Antonio Buenavista | 01-A134-22 | Barrio de Guadalupe | San Antonio Buenavista | ✅
 [18796301](https://www.openstreetmap.org/relation/18796301) | 01-A134-23 : San Mateo Atenco → Parque Sierra Morelos | 01-A134-23 | San Mateo Atenco | Parque Sierra Morelos | ✅
-[18796314](https://www.openstreetmap.org/relation/18796314) | 01-A134-23 : Parque Sierra Morelos → San Mateo Atenco | 01-A134-23 | Parque Sierra Morelos | San Mateo Atenco | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18796314);out%20geom;%0Away(181767119);out%20geom;%0Away(316560500);out%20geom;&R)
-[18796308](https://www.openstreetmap.org/relation/18796308) | 01-A134-25 : San Cristobal Huichochitlan → por Morelos | 01-A134-25 | San Cristobal Huichochitlan | por Morelos | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18796308);out%20geom;%0Away(1067400365);out%20geom;%0Away(1069101110);out%20geom;&R)
+[18796314](https://www.openstreetmap.org/relation/18796314) | 01-A134-23 : Parque Sierra Morelos → San Mateo Atenco | 01-A134-23 | Parque Sierra Morelos | San Mateo Atenco | ✅
+[18796308](https://www.openstreetmap.org/relation/18796308) | 01-A134-25 : San Cristobal Huichochitlan → por Morelos | 01-A134-25 | San Cristobal Huichochitlan | por Morelos | ✅
 [18823412](https://www.openstreetmap.org/relation/18823412) | 01-A134-25 : por Morelos → San Cristobal Huichochitlan | 01-A134-25 | por Morelos | San Cristobal Huichochitlan | ✅
 [18796291](https://www.openstreetmap.org/relation/18796291) | 01-A134-26 : San Cristóbal Huichochitlán → Terminal Toluca | 01-A134-26 | San Cristóbal Huichochitlán | Terminal Toluca | ✅
 [18796294](https://www.openstreetmap.org/relation/18796294) | 01-A134-26 : Terminal Toluca → San Cristóbal Huichochitlán | 01-A134-26 | Terminal Toluca | San Cristóbal Huichochitlán | ✅
@@ -476,10 +475,10 @@
 [18796372](https://www.openstreetmap.org/relation/18796372) | 01-A137-03 : San Mateo Otzacatipan → Las Margaritas | 01-A137-03 | San Mateo Otzacatipan | Las Margaritas | ✅
 [18796407](https://www.openstreetmap.org/relation/18796407) | 01-A137-03 : Las Margaritas → San Mateo Otzacatipan | 01-A137-03 | Las Margaritas | San Mateo Otzacatipan | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18796407);out%20geom;%0Away(615984118);out%20geom;%0Away(780640837);out%20geom;&R)
 [18815999](https://www.openstreetmap.org/relation/18815999) | 01-A137-04 : C.U. → La Pilita | 01-A137-04 | C.U. | La Pilita | ✅
-[18823356](https://www.openstreetmap.org/relation/18823356) | 01-A137-04 : La Pilita → C.U. | 01-A137-04 | La Pilita | C.U. | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18823356);out%20geom;%0Away(1067400365);out%20geom;%0Away(1069101110);out%20geom;&R)
+[18823356](https://www.openstreetmap.org/relation/18823356) | 01-A137-04 : La Pilita → C.U. | 01-A137-04 | La Pilita | C.U. | ✅
 [18841150](https://www.openstreetmap.org/relation/18841150) | 01-A137-05 : Santa María Nativitas → Toluca Centro | 01-A137-05 | Santa María Nativitas | Toluca Centro | ✅
 [18864539](https://www.openstreetmap.org/relation/18864539) | 01-A137-05 : Toluca Centro → Santa María Nativitas | 01-A137-05 | Toluca Centro | Santa María Nativitas | ✅
-[18864804](https://www.openstreetmap.org/relation/18864804) | 01-A137-06 : Colonia San Isisdro → Seminario Por Isidro Fabela | 01-A137-06 | Colonia San Isisdro | Seminario Por Isidro Fabela | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18864804);out%20geom;%0Away(458776486);out%20geom;%0Away(458776526);out%20geom;&R)
+[18864804](https://www.openstreetmap.org/relation/18864804) | 01-A137-06 : Colonia San Isisdro → Seminario Por Isidro Fabela | 01-A137-06 | Colonia San Isisdro | Seminario Por Isidro Fabela | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18864804);out%20geom;%0Away(458776486);out%20geom;%0Away(1421676050);out%20geom;&R)
 [18864836](https://www.openstreetmap.org/relation/18864836) | 01-A137-06 : Seminario Por Isidro Fabela → Colonia San Isisdro | 01-A137-06 | Seminario Por Isidro Fabela | Colonia San Isisdro | ✅
 [18869176](https://www.openstreetmap.org/relation/18869176) | 01-A137-07 : Calixtlahuaca → Seminario | 01-A137-07 | Calixtlahuaca | Seminario | ✅
 [18870163](https://www.openstreetmap.org/relation/18870163) | 01-A137-07 : Seminario → Calixtlahuaca | 01-A137-07 | Seminario | Calixtlahuaca | ✅
@@ -504,18 +503,18 @@
 [18838435](https://www.openstreetmap.org/relation/18838435) | 01-A138-07 : Santa Maria Totoltepec → Santa Maria Totoltepec | 01-A138-07 | Santa Maria Totoltepec | Santa Maria Totoltepec | ✅
 [18874306](https://www.openstreetmap.org/relation/18874306) | 01-A138-07 : Santa Maria Totoltepec → Santa Maria Totoltepec | 01-A138-07 | Santa Maria Totoltepec | Santa Maria Totoltepec | ✅
 [18840405](https://www.openstreetmap.org/relation/18840405) | 01-A138-08 : Santa Ana Tepaltitlan → Tecnológico Regional Toluca (la pilita) | 01-A138-08 | Santa Ana Tepaltitlan | Tecnológico Regional Toluca (la pilita) | ✅
-[18874432](https://www.openstreetmap.org/relation/18874432) | 01-A138-08 : Tecnológico Regional Toluca (la pilita) → Santa Ana Tepaltitlan | 01-A138-08 | Tecnológico Regional Toluca (la pilita) | Santa Ana Tepaltitlan | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18874432);out%20geom;%0Away(1067400365);out%20geom;%0Away(1069101110);out%20geom;&R)
+[18874432](https://www.openstreetmap.org/relation/18874432) | 01-A138-08 : Tecnológico Regional Toluca (la pilita) → Santa Ana Tepaltitlan | 01-A138-08 | Tecnológico Regional Toluca (la pilita) | Santa Ana Tepaltitlan | ✅
 [18839402](https://www.openstreetmap.org/relation/18839402) | 01-A152-01 : C.U. → Terminal Toluca | 01-A152-01 | C.U. | Terminal Toluca | ✅
-[18839451](https://www.openstreetmap.org/relation/18839451) | 01-A152-01 : Terminal Toluca → C.U. | 01-A152-01 | Terminal Toluca | C.U. | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18839451);out%20geom;%0Away(1067400365);out%20geom;%0Away(1069101110);out%20geom;&R)
+[18839451](https://www.openstreetmap.org/relation/18839451) | 01-A152-01 : Terminal Toluca → C.U. | 01-A152-01 | Terminal Toluca | C.U. | ✅
 [18839904](https://www.openstreetmap.org/relation/18839904) | 01-A152-02 : Centro por 5 de Mayo → La Pilita | 01-A152-02 | Centro por 5 de Mayo | La Pilita | ✅
-[18840079](https://www.openstreetmap.org/relation/18840079) | 01-A152-02 : La Pilita → Centro por 5 de Mayo | 01-A152-02 | La Pilita | Centro por 5 de Mayo | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18840079);out%20geom;%0Away(1067400365);out%20geom;%0Away(1069101110);out%20geom;&R)
+[18840079](https://www.openstreetmap.org/relation/18840079) | 01-A152-02 : La Pilita → Centro por 5 de Mayo | 01-A152-02 | La Pilita | Centro por 5 de Mayo | ✅
 [18839794](https://www.openstreetmap.org/relation/18839794) | 01-A152-03 : La Asunción → C.U. por Torres | 01-A152-03 | La Asunción | C.U. por Torres | ✅
-[18839951](https://www.openstreetmap.org/relation/18839951) | 01-A152-03 : C.U. por Torres → La Asunción | 01-A152-03 | C.U. por Torres | La Asunción | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18839951);out%20geom;%0Away(181767119);out%20geom;%0Away(316560500);out%20geom;&R)
-[18840054](https://www.openstreetmap.org/relation/18840054) | 01-A152-04 : San Mateo Mexicaltzingo → Toluca Centro) | 01-A152-04 | San Mateo Mexicaltzingo | Toluca Centro) | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18840054);out%20geom;%0Away(1383287178);out%20geom;%0Away(1383287180);out%20geom;&R)
-[18840408](https://www.openstreetmap.org/relation/18840408) | 01-A152-04 : C.U. (Metepec → San Mateo Mexicaltzingo | 01-A152-04 | C.U. (Metepec | San Mateo Mexicaltzingo | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18840408);out%20geom;%0Away(1067400365);out%20geom;%0Away(1069101110);out%20geom;&R)
+[18839951](https://www.openstreetmap.org/relation/18839951) | 01-A152-03 : C.U. por Torres → La Asunción | 01-A152-03 | C.U. por Torres | La Asunción | ✅
+[18840054](https://www.openstreetmap.org/relation/18840054) | 01-A152-04 : San Mateo Mexicaltzingo → Toluca Centro) | 01-A152-04 | San Mateo Mexicaltzingo | Toluca Centro) | ✅
+[18840408](https://www.openstreetmap.org/relation/18840408) | 01-A152-04 : C.U. (Metepec → San Mateo Mexicaltzingo | 01-A152-04 | C.U. (Metepec | San Mateo Mexicaltzingo | ✅
 [18836846](https://www.openstreetmap.org/relation/18836846) | 01-A152-05 : San Marcos Yachihuacaltepec → Hospital Santa Cruz Colonia Sor Juana Inés de la Cruz | 01-A152-05 | San Marcos Yachihuacaltepec | Hospital Santa Cruz Colonia Sor Juana Inés de la Cruz | ✅
 [18869212](https://www.openstreetmap.org/relation/18869212) | 01-A152-05 : Hospital Santa Cruz Colonia Sor Juana Inés de la Cruz → San Marcos Yachihuacaltepec | 01-A152-05 | Hospital Santa Cruz Colonia Sor Juana Inés de la Cruz | San Marcos Yachihuacaltepec | ✅
-[18839598](https://www.openstreetmap.org/relation/18839598) | 01-A152-06 : La Pilita → C.U. | 01-A152-06 | La Pilita | C.U. | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18839598);out%20geom;%0Away(1067400365);out%20geom;%0Away(1069101110);out%20geom;&R)
+[18839598](https://www.openstreetmap.org/relation/18839598) | 01-A152-06 : La Pilita → C.U. | 01-A152-06 | La Pilita | C.U. | ✅
 [18840028](https://www.openstreetmap.org/relation/18840028) | 01-A152-06 : C.U. → La Pilita | 01-A152-06 | C.U. | La Pilita | ✅
 [18840226](https://www.openstreetmap.org/relation/18840226) | 01-A152-07 : Las Margaritas → Santiago Miltepec | 01-A152-07 | Las Margaritas | Santiago Miltepec | ✅
 [18840241](https://www.openstreetmap.org/relation/18840241) | 01-A152-07 : Santiago Miltepec → Las Margaritas | 01-A152-07 | Santiago Miltepec | Las Margaritas | ✅
@@ -539,9 +538,9 @@
 [18841007](https://www.openstreetmap.org/relation/18841007) | 01-A153-03 : San Juan La Isla → Tenango del Valle | 01-A153-03 | San Juan La Isla | Tenango del Valle | ✅
 [18840950](https://www.openstreetmap.org/relation/18840950) | 01-A153-04 : Tenango del Valle → Calimaya | 01-A153-04 | Tenango del Valle | Calimaya | ✅
 [18840954](https://www.openstreetmap.org/relation/18840954) | 01-A153-04 : Calimaya → Tenango del Valle | 01-A153-04 | Calimaya | Tenango del Valle | ✅
-[18840917](https://www.openstreetmap.org/relation/18840917) | 01-A153-05 : La Concepcion → Toluca | 01-A153-05 | La Concepcion | Toluca | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18840917);out%20geom;%0Away(777180209);out%20geom;%0Away(1415196651);out%20geom;&R)
+[18840917](https://www.openstreetmap.org/relation/18840917) | 01-A153-05 : La Concepcion → Toluca | 01-A153-05 | La Concepcion | Toluca | ✅
 [18841006](https://www.openstreetmap.org/relation/18841006) | 01-A153-05 : Toluca → La Concepcion | 01-A153-05 | Toluca | La Concepcion | ✅
-[18841019](https://www.openstreetmap.org/relation/18841019) | 01-A153-06 : San Pedro Tlaltizapan → Santiago Tianguistenco | 01-A153-06 | San Pedro Tlaltizapan | Santiago Tianguistenco | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18841019);out%20geom;%0Away(777180209);out%20geom;%0Away(1415196651);out%20geom;&R)
+[18841019](https://www.openstreetmap.org/relation/18841019) | 01-A153-06 : San Pedro Tlaltizapan → Santiago Tianguistenco | 01-A153-06 | San Pedro Tlaltizapan | Santiago Tianguistenco | ✅
 [18841064](https://www.openstreetmap.org/relation/18841064) | 01-A153-06 : Santiago Tianguistenco → San Pedro Tlaltizapan | 01-A153-06 | Santiago Tianguistenco | San Pedro Tlaltizapan | ✅
 [18841071](https://www.openstreetmap.org/relation/18841071) | 01-A153-07 : Santiago Tianguistenco → Centro de Justicia | 01-A153-07 | Santiago Tianguistenco | Centro de Justicia | ✅
 [18874454](https://www.openstreetmap.org/relation/18874454) | 01-A153-07 : Centro de Justicia → Santiago Tianguistenco | 01-A153-07 | Centro de Justicia | Santiago Tianguistenco | ✅
@@ -557,9 +556,9 @@
 [18874474](https://www.openstreetmap.org/relation/18874474) | 01-A153-12 : Monte de Pozos → Tenango del Valle | 01-A153-12 | Monte de Pozos | Tenango del Valle | ✅
 [18841338](https://www.openstreetmap.org/relation/18841338) | 01-A153-13 : San Miguel de Ocampo → Tenango del Valle | 01-A153-13 | San Miguel de Ocampo | Tenango del Valle | ✅
 [18853746](https://www.openstreetmap.org/relation/18853746) | 01-A153-13 : Tenango del Valle → San Miguel de Ocampo | 01-A153-13 | Tenango del Valle | San Miguel de Ocampo | ✅
-[18841355](https://www.openstreetmap.org/relation/18841355) | 01-A153-14 : Xalatlaco → Via Santiago Tlapa | 01-A153-14 | Xalatlaco | Via Santiago Tlapa | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18841355);out%20geom;%0Away(777180209);out%20geom;%0Away(1415196651);out%20geom;&R)
+[18841355](https://www.openstreetmap.org/relation/18841355) | 01-A153-14 : Xalatlaco → Via Santiago Tlapa | 01-A153-14 | Xalatlaco | Via Santiago Tlapa | ✅
 [18878072](https://www.openstreetmap.org/relation/18878072) | 01-A153-14 : Via Santiago Tlapa → Xalatlaco | 01-A153-14 | Via Santiago Tlapa | Xalatlaco | ✅
-[18858636](https://www.openstreetmap.org/relation/18858636) | 01-A153-15 : Almoloya Del Rio → Toluca | 01-A153-15 | Almoloya Del Rio | Toluca | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18858636);out%20geom;%0Away(777180209);out%20geom;%0Away(1415196651);out%20geom;&R)
+[18858636](https://www.openstreetmap.org/relation/18858636) | 01-A153-15 : Almoloya Del Rio → Toluca | 01-A153-15 | Almoloya Del Rio | Toluca | ✅
 [18858644](https://www.openstreetmap.org/relation/18858644) | 01-A153-15 : Toluca → Almoloya Del Rio | 01-A153-15 | Toluca | Almoloya Del Rio | ✅
 [18864927](https://www.openstreetmap.org/relation/18864927) | 01-A153-16 : Santiago Tianguistenco → Tenango Por Almoloya Del Rio | 01-A153-16 | Santiago Tianguistenco | Tenango Por Almoloya Del Rio | ✅
 [18869179](https://www.openstreetmap.org/relation/18869179) | 01-A153-16 : Tenango Por Almoloya Del Rio → Santiago Tianguistenco | 01-A153-16 | Tenango Por Almoloya Del Rio | Santiago Tianguistenco | ✅
@@ -612,7 +611,7 @@
 [18878212](https://www.openstreetmap.org/relation/18878212) | 01-A215-02 : Colonia Santa Barbara → Santa Maria Nativitas | 01-A215-02 | Colonia Santa Barbara | Santa Maria Nativitas | ✅
 [18878234](https://www.openstreetmap.org/relation/18878234) | 01-A215-02 : Santa Maria Nativitas → Colonia Santa Barbara | 01-A215-02 | Santa Maria Nativitas | Colonia Santa Barbara | ✅
 [18878202](https://www.openstreetmap.org/relation/18878202) | 01-A215-03 : La Pilita → Centro por Torres | 01-A215-03 | La Pilita | Centro por Torres | ✅
-[18878204](https://www.openstreetmap.org/relation/18878204) | 01-A215-03 : Centro por Torres → La Pilita | 01-A215-03 | Centro por Torres | La Pilita | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18878204);out%20geom;%0Away(1383771241);out%20geom;%0Away(1417572889);out%20geom;&R)
+[18878204](https://www.openstreetmap.org/relation/18878204) | 01-A215-03 : Centro por Torres → La Pilita | 01-A215-03 | Centro por Torres | La Pilita | ✅
 [18869177](https://www.openstreetmap.org/relation/18869177) | 01-A215-04 : Centro de Capultitlán Pasando por Industria Minera → San Mateo Otzacatipan | 01-A215-04 | Centro de Capultitlán Pasando por Industria Minera | San Mateo Otzacatipan | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18869177);out%20geom;%0Away(615984118);out%20geom;%0Away(780640837);out%20geom;&R)
 [18875182](https://www.openstreetmap.org/relation/18875182) | 01-A215-04 : San Mateo Otzacatipan → Centro de Capultitlán Pasando por Industria Minera | 01-A215-04 | San Mateo Otzacatipan | Centro de Capultitlán Pasando por Industria Minera | ✅
 [18878205](https://www.openstreetmap.org/relation/18878205) | 01-A215-05 : Colonia Jiménez Gallardo → San Salvador Tizatlalli | 01-A215-05 | Colonia Jiménez Gallardo | San Salvador Tizatlalli | ✅
@@ -623,7 +622,8 @@
 [18878279](https://www.openstreetmap.org/relation/18878279) | 01-A215-07 : Seminario → Calixtlahuaca | 01-A215-07 | Seminario | Calixtlahuaca | ✅
 [18878211](https://www.openstreetmap.org/relation/18878211) | 01-A215-08 : Plaza las Américas por Tlaxomulco → Calixtlahuaca | 01-A215-08 | Plaza las Américas por Tlaxomulco | Calixtlahuaca | ✅
 [18878213](https://www.openstreetmap.org/relation/18878213) | 01-A215-08 : Calixtlahuaca → Plaza las Américas por Tlaxomulco | 01-A215-08 | Calixtlahuaca | Plaza las Américas por Tlaxomulco | ✅
-[18878224](https://www.openstreetmap.org/relation/18878224) | 01-A215-08B : La Pila → Calixtlahuaca | 01-A215-08B | La Pila | Calixtlahuaca | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(18878224);out%20geom;%0Away(1417572889);out%20geom;%0Away(843603899);out%20geom;&R)
+[18878224](https://www.openstreetmap.org/relation/18878224) | 01-A215-08B : La Pila → Calixtlahuaca | 01-A215-08B | La Pila | Calixtlahuaca | ✅
 [18878252](https://www.openstreetmap.org/relation/18878252) | 01-A215-08B : Calixtlahuaca → La Pila | 01-A215-08B | Calixtlahuaca | La Pila | ✅
 [18870262](https://www.openstreetmap.org/relation/18870262) | 01-A215-09 : Colonia Jiménez Gallardo → Calixtlahuaca | 01-A215-09 | Colonia Jiménez Gallardo | Calixtlahuaca | ✅
 [18878216](https://www.openstreetmap.org/relation/18878216) | 01-A215-09 : Calixtlahuaca → Colonia Jiménez Gallardo | 01-A215-09 | Calixtlahuaca | Colonia Jiménez Gallardo | ✅
+[19469195](https://www.openstreetmap.org/relation/19469195) | Ruta de la salud (Cuernavaca - Emiliano Zapata) | undefined | Cuernavaca | Emiliano Zapata | [route without ref](https://overpass-turbo.eu/?Q=//route%20without%20ref%0Arel(19469195);out%20geom;&R)

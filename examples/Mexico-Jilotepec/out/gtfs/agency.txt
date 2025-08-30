@@ -1,0 +1,11 @@
+agency_id,agency_name,agency_timezone,agency_url
+0,Mano Amiga,America/Mexico_City,https://example.com/
+1,Mano Amiga/Halcones Blancos,America/Mexico_City,https://example.com/
+2,Halcones Rojos,America/Mexico_City,https://example.com/
+3,AVM,America/Mexico_City,https://example.com/
+4,AVM/Halcones Rojos,America/Mexico_City,https://example.com/
+5,ANASA,America/Mexico_City,https://example.com/
+6,Rapidos,America/Mexico_City,https://example.com/
+7,Herradura de Plata HP,America/Mexico_City,https://example.com/
+8,Halcones Blancos,America/Mexico_City,https://example.com/
+9,Halcones Blancos / Herradura de Plata HP,America/Mexico_City,https://example.com/

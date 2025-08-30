@@ -343,8 +343,8 @@ stop_id,stop_name,stop_lat,stop_lon
 8496186290,Carretera Coatzacoalcos - Salina Cruz,16.2188205,-95.207527
 8496186294,Carretera Coatzacoalcos - Salina Cruz,16.2197863,-95.2078454
 5095143999,Carretera Coatzacoalcos - Salina Cruz,16.220414,-95.2080412
-5095143995,Carretera Coatzacoalcos - Salina Cruz,16.2213,-95.2083326
-8496945336,Carretera Coatzacoalcos - Salina Cruz,16.2213137,-95.2083375
+5095143995,Carretera Coatzacoalcos - Salina Cruz,16.2211879,-95.2082836
+8496945336,Carretera Coatzacoalcos - Salina Cruz,16.2213108,-95.2083405
 5095143994,Carretera Coatzacoalcos - Salina Cruz,16.2214867,-95.2083966
 5095143998,Carretera Coatzacoalcos - Salina Cruz,16.2220115,-95.2085763
 5095143997,Carretera Coatzacoalcos - Salina Cruz,16.2221763,-95.2086293
@@ -1164,7 +1164,7 @@ stop_id,stop_name,stop_lat,stop_lon
 5090461223,Calle Chiapas,16.2056896,-95.207681
 3108232293,Calle Chiapas,16.2057529,-95.2066602
 5090461221,Calle Chiapas y Benito Juárez,16.205841,-95.205644
-8496945337,Innominada,16.2213144,-95.2083314
+8496945337,Innominada,16.2213294,-95.2082828
 5095143993,Innominada,16.2214622,-95.2083195
 1284085189,Innominada,16.2215534,-95.2083078
 5094747033,Innominada,16.2216313,-95.208285

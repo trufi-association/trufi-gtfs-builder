@@ -406,8 +406,7 @@ stop_id,stop_name,stop_lat,stop_lon
 320042714,Boulevard Eduardo Mata,17.0513011,-96.7247258
 8425385682,Boulevard Eduardo Mata,17.0511691,-96.7253321
 319948373,Boulevard Eduardo Mata,17.0511342,-96.7255734
-320041166,Boulevard Eduardo Mata y Calle de Armenta y López,17.0510769,-96.7258892
-319948371,Boulevard Eduardo Mata y Avenida Símbolos Patrios,17.0510238,-96.7260898
+319948371,Boulevard Eduardo Mata y Calle de Armenta y López y Avenida Símbolos Patrios,17.0510842,-96.7258261
 1340571224,Boulevard Eduardo Mata y Avenida Símbolos Patrios y Calle de Carlos María Bustamante,17.0509561,-96.7263986
 2609090831,Boulevard Eduardo Mata,17.0508863,-96.7265612
 291209250,Boulevard Eduardo Mata y Avenida Ferrocarril,17.0507186,-96.7270037
@@ -986,7 +985,7 @@ stop_id,stop_name,stop_lat,stop_lon
 1342967624,Boulevard Eduardo Mata,17.0506101,-96.7268744
 320041099,Boulevard Eduardo Mata,17.0506738,-96.7265756
 1340571119,Boulevard Eduardo Mata y Avenida Símbolos Patrios,17.0507433,-96.7262511
-320041165,Boulevard Eduardo Mata y Avenida Símbolos Patrios,17.0508076,-96.7259833
+320041165,Boulevard Eduardo Mata y Avenida Símbolos Patrios,17.0508284,-96.7258871
 1342967652,Boulevard Eduardo Mata,17.0508789,-96.7257131
 8425325341,Boulevard Eduardo Mata,17.0509709,-96.7253654
 8444670983,Boulevard Eduardo Mata,17.0509971,-96.7252586
@@ -3271,9 +3270,9 @@ stop_id,stop_name,stop_lat,stop_lon
 330948075,Calle de Armenta y López,17.0527481,-96.7254689
 8431353267,Calle de Armenta y López,17.0526567,-96.725491
 8427850000,Calle de Armenta y López,17.0516163,-96.7257421
-320041164,Avenida Símbolos Patrios,17.0506958,-96.7259929
-320041163,Avenida Símbolos Patrios,17.05056,-96.7259838
-5890583524,Avenida Símbolos Patrios,17.0504363,-96.7259511
+320041164,Avenida Símbolos Patrios,17.0507068,-96.725966
+320041163,Avenida Símbolos Patrios,17.0505744,-96.7259581
+5890583524,Avenida Símbolos Patrios,17.0504466,-96.7259339
 1342967654,Avenida Símbolos Patrios,17.0502793,-96.7258689
 2387940995,Avenida Símbolos Patrios,17.0497691,-96.7254877
 291166402,Avenida Símbolos Patrios,17.0494109,-96.7253397
@@ -3565,7 +3564,6 @@ stop_id,stop_name,stop_lat,stop_lon
 6199743424,Carretera Oaxaca - Puerto Ángel,16.98501,-96.7113278
 330949391,Calle de Xicoténcatl,17.0592312,-96.7210725
 335878625,Calle de Xicoténcatl,17.0601547,-96.7208789
-12319880439,Calle de Xicoténcatl,17.0610949,-96.7206626
 335800414,Calle de Xicoténcatl y Calle de José María Pino Suárez,17.0610982,-96.7206618
 9531089144,Calle de José María Pino Suárez,17.0610997,-96.7206614
 529036131,Calle de José María Pino Suárez y Avenida de José María Morelos,17.0620368,-96.720436
@@ -4758,15 +4756,14 @@ stop_id,stop_name,stop_lat,stop_lon
 1348384297,Calle Primero de Mayo,17.0490969,-96.7386143
 6131719485,Calle Primero de Mayo,17.0491482,-96.7384923
 1348383975,Calle Primero de Mayo,17.0491753,-96.7382977
-1348384469,Calle Primero de Mayo,17.0491946,-96.737898
-1348383713,Calle Primero de Mayo,17.049181,-96.7375028
-1348384026,Calle Primero de Mayo,17.0491606,-96.7371943
-5834870608,Calle Primero de Mayo,17.0491657,-96.7370036
-1348383971,Calle Primero de Mayo,17.049154,-96.736774
-1348384333,Calle Primero de Mayo,17.0491653,-96.7365313
-5834870607,Calle Primero de Mayo,17.0491928,-96.7362151
-8425366208,Calle Primero de Mayo,17.0491893,-96.73617
-2333273166,Calle Primero de Mayo,17.0491839,-96.7361241
+1348384469,Calle Primero de Mayo,17.0492089,-96.737871
+1348383713,Calle Primero de Mayo,17.0491994,-96.7374786
+1348384026,Calle Primero de Mayo,17.0491837,-96.7371986
+5834870608,Calle Primero de Mayo,17.0492113,-96.7370371
+1348383971,Calle Primero de Mayo,17.0492098,-96.7368139
+1348384333,Calle Primero de Mayo,17.0492054,-96.7365427
+5834870607,Calle Primero de Mayo,17.0491955,-96.7362087
+2333273166,Calle Primero de Mayo,17.0491774,-96.7360946
 2333197400,Calle Miguel Cabrera,17.0677118,-96.7602804
 2333197411,Calle Miguel Cabrera y Calle Abraham Castellanos,17.0681992,-96.7593107
 2333197423,Calle Abraham Castellanos,17.0686221,-96.7595083
@@ -6143,7 +6140,7 @@ stop_id,stop_name,stop_lat,stop_lon
 6201868758,Calle Francisco I. Madero,17.0694728,-96.6515402
 3017450524,Calle Francisco I. Madero,17.0700975,-96.6514344
 3005639357,Calle Francisco I. Madero y Calle Calvario,17.0705296,-96.6513702
-3005639342,Calle Calvario,17.0703258,-96.6502052
+3005639342,Calle Calvario y Calle Progreso,17.0703258,-96.6502052
 3005639347,Calle Calvario y Calle Zaragoza,17.0700386,-96.6490598
 3005639349,Calle Zaragoza y Calle Vicente Guerrero,17.0710873,-96.6488426
 5455227243,Calle Vicente Guerrero y Calle Matamoros,17.0708874,-96.6476834
@@ -6152,7 +6149,7 @@ stop_id,stop_name,stop_lat,stop_lon
 3005639345,Calle Gregorio Chávez y Calle Zaragoza,17.0727449,-96.6485119
 3005639351,Calle Zaragoza,17.0735693,-96.6484346
 6201869319,Calle Zaragoza,17.0737122,-96.6484105
-3005639354,Calle Zaragoza,17.0743333,-96.6483005
+3005639354,Calle Zaragoza y Avenida Miguel Cabrera,17.0743333,-96.6483005
 8404598927,Calzada San Lorenzo,17.1317512,-96.7963303
 335730458,Calzada San Lorenzo,17.1318245,-96.7961061
 9487710546,Calzada San Lorenzo,17.1319295,-96.7957743
@@ -6229,6 +6226,33 @@ stop_id,stop_name,stop_lat,stop_lon
 1350055157,Carretera Oaxaca-Zaachila,17.0078103,-96.7683058
 10795847075,Innominada,17.054611,-96.7259737
 10795847076,Innominada,17.054893,-96.7259293
+3005639352,Avenida Miguel Cabrera y Calle Progreso,17.0745692,-96.649379
+6201869429,Calle Progreso,17.0739142,-96.6494887
+3005639356,Calle Progreso,17.0729259,-96.6496697
+3005639350,Calle Progreso,17.0713283,-96.6500064
+672022737,Calzada Adolfo López Mateos y Avenida Internacional,17.0581819,-96.6583486
+291213808,Avenida Internacional,17.0589799,-96.6598625
+8428522698,Avenida Internacional,17.0592516,-96.6603677
+3862319185,Avenida Internacional,17.0599329,-96.6616467
+319950395,Avenida Internacional,17.060166,-96.6620575
+3862319188,Avenida Internacional,17.0602013,-96.662128
+8424710658,Avenida Internacional,17.0602181,-96.6621596
+319950396,Avenida Internacional,17.0605084,-96.6627034
+8445634219,Avenida Internacional,17.0606715,-96.6631831
+291052352,Avenida Internacional,17.0607348,-96.6633691
+3862319170,Avenida Internacional y Carretera Oaxaca - Tehuantepec y Carretera Libramiento de Santa María del Tule,17.0608438,-96.6637672
+8444924401,Carretera Oaxaca - Tehuantepec,17.0611208,-96.6647514
+8444924404,Carretera Oaxaca - Tehuantepec,17.0611813,-96.6649665
+3862319169,Carretera Oaxaca - Tehuantepec,17.0613206,-96.6654615
+320018249,Carretera Oaxaca - Tehuantepec,17.0614721,-96.6660186
+3005572542,Carretera Oaxaca - Tehuantepec,17.0617617,-96.6670382
+8449232054,Carretera Oaxaca - Tehuantepec,17.0622714,-96.6687778
+613138489,Carretera Oaxaca - Tehuantepec,17.062355,-96.6690632
+8449232055,Carretera Oaxaca - Tehuantepec,17.062372,-96.6691181
+5497405389,Carretera Oaxaca - Tehuantepec,17.0626672,-96.6700684
+2596344336,Carretera Oaxaca - Tehuantepec,17.0629938,-96.6712023
+8444711796,Carretera Oaxaca - Tehuantepec,17.0630122,-96.6712665
+291213207,Carretera Oaxaca - Tehuantepec y Carretera Federal Oaxaca - Tuxtepec,17.0654404,-96.6794153
 10795856030,Innominada,17.0530767,-96.7294406
 8409576965,Innominada,17.0529619,-96.7295585
 1955833914,Avenida Constituyentes,17.059908,-96.7370236
@@ -6688,29 +6712,6 @@ stop_id,stop_name,stop_lat,stop_lon
 291213652,Avenida Internacional,17.0572052,-96.656539
 3005616274,Avenida Internacional,17.0574211,-96.6569459
 8424710626,Avenida Internacional,17.0578208,-96.6576869
-672022737,Avenida Internacional,17.0581819,-96.6583486
-291213808,Avenida Internacional,17.0589799,-96.6598625
-8428522698,Avenida Internacional,17.0592516,-96.6603677
-3862319185,Avenida Internacional,17.0599329,-96.6616467
-319950395,Avenida Internacional,17.060166,-96.6620575
-3862319188,Avenida Internacional,17.0602013,-96.662128
-8424710658,Avenida Internacional,17.0602181,-96.6621596
-319950396,Avenida Internacional,17.0605084,-96.6627034
-8445634219,Avenida Internacional,17.0606715,-96.6631831
-291052352,Avenida Internacional,17.0607348,-96.6633691
-3862319170,Avenida Internacional y Carretera Oaxaca - Tehuantepec y Carretera Libramiento de Santa María del Tule,17.0608438,-96.6637672
-8444924401,Carretera Oaxaca - Tehuantepec,17.0611208,-96.6647514
-8444924404,Carretera Oaxaca - Tehuantepec,17.0611813,-96.6649665
-3862319169,Carretera Oaxaca - Tehuantepec,17.0613206,-96.6654615
-320018249,Carretera Oaxaca - Tehuantepec,17.0614721,-96.6660186
-3005572542,Carretera Oaxaca - Tehuantepec,17.0617617,-96.6670382
-8449232054,Carretera Oaxaca - Tehuantepec,17.0622714,-96.6687778
-613138489,Carretera Oaxaca - Tehuantepec,17.062355,-96.6690632
-8449232055,Carretera Oaxaca - Tehuantepec,17.062372,-96.6691181
-5497405389,Carretera Oaxaca - Tehuantepec,17.0626672,-96.6700684
-2596344336,Carretera Oaxaca - Tehuantepec,17.0629938,-96.6712023
-8444711796,Carretera Oaxaca - Tehuantepec,17.0630122,-96.6712665
-291213207,Carretera Oaxaca - Tehuantepec y Carretera Federal Oaxaca - Tuxtepec,17.0654404,-96.6794153
 1349730038,Innominada,17.0611348,-96.7141519
 8646600633,Innominada,17.0610732,-96.7141733
 1349730029,Avenida de José María Morelos,17.0609514,-96.7141807
