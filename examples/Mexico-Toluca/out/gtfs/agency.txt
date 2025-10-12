@@ -1,33 +1,32 @@
 agency_id,agency_name,agency_timezone,agency_url
-0,AUTOTRANSPORTES TOLUCA CAPULTITLÁN TRIÁNGULO ROJO S.A.DE C.V.,America/Mexico_City,https://example.com/
-1,"AUTOBUSES ESTRELLA DEL NORESTE, S.A. DE C.V.",America/Mexico_City,https://example.com/
-2,AUTOBUSES FLECHA BLANCA DE TOLUCA S.A. DE C.V.,America/Mexico_City,https://example.com/
-3,AUTOTRANSPORTES DEL VALLE DE TOLUCA S.A. DE C.V.,America/Mexico_City,https://example.com/
-4,LÍNEA DE TURISMOS TOLUCA TENANGO ESTRELLA DE ORO S.A. DE C.V.,America/Mexico_City,https://example.com/
-5,"AUTOTRANSPORTES DE PASAJEROS DE SEGUNDA CLASE ALA DE ORO, S.A. DE C.V.",America/Mexico_City,https://example.com/
-6,AUTOTRANSPORTES URBANOS Y SUBURBANOS DE LA CIUDAD DE TOLUCA Y ZONA INDUSTRIAL S.A. DE C.V.,America/Mexico_City,https://example.com/
-7,AUTOTRANSPORTES TEMOAYENSES S.A. DE C.V.,America/Mexico_City,https://example.com/
+0,"Autotransportes Toluca Capultitlán Triángulo Rojo, S.A. de C.V.",America/Mexico_City,https://example.com/
+1,"Autobuses Estrella del Noreste, S.A. de C.V.",America/Mexico_City,https://example.com/
+2,"Autobuses Flecha Blanca de Toluca, S.A. de C.V.",America/Mexico_City,https://example.com/
+3,"Autotransportes del Valle de Toluca, S.A. de C.V.",America/Mexico_City,https://example.com/
+4,"Línea de Turismos Toluca Tenango Estrella de Oro, S.A. de C.V.",America/Mexico_City,https://example.com/
+5,"Autotransportes de Pasajeros de Segunda Clase Ala de Oro, S.A. de C.V.",America/Mexico_City,https://example.com/
+6,"Autotransportes Urbanos y Suburbanos de la Ciudad de Toluca y Zona Industrial, S.A. de C.V.",America/Mexico_City,https://example.com/
+7,"Autotransportes Temoayenses, S.A. de C.V.",America/Mexico_City,https://example.com/
 8,default,America/Mexico_City,https://example.com/
-9,RED DE TRANSPORTE PÚBLICO S.A. DE C.V.,America/Mexico_City,https://example.com/
-10,"AUTOTRANSPORTES TOLUCA TLACHALOYA Y RAMALES , S.A. DE C.V.",America/Mexico_City,https://example.com/
-11,SERVICIO INTERMETROPOLITANO DE TRANSPORTE S.A. DE C.V.,America/Mexico_City,https://example.com/
-12,AUTOTRANSPORTES TOLUCA CUATRO CAMINOS S.A. DE C.V.,America/Mexico_City,https://example.com/
-13,SERVICIOS URBANOS Y SUBURBANOS XINANTECATL S.A. DE C.V.,America/Mexico_City,https://example.com/
-14,TRANSPORTES DE PASAJEROS DE SEGUNDA CLASE FLECHA DE ORO S.A. DE C.V.,America/Mexico_City,https://example.com/
-15,TRANSPORTES CRUCERO S.A. DE C.V.,America/Mexico_City,https://example.com/
-16,AUTOTRANSPORTES CULTURAL DE TOLUCA S.A. DE C.V.,America/Mexico_City,https://example.com/
-17,CONCENTRADORA URBANA DE PASAJE S. DE R.L. DE C.V.,America/Mexico_City,https://example.com/
-18,"COMPAÑÍA TRANSPORTISTA DE TOLUCA, S.A DE C.V.",America/Mexico_City,https://example.com/
-19,"AUTOTRANSPORTES URBANOS DE TOLUCA Y ZONA CONURBADA, S.A. DE C.V.",America/Mexico_City,https://example.com/
-20,"RÁPIDOS DEL VALLE DE TOLUCA, S.A. DE C.V.",America/Mexico_City,https://example.com/
-21,"AUTOTRANSPORTES URBANOS Y SUBURBANOS PEGASO DE TOLUCA, S.A. DE C.V.",America/Mexico_City,https://example.com/
-22,"AUTOTRANSPORTES 8 DE NOVIEMBRE, S DE R.L. DE C.V.",America/Mexico_City,https://example.com/
-23,SISTEMA DE TRANSPORTE URBANO Y SUBURBANO DE LA CIUDAD DE TOLUCA S.A. DE C.V.,America/Mexico_City,https://example.com/
-24,"AUTOTRANSPORTES URBANOS Y SUBURBANOS TORRES BICENTENARIO, S.A.DE C.V.",America/Mexico_City,https://example.com/
-25,"AUTOTRANSPORTES PRIMERO DE MAYO, S.A. DE C.V.",America/Mexico_City,https://example.com/
-26,"AUTOTRANSPORTES SATELITE URBANOS Y SUBURBANOS DE TOLUCA, S.A. DE C.V.",America/Mexico_City,https://example.com/
-27,"TRANSPORTES URBANOS Y SUBURBANOS TOLLOCAN, S.A. DE C.V.",America/Mexico_City,https://example.com/
-28,AUTOTRANSPORTES COLÓN NACIONAL S.A. DE C.V.,America/Mexico_City,https://example.com/
-29,AUTOTRANSPORTES URBANOS Y SUBURBANOS CORSARIOS DEL NORTE S.A. DE C.V.,America/Mexico_City,https://example.com/
-30,"AUTOTRANSPORTES URBANOS GACELA DE TOLUCA , S.A. DE C.V.",America/Mexico_City,https://example.com/
-31,"MULTISERVICIOS DE TRANSPORTACIÓN DE MÉXICO, S.A. DE C.V",America/Mexico_City,https://example.com/
+9,"Red de Transporte Público, S.A. de C.V.",America/Mexico_City,https://example.com/
+10,"Autotransportes Toluca Tlachaloya y Ramales, S.A. de C.V.",America/Mexico_City,https://example.com/
+11,"Servicio Intermetropolitano de Transporte, S.A. de C.V.",America/Mexico_City,https://example.com/
+12,"Autotransportes Toluca Cuatro Caminos, S.A. de C.V.",America/Mexico_City,https://example.com/
+13,"Servicios Urbanos y Suburbanos Xinantécatl, S.A. de C.V.",America/Mexico_City,https://example.com/
+14,"Transportes de Pasajeros de Segunda Clase Flecha de Oro, S.A. de C.V.",America/Mexico_City,https://example.com/
+15,"Transportes Crucero, S.A. de C.V.",America/Mexico_City,https://example.com/
+16,"Autotransportes Cultural de Toluca, S.A. de C.V.",America/Mexico_City,https://example.com/
+17,"Concentradora Urbana de Pasaje, S. de R.L. de C.V.",America/Mexico_City,https://example.com/
+18,"Autotransportes Urbanos de Toluca y Zona Conurbada, S.A. de C.V.",America/Mexico_City,https://example.com/
+19,"Rápidos del Valle de Toluca, S.A. de C.V.",America/Mexico_City,https://example.com/
+20,"Autotransportes Urbanos y Suburbanos Pegaso de Toluca, S.A. de C.V.",America/Mexico_City,https://example.com/
+21,"Autotransportes 8 de Noviembre, S. de R.L. de C.V.",America/Mexico_City,https://example.com/
+22,"Sistema de Transporte Urbano y Suburbano de la Ciudad de Toluca, S.A. de C.V.",America/Mexico_City,https://example.com/
+23,"Autotransportes Urbanos y Suburbanos Torres Bicentenario, S.A. de C.V.",America/Mexico_City,https://example.com/
+24,"Autotransportes Primero de Mayo, S.A. de C.V.",America/Mexico_City,https://example.com/
+25,"Autotransportes Satélite Urbanos y Suburbanos de Toluca, S.A. de C.V.",America/Mexico_City,https://example.com/
+26,"Autotransportes Colón Nacional, S.A. de C.V.",America/Mexico_City,https://example.com/
+27,"Transportes Urbanos y Suburbanos Tollocan, S.A. de C.V.",America/Mexico_City,https://example.com/
+28,"Autotransportes Urbanos y Suburbanos Corsarios del Norte, S.A. de C.V.",America/Mexico_City,https://example.com/
+29,"Autotransportes Urbanos Gacela de Toluca, S.A. de C.V.",America/Mexico_City,https://example.com/
+30,"Multiservicios de Transportación de México, S.A. de C.V.",America/Mexico_City,https://example.com/

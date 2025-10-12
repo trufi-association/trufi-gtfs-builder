@@ -1,9 +1,21 @@
 ### Count
-**Total**: 70  **Correct**: 70  **With error**: 0
+**Total**: 76  **Correct**: 76  **With error**: 0
 
 
 | Id | Name | Ref | From | To | State |
 | -- | ---- | --- | ---- | -- | ----- |
+[19528454](https://www.openstreetmap.org/relation/19528454) | 18A: Terminal → San Juan Tuxtepec | 18A | Terminal | San Juan Tuxtepec | ✅
+[19528471](https://www.openstreetmap.org/relation/19528471) | 18A: San Juan Tuxtepec → Terminal | 18A | San Juan Tuxtepec | Terminal | ✅
+[19558882](https://www.openstreetmap.org/relation/19558882) | 18B: Terminal → San Juan Tuxtepec | 18B | Terminal | San Juan Tuxtepec | ✅
+[19558889](https://www.openstreetmap.org/relation/19558889) | 18B: San Juan Tuxtepec → Terminal | 18B | San Juan Tuxtepec | Terminal | ✅
+[19528491](https://www.openstreetmap.org/relation/19528491) | 21A: Terminal → Ojo de Agua | 21A | Terminal | Ojo de Agua | ✅
+[19528506](https://www.openstreetmap.org/relation/19528506) | 21A: Ojo de Agua → Terminal | 21A | Ojo de Agua | Terminal | ✅
+[19558890](https://www.openstreetmap.org/relation/19558890) | 21B: Terminal → Ojo de Agua | 21B | Terminal | Ojo de Agua | ✅
+[19558896](https://www.openstreetmap.org/relation/19558896) | 21B: Ojo de Agua → Terminal | 21B | Ojo de Agua | Terminal | ✅
+[19531734](https://www.openstreetmap.org/relation/19531734) | 30A: Aurrera → El Rosal | 30A | Aurrera | El Rosal | ✅
+[19531735](https://www.openstreetmap.org/relation/19531735) | 30A: El Rosal → Aurrera | 30A | El Rosal | Aurrera | ✅
+[19558897](https://www.openstreetmap.org/relation/19558897) | 30B: Aurrera → El Rosal | 30B | Aurrera | El Rosal | ✅
+[19558898](https://www.openstreetmap.org/relation/19558898) | 30B: El Rosal → Aurrera | 30B | El Rosal | Aurrera | ✅
 [19531739](https://www.openstreetmap.org/relation/19531739) | 31A: La Goleta/San Juan Daxthi → Aurrera | 31A | La Goleta/San Juan Daxthi | Aurrera | ✅
 [19531740](https://www.openstreetmap.org/relation/19531740) | 31B: La Goleta/San Juan Daxthi → Aurrera | 31B | La Goleta/San Juan Daxthi | Aurrera | ✅
 [19525478](https://www.openstreetmap.org/relation/19525478) | 3A: Buenavista → Mercado | 3A | Buenavista | Mercado | ✅
@@ -41,14 +53,10 @@
 [19525724](https://www.openstreetmap.org/relation/19525724) | 16: San Lorenzo Nenamicoyan → Terminal | 16 | San Lorenzo Nenamicoyan | Terminal | ✅
 [19528431](https://www.openstreetmap.org/relation/19528431) | 17: Terminal → Km 107 | 17 | Terminal | Km 107 | ✅
 [19528433](https://www.openstreetmap.org/relation/19528433) | 17: Km 107 → Terminal | 17 | Km 107 | Terminal | ✅
-[19528454](https://www.openstreetmap.org/relation/19528454) | 18: Terminal → San Juan Tuxtepec | 18 | Terminal | San Juan Tuxtepec | ✅
-[19528471](https://www.openstreetmap.org/relation/19528471) | 18: San Juan Tuxtepec → Terminal | 18 | San Juan Tuxtepec | Terminal | ✅
 [19528476](https://www.openstreetmap.org/relation/19528476) | 19: Terminal → San Andrés Timilpan | 19 | Terminal | San Andrés Timilpan | ✅
 [19528479](https://www.openstreetmap.org/relation/19528479) | 19: San Andrés Timilpan → Terminal | 19 | San Andrés Timilpan | Terminal | ✅
 [19528483](https://www.openstreetmap.org/relation/19528483) | 20: Terminal → San Martín Tuchicuitlapilco | 20 | Terminal | San Martín Tuchicuitlapilco | ✅
 [19528489](https://www.openstreetmap.org/relation/19528489) | 20: San Martín Tuchicuitlapilco → Terminal | 20 | San Martín Tuchicuitlapilco | Terminal | ✅
-[19528491](https://www.openstreetmap.org/relation/19528491) | 21: Terminal → Ojo de Agua | 21 | Terminal | Ojo de Agua | ✅
-[19528506](https://www.openstreetmap.org/relation/19528506) | 21: Ojo de Agua → Terminal | 21 | Ojo de Agua | Terminal | ✅
 [19528579](https://www.openstreetmap.org/relation/19528579) | 22: Terminal → Chapa de Mota (vía El Quinte) | 22 | Terminal | Chapa de Mota (vía El Quinte) | ✅
 [19528584](https://www.openstreetmap.org/relation/19528584) | 22: Chapa de Mota (vía El Quinte) → Terminal | 22 | Chapa de Mota (vía El Quinte) | Terminal | ✅
 [19528589](https://www.openstreetmap.org/relation/19528589) | 23: Terminal → Chapa de Mota (vía Chapa) | 23 | Terminal | Chapa de Mota (vía Chapa) | ✅
@@ -65,8 +73,6 @@
 [19531730](https://www.openstreetmap.org/relation/19531730) | 28: San Juan Tuxtepec → Enfrente Terminal | 28 | San Juan Tuxtepec | Enfrente Terminal | ✅
 [19531731](https://www.openstreetmap.org/relation/19531731) | 29: Enfrente Terminal → Xhimohay | 29 | Enfrente Terminal | Xhimohay | ✅
 [19531732](https://www.openstreetmap.org/relation/19531732) | 29: Xhimohay → Enfrente Terminal | 29 | Xhimohay | Enfrente Terminal | ✅
-[19531734](https://www.openstreetmap.org/relation/19531734) | 30: Aurrera → El Rosal | 30 | Aurrera | El Rosal | ✅
-[19531735](https://www.openstreetmap.org/relation/19531735) | 30: El Rosal → Aurrera | 30 | El Rosal | Aurrera | ✅
 [19531736](https://www.openstreetmap.org/relation/19531736) | 31: Aurrera → La Goleta/San Juan Daxthi | 31 | Aurrera | La Goleta/San Juan Daxthi | ✅
 [19531741](https://www.openstreetmap.org/relation/19531741) | 32: Aurrera → Acazuchitlán (San Juanico) | 32 | Aurrera | Acazuchitlán (San Juanico) | ✅
 [19531742](https://www.openstreetmap.org/relation/19531742) | 32: Acazuchitlán (San Juanico) → Aurrera | 32 | Acazuchitlán (San Juanico) | Aurrera | ✅

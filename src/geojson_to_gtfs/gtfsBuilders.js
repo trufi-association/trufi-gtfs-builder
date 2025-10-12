@@ -168,7 +168,7 @@ function fareBuilder(features, defaultFares) {
         feature = feature[0]
 
         let fareId = fare.attributes.length
-        let price = parseFloat(feature.properties.fee)
+        let price = feature.properties.fee === "yes" ? parseFloat(feature.properties.charge) : 0
 
         fare.attributes.push({
             agency_id: feature.gtfs.agency_id,
@@ -205,6 +205,9 @@ function tripBuilder(features) {
     const trips = []
     for (let feature of features) {
         feature = feature[0]
+        if(feature.gtfs.services.length == 0){
+            console.log('feature.gtfs.services empty => ', feature.gtfs.services)
+        }
         for (const service of feature.gtfs.services) {
             const trip = {
                 trip_id: trips.length,

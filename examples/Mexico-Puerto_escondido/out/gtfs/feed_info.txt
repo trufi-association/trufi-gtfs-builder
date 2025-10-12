@@ -1,0 +1,2 @@
+feed_publisher_url,feed_publisher_name,feed_lang,feed_version,feed_contact_email,feed_contact_url,feed_start_date,feed_end_date,feed_id
+https://example.com,Puerto Escondido,es,"Thu, 25 Sep 2025 17:02:22 GMT",email@example.com,http://support.example.com,20000101,21000101,puerto_escondido_feed

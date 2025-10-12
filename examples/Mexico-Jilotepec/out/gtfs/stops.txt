@@ -9,7 +9,7 @@ stop_id,stop_name,stop_lat,stop_lon
 7326555428,Calle Miguel Alemán,19.9514526,-99.5303123
 2587966409,Calle Miguel Alemán y Calle Mariano Escobedo,19.9514072,-99.530306
 2587966476,Calle Mariano Escobedo y Calle Francisco I. Madero,19.9517056,-99.5288317
-7326513751,Calle Francisco I. Madero,19.952722,-99.5290013
+7326513751,Calle Francisco I. Madero y Calle Benito Juárez,19.952722,-99.5290013
 2587966439,Calle Francisco I. Madero y Calle Benito Juárez,19.9527747,-99.5290101
 8095672557,Calle Francisco I. Madero,19.953987,-99.5291344
 2587966425,Calle Francisco I. Madero y Calle Pino Suárez y Calle Vicente Guerrero Oriente,19.9541268,-99.5291159

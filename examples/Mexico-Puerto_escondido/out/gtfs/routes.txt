@@ -1,0 +1,33 @@
+route_id,agency_id,route_short_name,route_long_name,route_color,route_type
+19626601,0,R1,R1: Fraccionamiento La Parota → Mercado Benito Juárez,C22922,3
+19626603,0,R2,R2: Mercado Benito Juárez → Colonia Aeropuerto,C22922,3
+19626621,0,R5,R5: Lázaro Cárdenas → Mercado Benito Juárez,F57C00,3
+19626623,0,R4,R4: Fraccionamiento Costa Chica → Colonia Lomas del Puerto,FBC02D,3
+19626624,0,R2,R2: Colonia Aeropuerto → Mercado Benito Juárez,C22922,3
+19626625,0,R5,R5: Mercado Benito Juárez → Lázaro Cárdenas,F57C00,3
+19626645,0,R4,R4: Colonia Lomas del Puerto → Fraccionamiento Costa Chica,FBC02D,3
+19626654,0,R3,R3: La Unión → Mercado Benito Juárez,2E7D32,3
+19626658,0,R6,R6: Mercado Benito Juárez → Zicatela,F57C00,3
+19626660,0,R7,R7: Mercado Benito Juárez → Colonia La Libertad,FBC02D,3
+19626664,0,R9,R9: Fraccionamiento Las Palmas → Mercado Benito Juárez,5D22A6,3
+19626665,0,R9,R9: Mercado Benito Juárez → Fraccionamiento Las Palmas,5D22A6,3
+19626666,0,R10,R10: Colonia Las Palmas → Mercado Benito Juárez,FBC02D,3
+19626673,0,R14,R14: Fraccionamiento Jardines → Mercado Benito Juárez,C22922,3
+19626685,0,R10,R10: Mercado Benito Juárez → Colonia Las Palmas,FBC02D,3
+19626689,0,R14,R14: Mercado Benito Juárez → Fraccionamiento Jardines,C22922,3
+19626801,0,R16,R16: Colonia San Miguel → Mercado Benito Juárez,2E7D32,3
+19626803,0,R6,R6: Zicatela → Mercado Benito Juárez,F57C00,3
+19626818,0,R15,R15: Mercado Benito Juárez → Colonia Las Flores,C22922,3
+19626837,0,R1,R1: Mercado Benito Juárez → Fraccionamiento La Parota,C22922,3
+19626841,0,R16,R16: Mercado Benito Juárez → Colonia San Miguel,2E7D32,3
+19626854,0,R15,R15: Colonia Las Flores → Mercado Benito Juárez,C22922,3
+19626856,0,R28,R28: Los Limones → Mercado Benito Juárez,1A73E8,3
+19626870,0,R25,R25: Mercado Benito Juárez → Sector 2000,C22922,3
+19626909,0,R25,R25: Sector 2000 → Mercado Benito Juárez,C22922,3
+19626958,0,R29,R29: El Jícaro → Mercado Benito Juárez,5D22A6,3
+19626959,0,R28,R28: Mercado Benito Juárez → Los Limones,1A73E8,3
+19626964,0,R29,R29: Mercado Benito Juárez → El Jícaro,5D22A6,3
+19626966,0,R7,R7: Colonia La Libertad → Mercado Benito Juárez,FBC02D,3
+19626980,0,R3,R3: Mercado Benito Juárez → La Unión,2E7D32,3
+19647990,0,R13,R13: Fraccionamiento La Lucerna → Mercado Benito Juárez,1A73E8,3
+19647998,0,R13,R13: Mercado Benito Juárez → Fraccionamiento La Lucerna,1A73E8,3

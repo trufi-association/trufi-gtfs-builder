@@ -4,10 +4,10 @@ osmToGtfs({
     outputFiles: { outputDir: __dirname + '/out', trufiTPData: true, gtfs: true, },
     geojsonOptions: {
         osmDataGetter: new OSMOverpassDownloader({
-            south: 16.916142,
-            west: -96.855924,
-            north: 17.209209,
-            east: -96.452388,
+            south: 16.936643,
+            west: -96.851188,
+            north: 17.186118,
+            east: -96.444694,
         }), skipRoute: (route) => {
             return ![2084702].includes(route.id)
         }
