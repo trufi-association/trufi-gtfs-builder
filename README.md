@@ -1,74 +1,192 @@
+# GTFS Builder (TypeScript)
+
 ## INTRODUCTION 
 
-Trufi’s General Transit Feed Specification (GTFS) tool allows you to create a map for your city. You can also send your route data to Google Maps, Open Trip Planner, OpenStreetMap, and other public atlases to keep navigation databases updated. 
+Trufi's General Transit Feed Specification (GTFS) tool allows you to create a map for your city. You can also send your route data to Google Maps, Open Trip Planner, OpenStreetMap, and other public atlases to keep navigation databases updated. 
 
-Follow the steps below to create a public transportation map using our tool.
+This is the TypeScript version of the [trufi-gtfs-builder](https://github.com/trufi-association/trufi-gtfs-builder) project.
 
-### Steps 
+## Installation
 
-+ Step 1:  Download [Trufi’s GTFS builder repo](https://github.com/trufi-association/trufi-gtfs-builder)
+```bash
+npm install gtfs-builder
+```
 
-+ Step 2: Download three tools: [Nodsjs](https://nodejs.org/en), [Git]( https://github.com/git-guides/install-git), and a text code editor. We recommend [Visual Studio (VS) Code]( https://code.visualstudio.com/).
+## Quick Start
 
-+ Step 3: Click on “code” and copy the HTTPS URL. 
-You may choose to download GitHub Desktop and select the “GitHub CLI”. 
-There is a login required to use this method. There is no login required to use the HTTPS method.
- 
-+ Step 4: Type Git clone and the HTTPS URL into the Git PowerShell command line.
- 
-+ Step 5: Find the Trufi GFTS folder on your device. Right-click it and copy the folder.
+```typescript
+import { osmToGtfs, OSMOverpassDownloader } from 'gtfs-builder';
 
-+ Step 6: Find the VS Code folder. Paste the Trufi folder inside it.
- 
-+ Step 7: Type npm install in the console to install all node dependencies.
+const bounds = {
+  north: -16.4897,
+  south: -16.5348,
+  east: -68.1193,
+  west: -68.2007
+};
 
-+ Step 8: Create a folder for the city you will generate a map for. This is where you will later put your completed map. 
-+ Step 9: Navigate to [boundingbox](https://boundingbox.klokantech.com/). Adjust the box to capture all the routes you want to include in your map. 
+const osmDataGetter = new OSMOverpassDownloader(bounds);
 
-+ Step 10: Select Dublincore.
+await osmToGtfs({
+  geojsonOptions: {
+    osmDataGetter,
+    transformTypes: ['bus', 'train'],
+    skipRoute: (route) => true
+  },
+  outputFiles: {
+    outputDir: './output',
+    gtfs: true,
+    readme: true
+  }
+});
+```
 
-+ Step 11: Notice the Northlimit, Eastlimit, Southlimit, and Westlimit. These are latitudes and longitudes.
+## 📚 Examples
 
-+ Step 12: Paste the latitudes and longitudes inside VS Code in their respective spaces: North, East, South, and West spaces.
+The `examples/` directory contains several detailed examples:
 
-+ Step 13: Under the output files set GFTS to true.
+1. **Basic Usage** (`01-basic-usage.ts`) - Simple getting started example
+2. **Advanced Configuration** (`02-advanced-configuration.ts`) - Custom settings and filters
+3. **PBF File Usage** (`03-pbf-file-usage.ts`) - Using local PBF files
+4. **Multiple Cities** (`04-multiple-cities.ts`) - Processing multiple areas
+5. **Bolivia-Cochabamba** - Real-world complete example
 
-+ Step 14: Run the application in the VS Code terminal. Type: Node - .\examples\ your folder \index\js. 
+Run examples:
+```bash
+cd examples
+npm install
+npm run example:basic
+npm run example:advanced
+```
 
-In your output folder, there is a new README file. You can copy and paste its contents into a markdown viewer to see your new map and errors. 
+See [examples/README.md](examples/README.md) for detailed documentation.
 
+## Usage
 
-## Optional Steps 
+### TypeScript
 
-### Test a sample map
+```typescript
+import { osmToGtfs, OSMOverpassDownloader } from 'gtfs-builder';
+import * as path from 'path';
 
-There are route examples inside the folder that allow you to visualize how the application works. 
+async function generateGTFS() {
+  const osmDataGetter = new OSMOverpassDownloader({
+    north: -16.4897,
+    south: -16.5348,
+    east: -68.1193,
+    west: -68.2007
+  });
 
-- [ ] Work inside an index, run, and type node -.\examples\the example you want to work inside\index.js
- 
-- [ ] Test one of the sample maps, open its README file. Copy the markdown text. 
-Navigate to a markdown reader and paste the text. Examine the output. 
-Here, you can see the output layout and learn how to fix errors.
+  await osmToGtfs({
+    geojsonOptions: {
+      osmDataGetter,
+      transformTypes: ['bus', 'train', 'tram', 'subway'],
+      skipRoute: (route) => true
+    },
+    gtfsOptions: {
+      agencyTimezone: 'America/La_Paz',
+      agencyUrl: 'https://www.example.com/',
+      defaultCalendar: () => 'Mo-Su 06:00-23:00',
+      frequencyHeadway: () => 300,
+      vehicleSpeed: () => 50,
+      fakeStops: () => false,
+      skipStopsWithinDistance: 100,
+      stopNameBuilder: (stops) => {
+        if (!stops || stops.length === 0) return 'Unnamed';
+        return stops.join(' and ');
+      }
+    },
+    outputFiles: {
+      outputDir: path.join(__dirname, 'output'),
+      gtfs: true,
+      readme: true,
+      routes: true,
+      log: true,
+      stops: true
+    }
+  });
+}
 
+generateGTFS().catch(console.error);
+```
 
-### View public transportation routes in your city
+### JavaScript (CommonJS)
 
-- [ ] Go to ogm.org. Type in your selected city and view public transportation routes.
- 
-- [ ] To test one of the sample maps, open its README file. Copy the markdown text. 
-Navigate to a markdown reader and paste the text. Examine the output. 
-Here, you can see the output layout and learn how to fix errors.
+```javascript
+const { osmToGtfs, OSMOverpassDownloader } = require('gtfs-builder');
+const path = require('path');
 
+const osmDataGetter = new OSMOverpassDownloader({
+  north: -16.4897,
+  south: -16.5348,
+  east: -68.1193,
+  west: -68.2007
+});
 
-### Customize your application
- 
-To specify routes, operation times, and other local options, you can change the following elements:
+osmToGtfs({
+  geojsonOptions: {
+    osmDataGetter,
+    transformTypes: ['bus', 'train'],
+    skipRoute: (route) => true
+  },
+  outputFiles: {
+    outputDir: path.join(__dirname, 'output'),
+    gtfs: true,
+    readme: true
+  }
+}).then(() => {
+  console.log('GTFS generation complete!');
+}).catch(console.error);
+```
 
-- [ ] Add or update the "agencytimezone" element. Use it to add your transportation agency’s name. You may also use the default calendar option to set transportation operation times.
+## Building
 
-- [ ] Every city does not have stops included in its routes. The “fakestops” option allows you to create fake stops so that your output is not empty. If you live in a place without designated bus stops, select false under "fakestops" to create fake ones. The default interval is 100 meters. However, if you would like more or fewer stops, change the interval. 
- 
-- [ ] To build or add streets, type and inside the “return.stops.join" element.
+To build the TypeScript project:
 
-- [ ] You have a section in your code called “stops”. If a stop name is unknown, type unknown in this section so that the map does not output an incorrect street name. 
+```bash
+npm install
+npm run build
+```
 
+This will compile the TypeScript files to JavaScript in the `dist` folder.
+
+## Features
+
+- **Type Safety**: Full TypeScript support with type definitions
+- **OSM Data Import**: Support for Overpass API and PBF files
+- **GTFS Export**: Generate standard GTFS feeds
+- **GeoJSON Support**: Convert between OSM and GeoJSON formats
+- **Trufi TP Data**: Export data for Trufi trip planner
+
+## Configuration Options
+
+### GeojsonOptions
+- `osmDataGetter`: Instance of OSMOverpassDownloader or OSMPBFReader
+- `transformTypes`: Array of transport types to include
+- `skipRoute`: Function to filter routes
+
+### GTFSOptions
+- `agencyTimezone`: Timezone for the transit agency
+- `agencyUrl`: URL of the transit agency
+- `defaultCalendar`: Function to generate service calendar
+- `frequencyHeadway`: Function to determine frequency
+- `vehicleSpeed`: Function to calculate vehicle speed
+- `fakeStops`: Function to determine if fake stops should be created
+- `skipStopsWithinDistance`: Minimum distance between stops (meters)
+- `stopNameBuilder`: Function to build stop names
+
+### OutputFiles
+- `outputDir`: Directory for output files
+- `routes`: Export route GeoJSON files
+- `log`: Export processing log
+- `stops`: Export stops data
+- `readme`: Generate README with route summary
+- `gtfs`: Export GTFS feed
+- `trufiTPData`: Export Trufi trip planner data
+
+## License
+
+ISC
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.

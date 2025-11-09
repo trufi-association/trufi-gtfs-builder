@@ -1,16 +1,25 @@
 {
-  "name": "trufi-gtfs-builder",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "gtfs-builder",
+  "version": "2.0.0",
+  "description": "TypeScript version of trufi-gtfs-builder",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/trufi-association/trufi-gtfs-builder.git"
   },
-  "keywords": [],
+  "keywords": [
+    "gtfs",
+    "osm",
+    "transit",
+    "geojson",
+    "typescript"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -25,5 +34,10 @@
     "osm-pbf-parser": "^2.3.0",
     "pbf2json": "^6.9.0",
     "through2": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/through2": "^2.0.41",
+    "typescript": "^5.0.0"
   }
 }

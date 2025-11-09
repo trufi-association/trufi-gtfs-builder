@@ -1,0 +1,19 @@
+{
+  "name": "example-bolivia-cochabamba",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Example: GTFS generation for Cochabamba, Bolivia",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "build": "tsc",
+    "start:js": "node dist/index.js"
+  },
+  "dependencies": {
+    "gtfs-builder": "file:../.."
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}
