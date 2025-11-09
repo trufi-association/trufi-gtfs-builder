@@ -1,5 +1,5 @@
 {
-  "name": "gtfs-builder",
+  "name": "trufi-gtfs-builder",
   "version": "2.0.0",
   "description": "TypeScript version of trufi-gtfs-builder",
   "main": "dist/index.js",
