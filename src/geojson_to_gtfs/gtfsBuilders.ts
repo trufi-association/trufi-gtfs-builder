@@ -212,7 +212,7 @@ export function fareBuilder(
     const mainFeature = feature[0];
 
     let fareId = fare.attributes.length;
-    let price = parseFloat(mainFeature.properties.fee);
+    let price = mainFeature.properties.fee === "yes" ? parseFloat(mainFeature.properties.charge) : 0
 
     fare.attributes.push({
       agency_id: mainFeature.gtfs?.agency_id || 0,
