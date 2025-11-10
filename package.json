@@ -30,12 +30,14 @@
     "@turf/boolean-equal": "^6.5.0",
     "@turf/distance": "^6.5.0",
     "@turf/helpers": "^6.5.0",
+    "archiver": "^7.0.0",
     "jszip": "^3.7.1",
     "osm-pbf-parser": "^2.3.0",
     "pbf2json": "^6.9.0",
     "through2": "^4.0.2"
   },
   "devDependencies": {
+    "@types/archiver": "^6.0.0",
     "@types/node": "^20.0.0",
     "@types/through2": "^2.0.41",
     "typescript": "^5.0.0"

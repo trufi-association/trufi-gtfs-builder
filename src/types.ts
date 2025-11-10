@@ -236,6 +236,7 @@ export interface GeojsonOptions {
 export interface GTFSOptions {
   agencyTimezone: string;
   agencyUrl: string;
+  cityName?: string;
   defaultCalendar: (feature: GeoJSONFeature) => string;
   frequencyHeadway: (feature: GeoJSONFeature) => number;
   vehicleSpeed: (feature: GeoJSONFeature) => number;
@@ -269,6 +270,7 @@ export interface OutputFiles {
   stops: boolean;
   readme: boolean;
   gtfs: boolean;
+  gtfsZip: boolean;
   trufiTPData: boolean;
 }
 

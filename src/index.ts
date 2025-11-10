@@ -1,5 +1,6 @@
 import * as path from 'path';
 import * as fs from 'fs';
+import archiver from 'archiver';
 import gtfsDefaultBuilders from './geojson_to_gtfs/gtfsBuilders';
 import writeGtfs from './geojson_to_gtfs/writeGtfs';
 import { osmToGeojson, OSMOverpassDownloader, OSMPBFReader } from './osm_to_geojson';
@@ -36,6 +37,7 @@ const defaultOutFiles: OutputFiles = {
   stops: false,
   readme: true,
   gtfs: false,
+  gtfsZip: false,
   trufiTPData: false,
 };
 
@@ -46,12 +48,17 @@ async function osmToGtfsFunc(config: OsmToGtfsConfig): Promise<void> {
   const gtfsBuilders: GTFSBuilders = Object.assign({}, gtfsDefaultBuilders, config.gtfsBuilders || {});
   const { outputDir } = outputFiles;
 
+  // Validation: gtfsZip requires gtfs to be true
+  if (outputFiles.gtfsZip && !outputFiles.gtfs) {
+    throw new Error('gtfsZip option requires gtfs option to be true');
+  }
+
   if (outputDir && !fs.existsSync(path.dirname(outputDir))) {
     throw new Error('Output directory does not exist');
   }
 
   const geojson = await osmToGeojson(geojsonOptions);
-  const gtfs = outputFiles.gtfs
+  const gtfs = (outputFiles.gtfs || outputFiles.gtfsZip)
     ? await geojsonToGtfs(geojson.geojsonFeatures, geojson.stops, gtfsOptions, gtfsBuilders)
     : null;
   const trufiTPData = outputFiles.trufiTPData
@@ -76,6 +83,34 @@ async function osmToGtfsFunc(config: OsmToGtfsConfig): Promise<void> {
     if (outputFiles.gtfs && gtfs) {
       fs.mkdirSync(path.join(outputDir, `gtfs`));
       writeGtfs(gtfs, path.join(outputDir, 'gtfs'));
+    }
+    if (outputFiles.gtfsZip && gtfs) {
+      const gtfsDir = path.join(outputDir, 'gtfs');
+      if (!fs.existsSync(gtfsDir)) {
+        fs.mkdirSync(gtfsDir);
+        writeGtfs(gtfs, gtfsDir);
+      }
+      
+      const cityName = gtfsOptions.cityName || 'city';
+      const zipFileName = `${cityName}.gtfs.zip`;
+      
+      await new Promise<void>((resolve, reject) => {
+        const output = fs.createWriteStream(path.join(outputDir, zipFileName));
+        const archive = archiver('zip', { zlib: { level: 9 } });
+        
+        output.on('close', () => {
+          console.log(`GTFS ZIP created: ${zipFileName} (${archive.pointer()} total bytes)`);
+          resolve();
+        });
+        
+        archive.on('error', (err) => {
+          reject(err);
+        });
+        
+        archive.pipe(output);
+        archive.directory(gtfsDir, false);
+        archive.finalize();
+      });
     }
     if (outputFiles.trufiTPData && trufiTPData) {
       fs.mkdirSync(path.join(outputDir, `trufiTPData`));
