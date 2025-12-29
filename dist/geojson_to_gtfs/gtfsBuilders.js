@@ -72,6 +72,7 @@ function calendarBuilder(features, defaultCalendar) {
         const times = opening_hours.split(';');
         times.map(formater_1.default).map((value) => {
             // Skip OSM opening_hours parts that GTFS cannot represent (PH=public holidays, SH=school holidays)
+            // See: https://wiki.openstreetmap.org/wiki/Key:opening_hours
             if (value.includes('PH') || value.includes('SH')) {
                 return;
             }
