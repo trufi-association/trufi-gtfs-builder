@@ -15,17 +15,6 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Debug Example: Bolivia-Cochabamba-PBF",
-      "runtimeArgs": ["-r", "ts-node/register"],
-      "args": ["${workspaceFolder}/examples/Bolivia-Cochabamba-PBF/index.ts"],
-      "cwd": "${workspaceFolder}/examples/Bolivia-Cochabamba-PBF",
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen",
-      "skipFiles": ["<node_internals>/**"]
-    },
-    {
-      "type": "node",
-      "request": "launch",
       "name": "Debug Example: Mexico-Jilotepec",
       "runtimeArgs": ["-r", "ts-node/register"],
       "args": ["${workspaceFolder}/examples/Mexico-Jilotepec/index.ts"],

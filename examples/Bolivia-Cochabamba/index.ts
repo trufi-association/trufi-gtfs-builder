@@ -1,15 +1,42 @@
 /**
  * Example: Bolivia - Cochabamba
- * 
+ *
  * This example demonstrates how to generate GTFS data for Cochabamba, Bolivia.
- * It includes both GTFS feed and Trufi Trip Planner data export.
+ * It supports two data sources:
+ * - Overpass API: Downloads data from OpenStreetMap (requires internet)
+ * - PBF file: Uses a local OSM PBF file (faster, works offline)
  */
 
-import { osmToGtfs, OSMOverpassDownloader } from '../../dist/index';
+import { osmToGtfs, OSMOverpassDownloader, OSMPBFReader } from '../../dist/index';
 import * as path from 'path';
+import * as fs from 'fs';
+
+// Set to 'overpass' to download from Overpass API, or 'pbf' to use local PBF file
+const DATA_SOURCE: 'overpass' | 'pbf' = 'pbf';
+
+// PBF file path (only used when DATA_SOURCE is 'pbf')
+const PBF_FILE = path.join(__dirname, 'cochabamba.osm.pbf');
+
+// Bounding box for Overpass API (only used when DATA_SOURCE is 'overpass')
+const BOUNDING_BOX = {
+  south: -17.709721,
+  west: -66.440262,
+  north: -17.261759,
+  east: -65.577835,
+};
+
+function getOsmDataGetter() {
+  if (DATA_SOURCE === 'pbf') {
+    if (!fs.existsSync(PBF_FILE)) {
+      throw new Error(`PBF file not found: ${PBF_FILE}\nDownload it from https://download.geofabrik.de/ or switch to 'overpass' mode.`);
+    }
+    return new OSMPBFReader(PBF_FILE);
+  }
+  return new OSMOverpassDownloader(BOUNDING_BOX);
+}
 
 async function main() {
-  console.log('Starting GTFS generation for Cochabamba, Bolivia...');
+  console.log(`Starting GTFS generation for Cochabamba, Bolivia (${DATA_SOURCE})...`);
 
   try {
     await osmToGtfs({
@@ -23,12 +50,7 @@ async function main() {
         stops: true,
       },
       geojsonOptions: {
-        osmDataGetter: new OSMOverpassDownloader({
-          south: -17.709721,
-          west: -66.440262,
-          north: -17.261759,
-          east: -65.577835,
-        }),
+        osmDataGetter: getOsmDataGetter(),
         transformTypes: ['bus', 'share_taxi', 'minibus'],
         skipRoute: (route) => {
           // Skip specific problematic routes
