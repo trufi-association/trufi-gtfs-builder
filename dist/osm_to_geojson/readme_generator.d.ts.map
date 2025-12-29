@@ -1,0 +1,1 @@
+{"version":3,"file":"readme_generator.d.ts","sourceRoot":"","sources":["../../src/osm_to_geojson/readme_generator.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,QAAQ,EAAE,MAAM,UAAU,CAAC;AAEzC,MAAM,CAAC,OAAO,UAAU,eAAe,CAAC,IAAI,EAAE;IAAE,GAAG,EAAE,QAAQ,EAAE,CAAA;CAAE,GAAG,MAAM,CAoBzE"}

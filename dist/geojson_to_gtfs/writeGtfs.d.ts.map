@@ -1,0 +1,1 @@
+{"version":3,"file":"writeGtfs.d.ts","sourceRoot":"","sources":["../../src/geojson_to_gtfs/writeGtfs.ts"],"names":[],"mappings":"AAEA,OAAO,KAAK,EAAE,QAAQ,EAAE,MAAM,UAAU,CAAC;AAqBzC,MAAM,CAAC,OAAO,UAAU,SAAS,CAAC,IAAI,EAAE,QAAQ,EAAE,UAAU,EAAE,MAAM,GAAG,IAAI,CAc1E"}

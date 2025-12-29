@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../src/geojson_to_trufi_tp_data/index.ts"],"names":[],"mappings":"AACA,OAAO,KAAK,EAAE,wBAAwB,EAAE,WAAW,EAAe,MAAM,UAAU,CAAC;AAEnF,iBAAS,oBAAoB,CAC3B,QAAQ,EAAE;IAAE,CAAC,GAAG,EAAE,MAAM,GAAG,wBAAwB,CAAA;CAAE,EACrD,UAAU,EAAE;IAAE,CAAC,EAAE,EAAE,MAAM,GAAG,MAAM,EAAE,CAAA;CAAE,GACrC,WAAW,CAqEb;AAED,eAAe,oBAAoB,CAAC"}
