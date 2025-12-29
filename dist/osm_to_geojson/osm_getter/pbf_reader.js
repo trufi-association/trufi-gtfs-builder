@@ -35,7 +35,7 @@ var __importStar = (this && this.__importStar) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 const fs = __importStar(require("fs"));
 const through = __importStar(require("through2"));
-const parseOSM = __importStar(require("osm-pbf-parser"));
+const parseOSM = require('osm-pbf-parser');
 class OSMPBFReader {
     constructor(pbfPath) {
         this.getRoutes = (transformTypes) => {

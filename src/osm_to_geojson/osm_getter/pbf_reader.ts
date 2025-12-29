@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as through from 'through2';
-import * as parseOSM from 'osm-pbf-parser';
+const parseOSM = require('osm-pbf-parser');
 import type { OSMRelation, OSMWay, OSMNode, IOSMDataGetter } from '../../types';
 
 export default class OSMPBFReader implements IOSMDataGetter {

@@ -80,6 +80,11 @@ export function calendarBuilder(
     const opening_hours = mainFeature.properties.opening_hours || defaultCalendar(mainFeature);
     const times = opening_hours.split(';');
     times.map(formatTime).map((value: string) => {
+      // Skip OSM opening_hours parts that GTFS cannot represent (PH=public holidays, SH=school holidays)
+      // See: https://wiki.openstreetmap.org/wiki/Key:opening_hours
+      if (value.includes('PH') || value.includes('SH')) {
+        return;
+      }
       const dualTimeMatch = value.match(
         '((Mo|Tu|We|Th|Fr|Sa|Su)-(Mo|Tu|We|Th|Fr|Sa|Su)) (([01][0-9]|2[0-4]):([0-5][0-9]))-(([01][0-9]|2[0-4]):([0-5][0-9]))'
       );
