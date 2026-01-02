@@ -307,30 +307,22 @@ function stopsBuilder(features, inputStops, maxStopsDistance, stopNameBuilder, f
         else {
             const { nodes, coordinates } = routeFeature.geometry;
             const filteredStops = { nodes: [], coordinates: [] };
-            let previousCoords;
-            let distance = 0;
             for (let index = 0; index < nodes.length; index++) {
                 const stopId = nodes[index];
                 const coords = coordinates[index];
-                if (previousCoords) {
-                    distance = distance + (0, distance_1.default)(previousCoords, coords, { units: 'meters' });
+                // Generate a stop at every node (no distance filtering)
+                if (!checkList[stopId]) {
+                    checkList[stopId] = true;
+                    const stopName = stopNameBuilder(inputStops[stopId]);
+                    stops.push({
+                        stop_id: stopId,
+                        stop_name: stopName || 'unnamed',
+                        stop_lat: coords[1],
+                        stop_lon: coords[0],
+                    });
                 }
-                if (distance > maxStopsDistance || index === nodes.length - 1 || index === 0) {
-                    if (!checkList[stopId]) {
-                        checkList[stopId] = true;
-                        const stopName = stopNameBuilder(inputStops[stopId]);
-                        stops.push({
-                            stop_id: stopId,
-                            stop_name: stopName || 'unnamed',
-                            stop_lat: coords[1],
-                            stop_lon: coords[0],
-                        });
-                    }
-                    filteredStops.nodes.push(stopId);
-                    filteredStops.coordinates.push(coords);
-                    distance = 0;
-                }
-                previousCoords = coords;
+                filteredStops.nodes.push(stopId);
+                filteredStops.coordinates.push(coords);
             }
             routeFeature.gtfs.filteredStops = filteredStops;
         }
