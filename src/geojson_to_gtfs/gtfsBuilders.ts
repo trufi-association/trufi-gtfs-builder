@@ -180,26 +180,37 @@ export function routeBuilder(features: GeoJSONFeature[][]): GTFSRoute[] {
     return response;
   };
   const routes: GTFSRoute[] = [];
+  const routeMap = new Map<string, GTFSRoute>();
+  
   for (let feature of features) {
     const mainFeature = feature[0];
-    let route_color = mainFeature.properties.colour || '';
-    route_color = route_color.replace('#', '');
-    routes.push({
-      route_id: mainFeature.properties.id,
-      agency_id: mainFeature.gtfs?.agency_id || 0,
-      route_short_name: mainFeature.properties.ref || mainFeature.properties.name,
-      route_long_name: mainFeature.properties.name,
-      route_color: route_color,
-      route_type: getRouteType(mainFeature),
-    });
+    const routeShortName = mainFeature.properties.ref || mainFeature.properties.name || mainFeature.properties.id.toString();
+    const routeKey = `${mainFeature.gtfs?.agency_id || 0}_${routeShortName}`;
+    
+    if (!routeMap.has(routeKey)) {
+      let route_color = mainFeature.properties.colour || '';
+      route_color = route_color.replace('#', '');
+      
+      const route: GTFSRoute = {
+        route_id: routeShortName,
+        agency_id: mainFeature.gtfs?.agency_id || 0,
+        route_short_name: routeShortName,
+        route_long_name: mainFeature.properties.name || routeShortName,
+        route_color: route_color,
+        route_type: getRouteType(mainFeature),
+      };
+      routeMap.set(routeKey, route);
+      routes.push(route);
+    }
+    
     if (!mainFeature.gtfs) {
       mainFeature.gtfs = {
         agency_id: 0,
-        route_id: mainFeature.properties.id,
+        route_id: routeShortName,
         services: [],
       };
     } else {
-      mainFeature.gtfs.route_id = mainFeature.properties.id;
+      mainFeature.gtfs.route_id = routeShortName;
     }
   }
   return routes;
@@ -255,15 +266,31 @@ export function tripBuilder(features: GeoJSONFeature[][]): GTFSTrip[] {
   for (let feature of features) {
     const mainFeature = feature[0];
     if (!mainFeature.gtfs) continue;
+    
+    // Extract destination from route name for trip_headsign
+    const routeName = mainFeature.properties.name || '';
+    const toMatch = routeName.match(/(?:→|->)\s*(.+?)$/i);
+    const fromMatch = routeName.match(/^(.+?)\s*(?:→|->)/i);
+    const tripHeadsign = toMatch ? toMatch[1].trim() : '';
+    
+    // Determine direction: if name contains "→", check if it's return direction
+    let directionId: number | undefined;
+    if (fromMatch && toMatch) {
+      // Simple heuristic: if common start/end points, alternate direction
+      directionId = undefined; // Let GTFS consumers figure it out
+    }
+    
     for (const service of mainFeature.gtfs.services) {
       const trip: GTFSTrip = {
-        trip_id: trips.length,
+        trip_id: mainFeature.properties.id,
         route_id: mainFeature.gtfs.route_id,
         service_id: service.service_id,
         shape_id: mainFeature.properties.id,
+        trip_headsign: tripHeadsign,
+        direction_id: directionId,
       };
       trips.push(trip);
-      service.trip_id = trip.trip_id;
+      service.trip_id = mainFeature.properties.id;
     }
   }
   return trips;

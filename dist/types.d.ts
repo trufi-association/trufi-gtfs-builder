@@ -104,7 +104,7 @@ export interface GTFSCalendar {
     end_date: string;
 }
 export interface GTFSRoute {
-    route_id: number;
+    route_id: string | number;
     agency_id: number;
     route_short_name: string;
     route_long_name: string;
@@ -113,9 +113,11 @@ export interface GTFSRoute {
 }
 export interface GTFSTrip {
     trip_id: number;
-    route_id: number;
+    route_id: string | number;
     service_id: string;
     shape_id: number;
+    trip_headsign?: string;
+    direction_id?: number;
 }
 export interface GTFSFrequency {
     trip_id: number;
