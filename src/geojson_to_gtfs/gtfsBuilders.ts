@@ -251,7 +251,7 @@ export function fareBuilder(
       payment_method: mainFeature.properties.paymentMethod || 0,
     });
 
-    fare.rules.push({ fare_id: fareId, route_id: mainFeature.properties.id });
+    fare.rules.push({ fare_id: fareId, route_id: mainFeature.gtfs?.route_id });
   }
   return fare;
 }
