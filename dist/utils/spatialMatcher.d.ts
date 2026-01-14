@@ -22,10 +22,21 @@ export declare function distanceBetweenCoords(lat1: number, lon1: number, lat2: 
  * Uses a hash function to generate a deterministic numeric ID
  */
 export declare function stopIdToNumber(stopId: string): number;
+/**
+ * Determine if a point is on the right side of a directed line segment.
+ * Uses the cross product to determine which side of the line the point is on.
+ *
+ * @param lineStart - Start point of the line segment [lon, lat]
+ * @param lineEnd - End point of the line segment [lon, lat]
+ * @param point - The point to check [lon, lat]
+ * @returns true if point is on the right side, false if on the left or exactly on the line
+ */
+export declare function isPointOnRightSide(lineStart: [number, number], lineEnd: [number, number], point: [number, number]): boolean;
 declare const _default: {
     findNearestStop: typeof findNearestStop;
     stopIdToNumber: typeof stopIdToNumber;
     distanceBetweenCoords: typeof distanceBetweenCoords;
+    isPointOnRightSide: typeof isPointOnRightSide;
 };
 export default _default;
 //# sourceMappingURL=spatialMatcher.d.ts.map

@@ -312,6 +312,7 @@ function stopsBuilder(features, inputStops, maxStopsDistance, stopNameBuilder, s
     const maxMatchDistance = stopsConfig?.maxMatchDistance ?? 200;
     const minDistanceBetweenStops = stopsConfig?.minDistanceBetweenStops ?? 0;
     const fallbackBehavior = stopsConfig?.fallbackBehavior ?? 'warning';
+    const rightSideOnly = stopsConfig?.rightSideOnly ?? false;
     for (const feature of features) {
         const routeFeature = feature[0];
         if (!routeFeature.gtfs) {
@@ -385,6 +386,7 @@ function stopsBuilder(features, inputStops, maxStopsDistance, stopNameBuilder, s
                 const coords = coordinates[index];
                 const [lon, lat] = coords;
                 const isLastPoint = index === nodes.length - 1;
+                const isFirstPoint = index === 0;
                 const match = (0, spatialMatcher_1.findNearestStop)(customStops, lat, lon, maxMatchDistance);
                 if (match) {
                     const customStop = match.stop;
@@ -392,6 +394,20 @@ function stopsBuilder(features, inputStops, maxStopsDistance, stopNameBuilder, s
                     // Skip if this is the same stop as the last one (avoid consecutive duplicates)
                     if (lastStopId === customStop.stop_id) {
                         continue;
+                    }
+                    // Check if stop is on the right side of the route (if rightSideOnly is enabled)
+                    if (rightSideOnly && !isFirstPoint && !isLastPoint) {
+                        // Get the line segment: previous point -> current point -> next point
+                        // Use the segment from previous to next to determine direction
+                        const prevCoords = coordinates[index - 1];
+                        const nextCoords = coordinates[index + 1];
+                        const lineStart = [prevCoords[0], prevCoords[1]];
+                        const lineEnd = [nextCoords[0], nextCoords[1]];
+                        const stopPoint = [customStop.stop_lon, customStop.stop_lat];
+                        if (!(0, spatialMatcher_1.isPointOnRightSide)(lineStart, lineEnd, stopPoint)) {
+                            // Stop is on the left side, skip it
+                            continue;
+                        }
                     }
                     // Check minimum distance between consecutive stops
                     if (minDistanceBetweenStops > 0 && lastStopLat !== null && lastStopLon !== null) {
