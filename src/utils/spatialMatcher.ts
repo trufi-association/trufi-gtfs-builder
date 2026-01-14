@@ -80,4 +80,34 @@ export function stopIdToNumber(stopId: string): number {
   return Math.abs(hash);
 }
 
-export default { findNearestStop, stopIdToNumber, distanceBetweenCoords };
+/**
+ * Determine if a point is on the right side of a directed line segment.
+ * Uses the cross product to determine which side of the line the point is on.
+ *
+ * @param lineStart - Start point of the line segment [lon, lat]
+ * @param lineEnd - End point of the line segment [lon, lat]
+ * @param point - The point to check [lon, lat]
+ * @returns true if point is on the right side, false if on the left or exactly on the line
+ */
+export function isPointOnRightSide(
+  lineStart: [number, number],
+  lineEnd: [number, number],
+  point: [number, number]
+): boolean {
+  // Vector from lineStart to lineEnd
+  const dx = lineEnd[0] - lineStart[0];
+  const dy = lineEnd[1] - lineStart[1];
+
+  // Vector from lineStart to point
+  const px = point[0] - lineStart[0];
+  const py = point[1] - lineStart[1];
+
+  // Cross product: if negative, point is on the right side
+  // (In a coordinate system where Y increases upward, negative cross product = right side)
+  // For lat/lon where lat increases northward, this holds true
+  const crossProduct = dx * py - dy * px;
+
+  return crossProduct < 0;
+}
+
+export default { findNearestStop, stopIdToNumber, distanceBetweenCoords, isPointOnRightSide };

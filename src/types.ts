@@ -263,6 +263,8 @@ export interface CustomStopsConfig {
   minDistanceBetweenStops?: number;
   /** Behavior when no custom stop is found nearby in customStops mode: 'warning' skips point, 'error' throws */
   fallbackBehavior?: 'error' | 'warning';
+  /** Only use stops on the right side of the route direction (default: false) */
+  rightSideOnly?: boolean;
 }
 
 export interface GTFSOptions {
