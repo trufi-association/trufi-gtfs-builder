@@ -192,12 +192,15 @@ export function routeBuilder(features: GeoJSONFeature[][]): GTFSRoute[] {
     const routeShortName = mainFeature.properties.ref || mainFeature.properties.name || mainFeature.properties.id.toString();
     const routeKey = `${mainFeature.gtfs?.agency_id || 0}_${routeShortName}`;
     
+    // Use OSM relation ID as the unique route_id to ensure uniqueness
+    const uniqueRouteId = mainFeature.properties.id.toString();
+    
     if (!routeMap.has(routeKey)) {
       let route_color = mainFeature.properties.colour || '';
       route_color = route_color.replace('#', '');
       
       const route: GTFSRoute = {
-        route_id: routeShortName,
+        route_id: uniqueRouteId,
         agency_id: mainFeature.gtfs?.agency_id || 0,
         route_short_name: routeShortName,
         route_long_name: mainFeature.properties.name || routeShortName,
@@ -211,11 +214,11 @@ export function routeBuilder(features: GeoJSONFeature[][]): GTFSRoute[] {
     if (!mainFeature.gtfs) {
       mainFeature.gtfs = {
         agency_id: 0,
-        route_id: routeShortName,
+        route_id: uniqueRouteId,
         services: [],
       };
     } else {
-      mainFeature.gtfs.route_id = routeShortName;
+      mainFeature.gtfs.route_id = uniqueRouteId;
     }
   }
   return routes;
