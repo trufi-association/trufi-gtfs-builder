@@ -53,7 +53,7 @@ async function main() {
   console.log('Starting GTFS generation for Trujillo, Peru...');
 
   const pbfPath = path.join(__dirname, 'trujillo.osm.pbf');
-  const customStopsPath = path.join(__dirname, 'stops.geojson');
+  const customStopsPath = path.join(__dirname, 'all_stops.geojson');
 
   console.log(`Using PBF file: ${pbfPath}`);
   console.log('Filtering routes with hash=* tag only');
