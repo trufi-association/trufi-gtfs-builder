@@ -47,7 +47,7 @@ function geojsonToGtfs(
     inputStops,
     gtfsConfig.skipStopsWithinDistance,
     gtfsConfig.stopNameBuilder,
-    gtfsConfig.fakeStops
+    gtfsConfig.stopsConfig ?? gtfsConfig.customStops
   );
   const shapePoints = shapesBuilder(featuresArray);
   const stopTimes = stopTimesBuilder(featuresArray, gtfsConfig.vehicleSpeed);

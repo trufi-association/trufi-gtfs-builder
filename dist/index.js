@@ -36,7 +36,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.OSMPBFReader = exports.OSMOverpassDownloader = void 0;
+exports.stopIdToNumber = exports.findNearestStop = exports.loadCustomStops = exports.OSMPBFReader = exports.OSMOverpassDownloader = void 0;
 exports.osmToGtfs = osmToGtfsFunc;
 const path = __importStar(require("path"));
 const fs = __importStar(require("fs"));
@@ -48,6 +48,11 @@ Object.defineProperty(exports, "OSMOverpassDownloader", { enumerable: true, get:
 Object.defineProperty(exports, "OSMPBFReader", { enumerable: true, get: function () { return osm_to_geojson_1.OSMPBFReader; } });
 const geojson_to_gtfs_1 = __importDefault(require("./geojson_to_gtfs"));
 const geojson_to_trufi_tp_data_1 = __importDefault(require("./geojson_to_trufi_tp_data"));
+const customStopsLoader_1 = require("./utils/customStopsLoader");
+Object.defineProperty(exports, "loadCustomStops", { enumerable: true, get: function () { return customStopsLoader_1.loadCustomStops; } });
+const spatialMatcher_1 = require("./utils/spatialMatcher");
+Object.defineProperty(exports, "findNearestStop", { enumerable: true, get: function () { return spatialMatcher_1.findNearestStop; } });
+Object.defineProperty(exports, "stopIdToNumber", { enumerable: true, get: function () { return spatialMatcher_1.stopIdToNumber; } });
 const defaultGeojsonOptions = {
     osmDataGetter: null,
     transformTypes: ['bus', 'share_taxi', 'aerialway', 'train', 'subway', 'monorail', 'tram', 'trolleybus', 'ferry', 'light_rail'],
@@ -151,5 +156,5 @@ async function osmToGtfsFunc(config) {
         }
     }
 }
-exports.default = { osmToGtfs: osmToGtfsFunc, OSMOverpassDownloader: osm_to_geojson_1.OSMOverpassDownloader, OSMPBFReader: osm_to_geojson_1.OSMPBFReader };
+exports.default = { osmToGtfs: osmToGtfsFunc, OSMOverpassDownloader: osm_to_geojson_1.OSMOverpassDownloader, OSMPBFReader: osm_to_geojson_1.OSMPBFReader, loadCustomStops: customStopsLoader_1.loadCustomStops, findNearestStop: spatialMatcher_1.findNearestStop, stopIdToNumber: spatialMatcher_1.stopIdToNumber };
 //# sourceMappingURL=index.js.map

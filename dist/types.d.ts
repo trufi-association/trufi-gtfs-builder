@@ -209,7 +209,7 @@ export interface GTFSBuilders {
     frequenciesBuilder: (features: GeoJSONFeature[][], frequencyHeadway: (feature: GeoJSONFeature) => number) => GTFSFrequency[];
     stopsBuilder: (features: GeoJSONFeature[][], inputStops: {
         [id: number]: string[];
-    }, skipStopsWithinDistance: number, stopNameBuilder: (stops?: string[]) => string, fakeStops: (feature: GeoJSONFeature) => boolean) => GTFSStop[];
+    }, skipStopsWithinDistance: number, stopNameBuilder: (stops?: string[]) => string, stopsConfig?: CustomStopsConfig) => GTFSStop[];
     shapesBuilder: (features: GeoJSONFeature[][]) => GTFSShape[];
     stopTimesBuilder: (features: GeoJSONFeature[][], vehicleSpeed: (feature: GeoJSONFeature) => number) => GTFSStopTime[];
 }
@@ -218,6 +218,33 @@ export interface GeojsonOptions {
     transformTypes: string[];
     skipRoute: (route: OSMRelation) => boolean;
 }
+export interface CustomStop {
+    stop_id: string;
+    stop_name: string;
+    stop_lat: number;
+    stop_lon: number;
+}
+/**
+ * Enum for selecting how stops are generated
+ * - 'fakeStops': Generate stops from route geometry nodes (default)
+ * - 'osmStops': Use stop_position nodes defined in the OSM relation
+ * - 'customStops': Use ONLY the custom stops provided via GeoJSON
+ */
+export type StopsMode = 'fakeStops' | 'osmStops' | 'customStops';
+export interface CustomStopsConfig {
+    /** Mode for generating stops (default: 'fakeStops') */
+    mode: StopsMode;
+    /** Custom stops data - required when mode is 'customStops' */
+    stops?: CustomStop[];
+    /** Path to GeoJSON file with custom stops (alternative to stops array) */
+    filePath?: string;
+    /** Maximum distance in meters to match a custom stop to a route point (default: 200) */
+    maxMatchDistance?: number;
+    /** Minimum distance in meters between consecutive stops - closer stops will be skipped (default: 0, no filtering) */
+    minDistanceBetweenStops?: number;
+    /** Behavior when no custom stop is found nearby in customStops mode: 'warning' skips point, 'error' throws */
+    fallbackBehavior?: 'error' | 'warning';
+}
 export interface GTFSOptions {
     agencyTimezone: string;
     agencyUrl: string;
@@ -225,11 +252,16 @@ export interface GTFSOptions {
     defaultCalendar: (feature: GeoJSONFeature) => string;
     frequencyHeadway: (feature: GeoJSONFeature) => number;
     vehicleSpeed: (feature: GeoJSONFeature) => number;
-    fakeStops: (feature: GeoJSONFeature) => boolean;
+    /** @deprecated Use stopsConfig.mode instead */
+    fakeStops?: (feature: GeoJSONFeature) => boolean;
     skipStopsWithinDistance: number;
     stopNameBuilder: (stops?: string[]) => string;
     defaultFares?: DefaultFaresConfig;
     feed?: FeedConfig;
+    /** @deprecated Use stopsConfig instead */
+    customStops?: CustomStopsConfig;
+    /** Configuration for how stops are generated */
+    stopsConfig?: CustomStopsConfig;
 }
 export interface DefaultFaresConfig {
     currencyType: string;

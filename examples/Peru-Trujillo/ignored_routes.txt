@@ -1,0 +1,11 @@
+# Rutas ignoradas del GTFS de Trujillo
+# Una ID de relación OSM por línea
+# Las líneas que comienzan con # son comentarios
+
+# Rutas con status=inactive
+19962318
+19962323
+
+# Otras rutas a ignorar
+19972501
+19972495

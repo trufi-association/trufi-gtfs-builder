@@ -1,0 +1,86 @@
+route_id,agency_id,route_short_name,route_long_name,route_color,route_type
+M-01 C,0,M-01 C,Via Panamericana Norte → Av. Manuel Seoane,,3
+M-02 A,0,M-02 A,Ca. Turquesas → Av. Manuel Seoane,,3
+M-03 B,0,M-03 B,A.H. Ciudad de Dios → A.H. Ciudad de Dios,,3
+M-04 A,1,M-04 A,A.H. Cerro La Virgen → A.H. Cerro La Virgen,,3
+M-05 H,1,M-05 H,Av. la Paz → Av. la Paz,,3
+M-06 B,1,M-06 B,Av. la Paz → Av. Victor Raul Haya de la Torre,,3
+M-07 V,2,M-07 V,Av. Libertad → Av. San Pedro,,3
+M-08 A,2,M-08 A,Av. Libertad → Via Panamericana Norte,,3
+M-09 BC,2,M-09 BC,Av. Libertad → Av. San Pedro,,3
+M-10 B1,2,M-10 B1,Av. Libertad → Av. Los Tulipanes,,3
+M-11 D,2,M-11 D,Av. San Pedro → Via Panamericana Norte,,3
+M-12 C,2,M-12 C,Av. Libertad → Via Panamericana Norte,,3
+M-36 LV,2,M-36 LV,Ca. Virgen de la Puerta → Av. Libertad,,3
+M-14 C3,3,M-14 C3,A.H. Ciudad de Dios → Óvalo Larco,,3
+M-16 C,4,M-16 C,Av. Vallejo → Ca. 8,,3
+M-19 A,5,M-19 A,Manzana Ñ → Ca. 8,,3
+M-18 C1,5,M-18 C1,Av. Dos → Av. Dos,,3
+M-20 C,6,M-20 C,Sector Nuevo Horizonte → Av. 12 de Noviembre,,3
+M-21 A,6,M-21 A,Av. 12 de Noviembre → Sector Nuevo Horizonte,,3
+M-22 F,6,M-22 F,Av. 12 de Noviembre → Av. Juan Pablo II,,3
+M-28 A,6,M-28 A,A.H. Primavera III → Av. los Pajuiles,,3
+M-23 B,7,M-23 B,Ca. Atahualpa → Ca. Pedro Ruiz Gallo,,3
+M-25 A,8,M-25 A,Ca. Liverpool → Ca. F,,3
+M-26 B,8,M-26 B,Futuro Barrio 5C → Ca. Alfonso Ugarte,,3
+M-29 B,9,M-29 B,A.H. Primavera → Ca. Liverpool,,3
+M-31 A,10,M-31 A,Av. América Sur → Ca. Nuevo Indoamérica,,3
+M-34 A,11,M-34 A,Ca. Santa Ana → Ca. Los Pensamientos,,3
+M-35 D,12,M-35 D,Vía Panamericana → Av. Del Contador,,3
+C-01 B,13,C-01 B,Ca. Diego Quispe Tito → Ca. José la Rivera,,3
+C-02 H,13,C-02 H,Av. Alan García → Av. Federico Villarreal,,3
+C-03 JJ,13,C-03 JJ,Ca. de los Jasmines → Ca. Santa Rosa,,3
+C-04 XS,14,C-04 XS,Ca. de los Jasmines → Av. Federico Villarreal,,3
+C-05 B1,14,C-05 B1,Ca. Jirón Cuba → Av. Federico Villarreal,,3
+C-06 K,15,C-06 K,A.H. El Reposo → Ca. Señor de Los Milagros,,3
+C-07 Z1,15,C-07 Z1,A.H. El Reposo → Ca. 9 de Octubre,,3
+C-08 O,15,C-08 O,Ca. Jirón los Algarobos → Ca. San Martín,,3
+C-41 Z2,16,C-41 Z2,Distrito Huanchaco → Av. Dinamarca,,3
+C-09 E,16,C-09 E,Distrito Huanchaco → Ca. San Gabriel,,3
+C-10 M,17,C-10 M,Campiña de Moche → Av. Los Incas,,3
+C-11 T1,18,C-11 T1,Ca. Jirón Santa Isabel → Alto Porvenir,,3
+C-39 S,18,C-39 S,Ca. Jirón Santa Isabel → Ca. Inca Roca,,3
+C-12 B,19,C-12 B,Sector Taquila → A.H. Carlos García Ronceros,,3
+C-13 D,20,C-13 D,Av. 12 de Noviembre → Ca. Miguiel Graú,,3
+C-45 C,20,C-45 C,Av. 12 de Noviembre → Ca. Miguiel Graú,,3
+C-14 S,21,C-14 S,Ca. José Galvez → Campiña de Moche,,3
+C-43 A,22,C-43 A,Ca. Dieciseis → Av. Miguel Grau,,3
+C-16 I,23,C-16 I,A.H. Ciudad de Dios → Av. Antenor Orrego,,3
+C-17 F,23,C-17 F,A.H. Ciudad de Dios → Av. Juan Pablo II,,3
+C-18 P,23,C-18 P,Cruce Vial S/N → Av. Cesar Vallejo,,3
+C-19 NN,24,C-19 NN,Av. Victor Raul Haya de la Torre → Barrio 5C,,3
+C-23 S1,25,C-23 S1,Ca. Venezuela → Ca. José Joaquín Inclán,,3
+"C-24 H1, H2",25,"C-24 H1, H2",Ca. 01 → Av. Larco,,3
+M-27 AB,26,M-27 AB,Av. Libertad → Av. Libertad,,3
+M-28 A,9,M-28 A,A.H. Primavera III → Av. los Pajuiles,,3
+C-20 UI,27,C-20 UI,Urb. Valle Sol → Alto Trujillo,,3
+M-13 C1,3,M-13 C1,A.H. Ciudad de Dios → A.H. Ciudad de Dios,,3
+M-15 C2,3,M-15 C2,A.H. Ciudad de Dios → Sector Santa María Alta,,3
+M-30 D,10,M-30 D,Ca. 11 → Ca. César Vallejo,,3
+M-32 A1-B1,10,M-32 A1-B1,Sector Nuevo Indoamérica → Buenos Aires Sur,,3
+M-33 B,11,M-33 B,Ca. Santa Ana → Av. América Sur,,3
+C-25 S2,28,C-25 S2,Av. Julian Arce → Ca. Manuel Romero,,3
+C-26 U,28,C-26 U,Av. Julian Arce → Óvalo Grau,,3
+C-21 R,27,C-21 R,Urb. Valle Sol → Alto Trujillo,,3
+C-27 B,29,C-27 B,Av. Circunvalación → Av. José María Eguren,,3
+C-22 M,27,C-22 M,Urb. Valle So → Alto Trujillo,,3
+C-28 C,29,C-28 C,Sector Cerrito La Virgen → Óvalo Urb. Los Sauces,,3
+C-29 A,29,C-29 A,Sector Las Lomas → Urb. Los Sauces de Barraza,,3
+C-13 D,30,C-13 D,Sector Taquila → Alto Trujillo,,3
+C-40 W,31,C-40 W,Barrio 1B → Av. San José,,3
+C-30 C,32,C-30 C,Sector Cushmun → Av. Los Laureles,,3
+C-44 T2,31,C-44 T2,Barrio 1B → Av. San José,,3
+C-31 P,32,C-31 P,Sector Huangabal → Av. Prolongación Santa,,3
+C-39 S,31,C-39 S,Ca. Inca Roca → Ca. Jirón Santa Isabel,,3
+C-38 S4,33,C-38 S4,Av. Luis Condemarín → Av. Luis Condemarín,,3
+C-32 S,32,C-32 S,Mucha → Urb. Palermo,,3
+C-36 Y,34,C-36 Y,Urb. San Andrés 5ta Etapa → A.H. Víctor Raúl Haya de La Torre,,3
+C-15 P1,35,C-15 P1,Sector Tres Cruces → Av. America del Sur,,3
+C-35 S3,34,C-35 S3,Urb. Buganvillas del Golf → A.H. Víctor Raúl Haya de La Torre,,3
+C-34 G,21,C-34 G,A.H. Virgen del Socorro → A.H. Virgen del Socorro,,3
+C-33 P2,35,C-33 P2,Sector Platanar → Av. America del Sur,,3
+M-17 C2,5,M-17 C2,Av. Dos → Av. Dos,,3
+C-42 B2,21,C-42 B2,Jirón Venezuela → Av. Libertad,,3
+C-15 P1,36,C-15 P1,Sector Tres Cruces → Av. América Sur,,3
+C-33 P2,36,C-33 P2,Sector Platanar → Av. America del Sur,,3
+C-45 C,22,C-45 C,Ca. Miguiel Graú → Av. 12 de Noviembre,,3

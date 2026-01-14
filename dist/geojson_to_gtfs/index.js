@@ -29,7 +29,7 @@ function geojsonToGtfs(features, inputStops, gtfsConfig, gtfsBuilders) {
     });
     const trips = tripBuilder(featuresArray);
     const frequencies = frequenciesBuilder(featuresArray, gtfsConfig.frequencyHeadway);
-    const stops = stopsBuilder(featuresArray, inputStops, gtfsConfig.skipStopsWithinDistance, gtfsConfig.stopNameBuilder, gtfsConfig.fakeStops);
+    const stops = stopsBuilder(featuresArray, inputStops, gtfsConfig.skipStopsWithinDistance, gtfsConfig.stopNameBuilder, gtfsConfig.stopsConfig ?? gtfsConfig.customStops);
     const shapePoints = shapesBuilder(featuresArray);
     const stopTimes = stopTimesBuilder(featuresArray, gtfsConfig.vehicleSpeed);
     return {

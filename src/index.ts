@@ -6,7 +6,9 @@ import writeGtfs from './geojson_to_gtfs/writeGtfs';
 import { osmToGeojson, OSMOverpassDownloader, OSMPBFReader } from './osm_to_geojson';
 import geojsonToGtfs from './geojson_to_gtfs';
 import geojsonToTrufiTPData from './geojson_to_trufi_tp_data';
-import type { OsmToGtfsConfig, GeojsonOptions, GTFSOptions, OutputFiles, GTFSBuilders } from './types';
+import { loadCustomStops } from './utils/customStopsLoader';
+import { findNearestStop, stopIdToNumber } from './utils/spatialMatcher';
+import type { OsmToGtfsConfig, GeojsonOptions, GTFSOptions, OutputFiles, GTFSBuilders, CustomStop, CustomStopsConfig, StopsMode } from './types';
 
 const defaultGeojsonOptions: GeojsonOptions = {
   osmDataGetter: null,
@@ -121,5 +123,6 @@ async function osmToGtfsFunc(config: OsmToGtfsConfig): Promise<void> {
   }
 }
 
-export { osmToGtfsFunc as osmToGtfs, OSMOverpassDownloader, OSMPBFReader };
-export default { osmToGtfs: osmToGtfsFunc, OSMOverpassDownloader, OSMPBFReader };
+export { osmToGtfsFunc as osmToGtfs, OSMOverpassDownloader, OSMPBFReader, loadCustomStops, findNearestStop, stopIdToNumber };
+export type { CustomStop, CustomStopsConfig, StopsMode };
+export default { osmToGtfs: osmToGtfsFunc, OSMOverpassDownloader, OSMPBFReader, loadCustomStops, findNearestStop, stopIdToNumber };

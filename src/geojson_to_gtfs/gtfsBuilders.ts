@@ -1,5 +1,7 @@
 import distanceBetween from '@turf/distance';
 import formatTime from './time/formater';
+import { loadCustomStops } from '../utils/customStopsLoader';
+import { findNearestStop, stopIdToNumber, distanceBetweenCoords } from '../utils/spatialMatcher';
 import type {
   GeoJSONFeature,
   GTFSAgency,
@@ -16,6 +18,9 @@ import type {
   DefaultFaresConfig,
   FeedConfig,
   GeoJSONCoordinate,
+  CustomStopsConfig,
+  CustomStop,
+  StopsMode,
 } from '../types';
 
 function secondsToTime(seconds: number): string {
@@ -323,11 +328,33 @@ export function stopsBuilder(
   inputStops: { [id: number]: string[] },
   maxStopsDistance: number,
   stopNameBuilder: (stops?: string[]) => string,
-  fakeStops: (feature: GeoJSONFeature) => boolean
+  stopsConfig?: CustomStopsConfig
 ): GTFSStop[] {
   const stops: GTFSStop[] = [];
-  const checkList: { [id: number]: boolean } = {};
-  for (let feature of features) {
+  const checkList: { [id: string | number]: boolean } = {};
+
+  // Determine stops mode (default: fakeStops for backwards compatibility)
+  const mode: StopsMode = stopsConfig?.mode ?? 'fakeStops';
+
+  // Load custom stops if mode is customStops
+  let customStops: CustomStop[] | null = null;
+  if (mode === 'customStops') {
+    if (stopsConfig?.stops && stopsConfig.stops.length > 0) {
+      customStops = stopsConfig.stops;
+      console.log(`Using ${customStops.length} custom stops (provided directly)`);
+    } else if (stopsConfig?.filePath) {
+      customStops = loadCustomStops(stopsConfig.filePath);
+      console.log(`Loaded ${customStops.length} custom stops from file`);
+    } else {
+      throw new Error('customStops mode requires either stops array or filePath');
+    }
+  }
+
+  const maxMatchDistance = stopsConfig?.maxMatchDistance ?? 200;
+  const minDistanceBetweenStops = stopsConfig?.minDistanceBetweenStops ?? 0;
+  const fallbackBehavior = stopsConfig?.fallbackBehavior ?? 'warning';
+
+  for (const feature of features) {
     const routeFeature = feature[0];
     if (!routeFeature.gtfs) {
       routeFeature.gtfs = {
@@ -338,13 +365,14 @@ export function stopsBuilder(
       };
     }
 
-    if (fakeStops(routeFeature)) {
+    if (mode === 'osmStops') {
+      // OSM stops mode: use stop_position nodes from the OSM relation
       const filteredStops: { nodes: number[]; coordinates: GeoJSONCoordinate[] } = { nodes: [], coordinates: [] };
       for (let i = 1; i < feature.length; i++) {
         const { geometry, properties } = feature[i];
         if (!checkList[properties.id]) {
           checkList[properties.id] = true;
-          const coords = Array.isArray(geometry.coordinates[0]) 
+          const coords = Array.isArray(geometry.coordinates[0])
             ? (geometry.coordinates as number[][])[0]
             : (geometry.coordinates as number[]);
           stops.push({
@@ -361,7 +389,110 @@ export function stopsBuilder(
         filteredStops.coordinates.push(coords as GeoJSONCoordinate);
       }
       routeFeature.gtfs.filteredStops = filteredStops;
+    } else if (mode === 'customStops' && customStops) {
+      // Custom stops mode: use ONLY the provided custom stops
+      const { nodes, coordinates } = routeFeature.geometry;
+      const filteredStops: { nodes: number[]; coordinates: GeoJSONCoordinate[] } = { nodes: [], coordinates: [] };
+
+      // Track last added stop for this route (to avoid consecutive duplicates and distance filtering)
+      let lastStopId: string | null = null;
+      let lastStopLat: number | null = null;
+      let lastStopLon: number | null = null;
+
+      // Helper function to add OSM-based stop for first/last points
+      const addOsmStop = (nodeId: number, coords: number[]) => {
+        const [lon, lat] = coords;
+        if (!checkList[nodeId]) {
+          checkList[nodeId] = true;
+          const stopName = stopNameBuilder(inputStops[nodeId]);
+          stops.push({
+            stop_id: nodeId,
+            stop_name: stopName || 'unnamed',
+            stop_lat: lat,
+            stop_lon: lon,
+          });
+        }
+        filteredStops.nodes.push(nodeId);
+        filteredStops.coordinates.push(coords as GeoJSONCoordinate);
+        lastStopId = String(nodeId);
+        lastStopLat = lat;
+        lastStopLon = lon;
+      };
+
+      // Check if first point needs OSM stop
+      const firstCoords = coordinates[0] as number[];
+      const firstMatch = findNearestStop(customStops, firstCoords[1], firstCoords[0], maxMatchDistance);
+      if (!firstMatch) {
+        // No custom stop for first point - create from OSM
+        addOsmStop(nodes![0], firstCoords);
+      }
+
+      for (let index = 0; index < nodes!.length; index++) {
+        const coords = coordinates[index];
+        const [lon, lat] = coords;
+        const isLastPoint = index === nodes!.length - 1;
+
+        const match = findNearestStop(customStops, lat, lon, maxMatchDistance);
+
+        if (match) {
+          const customStop = match.stop;
+          const numericStopId = stopIdToNumber(customStop.stop_id);
+
+          // Skip if this is the same stop as the last one (avoid consecutive duplicates)
+          if (lastStopId === customStop.stop_id) {
+            continue;
+          }
+
+          // Check minimum distance between consecutive stops
+          if (minDistanceBetweenStops > 0 && lastStopLat !== null && lastStopLon !== null) {
+            const distToLast = distanceBetweenCoords(lastStopLat, lastStopLon, customStop.stop_lat, customStop.stop_lon);
+            if (distToLast < minDistanceBetweenStops) {
+              // Skip this stop - too close to the previous one
+              // But if it's the last point, we need to add it anyway
+              if (!isLastPoint) {
+                continue;
+              }
+            }
+          }
+
+          // Add stop to global stops list if not already added
+          if (!checkList[customStop.stop_id]) {
+            checkList[customStop.stop_id] = true;
+            stops.push({
+              stop_id: numericStopId,
+              stop_name: customStop.stop_name,
+              stop_lat: customStop.stop_lat,
+              stop_lon: customStop.stop_lon,
+            });
+          }
+
+          // Use custom stop for this route point
+          filteredStops.nodes.push(numericStopId);
+          filteredStops.coordinates.push([customStop.stop_lon, customStop.stop_lat] as GeoJSONCoordinate);
+
+          // Update last stop tracking
+          lastStopId = customStop.stop_id;
+          lastStopLat = customStop.stop_lat;
+          lastStopLon = customStop.stop_lon;
+        } else if (isLastPoint) {
+          // No custom stop for last point - create from OSM
+          const nodeId = nodes![index];
+          if (lastStopId !== String(nodeId)) {
+            addOsmStop(nodeId, coords);
+          }
+        } else {
+          // No custom stop found within range (not first or last)
+          if (fallbackBehavior === 'error') {
+            throw new Error(
+              `Route ${routeFeature.properties.id}: No custom stop found within ${maxMatchDistance}m of point [${lat}, ${lon}]`
+            );
+          }
+          // fallbackBehavior === 'warning': just skip this point silently
+        }
+      }
+      routeFeature.gtfs.filteredStops = filteredStops;
     } else {
+      // fakeStops mode (default): generate stops from route geometry nodes
       const { nodes, coordinates } = routeFeature.geometry;
       const filteredStops: { nodes: number[]; coordinates: GeoJSONCoordinate[] } = { nodes: [], coordinates: [] };
       for (let index = 0; index < nodes!.length; index++) {
