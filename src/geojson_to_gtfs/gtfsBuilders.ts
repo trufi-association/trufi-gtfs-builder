@@ -185,40 +185,45 @@ export function routeBuilder(features: GeoJSONFeature[][]): GTFSRoute[] {
     return response;
   };
   const routes: GTFSRoute[] = [];
-  const routeMap = new Map<string, GTFSRoute>();
+  const routeMap = new Map<string, number>(); // Maps routeKey to route_id
+  let routeIdCounter = 0;
   
   for (let feature of features) {
     const mainFeature = feature[0];
     const routeShortName = mainFeature.properties.ref || mainFeature.properties.name || mainFeature.properties.id.toString();
     const routeKey = `${mainFeature.gtfs?.agency_id || 0}_${routeShortName}`;
     
-    // Use OSM relation ID as the unique route_id to ensure uniqueness
-    const uniqueRouteId = mainFeature.properties.id.toString();
+    // Check if this route already exists (by agency + short name)
+    let routeId = routeMap.get(routeKey);
     
-    if (!routeMap.has(routeKey)) {
+    if (routeId === undefined) {
+      // Create new route with sequential ID
+      routeId = routeIdCounter++;
+      routeMap.set(routeKey, routeId);
+      
       let route_color = mainFeature.properties.colour || '';
       route_color = route_color.replace('#', '');
       
       const route: GTFSRoute = {
-        route_id: uniqueRouteId,
+        route_id: routeId,
         agency_id: mainFeature.gtfs?.agency_id || 0,
         route_short_name: routeShortName,
-        route_long_name: mainFeature.properties.name || routeShortName,
+        route_long_name: routeShortName,
         route_color: route_color,
         route_type: getRouteType(mainFeature),
       };
-      routeMap.set(routeKey, route);
       routes.push(route);
     }
     
+    // Assign the shared route_id to this feature
     if (!mainFeature.gtfs) {
       mainFeature.gtfs = {
         agency_id: 0,
-        route_id: uniqueRouteId,
+        route_id: routeId,
         services: [],
       };
     } else {
-      mainFeature.gtfs.route_id = uniqueRouteId;
+      mainFeature.gtfs.route_id = routeId;
     }
   }
   return routes;
