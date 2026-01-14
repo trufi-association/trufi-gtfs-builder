@@ -152,12 +152,13 @@ async function main() {
         // Stops configuration - uses custom stops from GeoJSON
         stopsConfig: customStops
           ? {
-              mode: 'customStops', // Use ONLY custom stops from GeoJSON
-              stops: customStops,
-              maxMatchDistance: 20, // Max distance from route point to custom stop (meters)
-              minDistanceBetweenStops: 0, // Min distance between consecutive stops (meters)
-              fallbackBehavior: 'warning',
-            }
+            mode: 'customStops', // Use ONLY custom stops from GeoJSON
+            stops: customStops,
+            maxMatchDistance: 20, // Max distance from route point to custom stop (meters)
+            minDistanceBetweenStops: 0, // Min distance between consecutive stops (meters)
+            fallbackBehavior: 'warning',
+            rightSideOnly: true
+          }
           : { mode: 'fakeStops' }, // Default: generate stops from route nodes
       },
     });
