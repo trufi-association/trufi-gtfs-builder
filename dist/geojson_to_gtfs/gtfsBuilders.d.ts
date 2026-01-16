@@ -7,13 +7,20 @@ export declare function fareBuilder(features: GeoJSONFeature[][], defaultFares: 
     rules: GTFSFareRule[];
 };
 export declare function feedBuilder(feed: FeedConfig): GTFSFeedInfo[];
-export declare function tripBuilder(features: GeoJSONFeature[][]): GTFSTrip[];
-export declare function frequenciesBuilder(features: GeoJSONFeature[][], frequencyHeadwaySecs: (feature: GeoJSONFeature) => number): GTFSFrequency[];
+export declare function tripBuilder(features: GeoJSONFeature[][], gtfsConfig?: {
+    useFrequencies?: boolean;
+    frequencyHeadway?: (feature: GeoJSONFeature) => number;
+}): GTFSTrip[];
+export declare function frequenciesBuilder(features: GeoJSONFeature[][], frequencyHeadwaySecs: (feature: GeoJSONFeature) => number, gtfsConfig?: {
+    useFrequencies?: boolean;
+}): GTFSFrequency[];
 export declare function stopsBuilder(features: GeoJSONFeature[][], inputStops: {
     [id: number]: string[];
 }, maxStopsDistance: number, stopNameBuilder: (stops?: string[]) => string, stopsConfig?: CustomStopsConfig): GTFSStop[];
 export declare function shapesBuilder(features: GeoJSONFeature[][]): GTFSShape[];
-export declare function stopTimesBuilder(features: GeoJSONFeature[][], vehicleSpeed: (feature: GeoJSONFeature) => number): GTFSStopTime[];
+export declare function stopTimesBuilder(features: GeoJSONFeature[][], vehicleSpeed: (feature: GeoJSONFeature) => number, gtfsConfig?: {
+    useFrequencies?: boolean;
+}): GTFSStopTime[];
 declare const _default: {
     agencyBuilder: typeof agencyBuilder;
     calendarBuilder: typeof calendarBuilder;

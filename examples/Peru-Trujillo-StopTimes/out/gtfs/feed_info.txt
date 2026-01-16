@@ -1,0 +1,2 @@
+feed_publisher_url,feed_publisher_name,feed_lang,feed_version,feed_contact_email,feed_contact_url,feed_start_date,feed_end_date,feed_id
+https://trufi-association.org,Trufi Association,es,2026-01-16,contact@trufi-association.org,https://trufi-association.org,20251222,20261221,trujillo-peru-stoptimes

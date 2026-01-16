@@ -84,6 +84,11 @@ export interface GTFSService {
     startTime: string;
     endTime: string;
     trip_id?: number;
+    /** Expanded trips for schedule-based GTFS (useFrequencies=false) */
+    expandedTrips?: Array<{
+        trip_id: number;
+        departureTime: string;
+    }>;
 }
 export interface GTFSAgency {
     agency_id: number;
@@ -205,13 +210,20 @@ export interface GTFSBuilders {
         rules: GTFSFareRule[];
     };
     feedBuilder: (feed: FeedConfig) => GTFSFeedInfo[];
-    tripBuilder: (features: GeoJSONFeature[][]) => GTFSTrip[];
-    frequenciesBuilder: (features: GeoJSONFeature[][], frequencyHeadway: (feature: GeoJSONFeature) => number) => GTFSFrequency[];
+    tripBuilder: (features: GeoJSONFeature[][], gtfsConfig?: {
+        useFrequencies?: boolean;
+        frequencyHeadway?: (feature: GeoJSONFeature) => number;
+    }) => GTFSTrip[];
+    frequenciesBuilder: (features: GeoJSONFeature[][], frequencyHeadway: (feature: GeoJSONFeature) => number, gtfsConfig?: {
+        useFrequencies?: boolean;
+    }) => GTFSFrequency[];
     stopsBuilder: (features: GeoJSONFeature[][], inputStops: {
         [id: number]: string[];
     }, skipStopsWithinDistance: number, stopNameBuilder: (stops?: string[]) => string, stopsConfig?: CustomStopsConfig) => GTFSStop[];
     shapesBuilder: (features: GeoJSONFeature[][]) => GTFSShape[];
-    stopTimesBuilder: (features: GeoJSONFeature[][], vehicleSpeed: (feature: GeoJSONFeature) => number) => GTFSStopTime[];
+    stopTimesBuilder: (features: GeoJSONFeature[][], vehicleSpeed: (feature: GeoJSONFeature) => number, gtfsConfig?: {
+        useFrequencies?: boolean;
+    }) => GTFSStopTime[];
 }
 export interface GeojsonOptions {
     osmDataGetter: IOSMDataGetter | null;
@@ -264,6 +276,13 @@ export interface GTFSOptions {
     customStops?: CustomStopsConfig;
     /** Configuration for how stops are generated */
     stopsConfig?: CustomStopsConfig;
+    /**
+     * Use frequency-based GTFS (frequencies.txt) or schedule-based GTFS (stop_times.txt)
+     * - true: Generate frequencies.txt with one trip per route (default for backwards compatibility)
+     * - false: Expand trips into individual departures with specific times (no frequencies.txt)
+     * @default true
+     */
+    useFrequencies?: boolean;
 }
 export interface DefaultFaresConfig {
     currencyType: string;

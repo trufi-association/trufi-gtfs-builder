@@ -9,6 +9,11 @@ exports.gtfsDefaultBuilders = gtfsBuilders_1.default;
 function geojsonToGtfs(features, inputStops, gtfsConfig, gtfsBuilders) {
     const { agencyBuilder, calendarBuilder, routeBuilder, fareBuilder, feedBuilder, tripBuilder, frequenciesBuilder, stopsBuilder, shapesBuilder, stopTimesBuilder, } = gtfsBuilders;
     const featuresArray = Object.entries(features).map((element) => element[1].features);
+    // Prepare config subset for builders
+    const builderConfig = {
+        useFrequencies: gtfsConfig.useFrequencies ?? true,
+        frequencyHeadway: gtfsConfig.frequencyHeadway,
+    };
     const agencies = agencyBuilder(featuresArray, {
         agency_timezone: gtfsConfig.agencyTimezone,
         agency_url: gtfsConfig.agencyUrl,
@@ -27,11 +32,11 @@ function geojsonToGtfs(features, inputStops, gtfsConfig, gtfsBuilders) {
         endDate: '21000101',
         id: '1',
     });
-    const trips = tripBuilder(featuresArray);
-    const frequencies = frequenciesBuilder(featuresArray, gtfsConfig.frequencyHeadway);
+    const trips = tripBuilder(featuresArray, builderConfig);
+    const frequencies = frequenciesBuilder(featuresArray, gtfsConfig.frequencyHeadway, builderConfig);
     const stops = stopsBuilder(featuresArray, inputStops, gtfsConfig.skipStopsWithinDistance, gtfsConfig.stopNameBuilder, gtfsConfig.stopsConfig ?? gtfsConfig.customStops);
     const shapePoints = shapesBuilder(featuresArray);
-    const stopTimes = stopTimesBuilder(featuresArray, gtfsConfig.vehicleSpeed);
+    const stopTimes = stopTimesBuilder(featuresArray, gtfsConfig.vehicleSpeed, builderConfig);
     return {
         agency: agencies,
         calendar: calendar,

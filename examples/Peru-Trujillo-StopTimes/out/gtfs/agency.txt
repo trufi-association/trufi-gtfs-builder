@@ -1,0 +1,38 @@
+agency_id,agency_name,agency_timezone,agency_url
+0,CALIFORNIA S.A.,America/Lima,https://www.trujillo.gob.pe/
+1,HUANCHACO S.A.,America/Lima,https://www.trujillo.gob.pe/
+2,NUEVO CALIFORNIA S.A.,America/Lima,https://www.trujillo.gob.pe/
+3,EL CORTIJO S.A.,America/Lima,https://www.trujillo.gob.pe/
+4,MODERNO CIELO AZUL S.A.,America/Lima,https://www.trujillo.gob.pe/
+5,LIBERTAD S.A.,America/Lima,https://www.trujillo.gob.pe/
+6,SALAVERRY EXPRESS S.A.,America/Lima,https://www.trujillo.gob.pe/
+7,VIRGEN DE LA PUERTA S.A.,America/Lima,https://www.trujillo.gob.pe/
+8,ALTO TRUJILLO S.A.,America/Lima,https://www.trujillo.gob.pe/
+9,RAMIRO PRIALE S.A.,America/Lima,https://www.trujillo.gob.pe/
+10,SEÑOR DE LOS MILAGROS S.A,America/Lima,https://www.trujillo.gob.pe/
+11,ESPERANZA EXPRESS S.A.,America/Lima,https://www.trujillo.gob.pe/
+12,EL ICARO INVERSIONISTAS S.A.,America/Lima,https://www.trujillo.gob.pe/
+13,NUEVOS GIRASOLES S.A.,America/Lima,https://www.trujillo.gob.pe/
+14,MODERNO GIRASOLES EXPRESS S.A,America/Lima,https://www.trujillo.gob.pe/
+15,TITANIC EXPRESS S.A.,America/Lima,https://www.trujillo.gob.pe/
+16,ARCO IRIS EXPRESS S.A.,America/Lima,https://www.trujillo.gob.pe/
+17,MOCHICA CHIMÚ S.R.L,America/Lima,https://www.trujillo.gob.pe/
+18,SAN ISIDRO LABRADOR S.A.,America/Lima,https://www.trujillo.gob.pe/
+19,SANTA LUCIA DE MOCHE S.R.L.,America/Lima,https://www.trujillo.gob.pe/
+20,MOCHICA S.A.,America/Lima,https://www.trujillo.gob.pe/
+21,LOS GIRASOLES SERVICE S.R.L.,America/Lima,https://www.trujillo.gob.pe/
+22,LOS DIAMANTES S.R.L.,America/Lima,https://www.trujillo.gob.pe/
+23,VIRGEN DEL ARCO S.A.,America/Lima,https://www.trujillo.gob.pe/
+24,MENSAJEROS DEL SEÑOR S.A.,America/Lima,https://www.trujillo.gob.pe/
+25,SANTA CATALINA S.A.,America/Lima,https://www.trujillo.gob.pe/
+26,CESAR VALLEJO S.A.,America/Lima,https://www.trujillo.gob.pe/
+27,LUZ DIVINA S.A.,America/Lima,https://www.trujillo.gob.pe/
+28,EL AGUILA S.A.,America/Lima,https://www.trujillo.gob.pe/
+29,CABALLITO DE TOTORA S.A.,America/Lima,https://www.trujillo.gob.pe/
+30,NUEVO DIAMANTE S.A.,America/Lima,https://www.trujillo.gob.pe/
+31,MIRAMAR S.A.,America/Lima,https://www.trujillo.gob.pe/
+32,BELLO HORIZONTE S.A.,America/Lima,https://www.trujillo.gob.pe/
+33,CORAZÓN DE JESÚS S.A.C.,America/Lima,https://www.trujillo.gob.pe/
+34,SEÑOR DE LA MISERICORDIA S.A.,America/Lima,https://www.trujillo.gob.pe/
+35,SANTA ROSA S.R.L.,America/Lima,https://www.trujillo.gob.pe/
+36,POROTO S.A.,America/Lima,https://www.trujillo.gob.pe/

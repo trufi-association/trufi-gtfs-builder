@@ -2,6 +2,7 @@ import distanceBetween from '@turf/distance';
 import formatTime from './time/formater';
 import { loadCustomStops } from '../utils/customStopsLoader';
 import { findNearestStop, stopIdToNumber, distanceBetweenCoords, isPointOnRightSide } from '../utils/spatialMatcher';
+import { expandSchedule, timeToSeconds, secondsToTime } from './scheduleExpander';
 import type {
   GeoJSONFeature,
   GTFSAgency,
@@ -22,18 +23,6 @@ import type {
   CustomStop,
   StopsMode,
 } from '../types';
-
-function secondsToTime(seconds: number): string {
-  let hh: string | number = Math.floor(seconds / 3600);
-  let mm: string | number = Math.floor((seconds - hh * 3600) / 60);
-  let ss: string | number = seconds - hh * 3600 - mm * 60;
-
-  if (hh < 10) hh = `0${hh}`;
-  if (mm < 10) mm = `0${mm}`;
-  if (ss < 10) ss = `0${ss}`;
-
-  return `${hh}:${mm}:${ss}`;
-}
 
 export function agencyBuilder(
   features: GeoJSONFeature[][],
@@ -274,36 +263,69 @@ export function feedBuilder(feed: FeedConfig): GTFSFeedInfo[] {
   return feeds;
 }
 
-export function tripBuilder(features: GeoJSONFeature[][]): GTFSTrip[] {
+export function tripBuilder(
+  features: GeoJSONFeature[][],
+  gtfsConfig?: { useFrequencies?: boolean; frequencyHeadway?: (feature: GeoJSONFeature) => number }
+): GTFSTrip[] {
   const trips: GTFSTrip[] = [];
+  const useFrequencies = gtfsConfig?.useFrequencies ?? true;
+
   for (let feature of features) {
     const mainFeature = feature[0];
     if (!mainFeature.gtfs) continue;
-    
+
     // Extract destination from route name for trip_headsign
     const routeName = mainFeature.properties.name || '';
     const toMatch = routeName.match(/(?:→|->)\s*(.+?)$/i);
     const fromMatch = routeName.match(/^(.+?)\s*(?:→|->)/i);
     const tripHeadsign = toMatch ? toMatch[1].trim() : '';
-    
+
     // Determine direction: if name contains "→", check if it's return direction
     let directionId: number | undefined;
     if (fromMatch && toMatch) {
       // Simple heuristic: if common start/end points, alternate direction
       directionId = undefined; // Let GTFS consumers figure it out
     }
-    
-    for (const service of mainFeature.gtfs.services) {
-      const trip: GTFSTrip = {
-        trip_id: mainFeature.properties.id,
-        route_id: mainFeature.gtfs.route_id,
-        service_id: service.service_id,
-        shape_id: mainFeature.properties.id,
-        trip_headsign: tripHeadsign,
-        direction_id: directionId,
-      };
-      trips.push(trip);
-      service.trip_id = mainFeature.properties.id;
+
+    if (useFrequencies) {
+      // FREQUENCY-BASED: One trip per service (for use with frequencies.txt)
+      for (const service of mainFeature.gtfs.services) {
+        const trip: GTFSTrip = {
+          trip_id: mainFeature.properties.id,
+          route_id: mainFeature.gtfs.route_id,
+          service_id: service.service_id,
+          shape_id: mainFeature.properties.id,
+          trip_headsign: tripHeadsign,
+          direction_id: directionId,
+        };
+        trips.push(trip);
+        service.trip_id = mainFeature.properties.id;
+      }
+    } else {
+      // SCHEDULE-BASED: Expand into individual scheduled trips
+      const baseRouteId = mainFeature.properties.id;
+      const headwaySecs = gtfsConfig?.frequencyHeadway?.(mainFeature) ?? 300;
+
+      for (const service of mainFeature.gtfs.services) {
+        const departureTimes = expandSchedule(service.startTime, service.endTime, headwaySecs);
+        const expandedTrips: Array<{ trip_id: number; departureTime: string }> = [];
+
+        departureTimes.forEach((departureTime, index) => {
+          const trip_id = baseRouteId * 1000000 + index;
+          const trip: GTFSTrip = {
+            trip_id: trip_id,
+            route_id: mainFeature.gtfs!.route_id,
+            service_id: service.service_id,
+            shape_id: baseRouteId,
+            trip_headsign: tripHeadsign,
+            direction_id: directionId,
+          };
+          trips.push(trip);
+          expandedTrips.push({ trip_id, departureTime });
+        });
+
+        service.expandedTrips = expandedTrips;
+      }
     }
   }
   return trips;
@@ -311,8 +333,17 @@ export function tripBuilder(features: GeoJSONFeature[][]): GTFSTrip[] {
 
 export function frequenciesBuilder(
   features: GeoJSONFeature[][],
-  frequencyHeadwaySecs: (feature: GeoJSONFeature) => number
+  frequencyHeadwaySecs: (feature: GeoJSONFeature) => number,
+  gtfsConfig?: { useFrequencies?: boolean }
 ): GTFSFrequency[] {
+  const useFrequencies = gtfsConfig?.useFrequencies ?? true;
+
+  // If not using frequencies, return empty array (frequencies.txt won't be generated)
+  if (!useFrequencies) {
+    return [];
+  }
+
+  // FREQUENCY-BASED: Generate frequencies.txt
   const frequencies: GTFSFrequency[] = [];
   for (let feature of features) {
     const mainFeature = feature[0];
@@ -565,34 +596,86 @@ export function shapesBuilder(features: GeoJSONFeature[][]): GTFSShape[] {
 
 export function stopTimesBuilder(
   features: GeoJSONFeature[][],
-  vehicleSpeed: (feature: GeoJSONFeature) => number
+  vehicleSpeed: (feature: GeoJSONFeature) => number,
+  gtfsConfig?: { useFrequencies?: boolean }
 ): GTFSStopTime[] {
   const stopTimes: GTFSStopTime[] = [];
+  const useFrequencies = gtfsConfig?.useFrequencies ?? true;
+
   for (let feature of features) {
     const mainFeature = feature[0];
     if (!mainFeature.gtfs || !mainFeature.gtfs.filteredStops) continue;
     const speed = (vehicleSpeed(mainFeature) / 60 / 60) * 1000;
+
     for (const service of mainFeature.gtfs.services) {
-      let previousCoords: number[] | undefined;
-      let distance = 0;
-      let seconds = 0;
-      const { nodes, coordinates } = mainFeature.gtfs.filteredStops;
-      for (const index in nodes) {
-        const coords = coordinates[index];
-        if (previousCoords) {
-          distance = distanceBetween(previousCoords, coords, { units: 'kilometers' });
-          seconds += Math.ceil((distance * 1000) / speed);
+      if (useFrequencies) {
+        // FREQUENCY-BASED: Relative times from 00:00:00
+        let previousCoords: number[] | undefined;
+        let distance = 0;
+        let seconds = 0;
+        const { nodes, coordinates } = mainFeature.gtfs.filteredStops;
+        for (const index in nodes) {
+          const coords = coordinates[index];
+          if (previousCoords) {
+            distance = distanceBetween(previousCoords, coords, { units: 'kilometers' });
+            seconds += Math.ceil((distance * 1000) / speed);
+          }
+          previousCoords = coords;
+          const arrival_time = secondsToTime(seconds);
+          stopTimes.push({
+            trip_id: service.trip_id!,
+            stop_sequence: index,
+            stop_id: nodes[index],
+            arrival_time: arrival_time,
+            departure_time: arrival_time,
+            timepoint: 0,
+          });
         }
-        previousCoords = coords;
-        const arrival_time = secondsToTime(seconds);
-        stopTimes.push({
-          trip_id: service.trip_id!,
-          stop_sequence: index,
-          stop_id: nodes[index],
-          arrival_time: arrival_time,
-          departure_time: arrival_time,
-          timepoint: 0,
-        });
+      } else {
+        // SCHEDULE-BASED: Specific times for each expanded trip
+        const expandedTrips = service.expandedTrips;
+        if (!expandedTrips || expandedTrips.length === 0) {
+          console.warn(`No expanded trips found for service ${service.service_id}`);
+          continue;
+        }
+
+        // Calculate travel times between stops (same for all trips)
+        const travelTimesSeconds: number[] = [];
+        let previousCoords: number[] | undefined;
+        const { nodes, coordinates } = mainFeature.gtfs.filteredStops;
+
+        for (const index in nodes) {
+          if (previousCoords) {
+            const coords = coordinates[index];
+            const distance = distanceBetween(previousCoords, coords, { units: 'kilometers' });
+            const travelSeconds = Math.ceil((distance * 1000) / speed);
+            travelTimesSeconds.push(travelSeconds);
+          } else {
+            travelTimesSeconds.push(0); // First stop has 0 travel time
+          }
+          previousCoords = coordinates[index];
+        }
+
+        // Generate stop times for each expanded trip
+        for (const expandedTrip of expandedTrips) {
+          const departureSecs = timeToSeconds(expandedTrip.departureTime.substring(0, 5));
+          let cumulativeSeconds = 0;
+
+          for (const index in nodes) {
+            cumulativeSeconds += travelTimesSeconds[index];
+            const stopArrivalSecs = departureSecs + cumulativeSeconds;
+            const arrival_time = secondsToTime(stopArrivalSecs);
+
+            stopTimes.push({
+              trip_id: expandedTrip.trip_id,
+              stop_sequence: index,
+              stop_id: nodes[index],
+              arrival_time: arrival_time,
+              departure_time: arrival_time,
+              timepoint: 0,
+            });
+          }
+        }
       }
     }
   }
