@@ -1,279 +1,394 @@
 trip_id,route_id,service_id,shape_id,trip_headsign
-4205962,260,Mo-Su,4205962,Calle Litoral
-4207829,201,Mo-Su,4207829,Calle Litoral
-4223772,270,Mo-Su,4223772,Avenida Blanco Galindo
-4237142,260,Mo-Su,4237142,Avenida Blanco Galindo
-4247869,B,Mo-Su,4247869,Aeropuerto → Pasaje F
-4269608,A,Mo-Su,4269608,Río Taquiña
-4269609,A,Mo-Su,4269609,Villa Israel
-4420888,203,Mo-Su,4420888,Plaza Hernando Siles
-4430244,C,Mo-Su,4430244,Calle Manuel Carrasco Jimenez
-4431661,203,Mo-Su,4431661,Avenida Belzu
-4436907,211,Mo-Su,4436907,Parque Ecoturístico Pairumani
-4655384,290,Mo-Su,4655384,Chilimarca
-5149360,LL,Mo-Su,5149360,Charles Darwin
-5457000,H,Mo-Su,5457000,Avenida Río Parapeti
-5457001,H,Mo-Su,5457001,Avenida Chapare
-5470046,LL,Mo-Su,5470046,La Concordia
-6714096,106,Mo-Su,6714096,Plaza Principal El Paso
-9085564,J,Mo-Su,9085564,Avenida Chiquicollo
-9101527,J,Mo-Su,9101527,Calle Gran Chaco
-9118342,16,Mo-Su,9118342,OTB Ecológica
-9118541,16,Mo-Su,9118541,Avenida Silala
-9124161,1,Mo-Su,9124161,Calle Ciudad del niño
-9133722,136,Mo-Su,9133722,Villa San Andres
-9136633,102,Mo-Su,9136633,Tamborada B
-9196557,101,Mo-Su,9196557,Avenida Río Caine
-9219407,104,Mo-Su,9219407,Villa San Miguel
-9219433,107,Mo-Su,9219433,Maica Quenamari
-9219457,109,Mo-Su,9219457,Torrentera Pajcha
-9219458,109,Mo-Su,9219458,Calle Abelia
-9312059,121,Mo-Su,9312059,Calle Sora Sora
-9321521,M,Mo-Su,9321521,Pozo Petrolero Buena Vista
-9342276,11,Mo-Su,9342276,Viena
-9342277,11,Mo-Su,9342277,Los Ceibos
-9377625,232,Mo-Su,9377625,Avenida Eliodoro Villazón
-9377675,240,Mo-Su,9377675,Plaza de Sacaba
-9377676,240,Mo-Su,9377676,Calle Trojes
-9377784,230,Mo-Su,9377784,Calle Grover Suarez
-9377826,250,Mo-Su,9377826,Guillermo Martinez
-9377827,250,Mo-Su,9377827,Ernesto Céspedes
-9379871,290,Mo-Su,9379871,Avenida Blanco Galindo
-9380021,252,Mo-Su,9380021,Carlos Blanco Galindo
-9380023,252,Mo-Su,9380023,Amanecer
-9380122,200,Mo-Su,9380122,Avenida Blanco Galindo
-9380213,118,Mo-Su,9380213,Chilimarca
-9380215,118,Mo-Su,9380215,Calle Tupac Katari
-9380272,116,Mo-Su,9380272,Alto Buena Vista
-9383241,Y,Mo-Su,9383241,Achumani
-9386184,Taquiña,Mo-Su,9386184,Planta Taquiña
-9392695,113,Mo-Su,9392695,La Serena Calicanto
-9397822,03,Mo-Su,9397822,Calle Luis Zegarra
-9397824,03,Mo-Su,9397824,Calle Curupau
-9400927,45,Mo-Su,9400927,Torrentera Arocagua Mayu
-9417509,3V,Mo-Su,9417509,Calle Tómas Gamboa
-9417539,3V,Mo-Su,9417539,Río Taquiña
-9420548,112,Mo-Su,9420548,Calle Francisco de Goya
-9421022,212,Mo-Su,9421022,Hipódromo Sud
-9427980,134,Mo-Su,9427980,Avenida Chiquicollo
-9429037,135,Mo-Su,9429037,Villa Israel
-9430329,311,Mo-Su,9430329,Pampita Mejillones
-9430924,119,Mo-Su,9430924,Loma Pampa
-9431000,123,Mo-Su,9431000,Calle Wawaki
-9431002,123,Mo-Su,9431002,Mineros San Juan
-9435839,012,Mo-Su,9435839,Nueva Jerusalén
-9436000,115,Mo-Su,9436000,Avenida Inca Camacho
-9436032,160,Mo-Su,9436032,Rocas Blancas
-9436054,112,Mo-Su,9436054,Calle Volcán Tolima
-9458409,233,Mo-Su,9458409,Calle Manuel P. Laredo
-9458460,220,Mo-Su,9458460,Calle Eric Asplund
-9458471,220,Mo-Su,9458471,Sacaba
-9582567,125,Mo-Su,9582567,Calle Canasita
-9582571,131,Mo-Su,9582571,Calle Lucia Alcocer
-9582573,131,Mo-Su,9582573,Calle La Rioja
-9582854,19,Mo-Su,9582854,Calle 7
-9582856,19,Mo-Su,9582856,Calle Pascual Canaviri
-9582859,2,Mo-Su,9582859,Calle Capitán Luis Garcia
-9582860,20,Mo-Su,9582860,Dora Halkier
-9715360,130,Mo-Su,9715360,Aeropuerto → Centenario
-9718061,202,Mo-Su,9718061,Calle Villamontes
-10176999,P,Mo-Su,10176999,Puente Quinamari
-10380049,110,Mo-Su,10380049,Portugal
-10387641,110,Mo-Su,10387641,Calle Francia
-10392482,110,Mo-Su,10392482,Calle Noruega
-10395472,110,Mo-Su,10395472,Wanka
-10395597,110,Mo-Su,10395597,Avenida Centenario
-10396238,111,Mo-Su,10396238,Villa Israel
-10396580,111,Mo-Su,10396580,Avenida Río Parapeti
-10397583,111,Mo-Su,10397583,Sivingani
-10397705,111,Mo-Su,10397705,San Nicolás
-10407407,203,Mo-Su,10407407,Avenida Circuito Bolivia
-10407466,203,Mo-Su,10407466,Avenida Blanco Galindo
-10411245,212,Mo-Su,10411245,Calle La Cascada
-10413052,211,Mo-Su,10413052,Calle Achachairú
-10413337,209,Mo-Su,10413337,Hospital Esperanza
-10413473,209,Mo-Su,10413473,Calle Héroes de Boquerón
-10414582,206,Mo-Su,10414582,Plaza Bolívar
-10443585,P,Mo-Su,10443585,Maica Central
-10620494,111,Mo-Su,10620494,Calle Albert Einstein
-10623351,111,Mo-Su,10623351,Calle Albert Einstein
-10623700,46,Mo-Su,10623700,Santo Domingo
-10623782,46,Mo-Su,10623782,Calle Cocoroco
-10626424,46,Mo-Su,10626424,Calle Antolín Salinas
-10626619,46,Mo-Su,10626619,Calle Antolín Salinas
-10686843,8,Mo-Su,10686843,Lomas de Santa Bárbara
-10687570,8,Mo-Su,10687570,Avenida YPFB
-10688684,8,Mo-Su,10688684,El Abra
-10688740,8,Mo-Su,10688740,El Abra
-10688865,9,Mo-Su,10688865,Calle María Nuñez del Prado
-10691722,Z14,Mo-Su,10691722,Caico Alto
-10691728,Z14,Mo-Su,10691728,Azurimarca
-10691742,Z14,Mo-Su,10691742,Raúl Rivero Torrez
-10692360,Z14,Mo-Su,10692360,Raúl Rivero Torrez
-10692381,15,Mo-Su,10692381,Alto Valle Hermoso 5 de Octubre
-10692412,15,Mo-Su,10692412,Torrentera Pajcha
-10692726,102,Mo-Su,10692726,Calle María Luisa Pacheco
-10692795,103,Mo-Su,10692795,Tamborada B
-10693034,103,Mo-Su,10693034,Calle Alfredo Guillén
-10693249,107,Mo-Su,10693249,Calle Lalliy Pacha
-10694643,5,Mo-Su,10694643,Ch'aska Rumi
-10694841,107,Mo-Su,10694841,Calle Yanacuna
-10694992,108,Mo-Su,10694992,Calle Provincia Guarayos
-10695765,132,Mo-Su,10695765,Avenida Autonomía
-10696073,132,Mo-Su,10696073,Calle Libertad
-10696152,132,Mo-Su,10696152,Avenida París
-10707969,31,Mo-Su,10707969,1 de Mayo Tamborada
-10708454,35,Mo-Su,10708454,Calle Pueblo de Machaca
-10708489,35,Mo-Su,10708489,Calle Ricardo Mujia
-10708849,N,Mo-Su,10708849,Avenida Eliodoro Villazón
-10709216,N,Mo-Su,10709216,Calle Severo Fernandez A.
-10709736,O,Mo-Su,10709736,Segunda Circunvalación
-10712108,O,Mo-Su,10712108,Sau Sau Loma
-10712279,U,Mo-Su,10712279,Federico Jiménez
-10712334,13,Mo-Su,10712334,Villa San Miguel
-10716517,36,Mo-Su,10716517,Calle Lisandro Quiroga
-10718919,40,Mo-Su,10718919,Ciudad del niño
-10718946,45,Mo-Su,10718946,Calle Serranía de Caíza
-10718967,109,Mo-Su,10718967,14 de abril
-10719010,52,Mo-Su,10719010,Arrumani
-10719025,120,Mo-Su,10719025,Cerro San Miguel
-10719035,120,Mo-Su,10719035,Univalle
-10719095,120,Mo-Su,10719095,Cerro San Miguel
-10719128,120,Mo-Su,10719128,Gualberto Villaroel
-10721298,138,Mo-Su,10721298,Calle Ivan Bluske
-10721776,150,Mo-Su,10721776,Avenida República
-10721892,217,Mo-Su,10721892,Calle 12 de septiembre
-10722104,241,Mo-Su,10722104,Avenida Pedro deToledo
-10722148,241,Mo-Su,10722148,Avenida Eliodoro Villazón
-10723654,204,Mo-Su,10723654,Calle Litoral
-10724411,208,Mo-Su,10724411,Calle Ignacio Warnes
-10724599,265,Mo-Su,10724599,Calle Camiri
-10742219,27,Mo-Su,10742219,Francis Peyton Rous
-10742249,27,Mo-Su,10742249,Bella Vista
-10742265,265,Mo-Su,10742265,Avenida Blanco Galindo
-10742276,261,Mo-Su,10742276,Avenida Blanco Galindo
-10742335,261,Mo-Su,10742335,Calle Camiri
-10742513,244,Mo-Su,10742513,Avenida Eliodoro Villazón
-10742585,244,Mo-Su,10742585,Calle Paucarpata
-10742625,242,Mo-Su,10742625,Avenida Eliodoro Villazón
-10744108,18,Mo-Su,10744108,Avenida Benjo Cruz
-10768014,43,Mo-Su,10768014,OTB 27 de Mayo
-10786894,I,Mo-Su,10786894,Avenida Circunvalación Beijing
-10786928,3,Mo-Su,10786928,Francis Peyton Rous
-10788634,245,Mo-Su,10788634,Avenida Blanco Galindo
-10789860,Taquiña,Mo-Su,10789860,Cruce Taquiña
-10795881,103,Mo-Su,10795881,Avenida Panamericana
-10799951,109,Mo-Su,10799951,Calle Alipio Valencia Vega
-10813739,107,Mo-Su,10813739,Maica Sud
-11015397,150,Mo-Su,11015397,Univalle entrada
-11015478,211,Mo-Su,11015478,Calle C. Serruto
-11096956,106,Mo-Su,11096956,Calle Pablo Jaimes
-11096957,106,Mo-Su,11096957,Calle M. Cossio
-11103749,F,Mo-Su,11103749,Calle 2
-11103802,F,Mo-Su,11103802,La Maica Chica
-11105559,39,Mo-Su,11105559,Avenida Sexta
-11105576,39,Mo-Su,11105576,Tajra
-11106317,50,Mo-Su,11106317,Calle Beni
-11106342,50,Mo-Su,11106342,Calle La Rioja
-11106387,137,Mo-Su,11106387,Félix Capriles
-11107845,201,Mo-Su,11107845,Calle Litoral
-11107907,201,Mo-Su,11107907,Calle Litoral
-11108080,203,Mo-Su,11108080,Illataco
-11109737,203,Mo-Su,11109737,Avenida Manuel Isidoro Belzu
-11110061,204,Mo-Su,11110061,Calle Litoral
-11110129,204,Mo-Su,11110129,Calle Litoral
-11111544,206,Mo-Su,11111544,Avenida Suarez Miranda
-11111558,206,Mo-Su,11111558,Calle Antofagasta
-11111697,206,Mo-Su,11111697,Entre Rios
-11115682,208,Mo-Su,11115682,Calle Camiri
-11116658,208,Mo-Su,11116658,Calle Camiri
-11116706,208,Mo-Su,11116706,Calle Camiri
-11116758,208,Mo-Su,11116758,Calle Camiri
-11116770,208,Mo-Su,11116770,Calle Camiri
-11116951,210,Mo-Su,11116951,El Paso
-11118368,201,Mo-Su,11118368,9 de Abril
-11118511,211,Mo-Su,11118511,Calle Victor Paz Estenssoro
-11118647,211,Mo-Su,11118647,Calle Victor Paz Estenssoro
-11121479,245,Mo-Su,11121479,Viloma
-11123109,245,Mo-Su,11123109,Mallco Chapi
-11123198,245,Mo-Su,11123198,Amiraya
-11123215,245,Mo-Su,11123215,Viloma Cala Cala
-11123257,245,Mo-Su,11123257,Siqui Siquia
-11124771,245,Mo-Su,11124771,Pirque
-11124782,245,Mo-Su,11124782,Vinto
-11126026,260,Mo-Su,11126026,"Mallco Rancho, Sipe Sipe"
-11127304,260,Mo-Su,11127304,Mallco Chapi
-11127350,260,Mo-Su,11127350,Calle Litoral
-11127379,260,Mo-Su,11127379,Amiraya
-11127392,260,Mo-Su,11127392,Calle Litoral
-11127395,260,Mo-Su,11127395,Viloma Cala Cala
-11127419,260,Mo-Su,11127419,Calle Litoral
-11127460,260,Mo-Su,11127460,Siqui Siquia
-11127465,260,Mo-Su,11127465,Calle Litoral
-11129178,260,Mo-Su,11129178,Parotani
-11129182,260,Mo-Su,11129182,Vinto
-11129203,265,Mo-Su,11129203,Avenida Santa Cruz
-11130832,265,Mo-Su,11130832,Litoral
-11131143,120,Mo-Su,11131143,Molle Nova
-11131214,120,Mo-Su,11131214,Cerro San Miguel
-11131445,250,Mo-Su,11131445,Ricardo Soruco
-11132626,N,Mo-Su,11132626,El Abra
-11132650,N,Mo-Su,11132650,Calle Severo Fernandez A.
-11133890,212,Mo-Su,11133890,Maica Central
-11134477,233,Mo-Su,11134477,Calle Jose M. Carrasco
-11137986,233,Mo-Su,11137986,Curubamba
-11138009,233,Mo-Su,11138009,Calle A. Moreno
-11138032,233,Mo-Su,11138032,Calle Bolívar
-11138084,233,Mo-Su,11138084,Calle Jose M. Carrasco
-11138764,233,Mo-Su,11138764,Calle Manuel P. Laredo
-11138791,233,Mo-Su,11138791,Avenida Tunel
-11140017,241,Mo-Su,11140017,Tutimayo
-11140123,241,Mo-Su,11140123,Avenida Pedro deToledo
-11140612,241,Mo-Su,11140612,Calle Colombia
-11140643,241,Mo-Su,11140643,Avenida Pedro deToledo
-11140668,241,Mo-Su,11140668,Molino Blanco
-11140677,241,Mo-Su,11140677,Avenida Pedro deToledo
-11142143,244,Mo-Su,11142143,Lava Lava Alta
-11142238,244,Mo-Su,11142238,Calle Bolívar
-11148102,120,Mo-Su,11148102,Cerro San Miguel
-11148108,120,Mo-Su,11148108,Apote
-11151933,103,Mo-Su,11151933,Calle Augusto Guzman
-15749345,P,Mo-Su,15749345,Calle Gran Chaco
-15749364,13,Mo-Su,15749364,Avenida Chilimarca
-16144238,233,Mo-Su,16144238,El Abra
-16147024,212,Mo-Su,16147024,Calle La Cascada
-16283966,233,Mo-Su,16283966,Calle Manuel P. Laredo
-16294397,212,Mo-Su,16294397,Hipódromo Sud
-16294410,212,Mo-Su,16294410,Calle La Cascada
-16306401,250,Mo-Su,16306401,Callajchullpa
-16306421,270,Mo-Su,16306421,Avenida Blanco Galindo
-16306422,270,Mo-Su,16306422,Calle Jose Martinez
-16603891,123,Mo-Su,16603891,Mineros San Juan
-16603902,123,Mo-Su,16603902,Mineros San Juan
-16774715,120,Mo-Su,16774715,Univalle
-16774734,120,Mo-Su,16774734,Tiquipaya
-16774771,120,Mo-Su,16774771,Cerro San Miguel
-16774784,120,Mo-Su,16774784,Cerro San Miguel
-16774789,120,Mo-Su,16774789,Collpapampa
-16774834,120,Mo-Su,16774834,Cerro San Miguel
-16774838,120,Mo-Su,16774838,Molinos
-16774848,120,Mo-Su,16774848,Salomon Romero
-16774849,120,Mo-Su,16774849,Cerro San Miguel
-16774852,120,Mo-Su,16774852,Villa Oruro
-16774853,120,Mo-Su,16774853,Cerro San Miguel
-16774859,120,Mo-Su,16774859,Barrio Flores
-16774860,120,Mo-Su,16774860,Cerro San Miguel
-16799911,120,Mo-Su,16799911,Kanarancho
-16799912,120,Mo-Su,16799912,Alto San Miguel
-16804729,120,Mo-Su,16804729,Molinos
-16804730,120,Mo-Su,16804730,Alto San Miguel
-16806297,127,Mo-Su,16806297,Villa Esperanza
-16806298,127,Mo-Su,16806298,Villa Esperanza
-16806299,127,Mo-Su,16806299,Salomon Romero
-16806300,127,Mo-Su,16806300,Molinos
-16806919,123,Mo-Su,16806919,Tirani
-16806920,123,Mo-Su,16806920,Ticti Norte
-17193323,25,Mo-Su,17193323,Calle Cochabamba
-17290564,80,Mo-Su,17290564,
-17290615,150,Mo-Su,17290615,La Cascada
-17291147,25,Mo-Su,17291147,
+4205962,0,Mo-Su,4205962,Calle Litoral
+4207829,1,Mo-Su,4207829,Calle Litoral
+4220716,2,Mo-Su,4220716,Plaza Avenida Blanco Galindo
+4223772,3,Mo-Su,4223772,Avenida Blanco Galindo
+4237142,0,Mo-Su,4237142,Avenida Blanco Galindo
+4247869,4,Mo-Su,4247869,Pasaje F
+4269608,5,Mo-Su,4269608,Río Taquiña
+4269609,5,Mo-Su,4269609,Villa Israel
+4420888,6,Mo-Su,4420888,Plaza Hernando Siles
+4430244,7,Mo-Su,4430244,Calle Manuel Carrasco Jimenez
+4431661,6,Mo-Su,4431661,Avenida Belzu
+4433300,7,Mo-Su,4433300,Avenida Pedro de la Gasca
+4436907,8,Mo-Su,4436907,Parque Ecoturístico Pairumani
+4443363,9,Mo-Su,4443363,Avenida Chacancalle
+4655384,10,Mo-Su,4655384,Chillimarca
+4770039,1,Mo-Su,4770039,Avenida Blanco Galindo
+5149360,11,Mo-Su,5149360,Charles Darwin
+5386695,12,Mo-Su,5386695,Huachi Rancho
+5387552,13,Mo-Su,5387552,Avenida Arquímedes
+5387555,13,Mo-Su,5387555,Calle Alipio Valencia Vega
+5457000,14,Mo-Su,5457000,Avenida Río Parapeti
+5457001,14,Mo-Su,5457001,Avenida Chapare
+5457263,15,Mo-Su,5457263,Avenida Circuito Bolivia
+5470046,11,Mo-Su,5470046,La Concordia
+6714096,16,Mo-Su,6714096,Plaza Principal El Paso
+6925236,17,Mo-Su,6925236,Cristo de la Concordia
+6925237,17,Mo-Su,6925237,Parque de la Autonomía
+9085564,18,Mo-Su,9085564,Avenida Chiquicollo
+9118342,19,Mo-Su,9118342,OTB Ecológica
+9118541,19,Mo-Su,9118541,Avenida Silala
+9119233,20,Mo-Su,9119233,Avenida Arquímedes
+9124161,21,Mo-Su,9124161,Calle Ciudad del niño
+9133720,22,Mo-Su,9133720,Avenida Segunda
+9133722,22,Mo-Su,9133722,Villa San Andres
+9136633,23,Mo-Su,9136633,Tamborada B
+9193250,24,Mo-Su,9193250,OTB Ecológica
+9196557,25,Mo-Su,9196557,La Tamborada
+9219406,26,Mo-Su,9219406,1ro de Mayo
+9219407,26,Mo-Su,9219407,Villa San Miguel
+9219433,27,Mo-Su,9219433,Maica Quenamari
+9219457,28,Mo-Su,9219457,Torrentera Pajcha
+9219458,28,Mo-Su,9219458,Calle Abelia
+9312059,29,Mo-Su,9312059,Calle Sora Sora
+9321521,30,Mo-Su,9321521,Calle Pozo Petrolero Buena Vista
+9342276,31,Mo-Su,9342276,Calle Viena
+9342277,31,Mo-Su,9342277,Los Ceibos
+9377625,32,Mo-Su,9377625,Avenida Eliodoro Villazón
+9377626,32,Mo-Su,9377626,Calle Isla del Sol
+9377675,33,Mo-Su,9377675,Avenida Eliodoro Villazón
+9377676,33,Mo-Su,9377676,Calle Trojes
+9377784,34,Mo-Su,9377784,Calle Grover Suarez
+9377826,35,Mo-Su,9377826,Univalle
+9377827,35,Mo-Su,9377827,Mercado de papas
+9379871,10,Mo-Su,9379871,Avenida Blanco Galindo
+9380021,36,Mo-Su,9380021,Avenida Blanco Galindo
+9380023,36,Mo-Su,9380023,Calle Litoral
+9380122,37,Mo-Su,9380122,Avenida Blanco Galindo
+9380123,37,Mo-Su,9380123,Calle Litoral
+9380213,38,Mo-Su,9380213,Chilimarca
+9380215,38,Mo-Su,9380215,Calle Tupac Katari
+9380270,39,Mo-Su,9380270,Torrentera Logustani
+9380272,39,Mo-Su,9380272,Alto Buena Vista
+9383241,40,Mo-Su,9383241,Achumani
+9386184,41,Mo-Su,9386184,Planta Taquiña
+9392695,42,Mo-Su,9392695,La Serena Calicanto
+9392697,42,Mo-Su,9392697,Puente Khora
+9397731,43,Mo-Su,9397731,Calle 6
+9397822,44,Mo-Su,9397822,Calle Luis Zegarra
+9397824,44,Mo-Su,9397824,Calle Curupau
+9397897,45,Mo-Su,9397897,Los Ceibos
+9400927,46,Mo-Su,9400927,Torrentera Arocagua Mayu
+9405802,47,Mo-Su,9405802,Calle Honduras
+9405804,47,Mo-Su,9405804,Putucu
+9417509,48,Mo-Su,9417509,Calle Tómas Gamboa
+9417539,48,Mo-Su,9417539,Río Taquiña
+9420548,49,Mo-Su,9420548,Calle Francisco de Goya
+9421022,50,Mo-Su,9421022,Hipódromo Sud
+9426749,51,Mo-Su,9426749,Calle Ruminawi
+9427015,52,Mo-Su,9427015,Calle Qhochapampa
+9427980,53,Mo-Su,9427980,Avenida Chiquicollo
+9429035,54,Mo-Su,9429035,Calle Los Olivos
+9430327,55,Mo-Su,9430327,Calle Canichana
+9430329,55,Mo-Su,9430329,Pampita Mejillones
+9430922,56,Mo-Su,9430922,Villa Taquiña
+9430924,56,Mo-Su,9430924,Loma Pampa
+9431000,57,Mo-Su,9431000,Calle Wawaki
+9431002,57,Mo-Su,9431002,Mineros San Juan
+9435838,58,Mo-Su,9435838,Calle Grover Suarez
+9435839,58,Mo-Su,9435839,Nueva Jerusalén
+9436000,59,Mo-Su,9436000,Av. Inca Camacho
+9436031,60,Mo-Su,9436031,Calle T. Achu
+9436032,60,Mo-Su,9436032,Rocas Blancas
+9436054,49,Mo-Su,9436054,Calle Volcán Tolima
+9458409,61,Mo-Su,9458409,Calle Manuel P. Laredo
+9458460,62,Mo-Su,9458460,Calle Eric Asplund
+9458471,62,Mo-Su,9458471,Avenida Eliodoro Villazón
+9582565,63,Mo-Su,9582565,Calle R. Levano
+9582567,63,Mo-Su,9582567,Calle Canasita
+9582571,64,Mo-Su,9582571,Calle Lucia Alcocer
+9582573,64,Mo-Su,9582573,Calle La Rioja
+9582854,65,Mo-Su,9582854,Calle 7
+9582856,65,Mo-Su,9582856,Calle Pascual Canaviri
+9582860,66,Mo-Su,9582860,Dora Halkier
+9645302,15,Mo-Su,9645302,Villa Urkupiña Calvario
+9715360,67,Mo-Su,9715360,Avenida Circunvalación
+9718061,68,Mo-Su,9718061,Calle Villamontes
+9718162,68,Mo-Su,9718162,Avenida Blanco Galindo
+9985626,69,Mo-Su,9985626,Calle La Rioja
+9985684,30,Mo-Su,9985684,Calle Jose Curtinas
+10176999,70,Mo-Su,10176999,Puente Quinamari
+10380049,71,Mo-Su,10380049,Calle Portugal
+10387641,71,Mo-Su,10387641,Calle Francia
+10392482,71,Mo-Su,10392482,Calle Noruega
+10395472,71,Mo-Su,10395472,Calle Wanka
+10395597,71,Mo-Su,10395597,Av. Centenario
+10396238,72,Mo-Su,10396238,Villa Israel
+10396580,72,Mo-Su,10396580,Avenida Río Parapeti
+10397583,72,Mo-Su,10397583,Sivingani
+10397705,72,Mo-Su,10397705,San Nicolás
+10407407,6,Mo-Su,10407407,Avenida Circuito Bolivia
+10407466,6,Mo-Su,10407466,Avenida Blanco Galindo
+10411245,50,Mo-Su,10411245,Calle La Cascada
+10411266,8,Mo-Su,10411266,Avenida Blanco Galindo
+10413052,8,Mo-Su,10413052,Calle Achachairú
+10413127,73,Mo-Su,10413127,Avenida Blanco Galindo
+10413255,73,Mo-Su,10413255,Calle República de Nicaragua
+10413337,74,Mo-Su,10413337,Avenida Blanco Galindo
+10413473,74,Mo-Su,10413473,Calle Héroes de Boquerón
+10414461,75,Mo-Su,10414461,Avenida Gualberto Villarroel
+10414582,76,Mo-Su,10414582,Avenida Blanco Galindo
+10443585,70,Mo-Su,10443585,Maica Central
+10620338,72,Mo-Su,10620338,Calle Albert Einstein
+10620494,72,Mo-Su,10620494,Calle Albert Einstein
+10623351,72,Mo-Su,10623351,Calle Albert Einstein
+10623700,77,Mo-Su,10623700,Santo Domingo
+10623782,77,Mo-Su,10623782,Calle Corocoro
+10626424,77,Mo-Su,10626424,Calle Antolín Salinas
+10626619,77,Mo-Su,10626619,Calle Antolín Salinas
+10626711,78,Mo-Su,10626711,Buena Vista
+10626821,78,Mo-Su,10626821,Calle Parinacota
+10628899,78,Mo-Su,10628899,Av. Autonomía
+10630690,78,Mo-Su,10630690,Villa San Alfonso
+10630984,78,Mo-Su,10630984,Villa San Alfonso
+10631287,78,Mo-Su,10631287,Villa San Alfonso
+10667060,79,Mo-Su,10667060,Avenida Sexta
+10667214,79,Mo-Su,10667214,Loma Pampa
+10667322,79,Mo-Su,10667322,Avenida Sexta
+10667416,79,Mo-Su,10667416,Mineros San Juan
+10667926,40,Mo-Su,10667926,Avenida Melchor Pérez de Olguín
+10668794,80,Mo-Su,10668794,Avenida Blanco Galindo
+10677513,80,Mo-Su,10677513,Calle Mendoza
+10686843,81,Mo-Su,10686843,Lomas de Santa Bárbara
+10687570,81,Mo-Su,10687570,Avenida YPFB
+10688684,81,Mo-Su,10688684,El Abra
+10688740,81,Mo-Su,10688740,El Abra
+10688766,82,Mo-Su,10688766,San Marcos
+10688865,82,Mo-Su,10688865,Calle María Nuñez del Prado
+10691722,83,Mo-Su,10691722,Caico Alto
+10691728,83,Mo-Su,10691728,Azurimarca
+10691742,83,Mo-Su,10691742,Calle Raul Rivero Torres
+10692360,83,Mo-Su,10692360,Calle Raul Rivero Torres
+10692381,84,Mo-Su,10692381,Alto Valle Hermoso
+10692412,84,Mo-Su,10692412,Torrentera Pajcha
+10692726,23,Mo-Su,10692726,Calle María Luisa Pacheco
+10692795,85,Mo-Su,10692795,Tamborada B
+10692844,85,Mo-Su,10692844,Villa America
+10692867,85,Mo-Su,10692867,Calle Sófocles
+10693034,85,Mo-Su,10693034,Calle Alfredo Guillén
+10693057,85,Mo-Su,10693057,Calle Alfredo Guillén
+10693249,27,Mo-Su,10693249,Calle Lalliy Pacha
+10694643,86,Mo-Su,10694643,Ch'aska Rumi
+10694841,27,Mo-Su,10694841,Calle Yanacuna
+10695023,87,Mo-Su,10695023,Av. República
+10695765,88,Mo-Su,10695765,Avenida Autonomía
+10696073,88,Mo-Su,10696073,Calle Libertad
+10696152,88,Mo-Su,10696152,Avenida París
+10696170,88,Mo-Su,10696170,Torrentera Arocagua Mayu
+10696193,88,Mo-Su,10696193,Torrentera Arocagua Mayu
+10696237,88,Mo-Su,10696237,Torrentera Arocagua Mayu
+10705506,12,Mo-Su,10705506,Irincollo
+10706216,89,Mo-Su,10706216,Avenida Arquímedes
+10707969,90,Mo-Su,10707969,1 de Mayo Tamborada
+10708320,90,Mo-Su,10708320,Oncológico
+10708454,91,Mo-Su,10708454,Calle Pueblo de Machaca
+10708489,91,Mo-Su,10708489,Calle Ricardo Mujia
+10708849,92,Mo-Su,10708849,Avenida Eliodoro Villazón
+10709216,92,Mo-Su,10709216,Calle Severo Fernandez A.
+10709736,93,Mo-Su,10709736,Segunda Circunvalación
+10712108,93,Mo-Su,10712108,Sau Sau Loma
+10712236,94,Mo-Su,10712236,Segunda Circunvalación
+10712279,94,Mo-Su,10712279,Calle Manuel Virreira
+10712334,95,Mo-Su,10712334,Villa San Miguel
+10716517,96,Mo-Su,10716517,Calle Lisandro Quiroga
+10718919,97,Mo-Su,10718919,Ciudad del niño
+10718946,46,Mo-Su,10718946,Calle Serranía de Caíza
+10718967,28,Mo-Su,10718967,14 de Abril
+10719010,98,Mo-Su,10719010,Arrumani
+10719025,99,Mo-Su,10719025,Cerro San Miguel
+10719035,99,Mo-Su,10719035,Univalle
+10719095,99,Mo-Su,10719095,Cerro San Miguel
+10719128,99,Mo-Su,10719128,Gualberto Villaroel
+10720842,100,Mo-Su,10720842,Avenida Sexta
+10721050,100,Mo-Su,10721050,Calle José F. Guevara
+10721298,101,Mo-Su,10721298,Calle Ivan Bluske
+10721776,102,Mo-Su,10721776,Avenida República
+10721892,103,Mo-Su,10721892,Calle 12 de septiembre
+10722066,103,Mo-Su,10722066,Pacata Central
+10722104,104,Mo-Su,10722104,Avenida Pedro deToledo
+10722148,104,Mo-Su,10722148,Avenida Eliodoro Villazón
+10723654,105,Mo-Su,10723654,Calle Litoral
+10723671,105,Mo-Su,10723671,Avenida Blanco Galindo
+10724349,2,Mo-Su,10724349,Avenida Belzu
+10724411,106,Mo-Su,10724411,Calle Ignacio Warnes
+10724434,106,Mo-Su,10724434,Avenida Blanco Galindo
+10724599,107,Mo-Su,10724599,Calle Camiri
+10742265,107,Mo-Su,10742265,Avenida Blanco Galindo
+10742276,108,Mo-Su,10742276,Av. Blanco Galindo
+10742335,108,Mo-Su,10742335,Calle Camiri
+10742513,109,Mo-Su,10742513,Avenida Eliodoro Villazón
+10742585,109,Mo-Su,10742585,Calle Paucarpata
+10742625,109,Mo-Su,10742625,Avenida Eliodoro Villazón
+10744108,110,Mo-Su,10744108,Avenida Benjo Cruz
+10768014,111,Mo-Su,10768014,OTB 27 de Mayo
+10786869,89,Mo-Su,10786869,Avenida del Ruiseñor
+10786894,69,Mo-Su,10786894,Avenida Circunvalación
+10786928,112,Mo-Su,10786928,Calle Francis Peyton Rous
+10788634,113,Mo-Su,10788634,Avenida Blanco Galindo
+10788739,113,Mo-Su,10788739,Calle Litoral
+10789860,41,Mo-Su,10789860,Cruce Taquiña
+10795881,85,Mo-Su,10795881,Av. Panamericana
+10799951,28,Mo-Su,10799951,Calle Alipio Valencia Vega
+10807446,114,Mo-Su,10807446,Villa Coña Coña
+10813739,27,Mo-Su,10813739,Maica Sud
+11015397,102,Mo-Su,11015397,Univalle entrada
+11015473,75,Mo-Su,11015473,Calle 10
+11015478,8,Mo-Su,11015478,"Calle C. Serruto, Quillacollo"
+11096956,16,Mo-Su,11096956,Calle Pablo Jaimes
+11096957,16,Mo-Su,11096957,Av. Circuito Bolivia
+11103749,115,Mo-Su,11103749,Calle 2
+11104191,116,Mo-Su,11104191,Ticti Norte
+11104667,116,Mo-Su,11104667,Sumunpaya
+11105465,117,Mo-Su,11105465,Calle 16 de julio
+11105494,117,Mo-Su,11105494,Villa San Andres
+11105559,118,Mo-Su,11105559,Av. Sexta
+11105576,118,Mo-Su,11105576,Tajra
+11106317,119,Mo-Su,11106317,Calle Beni
+11106342,119,Mo-Su,11106342,Calle La Rioja
+11106937,12,Mo-Su,11106937,Villa Marquina
+11107825,1,Mo-Su,11107825,Avenida Thomas Bata
+11107845,1,Mo-Su,11107845,Calle Litoral
+11107858,1,Mo-Su,11107858,Villa Asunción
+11107907,1,Mo-Su,11107907,Calle Litoral
+11108080,6,Mo-Su,11108080,Calle Francisco Anaya
+11109737,6,Mo-Su,11109737,Avenida Manuel Isidoro Belzu
+11109791,105,Mo-Su,11109791,Calle 23 de marzo
+11109832,105,Mo-Su,11109832,Calle Litoral
+11109969,105,Mo-Su,11109969,Villa Urkupiña Calvario
+11110061,105,Mo-Su,11110061,Calle Litoral
+11110089,105,Mo-Su,11110089,Pandoja
+11110129,105,Mo-Su,11110129,Calle Litoral
+11110301,2,Mo-Su,11110301,Avenida Suarez Miranda
+11110740,2,Mo-Su,11110740,Calle Litoral
+11110748,2,Mo-Su,11110748,Calle Demetrio Canelas
+11110787,2,Mo-Su,11110787,Calle Litoral
+11110800,2,Mo-Su,11110800,Villa Urkupiña Calvario
+11110845,2,Mo-Su,11110845,Calle Litoral
+11111001,76,Mo-Su,11111001,Villa Urkupiña Calvario
+11111544,76,Mo-Su,11111544,Avenida Suarez Miranda
+11111558,76,Mo-Su,11111558,Calle Antofagasta
+11111697,76,Mo-Su,11111697,Entre Rios
+11111885,75,Mo-Su,11111885,Calle Santo Domingo
+11114966,75,Mo-Su,11114966,Avenida Gualberto Villarroel
+11115013,75,Mo-Su,11115013,Cota
+11115066,75,Mo-Su,11115066,Avenida Gualberto Villarroel
+11115157,75,Mo-Su,11115157,Avenida Ferrocarril
+11115218,75,Mo-Su,11115218,Avenida Gualberto Villarroel
+11115617,106,Mo-Su,11115617,Calle Severino Salvatierra
+11115682,106,Mo-Su,11115682,Calle Camiri
+11116618,106,Mo-Su,11116618,Payacollo
+11116658,106,Mo-Su,11116658,Calle Camiri
+11116667,106,Mo-Su,11116667,Suticollo
+11116706,106,Mo-Su,11116706,Calle Camiri
+11116711,106,Mo-Su,11116711,Quiros Rancho
+11116744,106,Mo-Su,11116744,Calle Camiri
+11116752,106,Mo-Su,11116752,Llave Grande
+11116758,106,Mo-Su,11116758,Calle Camiri
+11116767,106,Mo-Su,11116767,Comunidad Montecato
+11116770,106,Mo-Su,11116770,Calle Camiri
+11116822,8,Mo-Su,11116822,Calle Tupiyan
+11116951,73,Mo-Su,11116951,UE El Paso
+11118282,1,Mo-Su,11118282,Calle Francisco Anaya
+11118368,1,Mo-Su,11118368,Calle Litoral
+11118440,73,Mo-Su,11118440,República de Nicaragua
+11118511,8,Mo-Su,11118511,Calle Victor Paz Estenssoro
+11118564,8,Mo-Su,11118564,Illataco
+11118609,8,Mo-Su,11118609,Florida
+11118642,8,Mo-Su,11118642,Combuyo
+11118647,8,Mo-Su,11118647,Calle Victor Paz Estenssoro
+11118654,8,Mo-Su,11118654,Avenida Santa Cruz
+11121479,113,Mo-Su,11121479,Viloma
+11123095,113,Mo-Su,11123095,Calle Litoral
+11123109,113,Mo-Su,11123109,Mallco Chapi
+11123178,113,Mo-Su,11123178,Calle Litoral
+11123198,113,Mo-Su,11123198,Amiraya
+11123202,113,Mo-Su,11123202,Calle Litoral
+11123215,113,Mo-Su,11123215,Viloma Cala Cala
+11123230,113,Mo-Su,11123230,Calle Litoral
+11123257,113,Mo-Su,11123257,Siqui Siquia
+11123281,113,Mo-Su,11123281,Calle Litoral
+11124771,113,Mo-Su,11124771,Pirque
+11124782,113,Mo-Su,11124782,Vinto
+11126026,0,Mo-Su,11126026,Mallco Rancho
+11127257,0,Mo-Su,11127257,Calle Litoral
+11127304,0,Mo-Su,11127304,Mallco Chapi
+11127350,0,Mo-Su,11127350,Calle Litoral
+11127379,0,Mo-Su,11127379,Amiraya
+11127392,0,Mo-Su,11127392,Calle Litoral
+11127395,0,Mo-Su,11127395,Viloma Cala Cala
+11127419,0,Mo-Su,11127419,Calle Litoral
+11127460,0,Mo-Su,11127460,Siqui Siquia
+11127465,0,Mo-Su,11127465,Calle Litoral
+11129178,0,Mo-Su,11129178,Parotani
+11129182,0,Mo-Su,11129182,Vinto
+11129203,107,Mo-Su,11129203,Av. Santa Cruz
+11130832,107,Mo-Su,11130832,Litoral
+11131143,99,Mo-Su,11131143,Molle Nova
+11131214,99,Mo-Su,11131214,Cerro San Miguel
+11131445,35,Mo-Su,11131445,Santa Bárbara
+11132626,92,Mo-Su,11132626,El Abra
+11132650,92,Mo-Su,11132650,Calle Severo Fernandez A.
+11133890,50,Mo-Su,11133890,Calle La Cascada
+11134477,61,Mo-Su,11134477,Calle Manuel P. Laredo
+11137986,61,Mo-Su,11137986,Curubamba
+11138009,61,Mo-Su,11138009,Calle A. Moreno
+11138032,61,Mo-Su,11138032,Calle Bolívar
+11138764,61,Mo-Su,11138764,Calle Manuel P. Laredo
+11138791,61,Mo-Su,11138791,Avenida Tunel
+11140017,104,Mo-Su,11140017,Tutimayo
+11140123,104,Mo-Su,11140123,Avenida Pedro deToledo
+11140612,104,Mo-Su,11140612,Calle Colombia
+11140643,104,Mo-Su,11140643,Avenida Pedro deToledo
+11140668,104,Mo-Su,11140668,Molino Blanco
+11140677,104,Mo-Su,11140677,Avenida Pedro deToledo
+11142143,109,Mo-Su,11142143,Lava Lava Alta
+11142168,109,Mo-Su,11142168,Calle Pocona
+11142224,109,Mo-Su,11142224,Calle Pocona
+11142238,109,Mo-Su,11142238,Calle Bolívar
+11142249,109,Mo-Su,11142249,Calle Pocona
+11148102,99,Mo-Su,11148102,Cerro San Miguel
+11148108,99,Mo-Su,11148108,Apote
+11151933,85,Mo-Su,11151933,Calle Augusto Guzman
+11151958,85,Mo-Su,11151958,Río Seco
+15749345,70,Mo-Su,15749345,Calle Gran Chaco
+15749364,95,Mo-Su,15749364,Avenida Chilimarca
+16144238,61,Mo-Su,16144238,El Abra
+16147024,50,Mo-Su,16147024,Calle La Cascada
+16283966,61,Mo-Su,16283966,Calle Manuel P. Laredo
+16294397,50,Mo-Su,16294397,Hipódromo Sud
+16294410,50,Mo-Su,16294410,Calle La Cascada
+16306401,35,Mo-Su,16306401,Callajchullpa
+16306421,3,Mo-Su,16306421,Tupuraya
+16306422,3,Mo-Su,16306422,Calle Jose Martinez
+16603891,57,Mo-Su,16603891,Mineros San Juan
+16603902,57,Mo-Su,16603902,Mineros San Juan
+16769797,47,Mo-Su,16769797,Salomon Romero
+16769872,47,Mo-Su,16769872,Calle Honduras
+16774715,99,Mo-Su,16774715,Univalle
+16774734,99,Mo-Su,16774734,Tiquipaya
+16774771,99,Mo-Su,16774771,Cerro San Miguel
+16774784,99,Mo-Su,16774784,Cerro San Miguel
+16774789,99,Mo-Su,16774789,Collpapampa
+16774834,99,Mo-Su,16774834,Cerro San Miguel
+16774838,99,Mo-Su,16774838,Molinos
+16774848,99,Mo-Su,16774848,Salomon Romero
+16774849,99,Mo-Su,16774849,Cerro San Miguel
+16774852,99,Mo-Su,16774852,Villa Oruro
+16774853,99,Mo-Su,16774853,Cerro San Miguel
+16774859,99,Mo-Su,16774859,Barrio Flores
+16774860,99,Mo-Su,16774860,Cerro San Miguel
+16799911,99,Mo-Su,16799911,Kanarancho
+16799912,99,Mo-Su,16799912,Alto San Miguel
+16804729,99,Mo-Su,16804729,Chilimarca
+16804730,99,Mo-Su,16804730,Alto San Miguel
+16806297,120,Mo-Su,16806297,Villa Esperanza
+16806298,120,Mo-Su,16806298,Villa Esperanza
+16806299,120,Mo-Su,16806299,Salomon Romero
+16806300,120,Mo-Su,16806300,Molinos
+16806919,57,Mo-Su,16806919,Tirani
+16806920,57,Mo-Su,16806920,Ticti Norte
+17193323,121,Mo-Su,17193323,Calle Cochabamba
+17290564,122,Mo-Su,17290564,
+17290615,123,Mo-Su,17290615,Calle La Cascada
+17291147,121,Mo-Su,17291147,Calle Cleomedes

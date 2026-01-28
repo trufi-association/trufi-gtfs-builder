@@ -1,124 +1,125 @@
 route_id,agency_id,route_short_name,route_long_name,route_color,route_type
-260,0,260,MiniBus 260: Avenida Blanco Galindo → Calle Litoral,,3
-201,1,201,MiniBus 201: Plaza Bolivar → Calle Litoral,,3
-270,0,270,MiniBus 270: Calle Jose Martinez → Avenida Blanco Galindo,,3
-B,2,B,MicroBus B: Las Buganvillas → Aeropuerto → Pasaje F,,3
-A,2,A,MicroBus A: Villa Israel → Río Taquiña,,3
-203,1,203,MicroBus 203: Avenida Belzu → Plaza Hernando Siles,,3
-C,3,C,MicroBus C: Avenida Pedro de la Gasca → Calle Manuel Carrasco Jimenez,,3
-211,4,211,"MiniBus 211: Calle C. Serruto, Quillacollo → Parque Ecoturístico Pairumani",,3
-290,5,290,Trufi 290: Avenida Blanco Galindo → Chilimarca,,3
-LL,2,LL,MicroBus LL: La Concordia → Charles Darwin,,3
-H,3,H,MicroBus H: Avenida Chapare → Avenida Río Parapeti,,3
-106,6,106,Trufi 106: Ayacucho → Plaza Principal El Paso,,3
-J,3,J,MicroBus J: Calle Gran Chaco → Avenida Chiquicollo,,3
-16,7,16,MiniBus 16: Avenida Silala → OTB Ecológica,,3
-1,7,1,MiniBus 1: Avenida Humberto Asin → Calle Ciudad del niño,,3
-136,8,136,Trufi 136: Avenida Segunda → Villa San Andres,,3
-102,9,102,Trufi 102: Calle María Luisa Pacheco → Tamborada B,,3
-101,10,101,Trufi 101: Río Taquiña → Avenida Río Caine,,3
-104,11,104,Trufi 104: 1ro de Mayo → Villa San Miguel,,3
-107,12,107,Trufi 107: Calle Yanacuna → Maica Quenamari,,3
-109,13,109,Trufi 109: Calle Abelia → Torrentera Pajcha,,3
-121,9,121,Trufi 121: Calle Juan Aldon → Calle Sora Sora,,3
-M,14,M,Bus M: Jose Curtinas → Pozo Petrolero Buena Vista,,3
-11,15,11,Bus 11: Los Ceibos → Viena,,3
-11,9,11,MiniBus 11: Calle Viena → Los Ceibos,,3
-232,16,232,MiniBus 232: Calle Isla del Sol → Avenida Eliodoro Villazón,,3
-240,17,240,MiniBus 240: Calle Trojes → Plaza de Sacaba,,3
-230,18,230,Trufi 230: Plaza de Sacaba → Calle Grover Suarez,,3
-250,19,250,MicroBus 250: Ernesto Céspedes → Guillermo Martinez,,3
-252,20,252,Trufi 252: Litoral → Carlos Blanco Galindo,,3
-200,1,200,MicroBus 200: Calle Litoral → Avenida Blanco Galindo,,3
-118,21,118,MiniBus 118: Calle Tupac Katari → Chilimarca,,3
-116,22,116,Trufi 116: Torrentera Logustani → Alto Buena Vista,,3
-Y,3,Y,MicroBus Y: Avenida Melchor Pérez de Olguín → Achumani,,3
-Taquiña,23,Taquiña,Trufi Taquiña: Cruce Taquiña → Planta Taquiña,,3
-113,24,113,Trufi 113: Puente Khora → La Serena Calicanto,,3
-03,7,03,Trufi 03: Calle Curupau → Calle Luis Zegarra,,3
-45,9,45,MiniBus 45: Calle Serranía de Caíza → Torrentera Arocagua Mayu,,3
-3V,3,3V,MicroBus 3V: Río Taquiña → Calle Tómas Gamboa,,3
-112,25,112,Trufi 112: Calle Volcán Tolima → Calle Francisco de Goya,,3
-212,16,212,Trufi 212: Molino Blanco → Hipódromo Sud,,3
-134,25,134,Trufi 134: Calle Antofagasta → Avenida Chiquicollo,,3
-135,12,135,Trufi 135: Calle Los Olivos → Villa Israel,,3
-311,26,311,Trufi 311: Calle Canichana → Pampita Mejillones,,3
-119,27,119,Trufi 119: Villa Taquiña → Loma Pampa,,3
-123,10,123,Trufi 123: Mineros San Juan → Calle Wawaki,,3
-012,28,012,Trufi 012: Calle Grover Suarez → Nueva Jerusalén,,3
-115,22,115,Trufi 115: Sindicato Agrario Taquiña → Avenida Inca Camacho,,3
-160,29,160,MiniBus 160: Calle T. Achu → Rocas Blancas,,3
-233,17,233,MiniBus 233: Calle Nicolás Maldonado → Calle Manuel P. Laredo,,3
-220,16,220,"MicroBus 220: Junín, Sacaba → Calle Eric Asplund",,3
-125,30,125,Trufi 125: Calle R. Levano → Calle Canasita,,3
-131,31,131,Trufi 131: Calle La Rioja → Calle Lucia Alcocer,,3
-19,32,19,MiniBus 19: Calle Pascual Canaviri → Calle 7,,3
-2,9,2,MiniBus 2: Calle Las Begonias → Calle Capitán Luis Garcia,,3
-20,33,20,MiniBus 20: Calle Provincia Barron → Dora Halkier,,3
-130,34,130,Trufi 130: Centenario → Aeropuerto → Centenario,,3
-202,1,202,MiniBus 202: Plaza Bolívar → Calle Villamontes,,3
-P,35,P,Trufi P: Calle Gran Chaco → Puente Quinamari,,3
-110,15,110,Trufi 110: Kawsay T'anta → Portugal,,3
-110,9,110,Trufi 110: Calle Wanka → Calle Francia,,3
-111,36,111,Trufi 111: Calle Albert Einstein → Villa Israel,,3
-111,37,111,Trufi 111: Albert Einstein → Sivingani,,3
-212,38,212,MiniBus 212: Avenida Circunvalación → Calle La Cascada,,3
-211,5,211,MiniBus 211: Plaza Bolívar → Calle Achachairú,,3
-209,4,209,MiniBus 209: Héroes de Boquerón → Hospital Esperanza,,3
-209,5,209,MiniBus 209: Avenida Blanco Galindo → Calle Héroes de Boquerón,,3
-206,11,206,MiniBus 206: Calle Litoral → Plaza Bolívar,,3
-46,9,46,MiniBus 46: Calle Antolín Salinas → Santo Domingo,,3
-8,7,8,MiniBus 8: El Abra → Lomas de Santa Bárbara,,3
-9,9,9,MiniBus 9: San Marcos → Calle María Nuñez del Prado,,3
-Z14,39,Z14,MiniBus Z14: Raúl Rivero Torrez → Caico Alto,,3
-15,39,15,Bus 15: Torrentera Pajcha → Alto Valle Hermoso 5 de Octubre,,3
-103,12,103,Trufi 103: Calle Alfredo Guillén → Tamborada B,,3
-5,7,5,MiniBus 5: Segunda Circunvalación → Ch'aska Rumi,,3
-108,40,108,Trufi 108: Avenida República → Calle Provincia Guarayos,,3
-132,31,132,Trufi 132: Torrentera Arocagua Mayu → Avenida Autonomía,,3
-31,12,31,MiniBus 31: Oncológico → 1 de Mayo Tamborada,,3
-35,9,35,MiniBus 35: Calle Ricardo Mujia → Calle Pueblo de Machaca,,3
-N,17,N,MicroBus N: Calle Severo Fernandez A. → Avenida Eliodoro Villazón,,3
-O,41,O,MicroBus O: Sau Sau Loma → Segunda Circunvalación,,3
-U,2,U,MicroBus U: Segunda Circunvalación → Federico Jiménez,,3
-13,7,13,MiniBus 13: Avenida Chilimarca → Villa San Miguel,,3
-36,7,36,MiniBus 36: Calle T'ikallajta → Calle Lisandro Quiroga,,3
-40,32,40,MiniBus 40: Buena Vista → Ciudad del niño,,3
-45,15,45,MiniBus 45: Torrentera Arocagua Mayu → Calle Serranía de Caíza,,3
-52,42,52,MiniBus 52: Arrumani → Arrumani,,3
-120,43,120,Trufi 120: Univalle → Cerro San Miguel,,3
-138,40,138,Trufi 138: Calle Vitichi → Calle Ivan Bluske,,3
-150,44,150,Trufi 150: Univalle entrada → Avenida República,,3
-217,45,217,MiniBus 217: Pacata Central → Calle 12 de septiembre,,3
-241,17,241,MiniBus 241: Avenida Eliodoro Villazón → Avenida Pedro deToledo,,3
-204,11,204,MiniBus 204: Plaza Bolívar → Calle Litoral,,3
-208,5,208,MiniBus 208: Avenida Blanco Galindo → Calle Ignacio Warnes,,3
-265,46,265,MiniBus 265: Avenida Blanco Galindo → Calle Camiri,,3
-27,39,27,Mini 27: Bella Vista → Francis Peyton Rous,,3
-261,47,261,MiniBus 261: Calle Camiri → Avenida Blanco Galindo,,3
-244,38,244,MiniBus 244: Calle Paucarpata → Avenida Eliodoro Villazón,,3
-242,17,242,MiniBus 242: Calle Trojes → Avenida Eliodoro Villazón,,3
-18,33,18,MiniBus 18: Avenida Uncia → Avenida Benjo Cruz,,3
-43,7,43,MiniBus 43: Avenida Humberto Asín Rivero → OTB 27 de Mayo,,3
-I,3,I,MicroBus I: Calle La Rioja → Avenida Circunvalación Beijing,,3
-3,15,3,Bus 3: Valeriana → Francis Peyton Rous,,3
-245,0,245,MiniBus 245: Calle Litoral → Avenida Blanco Galindo,,3
-150,48,150,Trufi 150: Avenida República → Univalle entrada,,3
-106,49,106,Trufi 106: Avenida Circuito Bolivia → Calle Pablo Jaimes,,3
-106,50,106,Trufi 106: Calle Pablo Jaimes → Calle M. Cossio,,3
-F,3,F,Microbus F: La Maica Chica → Calle 2,,3
-39,7,39,MicroBus 39: Tajra → Avenida Sexta,,3
-50,24,50,MiniBus 50: Calle La Rioja → Calle Beni,,3
-137,51,137,Trufi 137: Alonso Yañez Mendoza → Félix Capriles,,3
-203,52,203,MiniBus 203: Avenida Manuel Isidoro Belzu → Illataco,,3
-210,53,210,MiniBus 210: República de Nicaragua → El Paso,,3
-201,52,201,MiniBus 201: Illataco → 9 de Abril,,3
-245,54,245,MiniBus 245: Vinto → Pirque,,3
-260,54,260,"MiniBus 260: Calle Litoral, Cochabamba → Mallco Rancho, Sipe Sipe",,3
-233,55,233,MiniBus 233: Calle Manuel P. Laredo → Avenida Tunel,,3
-244,16,244,Bus 244: Pocona → Lava Lava Alta,,3
-P,56,P,Trufi P: Puente Quenamari → Calle Gran Chaco,,3
-127,43,127,Trufi 127: Salomon Romero → Villa Esperanza,,3
-25,57,25,25: Calle Cleomedes → Calle Cochabamba,,3
-80,57,80,80: →,,3
-150,57,150,Bus 150: Aroma → La Cascada,,3
+0,0,260,260,,3
+1,1,201,201,,3
+2,2,205,205,,3
+3,0,270,270,,3
+4,3,B,B,,3
+5,3,A,A,,3
+6,1,203,203,,3
+7,3,C,C,,3
+8,4,211,211,,3
+9,3,E,E,,3
+10,4,290,290,,3
+11,3,LL,LL,,3
+12,2,W,W,,3
+13,3,G,G,,3
+14,3,H,H,,3
+15,1,Q,Q,,3
+16,5,106,106,,3
+17,6,Teleférico,Teleférico,ffff00,3
+18,3,J,J,,3
+19,7,16,16,,3
+20,8,R,R,,3
+21,7,1,1,,3
+22,8,136,136,,3
+23,9,102,102,,3
+24,10,1001,1001,,3
+25,10,101,101,,3
+26,2,104,104,,3
+27,11,107,107,,3
+28,12,109,109,,3
+29,9,121,121,,3
+30,13,M,M,,3
+31,9,11,11,,3
+32,14,232,232,,3
+33,15,240,240,,3
+34,15,230,230,,3
+35,16,250,250,,3
+36,2,252,252,,3
+37,1,200,200,,3
+38,17,118,118,,3
+39,18,116,116,,3
+40,3,Y,Y,,3
+41,19,Taquiña,Taquiña,,3
+42,20,113,113,,3
+43,21,01,01,,3
+44,7,03,03,,3
+45,22,010,010,,3
+46,9,45,45,,3
+47,16,16,16,,3
+48,3,3V,3V,,3
+49,22,112,112,,3
+50,14,212,212,,3
+51,23,114,114,,3
+52,3,122,122,,3
+53,22,134,134,,3
+54,11,135,135,,3
+55,24,311,311,,3
+56,25,119,119,,3
+57,10,123,123,,3
+58,26,012,012,,3
+59,18,115,115,,3
+60,3,160,160,,3
+61,15,233,233,,3
+62,14,220,220,,3
+63,11,125,125,,3
+64,27,131,131,,3
+65,28,19,19,,3
+66,23,20,20,,3
+67,22,130,130,,3
+68,1,202,202,,3
+69,3,I,I,,3
+70,8,P,P,,3
+71,9,110,110,,3
+72,29,111,111,,3
+73,30,210,210,,3
+74,4,209,209,,3
+75,31,207,207,,3
+76,2,206,206,,3
+77,9,46,46,,3
+78,32,51,51,,3
+79,3,X10,X10,,3
+80,3,S,S,,3
+81,7,8,8,,3
+82,9,9,9,,3
+83,7,14,14,,3
+84,7,15,15,,3
+85,11,103,103,,3
+86,7,5,5,,3
+87,33,108,108,,3
+88,27,132,132,,3
+89,3,K,K,,3
+90,11,31,31,,3
+91,9,35,35,,3
+92,15,N,N,,3
+93,26,O,O,,3
+94,3,U,U,,3
+95,7,13,13,,3
+96,7,36,36,,3
+97,28,40,40,,3
+98,23,52,52,,3
+99,16,120,120,,3
+100,34,133,133,,3
+101,33,138,138,,3
+102,35,150,150,,3
+103,31,217,217,,3
+104,15,241,241,,3
+105,2,204,204,,3
+106,4,208,208,,3
+107,36,265,265,,3
+108,37,261,261,,3
+109,14,244,244,,3
+110,23,18,18,,3
+111,7,43,43,,3
+112,9,3,3,,3
+113,0,245,245,,3
+114,8,T,T,,3
+115,3,F,F,,3
+116,3,L,L,,3
+117,33,148,148,,3
+118,7,39,39,,3
+119,20,50,50,,3
+120,16,127,127,,3
+121,6,25,25,,3
+122,6,80,80,,3
+123,6,150,150,,3
