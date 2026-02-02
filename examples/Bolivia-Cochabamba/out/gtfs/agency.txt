@@ -9,31 +9,32 @@ agency_id,agency_name,agency_timezone,agency_url
 7,Sindicato mixto de transporte público 6 de mayo,America/La_Paz,https://www.cochabamba.bo/
 8,Sindicato mixto de transporte Sebastian Pagador,America/La_Paz,https://www.cochabamba.bo/
 9,Sindicato de taxis y trufis 14 de septiembre,America/La_Paz,https://www.cochabamba.bo/
-10,Sindicato mixto de transportistas 21 de julio,America/La_Paz,https://www.cochabamba.bo/
-11,Sindicato mixto de transporte Bolivia,America/La_Paz,https://www.cochabamba.bo/
-12,Asociación de taxis y trufis Cosmos,America/La_Paz,https://www.cochabamba.bo/
-13,Sindicato mixto de transportistas Avaroa,America/La_Paz,https://www.cochabamba.bo/
-14,Sindicato mixto de transportistas Santa Rosa de Lima,America/La_Paz,https://www.cochabamba.bo/
-15,Sindicato mixto de autotransporte Sacaba,America/La_Paz,https://www.cochabamba.bo/
-16,Sindicato mixto de transportistas Tiquipaya,America/La_Paz,https://www.cochabamba.bo/
-17,Asociación mixta de transporte y servicios Chilimarca,America/La_Paz,https://www.cochabamba.bo/
-18,Asociación de transporte mixto Renacer,America/La_Paz,https://www.cochabamba.bo/
-19,Taquiña,America/La_Paz,https://www.cochabamba.bo/
-20,Sindicato mixto de transporte 12 de octubre,America/La_Paz,https://www.cochabamba.bo/
-21,Asociación de transporte y servicio Luz Urkupiña,America/La_Paz,https://www.cochabamba.bo/
-22,Sindicato de taxi trufis 30 de noviembre,America/La_Paz,https://www.cochabamba.bo/
-23,Sindicato mixto de transporte Santa Veracruz,America/La_Paz,https://www.cochabamba.bo/
-24,Sindicato Pucara Grande,America/La_Paz,https://www.cochabamba.bo/
-25,Asociación de autotransporte Uspa Uspa,America/La_Paz,https://www.cochabamba.bo/
-26,Sindicato mixto de transporte Trópico,America/La_Paz,https://www.cochabamba.bo/
-27,Asociación de taxi trufis San Miguel,America/La_Paz,https://www.cochabamba.bo/
-28,Sindicato mixto de transportistas 16 de noviembre,America/La_Paz,https://www.cochabamba.bo/
-29,Asociación de taxis y trufis Pucara,America/La_Paz,https://www.cochabamba.bo/
-30,Sindicato Señor de Buen Viaje El Paso,America/La_Paz,https://www.cochabamba.bo/
-31,Sindicato de trufibuses 15 de agosto,America/La_Paz,https://www.cochabamba.bo/
-32,Sindicato mixto de transportistas Nuestra Señora del Carmen,America/La_Paz,https://www.cochabamba.bo/
-33,Asociación de transporte libre mixto Oruro,America/La_Paz,https://www.cochabamba.bo/
+10,Asociación de transporte libre mixto Oruro,America/La_Paz,https://www.cochabamba.bo/
+11,Sindicato mixto de transportistas 21 de julio,America/La_Paz,https://www.cochabamba.bo/
+12,Sindicato mixto de transporte Bolivia,America/La_Paz,https://www.cochabamba.bo/
+13,Asociación de taxis y trufis Cosmos,America/La_Paz,https://www.cochabamba.bo/
+14,Sindicato mixto de transportistas Avaroa,America/La_Paz,https://www.cochabamba.bo/
+15,Sindicato mixto de transportistas Santa Rosa de Lima,America/La_Paz,https://www.cochabamba.bo/
+16,Sindicato mixto de autotransporte Sacaba,America/La_Paz,https://www.cochabamba.bo/
+17,Sindicato mixto de transportistas Tiquipaya,America/La_Paz,https://www.cochabamba.bo/
+18,Asociación mixta de transporte y servicios Chilimarca,America/La_Paz,https://www.cochabamba.bo/
+19,Asociación de transporte mixto Renacer,America/La_Paz,https://www.cochabamba.bo/
+20,Taquiña,America/La_Paz,https://www.cochabamba.bo/
+21,Sindicato mixto de transporte 12 de octubre,America/La_Paz,https://www.cochabamba.bo/
+22,Asociación de transporte y servicio Luz Urkupiña,America/La_Paz,https://www.cochabamba.bo/
+23,Sindicato de taxi trufis 30 de noviembre,America/La_Paz,https://www.cochabamba.bo/
+24,Sindicato mixto de transporte Santa Veracruz,America/La_Paz,https://www.cochabamba.bo/
+25,Sindicato Pucara Grande,America/La_Paz,https://www.cochabamba.bo/
+26,Asociación de autotransporte Uspa Uspa,America/La_Paz,https://www.cochabamba.bo/
+27,Sindicato mixto de transporte Trópico,America/La_Paz,https://www.cochabamba.bo/
+28,Asociación de taxi trufis San Miguel,America/La_Paz,https://www.cochabamba.bo/
+29,Sindicato mixto de transportistas 16 de noviembre,America/La_Paz,https://www.cochabamba.bo/
+30,Asociación de taxis y trufis Pucara,America/La_Paz,https://www.cochabamba.bo/
+31,Sindicato Señor de Buen Viaje El Paso,America/La_Paz,https://www.cochabamba.bo/
+32,Sindicato de trufibuses 15 de agosto,America/La_Paz,https://www.cochabamba.bo/
+33,Sindicato mixto de transportistas Nuestra Señora del Carmen,America/La_Paz,https://www.cochabamba.bo/
 34,Asociación de taxi trufis 10 de diciembre,America/La_Paz,https://www.cochabamba.bo/
 35,Sindicato de taxi trufis 15 de abril,America/La_Paz,https://www.cochabamba.bo/
 36,Sindicato mixto de trufibuses 3 de noviembre,America/La_Paz,https://www.cochabamba.bo/
 37,Sindicato mixto de autotransporte Cantón Itapaya,America/La_Paz,https://www.cochabamba.bo/
+38,Asociación de taxis y trufis ATI,America/La_Paz,https://www.cochabamba.bo/
