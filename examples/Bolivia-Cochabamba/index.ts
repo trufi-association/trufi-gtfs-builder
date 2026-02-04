@@ -71,7 +71,7 @@ async function main() {
         stopNameBuilder: (stops) => {
           if (!stops || stops.length === 0) {
             stops = ['Innominada'];
-          }
+          } 
           return stops.join(' y ');
         },
       },

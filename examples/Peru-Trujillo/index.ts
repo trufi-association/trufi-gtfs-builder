@@ -6,6 +6,7 @@
 
 import { osmToGtfs, OSMPBFReader, loadCustomStops } from '../../src';
 import type { CustomStop } from '../../src/types';
+import { printPM89Debug } from '../../src/utils/spatialMatcher';
 import * as path from 'path';
 import * as fs from 'fs';
 
@@ -118,6 +119,9 @@ async function main() {
           // skipRoute returns true to INCLUDE the route, false to SKIP it
           // We want to process routes WITH hash tag
           const hasHash = route.tags && route.tags.hash !== undefined;
+          if (!hasHash) {
+            console.log(`Skipping route without hash: ${route.id} - ref: ${route.tags?.ref || 'no-ref'} - name: ${route.tags?.name || 'unnamed'}`);
+          }
           return hasHash; // Return true when hash exists to process the route
         },
       },
@@ -154,7 +158,7 @@ async function main() {
           ? {
             mode: 'customStops', // Use ONLY custom stops from GeoJSON
             stops: customStops,
-            maxMatchDistance: 20, // Max distance from route point to custom stop (meters)
+            maxMatchDistance: 50, // Max distance from route point to custom stop (meters)
             minDistanceBetweenStops: 0, // Min distance between consecutive stops (meters)
             fallbackBehavior: 'warning',
             rightSideOnly: true
@@ -165,6 +169,9 @@ async function main() {
 
     console.log('\n✅ GTFS generation completed successfully!');
     console.log(`📁 Output files are in: ${path.join(__dirname, 'out')}`);
+
+    // Debug: print PM89 distance info
+    printPM89Debug();
   } catch (error) {
     console.error('❌ Error generating GTFS:', error);
     process.exit(1);

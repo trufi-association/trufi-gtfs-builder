@@ -479,8 +479,16 @@ export function stopsBuilder(
           const customStop = match.stop;
           const numericStopId = stopIdToNumber(customStop.stop_id);
 
+          // Debug log for PM89
+          if (customStop.stop_id === 'PM89') {
+            console.log(`[DEBUG PM89] Found match for route ${routeFeature.properties.ref || routeFeature.properties.id}, distance: ${match.distanceMeters.toFixed(2)}m`);
+          }
+
           // Skip if this is the same stop as the last one (avoid consecutive duplicates)
           if (lastStopId === customStop.stop_id) {
+            if (customStop.stop_id === 'PM89') {
+              console.log(`[DEBUG PM89] Skipped: same as last stop`);
+            }
             continue;
           }
 
@@ -496,6 +504,9 @@ export function stopsBuilder(
 
             if (!isPointOnRightSide(lineStart, lineEnd, stopPoint)) {
               // Stop is on the left side, skip it
+              if (customStop.stop_id === 'PM89') {
+                console.log(`[DEBUG PM89] Skipped: on left side of route ${routeFeature.properties.ref || routeFeature.properties.id}`);
+              }
               continue;
             }
           }
@@ -521,11 +532,17 @@ export function stopsBuilder(
               stop_lat: customStop.stop_lat,
               stop_lon: customStop.stop_lon,
             });
+            if (customStop.stop_id === 'PM89') {
+              console.log(`[DEBUG PM89] Added to global stops list`);
+            }
           }
 
           // Use custom stop for this route point
           filteredStops.nodes.push(numericStopId);
           filteredStops.coordinates.push([customStop.stop_lon, customStop.stop_lat] as GeoJSONCoordinate);
+          if (customStop.stop_id === 'PM89') {
+            console.log(`[DEBUG PM89] Included in route ${routeFeature.properties.ref || routeFeature.properties.id}`);
+          }
 
           // Update last stop tracking
           lastStopId = customStop.stop_id;
