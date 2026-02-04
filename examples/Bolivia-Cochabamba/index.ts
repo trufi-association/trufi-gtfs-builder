@@ -51,7 +51,7 @@ async function main() {
       },
       geojsonOptions: {
         osmDataGetter: getOsmDataGetter(),
-        transformTypes: ['bus', 'share_taxi', 'minibus'],
+        transformTypes: ['bus', 'share_taxi', 'minibus','aerialway','light_rail'],
         skipRoute: (route) => {
           // Skip specific problematic routes
           return ![2084702,16533147, 17193322, 16648003,17193322].includes(route.id);
@@ -66,7 +66,7 @@ async function main() {
         skipStopsWithinDistance: 100, // 100 meters between stops
         fakeStops: (routeFeature) => {
           // Some routes need fake stops generated
-          return [9083839, 14576927, 9074378, 14576926].includes(routeFeature.properties.id);
+          return [11678428,19604339,9083839,14576927,9074378,14576926,6925236,,6925237].includes(routeFeature.properties.id);
         },
         stopNameBuilder: (stops) => {
           if (!stops || stops.length === 0) {
