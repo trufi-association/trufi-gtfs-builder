@@ -138,12 +138,12 @@ stop_id,stop_name,stop_lat,stop_lon
 10672725626,Calle 23 de Enero,-17.3752822,-66.1883256
 809705416,Calle 23 de Enero,-17.3753168,-66.1881537
 10672725620,Calle 23 de Enero,-17.3753534,-66.187968
+13520261323,Calle 23 de Enero,-17.3754287,-66.1875858
 698492251,Calle 23 de Enero y Avenida Thunupa,-17.3754454,-66.1875011
-10672725615,Avenida Thunupa,-17.3753984,-66.1874901
+10672725615,Avenida Thunupa,-17.375363,-66.1874817
 10672725616,Avenida Thunupa,-17.3749779,-66.1873911
 809705550,Avenida Thunupa y Calle Arawaqui,-17.374906,-66.1873742
-10672282923,Avenida Thunupa,-17.3747885,-66.1873472
-682384953,Avenida Thunupa y Calle Yuracaré,-17.3741084,-66.1871916
+682384953,Avenida Thunupa y Calle Yuracaré,-17.3741609,-66.187205
 2938510370,Avenida Thunupa,-17.3740699,-66.187184
 10672282909,Avenida Thunupa,-17.3739028,-66.187147
 10672282932,Avenida Thunupa,-17.3736597,-66.1870932
@@ -153,9 +153,9 @@ stop_id,stop_name,stop_lat,stop_lon
 2938510369,Avenida Thunupa,-17.3731043,-66.1873612
 809705205,Avenida Thunupa y Calle Movima,-17.3728838,-66.1874811
 809705449,Avenida Thunupa,-17.3725207,-66.1876934
-2938510368,Avenida Thunupa,-17.3722591,-66.1878383
-2938510364,Avenida Thunupa,-17.3716672,-66.188164
-809705601,Avenida Thunupa,-17.3714613,-66.188278
+2938510368,Avenida Thunupa,-17.3721866,-66.1878813
+2938510364,Avenida Thunupa,-17.3716029,-66.1882027
+809705601,Avenida Thunupa,-17.3715585,-66.1882264
 682384955,Avenida Thunupa y Avenida América,-17.370924,-66.1885727
 721099133,Avenida América,-17.3710136,-66.1870037
 721099137,Avenida América y Calle Azanaque,-17.3711046,-66.1855896
@@ -318,7 +318,6 @@ stop_id,stop_name,stop_lat,stop_lon
 5078180976,Avenida América,-17.3735773,-66.1466264
 676069648,Avenida América y Calle Antonio Quijarro,-17.3736203,-66.1459978
 2126674108,Avenida América y Calle Antonio Quijarro,-17.3736295,-66.1458624
-11800562075,Avenida América,-17.3736332,-66.1458043
 8369697992,Avenida América,-17.3736551,-66.1454594
 11080188254,Avenida América,-17.3736728,-66.1451928
 4139785893,Avenida América,-17.3737103,-66.144613
@@ -1112,16 +1111,14 @@ stop_id,stop_name,stop_lat,stop_lon
 315114806,Avenida Heroínas de la Coronilla y Avenida Rafael Urquidi,-17.3938251,-66.1661971
 315936458,Avenida Heroínas de la Coronilla,-17.3938288,-66.1664389
 315936460,Avenida Heroínas de la Coronilla,-17.3938412,-66.1666104
-2330755896,Avenida Heroínas de la Coronilla y Avenida Rafael Urquidi,-17.3939009,-66.1667913
-2330755900,Avenida Heroínas de la Coronilla,-17.3939156,-66.1668416
+2330755896,Avenida Heroínas de la Coronilla y Avenida Rafael Urquidi,-17.3938867,-66.1667802
 315936461,Avenida Heroínas de la Coronilla y Puente 14 de Enero,-17.3939373,-66.1669374
 11079352070,Puente 14 de Enero y Avenida Carlos Blanco Galindo,-17.3939756,-66.1673519
-7353579718,Avenida Carlos Blanco Galindo,-17.3939742,-66.1673761
-2420519732,Avenida Carlos Blanco Galindo,-17.3939736,-66.1674457
+7353579718,Avenida Carlos Blanco Galindo y Avenida Humboldt,-17.3939742,-66.1673761
+2420519732,Avenida Carlos Blanco Galindo,-17.3939739,-66.167449
 4732874465,Avenida Carlos Blanco Galindo,-17.3939554,-66.1675661
-2420519688,Avenida Carlos Blanco Galindo,-17.3939452,-66.1676415
-9081829378,Avenida Carlos Blanco Galindo,-17.3939163,-66.1677971
-497205202,Avenida Carlos Blanco Galindo,-17.3939109,-66.1678276
+9081829378,Avenida Carlos Blanco Galindo,-17.3939161,-66.1677971
+497205202,Avenida Carlos Blanco Galindo y Avenida Humboldt,-17.3939109,-66.1678276
 8320364713,Avenida Carlos Blanco Galindo,-17.3939053,-66.16786
 12088438232,Avenida Carlos Blanco Galindo,-17.3938847,-66.167994
 2420519599,Avenida Carlos Blanco Galindo,-17.3938779,-66.1680638
@@ -1473,7 +1470,6 @@ stop_id,stop_name,stop_lat,stop_lon
 4139785892,Avenida América,-17.3736146,-66.1446097
 9581425537,Avenida América,-17.3735474,-66.1456453
 808031551,Avenida América y Calle Antonio Quijarro,-17.3735342,-66.1458534
-11800461549,Avenida América,-17.3735302,-66.1459105
 5078180975,Avenida América,-17.3734812,-66.1466176
 808031568,Avenida América,-17.3734727,-66.1467391
 9102939275,Avenida América,-17.3734617,-66.1468978
@@ -1622,6 +1618,7 @@ stop_id,stop_name,stop_lat,stop_lon
 9793371517,Avenida América,-17.3708491,-66.1880906
 9793357810,Avenida América,-17.3708213,-66.1884785
 721099114,Avenida América y Avenida Thunupa,-17.3708157,-66.1885606
+13520261324,Avenida Thunupa,-17.3755013,-66.1875135
 682384952,Avenida Thunupa,-17.3773594,-66.1879265
 809705455,Avenida Thunupa y Calle Apurimak,-17.3780845,-66.1880908
 698492234,Avenida Thunupa y Calle Apurimak y Calle Chimané,-17.3782472,-66.1881294
@@ -3606,7 +3603,7 @@ stop_id,stop_name,stop_lat,stop_lon
 9873615236,Avenida Perú,-17.3895745,-66.1705942
 9222357059,Avenida Perú,-17.3899538,-66.170602
 6175794740,Avenida Perú,-17.3900058,-66.1706029
-3729619524,Avenida Perú y Calle Francisco de Toledo,-17.3900614,-66.1706042
+3729619524,Avenida Perú y Calle Virrey Francisco de Toledo,-17.3900614,-66.1706042
 9222357024,Avenida Perú,-17.3901173,-66.1706053
 9873615234,Avenida Perú,-17.3906075,-66.1706154
 563279659,Avenida Perú,-17.3906646,-66.1706166
@@ -4106,9 +4103,9 @@ stop_id,stop_name,stop_lat,stop_lon
 3250373526,Avenida Perú,-17.391238,-66.1705588
 6175794743,Avenida Perú,-17.3906677,-66.1705447
 9873615235,Avenida Perú,-17.3906076,-66.1705431
-2160380412,Avenida Perú y Calle Francisco de Toledo,-17.3901988,-66.1705323
+2160380412,Avenida Perú y Calle Virrey Francisco de Toledo,-17.3901988,-66.1705323
 9222357025,Avenida Perú,-17.3901167,-66.1705302
-1724956661,Avenida Perú y Calle Francisco de Toledo,-17.3900595,-66.1705286
+1724956661,Avenida Perú y Calle Virrey Francisco de Toledo,-17.3900595,-66.1705286
 6175794739,Avenida Perú,-17.3900087,-66.170527
 9873615237,Avenida Perú,-17.3895788,-66.1705159
 8319877518,Avenida Perú,-17.3895295,-66.1705146
@@ -4576,10 +4573,9 @@ stop_id,stop_name,stop_lat,stop_lon
 800044036,Avenida Carlos Blanco Galindo,-17.3941568,-66.1683519
 12088438231,Avenida Carlos Blanco Galindo,-17.3941641,-66.1680676
 315934179,Avenida Carlos Blanco Galindo,-17.3941685,-66.1679544
-9081829379,Avenida Carlos Blanco Galindo,-17.3941573,-66.1678045
-2420519775,Avenida Carlos Blanco Galindo,-17.394146,-66.1677095
+9081829379,Avenida Carlos Blanco Galindo,-17.3941549,-66.1678047
 4732874466,Avenida Carlos Blanco Galindo,-17.3941365,-66.1676034
-2420519774,Avenida Carlos Blanco Galindo,-17.3941222,-66.1674729
+2420519774,Avenida Carlos Blanco Galindo,-17.3941219,-66.1674792
 11079352071,Avenida Carlos Blanco Galindo,-17.3941166,-66.167405
 315942232,Avenida Carlos Blanco Galindo y Puente 14 de Enero,-17.394114,-66.1673762
 648570956,Puente 14 de Enero y Avenida Heroínas de la Coronilla,-17.3940655,-66.1669627
@@ -5546,27 +5542,27 @@ stop_id,stop_name,stop_lat,stop_lon
 12098045807,Calle José de la Reza,-17.387904,-66.1631828
 2312521516,Calle José de la Reza,-17.3879975,-66.1637337
 9163629267,Calle José de la Reza,-17.3879902,-66.1637673
-1636978129,Calle José de la Reza,-17.3879805,-66.1637957
-3297079279,Calle José de la Reza,-17.3879509,-66.1638795
-1636978122,Calle José de la Reza y Avenida Tadeo Haenke,-17.387925,-66.163953
-2312521506,Avenida Tadeo Haenke,-17.387846,-66.164177
-2312521495,Avenida Tadeo Haenke,-17.3877922,-66.1643272
-676069598,Avenida Tadeo Haenke,-17.3877711,-66.1643848
-9163629263,Avenida Tadeo Haenke,-17.3877488,-66.1644441
-9163629266,Avenida Tadeo Haenke,-17.3877208,-66.1645162
-11079349297,Avenida Tadeo Haenke,-17.3875809,-66.1648578
-11079424622,Avenida Tadeo Haenke,-17.3875643,-66.1649018
-676069597,Avenida Tadeo Haenke,-17.3875552,-66.164924
-1636978099,Avenida Tadeo Haenke,-17.3875237,-66.1650363
-1636978093,Avenida Tadeo Haenke,-17.3873123,-66.1655829
-1636978087,Avenida Tadeo Haenke,-17.3872507,-66.1657108
-1636978084,Avenida Tadeo Haenke,-17.3871905,-66.1657931
-1636978082,Avenida Tadeo Haenke,-17.3870972,-66.1658953
-6481891030,Avenida Tadeo Haenke,-17.3870258,-66.1659533
-12956643101,Avenida Tadeo Haenke,-17.3869648,-66.1659986
-8667184717,Avenida Tadeo Haenke,-17.3868187,-66.1661071
-1636978075,Avenida Tadeo Haenke,-17.3865558,-66.1663218
-598178961,Avenida Tadeo Haenke,-17.3862431,-66.1665707
+1636978129,Calle José de la Reza y Avenida d'Orbigny,-17.3879805,-66.1637957
+3297079279,Avenida d'Orbigny,-17.3879509,-66.1638795
+1636978122,Avenida d'Orbigny,-17.387925,-66.163953
+2312521506,Avenida d'Orbigny,-17.387846,-66.164177
+2312521495,Avenida d'Orbigny,-17.3877922,-66.1643272
+676069598,Avenida d'Orbigny,-17.3877711,-66.1643848
+9163629263,Avenida d'Orbigny,-17.3877488,-66.1644441
+9163629266,Avenida d'Orbigny,-17.3877208,-66.1645162
+11079349297,Avenida d'Orbigny,-17.3875809,-66.1648578
+11079424622,Avenida d'Orbigny,-17.3875643,-66.1649018
+676069597,Avenida d'Orbigny y Distribuidor Vial Cobija,-17.3875552,-66.164924
+1636978099,Distribuidor Vial Cobija,-17.3875237,-66.1650363
+1636978093,Distribuidor Vial Cobija,-17.3873123,-66.1655829
+1636978087,Distribuidor Vial Cobija,-17.3872507,-66.1657108
+1636978084,Distribuidor Vial Cobija,-17.3871905,-66.1657931
+1636978082,Distribuidor Vial Cobija,-17.3870972,-66.1658953
+6481891030,Distribuidor Vial Cobija,-17.3870258,-66.1659533
+12956643101,Distribuidor Vial Cobija,-17.3869648,-66.1659986
+8667184717,Distribuidor Vial Cobija,-17.3868187,-66.1661071
+1636978075,Distribuidor Vial Cobija,-17.3865558,-66.1663218
+598178961,Distribuidor Vial Cobija y Avenida Tadeo Haenke,-17.3862431,-66.1665707
 9686979844,Avenida Tadeo Haenke,-17.3861957,-66.1666104
 598179000,Avenida Tadeo Haenke y Calle Bartolomé de las Casas,-17.3856646,-66.1670888
 598179002,Avenida Tadeo Haenke y Calle Francisco Viedma,-17.3850394,-66.1675962
@@ -5644,6 +5640,7 @@ stop_id,stop_name,stop_lat,stop_lon
 809705320,Calle 23 de Enero,-17.3761902,-66.1864745
 809705210,Calle 23 de Enero,-17.3758458,-66.1868941
 9279028371,Calle 23 de Enero,-17.3754811,-66.1873828
+13520261322,Calle 23 de Enero,-17.3754594,-66.1874272
 3268355956,Calle Apurimak,-17.3779965,-66.1886538
 1807004186,Calle Apurimak y Calle Ayllu,-17.3779482,-66.1887473
 809705375,Calle Ayllu,-17.3780062,-66.1887931
@@ -7201,22 +7198,22 @@ stop_id,stop_name,stop_lat,stop_lon
 843509581,Avenida Humboldt,-17.3896372,-66.1666656
 10975615532,Avenida Humboldt,-17.3905924,-66.166862
 8566427907,Avenida Humboldt,-17.3906111,-66.1668659
-497205197,Avenida Humboldt y Calle Francisco de Toledo,-17.3906626,-66.1668759
+497205197,Avenida Humboldt y Calle Virrey Francisco de Toledo,-17.3906626,-66.1668759
 10975615527,Avenida Humboldt,-17.3907422,-66.1668925
-2972424491,Avenida Humboldt y Calle Francisco de Toledo,-17.3908077,-66.1669062
+2972424491,Avenida Humboldt y Calle Virrey Francisco de Toledo,-17.3908077,-66.1669062
 9934347428,Avenida Humboldt,-17.3908498,-66.1669131
 843509549,Avenida Humboldt,-17.3918624,-66.1670991
 843383784,Avenida Humboldt,-17.3926949,-66.1672631
-497205201,Avenida Humboldt,-17.3930428,-66.1673222
-4732874487,Avenida Humboldt,-17.3931402,-66.1673429
-8320381222,Innominada,-17.3933568,-66.1674286
-1636934233,Innominada,-17.3934783,-66.1674805
-2420519524,Innominada,-17.3936113,-66.1675372
-8320381221,Innominada,-17.393682,-66.1675631
-1636934240,Innominada,-17.3937457,-66.1676001
-660005233,Innominada,-17.393822,-66.1676692
-9916158228,Innominada,-17.3938367,-66.1676913
-2477244103,Innominada,-17.3938556,-66.1677196
+13520009011,Avenida Humboldt,-17.3931749,-66.1673565
+4732874487,Avenida Humboldt,-17.3932573,-66.1673725
+8320381222,Avenida Humboldt,-17.3933958,-66.1674455
+1636934233,Avenida Humboldt,-17.3934783,-66.1674805
+2420519524,Avenida Humboldt,-17.3936113,-66.1675372
+8320381221,Avenida Humboldt,-17.393682,-66.1675631
+1636934240,Avenida Humboldt,-17.3937457,-66.1676001
+660005233,Avenida Humboldt,-17.393822,-66.1676692
+9916158228,Avenida Humboldt,-17.3938367,-66.1676913
+2477244103,Avenida Humboldt,-17.3938556,-66.1677196
 13428010716,Innominada,-17.3939409,-66.1680962
 13428010715,Innominada,-17.3940208,-66.1681095
 7972443135,Innominada,-17.394102,-66.1680963
@@ -9718,8 +9715,8 @@ stop_id,stop_name,stop_lat,stop_lon
 2518322621,Rotonda Final América Oeste,-17.3708798,-66.1903828
 2518322572,Rotonda Final América Oeste y Avenida América,-17.3708457,-66.1903523
 3924613999,Avenida América,-17.3708335,-66.1901398
-721099129,Avenida América,-17.3708536,-66.1897206
-721099131,Avenida América,-17.3708763,-66.1892383
+721099129,Avenida América,-17.3708565,-66.1897114
+721099131,Avenida América,-17.3708865,-66.1892383
 9793357812,Avenida América,-17.3709048,-66.1888854
 5964186183,Calle Oruro,-17.383697,-66.1584722
 10857165577,Calle Oruro,-17.3829556,-66.1573936
@@ -11703,6 +11700,7 @@ stop_id,stop_name,stop_lat,stop_lon
 4234975448,Avenida Jaime Mendoza,-17.3742548,-66.1686586
 4234975452,Avenida Jaime Mendoza,-17.3750209,-66.1687052
 689437297,Avenida Jaime Mendoza,-17.3750505,-66.1687073
+13523321608,Avenida Jaime Mendoza,-17.3758449,-66.1687916
 8995591632,Avenida Jaime Mendoza,-17.3759664,-66.1688045
 599541170,Avenida Jaime Mendoza,-17.3760068,-66.1688093
 8995591673,Avenida Jaime Mendoza,-17.376881,-66.1689742
@@ -11741,24 +11739,23 @@ stop_id,stop_name,stop_lat,stop_lon
 5213287369,Avenida d'Orbigny,-17.3877821,-66.1691883
 9686979833,Avenida d'Orbigny,-17.3876164,-66.1682071
 563279693,Avenida d'Orbigny,-17.3875713,-66.1680823
-9892649520,Avenida d'Orbigny,-17.3875493,-66.1679524
-9686979830,Avenida d'Orbigny,-17.3875448,-66.1679258
-2410715884,Avenida d'Orbigny,-17.3874624,-66.167439
-1637648616,Avenida d'Orbigny,-17.3874417,-66.1673167
-1636978092,Avenida d'Orbigny,-17.387392,-66.1670254
-8667184715,Avenida d'Orbigny,-17.3872743,-66.1663362
-1636978090,Avenida d'Orbigny,-17.3872611,-66.1662455
-12956643102,Avenida d'Orbigny,-17.3872561,-66.1661936
-1636978088,Avenida d'Orbigny,-17.3872529,-66.1661611
-12956643104,Avenida d'Orbigny,-17.3872538,-66.1661153
-2971956447,Avenida d'Orbigny,-17.3872546,-66.1660695
-11079484936,Avenida d'Orbigny,-17.3872566,-66.1660231
-1636978091,Avenida d'Orbigny,-17.3872635,-66.16596
-5213287386,Avenida d'Orbigny,-17.3872823,-66.1658587
-2971956448,Avenida d'Orbigny,-17.3873163,-66.1657372
-8667184716,Avenida d'Orbigny,-17.3873676,-66.1656062
-1636978106,Avenida d'Orbigny,-17.3875798,-66.1650578
-851595003,Avenida d'Orbigny,-17.3876187,-66.1649552
+9892649520,Avenida d'Orbigny,-17.3875489,-66.1679525
+2410715884,Avenida d'Orbigny,-17.3874603,-66.1674394
+1637648616,Avenida d'Orbigny y Distribuidor Vial Cobija,-17.3874223,-66.167219
+1636978092,Distribuidor Vial Cobija,-17.387392,-66.1670254
+8667184715,Distribuidor Vial Cobija,-17.3872743,-66.1663362
+1636978090,Distribuidor Vial Cobija,-17.3872611,-66.1662455
+12956643102,Distribuidor Vial Cobija,-17.3872561,-66.1661936
+1636978088,Distribuidor Vial Cobija,-17.3872529,-66.1661611
+12956643104,Distribuidor Vial Cobija,-17.3872538,-66.1661153
+2971956447,Distribuidor Vial Cobija,-17.3872546,-66.1660695
+11079484936,Distribuidor Vial Cobija,-17.3872566,-66.1660231
+1636978091,Distribuidor Vial Cobija,-17.3872635,-66.16596
+5213287386,Distribuidor Vial Cobija,-17.3872823,-66.1658587
+2971956448,Distribuidor Vial Cobija,-17.3873163,-66.1657372
+8667184716,Distribuidor Vial Cobija,-17.3873676,-66.1656062
+1636978106,Distribuidor Vial Cobija,-17.3875798,-66.1650578
+851595003,Distribuidor Vial Cobija y Avenida d'Orbigny,-17.3876187,-66.1649552
 11079349296,Avenida d'Orbigny,-17.3876464,-66.1648866
 9163629265,Avenida d'Orbigny,-17.3877859,-66.1645448
 9163629264,Avenida d'Orbigny,-17.3878152,-66.164473
@@ -17057,12 +17054,12 @@ stop_id,stop_name,stop_lat,stop_lon
 702511763,Avenida Pulacayo,-17.4048387,-66.1525404
 3317877650,Avenida Pulacayo,-17.4048238,-66.1527047
 2768899073,Avenida Pulacayo,-17.4048121,-66.152911
-2410715888,Avenida Tadeo Haenke,-17.3874796,-66.1650187
-598178949,Avenida Tadeo Haenke,-17.3873109,-66.1654475
-12956643111,Avenida Tadeo Haenke,-17.3872631,-66.1655713
-1636978086,Avenida Tadeo Haenke,-17.3872532,-66.1655971
-9170720374,Avenida Tadeo Haenke,-17.3872076,-66.1656757
-2410715815,Avenida Tadeo Haenke y Rotonda Distribuidor Vial Cobija,-17.3871326,-66.1657816
+2410715888,Avenida d'Orbigny,-17.3874796,-66.1650187
+598178949,Avenida d'Orbigny,-17.3873109,-66.1654475
+12956643111,Avenida d'Orbigny,-17.3872631,-66.1655713
+1636978086,Avenida d'Orbigny,-17.3872532,-66.1655971
+9170720374,Avenida d'Orbigny,-17.3872076,-66.1656757
+2410715815,Avenida d'Orbigny y Rotonda Distribuidor Vial Cobija,-17.3871326,-66.1657816
 11079338808,Rotonda Distribuidor Vial Cobija,-17.3871267,-66.1657856
 12295702645,Rotonda Distribuidor Vial Cobija,-17.3871128,-66.1657963
 11079338806,Rotonda Distribuidor Vial Cobija,-17.3871028,-66.165807
@@ -17109,28 +17106,25 @@ stop_id,stop_name,stop_lat,stop_lon
 8901746826,Avenida Humboldt,-17.3963042,-66.1679607
 12405192996,Avenida Humboldt,-17.3961737,-66.1678872
 1637473019,Avenida Humboldt,-17.3960875,-66.1678452
-1637761623,Avenida Humboldt,-17.3959897,-66.1678182
+1637761623,Avenida Humboldt,-17.3959575,-66.1678121
+13520009020,Avenida Humboldt,-17.3958705,-66.1677749
 648570991,Avenida Humboldt,-17.395704,-66.1677593
 12405192974,Avenida Humboldt,-17.3956733,-66.1677543
-2420519815,Avenida Humboldt,-17.3951884,-66.1676699
-2420519811,Avenida Humboldt,-17.3950943,-66.1676533
-12405192994,Avenida Humboldt,-17.3949945,-66.1676504
+2420519811,Avenida Humboldt,-17.3950006,-66.1676324
 8259064503,Avenida Humboldt,-17.3948946,-66.1676384
-2420519803,Avenida Humboldt,-17.3945382,-66.1675847
+2420519803,Avenida Humboldt,-17.3947223,-66.167612
 648570952,Avenida Humboldt,-17.3942212,-66.1675267
 497205637,Avenida Humboldt,-17.3938904,-66.1674583
 497205638,Avenida Humboldt,-17.3934603,-66.1673551
-9604464098,Avenida Humboldt,-17.3930653,-66.1672536
-497205639,Avenida Humboldt,-17.392869,-66.1672031
-1636934230,Avenida Humboldt,-17.3927089,-66.1671709
+13520009010,Avenida Humboldt,-17.3932189,-66.1672948
+497205639,Avenida Humboldt,-17.3931501,-66.1672607
 8325972905,Avenida Humboldt,-17.3923354,-66.1671006
-843509550,Avenida Humboldt,-17.3918793,-66.1670147
 8325972836,Avenida Humboldt,-17.3916901,-66.1669791
 10975615531,Avenida Humboldt,-17.3908862,-66.1668279
 9934347425,Avenida Humboldt,-17.3908637,-66.1668237
 2972424492,Avenida Humboldt,-17.3908229,-66.1668169
 10975615528,Avenida Humboldt,-17.3907574,-66.166804
-497205640,Avenida Humboldt y Calle Francisco de Toledo,-17.3906752,-66.1667879
+497205640,Avenida Humboldt y Calle Virrey Francisco de Toledo,-17.3906752,-66.1667879
 8566427906,Avenida Humboldt,-17.3906252,-66.1667772
 843509561,Avenida Humboldt,-17.3896504,-66.1665833
 6175803380,Avenida Humboldt,-17.3891447,-66.166463
@@ -17765,7 +17759,7 @@ stop_id,stop_name,stop_lat,stop_lon
 800044021,Rotonda Chaco y Hernan Morales,-17.4023279,-66.1742867
 7144522619,Rotonda Chaco y Hernan Morales y Avenida Chaco,-17.4023126,-66.1742905
 9352772544,Rotonda Chaco y Hernan Morales,-17.4023025,-66.1742951
-5213287383,Avenida d'Orbigny,-17.3874635,-66.1671674
+5213287383,Avenida d'Orbigny,-17.3874596,-66.1671308
 1637648615,Avenida d'Orbigny,-17.3874493,-66.1670715
 1637648612,Avenida d'Orbigny,-17.3873117,-66.1662595
 1637648610,Avenida d'Orbigny,-17.3873006,-66.1661757
@@ -18050,40 +18044,164 @@ stop_id,stop_name,stop_lat,stop_lon
 3666460785,Avenida Autonomía,-17.4707537,-66.1378622
 3666460796,Avenida Autonomía,-17.4709845,-66.1394973
 1627011852,Avenida Autonomía,-17.4710864,-66.1400513
-6644730867,Avenida Las Begonias,-17.363724,-66.1408368
-808079284,Avenida Las Begonias y Calle Los Sauces,-17.3633841,-66.1413149
-809705552,Calle Los Sauces,-17.3634777,-66.1413715
-808079848,Calle Los Sauces y Calle Flor de Naranjo,-17.3640616,-66.1418379
-3238109614,Calle Flor de Naranjo y Calle Los Sauces,-17.3640698,-66.1417824
-11982339689,Calle Los Sauces,-17.3641515,-66.1418276
-3238109613,Calle Los Sauces,-17.3642974,-66.1419084
-808079492,Calle Los Sauces,-17.3646152,-66.1420671
-2317602263,Calle Los Sauces,-17.3653292,-66.142494
-808080131,Calle Los Sauces y Calle Las Cucardas,-17.3660245,-66.1429389
-808080173,Calle Las Cucardas,-17.3655865,-66.1438795
-808080216,Calle Eudoro Galindo Quiroga,-17.3670664,-66.1455432
-808079091,Calle Eudoro Galindo Quiroga,-17.367562,-66.1456128
-808079047,Calle Eudoro Galindo Quiroga,-17.3680415,-66.14571
-9667171277,Calle Eudoro Galindo Quiroga,-17.3683756,-66.1457694
-808010520,Calle Eudoro Galindo Quiroga,-17.3690167,-66.1458891
-2126670405,Calle Eudoro Galindo Quiroga,-17.3703505,-66.1461533
-9581802981,Calle Eudoro Galindo Quiroga,-17.3708669,-66.1462663
+6644730866,Avenida Del Cabildo,-17.4199816,-66.1686654
+9350107073,Avenida Del Cabildo,-17.4201248,-66.1688522
+9350107069,Avenida Del Cabildo,-17.4201865,-66.1689328
+2421564273,Avenida Del Cabildo,-17.4202597,-66.1690281
+6792116078,Avenida Del Cabildo,-17.420704,-66.1695932
+2781016301,Avenida Del Cabildo,-17.4208588,-66.1697868
+10723230940,Avenida Del Cabildo,-17.4208734,-66.1698563
+2421564283,Avenida Del Cabildo,-17.420983,-66.1700238
+11084660762,Avenida Del Cabildo,-17.4210195,-66.1700666
+2421564285,Avenida Del Cabildo y Calle Coronel Eliodoro Neri,-17.421526,-66.1707047
+10723230941,Calle Coronel Eliodoro Neri,-17.4214961,-66.1707326
+13338619997,Calle Coronel Eliodoro Neri,-17.4214806,-66.1707495
+2421564281,Calle Coronel Eliodoro Neri y Calle Capitán Luis Paravicini,-17.4208139,-66.1714756
+11084660770,Calle Capitán Luis Paravicini,-17.4202476,-66.1709628
+2421564272,Calle Capitán Luis Paravicini,-17.4202014,-66.1708929
+2421564259,Calle Capitán Luis Paravicini y Calle Comandante Teddy Scott Villa,-17.4193711,-66.1696661
+9596559804,Calle Comandante Teddy Scott Villa,-17.4187158,-66.1701345
+2421564249,Calle Comandante Teddy Scott Villa y Avenida Chimoré,-17.4179343,-66.1707024
+2421564247,Avenida Chimoré,-17.417906,-66.1706501
+2421564246,Avenida Chimoré,-17.4172101,-66.1694537
+3302649670,Avenida Chimoré,-17.4171961,-66.1694261
+2421564239,Avenida Chimoré,-17.416705,-66.1685606
+11896506082,Avenida Chimoré,-17.41668,-66.168503
+11896506083,Avenida Chimoré,-17.4166593,-66.1684412
+11896506084,Avenida Chimoré,-17.4166504,-66.1684052
+8048993218,Avenida Chimoré y Rotonda Rafael Pabón y Chimoré,-17.4166328,-66.1683343
+2421371534,Rotonda Rafael Pabón y Chimoré,-17.4166658,-66.1683201
+2421371540,Rotonda Rafael Pabón y Chimoré,-17.4166938,-66.1682968
+2421371547,Rotonda Rafael Pabón y Chimoré,-17.4167146,-66.1682662
+11896506074,Rotonda Rafael Pabón y Chimoré,-17.4167264,-66.1682308
+2421371549,Rotonda Rafael Pabón y Chimoré,-17.4167283,-66.1681934
+8048993219,Rotonda Rafael Pabón y Chimoré,-17.4167203,-66.1681569
+1865108161,Rotonda Rafael Pabón y Chimoré,-17.4167043,-66.1681262
+11896506075,Rotonda Rafael Pabón y Chimoré,-17.4166813,-66.1681009
+2421371537,Rotonda Rafael Pabón y Chimoré,-17.4166527,-66.1680827
+2421371531,Rotonda Rafael Pabón y Chimoré,-17.4166207,-66.168073
+2421371524,Rotonda Rafael Pabón y Chimoré,-17.4165873,-66.1680722
+11896506080,Rotonda Rafael Pabón y Chimoré,-17.4165549,-66.1680806
+8048993220,Rotonda Rafael Pabón y Chimoré,-17.4165312,-66.1680936
+2421371517,Rotonda Rafael Pabón y Chimoré,-17.4165106,-66.1681114
+11896506076,Rotonda Rafael Pabón y Chimoré,-17.4164939,-66.1681333
+2421371507,Rotonda Rafael Pabón y Chimoré,-17.4164821,-66.1681584
+11896506073,Rotonda Rafael Pabón y Chimoré,-17.4164754,-66.1681855
+2421371504,Rotonda Rafael Pabón y Chimoré,-17.4164743,-66.1682135
+2421371506,Rotonda Rafael Pabón y Chimoré,-17.4164789,-66.1682411
+8048993283,Rotonda Rafael Pabón y Chimoré y Avenida Rafael Pabón,-17.4164888,-66.1682671
+11896506072,Avenida Rafael Pabón,-17.4163337,-66.1683611
+8048993217,Avenida Rafael Pabón,-17.4162749,-66.1683856
+12767447476,Avenida Rafael Pabón,-17.4158094,-66.1685413
+10720737431,Avenida Rafael Pabón,-17.4157872,-66.1685487
+2421371490,Avenida Rafael Pabón,-17.415711,-66.1685777
+10720737428,Avenida Rafael Pabón,-17.4156224,-66.1686111
+12767447477,Avenida Rafael Pabón,-17.4155975,-66.1686205
+12394100731,Avenida Rafael Pabón,-17.4152349,-66.168757
+9882089395,Avenida Rafael Pabón,-17.4151481,-66.1687897
+2421371468,Avenida Rafael Pabón,-17.4150432,-66.1688147
+3302649417,Avenida Rafael Pabón,-17.4149472,-66.1688337
+3302649416,Avenida Rafael Pabón,-17.414742,-66.1688349
+12394100722,Avenida Rafael Pabón,-17.4145787,-66.1688158
+2421371458,Avenida Rafael Pabón y Calle Viloma,-17.4144353,-66.168799
+10720737427,Calle Viloma,-17.4144467,-66.1687141
+12394100719,Calle Viloma,-17.4144515,-66.1686834
+10720737425,Calle Viloma,-17.4145838,-66.1678451
+2331074074,Calle Viloma,-17.414591,-66.1677997
+10720737424,Calle Viloma,-17.4145983,-66.1677555
+10720737422,Calle Viloma,-17.4146872,-66.167215
+2022073870,Calle Viloma,-17.4146973,-66.1671536
+12394068764,Calle Viloma,-17.4147881,-66.1665689
+2022073871,Calle Viloma,-17.4148005,-66.1664897
+12394068766,Calle Viloma,-17.4148133,-66.1664165
+1865108184,Calle Viloma y Avenida de la Fuerza Aérea,-17.4149996,-66.1653509
+9195017633,Avenida de la Fuerza Aérea,-17.4140298,-66.1651643
+1865108156,Avenida de la Fuerza Aérea,-17.4139719,-66.1651531
+9195017631,Avenida de la Fuerza Aérea,-17.4139161,-66.1651426
+1865108179,Avenida de la Fuerza Aérea,-17.4129789,-66.1649656
+10583174369,Avenida de la Fuerza Aérea,-17.41292,-66.1649545
+10583174356,Avenida de la Fuerza Aérea,-17.4125551,-66.1648856
+1865108150,Avenida de la Fuerza Aérea,-17.4123541,-66.1648476
+3303584455,Avenida de la Fuerza Aérea,-17.4122704,-66.1648275
+1762869105,Avenida de la Fuerza Aérea,-17.4120442,-66.1647873
+497191414,Avenida de la Fuerza Aérea,-17.4115484,-66.1647037
+2604131600,Avenida de la Fuerza Aérea,-17.4114334,-66.1646654
+1762869034,Avenida de la Fuerza Aérea,-17.4113315,-66.1646058
+2716726814,Rotonda Mariscal Antonio José de Sucre,-17.4130069,-66.1595587
+9438085269,Rotonda Mariscal Antonio José de Sucre,-17.4130021,-66.1595341
+2716726811,Rotonda Mariscal Antonio José de Sucre,-17.4129933,-66.1595108
+9438085267,Rotonda Mariscal Antonio José de Sucre,-17.4129808,-66.1594893
+2716726809,Rotonda Mariscal Antonio José de Sucre,-17.4129651,-66.1594704
+9438085268,Rotonda Mariscal Antonio José de Sucre,-17.4129464,-66.1594546
+2716726805,Rotonda Mariscal Antonio José de Sucre,-17.4129255,-66.1594423
+9438085258,Rotonda Mariscal Antonio José de Sucre,-17.4129157,-66.1594381
+2716726801,Rotonda Mariscal Antonio José de Sucre y Avenida Del Cabildo,-17.4128793,-66.1594297
+9438085275,Avenida Del Cabildo,-17.412754,-66.1593614
+12100007976,Avenida Del Cabildo,-17.412729,-66.1593361
+7947201385,Avenida Del Cabildo,-17.4127181,-66.1593277
+7947180866,Avenida Del Cabildo,-17.4121426,-66.1586145
+2576698561,Avenida Del Cabildo,-17.4105306,-66.1568278
+10046445859,Avenida Del Cabildo,-17.4101809,-66.1566919
+9131107895,Avenida Del Cabildo,-17.4101011,-66.1566909
+4477790800,Avenida Bartolomé Guzmán,-17.4097636,-66.1567172
+707336906,Avenida Bartolomé Guzmán,-17.4094479,-66.1567616
+2577975347,Avenida Bartolomé Guzmán,-17.4078846,-66.1570538
+7132200140,Avenida Bartolomé Guzmán y Calle Cliza,-17.4072566,-66.1571728
+10628476612,Calle Cliza,-17.4072476,-66.1571175
+10536326635,Calle Cliza,-17.4072507,-66.1570895
+10536326634,Calle Cliza,-17.4072671,-66.1570465
+7902369090,Calle Cliza,-17.4073032,-66.1569902
+1873958890,Avenida Heroínas de la Coronilla,-17.3908127,-66.1488306
+9920363683,Avenida Heroínas de la Coronilla,-17.3907061,-66.1482502
+1873958878,Avenida Heroínas de la Coronilla,-17.3906432,-66.1479073
+1873958877,Avenida Heroínas de la Coronilla,-17.3906176,-66.1477703
+8909153738,Avenida Heroínas de la Coronilla,-17.3905203,-66.1472595
+698492419,Avenida Heroínas de la Coronilla,-17.3903309,-66.1462645
+9852141003,Avenida Heroínas de la Coronilla,-17.3902432,-66.1458114
+2213884667,Avenida Heroínas de la Coronilla,-17.390235,-66.1457691
+3950325577,Avenida Heroínas de la Coronilla,-17.3901402,-66.1452792
+4308163740,Avenida Heroínas de la Coronilla,-17.3900534,-66.1448309
+698492426,Avenida Heroínas de la Coronilla y Calle José Pol,-17.390044,-66.1447822
+4308163739,Avenida Heroínas de la Coronilla,-17.3900326,-66.1447221
+6178744931,Avenida Heroínas de la Coronilla,-17.3898592,-66.1437615
+2618163981,Calle Antonio Quijarro,-17.37347,-66.1458421
+2126673614,Calle Antonio Quijarro,-17.3733758,-66.1458255
+2126673505,Calle Antonio Quijarro,-17.3733121,-66.1458143
+2126673464,Calle Antonio Quijarro,-17.3732757,-66.1458079
+2126673347,Calle Antonio Quijarro,-17.3732267,-66.1457992
+601872974,Calle Antonio Quijarro,-17.3731918,-66.1457931
+9551541241,Calle Antonio Quijarro,-17.3716705,-66.1455216
+9102939195,Calle Antonio Quijarro,-17.371631,-66.1455146
+808031578,Calle Antonio Quijarro y Calle Fidel Anze Sud,-17.3715773,-66.1455051
+9102939198,Calle Antonio Quijarro,-17.3715151,-66.1454922
+9102939199,Calle Antonio Quijarro,-17.3711616,-66.1454187
+808010510,Calle Antonio Quijarro y Parque Fidel Anze Norte,-17.3710837,-66.1454026
+9102939201,Parque Fidel Anze Norte,-17.3710752,-66.1454589
+9103449140,Parque Fidel Anze Norte,-17.371004,-66.1462216
+602989937,Parque Fidel Anze Norte y Calle Eudoro Galindo Quiroga,-17.3709963,-66.1462946
 9103449141,Calle Eudoro Galindo Quiroga,-17.3709359,-66.1462821
-602989937,Calle Eudoro Galindo Quiroga,-17.3709963,-66.1462946
+9581802981,Calle Eudoro Galindo Quiroga,-17.3708669,-66.1462663
+2126670405,Calle Eudoro Galindo Quiroga,-17.3703505,-66.1461533
+808010520,Calle Eudoro Galindo Quiroga,-17.3690167,-66.1458891
+9667171277,Calle Eudoro Galindo Quiroga,-17.3683756,-66.1457694
+808079047,Calle Eudoro Galindo Quiroga,-17.3680415,-66.14571
+808079091,Calle Eudoro Galindo Quiroga,-17.367562,-66.1456128
+808080216,Calle Eudoro Galindo Quiroga,-17.3670664,-66.1455432
+808080173,Calle Las Cucardas,-17.3655865,-66.1438795
+808080131,Calle Las Cucardas y Calle Los Sauces,-17.3660245,-66.1429389
+2317602263,Calle Los Sauces,-17.3653292,-66.142494
+808079492,Calle Los Sauces,-17.3646152,-66.1420671
+3238109613,Calle Los Sauces,-17.3642974,-66.1419084
+11982339689,Calle Los Sauces,-17.3641515,-66.1418276
+3238109614,Calle Los Sauces y Calle Flor de Naranjo,-17.3640698,-66.1417824
+808079848,Calle Flor de Naranjo y Calle Los Sauces,-17.3640616,-66.1418379
+809705552,Calle Los Sauces,-17.3634777,-66.1413715
+808079284,Calle Los Sauces y Avenida Las Begonias,-17.3633841,-66.1413149
+6644730867,Avenida Las Begonias,-17.363724,-66.1408368
 9105946037,Calle Eudoro Galindo Quiroga,-17.3710644,-66.1463079
 9105946036,Calle Eudoro Galindo Quiroga,-17.3714259,-66.1463789
 808031573,Calle Eudoro Galindo Quiroga y Calle Fidel Anze Sud,-17.3715033,-66.1463938
 9102939196,Calle Fidel Anze Sud,-17.3715722,-66.1455658
-808031578,Calle Fidel Anze Sud y Calle Antonio Quijarro,-17.3715773,-66.1455051
-9102939195,Calle Antonio Quijarro,-17.371631,-66.1455146
-9551541241,Calle Antonio Quijarro,-17.3716705,-66.1455216
-601872974,Calle Antonio Quijarro,-17.3731918,-66.1457931
-2126673347,Calle Antonio Quijarro,-17.3732267,-66.1457992
-2126673464,Calle Antonio Quijarro,-17.3732757,-66.1458079
-2126673505,Calle Antonio Quijarro,-17.3733121,-66.1458143
-2126673614,Calle Antonio Quijarro,-17.3733758,-66.1458255
-2618163981,Calle Antonio Quijarro,-17.37347,-66.1458421
-11800461551,Calle Antonio Quijarro,-17.373583,-66.145858
 6178744930,Avenida Heroínas de la Coronilla,-17.3897749,-66.143803
 4308163737,Avenida Heroínas de la Coronilla,-17.3899432,-66.1447413
 303212784,Avenida Heroínas de la Coronilla y Calle José Pol,-17.3899544,-66.1448005
@@ -18094,48 +18212,9 @@ stop_id,stop_name,stop_lat,stop_lon
 303212785,Avenida Heroínas de la Coronilla,-17.3902479,-66.1462805
 8909153737,Avenida Heroínas de la Coronilla,-17.3904337,-66.1472791
 1873958870,Avenida Heroínas de la Coronilla,-17.3905292,-66.1477927
-12394068766,Calle Viloma,-17.4148133,-66.1664165
-2022073871,Calle Viloma,-17.4148005,-66.1664897
-12394068764,Calle Viloma,-17.4147881,-66.1665689
-2022073870,Calle Viloma,-17.4146973,-66.1671536
-10720737422,Calle Viloma,-17.4146872,-66.167215
-10720737424,Calle Viloma,-17.4145983,-66.1677555
-2331074074,Calle Viloma,-17.414591,-66.1677997
-10720737425,Calle Viloma,-17.4145838,-66.1678451
-12394100719,Calle Viloma,-17.4144515,-66.1686834
-10720737427,Calle Viloma,-17.4144467,-66.1687141
-2421371458,Calle Viloma y Avenida Rafael Pabón,-17.4144353,-66.168799
-12394100722,Avenida Rafael Pabón,-17.4145787,-66.1688158
-3302649416,Avenida Rafael Pabón,-17.414742,-66.1688349
-3302649417,Avenida Rafael Pabón,-17.4149472,-66.1688337
-2421371468,Avenida Rafael Pabón,-17.4150432,-66.1688147
-9882089395,Avenida Rafael Pabón,-17.4151481,-66.1687897
-12394100731,Avenida Rafael Pabón,-17.4152349,-66.168757
-12767447477,Avenida Rafael Pabón,-17.4155975,-66.1686205
-10720737428,Avenida Rafael Pabón,-17.4156224,-66.1686111
-2421371490,Avenida Rafael Pabón,-17.415711,-66.1685777
-10720737431,Avenida Rafael Pabón,-17.4157872,-66.1685487
-12767447476,Avenida Rafael Pabón,-17.4158094,-66.1685413
-8048993217,Avenida Rafael Pabón,-17.4162749,-66.1683856
-11896506072,Avenida Rafael Pabón,-17.4163337,-66.1683611
-8048993283,Avenida Rafael Pabón y Rotonda Rafael Pabón y Chimoré,-17.4164888,-66.1682671
 1865108159,Rotonda Rafael Pabón y Chimoré,-17.4165144,-66.1683024
 2421371515,Rotonda Rafael Pabón y Chimoré,-17.4165497,-66.1683269
 2421371521,Rotonda Rafael Pabón y Chimoré,-17.4165906,-66.1683379
-8048993218,Rotonda Rafael Pabón y Chimoré y Avenida Chimoré,-17.4166328,-66.1683343
-11896506084,Avenida Chimoré,-17.4166504,-66.1684052
-11896506083,Avenida Chimoré,-17.4166593,-66.1684412
-11896506082,Avenida Chimoré,-17.41668,-66.168503
-2421564239,Avenida Chimoré,-17.416705,-66.1685606
-3302649670,Avenida Chimoré,-17.4171961,-66.1694261
-2421564246,Avenida Chimoré,-17.4172101,-66.1694537
-2421564247,Avenida Chimoré,-17.417906,-66.1706501
-2421564249,Avenida Chimoré y Calle Comandante Teddy Scott Villa,-17.4179343,-66.1707024
-9596559804,Calle Comandante Teddy Scott Villa,-17.4187158,-66.1701345
-2421564259,Calle Comandante Teddy Scott Villa y Calle Capitán Luis Paravicini,-17.4193711,-66.1696661
-2421564272,Calle Capitán Luis Paravicini,-17.4202014,-66.1708929
-11084660770,Calle Capitán Luis Paravicini,-17.4202476,-66.1709628
-2421564281,Calle Capitán Luis Paravicini,-17.4208139,-66.1714756
 2421564284,Calle Capitán Luis Paravicini y Avenida Chimoré,-17.4215037,-66.17212
 2421564290,Avenida Chimoré,-17.4220752,-66.171483
 3303504105,Avenida Chimoré,-17.4220825,-66.1714057
@@ -18147,12 +18226,6 @@ stop_id,stop_name,stop_lat,stop_lon
 11084660761,Avenida Del Cabildo,-17.4210869,-66.1700083
 10723230937,Avenida Del Cabildo,-17.4210482,-66.1699586
 10723230939,Avenida Del Cabildo,-17.4209223,-66.1698172
-2781016301,Avenida Del Cabildo,-17.4208588,-66.1697868
-6792116078,Avenida Del Cabildo,-17.420704,-66.1695932
-2421564273,Avenida Del Cabildo,-17.4202597,-66.1690281
-9350107069,Avenida Del Cabildo,-17.4201865,-66.1689328
-9350107073,Avenida Del Cabildo,-17.4201248,-66.1688522
-6644730866,Avenida Del Cabildo,-17.4199816,-66.1686654
 3016850787,Calle Provincia Camacho,-17.4484833,-66.1051598
 2028620077,Calle Provincia Camacho y Calle Provincia Azurduy,-17.44837,-66.1056408
 2028619897,Calle Provincia Azurduy,-17.4473536,-66.1054235
@@ -18421,8 +18494,12 @@ stop_id,stop_name,stop_lat,stop_lon
 12205498393,Calle Niceto Rodríguez,-17.3622949,-66.1855919
 3267790073,Calle Niceto Rodríguez,-17.3623304,-66.185574
 12205498344,Calle Niceto Rodríguez,-17.3623618,-66.185551
+13520261351,Calle Yuracaré,-17.3741729,-66.1871334
+13520261350,Calle Yuracaré,-17.3741861,-66.1870886
 809705536,Calle Yuracaré y Calle Azanaque,-17.3745437,-66.1866148
+13520261348,Calle Yuracaré,-17.3749384,-66.1861116
 809705213,Calle Yuracaré,-17.3749983,-66.1860353
+13520261349,Calle Yuracaré,-17.3750357,-66.18599
 3268302838,Calle Yuracaré,-17.375045,-66.1859788
 809705629,Calle Yuracaré,-17.3753618,-66.1855682
 3268302852,Calle Yuracaré,-17.3756547,-66.1851948
@@ -18583,21 +18660,21 @@ stop_id,stop_name,stop_lat,stop_lon
 8505794543,Calle Nueva Granada,-17.3912828,-66.1733676
 8505794544,Calle Nueva Granada,-17.3913105,-66.1726879
 563279633,Calle Nueva Granada,-17.3913271,-66.1722739
-8319877523,Calle Francisco de Toledo,-17.3902115,-66.1704537
-8566427909,Calle Francisco de Toledo,-17.3902462,-66.1702536
-8566416811,Calle Francisco de Toledo,-17.3903362,-66.1697352
-10888898920,Calle Francisco de Toledo,-17.3903472,-66.1696728
-563279658,Calle Francisco de Toledo y Calle Francisco Viedma,-17.3903609,-66.1695931
+8319877523,Calle Virrey Francisco de Toledo,-17.3902115,-66.1704537
+8566427909,Calle Virrey Francisco de Toledo,-17.3902462,-66.1702536
+8566416811,Calle Virrey Francisco de Toledo,-17.3903362,-66.1697352
+10888898920,Calle Virrey Francisco de Toledo,-17.3903472,-66.1696728
+563279658,Calle Virrey Francisco de Toledo y Calle Francisco Viedma,-17.3903609,-66.1695931
 11074384895,Calle Francisco Viedma,-17.3904186,-66.1695838
-563279664,Calle Francisco Viedma y Calle Francisco de Toledo,-17.3906612,-66.1694681
-10809870925,Calle Francisco de Toledo,-17.3906785,-66.1693262
-6175794686,Calle Francisco de Toledo,-17.3907433,-66.1689239
-6175794689,Calle Francisco de Toledo,-17.390796,-66.1686248
-10888898990,Calle Francisco de Toledo,-17.3909442,-66.167761
-10809870935,Calle Francisco de Toledo,-17.390949,-66.1677331
-563279678,Calle Francisco de Toledo y Calle Garcilaso de la Vega,-17.390964,-66.1676467
-2972424488,Calle Garcilaso de la Vega y Calle Francisco de Toledo,-17.3906902,-66.1675947
-9934347433,Calle Francisco de Toledo,-17.3908003,-66.1669497
+563279664,Calle Francisco Viedma y Calle Virrey Francisco de Toledo,-17.3906612,-66.1694681
+10809870925,Calle Virrey Francisco de Toledo,-17.3906785,-66.1693262
+6175794686,Calle Virrey Francisco de Toledo,-17.3907433,-66.1689239
+6175794689,Calle Virrey Francisco de Toledo,-17.390796,-66.1686248
+10888898990,Calle Virrey Francisco de Toledo,-17.3909442,-66.167761
+10809870935,Calle Virrey Francisco de Toledo,-17.390949,-66.1677331
+563279678,Calle Virrey Francisco de Toledo y Calle Garcilaso de la Vega,-17.390964,-66.1676467
+2972424488,Calle Garcilaso de la Vega y Calle Virrey Francisco de Toledo,-17.3906902,-66.1675947
+9934347433,Calle Virrey Francisco de Toledo,-17.3908003,-66.1669497
 5610210857,Avenida República,-17.4087688,-66.1508401
 3329495400,Calle Guadalquivir,-17.4110939,-66.1494903
 3017384630,Calle Guadalquivir,-17.4115718,-66.1489432
@@ -19313,32 +19390,33 @@ stop_id,stop_name,stop_lat,stop_lon
 5182878112,Avenida Circunvalación,-17.3785064,-66.0769604
 3019311968,Avenida Circunvalación,-17.3786545,-66.0758088
 3019311970,Avenida Circunvalación,-17.3787455,-66.0751248
-3297943667,Avenida Circunvalación y Calle Chacarera y Chacarera,-17.3788036,-66.0746767
-3297943668,Avenida Circunvalación,-17.3788905,-66.0740056
-4583466462,Avenida Circunvalación,-17.3789441,-66.0735921
-5187746971,Avenida Circunvalación,-17.3791399,-66.0720792
-1609341487,Avenida Circunvalación,-17.3792381,-66.0714052
-6442152421,Avenida Circunvalación,-17.379267,-66.0710641
-1720891127,Avenida Circunvalación,-17.3792396,-66.0707183
-6661491601,Avenida Circunvalación,-17.3792036,-66.0703925
-5187746985,Avenida Circunvalación,-17.3791401,-66.0698186
-11357410308,Avenida Circunvalación y Avenida Primera,-17.3790987,-66.0693971
-11357424412,Avenida Primera,-17.379057,-66.0690636
+3297943667,Avenida Circunvalación y Avenida Primera y Calle Chacarera y Chacarera,-17.3788036,-66.0746767
+3297943668,Avenida Primera,-17.3788905,-66.0740056
+4583466462,Avenida Primera,-17.3789441,-66.0735921
+5187746971,Avenida Primera,-17.3791399,-66.0720792
+1609341487,Avenida Primera,-17.3792305,-66.0714488
+6442152421,Avenida Primera,-17.379267,-66.0710641
+1720891127,Avenida Primera,-17.3792396,-66.0707421
+6661491601,Avenida Primera,-17.3792036,-66.0703925
+5187746985,Avenida Primera,-17.3791401,-66.0698186
+13520912094,Avenida Primera,-17.3791043,-66.069479
+11357410308,Avenida Primera,-17.3790836,-66.0693099
+11357424412,Avenida Primera,-17.3790608,-66.0691191
 1720891118,Avenida Primera,-17.3789771,-66.068448
-1720891162,Avenida Primera,-17.3788592,-66.0675398
-1609341791,Avenida Primera,-17.3787059,-66.0675597
-11357424413,Avenida Primera,-17.3789103,-66.0690815
-11357424414,Avenida Primera y Avenida Circunvalación,-17.37893,-66.0693884
-5187746984,Avenida Circunvalación,-17.3789767,-66.0698009
-11081851792,Avenida Circunvalación,-17.3790615,-66.0704178
-4583466468,Avenida Circunvalación,-17.3790977,-66.0707272
-3297943672,Avenida Circunvalación,-17.3791041,-66.0707806
-5779625440,Avenida Circunvalación,-17.3791131,-66.0710824
-1720875325,Avenida Circunvalación,-17.3790838,-66.0713938
-4583466477,Avenida Circunvalación,-17.3789983,-66.0720623
-4583466470,Avenida Circunvalación,-17.3788054,-66.0735709
-1613913958,Avenida Circunvalación,-17.3787529,-66.0739812
-1609295615,Avenida Circunvalación y Chacarera,-17.3786663,-66.0746583
+1720891162,Avenida Primera,-17.3788592,-66.0675596
+1609341791,Avenida Primera,-17.3787172,-66.0675755
+11357424413,Avenida Primera,-17.3789216,-66.0691251
+11357424414,Avenida Primera,-17.3789489,-66.0693409
+5187746984,Avenida Primera,-17.378988,-66.0698167
+11081851792,Avenida Primera,-17.3790615,-66.0704178
+4583466468,Avenida Primera,-17.3790977,-66.0707272
+3297943672,Avenida Primera,-17.3791041,-66.0707806
+5779625440,Avenida Primera,-17.3791131,-66.0710824
+1720875325,Avenida Primera,-17.3790838,-66.0714176
+4583466477,Avenida Primera,-17.3789983,-66.0720623
+4583466470,Avenida Primera,-17.3788034,-66.0735865
+1613913958,Avenida Primera,-17.3787529,-66.0739812
+1609295615,Avenida Primera y Avenida Circunvalación y Chacarera,-17.3786663,-66.0746583
 2320035785,Avenida Circunvalación,-17.3786085,-66.075101
 9119024298,Avenida Circunvalación,-17.3785292,-66.0757092
 2320007352,Avenida Circunvalación,-17.3785178,-66.075796
@@ -19346,6 +19424,7 @@ stop_id,stop_name,stop_lat,stop_lon
 1609342350,Avenida Circunvalación,-17.3782951,-66.0775951
 5779625437,Avenida Circunvalación,-17.3782682,-66.0777887
 5779625436,Avenida Circunvalación,-17.3782592,-66.0778598
+13520935001,Avenida Circunvalación,-17.3782487,-66.0779406
 1613913909,Avenida Circunvalación,-17.3781229,-66.0789132
 5779625402,Avenida Circunvalación,-17.3778704,-66.0809098
 1609342402,Avenida Circunvalación,-17.377862,-66.0809891
@@ -19588,7 +19667,6 @@ stop_id,stop_name,stop_lat,stop_lon
 360127675,Calle José Pol,-17.3906702,-66.1446527
 2282792199,Calle José Pol,-17.3906023,-66.1446663
 9400884754,Calle José Pol,-17.3900885,-66.1447728
-698492426,Calle José Pol y Avenida Heroínas de la Coronilla,-17.390044,-66.1447822
 315139246,Calle José Pol,-17.3893292,-66.1449475
 310255652,Calle José Pol y Calle República de Colombia,-17.3886995,-66.1450787
 4218232005,Calle República de Colombia,-17.3885193,-66.1441134
@@ -19628,8 +19706,10 @@ stop_id,stop_name,stop_lat,stop_lon
 4941353034,Calle General Achá,-17.3947917,-66.1663067
 2477244182,Calle General Achá,-17.3947733,-66.1665308
 9916158243,Calle General Achá,-17.3947513,-66.1666695
-315114923,Calle General Achá,-17.3947426,-66.1667241
-2330755914,Innominada,-17.3944766,-66.1666947
+315114923,Calle General Achá y Avenida Juana Azurduy de Padilla,-17.3947426,-66.1667241
+13520009050,Avenida Juana Azurduy de Padilla,-17.3946455,-66.1667029
+13520009049,Innominada,-17.39457,-66.1667144
+2330755914,Innominada,-17.3944646,-66.1666947
 2330755911,Innominada,-17.3942532,-66.1666451
 315115733,Innominada,-17.394135,-66.1666025
 315115734,Innominada,-17.3936194,-66.1663799
@@ -21341,19 +21421,6 @@ stop_id,stop_name,stop_lat,stop_lon
 11896506101,Avenida de la Fuerza Aérea,-17.4166613,-66.1656783
 1865108167,Avenida de la Fuerza Aérea,-17.4160009,-66.1655447
 10720737516,Avenida de la Fuerza Aérea,-17.4159412,-66.1655331
-1865108184,Avenida de la Fuerza Aérea,-17.4149996,-66.1653509
-9195017633,Avenida de la Fuerza Aérea,-17.4140298,-66.1651643
-1865108156,Avenida de la Fuerza Aérea,-17.4139719,-66.1651531
-9195017631,Avenida de la Fuerza Aérea,-17.4139161,-66.1651426
-1865108179,Avenida de la Fuerza Aérea,-17.4129789,-66.1649656
-10583174369,Avenida de la Fuerza Aérea,-17.41292,-66.1649545
-10583174356,Avenida de la Fuerza Aérea,-17.4125551,-66.1648856
-1865108150,Avenida de la Fuerza Aérea,-17.4123541,-66.1648476
-3303584455,Avenida de la Fuerza Aérea,-17.4122704,-66.1648275
-1762869105,Avenida de la Fuerza Aérea,-17.4120442,-66.1647873
-497191414,Avenida de la Fuerza Aérea,-17.4115484,-66.1647037
-2604131600,Avenida de la Fuerza Aérea,-17.4114334,-66.1646654
-1762869034,Avenida de la Fuerza Aérea,-17.4113315,-66.1646058
 7965138173,Rotonda Nuestra Señora de Fatima y Raúl Rivero Torrez,-17.3776346,-66.1387981
 1796486796,Rotonda Nuestra Señora de Fatima y Raúl Rivero Torrez,-17.3776746,-66.1387724
 7965138178,Rotonda Nuestra Señora de Fatima y Raúl Rivero Torrez,-17.3777235,-66.1387521
@@ -24787,25 +24854,24 @@ stop_id,stop_name,stop_lat,stop_lon
 1610527036,Calle 10 de Noviembre y Calle IV Centenario,-17.4191587,-66.1360239
 2272229859,Calle IV Centenario,-17.4200333,-66.1351591
 2677410626,Calle Monseñor Óscar Arnulfo Romero,-17.4397168,-66.1280497
-2420519644,Innominada,-17.3939248,-66.1673992
-2477244110,Innominada,-17.3938867,-66.1674079
-2420519587,Innominada,-17.393849,-66.1674062
-2420519518,Innominada,-17.3932949,-66.1672675
-8320381223,Innominada,-17.3931454,-66.1672362
-9934347432,Calle Francisco de Toledo,-17.3906611,-66.1669256
-563279680,Calle Francisco de Toledo y Calle Garcilaso de la Vega,-17.3905492,-66.1675673
-563279676,Calle Garcilaso de la Vega y Calle Francisco de Toledo,-17.3902902,-66.1675166
-10888898935,Calle Francisco de Toledo,-17.3902729,-66.1676191
-8566427912,Calle Francisco de Toledo,-17.390262,-66.1676848
-6175794688,Calle Francisco de Toledo,-17.3901209,-66.1685223
-10888898988,Calle Francisco de Toledo,-17.3899794,-66.1693936
-5350222268,Calle Francisco de Toledo,-17.3899745,-66.169424
-563279674,Calle Francisco de Toledo y Calle Francisco Viedma,-17.3899611,-66.1695281
-1724956665,Calle Francisco Viedma y Calle Francisco de Toledo,-17.3902228,-66.1695733
-10888898921,Calle Francisco de Toledo,-17.3902085,-66.1696511
-8566416816,Calle Francisco de Toledo,-17.3901989,-66.1697069
-8566427908,Calle Francisco de Toledo,-17.3901055,-66.1702287
-8319877519,Calle Francisco de Toledo,-17.3900689,-66.1704331
+2420519644,Avenida Humboldt,-17.3939248,-66.1673992
+2477244110,Avenida Humboldt,-17.3938867,-66.1674079
+2420519587,Avenida Humboldt,-17.393849,-66.1674062
+8320381223,Avenida Humboldt,-17.3932384,-66.1672562
+9934347432,Calle Virrey Francisco de Toledo,-17.3906611,-66.1669256
+563279680,Calle Virrey Francisco de Toledo y Calle Garcilaso de la Vega,-17.3905492,-66.1675673
+563279676,Calle Garcilaso de la Vega y Calle Virrey Francisco de Toledo,-17.3902902,-66.1675166
+10888898935,Calle Virrey Francisco de Toledo,-17.3902729,-66.1676191
+8566427912,Calle Virrey Francisco de Toledo,-17.390262,-66.1676848
+6175794688,Calle Virrey Francisco de Toledo,-17.3901209,-66.1685223
+10888898988,Calle Virrey Francisco de Toledo,-17.3899794,-66.1693936
+5350222268,Calle Virrey Francisco de Toledo,-17.3899745,-66.169424
+563279674,Calle Virrey Francisco de Toledo y Calle Francisco Viedma,-17.3899611,-66.1695281
+1724956665,Calle Francisco Viedma y Calle Virrey Francisco de Toledo,-17.3902228,-66.1695733
+10888898921,Calle Virrey Francisco de Toledo,-17.3902085,-66.1696511
+8566416816,Calle Virrey Francisco de Toledo,-17.3901989,-66.1697069
+8566427908,Calle Virrey Francisco de Toledo,-17.3901055,-66.1702287
+8319877519,Calle Virrey Francisco de Toledo,-17.3900689,-66.1704331
 563279517,Calle Virreinato de Lima,-17.3920451,-66.1723039
 563279512,Calle Virreinato de Lima,-17.3919774,-66.173807
 11361265664,Calle Virreinato de Lima,-17.39189,-66.1752327
@@ -25090,11 +25156,6 @@ stop_id,stop_name,stop_lat,stop_lon
 2577975345,Avenida Bartolomé Guzmán,-17.4059253,-66.1575142
 10628476613,Avenida Bartolomé Guzmán,-17.4062862,-66.157399
 707336915,Avenida Bartolomé Guzmán,-17.4067494,-66.1572623
-7132200140,Avenida Bartolomé Guzmán y Calle Cliza,-17.4072566,-66.1571728
-10628476612,Calle Cliza,-17.4072476,-66.1571175
-10536326635,Calle Cliza,-17.4072507,-66.1570895
-10536326634,Calle Cliza,-17.4072671,-66.1570465
-7902369090,Calle Cliza,-17.4073032,-66.1569902
 689437385,Calle Adela Zamudio,-17.373184,-66.1634494
 9731395665,Calle Adela Zamudio,-17.3735896,-66.1632849
 689437377,Calle Adela Zamudio,-17.3739968,-66.1631084
@@ -26149,18 +26210,6 @@ stop_id,stop_name,stop_lat,stop_lon
 617198566,Avenida Cochabamba,-17.3947535,-66.2720438
 8316457906,Avenida Cochabamba,-17.3946967,-66.2726609
 4382907969,Avenida Cochabamba y Calle Cochabamba,-17.3946618,-66.2730559
-1873958890,Avenida Heroínas de la Coronilla,-17.3908127,-66.1488306
-9920363683,Avenida Heroínas de la Coronilla,-17.3907061,-66.1482502
-1873958878,Avenida Heroínas de la Coronilla,-17.3906432,-66.1479073
-1873958877,Avenida Heroínas de la Coronilla,-17.3906176,-66.1477703
-8909153738,Avenida Heroínas de la Coronilla,-17.3905203,-66.1472595
-698492419,Avenida Heroínas de la Coronilla,-17.3903309,-66.1462645
-9852141003,Avenida Heroínas de la Coronilla,-17.3902432,-66.1458114
-2213884667,Avenida Heroínas de la Coronilla,-17.390235,-66.1457691
-3950325577,Avenida Heroínas de la Coronilla,-17.3901402,-66.1452792
-4308163740,Avenida Heroínas de la Coronilla,-17.3900534,-66.1448309
-4308163739,Avenida Heroínas de la Coronilla,-17.3900326,-66.1447221
-6178744931,Avenida Heroínas de la Coronilla,-17.3898592,-66.1437615
 780226711,Innominada,-17.420761,-66.2847772
 780226771,Innominada,-17.4214847,-66.2866151
 780227361,Innominada,-17.422713,-66.2899945
@@ -29495,25 +29544,6 @@ stop_id,stop_name,stop_lat,stop_lon
 10156195859,Avenida de la Patria,-17.4182029,-66.1598727
 10839930188,Avenida de la Patria,-17.4181237,-66.1599419
 3305037823,Avenida de la Patria,-17.4174199,-66.1605329
-2716726814,Rotonda Mariscal Antonio José de Sucre,-17.4130069,-66.1595587
-9438085269,Rotonda Mariscal Antonio José de Sucre,-17.4130021,-66.1595341
-2716726811,Rotonda Mariscal Antonio José de Sucre,-17.4129933,-66.1595108
-9438085267,Rotonda Mariscal Antonio José de Sucre,-17.4129808,-66.1594893
-2716726809,Rotonda Mariscal Antonio José de Sucre,-17.4129651,-66.1594704
-9438085268,Rotonda Mariscal Antonio José de Sucre,-17.4129464,-66.1594546
-2716726805,Rotonda Mariscal Antonio José de Sucre,-17.4129255,-66.1594423
-9438085258,Rotonda Mariscal Antonio José de Sucre,-17.4129157,-66.1594381
-2716726801,Rotonda Mariscal Antonio José de Sucre y Avenida Del Cabildo,-17.4128793,-66.1594297
-9438085275,Avenida Del Cabildo,-17.412754,-66.1593614
-12100007976,Avenida Del Cabildo,-17.412729,-66.1593361
-7947201385,Avenida Del Cabildo,-17.4127181,-66.1593277
-7947180866,Avenida Del Cabildo,-17.4121426,-66.1586145
-2576698561,Avenida Del Cabildo,-17.4105306,-66.1568278
-10046445859,Avenida Del Cabildo,-17.4101809,-66.1566919
-9131107895,Avenida Del Cabildo,-17.4101011,-66.1566909
-4477790800,Avenida Bartolomé Guzmán,-17.4097636,-66.1567172
-707336906,Avenida Bartolomé Guzmán,-17.4094479,-66.1567616
-2577975347,Avenida Bartolomé Guzmán,-17.4078846,-66.1570538
 12534274231,Calle Colombia,-17.4027097,-66.0381341
 6133430610,Rotonda Monseñor Alcocer,-17.4003282,-66.037852
 4308310794,Rotonda Monseñor Alcocer y Avenida Monseñor Alcocer,-17.4002779,-66.03787
@@ -29544,18 +29574,19 @@ stop_id,stop_name,stop_lat,stop_lon
 4265534023,Calle Independencia,-17.4065153,-66.038475
 1544968809,Calle Independencia y Calle Avaroa,-17.4079161,-66.0390273
 1544968583,Calle Avaroa y Calle Bolívar,-17.4074399,-66.0402483
-1544969054,Calle Bolívar,-17.4086613,-66.040847
-4279518573,Calle Bolívar,-17.4092081,-66.0411106
-1544969187,Calle Bolívar,-17.4092987,-66.0411625
-4279518614,Calle Bolívar,-17.4094427,-66.0412224
-3839566056,Calle Bolívar,-17.4100204,-66.0414977
+13520789299,Calle Bolívar,-17.4085582,-66.0407963
+1544969054,Calle Bolívar,-17.4086562,-66.0408443
+1544969187,Calle Bolívar,-17.4092757,-66.041141
+13520805465,Calle Bolívar,-17.4093548,-66.0411775
+13520805403,Calle Bolívar,-17.4099056,-66.0414316
+3839566056,Calle Bolívar,-17.4100076,-66.0414789
 3839566055,Calle Bolívar,-17.4101804,-66.04155
 1544969424,Calle Bolívar,-17.4102815,-66.0415553
-1544969467,Calle Bolívar,-17.4104787,-66.0415258
+1544969467,Calle Bolívar,-17.4104889,-66.0415338
 2320095800,Calle Bolívar,-17.4109392,-66.0415687
 3839566037,Calle Bolívar,-17.4112424,-66.0415879
 3839566036,Calle Bolívar,-17.4117492,-66.0416144
-1544969503,Calle Bolívar,-17.4119028,-66.0416801
+1544969503,Calle Bolívar,-17.4118746,-66.0416801
 1544969524,Calle Bolívar,-17.4121444,-66.0416419
 4279518924,Calle Bolívar,-17.4123476,-66.0415893
 4067021361,Calle Bolívar,-17.4129729,-66.0414464
@@ -29769,17 +29800,17 @@ stop_id,stop_name,stop_lat,stop_lon
 4267227922,Rotonda Avenida Santa Rita,-17.3934471,-66.0619868
 2894872192,Rotonda Avenida Santa Rita,-17.393322,-66.0621581
 2894872190,Rotonda Avenida Santa Rita,-17.3932825,-66.0622105
-2894872188,Rotonda Avenida Santa Rita y Avenida Santa Rita,-17.3932217,-66.0622843
-4267227782,Avenida Santa Rita,-17.3931518,-66.0623133
-1551434924,Avenida Santa Rita,-17.3929947,-66.0623492
-7243231724,Avenida Santa Rita,-17.392333,-66.0621739
-2320095633,Avenida Santa Rita,-17.3905722,-66.0618106
-4267227694,Avenida Santa Rita,-17.3900942,-66.0616874
-4267213884,Avenida Santa Rita,-17.3895264,-66.0615914
-1551434922,Avenida Santa Rita,-17.3892501,-66.0615447
-4617022138,Avenida Santa Rita,-17.388859,-66.0614701
-1551434920,Avenida Santa Rita,-17.388721,-66.061474
-2320095609,Avenida Santa Rita y Avenida Eucaliptos,-17.3883744,-66.0613833
+2894872188,Rotonda Avenida Santa Rita y Avenida Décima Cuarta,-17.3932217,-66.0622843
+4267227782,Avenida Décima Cuarta,-17.3931518,-66.0623133
+1551434924,Avenida Décima Cuarta,-17.3929947,-66.0623492
+7243231724,Avenida Décima Cuarta,-17.392333,-66.0621739
+2320095633,Avenida Décima Cuarta,-17.3905722,-66.0618106
+4267227694,Avenida Décima Cuarta,-17.3900942,-66.0616874
+4267213884,Avenida Décima Cuarta,-17.3895264,-66.0615914
+1551434922,Avenida Décima Cuarta,-17.3892501,-66.0615447
+4617022138,Avenida Décima Cuarta,-17.388859,-66.0614701
+1551434920,Avenida Décima Cuarta,-17.388721,-66.061474
+2320095609,Avenida Décima Cuarta y Avenida Eucaliptos,-17.3883744,-66.0613833
 4267213874,Avenida Eucaliptos,-17.3884897,-66.0612812
 4267213875,Avenida Eucaliptos,-17.3885965,-66.0611081
 4267213876,Avenida Eucaliptos,-17.3889166,-66.0605328
@@ -29808,6 +29839,7 @@ stop_id,stop_name,stop_lat,stop_lon
 1720841199,Avenida San Rafael,-17.3849811,-66.0540805
 1720841141,Avenida San Rafael,-17.3850236,-66.0538488
 1720841096,Avenida San Rafael,-17.3851436,-66.0536348
+13520912091,Avenida San Rafael,-17.3851914,-66.0535695
 1720841098,Avenida San Rafael,-17.3853871,-66.0533016
 1720841186,Avenida San Rafael,-17.3856558,-66.0528171
 3764806785,Avenida San Rafael,-17.3857167,-66.0527311
@@ -29819,11 +29851,13 @@ stop_id,stop_name,stop_lat,stop_lon
 4279518022,Avenida San Rafael,-17.3858514,-66.0516068
 4279518024,Avenida San Rafael,-17.3858604,-66.0514488
 4279518030,Avenida San Rafael,-17.3859077,-66.0511991
+13520912087,Avenida San Rafael,-17.3859693,-66.0509104
 4279518031,Avenida San Rafael,-17.3860101,-66.050719
 4279518032,Avenida San Rafael,-17.386041,-66.0504409
 4264031789,Avenida San Rafael,-17.3860544,-66.050393
 1720841136,Avenida San Rafael,-17.3861237,-66.0501519
 1720841165,Avenida San Rafael,-17.386314,-66.0496607
+13520912090,Avenida San Rafael,-17.3863556,-66.0495059
 1720841189,Avenida San Rafael,-17.3864113,-66.0492985
 1720841167,Avenida San Rafael,-17.3864849,-66.0490261
 4939449096,Avenida San Rafael,-17.3865137,-66.0488997
@@ -30059,7 +30093,7 @@ stop_id,stop_name,stop_lat,stop_lon
 11079439390,Avenida Gualberto Villarroel,-17.4108212,-66.0335672
 1755196500,Avenida Gualberto Villarroel,-17.4106856,-66.0336986
 7243790348,Avenida Gualberto Villarroel,-17.4100921,-66.0342854
-1544969375,Avenida Gualberto Villarroel y Avenida Ingavi,-17.4098653,-66.0344784
+1544969375,Avenida Gualberto Villarroel y Avenida Ingavi,-17.409896,-66.0344569
 7352829064,Avenida Ingavi,-17.4098013,-66.0345355
 1544969282,Avenida Ingavi,-17.4095726,-66.0347124
 1544969090,Avenida Ingavi y Calle Beni,-17.4087907,-66.0354168
@@ -30072,7 +30106,7 @@ stop_id,stop_name,stop_lat,stop_lon
 11071927230,Calle Bolívar,-17.4127409,-66.0414167
 11071927244,Calle Bolívar,-17.41244,-66.0414954
 11071927229,Calle Bolívar,-17.4121252,-66.0415669
-11071927228,Calle Bolívar,-17.4119204,-66.0415993
+11071927228,Calle Bolívar,-17.4118846,-66.0416047
 1544968025,Calle Porvenir y Calle Coronel Sánchez,-17.4057418,-66.040703
 3675711115,Innominada,-17.5000888,-66.1652951
 3675711095,Innominada,-17.4996431,-66.1655615
@@ -30567,6 +30601,7 @@ stop_id,stop_name,stop_lat,stop_lon
 3957175077,Avenida Gualberto Villarroel,-17.4016705,-66.0671551
 3957175073,Avenida Gualberto Villarroel,-17.4016602,-66.0669324
 3957175071,Avenida Gualberto Villarroel,-17.4016346,-66.0664267
+13520805481,Avenida Gualberto Villarroel,-17.4016265,-66.0662148
 3957175102,Avenida Gualberto Villarroel,-17.4016155,-66.0659274
 3956136756,Avenida Gualberto Villarroel,-17.4015543,-66.064984
 3956136692,Avenida Gualberto Villarroel,-17.4015298,-66.0647646
@@ -30861,7 +30896,8 @@ stop_id,stop_name,stop_lat,stop_lon
 1609341427,Innominada,-17.3742728,-66.079632
 5177568882,Innominada,-17.3742947,-66.0794113
 5177568884,Innominada,-17.3743316,-66.0788099
-4032275390,Innominada,-17.3743524,-66.0782459
+4032275390,Innominada,-17.3743862,-66.0782656
+13520935006,Innominada,-17.3743869,-66.0781753
 7243231716,Innominada,-17.3743907,-66.0776873
 5177568883,Innominada,-17.3744249,-66.077143
 5187746966,Innominada,-17.3744343,-66.0770344

@@ -1,5 +1,5 @@
 ### Count
-**Total**: 485  **Correct**: 439  **With error**: 46
+**Total**: 485  **Correct**: 440  **With error**: 45
 
 
 | Id | Name | Ref | From | To | State |
@@ -9,7 +9,7 @@
 [4269608](https://www.openstreetmap.org/relation/4269608) | MicroBus A: Villa Israel → Río Taquiña | A | Villa Israel | Río Taquiña | ✅
 [4269609](https://www.openstreetmap.org/relation/4269609) | MicroBus A: Río Taquiña → Villa Israel | A | Río Taquiña | Villa Israel | ✅
 [11678428](https://www.openstreetmap.org/relation/11678428) | Tranvía Amarilla: Cochabamba → Jorge Wilstermann | A | Cochabamba | Jorge Wilstermann | ✅
-[19604339](https://www.openstreetmap.org/relation/19604339) | Tranvía Amarilla: Jorge Wilstermann → Cochabamba | A | Jorge Wilstermann | Cochabamba | ✅
+[19604339](https://www.openstreetmap.org/relation/19604339) | Tranvía Amarilla: Jorge Wilstermann → Cochabamba | Amarilla | Jorge Wilstermann | Cochabamba | ✅
 [4247869](https://www.openstreetmap.org/relation/4247869) | MicroBus B: Calle Las Buganvillas → Pasaje F | B | Calle Las Buganvillas | Pasaje F | ✅
 [4420889](https://www.openstreetmap.org/relation/4420889) | MicroBus B: Pasaje F → Calle Las Buganvillas | B | Pasaje F | Calle Las Buganvillas | ✅
 [4430244](https://www.openstreetmap.org/relation/4430244) | MicroBus C: Avenida Pedro de la Gasca → Calle Manuel Carrasco Jimenez | C | Avenida Pedro de la Gasca | Calle Manuel Carrasco Jimenez | ✅
@@ -49,8 +49,8 @@
 [9645302](https://www.openstreetmap.org/relation/9645302) | MicroBus Q: Avenida Circuito Bolivia → Villa Urkupiña Calvario | Q | Avenida Circuito Bolivia | Villa Urkupiña Calvario | ✅
 [9119233](https://www.openstreetmap.org/relation/9119233) | MicroBus R: Bello Horizonte → Avenida Arquímedes | R | Bello Horizonte | Avenida Arquímedes | ✅
 [9123985](https://www.openstreetmap.org/relation/9123985) | MicroBus R: Avenida Arquímedes → Bello Horizonte | R | Avenida Arquímedes | Bello Horizonte | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(9123985);out%20geom;%0Away(655799663);out%20geom;%0Away(192740801);out%20geom;&R)
-[9083839](https://www.openstreetmap.org/relation/9083839) | Tranvía Roja: San Antonio → Agronomía | Roja | San Antonio | Agronomía | ✅
-[14576927](https://www.openstreetmap.org/relation/14576927) | Tranvía Roja: Agronomía → San Antonio | Roja | Agronomía | San Antonio | ✅
+[9083839](https://www.openstreetmap.org/relation/9083839) | Tranvía Roja: Cochabamba → Kiñiloma | Roja | Cochabamba | Kiñiloma | ✅
+[14576927](https://www.openstreetmap.org/relation/14576927) | Tranvía Roja: Kiñiloma → Cochabamba | Roja | Kiñiloma | Cochabamba | ✅
 [10668794](https://www.openstreetmap.org/relation/10668794) | MicroBus S: Calle Mendoza → Avenida Blanco Galindo | S | Calle Mendoza | Avenida Blanco Galindo | ✅
 [10677513](https://www.openstreetmap.org/relation/10677513) | MicroBus S: Avenida Blanco Galindo → Calle Mendoza | S | Avenida Blanco Galindo | Calle Mendoza | ✅
 [20141710](https://www.openstreetmap.org/relation/20141710) | Trufi Santivañez: Cochabamba → Santivañez | Santivañez | Cochabamba | Santivañez | ✅
@@ -62,8 +62,8 @@
 [6925237](https://www.openstreetmap.org/relation/6925237) | Teleférico: Cristo de la Concordia → Parque de la Autonomía | Teleférico | Cristo de la Concordia | Parque de la Autonomía | ✅
 [10712236](https://www.openstreetmap.org/relation/10712236) | MicroBus U: Calle Manuel Virreira → Segunda Circunvalación | U | Calle Manuel Virreira | Segunda Circunvalación | ✅
 [10712279](https://www.openstreetmap.org/relation/10712279) | MicroBus U: Segunda Circunvalación → Calle Manuel Virreira | U | Segunda Circunvalación | Calle Manuel Virreira | ✅
-[9074378](https://www.openstreetmap.org/relation/9074378) | Tranvía Verde: Vinto → San Antonio | Verde | Vinto | San Antonio | ✅
-[14576926](https://www.openstreetmap.org/relation/14576926) | Tranvía Verde: San Antonio → Vinto | Verde | San Antonio | Vinto | ✅
+[9074378](https://www.openstreetmap.org/relation/9074378) | Tranvía Verde: Suticollo → San Antonio | Verde | Suticollo | San Antonio | ✅
+[14576926](https://www.openstreetmap.org/relation/14576926) | Tranvía Verde: San Antonio → Suticollo | Verde | San Antonio | Suticollo | ✅
 [5386695](https://www.openstreetmap.org/relation/5386695) | MicroBus W: Calle Poopó → Huachi Rancho | W | Calle Poopó | Huachi Rancho | ✅
 [5386696](https://www.openstreetmap.org/relation/5386696) | MicroBus W: Huachi Rancho → Calle Poopó | W | Huachi Rancho | Calle Poopó | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(5386696);out%20geom;%0Away(807210863);out%20geom;%0Away(835967806);out%20geom;&R)
 [9386225](https://www.openstreetmap.org/relation/9386225) | MicroBus W: Irincollo → Calle Poopó | W | Irincollo | Calle Poopó | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(9386225);out%20geom;%0Away(807210863);out%20geom;%0Away(835967806);out%20geom;&R)
@@ -84,7 +84,7 @@
 [9124195](https://www.openstreetmap.org/relation/9124195) | MiniBus 1: Calle Ciudad del niño → Avenida Humberto Asin Rivero | 1 | Calle Ciudad del niño | Avenida Humberto Asin Rivero | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(9124195);out%20geom;%0Away(985653247);out%20geom;%0Away(656371104);out%20geom;&R)
 [9397731](https://www.openstreetmap.org/relation/9397731) | Trufi 01: Calle Calamarca → Calle 6 | 01 | Calle Calamarca | Calle 6 | ✅
 [9397733](https://www.openstreetmap.org/relation/9397733) | Trufi 01: Calle 6 → C. Calamarca | 01 | Calle 6 | C. Calamarca | ✅
-[9582857](https://www.openstreetmap.org/relation/9582857) | MiniBus 2: Calle Capitán Luis Garcia → Calle Las Begonias | 2 | Calle Capitán Luis Garcia | Calle Las Begonias | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(9582857);out%20geom;%0Away(230917251);out%20geom;%0Away(901022115);out%20geom;&R)
+[9582857](https://www.openstreetmap.org/relation/9582857) | MiniBus 2: Calle Capitán Luis Garcia → Calle Las Begonias | 2 | Calle Capitán Luis Garcia | Calle Las Begonias | ✅
 [9582859](https://www.openstreetmap.org/relation/9582859) | MiniBus 2: Calle Las Begonias → Calle Capitán Luis Garcia | 2 | Calle Las Begonias | Calle Capitán Luis Garcia | ✅
 [9397822](https://www.openstreetmap.org/relation/9397822) | Trufi 03: Calle Curupau → Calle Luis Zegarra | 03 | Calle Curupau | Calle Luis Zegarra | ✅
 [9397824](https://www.openstreetmap.org/relation/9397824) | Trufi 03: Calle Luis Zegarra → Calle Curupau | 03 | Calle Luis Zegarra | Calle Curupau | ✅

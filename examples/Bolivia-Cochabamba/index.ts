@@ -48,6 +48,7 @@ async function main() {
         routes: true,
         log: true,
         stops: true,
+        gtfsZip: true,
       },
       geojsonOptions: {
         osmDataGetter: getOsmDataGetter(),
@@ -60,6 +61,7 @@ async function main() {
       gtfsOptions: {
         agencyTimezone: 'America/La_Paz',
         agencyUrl: 'https://www.cochabamba.bo/',
+        cityName: 'cochabamba',
         defaultCalendar: () => 'Mo-Su 06:00-22:00',
         frequencyHeadway: () => 300, // 5 minutes
         vehicleSpeed: () => 40, // 40 km/h average speed in city

@@ -114,6 +114,7 @@ trip_id,route_id,service_id,shape_id,trip_headsign
 9582573,67,Mo-Su,9582573,Calle La Rioja
 9582854,68,Mo-Su,9582854,Calle 7
 9582856,68,Mo-Su,9582856,Calle Pascual Canaviri
+9582857,69,Mo-Su,9582857,Calle Las Begonias
 9582859,69,Mo-Su,9582859,Calle Capitán Luis Garcia
 9582860,70,Mo-Su,9582860,Dora Halkier
 9645302,15,Mo-Su,9645302,Villa Urkupiña Calvario
@@ -434,5 +435,5 @@ trip_id,route_id,service_id,shape_id,trip_headsign
 17290564,130,Mo-Su,17290564,Avenida 23 de Septiembre
 17290615,131,Mo-Su,17290615,Calle La Cascada
 17291147,129,Mo-Su,17291147,Calle Cleomedes
-19604339,126,Mo-Su,19604339,Cochabamba
-20141710,132,Mo-Su,20141710,Santivañez
+19604339,132,Mo-Su,19604339,Cochabamba
+20141710,133,Mo-Su,20141710,Santivañez

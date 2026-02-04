@@ -131,4 +131,5 @@ route_id,agency_id,route_short_name,route_long_name,route_color,route_type
 129,40,25,25,,3
 130,40,80,80,,3
 131,40,150,150,,3
-132,40,Santivañez,Santivañez,,3
+132,7,Amarilla,Amarilla,FFC300,0
+133,40,Santivañez,Santivañez,,3
