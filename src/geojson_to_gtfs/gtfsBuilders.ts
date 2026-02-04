@@ -55,6 +55,18 @@ export function agencyBuilder(
   return agencies;
 }
 
+// Parse seasonal prefix from opening_hours (e.g., "Dec-Jan:", "Jan-Mar:")
+function parseSeasonalPrefix(value: string): { season: string | null; schedule: string } {
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const monthPattern = months.join('|');
+  const seasonMatch = value.match(new RegExp(`^\\s*((?:${monthPattern})(?:-(?:${monthPattern}))?):\\s*(.+)$`, 'i'));
+
+  if (seasonMatch) {
+    return { season: seasonMatch[1], schedule: seasonMatch[2] };
+  }
+  return { season: null, schedule: value };
+}
+
 export function calendarBuilder(
   features: GeoJSONFeature[][],
   defaultCalendar: (feature: GeoJSONFeature) => string
@@ -79,11 +91,17 @@ export function calendarBuilder(
       if (value.includes('PH') || value.includes('SH')) {
         return;
       }
-      const dualTimeMatch = value.match(
+
+      // Parse seasonal prefix if present (e.g., "Dec-Jan: Tu-Su 09:30-23:00")
+      const { season, schedule } = parseSeasonalPrefix(value);
+
+      const dualTimeMatch = schedule.match(
         '((Mo|Tu|We|Th|Fr|Sa|Su)-(Mo|Tu|We|Th|Fr|Sa|Su)) (([01][0-9]|2[0-4]):([0-5][0-9]))-(([01][0-9]|2[0-4]):([0-5][0-9]))'
       );
       if (dualTimeMatch && dualTimeMatch.length === 10) {
-        const serviceId = dualTimeMatch[1];
+        // Include season in service_id to make it unique
+        const baseServiceId = dualTimeMatch[1];
+        const serviceId = season ? `${baseServiceId}-${season}` : baseServiceId;
 
         let service = services.find((value) => value.service_id === serviceId);
         if (!service) {
@@ -109,11 +127,13 @@ export function calendarBuilder(
           endTime: dualTimeMatch[7],
         });
       } else {
-        const singleTimeMatch = value.match(
+        const singleTimeMatch = schedule.match(
           '(Mo|Tu|We|Th|Fr|Sa|Su) (([01][0-9]|2[0-4]):([0-5][0-9]))-(([01][0-9]|2[0-4]):([0-5][0-9]))'
         );
         if (singleTimeMatch && singleTimeMatch.length === 8) {
-          const serviceId = singleTimeMatch[1];
+          // Include season in service_id to make it unique
+          const baseServiceId = singleTimeMatch[1];
+          const serviceId = season ? `${baseServiceId}-${season}` : baseServiceId;
 
           let service = services.find((value) => value.service_id === serviceId);
           if (!service) {
@@ -289,9 +309,15 @@ export function tripBuilder(
 
     if (useFrequencies) {
       // FREQUENCY-BASED: One trip per service (for use with frequencies.txt)
-      for (const service of mainFeature.gtfs.services) {
+      const services = mainFeature.gtfs.services;
+      for (let i = 0; i < services.length; i++) {
+        const service = services[i];
+        // Make trip_id unique when multiple services exist
+        const tripId = services.length > 1
+          ? mainFeature.properties.id * 100 + i
+          : mainFeature.properties.id;
         const trip: GTFSTrip = {
-          trip_id: mainFeature.properties.id,
+          trip_id: tripId,
           route_id: mainFeature.gtfs.route_id,
           service_id: service.service_id,
           shape_id: mainFeature.properties.id,
@@ -299,7 +325,7 @@ export function tripBuilder(
           direction_id: directionId,
         };
         trips.push(trip);
-        service.trip_id = mainFeature.properties.id;
+        service.trip_id = tripId;
       }
     } else {
       // SCHEDULE-BASED: Expand into individual scheduled trips

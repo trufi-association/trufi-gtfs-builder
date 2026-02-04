@@ -73,8 +73,19 @@ async function main() {
         stopNameBuilder: (stops) => {
           if (!stops || stops.length === 0) {
             stops = ['Innominada'];
-          } 
+          }
           return stops.join(' y ');
+        },
+        feed: {
+          publisherName: 'Trufi Association',
+          publisherUrl: 'https://www.trufi-association.org/',
+          lang: 'es',
+          version: '1.0',
+          contactEmail: 'info@trufi-association.org',
+          contactUrl: 'https://www.trufi-association.org/',
+          startDate: '20240101',
+          endDate: '20261231',
+          id: 'cochabamba',
         },
       },
     });
