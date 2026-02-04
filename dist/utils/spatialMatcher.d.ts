@@ -3,16 +3,8 @@ export interface NearestStopResult {
     stop: CustomStop;
     distanceMeters: number;
 }
-/**
- * Find the nearest custom stop to a given coordinate
- *
- * @param stops - Array of custom stops to search
- * @param lat - Latitude of the point to match
- * @param lon - Longitude of the point to match
- * @param maxDistanceMeters - Maximum search radius in meters
- * @returns The nearest stop and distance, or null if none within radius
- */
 export declare function findNearestStop(stops: CustomStop[], lat: number, lon: number, maxDistanceMeters: number): NearestStopResult | null;
+export declare function printPM89Debug(): void;
 /**
  * Calculate distance between two coordinates in meters
  */

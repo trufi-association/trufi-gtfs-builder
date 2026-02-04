@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.findNearestStop = findNearestStop;
+exports.printPM89Debug = printPM89Debug;
 exports.distanceBetweenCoords = distanceBetweenCoords;
 exports.stopIdToNumber = stopIdToNumber;
 exports.isPointOnRightSide = isPointOnRightSide;
@@ -17,10 +18,24 @@ const distance_1 = __importDefault(require("@turf/distance"));
  * @param maxDistanceMeters - Maximum search radius in meters
  * @returns The nearest stop and distance, or null if none within radius
  */
+// Debug: track minimum distance to PM89
+let minDistToPM89 = Infinity;
+let minDistToPM89RoutePoint = null;
 function findNearestStop(stops, lat, lon, maxDistanceMeters) {
     let nearestStop = null;
     let nearestDistance = Infinity;
     const point = [lon, lat]; // GeoJSON order: [lng, lat]
+    // Debug: check distance from this route point to PM89
+    const pm89Lon = -78.99639006477854;
+    const pm89Lat = -8.177089767688033;
+    const distToPM89 = (0, distance_1.default)(point, [pm89Lon, pm89Lat], { units: 'kilometers' }) * 1000;
+    if (distToPM89 < minDistToPM89) {
+        minDistToPM89 = distToPM89;
+        minDistToPM89RoutePoint = [lon, lat];
+        if (distToPM89 < 50) {
+            console.log(`[DEBUG PM89] Route point at [${lat.toFixed(6)}, ${lon.toFixed(6)}] is ${distToPM89.toFixed(1)}m from PM89`);
+        }
+    }
     for (const stop of stops) {
         const stopPoint = [stop.stop_lon, stop.stop_lat];
         const distanceKm = (0, distance_1.default)(point, stopPoint, { units: 'kilometers' });
@@ -34,6 +49,12 @@ function findNearestStop(stops, lat, lon, maxDistanceMeters) {
         return { stop: nearestStop, distanceMeters: nearestDistance };
     }
     return null;
+}
+function printPM89Debug() {
+    console.log(`\n[DEBUG PM89] Minimum distance from any route point to PM89: ${minDistToPM89.toFixed(1)}m`);
+    if (minDistToPM89RoutePoint) {
+        console.log(`[DEBUG PM89] Closest route point: [${minDistToPM89RoutePoint[1].toFixed(6)}, ${minDistToPM89RoutePoint[0].toFixed(6)}]`);
+    }
 }
 /**
  * Calculate distance between two coordinates in meters

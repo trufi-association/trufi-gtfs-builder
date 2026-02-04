@@ -12,8 +12,8 @@ function toCsv(entries: any[], writeLine: (line: string) => void): void {
   entries.forEach((entry) => {
     const row = keys.map((key) => entry[key]);
     const quotedRow = row.map((d) => {
-      if (d && d.match && d.match(/,/)) {
-        return `"${d.replace(/\"/gm, "'")}"`;
+      if (d && d.match && d.match(/[,"]/)) {
+        return `"${d.replace(/"/g, '""')}"`;
       }
       return d;
     });

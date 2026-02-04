@@ -11533,8 +11533,8 @@ stop_id,stop_name,stop_lat,stop_lon
 1626959210,Camino Cochabamba-Caico,-17.4327076,-66.1902913
 12616586650,Camino Cochabamba-Caico,-17.4328042,-66.1907105
 2976928027,Camino Cochabamba-Caico,-17.4330076,-66.1917496
-1626959297,Camino Cochabamba-Caico y "Camino Cochabamba-Caico" y Calle Mapiri,-17.4331905,-66.1926668
-1617619516,"Camino Cochabamba-Caico" y Camino a Primero de Mayo y Camino Cochabamba-Caico,-17.4332004,-66.192711
+1626959297,"Camino Cochabamba-Caico y ""Camino Cochabamba-Caico"" y Calle Mapiri",-17.4331905,-66.1926668
+1617619516,"""Camino Cochabamba-Caico"" y Camino a Primero de Mayo y Camino Cochabamba-Caico",-17.4332004,-66.192711
 1617619594,Camino a Primero de Mayo,-17.4342677,-66.1934258
 2976928539,Camino a Primero de Mayo,-17.4346718,-66.1936924
 11943965423,Camino a Primero de Mayo,-17.4348111,-66.1937824
