@@ -21,6 +21,16 @@ export declare function shapesBuilder(features: GeoJSONFeature[][]): GTFSShape[]
 export declare function stopTimesBuilder(features: GeoJSONFeature[][], vehicleSpeed: (feature: GeoJSONFeature) => number, gtfsConfig?: {
     useFrequencies?: boolean;
 }): GTFSStopTime[];
+/**
+ * Post-processing: Merge stops that are within a given distance of each other
+ * AND share at least one common route/trip.
+ * This reduces duplicate stops without merging unrelated stops.
+ */
+export declare function mergeNearbyStops(stops: GTFSStop[], stopTimes: GTFSStopTime[], maxDistanceMeters: number): {
+    stops: GTFSStop[];
+    stopTimes: GTFSStopTime[];
+    mergedCount: number;
+};
 declare const _default: {
     agencyBuilder: typeof agencyBuilder;
     calendarBuilder: typeof calendarBuilder;
@@ -32,6 +42,7 @@ declare const _default: {
     stopsBuilder: typeof stopsBuilder;
     shapesBuilder: typeof shapesBuilder;
     stopTimesBuilder: typeof stopTimesBuilder;
+    mergeNearbyStops: typeof mergeNearbyStops;
 };
 export default _default;
 //# sourceMappingURL=gtfsBuilders.d.ts.map

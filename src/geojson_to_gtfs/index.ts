@@ -1,5 +1,5 @@
 import type { GeoJSONFeature, GeoJSONFeatureCollection, GTFSData, GTFSBuilders, GTFSOptions } from '../types';
-import gtfsDefaultBuilders from './gtfsBuilders';
+import gtfsDefaultBuilders, { mergeNearbyStops } from './gtfsBuilders';
 
 function geojsonToGtfs(
   features: { [key: string]: GeoJSONFeatureCollection },
@@ -48,7 +48,7 @@ function geojsonToGtfs(
   });
   const trips = tripBuilder(featuresArray, builderConfig);
   const frequencies = frequenciesBuilder(featuresArray, gtfsConfig.frequencyHeadway, builderConfig);
-  const stops = stopsBuilder(
+  let stops = stopsBuilder(
     featuresArray,
     inputStops,
     gtfsConfig.skipStopsWithinDistance,
@@ -56,7 +56,14 @@ function geojsonToGtfs(
     gtfsConfig.stopsConfig ?? gtfsConfig.customStops
   );
   const shapePoints = shapesBuilder(featuresArray);
-  const stopTimes = stopTimesBuilder(featuresArray, gtfsConfig.vehicleSpeed, builderConfig);
+  let stopTimes = stopTimesBuilder(featuresArray, gtfsConfig.vehicleSpeed, builderConfig);
+
+  // Post-process: merge nearby stops if configured
+  if (gtfsConfig.mergeNearbyStops && gtfsConfig.mergeNearbyStops > 0) {
+    const merged = mergeNearbyStops(stops, stopTimes, gtfsConfig.mergeNearbyStops);
+    stops = merged.stops;
+    stopTimes = merged.stopTimes;
+  }
 
   return {
     agency: agencies,

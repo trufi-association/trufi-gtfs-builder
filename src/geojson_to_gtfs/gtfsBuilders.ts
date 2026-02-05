@@ -725,6 +725,111 @@ export function stopTimesBuilder(
   return stopTimes;
 }
 
+/**
+ * Post-processing: Merge stops that are within a given distance of each other
+ * AND share at least one common route/trip.
+ * This reduces duplicate stops without merging unrelated stops.
+ */
+export function mergeNearbyStops(
+  stops: GTFSStop[],
+  stopTimes: GTFSStopTime[],
+  maxDistanceMeters: number
+): { stops: GTFSStop[]; stopTimes: GTFSStopTime[]; mergedCount: number } {
+  if (maxDistanceMeters <= 0) {
+    return { stops, stopTimes, mergedCount: 0 };
+  }
+
+  // Build a map of stop_id -> set of trip_ids that use this stop
+  const stopToTrips: Map<number | string, Set<number>> = new Map();
+  for (const st of stopTimes) {
+    if (!stopToTrips.has(st.stop_id)) {
+      stopToTrips.set(st.stop_id, new Set());
+    }
+    stopToTrips.get(st.stop_id)!.add(st.trip_id);
+  }
+
+  // Helper: check if two stops share at least one trip
+  const shareTrips = (stopIdA: number | string, stopIdB: number | string): boolean => {
+    const tripsA = stopToTrips.get(stopIdA);
+    const tripsB = stopToTrips.get(stopIdB);
+    if (!tripsA || !tripsB) return false;
+    for (const tripId of tripsA) {
+      if (tripsB.has(tripId)) return true;
+    }
+    return false;
+  };
+
+  // Build clusters of nearby stops that share routes
+  const processed = new Set<number>();
+  const stopIdMapping: Map<number | string, number | string> = new Map();
+  const mergedStops: GTFSStop[] = [];
+
+  for (let i = 0; i < stops.length; i++) {
+    if (processed.has(i)) continue;
+
+    const canonical = stops[i];
+    const cluster: GTFSStop[] = [canonical];
+    processed.add(i);
+
+    // Find all stops within maxDistanceMeters that share trips with any stop in cluster
+    for (let j = i + 1; j < stops.length; j++) {
+      if (processed.has(j)) continue;
+
+      const candidate = stops[j];
+      const distance = distanceBetweenCoords(
+        canonical.stop_lat,
+        canonical.stop_lon,
+        candidate.stop_lat,
+        candidate.stop_lon
+      );
+
+      // Only merge if within distance AND shares at least one trip with any stop in cluster
+      if (distance <= maxDistanceMeters) {
+        const sharesWithCluster = cluster.some(clusterStop =>
+          shareTrips(clusterStop.stop_id, candidate.stop_id)
+        );
+        if (sharesWithCluster) {
+          cluster.push(candidate);
+          processed.add(j);
+        }
+      }
+    }
+
+    // Pick the canonical stop (prefer named stops over 'unnamed')
+    let bestStop = canonical;
+    for (const stop of cluster) {
+      if (stop.stop_name !== 'unnamed' && bestStop.stop_name === 'unnamed') {
+        bestStop = stop;
+      } else if (stop.stop_name.length > bestStop.stop_name.length && bestStop.stop_name === 'unnamed') {
+        bestStop = stop;
+      }
+    }
+
+    // Map all cluster stop IDs to the canonical stop ID
+    for (const stop of cluster) {
+      stopIdMapping.set(stop.stop_id, bestStop.stop_id);
+    }
+
+    mergedStops.push(bestStop);
+  }
+
+  // Update stop_times with merged stop IDs
+  const updatedStopTimes = stopTimes.map((st) => {
+    const mappedId = stopIdMapping.get(st.stop_id) ?? st.stop_id;
+    return {
+      ...st,
+      stop_id: typeof mappedId === 'string' ? parseInt(mappedId, 10) : mappedId,
+    };
+  });
+
+  const mergedCount = stops.length - mergedStops.length;
+  if (mergedCount > 0) {
+    console.log(`Merged ${mergedCount} nearby stops (within ${maxDistanceMeters}m, sharing routes): ${stops.length} → ${mergedStops.length}`);
+  }
+
+  return { stops: mergedStops, stopTimes: updatedStopTimes, mergedCount };
+}
+
 export default {
   agencyBuilder,
   calendarBuilder,
@@ -736,4 +841,5 @@ export default {
   stopsBuilder,
   shapesBuilder,
   stopTimesBuilder,
+  mergeNearbyStops,
 };

@@ -283,6 +283,13 @@ export interface GTFSOptions {
      * @default true
      */
     useFrequencies?: boolean;
+    /**
+     * Post-process: merge stops that are within this distance (in meters) of each other.
+     * This reduces duplicate stops that are shared between multiple routes.
+     * Set to 0 or undefined to disable.
+     * @example 50 // Merge stops within 50 meters
+     */
+    mergeNearbyStops?: number;
 }
 export interface DefaultFaresConfig {
     currencyType: string;

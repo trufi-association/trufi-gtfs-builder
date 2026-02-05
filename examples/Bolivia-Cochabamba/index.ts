@@ -87,6 +87,7 @@ async function main() {
           endDate: '20261231',
           id: 'cochabamba',
         },
+        mergeNearbyStops: 100, // Merge stops within 50 meters if they share routes
       },
     });
 
