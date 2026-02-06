@@ -180,7 +180,7 @@ export function routeBuilder(features: GeoJSONFeature[][]): GTFSRoute[] {
       response = '1';
     } else if (route === 'train') {
       response = '2';
-    } else if (route === 'bus' || route === 'share_taxi') {
+    } else if (route === 'bus' || route === 'share_taxi' || route === 'minibus') {
       response = '3';
     } else if (route === 'ferry') {
       response = '4';
@@ -196,34 +196,37 @@ export function routeBuilder(features: GeoJSONFeature[][]): GTFSRoute[] {
   const routes: GTFSRoute[] = [];
   const routeMap = new Map<string, number>(); // Maps routeKey to route_id
   let routeIdCounter = 0;
-  
+
   for (let feature of features) {
     const mainFeature = feature[0];
+    // route_short_name: prefer 'ref' (route code like "M-01 C")
     const routeShortName = mainFeature.properties.ref || mainFeature.properties.name || mainFeature.properties.id.toString();
+    // route_long_name: prefer 'name' with "Origin → Destination" format
+    const routeLongName = mainFeature.properties.name || routeShortName;
     const routeKey = `${mainFeature.gtfs?.agency_id || 0}_${routeShortName}`;
-    
+
     // Check if this route already exists (by agency + short name)
     let routeId = routeMap.get(routeKey);
-    
+
     if (routeId === undefined) {
       // Create new route with sequential ID
       routeId = routeIdCounter++;
       routeMap.set(routeKey, routeId);
-      
+
       let route_color = mainFeature.properties.colour || '';
       route_color = route_color.replace('#', '');
-      
+
       const route: GTFSRoute = {
         route_id: routeId,
         agency_id: mainFeature.gtfs?.agency_id || 0,
         route_short_name: routeShortName,
-        route_long_name: routeShortName,
+        route_long_name: routeLongName,
         route_color: route_color,
         route_type: getRouteType(mainFeature),
       };
       routes.push(route);
     }
-    
+
     // Assign the shared route_id to this feature
     if (!mainFeature.gtfs) {
       mainFeature.gtfs = {
@@ -290,21 +293,26 @@ export function tripBuilder(
   const trips: GTFSTrip[] = [];
   const useFrequencies = gtfsConfig?.useFrequencies ?? true;
 
+  // Track route directions: same ref can have outbound (0) and return (1)
+  const routeDirections = new Map<string, number>();
+
   for (let feature of features) {
     const mainFeature = feature[0];
     if (!mainFeature.gtfs) continue;
 
     // Extract destination from route name for trip_headsign
     const routeName = mainFeature.properties.name || '';
+    const routeRef = mainFeature.properties.ref || '';
     const toMatch = routeName.match(/(?:→|->)\s*(.+?)$/i);
-    const fromMatch = routeName.match(/^(.+?)\s*(?:→|->)/i);
     const tripHeadsign = toMatch ? toMatch[1].trim() : '';
 
-    // Determine direction: if name contains "→", check if it's return direction
-    let directionId: number | undefined;
-    if (fromMatch && toMatch) {
-      // Simple heuristic: if common start/end points, alternate direction
-      directionId = undefined; // Let GTFS consumers figure it out
+    // Determine direction_id: alternate 0 and 1 for routes with the same ref
+    let directionId: number = 0;
+    if (routeRef) {
+      const currentDirection = routeDirections.get(routeRef) ?? 0;
+      directionId = currentDirection;
+      // Increment for next route with same ref (outbound=0, return=1)
+      routeDirections.set(routeRef, currentDirection === 0 ? 1 : 0);
     }
 
     if (useFrequencies) {

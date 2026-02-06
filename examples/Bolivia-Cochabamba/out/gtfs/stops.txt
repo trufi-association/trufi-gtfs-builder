@@ -237,9 +237,9 @@ stop_id,stop_name,stop_lat,stop_lon
 10733874389,Avenida Papa Paulo III,-17.3834474,-66.1482042
 9351779449,Avenida Papa Paulo III,-17.383129,-66.1490955
 9068826697,Avenida Papa Paulo III,-17.3827128,-66.1502562
-2441014290,Avenida Papa Paulo III y Plazuela Quintanilla,-17.3823717,-66.1512051
-9068826354,Plazuela Quintanilla,-17.3816445,-66.1517865
-2220379178,Plazuela Quintanilla y Calle La Paz,-17.3823884,-66.1523193
+2441014290,Avenida Papa Paulo III y Plazuela Carlos Quintanilla,-17.3823717,-66.1512051
+9068826354,Plazuela Carlos Quintanilla,-17.3816445,-66.1517865
+2220379178,Plazuela Carlos Quintanilla y Calle La Paz,-17.3823884,-66.1523193
 4603130096,Calle La Paz,-17.3827028,-66.1532353
 3201986223,Calle La Paz,-17.3831081,-66.1544073
 8344129669,Calle La Paz,-17.3834703,-66.1554912
@@ -1249,8 +1249,8 @@ stop_id,stop_name,stop_lat,stop_lon
 1579031297,Calle Homero y Avenida Circunvalación II Doctor Martín Cárdenas Hermosa,-17.352681,-66.1599736
 5290318623,Avenida Circunvalación II Doctor Martín Cárdenas Hermosa,-17.3534658,-66.1589666
 811023453,Calle Augusto Guzmán Martínez y Avenida Atahuallpa,-17.3538167,-66.1578901
-914201921,Avenida Atahuallpa,-17.3551456,-66.1584279
-1579006875,Avenida Atahuallpa y Calle Molière,-17.3560347,-66.1588184
+13525254246,Avenida Atahuallpa,-17.3551017,-66.1584234
+13525254245,Avenida Atahuallpa,-17.3559972,-66.1588052
 1579031474,Calle Molière,-17.3565459,-66.157744
 1579006427,Calle Molière,-17.3573914,-66.1555386
 1579006487,Calle Molière y Avenida Los Robles,-17.3578854,-66.1540757
@@ -2841,9 +2841,9 @@ stop_id,stop_name,stop_lat,stop_lon
 1579006904,Avenida Hernán Siles Suazo y Calle Luis Mostajo,-17.3599568,-66.166386
 1579006661,Avenida Hernán Siles Suazo y Calle Felix Lope de Vega,-17.359097,-66.1660197
 1391366818,Avenida Hernán Siles Suazo,-17.3582154,-66.1656549
-1579031315,Avenida Hernán Siles Suazo y Calle Porfirio Díaz Machicao,-17.357213,-66.1652974
-1579031425,Calle Porfirio Díaz Machicao y Calle Armando Alba,-17.3577096,-66.1639978
-1579031519,Calle Porfirio Díaz Machicao y Calle Antonio Avila,-17.3580839,-66.1629972
+1579031315,Avenida Hernán Siles Suazo y Calle Porfirio Díaz Machicao,-17.3571973,-66.1652892
+1579031425,Calle Porfirio Díaz Machicao y Calle Armando Alba,-17.3576864,-66.1639882
+1579031519,Calle Porfirio Díaz Machicao y Calle Antonio Avila,-17.3580624,-66.1629883
 1579031252,Calle Antonio Avila,-17.357145,-66.1626087
 1579031362,Calle Antonio Avila y Calle Arturo Daza Rojas,-17.3562259,-66.1622346
 1579031404,Calle Arturo Daza Rojas y Calle Armando Alba,-17.3557906,-66.163242
@@ -3035,8 +3035,8 @@ stop_id,stop_name,stop_lat,stop_lon
 2126669332,Avenida Circunvalación,-17.3665894,-66.1557216
 2126669335,Avenida Circunvalación,-17.3666651,-66.1547056
 602990118,Avenida Circunvalación,-17.3670579,-66.1498079
-9824095638,Avenida Circunvalación,-17.367413,-66.1487283
-808010549,Avenida Circunvalación,-17.3678408,-66.1476229
+13524585086,Avenida Circunvalación,-17.3673648,-66.1488611
+13524585077,Avenida Circunvalación,-17.3678187,-66.1476807
 808010526,Avenida Circunvalación y Calle Eudoro Galindo Quiroga,-17.3685457,-66.1457998
 808010541,Avenida Circunvalación,-17.3688891,-66.1449137
 2126669905,Avenida Circunvalación,-17.3692643,-66.1437346
@@ -5158,8 +5158,8 @@ stop_id,stop_name,stop_lat,stop_lon
 1579006978,Calle José Macedonio Urquidi,-17.352842,-66.1581076
 914201922,Calle Kapac Yupanqui,-17.3546848,-66.1593562
 1579006851,Calle Kapac Yupanqui y Calle Molière,-17.3555791,-66.1597564
-1579031299,Avenida Atahuallpa,-17.3569361,-66.1592057
-1579006748,Avenida Atahuallpa,-17.3578463,-66.1595845
+13525254238,Avenida Atahuallpa,-17.3568836,-66.1591976
+13525254237,Avenida Atahuallpa,-17.3578009,-66.1595656
 1579031557,Avenida Atahuallpa,-17.3589453,-66.1599621
 1579006684,Avenida Atahuallpa,-17.3618908,-66.1610214
 1391388107,Avenida Atahuallpa y Calle Roberto Prada Estrada,-17.362777,-66.1613419
@@ -5513,7 +5513,7 @@ stop_id,stop_name,stop_lat,stop_lon
 1579031569,Calle Jose Eduardo Guerra,-17.3513049,-66.1579294
 1579031043,Calle Molière y Calle Vicente Rojo,-17.3554008,-66.1608214
 1807087119,Calle Vicente Rojo,-17.3574769,-66.1616877
-1579031050,Calle Vicente Rojo y Calle Porfirio Díaz Machicao,-17.358423,-66.1620724
+1579031050,Calle Vicente Rojo y Calle Porfirio Díaz Machicao,-17.3584089,-66.1620666
 3573684083,Avenida Federico Escobar,-17.4292903,-66.1501012
 2053282995,Avenida Federico Escobar,-17.4287768,-66.14924
 3017409590,Avenida Federico Escobar,-17.4280878,-66.1483032
@@ -5907,7 +5907,7 @@ stop_id,stop_name,stop_lat,stop_lon
 10738711983,Avenida Melchor Urquidi,-17.3717227,-66.1494788
 11082405278,Avenida Melchor Urquidi,-17.3708047,-66.1494533
 9824095714,Avenida Melchor Urquidi,-17.3698521,-66.1493352
-10861557731,Avenida Melchor Urquidi,-17.3688759,-66.1491799
+808010530,Avenida Melchor Urquidi,-17.3688091,-66.1491792
 8729962003,Pasaje 23,-17.4209097,-66.1403379
 602989751,Calle Túpac Amaru,-17.371634,-66.1604917
 811023177,Calle Túpac Amaru,-17.3705807,-66.160452

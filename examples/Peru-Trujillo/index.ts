@@ -150,7 +150,7 @@ async function main() {
           contactUrl: 'https://trufi-association.org',
           startDate: '20251222',
           endDate: '20261221',
-          id: 'trujillo-peru',
+          id: 'pe-trujillo',
         },
 
         // Stops configuration - uses custom stops from GeoJSON
