@@ -4329,13 +4329,15 @@ stop_id,stop_name,stop_lat,stop_lon
 1762869105,Avenida de la Fuerza Aérea,-17.4120442,-66.1647873
 698492419,Avenida Heroínas de la Coronilla,-17.3903309,-66.1462645
 3950325577,Avenida Heroínas de la Coronilla,-17.3901402,-66.1452792
-9551541241,Calle Antonio Quijarro,-17.3716705,-66.1455216
-9103449140,Parque Fidel Anze Norte,-17.371004,-66.1462216
+13527737563,Calle Antonio Quijarro,-17.3722091,-66.1456177
+9102939199,Calle Antonio Quijarro,-17.3711616,-66.1454187
+2126670405,Calle Eudoro Galindo Quiroga,-17.3703505,-66.1461533
 808079091,Calle Eudoro Galindo Quiroga,-17.367562,-66.1456128
 808080173,Calle Las Cucardas,-17.3655865,-66.1438795
 808080131,Calle Las Cucardas y Calle Los Sauces,-17.3660245,-66.1429389
 808079492,Calle Los Sauces,-17.3646152,-66.1420671
 809705552,Calle Los Sauces,-17.3634777,-66.1413715
+9105946036,Calle Eudoro Galindo Quiroga,-17.3714259,-66.1463789
 4308163737,Avenida Heroínas de la Coronilla,-17.3899432,-66.1447413
 303212785,Avenida Heroínas de la Coronilla,-17.3902479,-66.1462805
 2421564284,Calle Capitán Luis Paravicini y Avenida Chimoré,-17.4215037,-66.17212
@@ -5902,7 +5904,7 @@ stop_id,stop_name,stop_lat,stop_lon
 10052672517,Calle Monseñor Angel Maria Zeballos,-17.3976317,-66.1843907
 10052672604,Calle Monseñor Angel Maria Zeballos,-17.3976544,-66.1830382
 4341945319,Avenida Portales,-17.3753613,-66.1497676
-3300291799,Calle Zenon Salinas,-17.3754031,-66.1486287
+3300291799,Calle Zenón Salinas,-17.3754031,-66.1486287
 12207210619,Calle Miguel María de Aguirre,-17.3745211,-66.1480005
 10738711983,Avenida Melchor Urquidi,-17.3717227,-66.1494788
 11082405278,Avenida Melchor Urquidi,-17.3708047,-66.1494533
