@@ -299,9 +299,8 @@ export interface GTFSOptions {
   /** Configuration for how stops are generated */
   stopsConfig?: CustomStopsConfig;
   /**
+   * @deprecated Use outputFiles.gtfsExpandedZip instead.
    * Use frequency-based GTFS (frequencies.txt) or schedule-based GTFS (stop_times.txt)
-   * - true: Generate frequencies.txt with one trip per route (default for backwards compatibility)
-   * - false: Expand trips into individual departures with specific times (no frequencies.txt)
    * @default true
    */
   useFrequencies?: boolean;
@@ -338,6 +337,8 @@ export interface OutputFiles {
   readme: boolean;
   gtfs: boolean;
   gtfsZip: boolean;
+  /** Generate an additional zip with schedule-based GTFS (expanded trips, no frequencies.txt) */
+  gtfsExpandedZip: boolean;
   trufiTPData: boolean;
 }
 

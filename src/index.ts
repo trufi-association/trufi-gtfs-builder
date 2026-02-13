@@ -39,6 +39,7 @@ const defaultOutFiles: OutputFiles = {
   readme: true,
   gtfs: false,
   gtfsZip: false,
+  gtfsExpandedZip: false,
   trufiTPData: false,
 };
 
@@ -59,7 +60,8 @@ async function osmToGtfsFunc(config: OsmToGtfsConfig): Promise<void> {
   }
 
   const geojson = await osmToGeojson(geojsonOptions);
-  const gtfs = (outputFiles.gtfs || outputFiles.gtfsZip)
+  const needsGtfs = outputFiles.gtfs || outputFiles.gtfsZip || outputFiles.gtfsExpandedZip;
+  const gtfs = needsGtfs
     ? await geojsonToGtfs(geojson.geojsonFeatures, geojson.stops, gtfsOptions, gtfsBuilders)
     : null;
   const trufiTPData = outputFiles.trufiTPData
@@ -112,6 +114,39 @@ async function osmToGtfsFunc(config: OsmToGtfsConfig): Promise<void> {
         archive.directory(gtfsDir, false);
         archive.finalize();
       });
+    }
+    if (outputFiles.gtfsExpandedZip) {
+      // Generate schedule-based GTFS (expanded trips, no frequencies.txt)
+      const expandedGtfsOptions = { ...gtfsOptions, useFrequencies: false };
+      const expandedGtfs = await geojsonToGtfs(geojson.geojsonFeatures, geojson.stops, expandedGtfsOptions, gtfsBuilders);
+
+      const expandedDir = path.join(outputDir, '_gtfs-expanded');
+      fs.mkdirSync(expandedDir);
+      writeGtfs(expandedGtfs, expandedDir);
+
+      const cityName = gtfsOptions.cityName || 'city';
+      const zipFileName = `${cityName}.expanded.gtfs.zip`;
+
+      await new Promise<void>((resolve, reject) => {
+        const output = fs.createWriteStream(path.join(outputDir, zipFileName));
+        const archive = archiver('zip', { zlib: { level: 9 } });
+
+        output.on('close', () => {
+          console.log(`GTFS Expanded ZIP created: ${zipFileName} (${archive.pointer()} total bytes)`);
+          resolve();
+        });
+
+        archive.on('error', (err) => {
+          reject(err);
+        });
+
+        archive.pipe(output);
+        archive.directory(expandedDir, false);
+        archive.finalize();
+      });
+
+      // Clean up temporary directory
+      fs.rmSync(expandedDir, { recursive: true, force: true });
     }
     if (outputFiles.trufiTPData && trufiTPData) {
       fs.mkdirSync(path.join(outputDir, `trufiTPData`));

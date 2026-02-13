@@ -80,6 +80,7 @@ const defaultOutFiles = {
     readme: true,
     gtfs: false,
     gtfsZip: false,
+    gtfsExpandedZip: false,
     trufiTPData: false,
 };
 async function osmToGtfsFunc(config) {
@@ -96,7 +97,8 @@ async function osmToGtfsFunc(config) {
         throw new Error('Output directory does not exist');
     }
     const geojson = await (0, osm_to_geojson_1.osmToGeojson)(geojsonOptions);
-    const gtfs = (outputFiles.gtfs || outputFiles.gtfsZip)
+    const needsGtfs = outputFiles.gtfs || outputFiles.gtfsZip || outputFiles.gtfsExpandedZip;
+    const gtfs = needsGtfs
         ? await (0, geojson_to_gtfs_1.default)(geojson.geojsonFeatures, geojson.stops, gtfsOptions, gtfsBuilders)
         : null;
     const trufiTPData = outputFiles.trufiTPData
@@ -146,6 +148,32 @@ async function osmToGtfsFunc(config) {
                 archive.directory(gtfsDir, false);
                 archive.finalize();
             });
+        }
+        if (outputFiles.gtfsExpandedZip) {
+            // Generate schedule-based GTFS (expanded trips, no frequencies.txt)
+            const expandedGtfsOptions = { ...gtfsOptions, useFrequencies: false };
+            const expandedGtfs = await (0, geojson_to_gtfs_1.default)(geojson.geojsonFeatures, geojson.stops, expandedGtfsOptions, gtfsBuilders);
+            const expandedDir = path.join(outputDir, '_gtfs-expanded');
+            fs.mkdirSync(expandedDir);
+            (0, writeGtfs_1.default)(expandedGtfs, expandedDir);
+            const cityName = gtfsOptions.cityName || 'city';
+            const zipFileName = `${cityName}.expanded.gtfs.zip`;
+            await new Promise((resolve, reject) => {
+                const output = fs.createWriteStream(path.join(outputDir, zipFileName));
+                const archive = (0, archiver_1.default)('zip', { zlib: { level: 9 } });
+                output.on('close', () => {
+                    console.log(`GTFS Expanded ZIP created: ${zipFileName} (${archive.pointer()} total bytes)`);
+                    resolve();
+                });
+                archive.on('error', (err) => {
+                    reject(err);
+                });
+                archive.pipe(output);
+                archive.directory(expandedDir, false);
+                archive.finalize();
+            });
+            // Clean up temporary directory
+            fs.rmSync(expandedDir, { recursive: true, force: true });
         }
         if (outputFiles.trufiTPData && trufiTPData) {
             fs.mkdirSync(path.join(outputDir, `trufiTPData`));

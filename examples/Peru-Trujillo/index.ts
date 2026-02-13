@@ -55,6 +55,7 @@ async function main() {
         outputDir: path.join(__dirname, 'out'),
         gtfs: true,
         gtfsZip: true,
+        gtfsExpandedZip: true,
         readme: true,
         routes: true,
         stops: true,
