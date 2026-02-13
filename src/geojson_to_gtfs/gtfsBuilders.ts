@@ -486,8 +486,46 @@ export function stopsBuilder(
     }
 
     if (mode === 'osmStops') {
-      // OSM stops mode: use stop_position nodes from the OSM relation
+      // OSM stops mode: use stop_position/platform nodes from the OSM relation
       const filteredStops: { nodes: number[]; coordinates: GeoJSONCoordinate[] } = { nodes: [], coordinates: [] };
+      const forceEndpoints = stopsConfig?.forceEndpointStops ?? false;
+      const { nodes, coordinates } = routeFeature.geometry;
+
+      // Helper to add a geometry-based endpoint stop
+      const addEndpointStop = (nodeId: number, coord: number[]) => {
+        const [lon, lat] = coord;
+        if (!checkList[nodeId]) {
+          checkList[nodeId] = true;
+          const stopName = stopNameBuilder(inputStops[nodeId]);
+          stops.push({
+            stop_id: nodeId,
+            stop_name: stopName || 'unnamed',
+            stop_lat: lat,
+            stop_lon: lon,
+          });
+        }
+        filteredStops.nodes.push(nodeId);
+        filteredStops.coordinates.push(coord as GeoJSONCoordinate);
+      };
+
+      // Force first stop if enabled and no OSM stop near the start
+      if (forceEndpoints && nodes && nodes.length > 0) {
+        const firstCoord = coordinates[0] as number[];
+        let hasNearbyFirst = false;
+        for (let i = 1; i < feature.length; i++) {
+          const stopCoords = Array.isArray(feature[i].geometry.coordinates[0])
+            ? (feature[i].geometry.coordinates as number[][])[0]
+            : (feature[i].geometry.coordinates as number[]);
+          if (distanceBetweenCoords(firstCoord[1], firstCoord[0], stopCoords[1], stopCoords[0]) < 5) {
+            hasNearbyFirst = true;
+            break;
+          }
+        }
+        if (!hasNearbyFirst) {
+          addEndpointStop(nodes[0], firstCoord);
+        }
+      }
+
       for (let i = 1; i < feature.length; i++) {
         const { geometry, properties } = feature[i];
         if (!checkList[properties.id]) {
@@ -508,6 +546,25 @@ export function stopsBuilder(
           : (geometry.coordinates as number[]);
         filteredStops.coordinates.push(coords as GeoJSONCoordinate);
       }
+
+      // Force last stop if enabled and no OSM stop near the end
+      if (forceEndpoints && nodes && nodes.length > 0) {
+        const lastCoord = coordinates[coordinates.length - 1] as number[];
+        let hasNearbyLast = false;
+        for (let i = 1; i < feature.length; i++) {
+          const stopCoords = Array.isArray(feature[i].geometry.coordinates[0])
+            ? (feature[i].geometry.coordinates as number[][])[0]
+            : (feature[i].geometry.coordinates as number[]);
+          if (distanceBetweenCoords(lastCoord[1], lastCoord[0], stopCoords[1], stopCoords[0]) < 5) {
+            hasNearbyLast = true;
+            break;
+          }
+        }
+        if (!hasNearbyLast) {
+          addEndpointStop(nodes[nodes.length - 1], lastCoord);
+        }
+      }
+
       routeFeature.gtfs.filteredStops = filteredStops;
     } else if (mode === 'customStops' && customStops) {
       // Custom stops mode: use ONLY the provided custom stops

@@ -4,11 +4,17 @@
  * Filters routes with hash=* tag
  */
 
-import { osmToGtfs, OSMPBFReader, loadCustomStops } from '../../src';
-import type { CustomStop } from '../../src/types';
-import { printPM89Debug } from '../../src/utils/spatialMatcher';
+import { osmToGtfs, OSMOverpassDownloader } from '../../src';
 import * as path from 'path';
 import * as fs from 'fs';
+
+// Trujillo metropolitan area bounding box
+const BOUNDING_BOX = {
+  south: -8.2240,
+  west: -79.1233,
+  north: -7.8528,
+  east: -78.6850,
+};
 
 // Load ignored routes from file
 function loadIgnoredRoutes(): Set<number> {
@@ -35,65 +41,13 @@ function loadIgnoredRoutes(): Set<number> {
   return ignoredRoutes;
 }
 
-// Load custom stops from GeoJSON file
-function loadStopsFromGeoJSON(filePath: string): CustomStop[] | null {
-  if (!fs.existsSync(filePath)) {
-    return null;
-  }
-
-  try {
-    // Use the library's loader
-    return loadCustomStops(filePath);
-  } catch (error) {
-    console.error(`Error loading custom stops: ${error}`);
-    return null;
-  }
-}
-
 async function main() {
   console.log('Starting GTFS generation for Trujillo, Peru...');
-
-  const pbfPath = path.join(__dirname, 'trujillo.osm.pbf');
-  const customStopsPath = path.join(__dirname, 'all_stops.geojson');
-
-  console.log(`Using PBF file: ${pbfPath}`);
+  console.log('Downloading data from Overpass API...');
   console.log('Filtering routes with hash=* tag only');
 
   const ignoredRoutes = loadIgnoredRoutes();
-
-  // Check if PBF file exists
-  if (!fs.existsSync(pbfPath)) {
-    throw new Error(`PBF file not found: ${pbfPath}`);
-  }
-
-  // Load custom stops (if file exists)
-  const customStops = loadStopsFromGeoJSON(customStopsPath);
-  if (customStops) {
-    console.log(`Loaded ${customStops.length} custom stops from ${customStopsPath}`);
-  } else {
-    console.log('No custom stops file found, using auto-generated stops from OSM');
-  }
-
-  // Create a custom reader to log what's being loaded
-  const reader = new OSMPBFReader(pbfPath);
-  console.log('\nLoading data from PBF...');
-
-  // Test loading to see what we have
-  const testRoutes = await reader.getRoutes(['bus', 'share_taxi', 'minibus']);
-  const testWays = await reader.getWays();
-  const testStops = await reader.getStops();
-
-  console.log(`Found in PBF: ${Object.keys(testRoutes).length} routes, ${Object.keys(testWays).length} ways, ${Object.keys(testStops).length} stops`);
-
-  // Count routes with hash
-  let routesWithHash = 0;
-  for (const routeId in testRoutes) {
-    const route = testRoutes[routeId];
-    if (route.tags && route.tags.hash !== undefined) {
-      routesWithHash++;
-    }
-  }
-  console.log(`Routes with hash tag: ${routesWithHash}\n`);
+  const osmDataGetter = new OSMOverpassDownloader(BOUNDING_BOX);
 
   try {
     await osmToGtfs({
@@ -107,22 +61,21 @@ async function main() {
         log: true,
       },
       geojsonOptions: {
-        osmDataGetter: new OSMPBFReader(pbfPath),
+        osmDataGetter,
         transformTypes: ['bus', 'share_taxi', 'minibus'],
         skipRoute: (route: any) => {
           // Skip routes in the ignored list
           if (ignoredRoutes.has(route.id)) {
             console.log(`Skipping ignored route: ${route.id} - ${route.tags?.name || 'unnamed'}`);
-            return false; // Return false to skip this route
+            return false;
           }
 
           // skipRoute returns true to INCLUDE the route, false to SKIP it
-          // We want to process routes WITH hash tag
           const hasHash = route.tags && route.tags.hash !== undefined;
           if (!hasHash) {
             console.log(`Skipping route without hash: ${route.id} - ref: ${route.tags?.ref || 'no-ref'} - name: ${route.tags?.name || 'unnamed'}`);
           }
-          return hasHash; // Return true when hash exists to process the route
+          return hasHash;
         },
       },
       gtfsOptions: {
@@ -132,7 +85,6 @@ async function main() {
         defaultCalendar: () => 'Mo-Su 05:00-23:00',
         frequencyHeadway: () => 300, // 5 minutes
         vehicleSpeed: () => 24,
-        fakeStops: () => false,
         stopNameBuilder: (stops: any) => {
           if (!stops || stops.length === 0) {
             stops = ['Sin nombre'];
@@ -152,27 +104,15 @@ async function main() {
           id: 'pe-trujillo',
         },
 
-        // Stops configuration - uses custom stops from GeoJSON
-        stopsConfig: customStops
-          ? {
-            mode: 'customStops', // Use ONLY custom stops from GeoJSON
-            stops: customStops,
-            maxMatchDistance: 50, // Max distance from route point to custom stop (meters)
-            minDistanceBetweenStops: 0, // Min distance between consecutive stops (meters)
-            fallbackBehavior: 'warning',
-            rightSideOnly: true
-          }
-          : { mode: 'fakeStops' }, // Default: generate stops from route nodes
+        // Stops configuration - use real OSM stop_position nodes only
+        stopsConfig: { mode: 'osmStops', forceEndpointStops: true },
       },
     });
 
-    console.log('\n✅ GTFS generation completed successfully!');
-    console.log(`📁 Output files are in: ${path.join(__dirname, 'out')}`);
-
-    // Debug: print PM89 distance info
-    printPM89Debug();
+    console.log('\nGTFS generation completed successfully!');
+    console.log(`Output files are in: ${path.join(__dirname, 'out')}`);
   } catch (error) {
-    console.error('❌ Error generating GTFS:', error);
+    console.error('Error generating GTFS:', error);
     process.exit(1);
   }
 }

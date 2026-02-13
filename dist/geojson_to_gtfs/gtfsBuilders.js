@@ -427,8 +427,43 @@ function stopsBuilder(features, inputStops, stopNameBuilder, stopsConfig) {
             };
         }
         if (mode === 'osmStops') {
-            // OSM stops mode: use stop_position nodes from the OSM relation
+            // OSM stops mode: use stop_position/platform nodes from the OSM relation
             const filteredStops = { nodes: [], coordinates: [] };
+            const forceEndpoints = stopsConfig?.forceEndpointStops ?? false;
+            const { nodes, coordinates } = routeFeature.geometry;
+            // Helper to add a geometry-based endpoint stop
+            const addEndpointStop = (nodeId, coord) => {
+                const [lon, lat] = coord;
+                if (!checkList[nodeId]) {
+                    checkList[nodeId] = true;
+                    const stopName = stopNameBuilder(inputStops[nodeId]);
+                    stops.push({
+                        stop_id: nodeId,
+                        stop_name: stopName || 'unnamed',
+                        stop_lat: lat,
+                        stop_lon: lon,
+                    });
+                }
+                filteredStops.nodes.push(nodeId);
+                filteredStops.coordinates.push(coord);
+            };
+            // Force first stop if enabled and no OSM stop near the start
+            if (forceEndpoints && nodes && nodes.length > 0) {
+                const firstCoord = coordinates[0];
+                let hasNearbyFirst = false;
+                for (let i = 1; i < feature.length; i++) {
+                    const stopCoords = Array.isArray(feature[i].geometry.coordinates[0])
+                        ? feature[i].geometry.coordinates[0]
+                        : feature[i].geometry.coordinates;
+                    if ((0, spatialMatcher_1.distanceBetweenCoords)(firstCoord[1], firstCoord[0], stopCoords[1], stopCoords[0]) < 5) {
+                        hasNearbyFirst = true;
+                        break;
+                    }
+                }
+                if (!hasNearbyFirst) {
+                    addEndpointStop(nodes[0], firstCoord);
+                }
+            }
             for (let i = 1; i < feature.length; i++) {
                 const { geometry, properties } = feature[i];
                 if (!checkList[properties.id]) {
@@ -448,6 +483,23 @@ function stopsBuilder(features, inputStops, stopNameBuilder, stopsConfig) {
                     ? geometry.coordinates[0]
                     : geometry.coordinates;
                 filteredStops.coordinates.push(coords);
+            }
+            // Force last stop if enabled and no OSM stop near the end
+            if (forceEndpoints && nodes && nodes.length > 0) {
+                const lastCoord = coordinates[coordinates.length - 1];
+                let hasNearbyLast = false;
+                for (let i = 1; i < feature.length; i++) {
+                    const stopCoords = Array.isArray(feature[i].geometry.coordinates[0])
+                        ? feature[i].geometry.coordinates[0]
+                        : feature[i].geometry.coordinates;
+                    if ((0, spatialMatcher_1.distanceBetweenCoords)(lastCoord[1], lastCoord[0], stopCoords[1], stopCoords[0]) < 5) {
+                        hasNearbyLast = true;
+                        break;
+                    }
+                }
+                if (!hasNearbyLast) {
+                    addEndpointStop(nodes[nodes.length - 1], lastCoord);
+                }
             }
             routeFeature.gtfs.filteredStops = filteredStops;
         }

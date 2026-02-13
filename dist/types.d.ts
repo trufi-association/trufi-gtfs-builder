@@ -259,6 +259,8 @@ export interface CustomStopsConfig {
     fallbackBehavior?: 'error' | 'warning';
     /** Only use stops on the right side of the route direction (default: false) */
     rightSideOnly?: boolean;
+    /** Force a stop at the first and last point of each route geometry (default: false) */
+    forceEndpointStops?: boolean;
 }
 export interface GTFSOptions {
     agencyTimezone: string;

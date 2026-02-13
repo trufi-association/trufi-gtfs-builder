@@ -68,8 +68,12 @@ function routeExtractor(route_elements, ways, stops) {
         }
         else if (element.type === 'node') {
             const currentStop = stops[element.ref];
-            if (currentStop && currentStop.tags && currentStop.tags['public_transport'] === 'stop_position')
-                routeStops.push(currentStop);
+            if (currentStop && currentStop.tags) {
+                const pt = currentStop.tags['public_transport'];
+                if (pt === 'stop_position' || pt === 'platform') {
+                    routeStops.push(currentStop);
+                }
+            }
         }
     }
     if (routeWays.length === 0) {

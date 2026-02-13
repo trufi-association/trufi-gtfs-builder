@@ -89,7 +89,26 @@ function geojsonToGtfs(
     }
   }
 
-  // Merge segment intermediate stops: keep only endpoints where route sets are subset/superset
+  // Merge segment intermediate stops: skip when using real OSM stops
+  const stopsMode = gtfsConfig.stopsConfig?.mode ?? gtfsConfig.customStops?.mode ?? 'fakeStops';
+  if (stopsMode === 'osmStops' || stopsMode === 'customStops') {
+    console.log(`Segment merge: skipped (mode: ${stopsMode})`);
+    return {
+      agency: agencies,
+      calendar: calendar,
+      routes: routes,
+      trips: trips,
+      frequencies: frequencies,
+      stops: stops,
+      stop_times: stopTimes,
+      shapes: shapePoints,
+      fare_attributes: fare.attributes,
+      fare_rules: fare.rules,
+      feed_info: feeds,
+    };
+  }
+
+  // keep only endpoints where route sets are subset/superset
   const isSubsetOrEqual = (a: Set<string | number>, b: Set<string | number>): boolean => {
     if (a.size <= b.size) {
       for (const v of a) { if (!b.has(v)) return false; }
