@@ -136,6 +136,7 @@ export interface GTFSStop {
     stop_name: string;
     stop_lat: number;
     stop_lon: number;
+    stop_desc?: string;
 }
 export interface GTFSStopTime {
     trip_id: number;
@@ -219,7 +220,7 @@ export interface GTFSBuilders {
     }) => GTFSFrequency[];
     stopsBuilder: (features: GeoJSONFeature[][], inputStops: {
         [id: number]: string[];
-    }, skipStopsWithinDistance: number, stopNameBuilder: (stops?: string[]) => string, stopsConfig?: CustomStopsConfig) => GTFSStop[];
+    }, stopNameBuilder: (stops?: string[]) => string, stopsConfig?: CustomStopsConfig) => GTFSStop[];
     shapesBuilder: (features: GeoJSONFeature[][]) => GTFSShape[];
     stopTimesBuilder: (features: GeoJSONFeature[][], vehicleSpeed: (feature: GeoJSONFeature) => number, gtfsConfig?: {
         useFrequencies?: boolean;
@@ -268,7 +269,6 @@ export interface GTFSOptions {
     vehicleSpeed: (feature: GeoJSONFeature) => number;
     /** @deprecated Use stopsConfig.mode instead */
     fakeStops?: (feature: GeoJSONFeature) => boolean;
-    skipStopsWithinDistance: number;
     stopNameBuilder: (stops?: string[]) => string;
     defaultFares?: DefaultFaresConfig;
     feed?: FeedConfig;

@@ -114,7 +114,6 @@ async function generateGTFS() {
       frequencyHeadway: () => 300,
       vehicleSpeed: () => 50,
       fakeStops: () => false,
-      skipStopsWithinDistance: 100,
       stopNameBuilder: (stops) => {
         if (!stops || stops.length === 0) return 'Unnamed';
         return stops.join(' and ');
@@ -209,7 +208,6 @@ dist/                        # Compiled JavaScript (generated)
 - `frequencyHeadway`: Function to determine frequency
 - `vehicleSpeed`: Function to calculate vehicle speed
 - `fakeStops`: Function to determine if fake stops should be created
-- `skipStopsWithinDistance`: Minimum distance between stops (meters)
 - `stopNameBuilder`: Function to build stop names
 
 ### OutputFiles

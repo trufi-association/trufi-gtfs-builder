@@ -132,7 +132,6 @@ async function main() {
         defaultCalendar: () => 'Mo-Su 05:00-23:00',
         frequencyHeadway: () => 300, // 5 minutes - used for schedule expansion
         vehicleSpeed: () => 24,
-        skipStopsWithinDistance: 100,
         fakeStops: () => false,
         stopNameBuilder: (stops: any) => {
           if (!stops || stops.length === 0) {

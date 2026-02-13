@@ -75,7 +75,6 @@ async function main() {
 
           return kmh;
         },
-        skipStopsWithinDistance: 100, // 100 meters between stops
         fakeStops: (routeFeature) => {
           return false; // No fake stops needed for this city
         },

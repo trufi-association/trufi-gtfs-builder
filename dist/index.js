@@ -65,7 +65,6 @@ const defaultGtfsOptions = {
     frequencyHeadway: () => 300,
     vehicleSpeed: () => 50,
     fakeStops: () => false,
-    skipStopsWithinDistance: 100,
     stopNameBuilder: (stops) => {
         if (!stops) {
             stops = ['unnamed'];

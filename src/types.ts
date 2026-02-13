@@ -142,6 +142,7 @@ export interface GTFSStop {
   stop_name: string;
   stop_lat: number;
   stop_lon: number;
+  stop_desc?: string;
 }
 
 export interface GTFSStopTime {
@@ -230,7 +231,6 @@ export interface GTFSBuilders {
   stopsBuilder: (
     features: GeoJSONFeature[][],
     inputStops: { [id: number]: string[] },
-    skipStopsWithinDistance: number,
     stopNameBuilder: (stops?: string[]) => string,
     stopsConfig?: CustomStopsConfig
   ) => GTFSStop[];
@@ -289,7 +289,6 @@ export interface GTFSOptions {
   vehicleSpeed: (feature: GeoJSONFeature) => number;
   /** @deprecated Use stopsConfig.mode instead */
   fakeStops?: (feature: GeoJSONFeature) => boolean;
-  skipStopsWithinDistance: number;
   stopNameBuilder: (stops?: string[]) => string;
   defaultFares?: DefaultFaresConfig;
   feed?: FeedConfig;

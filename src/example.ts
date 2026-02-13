@@ -41,7 +41,6 @@ async function main() {
         frequencyHeadway: () => 300, // 5 minutes in seconds
         vehicleSpeed: () => 50, // km/h
         fakeStops: () => false,
-        skipStopsWithinDistance: 100, // meters
         stopNameBuilder: (stops) => {
           if (!stops || stops.length === 0) {
             return 'unnamed';

@@ -24,6 +24,49 @@ import type {
   StopsMode,
 } from '../types';
 
+const CSS_COLORS: Record<string, string> = {
+  aliceblue: 'F0F8FF', antiquewhite: 'FAEBD7', aqua: '00FFFF', aquamarine: '7FFFD4',
+  azure: 'F0FFFF', beige: 'F5F5DC', bisque: 'FFE4C4', black: '000000',
+  blanchedalmond: 'FFEBCD', blue: '0000FF', blueviolet: '8A2BE2', brown: 'A52A2A',
+  burlywood: 'DEB887', cadetblue: '5F9EA0', chartreuse: '7FFF00', chocolate: 'D2691E',
+  coral: 'FF7F50', cornflowerblue: '6495ED', cornsilk: 'FFF8DC', crimson: 'DC143C',
+  cyan: '00FFFF', darkblue: '00008B', darkcyan: '008B8B', darkgoldenrod: 'B8860B',
+  darkgray: 'A9A9A9', darkgreen: '006400', darkkhaki: 'BDB76B', darkmagenta: '8B008B',
+  darkolivegreen: '556B2F', darkorange: 'FF8C00', darkorchid: '9932CC', darkred: '8B0000',
+  darksalmon: 'E9967A', darkseagreen: '8FBC8F', darkslateblue: '483D8B', darkslategray: '2F4F4F',
+  darkturquoise: '00CED1', darkviolet: '9400D3', deeppink: 'FF1493', deepskyblue: '00BFFF',
+  dimgray: '696969', dodgerblue: '1E90FF', firebrick: 'B22222', floralwhite: 'FFFAF0',
+  forestgreen: '228B22', fuchsia: 'FF00FF', gainsboro: 'DCDCDC', ghostwhite: 'F8F8FF',
+  gold: 'FFD700', goldenrod: 'DAA520', gray: '808080', green: '008000',
+  greenyellow: 'ADFF2F', honeydew: 'F0FFF0', hotpink: 'FF69B4', indianred: 'CD5C5C',
+  indigo: '4B0082', ivory: 'FFFFF0', khaki: 'F0E68C', lavender: 'E6E6FA',
+  lavenderblush: 'FFF0F5', lawngreen: '7CFC00', lemonchiffon: 'FFFACD', lightblue: 'ADD8E6',
+  lightcoral: 'F08080', lightcyan: 'E0FFFF', lightgoldenrodyellow: 'FAFAD2', lightgray: 'D3D3D3',
+  lightgreen: '90EE90', lightpink: 'FFB6C1', lightsalmon: 'FFA07A', lightseagreen: '20B2AA',
+  lightskyblue: '87CEFA', lightslategray: '778899', lightsteelblue: 'B0C4DE', lightyellow: 'FFFFE0',
+  lime: '00FF00', limegreen: '32CD32', linen: 'FAF0E6', magenta: 'FF00FF',
+  maroon: '800000', mediumaquamarine: '66CDAA', mediumblue: '0000CD', mediumorchid: 'BA55D3',
+  mediumpurple: '9370DB', mediumseagreen: '3CB371', mediumslateblue: '7B68EE', mediumspringgreen: '00FA9A',
+  mediumturquoise: '48D1CC', mediumvioletred: 'C71585', midnightblue: '191970', mintcream: 'F5FFFA',
+  mistyrose: 'FFE4E1', moccasin: 'FFE4B5', navajowhite: 'FFDEAD', navy: '000080',
+  oldlace: 'FDF5E6', olive: '808000', olivedrab: '6B8E23', orange: 'FFA500',
+  orangered: 'FF4500', orchid: 'DA70D6', palegoldenrod: 'EEE8AA', palegreen: '98FB98',
+  paleturquoise: 'AFEEEE', palevioletred: 'DB7093', papayawhip: 'FFEFD5', peachpuff: 'FFDAB9',
+  peru: 'CD853F', pink: 'FFC0CB', plum: 'DDA0DD', powderblue: 'B0E0E6',
+  purple: '800080', rebeccapurple: '663399', red: 'FF0000', rosybrown: 'BC8F8F',
+  royalblue: '4169E1', saddlebrown: '8B4513', salmon: 'FA8072', sandybrown: 'F4A460',
+  seagreen: '2E8B57', seashell: 'FFF5EE', sienna: 'A0522D', silver: 'C0C0C0',
+  skyblue: '87CEEB', slateblue: '6A5ACD', slategray: '708090', snow: 'FFFAFA',
+  springgreen: '00FF7F', steelblue: '4682B4', tan: 'D2B48C', teal: '008080',
+  thistle: 'D8BFD8', tomato: 'FF6347', turquoise: '40E0D0', violet: 'EE82EE',
+  wheat: 'F5DEB3', white: 'FFFFFF', whitesmoke: 'F5F5F5', yellow: 'FFFF00',
+  yellowgreen: '9ACD32',
+};
+
+function cssColorToHex(name: string): string {
+  return CSS_COLORS[name.toLowerCase()] ?? '';
+}
+
 export function agencyBuilder(
   features: GeoJSONFeature[][],
   defaultAgencyInfo: Partial<GTFSAgency>
@@ -215,6 +258,10 @@ export function routeBuilder(features: GeoJSONFeature[][]): GTFSRoute[] {
 
       let route_color = mainFeature.properties.colour || '';
       route_color = route_color.replace('#', '');
+      // Convert CSS color names to hex
+      if (route_color && !/^[0-9a-fA-F]{3,6}$/.test(route_color)) {
+        route_color = cssColorToHex(route_color);
+      }
 
       const route: GTFSRoute = {
         route_id: routeId,
@@ -399,7 +446,6 @@ export function frequenciesBuilder(
 export function stopsBuilder(
   features: GeoJSONFeature[][],
   inputStops: { [id: number]: string[] },
-  maxStopsDistance: number,
   stopNameBuilder: (stops?: string[]) => string,
   stopsConfig?: CustomStopsConfig
 ): GTFSStop[] {
@@ -734,105 +780,119 @@ export function stopTimesBuilder(
 }
 
 /**
- * Post-processing: Merge stops that are within a given distance of each other
- * AND share at least one common route/trip.
- * This reduces duplicate stops without merging unrelated stops.
+ * Post-processing: For each trip, walk stops in sequence order and remove
+ * stops that are closer than maxDistanceMeters to the last kept stop.
+ * When two stops compete (both within distance), prefer the one used by more routes.
+ * First and last stops of each trip are always kept.
  */
 export function mergeNearbyStops(
   stops: GTFSStop[],
   stopTimes: GTFSStopTime[],
+  trips: GTFSTrip[],
   maxDistanceMeters: number
 ): { stops: GTFSStop[]; stopTimes: GTFSStopTime[]; mergedCount: number } {
   if (maxDistanceMeters <= 0) {
     return { stops, stopTimes, mergedCount: 0 };
   }
 
-  // Build a map of stop_id -> set of trip_ids that use this stop
-  const stopToTrips: Map<number | string, Set<number>> = new Map();
-  for (const st of stopTimes) {
-    if (!stopToTrips.has(st.stop_id)) {
-      stopToTrips.set(st.stop_id, new Set());
-    }
-    stopToTrips.get(st.stop_id)!.add(st.trip_id);
+  // Build stop lookup by id
+  const stopById: Map<number | string, GTFSStop> = new Map();
+  for (const stop of stops) {
+    stopById.set(stop.stop_id, stop);
   }
 
-  // Helper: check if two stops share at least one trip
-  const shareTrips = (stopIdA: number | string, stopIdB: number | string): boolean => {
-    const tripsA = stopToTrips.get(stopIdA);
-    const tripsB = stopToTrips.get(stopIdB);
-    if (!tripsA || !tripsB) return false;
-    for (const tripId of tripsA) {
-      if (tripsB.has(tripId)) return true;
+  // Build trip_id -> route_id mapping
+  const tripToRoute: Map<number, string | number> = new Map();
+  for (const trip of trips) {
+    tripToRoute.set(trip.trip_id, trip.route_id);
+  }
+
+  // Count how many distinct routes use each stop
+  const stopRouteCount: Map<number | string, number> = new Map();
+  const stopRouteSets: Map<number | string, Set<string | number>> = new Map();
+  for (const st of stopTimes) {
+    const routeId = tripToRoute.get(st.trip_id);
+    if (routeId === undefined) continue;
+    if (!stopRouteSets.has(st.stop_id)) {
+      stopRouteSets.set(st.stop_id, new Set());
     }
-    return false;
-  };
+    stopRouteSets.get(st.stop_id)!.add(routeId);
+  }
+  for (const [stopId, routes] of stopRouteSets) {
+    stopRouteCount.set(stopId, routes.size);
+  }
 
-  // Build clusters of nearby stops that share routes
-  const processed = new Set<number>();
-  const stopIdMapping: Map<number | string, number | string> = new Map();
-  const mergedStops: GTFSStop[] = [];
+  const routeCount = (stopId: number | string): number =>
+    stopRouteCount.get(stopId) ?? 1;
 
-  for (let i = 0; i < stops.length; i++) {
-    if (processed.has(i)) continue;
+  // Group stop_times by trip_id
+  const tripStopTimes: Map<number, GTFSStopTime[]> = new Map();
+  for (const st of stopTimes) {
+    if (!tripStopTimes.has(st.trip_id)) {
+      tripStopTimes.set(st.trip_id, []);
+    }
+    tripStopTimes.get(st.trip_id)!.push(st);
+  }
 
-    const canonical = stops[i];
-    const cluster: GTFSStop[] = [canonical];
-    processed.add(i);
+  const survivingStopIds = new Set<number | string>();
+  const updatedStopTimes: GTFSStopTime[] = [];
 
-    // Find all stops within maxDistanceMeters that share trips with any stop in cluster
-    for (let j = i + 1; j < stops.length; j++) {
-      if (processed.has(j)) continue;
+  for (const [, tripSts] of tripStopTimes) {
+    tripSts.sort((a, b) => Number(a.stop_sequence) - Number(b.stop_sequence));
 
-      const candidate = stops[j];
-      const distance = distanceBetweenCoords(
-        canonical.stop_lat,
-        canonical.stop_lon,
-        candidate.stop_lat,
-        candidate.stop_lon
-      );
+    let lastKeptStop: GTFSStop | null = null;
+    let lastKeptStopTime: GTFSStopTime | null = null;
+    const keptStopTimes: GTFSStopTime[] = [];
 
-      // Only merge if within distance AND shares at least one trip with any stop in cluster
-      if (distance <= maxDistanceMeters) {
-        const sharesWithCluster = cluster.some(clusterStop =>
-          shareTrips(clusterStop.stop_id, candidate.stop_id)
+    for (let i = 0; i < tripSts.length; i++) {
+      const st = tripSts[i];
+      const stop = stopById.get(st.stop_id);
+      if (!stop) continue;
+
+      const isFirst = i === 0;
+      const isLast = i === tripSts.length - 1;
+
+      if (isFirst || isLast) {
+        lastKeptStop = stop;
+        lastKeptStopTime = st;
+        survivingStopIds.add(stop.stop_id);
+        keptStopTimes.push(st);
+      } else if (lastKeptStop && lastKeptStopTime) {
+        const distance = distanceBetweenCoords(
+          lastKeptStop.stop_lat, lastKeptStop.stop_lon,
+          stop.stop_lat, stop.stop_lon
         );
-        if (sharesWithCluster) {
-          cluster.push(candidate);
-          processed.add(j);
+        if (distance >= maxDistanceMeters) {
+          // Far enough, keep this stop
+          lastKeptStop = stop;
+          lastKeptStopTime = st;
+          survivingStopIds.add(stop.stop_id);
+          keptStopTimes.push(st);
+        } else if (routeCount(st.stop_id) > routeCount(lastKeptStopTime.stop_id)) {
+          // Too close, but this stop is used by more routes — swap it in
+          keptStopTimes[keptStopTimes.length - 1] = st;
+          survivingStopIds.add(stop.stop_id);
+          lastKeptStop = stop;
+          lastKeptStopTime = st;
         }
       }
     }
 
-    // Pick the canonical stop (prefer named stops over 'unnamed')
-    let bestStop = canonical;
-    for (const stop of cluster) {
-      if (stop.stop_name !== 'unnamed' && bestStop.stop_name === 'unnamed') {
-        bestStop = stop;
-      } else if (stop.stop_name.length > bestStop.stop_name.length && bestStop.stop_name === 'unnamed') {
-        bestStop = stop;
-      }
+    // Re-sequence stop_times
+    for (let i = 0; i < keptStopTimes.length; i++) {
+      updatedStopTimes.push({
+        ...keptStopTimes[i],
+        stop_sequence: i,
+      });
     }
-
-    // Map all cluster stop IDs to the canonical stop ID
-    for (const stop of cluster) {
-      stopIdMapping.set(stop.stop_id, bestStop.stop_id);
-    }
-
-    mergedStops.push(bestStop);
   }
 
-  // Update stop_times with merged stop IDs
-  const updatedStopTimes = stopTimes.map((st) => {
-    const mappedId = stopIdMapping.get(st.stop_id) ?? st.stop_id;
-    return {
-      ...st,
-      stop_id: typeof mappedId === 'string' ? parseInt(mappedId, 10) : mappedId,
-    };
-  });
+  const mergedStops = stops.filter(s => survivingStopIds.has(s.stop_id));
+  const anchorCount = stops.filter(s => routeCount(s.stop_id) >= 2).length;
 
   const mergedCount = stops.length - mergedStops.length;
   if (mergedCount > 0) {
-    console.log(`Merged ${mergedCount} nearby stops (within ${maxDistanceMeters}m, sharing routes): ${stops.length} → ${mergedStops.length}`);
+    console.log(`Merge: ${stops.length} → ${mergedStops.length} (-${mergedCount}) | shared (2+ routes): ${anchorCount} | min distance: ${maxDistanceMeters}m`);
   }
 
   return { stops: mergedStops, stopTimes: updatedStopTimes, mergedCount };

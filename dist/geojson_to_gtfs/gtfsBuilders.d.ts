@@ -16,17 +16,18 @@ export declare function frequenciesBuilder(features: GeoJSONFeature[][], frequen
 }): GTFSFrequency[];
 export declare function stopsBuilder(features: GeoJSONFeature[][], inputStops: {
     [id: number]: string[];
-}, maxStopsDistance: number, stopNameBuilder: (stops?: string[]) => string, stopsConfig?: CustomStopsConfig): GTFSStop[];
+}, stopNameBuilder: (stops?: string[]) => string, stopsConfig?: CustomStopsConfig): GTFSStop[];
 export declare function shapesBuilder(features: GeoJSONFeature[][]): GTFSShape[];
 export declare function stopTimesBuilder(features: GeoJSONFeature[][], vehicleSpeed: (feature: GeoJSONFeature) => number, gtfsConfig?: {
     useFrequencies?: boolean;
 }): GTFSStopTime[];
 /**
- * Post-processing: Merge stops that are within a given distance of each other
- * AND share at least one common route/trip.
- * This reduces duplicate stops without merging unrelated stops.
+ * Post-processing: For each trip, walk stops in sequence order and remove
+ * stops that are closer than maxDistanceMeters to the last kept stop.
+ * When two stops compete (both within distance), prefer the one used by more routes.
+ * First and last stops of each trip are always kept.
  */
-export declare function mergeNearbyStops(stops: GTFSStop[], stopTimes: GTFSStopTime[], maxDistanceMeters: number): {
+export declare function mergeNearbyStops(stops: GTFSStop[], stopTimes: GTFSStopTime[], trips: GTFSTrip[], maxDistanceMeters: number): {
     stops: GTFSStop[];
     stopTimes: GTFSStopTime[];
     mergedCount: number;

@@ -12,7 +12,7 @@ import * as path from 'path';
 import * as fs from 'fs';
 
 // Set to 'overpass' to download from Overpass API, or 'pbf' to use local PBF file
-const DATA_SOURCE: 'overpass' | 'pbf' = 'overpass';
+const DATA_SOURCE: 'overpass' | 'pbf' = 'pbf';
 
 // PBF file path (only used when DATA_SOURCE is 'pbf')
 const PBF_FILE = path.join(__dirname, 'cochabamba.osm.pbf');
@@ -65,7 +65,6 @@ async function main() {
         defaultCalendar: () => 'Mo-Su 06:00-22:00',
         frequencyHeadway: () => 300, // 5 minutes
         vehicleSpeed: () => 40, // 40 km/h average speed in city
-        skipStopsWithinDistance: 100, // 100 meters between stops
         fakeStops: (routeFeature) => {
           // Some routes need fake stops generated
           return [11678428,19604339,9083839,14576927,9074378,14576926,6925236,,6925237].includes(routeFeature.properties.id);
@@ -87,7 +86,7 @@ async function main() {
           endDate: '20261231',
           id: 'cochabamba',
         },
-        mergeNearbyStops: 100, // Merge stops within 50 meters if they share routes
+        mergeNearbyStops: 0,
       },
     });
 
