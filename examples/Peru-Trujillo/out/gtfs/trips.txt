@@ -8,7 +8,8 @@ trip_id,route_id,service_id,shape_id,trip_headsign,direction_id
 19959151,4,Mo-Su,19959151,Avenida la Paz,0
 19959184,5,Mo-Su,19959184,Avenida Victor Raul Haya de la Torre,0
 19959196,5,Mo-Su,19959196,Avenida la Paz,1
-19959207,6,Mo-Su,19959207,Avenida Libertad,0
+19959202,6,Mo-Su,19959202,Avenida San Pedro,0
+19959207,6,Mo-Su,19959207,Avenida Libertad,1
 19959214,7,Mo-Su,19959214,Via Panamericana Norte,0
 19959217,7,Mo-Su,19959217,Avenida Libertad,1
 19959224,8,Mo-Su,19959224,Avenida San Pedro,0
@@ -16,6 +17,7 @@ trip_id,route_id,service_id,shape_id,trip_headsign,direction_id
 19961792,9,Mo-Su,19961792,Avenida Los Tulipanes,0
 19961795,9,Mo-Su,19961795,Avenida Libertad,1
 19961869,10,Mo-Su,19961869,Via Panamericana Norte,0
+19961898,10,Mo-Su,19961898,Avenida San Pedro,1
 19961919,11,Mo-Su,19961919,Via Panamericana Norte,0
 19961936,11,Mo-Su,19961936,Avenida Libertad,1
 19961948,12,Mo-Su,19961948,Avenida Libertad,0
@@ -67,6 +69,7 @@ trip_id,route_id,service_id,shape_id,trip_headsign,direction_id
 19966196,9,Mo-Su,19966196,Avenida Libertad,1
 19966201,30,Mo-Su,19966201,Calle Santa Rosa,0
 19966210,29,Mo-Su,19966210,Avenida Alan García,1
+19966215,30,Mo-Su,19966215,Calle de los Jasmines,1
 19966218,31,Mo-Su,19966218,Avenida Federico Villarreal,0
 19966224,31,Mo-Su,19966224,Calle de los Jasmines,1
 19966226,32,Mo-Su,19966226,Avenida Federico Villarreal,0
@@ -128,6 +131,7 @@ trip_id,route_id,service_id,shape_id,trip_headsign,direction_id
 19972046,59,Mo-Su,19972046,Avenida América Sur,0
 19972051,59,Mo-Su,19972051,Calle Santa Ana,1
 19972060,28,Mo-Su,19972060,Calle Diego Quispe Tito,1
+19972065,35,Mo-Su,19972065,Calle Jirón los Algarobos,1
 19972072,36,Mo-Su,19972072,Distrito Huanchaco,1
 19972081,60,Mo-Su,19972081,Calle Manuel Romero,0
 19972086,60,Mo-Su,19972086,Avenida Julian Arce,1
