@@ -33,15 +33,38 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-const http = __importStar(require("http"));
+const https = __importStar(require("https"));
 class OSMOverpassDownloader {
     constructor(bounds) {
-        this.overpassRequest = (query) => {
+        this.overpassRequest = async (query, retries = 3) => {
+            for (let attempt = 1; attempt <= retries; attempt++) {
+                try {
+                    const result = await this._doRequest(query);
+                    return result;
+                }
+                catch (err) {
+                    if (attempt < retries && (err.message?.includes('429') || err.message?.includes('504'))) {
+                        const waitTime = attempt * 15000;
+                        console.log(`Overpass API rate limited (429). Waiting ${waitTime / 1000}s before retry ${attempt + 1}/${retries}...`);
+                        await new Promise(r => setTimeout(r, waitTime));
+                    }
+                    else {
+                        throw err;
+                    }
+                }
+            }
+        };
+        this._doRequest = (query) => {
             return new Promise((resolve, reject) => {
-                const request = http.request({
+                const postData = `data=${encodeURIComponent(query)}`;
+                const request = https.request({
                     method: 'POST',
                     host: 'www.overpass-api.de',
                     path: '/api/interpreter',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        'Content-Length': Buffer.byteLength(postData),
+                    },
                 }, (response) => {
                     response.setEncoding('utf8');
                     let data = '';
@@ -49,12 +72,17 @@ class OSMOverpassDownloader {
                         data += chunk;
                     });
                     response.on('end', () => {
-                        const parsedData = JSON.parse(data);
-                        resolve(parsedData);
+                        try {
+                            const parsedData = JSON.parse(data);
+                            resolve(parsedData);
+                        }
+                        catch (e) {
+                            reject(new Error(`Overpass API returned non-JSON response (HTTP ${response.statusCode}): ${data.substring(0, 200)}`));
+                        }
                     });
                 });
                 request.on('error', reject);
-                request.write(query);
+                request.write(postData);
                 request.end();
             });
         };
@@ -66,11 +94,11 @@ class OSMOverpassDownloader {
             return map;
         };
         this.getWays = () => {
-            const query = `[out:json];rel["type"="route"](${this.bbox});way(r);out geom;`;
+            const query = `[out:json][timeout:180];rel["type"="route"](${this.bbox});way(r);out geom;`;
             return this.overpassRequest(query).then(this.indexElementsById);
         };
         this.getStops = () => {
-            const query = `[out:json];rel["type"="route"](${this.bbox});node(r);out geom;`;
+            const query = `[out:json][timeout:180];rel["type"="route"](${this.bbox});node(r);out geom;`;
             return this.overpassRequest(query).then(this.indexElementsById);
         };
         this.getRoutes = (transformTypes) => {
@@ -78,7 +106,7 @@ class OSMOverpassDownloader {
             if (transformTypes.length > 0) {
                 routesFilter = `["route"~"${transformTypes.join('|')}"]`;
             }
-            const query = `[out:json];rel["type"="route"]${routesFilter}(${this.bbox});out body;`;
+            const query = `[out:json][timeout:180];rel["type"="route"]${routesFilter}(${this.bbox});out body;`;
             return this.overpassRequest(query).then(this.indexElementsById);
         };
         if (!bounds) {

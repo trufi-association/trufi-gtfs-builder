@@ -2,7 +2,8 @@ import type { Bounds, OSMRelation, OSMWay, OSMNode, IOSMDataGetter } from '../..
 export default class OSMOverpassDownloader implements IOSMDataGetter {
     bbox: string;
     constructor(bounds: Bounds);
-    overpassRequest: (query: string) => Promise<any>;
+    overpassRequest: (query: string, retries?: number) => Promise<any>;
+    private _doRequest;
     indexElementsById: (response: any) => {
         [id: number]: any;
     };

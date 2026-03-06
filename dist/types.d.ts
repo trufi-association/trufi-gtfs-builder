@@ -70,6 +70,11 @@ export interface GeoJSONFeatureCollection {
     type: 'FeatureCollection';
     features: GeoJSONFeature[];
 }
+export interface ForcedEndpointStop {
+    stop_id: number;
+    stop_name: string;
+    position: 'first' | 'last';
+}
 export interface GTFSFeatureData {
     agency_id: number;
     route_id: number;
@@ -78,6 +83,7 @@ export interface GTFSFeatureData {
         nodes: number[];
         coordinates: GeoJSONCoordinate[];
     };
+    forcedEndpointStops?: ForcedEndpointStop[];
 }
 export interface GTFSService {
     service_id: string;

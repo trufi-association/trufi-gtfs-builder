@@ -120,8 +120,39 @@ async function osmToGtfsFunc(config) {
             fs.writeFileSync(path.join(outputDir, 'log.json'), JSON.stringify(geojson.log));
         if (outputFiles.stops)
             fs.writeFileSync(path.join(outputDir, 'stops.json'), JSON.stringify(geojson.stops));
-        if (outputFiles.readme)
-            fs.writeFileSync(path.join(outputDir, 'README.md'), geojson.readme || '');
+        if (outputFiles.readme) {
+            let readme = geojson.readme || '';
+            // Append forced endpoint stops report if any exist
+            if (gtfs) {
+                const forcedStopsRows = [];
+                for (const key in geojson.geojsonFeatures) {
+                    const fc = geojson.geojsonFeatures[key];
+                    const routeFeature = fc.features[0];
+                    if (routeFeature?.gtfs?.forcedEndpointStops && routeFeature.gtfs.forcedEndpointStops.length > 0) {
+                        const tags = routeFeature.properties;
+                        for (const fStop of routeFeature.gtfs.forcedEndpointStops) {
+                            forcedStopsRows.push({
+                                routeRef: tags.ref || '',
+                                routeName: tags.name || '',
+                                stopName: fStop.stop_name,
+                                position: fStop.position === 'first' ? 'Inicio' : 'Final',
+                                stopId: fStop.stop_id,
+                            });
+                        }
+                    }
+                }
+                if (forcedStopsRows.length > 0) {
+                    readme += `\n\n### Paradas de extremo generadas artificialmente (forceEndpointStops)\n`;
+                    readme += `**Total**: ${forcedStopsRows.length}\n\n`;
+                    readme += `| Ruta | Nombre de ruta | Parada | Posición | Node ID |\n`;
+                    readme += `| ---- | -------------- | ------ | -------- | ------- |\n`;
+                    for (const row of forcedStopsRows) {
+                        readme += `| ${row.routeRef} | ${row.routeName} | ${row.stopName} | ${row.position} | ${row.stopId} |\n`;
+                    }
+                }
+            }
+            fs.writeFileSync(path.join(outputDir, 'README.md'), readme);
+        }
         if (outputFiles.gtfs && gtfs) {
             fs.mkdirSync(path.join(outputDir, `gtfs`));
             (0, writeGtfs_1.default)(gtfs, path.join(outputDir, 'gtfs'));

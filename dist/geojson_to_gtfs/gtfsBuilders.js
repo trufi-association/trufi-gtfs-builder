@@ -431,21 +431,23 @@ function stopsBuilder(features, inputStops, stopNameBuilder, stopsConfig) {
             const filteredStops = { nodes: [], coordinates: [] };
             const forceEndpoints = stopsConfig?.forceEndpointStops ?? false;
             const { nodes, coordinates } = routeFeature.geometry;
+            const forcedEndpointStops = [];
             // Helper to add a geometry-based endpoint stop
-            const addEndpointStop = (nodeId, coord) => {
+            const addEndpointStop = (nodeId, coord, position) => {
                 const [lon, lat] = coord;
+                const stopName = stopNameBuilder(inputStops[nodeId]) || 'unnamed';
                 if (!checkList[nodeId]) {
                     checkList[nodeId] = true;
-                    const stopName = stopNameBuilder(inputStops[nodeId]);
                     stops.push({
                         stop_id: nodeId,
-                        stop_name: stopName || 'unnamed',
+                        stop_name: stopName,
                         stop_lat: lat,
                         stop_lon: lon,
                     });
                 }
                 filteredStops.nodes.push(nodeId);
                 filteredStops.coordinates.push(coord);
+                forcedEndpointStops.push({ stop_id: nodeId, stop_name: stopName, position });
             };
             // Force first stop if enabled and no OSM stop near the start
             if (forceEndpoints && nodes && nodes.length > 0) {
@@ -461,7 +463,7 @@ function stopsBuilder(features, inputStops, stopNameBuilder, stopsConfig) {
                     }
                 }
                 if (!hasNearbyFirst) {
-                    addEndpointStop(nodes[0], firstCoord);
+                    addEndpointStop(nodes[0], firstCoord, 'first');
                 }
             }
             for (let i = 1; i < feature.length; i++) {
@@ -498,10 +500,13 @@ function stopsBuilder(features, inputStops, stopNameBuilder, stopsConfig) {
                     }
                 }
                 if (!hasNearbyLast) {
-                    addEndpointStop(nodes[nodes.length - 1], lastCoord);
+                    addEndpointStop(nodes[nodes.length - 1], lastCoord, 'last');
                 }
             }
             routeFeature.gtfs.filteredStops = filteredStops;
+            if (forcedEndpointStops.length > 0) {
+                routeFeature.gtfs.forcedEndpointStops = forcedEndpointStops;
+            }
         }
         else if (mode === 'customStops' && customStops) {
             // Custom stops mode: use ONLY the provided custom stops
