@@ -1,5 +1,5 @@
 ### Count
-**Total**: 210  **Correct**: 210  **With error**: 0
+**Total**: 205  **Correct**: 205  **With error**: 0
 
 
 | Id | Name | Ref | From | To | State |
@@ -143,10 +143,6 @@
 [19961769](https://www.openstreetmap.org/relation/19961769) | Avenida San Pedro → Avenida Libertad | M-09 BC | Avenida San Pedro | Avenida Libertad | ✅
 [19961792](https://www.openstreetmap.org/relation/19961792) | Avenida Libertad → Avenida Los Tulipanes | M-10 B1 | Avenida Libertad | Avenida Los Tulipanes | ✅
 [19961795](https://www.openstreetmap.org/relation/19961795) | Avenida Los Tulipanes → Avenida Libertad | M-10 B1 | Avenida Los Tulipanes | Avenida Libertad | ✅
-[19966193](https://www.openstreetmap.org/relation/19966193) | Avenida Libertad → Avenida Los Tulipanes | M-10 B1 | Avenida Libertad | Avenida Los Tulipanes | ✅
-[19966196](https://www.openstreetmap.org/relation/19966196) | Avenida Los Tulipanes → Avenida Libertad | M-10 B1 | Avenida Los Tulipanes | Avenida Libertad | ✅
-[19961869](https://www.openstreetmap.org/relation/19961869) | Avenida San Pedro → Via Panamericana Norte | M-11 D | Avenida San Pedro | Via Panamericana Norte | ✅
-[19961898](https://www.openstreetmap.org/relation/19961898) | Via Panamericana Norte → Avenida San Pedro | M-11 D | Via Panamericana Norte | Avenida San Pedro | ✅
 [19961919](https://www.openstreetmap.org/relation/19961919) | Avenida Libertad → Via Panamericana Norte | M-12 C | Avenida Libertad | Via Panamericana Norte | ✅
 [19961936](https://www.openstreetmap.org/relation/19961936) | Via Panamericana Norte → Avenida Libertad | M-12 C | Via Panamericana Norte | Avenida Libertad | ✅
 [19971942](https://www.openstreetmap.org/relation/19971942) | Ciudad de Dios → Ciudad de Dios | M-13 C1 | Ciudad de Dios | Ciudad de Dios | ✅
@@ -157,37 +153,36 @@
 [19976301](https://www.openstreetmap.org/relation/19976301) | Sector Santa María Alta → Ciudad de Dios | M-15 C2 | Sector Santa María Alta | Ciudad de Dios | ✅
 [19962130](https://www.openstreetmap.org/relation/19962130) | Avenida Vallejo → Calle 8 | M-16 C | Avenida Vallejo | Calle 8 | ✅
 [19962183](https://www.openstreetmap.org/relation/19962183) | Calle 8 → Avenida Vallejo | M-16 C | Calle 8 | Avenida Vallejo | ✅
-[19972901](https://www.openstreetmap.org/relation/19972901) | Avenida Dos → Avenida Dos | M-17 C2 | Avenida Dos | Avenida Dos | ✅
-[19976337](https://www.openstreetmap.org/relation/19976337) | Avenida Dos → Avenida Dos | M-17 C2 | Avenida Dos | Avenida Dos | ✅
-[19962204](https://www.openstreetmap.org/relation/19962204) | Avenida Dos → Avenida Dos | M-18 C1 | Avenida Dos | Avenida Dos | ✅
-[19973156](https://www.openstreetmap.org/relation/19973156) | Avenida Dos → Avenida Dos | M-18 C1 | Avenida Dos | Avenida Dos | ✅
+[19972901](https://www.openstreetmap.org/relation/19972901) | Alto Trujillo → Avenida América Oeste | M-17 C2 | Alto Trujillo | Avenida América Oeste | ✅
+[20345821](https://www.openstreetmap.org/relation/20345821) | Avenida América Oeste → Alto Trujillo | M-17 C2 | Avenida América Oeste | Alto Trujillo | ✅
+[19976337](https://www.openstreetmap.org/relation/19976337) | Alto Trujillo → Avenida América Oeste | M-17 C2C | Alto Trujillo | Avenida América Oeste | ✅
+[20345926](https://www.openstreetmap.org/relation/20345926) | Avenida América Oeste → Alto Trujillo | M-17 C2C | Avenida América Oeste | Alto Trujillo | ✅
+[19973156](https://www.openstreetmap.org/relation/19973156) | Alto Trujillo → Calle 8 | M-18 C1 | Alto Trujillo | Calle 8 | ✅
+[20345938](https://www.openstreetmap.org/relation/20345938) | Calle 8 → Alto Trujillo | M-18 C1 | Calle 8 | Alto Trujillo | ✅
+[19962204](https://www.openstreetmap.org/relation/19962204) | Alto Trujillo → Calle 8 | M-18 C1C | Alto Trujillo | Calle 8 | ✅
+[20345946](https://www.openstreetmap.org/relation/20345946) | Calle 8 → Alto Trujillo | M-18 C1C | Calle 8 | Alto Trujillo | ✅
 [19962194](https://www.openstreetmap.org/relation/19962194) | Manzana Ñ → Calle 8 | M-19 A | Manzana Ñ | Calle 8 | ✅
 [19962272](https://www.openstreetmap.org/relation/19962272) | Calle 8 → Manzana Ñ | M-19 A | Calle 8 | Manzana Ñ | ✅
 [19962213](https://www.openstreetmap.org/relation/19962213) | Sector Nuevo Horizonte → Avenida 12 de Noviembre | M-20 C | Sector Nuevo Horizonte | Avenida 12 de Noviembre | ✅
-[19962218](https://www.openstreetmap.org/relation/19962218) | Sector Nuevo Horizonte → Avenida 12 de Noviembre | M-20 C | Sector Nuevo Horizonte | Avenida 12 de Noviembre | ✅
 [19962222](https://www.openstreetmap.org/relation/19962222) | Avenida 12 de Noviembre → Sector Nuevo Horizonte | M-20 C | Avenida 12 de Noviembre | Sector Nuevo Horizonte | ✅
-[19962228](https://www.openstreetmap.org/relation/19962228) | Avenida 12 de Noviembre → Sector Nuevo Horizonte | M-20 C | Avenida 12 de Noviembre | Sector Nuevo Horizonte | ✅
 [19962230](https://www.openstreetmap.org/relation/19962230) | Avenida 12 de Noviembre → Sector Nuevo Horizonte | M-21 A | Avenida 12 de Noviembre | Sector Nuevo Horizonte | ✅
 [19962257](https://www.openstreetmap.org/relation/19962257) | Sector Nuevo Horizonte → Avenida 12 de Noviembre | M-21 A | Sector Nuevo Horizonte | Avenida 12 de Noviembre | ✅
-[19976195](https://www.openstreetmap.org/relation/19976195) | Avenida 12 de Noviembre → Sector Nuevo Horizonte | M-21 A | Avenida 12 de Noviembre | Sector Nuevo Horizonte | ✅
 [19962263](https://www.openstreetmap.org/relation/19962263) | Avenida 12 de Noviembre → Avenida Juan Pablo II | M-22 F | Avenida 12 de Noviembre | Avenida Juan Pablo II | ✅
 [19962271](https://www.openstreetmap.org/relation/19962271) | Avenida Juan Pablo II → Prolongación Avenida 12 de Noviembre | M-22 F | Avenida Juan Pablo II | Prolongación Avenida 12 de Noviembre | ✅
 [19962287](https://www.openstreetmap.org/relation/19962287) | Calle Atahualpa → Calle Pedro Ruiz Gallo | M-23 B | Calle Atahualpa | Calle Pedro Ruiz Gallo | ✅
 [19962292](https://www.openstreetmap.org/relation/19962292) | Calle Pedro Ruiz Gallo → Calle Atahualpa | M-23 B | Calle Pedro Ruiz Gallo | Calle Atahualpa | ✅
 [19962294](https://www.openstreetmap.org/relation/19962294) | Calle Pedro Ruiz Gallo → Calle 7 de Julio | M-23 B | Calle Pedro Ruiz Gallo | Calle 7 de Julio | ✅
 [19962298](https://www.openstreetmap.org/relation/19962298) | Calle 7 de Julio → Calle Pedro Ruiz Gallo | M-23 B | Calle 7 de Julio | Calle Pedro Ruiz Gallo | ✅
-[19962300](https://www.openstreetmap.org/relation/19962300) | Calle Pedro Ruiz Gallo → Via Evitamiento Milagro | M-23 B | Calle Pedro Ruiz Gallo | Via Evitamiento Milagro | ✅
-[19962303](https://www.openstreetmap.org/relation/19962303) | Via Evitamiento Milagro → Calle Pedro Ruiz Gallo | M-23 B | Via Evitamiento Milagro | Calle Pedro Ruiz Gallo | ✅
 [19962313](https://www.openstreetmap.org/relation/19962313) | Calle Pedro Ruiz Gallo → Via Evitamiento Milagro | M-23 B | Calle Pedro Ruiz Gallo | Via Evitamiento Milagro | ✅
 [19962315](https://www.openstreetmap.org/relation/19962315) | Via Evitamiento Milagro → Calle Pedro Ruiz Gallo | M-23 B | Via Evitamiento Milagro | Calle Pedro Ruiz Gallo | ✅
+[19962300](https://www.openstreetmap.org/relation/19962300) | Calle Pedro Ruiz Gallo → Via Evitamiento Milagro | M-23 BC | Calle Pedro Ruiz Gallo | Via Evitamiento Milagro | ✅
+[19962303](https://www.openstreetmap.org/relation/19962303) | Via Evitamiento Milagro → Calle Pedro Ruiz Gallo | M-23 BC | Via Evitamiento Milagro | Calle Pedro Ruiz Gallo | ✅
 [19962362](https://www.openstreetmap.org/relation/19962362) | Calle Liverpool → Calle F | M-25 A | Calle Liverpool | Calle F | ✅
 [19962394](https://www.openstreetmap.org/relation/19962394) | Calle F → Calle Liverpool | M-25 A | Calle F | Calle Liverpool | ✅
 [19962432](https://www.openstreetmap.org/relation/19962432) | Futuro Barrio 5C → Calle Alfonso Ugarte | M-26 B | Futuro Barrio 5C | Calle Alfonso Ugarte | ✅
 [19971395](https://www.openstreetmap.org/relation/19971395) | Calle Alfonso Ugarte → Futuro Barrio 5C | M-26 B | Calle Alfonso Ugarte | Futuro Barrio 5C | ✅
 [19971408](https://www.openstreetmap.org/relation/19971408) | Avenida Libertad → Avenida Libertad | M-27 AB | Avenida Libertad | Avenida Libertad | ✅
 [19971409](https://www.openstreetmap.org/relation/19971409) | Avenida Libertad → Avenida Libertad | M-27 AB | Avenida Libertad | Avenida Libertad | ✅
-[19962280](https://www.openstreetmap.org/relation/19962280) | Primavera III → Avenida los Pajuiles | M-28 A | Primavera III | Avenida los Pajuiles | ✅
-[19962320](https://www.openstreetmap.org/relation/19962320) | Avenida los Pajuiles → Primavera III | M-28 A | Avenida los Pajuiles | Primavera III | ✅
 [19971413](https://www.openstreetmap.org/relation/19971413) | Primavera III → Avenida los Pajuiles | M-28 A | Primavera III | Avenida los Pajuiles | ✅
 [19971417](https://www.openstreetmap.org/relation/19971417) | Avenida los Pajuiles → Primavera III | M-28 A | Avenida los Pajuiles | Primavera III | ✅
 [19962502](https://www.openstreetmap.org/relation/19962502) | Primavera → Calle Liverpool | M-29 B | Primavera | Calle Liverpool | ✅
@@ -216,7 +211,7 @@
 [19961958](https://www.openstreetmap.org/relation/19961958) | Avenida Libertad → Calle Virgen de la Puerta | M-36 LV | Avenida Libertad | Calle Virgen de la Puerta | ✅
 
 ### Paradas de extremo generadas artificialmente (forceEndpointStops)
-**Total**: 420
+**Total**: 405
 
 | Ruta | Nombre de ruta | Parada | Posición | Node ID |
 | ---- | -------------- | ------ | -------- | ------- |
@@ -239,28 +234,24 @@
 | M-06 B | Avenida Victor Larco Herrera → Avenida la Paz | Avenida Victor Raul Haya de la Torre y Avenida Victor Larco Herrera | Inicio | 2779870168 |
 | M-06 B | Avenida Victor Larco Herrera → Avenida la Paz | Avenida la Paz | Final | 5491675677 |
 | M-07 V | Avenida Libertad → Avenida San Pedro | Avenida Libertad | Inicio | 11828708309 |
-| M-07 V | Avenida Libertad → Avenida San Pedro | Avenida Nuevo Trujillo y Avenida el Sol | Final | 5467507240 |
-| M-07 V | Avenida San Pedro → Avenida Libertad | Avenida Nuevo Trujillo y Avenida el Sol | Inicio | 5467507240 |
+| M-07 V | Avenida Libertad → Avenida San Pedro | Avenida San Pedro y Avenida el Sol y Avenida Nuevo Trujillo | Final | 5467507240 |
+| M-07 V | Avenida San Pedro → Avenida Libertad | Avenida San Pedro y Avenida el Sol y Avenida Nuevo Trujillo | Inicio | 5467507240 |
 | M-07 V | Avenida San Pedro → Avenida Libertad | Avenida Libertad | Final | 11828708308 |
 | M-08 A | Avenida Libertad → Via Panamericana Norte | Avenida Libertad | Inicio | 11828708309 |
-| M-08 A | Avenida Libertad → Via Panamericana Norte | Carretera Panamericana Norte | Final | 11539601121 |
-| M-08 A | Via Panamericana Norte → Avenida Libertad | Carretera Panamericana Norte | Inicio | 11030688158 |
+| M-08 A | Avenida Libertad → Via Panamericana Norte | Carretera Panamericana Norte | Final | 13650281406 |
+| M-08 A | Via Panamericana Norte → Avenida Libertad | Carretera Panamericana Norte | Inicio | 13650281406 |
 | M-08 A | Via Panamericana Norte → Avenida Libertad | Avenida Libertad | Final | 11828708308 |
 | M-09 BC | Avenida Libertad → Avenida San Pedro | Avenida Libertad | Inicio | 11828708309 |
-| M-09 BC | Avenida Libertad → Avenida San Pedro | Avenida Nuevo Trujillo y Avenida el Sol | Final | 5467507240 |
-| M-09 BC | Avenida San Pedro → Avenida Libertad | Avenida Nuevo Trujillo y Avenida el Sol | Inicio | 5467507240 |
+| M-09 BC | Avenida Libertad → Avenida San Pedro | Avenida San Pedro y Avenida el Sol y Avenida Nuevo Trujillo | Final | 5467507240 |
+| M-09 BC | Avenida San Pedro → Avenida Libertad | Avenida San Pedro y Avenida el Sol y Avenida Nuevo Trujillo | Inicio | 5467507240 |
 | M-09 BC | Avenida San Pedro → Avenida Libertad | Avenida Libertad | Final | 11828708308 |
 | M-10 B1 | Avenida Libertad → Avenida Los Tulipanes | Avenida Libertad | Inicio | 11828708309 |
-| M-10 B1 | Avenida Libertad → Avenida Los Tulipanes | Avenida los Tulipanes y Avenida los Cipreses | Final | 1098622819 |
-| M-10 B1 | Avenida Los Tulipanes → Avenida Libertad | Avenida los Tulipanes y Avenida los Cipreses | Inicio | 1098622819 |
+| M-10 B1 | Avenida Libertad → Avenida Los Tulipanes | Avenida los Tulipanes | Final | 1098622819 |
+| M-10 B1 | Avenida Los Tulipanes → Avenida Libertad | Avenida los Tulipanes | Inicio | 1098622819 |
 | M-10 B1 | Avenida Los Tulipanes → Avenida Libertad | Avenida Libertad | Final | 11828708308 |
-| M-11 D | Avenida San Pedro → Via Panamericana Norte | Avenida el Sol | Inicio | 11030442249 |
-| M-11 D | Avenida San Pedro → Via Panamericana Norte | Carretera Panamericana Norte | Final | 11539601121 |
-| M-11 D | Via Panamericana Norte → Avenida San Pedro | Carretera Panamericana Norte | Inicio | 11033003496 |
-| M-11 D | Via Panamericana Norte → Avenida San Pedro | Avenida Nuevo Trujillo y Avenida el Sol | Final | 5467507240 |
-| M-12 C | Avenida Libertad → Via Panamericana Norte | Avenida Libertad | Inicio | 11828708309 |
-| M-12 C | Avenida Libertad → Via Panamericana Norte | Carretera Panamericana Norte | Final | 11539601121 |
-| M-12 C | Via Panamericana Norte → Avenida Libertad | Carretera Panamericana Norte | Inicio | 11030688158 |
+| M-12 C | Avenida Libertad → Via Panamericana Norte | Avenida Libertad | Inicio | 11828708308 |
+| M-12 C | Avenida Libertad → Via Panamericana Norte | Carretera Panamericana Norte | Final | 13650281406 |
+| M-12 C | Via Panamericana Norte → Avenida Libertad | Carretera Panamericana Norte | Inicio | 13650281406 |
 | M-12 C | Via Panamericana Norte → Avenida Libertad | Avenida Libertad | Final | 11828708308 |
 | M-36 LV | Calle Virgen de la Puerta → Avenida Libertad | Calle Virgen de la Puerta | Inicio | 4743966724 |
 | M-36 LV | Calle Virgen de la Puerta → Avenida Libertad | Avenida Libertad | Final | 11828708308 |
@@ -272,55 +263,42 @@
 | M-16 C | Avenida Vallejo → Calle 8 | Calle 3 y Calle 8 | Final | 1098595837 |
 | M-16 C | Calle 8 → Avenida Vallejo | Calle 3 y Calle 8 | Inicio | 1098595837 |
 | M-16 C | Calle 8 → Avenida Vallejo | Jirón Brasil | Final | 1098617000 |
-| M-19 A | Manzana Ñ → Calle 8 | Sin nombre | Inicio | 3233772454 |
-| M-19 A | Manzana Ñ → Calle 8 | Avenida América Oeste y Calle 8 | Final | 1098595196 |
-| M-18 C1 | Avenida Dos → Avenida Dos | Avenida Dos | Inicio | 1098586293 |
-| M-18 C1 | Avenida Dos → Avenida Dos | Avenida Dos | Final | 1098586293 |
-| M-20 C | Sector Nuevo Horizonte → Avenida 12 de Noviembre | Sin nombre | Inicio | 4699230346 |
-| M-20 C | Sector Nuevo Horizonte → Avenida 12 de Noviembre | Prolongación Avenida 12 de Noviembre y Avenida Albania | Final | 11030430154 |
-| M-20 C | Sector Nuevo Horizonte → Avenida 12 de Noviembre | Sin nombre | Inicio | 4699230346 |
-| M-20 C | Sector Nuevo Horizonte → Avenida 12 de Noviembre | Prolongación Avenida 12 de Noviembre | Final | 11794015159 |
-| M-20 C | Avenida 12 de Noviembre → Sector Nuevo Horizonte | Prolongación Avenida 12 de Noviembre | Inicio | 11794015160 |
-| M-20 C | Avenida 12 de Noviembre → Sector Nuevo Horizonte | Sin nombre | Final | 4699230346 |
-| M-20 C | Avenida 12 de Noviembre → Sector Nuevo Horizonte | Prolongación Avenida 12 de Noviembre | Inicio | 11794015159 |
-| M-20 C | Avenida 12 de Noviembre → Sector Nuevo Horizonte | Sin nombre | Final | 4699230346 |
-| M-21 A | Avenida 12 de Noviembre → Sector Nuevo Horizonte | Prolongación Avenida 12 de Noviembre | Inicio | 11794015159 |
-| M-21 A | Avenida 12 de Noviembre → Sector Nuevo Horizonte | Sin nombre | Final | 4699230346 |
-| M-21 A | Sector Nuevo Horizonte → Avenida 12 de Noviembre | Sin nombre | Inicio | 4699230346 |
-| M-21 A | Sector Nuevo Horizonte → Avenida 12 de Noviembre | Prolongación Avenida 12 de Noviembre | Final | 11794015160 |
+| M-19 A | Manzana Ñ → Calle 8 | Sin nombre | Inicio | 13657450383 |
+| M-19 A | Manzana Ñ → Calle 8 | Avenida América Oeste y Avenida Jesús de Nazareth | Final | 1098614072 |
+| M-18 C1C | Alto Trujillo → Calle 8 | Sin nombre | Inicio | 13657450383 |
+| M-18 C1C | Alto Trujillo → Calle 8 | Avenida América Oeste y Calle 8 | Final | 1098595196 |
+| M-20 C | Sector Nuevo Horizonte → Avenida 12 de Noviembre | Calle Lambayeque | Inicio | 1098627175 |
+| M-20 C | Avenida 12 de Noviembre → Sector Nuevo Horizonte | Calle Lambayeque | Final | 1098627175 |
+| M-21 A | Avenida 12 de Noviembre → Sector Nuevo Horizonte | Calle Lambayeque | Final | 1098645578 |
+| M-21 A | Sector Nuevo Horizonte → Avenida 12 de Noviembre | Calle Lambayeque | Inicio | 1098645578 |
 | M-22 F | Avenida 12 de Noviembre → Avenida Juan Pablo II | Prolongación Avenida 12 de Noviembre | Inicio | 11794015159 |
 | M-22 F | Avenida 12 de Noviembre → Avenida Juan Pablo II | Calle San Andrés y Juan Pablo II | Final | 1098613723 |
 | M-22 F | Avenida Juan Pablo II → Prolongación Avenida 12 de Noviembre | Calle San Andrés y Juan Pablo II | Inicio | 1098613723 |
-| M-22 F | Avenida Juan Pablo II → Prolongación Avenida 12 de Noviembre | Prolongación Avenida 12 de Noviembre | Final | 11794015160 |
-| M-19 A | Calle 8 → Manzana Ñ | Avenida América Oeste y Calle 8 | Inicio | 1098595196 |
-| M-19 A | Calle 8 → Manzana Ñ | Sin nombre | Final | 3233772454 |
-| M-28 A | Primavera III → Avenida los Pajuiles | Calle los Cipreses | Inicio | 5072310623 |
-| M-28 A | Primavera III → Avenida los Pajuiles | Avenida los Pajuiles y Calle 5 | Final | 1098649277 |
-| M-23 B | Calle Atahualpa → Calle Pedro Ruiz Gallo | Prolongación Calle 7 de Julio | Inicio | 1098630488 |
-| M-23 B | Calle Atahualpa → Calle Pedro Ruiz Gallo | Jirón Desamparados | Final | 5474060091 |
-| M-23 B | Calle Pedro Ruiz Gallo → Calle Atahualpa | Jirón Desamparados | Inicio | 5474060091 |
+| M-19 A | Calle 8 → Manzana Ñ | Avenida América Oeste y Avenida Jesús de Nazareth | Inicio | 1098614072 |
+| M-19 A | Calle 8 → Manzana Ñ | Sin nombre | Final | 13657450383 |
+| M-23 B | Calle Atahualpa → Calle Pedro Ruiz Gallo | Avenida Dinamarca y Prolongación Calle 7 de Julio | Inicio | 2339884498 |
+| M-23 B | Calle Atahualpa → Calle Pedro Ruiz Gallo | Jirón Desamparados | Final | 13654990713 |
+| M-23 B | Calle Pedro Ruiz Gallo → Calle Atahualpa | Jirón Desamparados | Inicio | 13654990713 |
 | M-23 B | Calle Pedro Ruiz Gallo → Calle Atahualpa | Avenida Dinamarca y Prolongación Calle 7 de Julio | Final | 2339884498 |
 | M-23 B | Calle Pedro Ruiz Gallo → Calle 7 de Julio | Jirón Desamparados | Inicio | 5474060091 |
 | M-23 B | Calle Pedro Ruiz Gallo → Calle 7 de Julio | Avenida Dinamarca y Prolongación Calle 7 de Julio | Final | 2339884498 |
 | M-23 B | Calle 7 de Julio → Calle Pedro Ruiz Gallo | Prolongación Calle 7 de Julio | Inicio | 1098630488 |
 | M-23 B | Calle 7 de Julio → Calle Pedro Ruiz Gallo | Jirón Desamparados | Final | 5474060091 |
-| M-23 B | Calle Pedro Ruiz Gallo → Via Evitamiento Milagro | Jirón Desamparados | Inicio | 5474060091 |
-| M-23 B | Calle Pedro Ruiz Gallo → Via Evitamiento Milagro | Via Evitamiento Milagro | Final | 2589604594 |
-| M-23 B | Via Evitamiento Milagro → Calle Pedro Ruiz Gallo | Via Evitamiento Milagro | Inicio | 2589604594 |
-| M-23 B | Via Evitamiento Milagro → Calle Pedro Ruiz Gallo | Jirón Desamparados | Final | 5474060091 |
+| M-23 BC | Calle Pedro Ruiz Gallo → Via Evitamiento Milagro | Jirón Desamparados | Inicio | 13654990713 |
+| M-23 BC | Calle Pedro Ruiz Gallo → Via Evitamiento Milagro | Via Evitamiento Milagro | Final | 2589604594 |
+| M-23 BC | Via Evitamiento Milagro → Calle Pedro Ruiz Gallo | Via Evitamiento Milagro | Inicio | 2589604594 |
+| M-23 BC | Via Evitamiento Milagro → Calle Pedro Ruiz Gallo | Jirón Desamparados | Final | 13654990713 |
 | M-23 B | Calle Pedro Ruiz Gallo → Via Evitamiento Milagro | Jirón Desamparados | Inicio | 5474060091 |
 | M-23 B | Calle Pedro Ruiz Gallo → Via Evitamiento Milagro | Via Evitamiento Milagro | Final | 2589604594 |
 | M-23 B | Via Evitamiento Milagro → Calle Pedro Ruiz Gallo | Prolongación Calle 7 de Julio | Inicio | 1098630488 |
 | M-23 B | Via Evitamiento Milagro → Calle Pedro Ruiz Gallo | Jirón Desamparados | Final | 5474060091 |
-| M-28 A | Avenida los Pajuiles → Primavera III | Avenida los Pajuiles y Calle 5 | Inicio | 1098649277 |
-| M-28 A | Avenida los Pajuiles → Primavera III | Calle los Cipreses | Final | 13395560314 |
 | M-25 A | Calle Liverpool → Calle F | Avenida Mansiche y Calle Liverpool | Inicio | 1098599033 |
 | M-25 A | Calle Liverpool → Calle F | Avenida las Magnolias y Calle San Nicolas | Final | 1098626330 |
 | M-25 A | Calle F → Calle Liverpool | Avenida las Magnolias y Calle San Nicolas | Inicio | 5082107599 |
 | M-25 A | Calle F → Calle Liverpool | Avenida Mansiche y Calle Liverpool | Final | 1098599033 |
 | M-26 B | Futuro Barrio 5C → Calle Alfonso Ugarte | Sin nombre | Inicio | 10961609694 |
 | M-26 B | Futuro Barrio 5C → Calle Alfonso Ugarte | Sin nombre | Final | 10961609694 |
-| M-29 B | Primavera → Calle Liverpool | Calle los Cipreses y Calle los Geranios | Inicio | 5489642729 |
+| M-29 B | Primavera → Calle Liverpool | Calle los Geranios y Calle los Cipreses | Inicio | 5489642729 |
 | M-29 B | Primavera → Calle Liverpool | Calle Liverpool y Calle el Cairo | Final | 1098605733 |
 | M-31 A | Avenida América Sur → Calle Nuevo Indoamérica | Sin nombre | Inicio | 11033310337 |
 | M-31 A | Avenida América Sur → Calle Nuevo Indoamérica | Calle las Azucenas y Calle los Rosales | Final | 2589604458 |
@@ -352,10 +330,6 @@
 | C-01 B | Calle Diego Quispe Tito → Calle José la Rivera | Avenida Miguel Grau | Final | 1873334289 |
 | C-02 H | Avenida Alan García → Avenida Federico Villarreal | Avenida Pisacc y Avenida Alan Garcia | Inicio | 5463831053 |
 | C-02 H | Avenida Alan García → Avenida Federico Villarreal | Avenida Federico Villarreal Sur y Avenida Federico Villarreal y Avenida 5 de Abril | Final | 2604198847 |
-| M-10 B1 | Avenida Libertad → Avenida Los Tulipanes | Avenida Libertad | Inicio | 11828708309 |
-| M-10 B1 | Avenida Libertad → Avenida Los Tulipanes | Avenida los Tulipanes y Avenida los Cipreses | Final | 1098622819 |
-| M-10 B1 | Avenida Los Tulipanes → Avenida Libertad | Avenida los Tulipanes y Avenida los Cipreses | Inicio | 1098622819 |
-| M-10 B1 | Avenida Los Tulipanes → Avenida Libertad | Avenida Libertad | Final | 11828708308 |
 | C-03 JJ | Calle de los Jasmines → Calle Santa Rosa | Avenida Pisacc | Inicio | 1098635577 |
 | C-03 JJ | Calle de los Jasmines → Calle Santa Rosa | Avenida Abelardo Quiñones y Calle Santa Rosa | Final | 1098626822 |
 | C-02 H | Avenida Federico Villarreal → Avenida Alan García | Avenida Federico Villarreal Sur y Avenida Federico Villarreal y Avenida 5 de Abril | Inicio | 2604198847 |
@@ -381,7 +355,7 @@
 | C-08 O | Calle Jirón los Algarobos → Calle San Martín | Jirón los Tulipanes | Inicio | 1098628621 |
 | C-08 O | Calle Jirón los Algarobos → Calle San Martín | Calle Andres Razuri y Calle San Martin | Final | 1098633662 |
 | C-41 Z2 | Distrito Huanchaco → Avenida Dinamarca | Avenida Miguel Grau | Inicio | 1873334296 |
-| C-41 Z2 | Distrito Huanchaco → Avenida Dinamarca | Calle China y Prolongación Avenida Las Margaritas y Avenida Dinamarca | Final | 2339884512 |
+| C-41 Z2 | Distrito Huanchaco → Avenida Dinamarca | Avenida Dinamarca y Prolongación Avenida Las Margaritas y Calle China | Final | 2339884512 |
 | C-09 E | Distrito Huanchaco → Calle San Gabriel | Avenida Miguel Grau | Inicio | 1873334296 |
 | C-09 E | Distrito Huanchaco → Calle San Gabriel | Avenida Prolongación César Vallejo y Calle San Gabriel | Final | 1557312584 |
 | C-09 E | Calle San Gabriel → Distrito Huanchaco | Avenida Prolongación César Vallejo y Calle San Gabriel | Inicio | 1557312584 |
@@ -412,14 +386,14 @@
 | C-12 B | Sector Taquila → Carlos García Ronceros | Via Evitamiento Milagro | Final | 2339886605 |
 | C-12 B | Carlos García Ronceros → Sector Taquila | Via Evitamiento Milagro | Inicio | 2339886605 |
 | C-12 B | Carlos García Ronceros → Sector Taquila | Avenida Independencia | Final | 5282388366 |
-| C-13 D | Avenida 12 de Noviembre → Calle Miguiel Graú | Avenida Dinamarca y Prolongación Avenida 12 de Noviembre | Inicio | 11812523500 |
+| C-13 D | Avenida 12 de Noviembre → Calle Miguiel Graú | Prolongación Avenida 12 de Noviembre y Avenida Dinamarca | Inicio | 11812523500 |
 | C-13 D | Avenida 12 de Noviembre → Calle Miguiel Graú | Avenida Independencia y Calle Miguiel Graú | Final | 1098612874 |
 | C-13 D | Calle Miguiel Graú → Avenida 12 de Noviembre | Calle Miguiel Graú | Inicio | 13381608067 |
-| C-13 D | Calle Miguiel Graú → Avenida 12 de Noviembre | Avenida Dinamarca y Prolongación Avenida 12 de Noviembre | Final | 11812523500 |
-| C-45 C | Avenida 12 de Noviembre → Calle Miguiel Graú | Avenida Dinamarca y Prolongación Avenida 12 de Noviembre | Inicio | 11812523500 |
+| C-13 D | Calle Miguiel Graú → Avenida 12 de Noviembre | Prolongación Avenida 12 de Noviembre y Avenida Dinamarca | Final | 11812523500 |
+| C-45 C | Avenida 12 de Noviembre → Calle Miguiel Graú | Prolongación Avenida 12 de Noviembre y Avenida Dinamarca | Inicio | 11812523500 |
 | C-45 C | Avenida 12 de Noviembre → Calle Miguiel Graú | Avenida Independencia y Calle Miguiel Graú | Final | 1098612874 |
 | C-45 C | Calle Miguiel Graú → Avenida 12 de Noviembre | Calle Miguiel Graú | Inicio | 13381608067 |
-| C-45 C | Calle Miguiel Graú → Avenida 12 de Noviembre | Avenida Dinamarca y Prolongación Avenida 12 de Noviembre | Final | 11812523500 |
+| C-45 C | Calle Miguiel Graú → Avenida 12 de Noviembre | Prolongación Avenida 12 de Noviembre y Avenida Dinamarca | Final | 11812523500 |
 | C-14 S | Calle José Galvez → Campiña de Moche | Avenida los Incas y Calle José Galvez | Inicio | 1015292444 |
 | C-14 S | Calle José Galvez → Campiña de Moche | Sin nombre | Final | 5478862777 |
 | C-43 A | Calle Dieciseis → Avenida Miguel Grau | Avenida Albania | Inicio | 13381640382 |
@@ -467,7 +441,7 @@
 | M-15 C2 | Ciudad de Dios → Sector Santa María Alta | Calle Luis Alberto Sanchez | Inicio | 1098625858 |
 | M-15 C2 | Ciudad de Dios → Sector Santa María Alta | Calle Luis Alberto Sanchez | Final | 1098625858 |
 | M-29 B | Calle Liverpool → Primavera | Calle Liverpool y Calle el Cairo | Inicio | 1098605733 |
-| M-29 B | Calle Liverpool → Primavera | Calle los Cipreses y Calle los Geranios | Final | 5489642729 |
+| M-29 B | Calle Liverpool → Primavera | Calle los Geranios y Calle los Cipreses | Final | 5489642729 |
 | M-30 D | Calle 11 → Calle César Vallejo | Calle 11 y Calle los Geranios | Inicio | 1098629711 |
 | M-30 D | Calle 11 → Calle César Vallejo | Prolongación Avenida Bolivia y Calle Mariscal Nieto | Final | 7901099865 |
 | M-30 D | Calle César Vallejo → Calle 11 | Calle Mariscal Nieto y Prolongación Avenida Bolivia | Inicio | 5073954131 |
@@ -486,7 +460,7 @@
 | C-01 B | Calle José la Rivera → Calle Diego Quispe Tito | Avenida Federico Villarreal y Avenida Honorio Delgado | Final | 1015292385 |
 | C-08 O | Calle San Martín → Calle Jirón los Algarobos | Calle Andres Razuri y Jirón Abancay | Inicio | 5480680612 |
 | C-08 O | Calle San Martín → Calle Jirón los Algarobos | Jirón los Tulipanes | Final | 1098628621 |
-| C-41 Z2 | Avenida Dinamarca → Distrito Huanchaco | Calle China y Prolongación Avenida Las Margaritas y Avenida Dinamarca | Inicio | 2339884512 |
+| C-41 Z2 | Avenida Dinamarca → Distrito Huanchaco | Avenida Dinamarca y Prolongación Avenida Las Margaritas y Calle China | Inicio | 2339884512 |
 | C-41 Z2 | Avenida Dinamarca → Distrito Huanchaco | Avenida Miguel Grau | Final | 1873334296 |
 | C-25 S2 | Avenida Julian Arce → Calle Manuel Romero | Avenida Julian Arce | Inicio | 334658243 |
 | C-25 S2 | Avenida Julian Arce → Calle Manuel Romero | Sin nombre | Final | 5473860085 |
@@ -523,8 +497,8 @@
 | C-28 C | Sector Cerrito La Virgen → Óvalo Los Sauces | Sin nombre | Inicio | 8747929305 |
 | C-28 C | Sector Cerrito La Virgen → Óvalo Los Sauces | Sin nombre | Final | 7949201069 |
 | C-13 D | Sector Taquila → Alto Trujillo | Avenida Independencia y Calle Miguiel Graú | Inicio | 1098612874 |
-| C-13 D | Sector Taquila → Alto Trujillo | Avenida Dinamarca y Prolongación Avenida 12 de Noviembre | Final | 11812523500 |
-| C-13 D | Alto Trujillo → Sector Taquila | Avenida Dinamarca y Prolongación Avenida 12 de Noviembre | Inicio | 11812523500 |
+| C-13 D | Sector Taquila → Alto Trujillo | Prolongación Avenida 12 de Noviembre y Avenida Dinamarca | Final | 11812523500 |
+| C-13 D | Alto Trujillo → Sector Taquila | Prolongación Avenida 12 de Noviembre y Avenida Dinamarca | Inicio | 11812523500 |
 | C-13 D | Alto Trujillo → Sector Taquila | Avenida Independencia | Final | 1098617886 |
 | C-28 C | Óvalo Los Sauces → Sector Cerrito La Virgen | Sin nombre | Inicio | 7949201069 |
 | C-28 C | Óvalo Los Sauces → Sector Cerrito La Virgen | Sin nombre | Final | 3128363121 |
@@ -574,12 +548,12 @@
 | C-33 P2 | Sector Platanar → Avenida America del Sur | Avenida América Sur y Avenida César Vallejo | Final | 1088227363 |
 | C-33 P2 | Avenida América Sur → Sector Platanar | Avenida América Sur y Avenida César Vallejo | Inicio | 1088227363 |
 | C-33 P2 | Avenida América Sur → Sector Platanar | Carretera Trujillo - Huamachuco | Final | 1946752150 |
-| M-17 C2 | Avenida Dos → Avenida Dos | Avenida Dos | Inicio | 1098586293 |
-| M-17 C2 | Avenida Dos → Avenida Dos | Avenida Dos | Final | 1098586293 |
+| M-17 C2 | Alto Trujillo → Avenida América Oeste | Sin nombre | Inicio | 13657450383 |
+| M-17 C2 | Alto Trujillo → Avenida América Oeste | Avenida América Oeste y Avenida Jesús de Nazareth | Final | 1272612875 |
 | M-13 C1 | Ciudad de Dios → Ciudad de Dios | Sin nombre | Inicio | 8098054532 |
 | M-13 C1 | Ciudad de Dios → Ciudad de Dios | Sin nombre | Final | 8098054532 |
-| M-18 C1 | Avenida Dos → Avenida Dos | Avenida Dos | Inicio | 1098586293 |
-| M-18 C1 | Avenida Dos → Avenida Dos | Avenida Dos | Final | 1098586293 |
+| M-18 C1 | Alto Trujillo → Calle 8 | Sin nombre | Inicio | 13657450383 |
+| M-18 C1 | Alto Trujillo → Calle 8 | Avenida América Oeste y Calle 8 | Final | 1098595196 |
 | C-42 B2 | Jirón Venezuela → Avenida Libertad | Jirón los Robles | Inicio | 1098591739 |
 | C-42 B2 | Jirón Venezuela → Avenida Libertad | Avenida Libertad y Calle Chanchani | Final | 1098649152 |
 | C-42 B2 | Avenida Cesar Vallejo → Avenida Libertad | Jirón los Robles | Inicio | 1098591739 |
@@ -598,14 +572,12 @@
 | C-15 P1 | Avenida America del Sur → Sector Huayabito | Sin nombre | Final | 8110624499 |
 | M-05 H | Avenida la Paz → Avenida la Paz | Avenida la Paz | Inicio | 5491675677 |
 | M-05 H | Avenida la Paz → Avenida la Paz | Avenida la Paz | Final | 5491675677 |
-| M-21 A | Avenida 12 de Noviembre → Sector Nuevo Horizonte | Prolongación Avenida 12 de Noviembre | Inicio | 11794015159 |
-| M-21 A | Avenida 12 de Noviembre → Sector Nuevo Horizonte | Sin nombre | Final | 4699230346 |
 | M-15 C2 | Sector Santa María Alta → Ciudad de Dios | Calle Luis Alberto Sanchez | Inicio | 1098625858 |
 | M-15 C2 | Sector Santa María Alta → Ciudad de Dios | Calle Luis Alberto Sanchez | Final | 1098625858 |
 | M-04 A | Cerro La Virgen → Cerro La Virgen | Sin nombre | Inicio | 2549352804 |
 | M-04 A | Cerro La Virgen → Cerro La Virgen | Sin nombre | Final | 3128363121 |
-| M-17 C2 | Avenida Dos → Avenida Dos | Avenida Dos | Inicio | 1098586293 |
-| M-17 C2 | Avenida Dos → Avenida Dos | Avenida Dos | Final | 1098586293 |
+| M-17 C2C | Alto Trujillo → Avenida América Oeste | Sin nombre | Inicio | 13657450383 |
+| M-17 C2C | Alto Trujillo → Avenida América Oeste | Avenida América Oeste y Avenida Jesús de Nazareth | Final | 1272612875 |
 | C-44 T2 | Barrio 1B → Avenida San José | Sin nombre | Inicio | 5483457816 |
 | C-44 T2 | Barrio 1B → Avenida San José | Panamericana Norte | Final | 13387696948 |
 | C-18 P | Avenida Cesar Vallejo → Cruce Vial S/N | Sin nombre | Inicio | 13381664564 |
@@ -632,11 +604,19 @@
 | C-11 T1 | Panamericana Norte → Alto Porvenir | Prolongación Calle 7 de Julio | Final | 3265943084 |
 | C-11 T1 | Alto Porvenir → Panamericana Norte | Prolongación Calle 7 de Julio | Inicio | 3265943084 |
 | C-11 T1 | Alto Porvenir → Panamericana Norte | Panamericana Norte | Final | 13387696948 |
-| C-45 C | Calle Miguiel Graú → Avenida 12 de Noviembre | Avenida Dinamarca y Prolongación Avenida 12 de Noviembre | Inicio | 11812523500 |
+| C-45 C | Calle Miguiel Graú → Avenida 12 de Noviembre | Prolongación Avenida 12 de Noviembre y Avenida Dinamarca | Inicio | 11812523500 |
 | C-45 C | Calle Miguiel Graú → Avenida 12 de Noviembre | Avenida Independencia y Calle Loreto | Final | 5282388367 |
 | C-45 C | Calle Miguiel Graú → Avenida 12 de Noviembre | Avenida Independencia y Calle Miguiel Graú | Inicio | 1098612874 |
-| C-45 C | Calle Miguiel Graú → Avenida 12 de Noviembre | Avenida Dinamarca y Prolongación Avenida 12 de Noviembre | Final | 11812523500 |
+| C-45 C | Calle Miguiel Graú → Avenida 12 de Noviembre | Prolongación Avenida 12 de Noviembre y Avenida Dinamarca | Final | 11812523500 |
 | C-32 S | Palermo → Sector Collambay | Avenida Prolongación Santa | Inicio | 5483054133 |
 | C-32 S | Palermo → Sector Collambay | Sin nombre | Final | 8666402213 |
 | C-32 S | Sector Collambay → Palermo | Sin nombre | Inicio | 8666402216 |
 | C-32 S | Sector Collambay → Palermo | Avenida América Norte y Avenida Prolongación Santa | Final | 1098619287 |
+| M-17 C2 | Avenida América Oeste → Alto Trujillo | Avenida América Oeste y Avenida Jesús de Nazareth | Inicio | 1272612875 |
+| M-17 C2 | Avenida América Oeste → Alto Trujillo | Sin nombre | Final | 13657450383 |
+| M-17 C2C | Avenida América Oeste → Alto Trujillo | Avenida América Oeste y Avenida Jesús de Nazareth | Inicio | 1272612875 |
+| M-17 C2C | Avenida América Oeste → Alto Trujillo | Sin nombre | Final | 13657450383 |
+| M-18 C1 | Calle 8 → Alto Trujillo | Avenida América Oeste y Calle 8 | Inicio | 1098595196 |
+| M-18 C1 | Calle 8 → Alto Trujillo | Sin nombre | Final | 13657450383 |
+| M-18 C1C | Calle 8 → Alto Trujillo | Avenida América Oeste y Calle 8 | Inicio | 1098595196 |
+| M-18 C1C | Calle 8 → Alto Trujillo | Sin nombre | Final | 13657450383 |
