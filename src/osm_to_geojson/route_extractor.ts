@@ -6,37 +6,50 @@ const reverseWay = (current_way: OSMWay): void => {
   current_way.nodes = current_way.nodes.reverse();
 };
 
-const normalizecurrentWay = (lastWay: OSMWay, currentWay: OSMWay): boolean => {
+// A way that is `oneway=yes` for general traffic may still be legally
+// traversable in both directions for public transport when OSM marks the
+// exception with `oneway:psv=no` or a mode-specific `oneway:<mode>=no`
+// (e.g. `oneway:bus=no`). See:
+//   https://wiki.openstreetmap.org/wiki/Key:oneway:bus
+//   https://wiki.openstreetmap.org/wiki/Tag:oneway:psv=no
+const isReversibleForRoute = (way: OSMWay, routeMode: string): boolean => {
+  if (way.tags.oneway !== 'yes') return true;
+  if (way.tags['oneway:psv'] === 'no') return true;
+  if (routeMode && way.tags[`oneway:${routeMode}`] === 'no') return true;
+  return false;
+};
+
+const normalizecurrentWay = (lastWay: OSMWay, currentWay: OSMWay, routeMode: string): boolean => {
   const checkConnection = (a: OSMWay, b: OSMWay): boolean => a.nodes[a.nodes.length - 1] === b.nodes[0];
   let response = checkConnection(lastWay, currentWay);
-  if (!response && currentWay.tags.oneway !== 'yes') {
+  if (!response && isReversibleForRoute(currentWay, routeMode)) {
     reverseWay(currentWay);
     response = checkConnection(lastWay, currentWay);
   }
   return response;
 };
 
-const checkFirstWay = (lastWay: OSMWay, currentWay: OSMWay): boolean => {
+const checkFirstWay = (lastWay: OSMWay, currentWay: OSMWay, routeMode: string): boolean => {
   const checkConnection = (a: OSMWay, b: OSMWay): boolean => a.nodes[a.nodes.length - 1] === b.nodes[0];
   // a -> b == b -> c
   let response = checkConnection(lastWay, currentWay);
   if (response) return response;
 
-  if (currentWay.tags.oneway !== 'yes') {
+  if (isReversibleForRoute(currentWay, routeMode)) {
     reverseWay(currentWay);
     // a -> b == c -> b
     response = checkConnection(lastWay, currentWay);
   }
   if (response) return response;
 
-  if (lastWay.tags.oneway !== 'yes') {
+  if (isReversibleForRoute(lastWay, routeMode)) {
     reverseWay(lastWay);
     // b -> a == c -> b
     response = checkConnection(lastWay, currentWay);
   }
   if (response) return response;
 
-  if (currentWay.tags.oneway !== 'yes') {
+  if (isReversibleForRoute(currentWay, routeMode)) {
     reverseWay(currentWay);
     // b -> a == b -> c
     response = checkConnection(lastWay, currentWay);
@@ -90,10 +103,13 @@ export default function routeExtractor(
     };
   }
 
+  const routeMode = route_elements.tags.route || '';
   for (let index = 1; index < routeWays.length; index++) {
     const lastWay = routeWays[index - 1];
     const currentWay = routeWays[index];
-    const checkCurrentWay = index === 1 ? checkFirstWay(lastWay, currentWay) : normalizecurrentWay(lastWay, currentWay);
+    const checkCurrentWay = index === 1
+      ? checkFirstWay(lastWay, currentWay, routeMode)
+      : normalizecurrentWay(lastWay, currentWay, routeMode);
     if (!checkCurrentWay) {
       throw {
         extractor_error: extractor_error.not_next,

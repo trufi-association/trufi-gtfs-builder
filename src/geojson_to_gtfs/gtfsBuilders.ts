@@ -347,11 +347,22 @@ export function tripBuilder(
     const mainFeature = feature[0];
     if (!mainFeature.gtfs) continue;
 
-    // Extract destination from route name for trip_headsign
+    // Build trip_headsign with this preference order:
+    //   1. OSM `description` tag — when present this carries the route
+    //      variant ("Verde", "Bandera Roja", etc.). Same headsign for
+    //      both directions of the same variant is fine; `direction_id`
+    //      differentiates them. See #875.
+    //   2. OSM `to` tag — the dedicated destination tag, more reliable
+    //      than parsing the relation `name`.
+    //   3. Regex over `name` (`… → DESTINATION`) — legacy fallback for
+    //      relations missing both tags.
     const routeName = mainFeature.properties.name || '';
     const routeRef = mainFeature.properties.ref || '';
+    const variant = (mainFeature.properties.description || '').trim();
+    const toTag = (mainFeature.properties.to || '').trim();
     const toMatch = routeName.match(/(?:→|->)\s*(.+?)$/i);
-    const tripHeadsign = toMatch ? toMatch[1].trim() : '';
+    const destinationFromName = toMatch ? toMatch[1].trim() : '';
+    const tripHeadsign = variant || toTag || destinationFromName;
 
     // Determine direction_id: alternate 0 and 1 for routes with the same ref
     let directionId: number = 0;
