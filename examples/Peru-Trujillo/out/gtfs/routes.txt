@@ -1,0 +1,90 @@
+route_id,agency_id,route_short_name,route_long_name,route_color,route_type
+0,0,M-01 C,Via Panamericana Norte → Avenida Manuel Seoane,006600,3
+1,0,M-02 A,Calle Turquesas → Avenida Manuel Seoane,006600,3
+2,0,M-03 B,Ciudad de Dios → Ciudad de Dios,006600,3
+3,1,M-04 A,Cerro La Virgen → Cerro La Virgen,ff9966,3
+4,1,M-05 H,Avenida la Paz → Avenida la Paz,ff9966,3
+5,1,M-06 B,Avenida La Paz → Avenida Víctor Raúl Haya de la Torre,ff9966,3
+6,2,M-07 V,Avenida Libertad → Avenida San Pedro,009900,3
+7,2,M-08 A,Avenida Libertad → Via Panamericana Norte,009900,3
+8,2,M-09 BC,Avenida Libertad → Avenida San Pedro,009900,3
+9,2,M-10 B1,Avenida Libertad → Avenida Los Tulipanes,009900,3
+10,2,M-12 C,Avenida Libertad → Via Panamericana Norte,009900,3
+11,2,M-36 LV,Calle Virgen de la Puerta → Avenida Libertad,009900,3
+12,3,M-14 C3,Ciudad de Dios → Óvalo Larco,ffff33,3
+13,4,M-16 C,Avenida Vallejo → Calle 8,3366FF,3
+14,5,M-19 A,Manzana Ñ → Calle 8,009999,3
+15,5,M-18 C1C,Alto Trujillo → Calle 8,009999,3
+16,6,M-20 C,Sector Nuevo Horizonte → Avenida 12 de Noviembre,3399FF,3
+17,6,M-21 A,Avenida 12 de Noviembre → Sector Nuevo Horizonte,3399FF,3
+18,6,M-22 F,Avenida 12 de Noviembre → Avenida Juan Pablo II,3399FF,3
+19,7,M-23 B,Calle Atahualpa → Calle Pedro Ruiz Gallo,0066FF,3
+20,7,M-23 BC,Calle Pedro Ruiz Gallo → Via Evitamiento Milagro,0066FF,3
+21,8,M-25 A,Calle Liverpool → Calle F,9999FF,3
+22,8,M-26 B,Futuro Barrio 5C → Calle Alfonso Ugarte,9999FF,3
+23,9,M-29 B,Primavera → Calle Liverpool,7f6000,3
+24,10,M-31 A,Avenida América Sur → Calle Nuevo Indoamérica,660066,3
+25,11,M-34 A,Calle Santa Ana → Calle Los Pensamientos,CC3333,3
+26,12,M-35 D,Vía Panamericana → Avenida Del Contador,990000,3
+27,13,C-01 B,Calle Diego Quispe Tito → Calle José la Rivera,00cc00,3
+28,13,C-02 H,Avenida Alan García → Avenida Federico Villarreal,00cc00,3
+29,13,C-03 JJ,Calle de los Jasmines → Calle Santa Rosa,00cc00,3
+30,14,C-04 XS,Calle de los Jasmines → Avenida Federico Villarreal,FFFF00,3
+31,14,C-05 B1,Calle Jirón Cuba → Avenida Federico Villarreal,FFFF00,3
+32,15,C-06 K,El Reposo → Calle Señor de Los Milagros,9999FF,3
+33,15,C-07 Z1,El Reposo → Calle 9 de Octubre,9999FF,3
+34,15,C-08 O,Calle Jirón los Algarobos → Calle San Martín,9999FF,3
+35,16,C-41 Z2,Distrito Huanchaco → Avenida Dinamarca,3366FF,3
+36,16,C-09 E,Distrito Huanchaco → Calle San Gabriel,3366FF,3
+37,17,C-10 M,Campiña de Moche → Avenida Los Incas,CC9900,3
+38,18,C-11 T1,Calle Jirón Santa Isabel → Alto Porvenir,FF0000,3
+39,18,C-39 S,Calle Jirón Santa Isabel → Calle Inca Roca,FF0000,3
+40,19,C-12 B,Sector Taquila → Carlos García Ronceros,ff6633,3
+41,20,C-13 D,Avenida 12 de Noviembre → Calle Miguiel Graú,006600,3
+42,20,C-45 C,Avenida 12 de Noviembre → Calle Miguiel Graú,006600,3
+43,21,C-14 S,Calle José Galvez → Campiña de Moche,e69138,3
+44,22,C-43 A,Calle Dieciseis → Avenida Miguel Grau,cfe2f3,3
+45,23,C-16 I,Ciudad de Dios → Avenida Antenor Orrego,cc3333,3
+46,23,C-17 F,Ciudad de Dios → Avenida Juan Pablo II,cc3333,3
+47,23,C-18 P,Cruce Vial S/N → Avenida Cesar Vallejo,cc3333,3
+48,24,C-19 NN,Avenida Víctor Raúl Haya de la Torre → Barrio 5C,0b5394,3
+49,25,C-23 S1,Calle Venezuela → Calle José Joaquín Inclán,cc0099,3
+50,25,"C-24 H1, H2",Calle 01 → Avenida Larco,cc0099,3
+51,26,M-27 AB,Avenida Libertad → Avenida Libertad,674ea7,3
+52,9,M-28 A,Primavera III → Avenida los Pajuiles,7f6000,3
+53,27,C-20 UI,Valle Sol → Alto Trujillo,00FF00,3
+54,3,M-13 C1,Ciudad de Dios → Ciudad de Dios,ffff33,3
+55,3,M-15 C2,Ciudad de Dios → Sector Santa María Alta,ffff33,3
+56,10,M-30 D,Calle 11 → Calle César Vallejo,660066,3
+57,10,M-32 A1-B1,Sector Nuevo Indoamérica → Buenos Aires Sur,660066,3
+58,11,M-33 B,Calle Santa Ana → Avenida América Sur,CC3333,3
+59,28,C-25 S2,Avenida Julian Arce → Calle Manuel Romero,0000FF,3
+60,28,C-26 U,Avenida Julian Arce → Óvalo Grau,0000FF,3
+61,27,C-21 R,Valle Sol → Alto Trujillo,00FF00,3
+62,29,C-27 B,Avenida Circunvalación → Avenida José María Eguren,000099,3
+63,27,C-22 M,Valle So → Alto Trujillo,00FF00,3
+64,29,C-28 C,Sector Cerrito La Virgen → Óvalo Los Sauces,000099,3
+65,29,C-29 A,Sector Las Lomas → Los Sauces de Barraza,000099,3
+66,30,C-13 D,Sector Taquila → Alto Trujillo,FF6633,3
+67,31,C-40 W,Barrio 1B → Avenida San José,3399FF,3
+68,32,C-30 C,Sector Cushmun → Avenida Los Laureles,ffd966,3
+69,31,C-44 T2,Barrio 1B → Avenida San José,3399FF,3
+70,32,C-31 P,Sector Huangabal → Avenida Prolongación Santa,ffd966,3
+71,31,C-39 S,Calle Inca Roca → Calle Jirón Santa Isabel,3399FF,3
+72,33,C-38 S4,Avenida Luis Condemarín → Avenida Luis Condemarín,FFFFFF,3
+73,32,C-32 S,Mucha → Palermo,ffd966,3
+74,34,C-36 Y,San Andrés 5ta Etapa → Víctor Raúl Haya de La Torre,660066,3
+75,35,C-15 P1,Sector Tres Cruces → Avenida America del Sur,c90076,3
+76,34,C-35 S3,Buganvillas del Golf → Víctor Raúl Haya de La Torre,660066,3
+77,21,C-34 G,Virgen del Socorro → Virgen del Socorro,FFCC00,3
+78,35,C-33 P2,Sector Platanar → Avenida America del Sur,c90076,3
+79,5,M-17 C2,Alto Trujillo → Avenida América Oeste,009999,3
+80,5,M-18 C1,Alto Trujillo → Calle 8,009999,3
+81,21,C-42 B2,Jirón Venezuela → Avenida Libertad,FFCC00,3
+82,5,M-17 C2C,Alto Trujillo → Avenida América Oeste,009999,3
+83,36,C-15 P1,Sector Tres Cruces → Avenida América Sur,808080,3
+84,36,C-33 P2,Sector Platanar → Avenida America del Sur,808080,3
+85,22,C-45 C,Calle Miguiel Graú → Avenida 12 de Noviembre,cfe2f3,3
+86,37,TR-01 A,Plaza de Armas → La Esperanza,9933CC,3
+87,37,TR-02 B,Hospital Belén → Buenos Aires,9933CC,3
+88,37,TR-03 C,Mercado Mayorista → Huanchaco Centro,9933CC,3

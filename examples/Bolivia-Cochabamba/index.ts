@@ -12,7 +12,7 @@ import * as path from 'path';
 import * as fs from 'fs';
 
 // Set to 'overpass' to download from Overpass API, or 'pbf' to use local PBF file
-const DATA_SOURCE: 'overpass' | 'pbf' = 'overpass';
+const DATA_SOURCE: 'overpass' | 'pbf' = 'pbf';
 
 // PBF file path (only used when DATA_SOURCE is 'pbf')
 const PBF_FILE = path.join(__dirname, 'cochabamba.osm.pbf');

@@ -4,7 +4,7 @@
  * Filters routes with hash=* tag
  */
 
-import { osmToGtfs, OSMOverpassDownloader } from '../../src';
+import { osmToGtfs, OSMOverpassDownloader } from '../../dist/index';
 import * as path from 'path';
 import * as fs from 'fs';
 

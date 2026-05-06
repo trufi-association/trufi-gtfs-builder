@@ -1,0 +1,10 @@
+route_id,agency_id,route_short_name,route_long_name,route_color,route_type
+0,0,Mano Amiga,Mercado → Las Huertas/Agua Escondida,1D3A72,3
+1,0,Mano Amiga A,Buenavista → Terminal,1D3A72,3
+2,0,Mano Amiga B,Buenavista → Terminal,1D3A72,3
+3,1,Halcones Rojos,Terminal → San Lorenzo Nenamicoyan,FB0102,3
+4,2,AVM,Terminal → Km 107,99BF12,3
+5,3,ANASA,Terminal → Chapa de Mota,0165BB,3
+6,4,Rapidos,Terminal → Chapa de Mota,A52136,3
+7,5,Herradura de Plata HP,Terminal → Santiago Oxthoc/El Xhiti - Aurrera,87888A,3
+8,6,Halcones Blancos,Enfrente Terminal → Ojo de Agua,D1AE3B,3

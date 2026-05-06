@@ -24,11 +24,8 @@ jobs:
 
       - name: Type-check examples
         run: |
-          for example in examples/Bolivia-Cochabamba examples/Mexico-Jilotepec; do
+          for example in examples/Bolivia-Cochabamba examples/Mexico-Jilotepec examples/Peru-Trujillo; do
             echo "::group::$example"
             (cd "$example" && npm install --no-audit --no-fund && npx tsc --noEmit)
             echo "::endgroup::"
           done
-          # Peru-Trujillo imports from ../../src directly, so the root tsc
-          # already covers it; running it standalone would need a sibling
-          # package.json/tsconfig. Skip here.

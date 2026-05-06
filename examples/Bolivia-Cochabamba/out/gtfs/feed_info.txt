@@ -1,0 +1,2 @@
+feed_publisher_url,feed_publisher_name,feed_lang,feed_version,feed_contact_email,feed_contact_url,feed_start_date,feed_end_date,feed_id
+https://www.trufi-association.org/,Trufi Association,es,1.0,info@trufi-association.org,https://www.trufi-association.org/,20240101,20261231,cochabamba
