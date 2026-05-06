@@ -1,2 +1,0 @@
-feed_publisher_url,feed_publisher_name,feed_lang,feed_version,feed_contact_email,feed_contact_url,feed_start_date,feed_end_date,feed_id
-https://example.com,jilotepec,es,"Sun, 09 Nov 2025 19:25:34 GMT",email@example.com,http://support.example.com,20000101,21000101,jilotepec

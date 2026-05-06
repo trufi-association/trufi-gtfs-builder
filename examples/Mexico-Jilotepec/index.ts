@@ -75,9 +75,8 @@ async function main() {
 
           return kmh;
         },
-        fakeStops: (routeFeature) => {
-          return false; // No fake stops needed for this city
-        },
+        // Jilotepec has its physical stops mapped in OSM, so use them.
+        stopsConfig: () => ({ mode: 'osmStops', forceEndpointStops: true }),
         stopNameBuilder: (stops) => {
           if (!stops || stops.length === 0) {
             stops = ['Innominada'];

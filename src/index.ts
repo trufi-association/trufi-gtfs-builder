@@ -8,7 +8,19 @@ import geojsonToGtfs from './geojson_to_gtfs';
 import geojsonToTrufiTPData from './geojson_to_trufi_tp_data';
 import { loadCustomStops } from './utils/customStopsLoader';
 import { findNearestStop, stopIdToNumber } from './utils/spatialMatcher';
-import type { OsmToGtfsConfig, GeojsonOptions, GTFSOptions, OutputFiles, GTFSBuilders, CustomStop, CustomStopsConfig, StopsMode } from './types';
+import type {
+  OsmToGtfsConfig,
+  GeojsonOptions,
+  GTFSOptions,
+  OutputFiles,
+  GTFSBuilders,
+  CustomStop,
+  StopsConfig,
+  StopsConfigResolver,
+  FakeStopsConfig,
+  OsmStopsConfig,
+  CustomStopsModeConfig,
+} from './types';
 
 const defaultGeojsonOptions: GeojsonOptions = {
   osmDataGetter: null,
@@ -16,13 +28,16 @@ const defaultGeojsonOptions: GeojsonOptions = {
   skipRoute: () => true,
 };
 
-const defaultGtfsOptions: GTFSOptions = {
+// `stopsConfig` is required on GTFSOptions — there's no sensible default
+// because each city has different physical-stop coverage. We seed the
+// `Object.assign` target with everything else; the caller MUST supply
+// `stopsConfig`. The cast keeps the type system happy at the assign call.
+const defaultGtfsOptions: Partial<GTFSOptions> = {
   agencyTimezone: 'America/La_Paz',
   agencyUrl: 'https://www.example.com/',
   defaultCalendar: () => 'Mo-Su 06:00-23:00',
   frequencyHeadway: () => 300,
   vehicleSpeed: () => 50,
-  fakeStops: () => false,
   stopNameBuilder: (stops) => {
     if (!stops) {
       stops = ['unnamed'];
@@ -46,7 +61,13 @@ const defaultOutFiles: OutputFiles = {
 async function osmToGtfsFunc(config: OsmToGtfsConfig): Promise<void> {
   const outputFiles: OutputFiles = Object.assign({}, defaultOutFiles, config.outputFiles || {});
   const geojsonOptions: GeojsonOptions = Object.assign({}, defaultGeojsonOptions, config.geojsonOptions || {});
-  const gtfsOptions: GTFSOptions = Object.assign({}, defaultGtfsOptions, config.gtfsOptions || {});
+  const gtfsOptions: GTFSOptions = Object.assign({}, defaultGtfsOptions, config.gtfsOptions || {}) as GTFSOptions;
+  if (typeof gtfsOptions.stopsConfig !== 'function') {
+    throw new Error(
+      'gtfsOptions.stopsConfig is required. Provide a function `(routeFeature) => StopsConfig`. ' +
+        'For uniform fakeStops, return `{ mode: "fakeStops" }` for every route.',
+    );
+  }
   const gtfsBuilders: GTFSBuilders = Object.assign({}, gtfsDefaultBuilders, config.gtfsBuilders || {});
   const { outputDir } = outputFiles;
 
@@ -189,6 +210,20 @@ async function osmToGtfsFunc(config: OsmToGtfsConfig): Promise<void> {
   }
 }
 
-export { osmToGtfsFunc as osmToGtfs, OSMOverpassDownloader, OSMPBFReader, loadCustomStops, findNearestStop, stopIdToNumber };
-export type { CustomStop, CustomStopsConfig, StopsMode };
+export {
+  osmToGtfsFunc as osmToGtfs,
+  OSMOverpassDownloader,
+  OSMPBFReader,
+  loadCustomStops,
+  findNearestStop,
+  stopIdToNumber,
+};
+export type {
+  CustomStop,
+  StopsConfig,
+  StopsConfigResolver,
+  FakeStopsConfig,
+  OsmStopsConfig,
+  CustomStopsModeConfig,
+};
 export default { osmToGtfs: osmToGtfsFunc, OSMOverpassDownloader, OSMPBFReader, loadCustomStops, findNearestStop, stopIdToNumber };

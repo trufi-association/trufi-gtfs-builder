@@ -40,7 +40,12 @@ async function main() {
         defaultCalendar: () => 'Mo-Su 06:00-23:00',
         frequencyHeadway: () => 300, // 5 minutes in seconds
         vehicleSpeed: () => 50, // km/h
-        fakeStops: () => false,
+        // Required: choose how stops are generated for each route. For
+        // a uniform feed return the same config every time. Mix modes
+        // by returning different configs based on route properties.
+        stopsConfig: () => ({ mode: 'fakeStops' }),
+        // Optional: density of fakeStops gap-fill, in meters.
+        // fakeStopsGapThreshold: 100,
         stopNameBuilder: (stops) => {
           if (!stops || stops.length === 0) {
             return 'unnamed';

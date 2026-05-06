@@ -239,7 +239,7 @@ export interface GTFSBuilders {
     features: GeoJSONFeature[][],
     inputStops: { [id: number]: string[] },
     stopNameBuilder: (stops?: string[]) => string,
-    stopsConfig?: CustomStopsConfig
+    stopsConfig: StopsConfigResolver
   ) => GTFSStop[];
   shapesBuilder: (features: GeoJSONFeature[][]) => GTFSShape[];
   stopTimesBuilder: (
@@ -263,31 +263,69 @@ export interface CustomStop {
 }
 
 /**
- * Enum for selecting how stops are generated
- * - 'fakeStops': Generate stops from route geometry nodes (default)
- * - 'osmStops': Use stop_position nodes defined in the OSM relation
- * - 'customStops': Use ONLY the custom stops provided via GeoJSON
+ * How stops are derived for a single route.
+ *
+ * - `fakeStops`: emit a stop at every node of the route's OSM way
+ *   geometry, then post-process via segment-merge + gap-fill. Use this
+ *   for cities where physical stops aren't mapped — buses stop wherever
+ *   passengers wave them down (e.g. Cochabamba minibuses).
+ * - `osmStops`: use the route's `stop_position` / `platform` members
+ *   from the OSM relation. Stop ids come straight from those nodes; no
+ *   merging is applied.
+ * - `customStops`: match the route's geometry against an externally
+ *   curated list of stops (passed inline or as a GeoJSON file).
+ *
+ * Modes never share stop ids automatically. A route in `osmStops` and
+ * one in `fakeStops` only share a stop id when OSM marks the same node
+ * as both a way member and a stop_position. For mixed-mode feeds where
+ * each mode covers disjoint physical corridors this works naturally.
  */
-export type StopsMode = 'fakeStops' | 'osmStops' | 'customStops';
+export interface FakeStopsConfig {
+  mode: 'fakeStops';
+  // No per-route options. Density is controlled globally via
+  // `GTFSOptions.fakeStopsGapThreshold` so all fakeStops trips land on
+  // the same gap-filled stops — required for transfers to find shared
+  // stop ids on segments where multiple routes coincide.
+}
 
-export interface CustomStopsConfig {
-  /** Mode for generating stops (default: 'fakeStops') */
-  mode: StopsMode;
-  /** Custom stops data - required when mode is 'customStops' */
-  stops?: CustomStop[];
-  /** Path to GeoJSON file with custom stops (alternative to stops array) */
-  filePath?: string;
-  /** Maximum distance in meters to match a custom stop to a route point (default: 200) */
-  maxMatchDistance?: number;
-  /** Minimum distance in meters between consecutive stops - closer stops will be skipped (default: 0, no filtering) */
-  minDistanceBetweenStops?: number;
-  /** Behavior when no custom stop is found nearby in customStops mode: 'warning' skips point, 'error' throws */
-  fallbackBehavior?: 'error' | 'warning';
-  /** Only use stops on the right side of the route direction (default: false) */
-  rightSideOnly?: boolean;
-  /** Force a stop at the first and last point of each route geometry (default: false) */
+export interface OsmStopsConfig {
+  mode: 'osmStops';
+  /** Force a stop at the first and last point of the route geometry
+      when OSM doesn't have a stop near those endpoints. Default false. */
   forceEndpointStops?: boolean;
 }
+
+export interface CustomStopsModeConfig {
+  mode: 'customStops';
+  /** Custom stops data — pass `stops` inline or `filePath` to a GeoJSON. */
+  stops?: CustomStop[];
+  /** Path to a GeoJSON file with custom stops. */
+  filePath?: string;
+  /** Maximum distance (meters) to match a custom stop to a route point. Default 200. */
+  maxMatchDistance?: number;
+  /** Minimum distance (meters) between consecutive stops; closer ones skipped. Default 0. */
+  minDistanceBetweenStops?: number;
+  /** Behavior when no custom stop is found near a route point. Default 'warning'. */
+  fallbackBehavior?: 'error' | 'warning';
+  /** Only keep stops on the right side of the route direction. Default false. */
+  rightSideOnly?: boolean;
+  /** Force a stop at the first and last point of the route geometry. Default false. */
+  forceEndpointStops?: boolean;
+}
+
+export type StopsConfig =
+  | FakeStopsConfig
+  | OsmStopsConfig
+  | CustomStopsModeConfig;
+
+/**
+ * Resolves the stop generation config for a single route. Called once
+ * per route during `stopsBuilder`. For uniform feeds, return the same
+ * config every time. For mixed feeds, dispatch on `routeFeature.properties`.
+ */
+export type StopsConfigResolver = (
+  routeFeature: GeoJSONFeature,
+) => StopsConfig;
 
 export interface GTFSOptions {
   agencyTimezone: string;
@@ -296,28 +334,29 @@ export interface GTFSOptions {
   defaultCalendar: (feature: GeoJSONFeature) => string;
   frequencyHeadway: (feature: GeoJSONFeature) => number;
   vehicleSpeed: (feature: GeoJSONFeature) => number;
-  /** @deprecated Use stopsConfig.mode instead */
-  fakeStops?: (feature: GeoJSONFeature) => boolean;
   stopNameBuilder: (stops?: string[]) => string;
   defaultFares?: DefaultFaresConfig;
   feed?: FeedConfig;
-  /** @deprecated Use stopsConfig instead */
-  customStops?: CustomStopsConfig;
-  /** Configuration for how stops are generated */
-  stopsConfig?: CustomStopsConfig;
   /**
-   * @deprecated Use outputFiles.gtfsExpandedZip instead.
-   * Use frequency-based GTFS (frequencies.txt) or schedule-based GTFS (stop_times.txt)
-   * @default true
+   * Per-route stop generation. Required — no implicit default. Receives
+   * the route feature and returns the `StopsConfig` to apply for that
+   * route. Uniform feeds return the same config every time.
+   */
+  stopsConfig: StopsConfigResolver;
+  /**
+   * Maximum gap (meters) between consecutive stops kept by the
+   * fakeStops segment-merge post-process. Smaller = more stops kept.
+   * Single global value: routes that share a segment must land on the
+   * same gap-filled stops to keep their stop ids in common (transfers
+   * depend on shared ids).
+   * @default 100
+   */
+  fakeStopsGapThreshold?: number;
+  /**
+   * @deprecated Use `outputFiles.gtfsExpandedZip` instead. Selects
+   * frequency-based vs schedule-based GTFS. Default true.
    */
   useFrequencies?: boolean;
-  /**
-   * Post-process: merge stops that are within this distance (in meters) of each other.
-   * This reduces duplicate stops that are shared between multiple routes.
-   * Set to 0 or undefined to disable.
-   * @example 50 // Merge stops within 50 meters
-   */
-  mergeNearbyStops?: number;
 }
 
 export interface DefaultFaresConfig {

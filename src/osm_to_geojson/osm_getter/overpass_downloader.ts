@@ -48,6 +48,8 @@ export default class OSMOverpassDownloader implements IOSMDataGetter {
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
             'Content-Length': Buffer.byteLength(postData),
+            'User-Agent': 'trufi-gtfs-builder',
+            'Accept': 'application/json',
           },
         },
         (response) => {

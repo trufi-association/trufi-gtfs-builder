@@ -4,9 +4,14 @@
   "description": "TypeScript version of trufi-gtfs-builder",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build",
     "prepublishOnly": "npm run build"
   },
   "repository": {

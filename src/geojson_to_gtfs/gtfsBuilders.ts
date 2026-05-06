@@ -19,9 +19,9 @@ import type {
   DefaultFaresConfig,
   FeedConfig,
   GeoJSONCoordinate,
-  CustomStopsConfig,
   CustomStop,
-  StopsMode,
+  CustomStopsModeConfig,
+  StopsConfigResolver,
 } from '../types';
 
 const CSS_COLORS: Record<string, string> = {
@@ -447,32 +447,36 @@ export function stopsBuilder(
   features: GeoJSONFeature[][],
   inputStops: { [id: number]: string[] },
   stopNameBuilder: (stops?: string[]) => string,
-  stopsConfig?: CustomStopsConfig
+  stopsConfig: StopsConfigResolver
 ): GTFSStop[] {
   const stops: GTFSStop[] = [];
   const checkList: { [id: string | number]: boolean } = {};
 
-  // Determine stops mode (default: fakeStops for backwards compatibility)
-  const mode: StopsMode = stopsConfig?.mode ?? 'fakeStops';
+  // Cache `customStops` data per (filePath | inline ref) so we don't
+  // reload the same source file once per route. Inline arrays are keyed
+  // by reference identity.
+  const customStopsCache = new WeakMap<object, CustomStop[]>();
+  const customStopsByPath = new Map<string, CustomStop[]>();
 
-  // Load custom stops if mode is customStops
-  let customStops: CustomStop[] | null = null;
-  if (mode === 'customStops') {
-    if (stopsConfig?.stops && stopsConfig.stops.length > 0) {
-      customStops = stopsConfig.stops;
-      console.log(`Using ${customStops.length} custom stops (provided directly)`);
-    } else if (stopsConfig?.filePath) {
-      customStops = loadCustomStops(stopsConfig.filePath);
-      console.log(`Loaded ${customStops.length} custom stops from file`);
-    } else {
-      throw new Error('customStops mode requires either stops array or filePath');
+  function resolveCustomStops(cfg: CustomStopsModeConfig): CustomStop[] {
+    if (cfg.stops && cfg.stops.length > 0) {
+      const key = cfg.stops as unknown as object;
+      const cached = customStopsCache.get(key);
+      if (cached) return cached;
+      customStopsCache.set(key, cfg.stops);
+      console.log(`Using ${cfg.stops.length} custom stops (provided directly)`);
+      return cfg.stops;
     }
+    if (cfg.filePath) {
+      const cached = customStopsByPath.get(cfg.filePath);
+      if (cached) return cached;
+      const loaded = loadCustomStops(cfg.filePath);
+      customStopsByPath.set(cfg.filePath, loaded);
+      console.log(`Loaded ${loaded.length} custom stops from file`);
+      return loaded;
+    }
+    throw new Error('customStops mode requires either stops array or filePath');
   }
-
-  const maxMatchDistance = stopsConfig?.maxMatchDistance ?? 200;
-  const minDistanceBetweenStops = stopsConfig?.minDistanceBetweenStops ?? 0;
-  const fallbackBehavior = stopsConfig?.fallbackBehavior ?? 'warning';
-  const rightSideOnly = stopsConfig?.rightSideOnly ?? false;
 
   for (const feature of features) {
     const routeFeature = feature[0];
@@ -485,10 +489,22 @@ export function stopsBuilder(
       };
     }
 
-    if (mode === 'osmStops') {
+    const cfg = stopsConfig(routeFeature);
+
+    // Per-mode option fallbacks (only relevant for the active mode).
+    const maxMatchDistance =
+      cfg.mode === 'customStops' ? (cfg.maxMatchDistance ?? 200) : 200;
+    const minDistanceBetweenStops =
+      cfg.mode === 'customStops' ? (cfg.minDistanceBetweenStops ?? 0) : 0;
+    const fallbackBehavior =
+      cfg.mode === 'customStops' ? (cfg.fallbackBehavior ?? 'warning') : 'warning';
+    const rightSideOnly =
+      cfg.mode === 'customStops' ? (cfg.rightSideOnly ?? false) : false;
+
+    if (cfg.mode === 'osmStops') {
       // OSM stops mode: use stop_position/platform nodes from the OSM relation
       const filteredStops: { nodes: number[]; coordinates: GeoJSONCoordinate[] } = { nodes: [], coordinates: [] };
-      const forceEndpoints = stopsConfig?.forceEndpointStops ?? false;
+      const forceEndpoints = cfg.forceEndpointStops ?? false;
       const { nodes, coordinates } = routeFeature.geometry;
       const forcedEndpointStops: { stop_id: number; stop_name: string; position: 'first' | 'last' }[] = [];
 
@@ -571,8 +587,9 @@ export function stopsBuilder(
       if (forcedEndpointStops.length > 0) {
         routeFeature.gtfs.forcedEndpointStops = forcedEndpointStops;
       }
-    } else if (mode === 'customStops' && customStops) {
+    } else if (cfg.mode === 'customStops') {
       // Custom stops mode: use ONLY the provided custom stops
+      const customStops = resolveCustomStops(cfg);
       const { nodes, coordinates } = routeFeature.geometry;
       const filteredStops: { nodes: number[]; coordinates: GeoJSONCoordinate[] } = { nodes: [], coordinates: [] };
 
@@ -708,7 +725,10 @@ export function stopsBuilder(
       }
       routeFeature.gtfs.filteredStops = filteredStops;
     } else {
-      // fakeStops mode (default): generate stops from route geometry nodes
+      // fakeStops mode: generate a stop at every OSM way node.
+      // The dense raw output is reduced afterwards by segment-merge +
+      // gap-fill in `geojson_to_gtfs/index.ts`, controlled globally by
+      // `GTFSOptions.fakeStopsGapThreshold`.
       const { nodes, coordinates } = routeFeature.geometry;
       const filteredStops: { nodes: number[]; coordinates: GeoJSONCoordinate[] } = { nodes: [], coordinates: [] };
       for (let index = 0; index < nodes!.length; index++) {
@@ -841,125 +861,6 @@ export function stopTimesBuilder(
   return stopTimes;
 }
 
-/**
- * Post-processing: For each trip, walk stops in sequence order and remove
- * stops that are closer than maxDistanceMeters to the last kept stop.
- * When two stops compete (both within distance), prefer the one used by more routes.
- * First and last stops of each trip are always kept.
- */
-export function mergeNearbyStops(
-  stops: GTFSStop[],
-  stopTimes: GTFSStopTime[],
-  trips: GTFSTrip[],
-  maxDistanceMeters: number
-): { stops: GTFSStop[]; stopTimes: GTFSStopTime[]; mergedCount: number } {
-  if (maxDistanceMeters <= 0) {
-    return { stops, stopTimes, mergedCount: 0 };
-  }
-
-  // Build stop lookup by id
-  const stopById: Map<number | string, GTFSStop> = new Map();
-  for (const stop of stops) {
-    stopById.set(stop.stop_id, stop);
-  }
-
-  // Build trip_id -> route_id mapping
-  const tripToRoute: Map<number, string | number> = new Map();
-  for (const trip of trips) {
-    tripToRoute.set(trip.trip_id, trip.route_id);
-  }
-
-  // Count how many distinct routes use each stop
-  const stopRouteCount: Map<number | string, number> = new Map();
-  const stopRouteSets: Map<number | string, Set<string | number>> = new Map();
-  for (const st of stopTimes) {
-    const routeId = tripToRoute.get(st.trip_id);
-    if (routeId === undefined) continue;
-    if (!stopRouteSets.has(st.stop_id)) {
-      stopRouteSets.set(st.stop_id, new Set());
-    }
-    stopRouteSets.get(st.stop_id)!.add(routeId);
-  }
-  for (const [stopId, routes] of stopRouteSets) {
-    stopRouteCount.set(stopId, routes.size);
-  }
-
-  const routeCount = (stopId: number | string): number =>
-    stopRouteCount.get(stopId) ?? 1;
-
-  // Group stop_times by trip_id
-  const tripStopTimes: Map<number, GTFSStopTime[]> = new Map();
-  for (const st of stopTimes) {
-    if (!tripStopTimes.has(st.trip_id)) {
-      tripStopTimes.set(st.trip_id, []);
-    }
-    tripStopTimes.get(st.trip_id)!.push(st);
-  }
-
-  const survivingStopIds = new Set<number | string>();
-  const updatedStopTimes: GTFSStopTime[] = [];
-
-  for (const [, tripSts] of tripStopTimes) {
-    tripSts.sort((a, b) => Number(a.stop_sequence) - Number(b.stop_sequence));
-
-    let lastKeptStop: GTFSStop | null = null;
-    let lastKeptStopTime: GTFSStopTime | null = null;
-    const keptStopTimes: GTFSStopTime[] = [];
-
-    for (let i = 0; i < tripSts.length; i++) {
-      const st = tripSts[i];
-      const stop = stopById.get(st.stop_id);
-      if (!stop) continue;
-
-      const isFirst = i === 0;
-      const isLast = i === tripSts.length - 1;
-
-      if (isFirst || isLast) {
-        lastKeptStop = stop;
-        lastKeptStopTime = st;
-        survivingStopIds.add(stop.stop_id);
-        keptStopTimes.push(st);
-      } else if (lastKeptStop && lastKeptStopTime) {
-        const distance = distanceBetweenCoords(
-          lastKeptStop.stop_lat, lastKeptStop.stop_lon,
-          stop.stop_lat, stop.stop_lon
-        );
-        if (distance >= maxDistanceMeters) {
-          // Far enough, keep this stop
-          lastKeptStop = stop;
-          lastKeptStopTime = st;
-          survivingStopIds.add(stop.stop_id);
-          keptStopTimes.push(st);
-        } else if (routeCount(st.stop_id) > routeCount(lastKeptStopTime.stop_id)) {
-          // Too close, but this stop is used by more routes — swap it in
-          keptStopTimes[keptStopTimes.length - 1] = st;
-          survivingStopIds.add(stop.stop_id);
-          lastKeptStop = stop;
-          lastKeptStopTime = st;
-        }
-      }
-    }
-
-    // Re-sequence stop_times
-    for (let i = 0; i < keptStopTimes.length; i++) {
-      updatedStopTimes.push({
-        ...keptStopTimes[i],
-        stop_sequence: i,
-      });
-    }
-  }
-
-  const mergedStops = stops.filter(s => survivingStopIds.has(s.stop_id));
-  const anchorCount = stops.filter(s => routeCount(s.stop_id) >= 2).length;
-
-  const mergedCount = stops.length - mergedStops.length;
-  if (mergedCount > 0) {
-    console.log(`Merge: ${stops.length} → ${mergedStops.length} (-${mergedCount}) | shared (2+ routes): ${anchorCount} | min distance: ${maxDistanceMeters}m`);
-  }
-
-  return { stops: mergedStops, stopTimes: updatedStopTimes, mergedCount };
-}
-
 export default {
   agencyBuilder,
   calendarBuilder,
@@ -971,5 +872,4 @@ export default {
   stopsBuilder,
   shapesBuilder,
   stopTimesBuilder,
-  mergeNearbyStops,
 };

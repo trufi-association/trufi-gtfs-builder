@@ -106,7 +106,7 @@ async function main() {
         },
 
         // Stops configuration - use real OSM stop_position nodes only
-        stopsConfig: { mode: 'osmStops', forceEndpointStops: true },
+        stopsConfig: () => ({ mode: 'osmStops', forceEndpointStops: true }),
       },
     });
 
