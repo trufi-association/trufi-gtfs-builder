@@ -25,11 +25,16 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Pack dist tarball
+      - name: Pack
         run: |
-          assets="dist package.json package-lock.json README.md"
-          [ -f LICENSE ] && assets="$assets LICENSE"
-          tar -czf "trufi-gtfs-builder-${GITHUB_REF_NAME}.tgz" $assets
+          # npm pack produces a tarball with the npm-standard `package/` root,
+          # so the asset is consumable as a direct npm dependency:
+          #   "trufi-gtfs-builder": "https://.../trufi-gtfs-builder-vX.Y.Z.tgz"
+          # The package.json version stays at 2.1.0 by repo convention — the
+          # git tag is the real version. Rename the output to match the tag
+          # so the asset URL is predictable.
+          npm pack
+          mv trufi-gtfs-builder-*.tgz "trufi-gtfs-builder-${GITHUB_REF_NAME}.tgz"
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
