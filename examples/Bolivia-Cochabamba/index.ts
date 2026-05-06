@@ -65,10 +65,28 @@ async function main() {
         defaultCalendar: () => 'Mo-Su 06:00-22:00',
         frequencyHeadway: () => 300, // 5 minutes
         vehicleSpeed: () => 40, // 40 km/h average speed in city
-        fakeStops: (routeFeature) => {
-          // Some routes need fake stops generated
-          return [11678428,19604339,9083839,14576927,9074378,14576926,6925236,,6925237].includes(routeFeature.properties.id);
+        // Cochabamba: most minibus lines have no physical stops mapped
+        // in OSM, so they get `fakeStops` (a stop per shape node, then
+        // segment-merge + gap-fill collapse them to `fakeStopsGapThreshold`
+        // density). The handful of routes listed below DO have proper
+        // stops mapped in OSM and should use them as-is.
+        stopsConfig: (route) => {
+          const ROUTES_WITH_OSM_STOPS = [
+            11678428,
+            19604339,
+            9083839,
+            14576927,
+            9074378,
+            14576926,
+            6925236,
+            6925237,
+          ];
+          if (ROUTES_WITH_OSM_STOPS.includes(route.properties.id)) {
+            return { mode: 'osmStops', forceEndpointStops: true };
+          }
+          return { mode: 'fakeStops' };
         },
+        fakeStopsGapThreshold: 100,
         stopNameBuilder: (stops) => {
           if (!stops || stops.length === 0) {
             stops = ['Innominada'];
@@ -86,7 +104,6 @@ async function main() {
           endDate: '20261231',
           id: 'cochabamba',
         },
-        mergeNearbyStops: 0,
       },
     });
 
