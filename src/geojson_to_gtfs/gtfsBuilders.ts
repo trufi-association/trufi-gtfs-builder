@@ -244,8 +244,35 @@ export function routeBuilder(features: GeoJSONFeature[][]): GTFSRoute[] {
     const mainFeature = feature[0];
     // route_short_name: prefer 'ref' (route code like "M-01 C")
     const routeShortName = mainFeature.properties.ref || mainFeature.properties.name || mainFeature.properties.id.toString();
-    // route_long_name: prefer 'name' with "Origin → Destination" format
-    const routeLongName = mainFeature.properties.name || routeShortName;
+    // route_long_name: a non-directional corridor identifier. A single
+    // route_id collapses many OSM relations with different endpoints
+    // (variants, sub-branches, opposite directions); picking the first
+    // relation's full `name` was misleading because it reads as
+    // "<from> → <to>" of just one variant. Per-trip destination and
+    // variant are conveyed by `trip_headsign` instead.
+    //
+    // Three OSM `name` shapes are normalized:
+    //   1. "<type> <ref>: <from> → <to>"   → keep "<type> <ref>"
+    //      (e.g. "Trufi 134: Av X → Calle Y" → "Trufi 134"). Common in
+    //      Cochabamba and other feeds that prefix the relation name
+    //      with the vehicle type and route code.
+    //   2. "<from> → <to>"                  → leave empty
+    //      No corridor descriptor is present, so any extraction is just
+    //      a directional half. Per Google best practice, leaving
+    //      route_long_name empty when only route_short_name is
+    //      meaningful is preferred over duplicating one direction.
+    //   3. anything else                    → use the name as-is
+    const rawName = (mainFeature.properties.name || '').trim();
+    const colonIdx = rawName.indexOf(':');
+    const hasDirectionalArrow = /→|->/.test(rawName);
+    let routeLongName: string;
+    if (colonIdx > 0) {
+      routeLongName = rawName.slice(0, colonIdx).trim();
+    } else if (hasDirectionalArrow) {
+      routeLongName = '';
+    } else {
+      routeLongName = rawName || routeShortName;
+    }
     const routeKey = `${mainFeature.gtfs?.agency_id || 0}_${routeShortName}`;
 
     // Check if this route already exists (by agency + short name)
