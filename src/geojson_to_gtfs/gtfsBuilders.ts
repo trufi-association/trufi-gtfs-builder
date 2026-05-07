@@ -367,8 +367,42 @@ export function tripBuilder(
   const trips: GTFSTrip[] = [];
   const useFrequencies = gtfsConfig?.useFrequencies ?? true;
 
-  // Track route directions: same ref can have outbound (0) and return (1)
-  const routeDirections = new Map<string, number>();
+  // Determine which OSM `to` value gets `direction_id=0` for each ref.
+  // Within a single ref, the `to` that the most relations target is
+  // treated as the terminal (direction_id=0); every other `to` is the
+  // opposite direction (direction_id=1). Ties are broken
+  // lexicographically so the assignment is deterministic between runs.
+  //
+  // Why this matters: previously direction_id alternated 0/1/0/1 in the
+  // order relations were processed, so two trips going to the same `to`
+  // could end up with different direction_ids — making
+  // direction_id-based filtering useless for any route with > 2
+  // variants. OSM has no native field for "this is direction 0", so any
+  // mapping is heuristic; this one yields consistent values that
+  // respect the `to` tag.
+  const refDirZeroTo = new Map<string, string>();
+  {
+    const refToCounts = new Map<string, Map<string, number>>();
+    for (const feature of features) {
+      const ref = (feature[0].properties.ref || '').toString();
+      const to = (feature[0].properties.to || '').trim();
+      if (!ref || !to) continue;
+      let counts = refToCounts.get(ref);
+      if (!counts) { counts = new Map(); refToCounts.set(ref, counts); }
+      counts.set(to, (counts.get(to) ?? 0) + 1);
+    }
+    for (const [ref, counts] of refToCounts) {
+      let bestTo = '';
+      let bestCount = -1;
+      for (const [to, count] of counts) {
+        if (count > bestCount || (count === bestCount && to < bestTo)) {
+          bestTo = to;
+          bestCount = count;
+        }
+      }
+      refDirZeroTo.set(ref, bestTo);
+    }
+  }
 
   for (let feature of features) {
     const mainFeature = feature[0];
@@ -384,20 +418,20 @@ export function tripBuilder(
     //   3. Regex over `name` (`… → DESTINATION`) — legacy fallback for
     //      relations missing both tags.
     const routeName = mainFeature.properties.name || '';
-    const routeRef = mainFeature.properties.ref || '';
+    const routeRef = (mainFeature.properties.ref || '').toString();
     const variant = (mainFeature.properties.description || '').trim();
     const toTag = (mainFeature.properties.to || '').trim();
     const toMatch = routeName.match(/(?:→|->)\s*(.+?)$/i);
     const destinationFromName = toMatch ? toMatch[1].trim() : '';
     const tripHeadsign = variant || toTag || destinationFromName;
 
-    // Determine direction_id: alternate 0 and 1 for routes with the same ref
+    // direction_id: 0 for trips heading to the ref's terminal `to`
+    // (the most-targeted destination within the ref), 1 otherwise.
+    // Trips with no `to` or no `ref` default to 0.
     let directionId: number = 0;
-    if (routeRef) {
-      const currentDirection = routeDirections.get(routeRef) ?? 0;
-      directionId = currentDirection;
-      // Increment for next route with same ref (outbound=0, return=1)
-      routeDirections.set(routeRef, currentDirection === 0 ? 1 : 0);
+    if (routeRef && toTag) {
+      const dir0To = refDirZeroTo.get(routeRef);
+      directionId = dir0To && toTag !== dir0To ? 1 : 0;
     }
 
     if (useFrequencies) {
