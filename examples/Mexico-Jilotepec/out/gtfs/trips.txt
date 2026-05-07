@@ -1,13 +1,13 @@
 trip_id,route_id,service_id,shape_id,trip_headsign,direction_id
-19455302,0,Mo-Su,19455302,Las Huertas/Agua Escondida,0
+19455302,0,Mo-Su,19455302,Las Huertas/Agua Escondida,1
 19455324,0,Mo-Su,19455324,Mercado,1
-19455371,0,Mo-Su,19455371,Xhixhata/Santa Martha de la Cruz,0
+19455371,0,Mo-Su,19455371,Xhixhata/Santa Martha de la Cruz,1
 19455382,0,Mo-Su,19455382,La Comunidad,1
-19455390,0,Mo-Su,19455390,Buenavista,0
+19455390,0,Mo-Su,19455390,Buenavista,1
 19512377,0,Mo-Su,19512377,Mercado,1
 19512573,0,Mo-Su,19512573,Terminal,0
 19512577,0,Mo-Su,19512577,El Huizache/El Banco,1
-19512581,0,Mo-Su,19512581,Base Panteon,0
+19512581,0,Mo-Su,19512581,Base Panteon,1
 19525478,1,Mo-Su,19525478,Terminal,0
 19525486,2,Mo-Su,19525486,Terminal,0
 19525563,0,Mo-Su,19525563,La Huaracha (vía Llano Grande),1
@@ -25,53 +25,53 @@ trip_id,route_id,service_id,shape_id,trip_headsign,direction_id
 19525667,0,Mo-Su,19525667,Doxhicho,1
 19525674,0,Mo-Su,19525674,Terminal,0
 19525693,0,Mo-Su,19525693,San Lorenzo Octeyuco,1
-19525699,0,Mo-Su,19525699,San Pablo/El Pedregal,0
-19525710,0,Mo-Su,19525710,Terminal,1
+19525699,0,Mo-Su,19525699,San Pablo/El Pedregal,1
+19525710,0,Mo-Su,19525710,Terminal,0
 19525711,0,Mo-Su,19525711,Terminal,0
 19525716,0,Mo-Su,19525716,Santiago Oxthoc,1
-19525720,0,Mo-Su,19525720,Aurrera,0
-19525723,3,Mo-Su,19525723,San Lorenzo Nenamicoyan,0
-19525724,3,Mo-Su,19525724,Terminal,1
-19528431,4,Mo-Su,19528431,Km 107,0
-19528433,4,Mo-Su,19528433,Terminal,1
-19528454,4,Mo-Su,19528454,San Juan Tuxtepec,0
-19528471,4,Mo-Su,19528471,Terminal,1
-19528476,3,Mo-Su,19528476,San Andrés Timilpan,0
-19528479,3,Mo-Su,19528479,Terminal,1
-19528483,3,Mo-Su,19528483,San Martín Tuchicuitlapilco,0
-19528489,3,Mo-Su,19528489,Terminal,1
-19528491,4,Mo-Su,19528491,Ojo de Agua,0
-19528506,4,Mo-Su,19528506,Terminal,1
-19528579,5,Mo-Su,19528579,Chapa de Mota,0
-19528584,5,Mo-Su,19528584,Terminal,1
+19525720,0,Mo-Su,19525720,Aurrera,1
+19525723,3,Mo-Su,19525723,San Lorenzo Nenamicoyan,1
+19525724,3,Mo-Su,19525724,Terminal,0
+19528431,4,Mo-Su,19528431,Km 107,1
+19528433,4,Mo-Su,19528433,Terminal,0
+19528454,4,Mo-Su,19528454,San Juan Tuxtepec,1
+19528471,4,Mo-Su,19528471,Terminal,0
+19528476,3,Mo-Su,19528476,San Andrés Timilpan,1
+19528479,3,Mo-Su,19528479,Terminal,0
+19528483,3,Mo-Su,19528483,San Martín Tuchicuitlapilco,1
+19528489,3,Mo-Su,19528489,Terminal,0
+19528491,4,Mo-Su,19528491,Ojo de Agua,1
+19528506,4,Mo-Su,19528506,Terminal,0
+19528579,5,Mo-Su,19528579,Chapa de Mota,1
+19528584,5,Mo-Su,19528584,Terminal,0
 19528589,6,Mo-Su,19528589,Chapa de Mota,0
 19528594,6,Mo-Su,19528594,Terminal,1
-19528661,7,Mo-Su,19528661,Santiago Oxthoc/El Xhiti - Aurrera,0
-19528662,7,Mo-Su,19528662,Terminal,1
-19528663,7,Mo-Su,19528663,Emiliano Zapata,0
-19528664,7,Mo-Su,19528664,Terminal,1
+19528661,7,Mo-Su,19528661,Santiago Oxthoc/El Xhiti - Aurrera,1
+19528662,7,Mo-Su,19528662,Terminal,0
+19528663,7,Mo-Su,19528663,Emiliano Zapata,1
+19528664,7,Mo-Su,19528664,Terminal,0
 19528665,0,Mo-Su,19528665,El Saltillito,1
 19528666,0,Mo-Su,19528666,Terminal,0
-19531727,8,Mo-Su,19531727,Ojo de Agua,0
+19531727,8,Mo-Su,19531727,Ojo de Agua,1
 19531728,8,Mo-Su,19531728,Terminal,1
-19531729,5,Mo-Su,19531729,San Juan Tuxtepec,0
+19531729,5,Mo-Su,19531729,San Juan Tuxtepec,1
 19531730,5,Mo-Su,19531730,Enfrente Terminal,1
-19531731,5,Mo-Su,19531731,Xhimohay,0
-19531732,5,Mo-Su,19531732,Terminal,1
-19531734,8,Mo-Su,19531734,El Rosal,0
-19531735,8,Mo-Su,19531735,Aurrera,1
-19531736,8,Mo-Su,19531736,La Goleta/San Juan Daxthi,0
+19531731,5,Mo-Su,19531731,Xhimohay,1
+19531732,5,Mo-Su,19531732,Terminal,0
+19531734,8,Mo-Su,19531734,El Rosal,1
+19531735,8,Mo-Su,19531735,Aurrera,0
+19531736,8,Mo-Su,19531736,La Goleta/San Juan Daxthi,1
 19531739,8,Mo-Su,19531739,Aurrera (vía el tejón),1
 19531740,8,Mo-Su,19531740,Aurrera,0
-19531741,4,Mo-Su,19531741,Acazuchitlán (San Juanico),0
+19531741,4,Mo-Su,19531741,Acazuchitlán (San Juanico),1
 19531742,4,Mo-Su,19531742,Aurrera,1
-19531743,4,Mo-Su,19531743,Bella Vista,0
+19531743,4,Mo-Su,19531743,Bella Vista,1
 19531744,4,Mo-Su,19531744,Aurrera,1
 19531747,8,Mo-Su,19531747,Doxhicho,1
 19531748,8,Mo-Su,19531748,Aurrera,0
-19558882,3,Mo-Su,19558882,San Juan Tuxtepec,0
-19558889,3,Mo-Su,19558889,Terminal,1
-19558890,3,Mo-Su,19558890,Ojo de Agua,0
-19558896,3,Mo-Su,19558896,Terminal,1
-19558897,7,Mo-Su,19558897,El Rosal,0
+19558882,3,Mo-Su,19558882,San Juan Tuxtepec,1
+19558889,3,Mo-Su,19558889,Terminal,0
+19558890,3,Mo-Su,19558890,Ojo de Agua,1
+19558896,3,Mo-Su,19558896,Terminal,0
+19558897,7,Mo-Su,19558897,El Rosal,1
 19558898,7,Mo-Su,19558898,Aurrera,1
