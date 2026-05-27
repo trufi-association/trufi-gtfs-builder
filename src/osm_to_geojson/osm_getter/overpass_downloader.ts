@@ -1,10 +1,20 @@
 import * as https from 'https';
 import type { Bounds, OSMRelation, OSMWay, OSMNode, IOSMDataGetter } from '../../types';
 
+export interface OSMOverpassDownloaderOptions {
+  /**
+   * Overpass API host (without protocol or path). Defaults to
+   * `www.overpass-api.de`. Use this to point at a mirror when the default
+   * is overloaded — e.g. `overpass.kumi.systems`, `overpass.osm.ch`.
+   */
+  host?: string;
+}
+
 export default class OSMOverpassDownloader implements IOSMDataGetter {
   bbox: string;
+  host: string;
 
-  constructor(bounds: Bounds) {
+  constructor(bounds: Bounds, options: OSMOverpassDownloaderOptions = {}) {
     if (!bounds) {
       throw new Error('Missing bounds');
     }
@@ -18,6 +28,7 @@ export default class OSMOverpassDownloader implements IOSMDataGetter {
     }
 
     this.bbox = `${bounds.south},${bounds.west},${bounds.north},${bounds.east}`;
+    this.host = options.host ?? 'www.overpass-api.de';
   }
 
   overpassRequest = async (query: string, retries = 3): Promise<any> => {
@@ -43,7 +54,7 @@ export default class OSMOverpassDownloader implements IOSMDataGetter {
       const request = https.request(
         {
           method: 'POST',
-          host: 'www.overpass-api.de',
+          host: this.host,
           path: '/api/interpreter',
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
