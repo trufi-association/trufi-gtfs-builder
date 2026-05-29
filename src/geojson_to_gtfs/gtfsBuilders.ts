@@ -98,25 +98,79 @@ export function agencyBuilder(
   return agencies;
 }
 
-// Parse seasonal prefix from opening_hours (e.g., "Dec-Jan:", "Jan-Mar:")
-function parseSeasonalPrefix(value: string): { season: string | null; schedule: string } {
-  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-  const monthPattern = months.join('|');
-  const seasonMatch = value.match(new RegExp(`^\\s*((?:${monthPattern})(?:-(?:${monthPattern}))?):\\s*(.+)$`, 'i'));
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const OpeningHours = require('opening_hours');
 
-  if (seasonMatch) {
-    return { season: seasonMatch[1], schedule: seasonMatch[2] };
-  }
-  return { season: null, schedule: value };
+const DAY_LABELS = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
+
+// Reference week: ISO Monday (2024-01-01) at 00:00 → next Monday 00:00.
+// 2024-01-01 happens to be a Monday, so the day-of-week math is clean.
+const REF_WEEK_START = new Date(2024, 0, 1, 0, 0, 0, 0);
+const REF_WEEK_END = new Date(2024, 0, 8, 0, 0, 0, 0);
+
+/**
+ * Strip holiday selectors (PH = Public Holidays, SH = School Holidays) from
+ * an OSM `opening_hours` value before parsing.
+ *
+ * Reasoning: GTFS `calendar.txt` only models the weekly Mo-Su pattern, with
+ * specific holiday exceptions handled separately via `calendar_dates.txt`.
+ * `opening_hours.js` refuses to parse PH/SH selectors without a country
+ * code to resolve actual holiday dates — but we don't need those dates at
+ * all for the weekly schedule. Stripping them lets the parser focus on
+ * weekday rules without any geographic coupling.
+ *
+ * Two cases:
+ *   - Combined selector "Mo-Su,PH 07:00-19:00" → drop ",PH" → "Mo-Su 07:00-19:00"
+ *   - Standalone holiday rule "PH 09:00-18:00" or "PH off" → drop the rule
+ */
+export function stripHolidaySelectors(value: string): string {
+  return value
+    .split(';')
+    .map((part) => {
+      let t = part.trim();
+      if (!t) return null;
+      // Drop rules that start with a holiday selector.
+      if (/^(PH|SH)\b/i.test(t)) return null;
+      // Strip ",PH" / ",SH" from combined day selectors.
+      t = t.replace(/,\s*(PH|SH)(?=[\s,])/gi, '');
+      return t;
+    })
+    .filter((s): s is string => Boolean(s))
+    .join('; ');
+}
+
+function timeToHHMM(d: Date): string {
+  return `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`;
+}
+
+/** Mo=0, Tu=1 … Su=6, matching DAY_LABELS. */
+function dayOfWeekIndex(d: Date): number {
+  return (d.getDay() + 6) % 7;
+}
+
+/**
+ * Compose a stable, human-readable service_id from the set of days
+ * the service runs:
+ *   - 7 days → "Mo-Su"
+ *   - contiguous range → "Mo-Fr"
+ *   - sparse set → "Mo-We-Fr"
+ */
+function buildServiceId(days: ReadonlySet<number>): string {
+  const sorted = [...days].sort((a, b) => a - b);
+  if (sorted.length === 7) return 'Mo-Su';
+  const isContiguous =
+    sorted.length > 1 && sorted[sorted.length - 1] - sorted[0] === sorted.length - 1;
+  if (isContiguous) return `${DAY_LABELS[sorted[0]]}-${DAY_LABELS[sorted[sorted.length - 1]]}`;
+  return sorted.map((d) => DAY_LABELS[d]).join('-');
 }
 
 export function calendarBuilder(
   features: GeoJSONFeature[][],
   defaultCalendar: (feature: GeoJSONFeature) => string
 ): GTFSCalendar[] {
-  const days = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
   const services: GTFSCalendar[] = [];
-  for (let feature of features) {
+
+  for (const feature of features) {
     const mainFeature = feature[0];
     if (!mainFeature.gtfs) {
       mainFeature.gtfs = {
@@ -126,89 +180,74 @@ export function calendarBuilder(
       };
     }
     mainFeature.gtfs.services = [];
-    const opening_hours = mainFeature.properties.opening_hours || defaultCalendar(mainFeature);
-    const times = opening_hours.split(';');
-    times.map(formatTime).map((value: string) => {
-      // Skip OSM opening_hours parts that GTFS cannot represent (PH=public holidays, SH=school holidays)
-      // See: https://wiki.openstreetmap.org/wiki/Key:opening_hours
-      if (value.includes('PH') || value.includes('SH')) {
-        return;
-      }
 
-      // Parse seasonal prefix if present (e.g., "Dec-Jan: Tu-Su 09:30-23:00")
-      const { season, schedule } = parseSeasonalPrefix(value);
+    const rawOpeningHours =
+      mainFeature.properties.opening_hours || defaultCalendar(mainFeature);
+    const cleaned = stripHolidaySelectors(formatTime(rawOpeningHours));
+    if (!cleaned) continue;
 
-      const dualTimeMatch = schedule.match(
-        '((Mo|Tu|We|Th|Fr|Sa|Su)-(Mo|Tu|We|Th|Fr|Sa|Su)) (([01][0-9]|2[0-4]):([0-5][0-9]))-(([01][0-9]|2[0-4]):([0-5][0-9]))'
+    // Parse and enumerate open intervals across a reference Mo-Su week.
+    // `opening_hours.js` handles every standard OSM construct: ranges
+    // (Mo-Fr), unions (Mo,We,Fr), multiple time slots per day
+    // (08:00-12:00,14:00-18:00), seasonal prefixes (Apr-Sep: ...),
+    // overrides via ; — anything the OSM wiki documents.
+    let intervals: [Date, Date, boolean, string | undefined][];
+    try {
+      const oh = new OpeningHours(cleaned, undefined, 0);
+      intervals = oh.getOpenIntervals(REF_WEEK_START, REF_WEEK_END);
+    } catch (e) {
+      const msg = e instanceof Error ? e.message : String(e);
+      throw new Error(
+        `Failed to parse opening_hours "${rawOpeningHours}" for https://www.osm.org/relation/${mainFeature.properties.id}: ${msg}`
       );
-      if (dualTimeMatch && dualTimeMatch.length === 10) {
-        // Include season in service_id to make it unique
-        const baseServiceId = dualTimeMatch[1];
-        const serviceId = season ? `${baseServiceId}-${season}` : baseServiceId;
+    }
+    if (!intervals.length) continue;
 
-        let service = services.find((value) => value.service_id === serviceId);
-        if (!service) {
-          const init = days.indexOf(dualTimeMatch[2]);
-          const end = days.indexOf(dualTimeMatch[3]);
-          service = {
-            service_id: serviceId,
-            monday: init <= 0 && 0 <= end ? 1 : 0,
-            tuesday: init <= 1 && 1 <= end ? 1 : 0,
-            wednesday: init <= 2 && 2 <= end ? 1 : 0,
-            thursday: init <= 3 && 3 <= end ? 1 : 0,
-            friday: init <= 4 && 4 <= end ? 1 : 0,
-            saturday: init <= 5 && 5 <= end ? 1 : 0,
-            sunday: init <= 6 && 6 <= end ? 1 : 0,
-            start_date: '20000101',
-            end_date: '21000101',
-          };
-          services.push(service);
-        }
-        mainFeature.gtfs!.services.push({
-          service_id: serviceId,
-          startTime: dualTimeMatch[4],
-          endTime: dualTimeMatch[7],
-        });
-      } else {
-        const singleTimeMatch = schedule.match(
-          '(Mo|Tu|We|Th|Fr|Sa|Su) (([01][0-9]|2[0-4]):([0-5][0-9]))-(([01][0-9]|2[0-4]):([0-5][0-9]))'
-        );
-        if (singleTimeMatch && singleTimeMatch.length === 8) {
-          // Include season in service_id to make it unique
-          const baseServiceId = singleTimeMatch[1];
-          const serviceId = season ? `${baseServiceId}-${season}` : baseServiceId;
-
-          let service = services.find((value) => value.service_id === serviceId);
-          if (!service) {
-            const day = singleTimeMatch[1];
-            service = {
-              service_id: serviceId,
-              monday: day === 'Mo' ? 1 : 0,
-              tuesday: day === 'Tu' ? 1 : 0,
-              wednesday: day === 'We' ? 1 : 0,
-              thursday: day === 'Th' ? 1 : 0,
-              friday: day === 'Fr' ? 1 : 0,
-              saturday: day === 'Sa' ? 1 : 0,
-              sunday: day === 'Su' ? 1 : 0,
-              start_date: '20000101',
-              end_date: '21000101',
-            };
-            services.push(service);
-          }
-          mainFeature.gtfs!.services.push({
-            service_id: serviceId,
-            startTime: singleTimeMatch[2],
-            endTime: singleTimeMatch[5],
-          });
-        } else {
-          // eslint-disable-next-line no-console
-          if (typeof console !== 'undefined') console.log('value => ', value);
-          throw new Error(
-            `No correct opening_hours for https://www.osm.org/relation/${mainFeature.properties.id}`
-          );
-        }
+    // Group intervals by (startTime, endTime). Days that share an
+    // identical time window collapse into one GTFS service whose
+    // monday-sunday flags reflect the union of their days.
+    type Group = { startTime: string; endTime: string; days: Set<number> };
+    const groups = new Map<string, Group>();
+    for (const interval of intervals) {
+      const [start, end] = interval;
+      const startTime = timeToHHMM(start);
+      let endTime = timeToHHMM(end);
+      // Overnight interval — end is on the next day. GTFS represents
+      // this with hour ≥ 24 (e.g. "26:30" for 02:30 the following day).
+      if (start.getDate() !== end.getDate()) {
+        const endHour = end.getHours() + 24;
+        endTime = `${String(endHour).padStart(2, '0')}:${String(end.getMinutes()).padStart(2, '0')}`;
       }
-    });
+      const key = `${startTime}-${endTime}`;
+      let group = groups.get(key);
+      if (!group) {
+        group = { startTime, endTime, days: new Set() };
+        groups.set(key, group);
+      }
+      group.days.add(dayOfWeekIndex(start));
+    }
+
+    for (const { startTime, endTime, days } of groups.values()) {
+      const serviceId = buildServiceId(days);
+
+      let service = services.find((s) => s.service_id === serviceId);
+      if (!service) {
+        service = {
+          service_id: serviceId,
+          monday: days.has(0) ? 1 : 0,
+          tuesday: days.has(1) ? 1 : 0,
+          wednesday: days.has(2) ? 1 : 0,
+          thursday: days.has(3) ? 1 : 0,
+          friday: days.has(4) ? 1 : 0,
+          saturday: days.has(5) ? 1 : 0,
+          sunday: days.has(6) ? 1 : 0,
+          start_date: '20000101',
+          end_date: '21000101',
+        };
+        services.push(service);
+      }
+      mainFeature.gtfs!.services.push({ service_id: serviceId, startTime, endTime });
+    }
   }
   return services;
 }
