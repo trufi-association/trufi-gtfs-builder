@@ -103,10 +103,16 @@ const OpeningHours = require('opening_hours');
 
 const DAY_LABELS = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
 
-// Reference week: ISO Monday (2024-01-01) at 00:00 → next Monday 00:00.
-// 2024-01-01 happens to be a Monday, so the day-of-week math is clean.
-const REF_WEEK_START = new Date(2024, 0, 1, 0, 0, 0, 0);
-const REF_WEEK_END = new Date(2024, 0, 8, 0, 0, 0, 0);
+// Reference week we query against `opening_hours.js`. Picked as a regular
+// mid-year Monday-to-Monday (2024-04-01 to 2024-04-08) to avoid the major
+// seasonal selectors most feeds use — Dec/Jan in particular, which is
+// when transit operators frequently advertise extended hours via
+// `Dec-Jan: ...` overrides. Querying inside that range would surface the
+// special schedule as if it ran all year. April has neither northern
+// summer nor southern winter holiday selectors triggering, so the
+// intervals match each feed's "normal" service.
+const REF_WEEK_START = new Date(2024, 3, 1, 0, 0, 0, 0);
+const REF_WEEK_END = new Date(2024, 3, 8, 0, 0, 0, 0);
 
 /**
  * Strip holiday selectors (PH = Public Holidays, SH = School Holidays) from
