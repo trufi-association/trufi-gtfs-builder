@@ -1,6 +1,6 @@
 {
   "name": "trufi-gtfs-builder",
-  "version": "2.13.3",
+  "version": "2.13.4",
   "description": "TypeScript version of trufi-gtfs-builder",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

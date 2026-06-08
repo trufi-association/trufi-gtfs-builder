@@ -4,9 +4,6 @@ import type {
   GTFSData,
   GTFSBuilders,
   GTFSOptions,
-  GTFSStopTime,
-  GTFSStop,
-  GTFSTrip,
   StopsConfigResolver,
 } from '../types';
 import gtfsDefaultBuilders from './gtfsBuilders';
@@ -78,26 +75,34 @@ function geojsonToGtfs(
     stopsConfig,
   );
   const shapePoints = shapesBuilder(featuresArray);
-  let stopTimes = stopTimesBuilder(
-    featuresArray,
-    gtfsConfig.vehicleSpeed,
-    builderConfig,
-  );
 
-  // Build a stop_id → set of route_ids index. Used both for the
-  // user-facing `stop_desc` (e.g. "5(1-2-3-4-5)") and for the
-  // segment-merge that follows.
-  const tripToRoute: Map<number, string | number> = new Map();
-  for (const trip of trips) {
-    tripToRoute.set(trip.trip_id, trip.route_id);
-  }
+  // ──────────────────────────────────────────────────────────────────────
+  // Robust ordering: finalize each route's stop list (segment-merge +
+  // gap-fill) BEFORE deriving stop_times. Times are then computed ONCE,
+  // directly from the final list, so they are monotonic by construction —
+  // no recompute, no stale times dragged through a reorder.
+  //
+  // This is what previously broke OTP 2.x on loop routes: stop_times were
+  // computed first and then the gap-fill reinserted a stop out of travel
+  // order (a stop visited twice was looked up by stop_id, which is
+  // ambiguous), so an arrival_time went backwards. Working on the stop list
+  // first removes that whole class of bug.
+  // ──────────────────────────────────────────────────────────────────────
+
+  // stop_id → set of route_ids, taken from each route's (pre-merge) stop list.
   const stopRoutes: Map<number | string, Set<string | number>> = new Map();
-  for (const st of stopTimes) {
-    const routeId = tripToRoute.get(st.trip_id);
-    if (routeId === undefined) continue;
-    if (!stopRoutes.has(st.stop_id)) stopRoutes.set(st.stop_id, new Set());
-    stopRoutes.get(st.stop_id)!.add(routeId);
+  for (const feature of featuresArray) {
+    const mf = feature[0];
+    const routeId = mf.gtfs?.route_id;
+    const fs = mf.gtfs?.filteredStops;
+    if (routeId === undefined || !fs) continue;
+    for (const node of fs.nodes) {
+      if (!stopRoutes.has(node)) stopRoutes.set(node, new Set());
+      stopRoutes.get(node)!.add(routeId);
+    }
   }
+
+  // User-facing stop_desc (e.g. "5(1-2-3-4-5)").
   for (const stop of stops) {
     const routeIds = stopRoutes.get(stop.stop_id);
     if (routeIds && routeIds.size > 0) {
@@ -108,59 +113,6 @@ function geojsonToGtfs(
     }
   }
 
-  // Build trip_id → route feature lookup so the segment-merge can ask
-  // each trip's stops config (only fakeStops trips get post-processed).
-  const featureByRouteId: Map<string | number, GeoJSONFeature> = new Map();
-  for (const feature of featuresArray) {
-    const f = feature[0];
-    if (f.gtfs?.route_id !== undefined) {
-      featureByRouteId.set(f.gtfs.route_id, f);
-    }
-  }
-  const featureByTripId: Map<number, GeoJSONFeature> = new Map();
-  for (const trip of trips) {
-    const f = featureByRouteId.get(trip.route_id);
-    if (f) featureByTripId.set(trip.trip_id, f);
-  }
-  const isFakeStopsTrip = (tripId: number): boolean => {
-    const f = featureByTripId.get(tripId);
-    if (!f) return false;
-    return stopsConfig(f).mode === 'fakeStops';
-  };
-
-  // Group stop_times by trip so we can process each trip independently.
-  const tripStopTimesMap: Map<number, GTFSStopTime[]> = new Map();
-  for (const st of stopTimes) {
-    if (!tripStopTimesMap.has(st.trip_id)) tripStopTimesMap.set(st.trip_id, []);
-    tripStopTimesMap.get(st.trip_id)!.push(st);
-  }
-  for (const [, tripSts] of tripStopTimesMap) {
-    tripSts.sort((a, b) => Number(a.stop_sequence) - Number(b.stop_sequence));
-  }
-
-  // Quick exit: if no trip is in fakeStops mode, the segment-merge has
-  // nothing to do. Pass through unchanged.
-  const anyFakeStops = Array.from(tripStopTimesMap.keys()).some(isFakeStopsTrip);
-  if (!anyFakeStops) {
-    console.log('Segment merge: skipped (no fakeStops trips)');
-    return {
-      agency: agencies,
-      calendar: calendar,
-      routes: routes,
-      trips: trips,
-      frequencies: frequencies,
-      stops: stops,
-      stop_times: stopTimes,
-      shapes: shapePoints,
-      fare_attributes: fare.attributes,
-      fare_rules: fare.rules,
-      feed_info: feeds,
-    };
-  }
-
-  // Per-trip segment-merge + gap-fill, applied only to fakeStops trips.
-  // Other trips pass through with their stop_times intact, so a feed
-  // can mix modes safely.
   const isSubsetOrEqual = (
     a: Set<string | number>,
     b: Set<string | number>,
@@ -173,102 +125,94 @@ function geojsonToGtfs(
     return true;
   };
 
+  // Segment-merge + gap-fill, applied to the STOP LIST of each fakeStops
+  // route. osmStops / customStops routes keep their stop list untouched.
   const gapThreshold = gtfsConfig.fakeStopsGapThreshold ?? 100;
-  const stopById: Map<number | string, GTFSStop> = new Map();
-  for (const stop of stops) stopById.set(stop.stop_id, stop);
-
   const emptySet: Set<string | number> = new Set();
-  const finalStopTimes: GTFSStopTime[] = [];
   let beforeKeptCount = 0;
   let afterKeptCount = 0;
   let restoredCount = 0;
 
-  for (const [tripId, tripSts] of tripStopTimesMap) {
-    if (!isFakeStopsTrip(tripId)) {
-      // osmStops / customStops trip: keep stop_times unchanged.
-      for (const st of tripSts) finalStopTimes.push(st);
-      continue;
-    }
+  for (const feature of featuresArray) {
+    const mf = feature[0];
+    const fs = mf.gtfs?.filteredStops;
+    if (!fs || stopsConfig(mf).mode !== 'fakeStops') continue;
 
-    beforeKeptCount += tripSts.length;
+    const nodes = fs.nodes;
+    const coords = fs.coordinates;
+    beforeKeptCount += nodes.length;
 
-    // Step 1: segment-merge — group consecutive stops whose route sets
-    // form a subset/superset relationship; keep only segment endpoints.
-    const kept: GTFSStopTime[] = [];
+    // Step 1: segment-merge — keep only the endpoints of each run of stops
+    // whose route sets form a subset/superset relationship. `kept` holds
+    // indices into `nodes`, so a stop visited twice keeps its real position.
+    const kept: number[] = [];
     let segStart = 0;
-    for (let i = 1; i <= tripSts.length; i++) {
-      const prevRoutes = stopRoutes.get(tripSts[i - 1].stop_id) ?? emptySet;
+    for (let i = 1; i <= nodes.length; i++) {
+      const prevRoutes = stopRoutes.get(nodes[i - 1]) ?? emptySet;
       const currRoutes =
-        i < tripSts.length ? (stopRoutes.get(tripSts[i].stop_id) ?? emptySet) : null;
+        i < nodes.length ? (stopRoutes.get(nodes[i]) ?? emptySet) : null;
       const sameSegment =
         currRoutes !== null && isSubsetOrEqual(prevRoutes, currRoutes);
-      if (!sameSegment || i === tripSts.length) {
-        kept.push(tripSts[segStart]);
-        if (i - 1 > segStart) kept.push(tripSts[i - 1]);
+      if (!sameSegment || i === nodes.length) {
+        kept.push(segStart);
+        if (i - 1 > segStart) kept.push(i - 1);
         segStart = i;
       }
     }
 
     // Step 2: gap-fill — when two kept stops are farther apart than
-    // `gapThreshold`, restore evenly-spaced intermediates from the
-    // pre-merge sequence so density stays bounded. The pick is
-    // deterministic given the same intermediates list, so trips that
-    // share a segment (and therefore see the same intermediates and
-    // boundaries) land on the same restored stop ids — necessary for
-    // shared transfers.
-    const origIndexOf: Map<number, number> = new Map();
-    for (let i = 0; i < tripSts.length; i++) {
-      origIndexOf.set(tripSts[i].stop_id, i);
-    }
-    const filled: GTFSStopTime[] = [];
+    // `gapThreshold`, restore evenly-spaced intermediates, picked by their
+    // ORIGINAL index so the sequence stays in travel order (this is the fix
+    // for loop routes). Deterministic given the same nodes/boundaries, so
+    // routes sharing a segment restore the same stop ids (shared transfers).
+    const filledIdx: number[] = [];
     for (let k = 0; k < kept.length; k++) {
-      filled.push(kept[k]);
+      const a = kept[k];
+      filledIdx.push(a);
       if (k < kept.length - 1) {
-        const stopA = stopById.get(kept[k].stop_id);
-        const stopB = stopById.get(kept[k + 1].stop_id);
-        if (!stopA || !stopB) continue;
-        const dist = distanceBetweenCoords(
-          stopA.stop_lat,
-          stopA.stop_lon,
-          stopB.stop_lat,
-          stopB.stop_lon,
-        );
+        const b = kept[k + 1];
+        const ca = coords[a];
+        const cb = coords[b];
+        const dist = distanceBetweenCoords(ca[1], ca[0], cb[1], cb[0]);
         if (dist <= gapThreshold) continue;
-        const origIdxA = origIndexOf.get(kept[k].stop_id) ?? -1;
-        const origIdxB = origIndexOf.get(kept[k + 1].stop_id) ?? -1;
-        if (origIdxA < 0 || origIdxB < 0 || origIdxB <= origIdxA + 1) continue;
-        const intermediates = tripSts.slice(origIdxA + 1, origIdxB);
-        if (intermediates.length === 0) continue;
+        const interCount = b - a - 1;
+        if (interCount <= 0) continue;
         const needed = Math.ceil(dist / gapThreshold) - 1;
-        const toRestore =
-          needed >= intermediates.length
-            ? intermediates
-            : Array.from(
-                { length: needed },
-                (_, i) =>
-                  intermediates[
-                    Math.round((intermediates.length / (needed + 1)) * (i + 1)) - 1
-                  ],
-              );
-        filled.push(...toRestore);
-        restoredCount += toRestore.length;
+        if (needed >= interCount) {
+          for (let j = a + 1; j < b; j++) filledIdx.push(j);
+          restoredCount += interCount;
+        } else {
+          for (let n = 0; n < needed; n++) {
+            filledIdx.push(
+              a + Math.round((interCount / (needed + 1)) * (n + 1)),
+            );
+          }
+          restoredCount += needed;
+        }
       }
     }
 
-    // Re-sequence and emit.
-    for (let i = 0; i < filled.length; i++) {
-      finalStopTimes.push({ ...filled[i], stop_sequence: i });
-    }
-    afterKeptCount += filled.length;
+    // Replace the route's stop list with the merged + gap-filled one.
+    fs.nodes = filledIdx.map((i) => nodes[i]);
+    fs.coordinates = filledIdx.map((i) => coords[i]);
+    afterKeptCount += filledIdx.length;
   }
 
-  const survivingIds = new Set(finalStopTimes.map((st) => st.stop_id));
-  stops = stops.filter((s) => survivingIds.has(s.stop_id));
-  stopTimes = finalStopTimes;
   console.log(
-    `Segment merge: ${beforeKeptCount} → ${afterKeptCount} stop_times across fakeStops trips ` +
+    `Segment merge: ${beforeKeptCount} → ${afterKeptCount} stops across fakeStops routes ` +
       `(restored ${restoredCount} via gap-fill, threshold ${gapThreshold}m)`,
   );
+
+  // Derive stop_times ONCE, directly from the finalized per-route stop lists.
+  const stopTimes = stopTimesBuilder(
+    featuresArray,
+    gtfsConfig.vehicleSpeed,
+    builderConfig,
+  );
+
+  // Drop stops no longer referenced by any trip.
+  const survivingIds = new Set(stopTimes.map((st) => st.stop_id));
+  stops = stops.filter((s) => survivingIds.has(s.stop_id));
 
   return {
     agency: agencies,
