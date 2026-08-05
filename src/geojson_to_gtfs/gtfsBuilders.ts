@@ -258,7 +258,11 @@ export function calendarBuilder(
   return services;
 }
 
-export function routeBuilder(features: GeoJSONFeature[][]): GTFSRoute[] {
+export function routeBuilder(
+  features: GeoJSONFeature[][],
+  options?: { routePerRelation?: boolean }
+): GTFSRoute[] {
+  const perRelation = options?.routePerRelation ?? false;
   const getRouteType = (feature: GeoJSONFeature): string => {
     const route = feature.properties.route;
     let response = '';
@@ -309,23 +313,30 @@ export function routeBuilder(features: GeoJSONFeature[][]): GTFSRoute[] {
     //   3. anything else                    → use the name as-is
     const rawName = (mainFeature.properties.name || '').trim();
     const colonIdx = rawName.indexOf(':');
-    const hasDirectionalArrow = /→|->/.test(rawName);
+    const hasDirectionalArrow = /→|->|⟵|←/.test(rawName);
     let routeLongName: string;
-    if (colonIdx > 0) {
+    if (perRelation) {
+      // One route per relation: the relation's own (directional) name IS
+      // the route identity users look for in route lists.
+      routeLongName = rawName || routeShortName;
+    } else if (colonIdx > 0) {
       routeLongName = rawName.slice(0, colonIdx).trim();
     } else if (hasDirectionalArrow) {
       routeLongName = '';
     } else {
       routeLongName = rawName || routeShortName;
     }
-    const routeKey = `${mainFeature.gtfs?.agency_id || 0}_${routeShortName}`;
+    const routeKey = perRelation
+      ? `rel_${mainFeature.properties.id}`
+      : `${mainFeature.gtfs?.agency_id || 0}_${routeShortName}`;
 
     // Check if this route already exists (by agency + short name)
     let routeId = routeMap.get(routeKey);
 
     if (routeId === undefined) {
-      // Create new route with sequential ID
-      routeId = routeIdCounter++;
+      // Create new route: sequential ID, or the OSM relation id when
+      // routePerRelation is on (stable across runs, matches trip_id).
+      routeId = perRelation ? mainFeature.properties.id : routeIdCounter++;
       routeMap.set(routeKey, routeId);
 
       let route_color = mainFeature.properties.colour || '';
@@ -466,7 +477,7 @@ export function tripBuilder(
     const routeRef = (mainFeature.properties.ref || '').toString();
     const variant = (mainFeature.properties.description || '').trim();
     const toTag = (mainFeature.properties.to || '').trim();
-    const toMatch = routeName.match(/(?:→|->)\s*(.+?)$/i);
+    const toMatch = routeName.match(/(?:→|->|⟵|←)\s*(.+?)$/i);
     const destinationFromName = toMatch ? toMatch[1].trim() : '';
     const tripHeadsign = variant || toTag || destinationFromName;
 

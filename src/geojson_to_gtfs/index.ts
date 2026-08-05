@@ -44,7 +44,9 @@ function geojsonToGtfs(
     agency_url: gtfsConfig.agencyUrl,
   });
   const calendar = calendarBuilder(featuresArray, gtfsConfig.defaultCalendar);
-  const routes = routeBuilder(featuresArray);
+  const routes = routeBuilder(featuresArray, {
+    routePerRelation: gtfsConfig.routePerRelation ?? false,
+  });
   const fare = fareBuilder(
     featuresArray,
     gtfsConfig.defaultFares || { currencyType: 'USD' },

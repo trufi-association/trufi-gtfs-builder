@@ -223,7 +223,7 @@ export interface LogEntry {
 export interface GTFSBuilders {
   agencyBuilder: (features: GeoJSONFeature[][], defaultAgencyInfo: Partial<GTFSAgency>) => GTFSAgency[];
   calendarBuilder: (features: GeoJSONFeature[][], defaultCalendar: (feature: GeoJSONFeature) => string) => GTFSCalendar[];
-  routeBuilder: (features: GeoJSONFeature[][]) => GTFSRoute[];
+  routeBuilder: (features: GeoJSONFeature[][], options?: { routePerRelation?: boolean }) => GTFSRoute[];
   fareBuilder: (features: GeoJSONFeature[][], defaultFares: DefaultFaresConfig) => { attributes: GTFSFareAttribute[]; rules: GTFSFareRule[] };
   feedBuilder: (feed: FeedConfig) => GTFSFeedInfo[];
   tripBuilder: (
@@ -352,6 +352,18 @@ export interface GTFSOptions {
    * @default 100
    */
   fakeStopsGapThreshold?: number;
+  /**
+   * Emit one GTFS route per OSM relation instead of grouping relations
+   * that share (agency_id, route_short_name/ref). Useful for informal
+   * networks where many distinct lines reuse a handful of refs (e.g.
+   * Sana'a: 157 relations share ref "7"). route_id becomes the OSM
+   * relation id (stable across runs, matches trip_id/shape_id);
+   * route_short_name stays ref→name→id; route_long_name uses the
+   * relation's own name (fallback: short name) so each variant keeps
+   * its identity in route lists.
+   * @default false
+   */
+  routePerRelation?: boolean;
   /**
    * @deprecated Use `outputFiles.gtfsExpandedZip` instead. Selects
    * frequency-based vs schedule-based GTFS. Default true.
