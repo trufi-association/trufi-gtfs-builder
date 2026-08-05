@@ -477,6 +477,11 @@ export function tripBuilder(
     const routeRef = (mainFeature.properties.ref || '').toString();
     const variant = (mainFeature.properties.description || '').trim();
     const toTag = (mainFeature.properties.to || '').trim();
+    // NOTE: text AFTER the arrow is taken as the destination. This matches
+    // both LTR "A → B" and the RTL logical order "A ⟵ B" used by Arabic
+    // relation names (verified against Sana'a `to` tags). An LTR feed
+    // writing "A ← B" (meaning toward A) would need `to`/`description`
+    // tags instead of this name fallback.
     const toMatch = routeName.match(/(?:→|->|⟵|←)\s*(.+?)$/i);
     const destinationFromName = toMatch ? toMatch[1].trim() : '';
     const tripHeadsign = variant || toTag || destinationFromName;
