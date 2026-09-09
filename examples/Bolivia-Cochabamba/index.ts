@@ -8,6 +8,7 @@
  */
 
 import { osmToGtfs, OSMOverpassDownloader, OSMPBFReader } from '../../dist/index';
+import type { RouteFare } from '../../dist/index';
 import * as path from 'path';
 import * as fs from 'fs';
 
@@ -24,6 +25,43 @@ const BOUNDING_BOX = {
   north: -17.261759,
   east: -65.577835,
 };
+
+// ── Fares ────────────────────────────────────────────────────────────────
+// Official tariff of the Cercado (the Cochabamba municipality): Bs 3 general,
+// issued by Movilidad Urbana — the same figure trufi-app shows on its fares
+// screen. It only holds INSIDE the Cercado: the trufi-bus lines that connect
+// the neighbouring municipalities (Quillacollo, Sacaba, Vinto, Sipe Sipe,
+// Tiquipaya, …) charge their own fares, which we don't know, so they get no
+// fare row at all unless OSM carries `charge=*` on the relation (Mi Tren,
+// the teleférico, Trufi 130 and the long-distance trufis already do).
+// Never write 0 for "unknown": in GTFS a price of 0 means the ride is free.
+const CERCADO_FARE: RouteFare = { price: 3, currency: 'BOB' };
+
+// Municipalities of the metropolitan region other than Cochabamba itself.
+const OTHER_MUNICIPALITIES = [
+  'Sacaba', 'Quillacollo', 'Vinto', 'Sipe Sipe', 'Tiquipaya', 'Colcapirhua',
+  'Itapaya', 'Punata', 'Santiváñez', 'Colomi',
+];
+
+/**
+ * A line that leaves the Cercado, by any of three OSM signals:
+ *   1. `network=BO:C:<municipality>;…` lists a municipality other than
+ *      Cochabamba (e.g. `BO:C:Cochabamba;BO:C:Sacaba`).
+ *   2. `ref` 200-299 — the metropolitan trufi-bus series (Quillacollo 20x,
+ *      Sacaba 22x-24x, Sipe Sipe 245/260/270, Tiquipaya 250, Itapaya 261…).
+ *   3. The operator is named after another municipality
+ *      ("Sindicato mixto de autotransporte Sacaba", "… trufibuses Vinto").
+ */
+function isIntermunicipal(tags: Record<string, any>): boolean {
+  const network = String(tags.network || '');
+  if (network.split(';').some((n) => n.startsWith('BO:C:') && n !== 'BO:C:Cochabamba')) {
+    return true;
+  }
+  const refNumber = parseInt(String(tags.ref || ''), 10);
+  if (refNumber >= 200 && refNumber <= 299) return true;
+  const operator = String(tags.operator || '');
+  return OTHER_MUNICIPALITIES.some((municipality) => operator.includes(municipality));
+}
 
 function getOsmDataGetter() {
   if (DATA_SOURCE === 'pbf') {
@@ -87,6 +125,15 @@ async function main() {
           return { mode: 'fakeStops' };
         },
         fakeStopsGapThreshold: 100,
+        // Currency assumed when a `charge=*` value has no ISO code. The
+        // price itself comes from `fare` below (OSM first, then Bs 3 for
+        // urban lines, nothing for intermunicipal ones).
+        defaultFares: { currencyType: 'BOB' },
+        fare: (route, osmFare) => {
+          if (osmFare) return osmFare;
+          if (isIntermunicipal(route.properties)) return undefined;
+          return CERCADO_FARE;
+        },
         stopNameBuilder: (stops) => {
           if (!stops || stops.length === 0) {
             stops = ['Innominada'];

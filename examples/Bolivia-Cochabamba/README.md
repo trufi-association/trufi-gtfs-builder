@@ -42,6 +42,11 @@ npm run start:js
 - Service hours: Monday to Sunday, 6:00 AM - 10:00 PM
 - Average vehicle speed: 40 km/h
 
+### Fares
+- `charge=*` on the OSM relation wins (Mi Tren, the teleférico, Trufi 130, long-distance trufis)
+- Urban lines without a tag: Bs 3 (official Cercado tariff)
+- Lines that leave the Cercado (`network` lists another municipality, `ref` 200-299, or the operator is named after another municipality): no fare row — their price is unknown and `0` would mean "free"
+
 ### Transport Types
 - Bus
 - Share taxi (micros)
