@@ -3,6 +3,8 @@ import formatTime from './time/formater';
 import { loadCustomStops } from '../utils/customStopsLoader';
 import { findNearestStop, stopIdToNumber, distanceBetweenCoords, isPointOnRightSide } from '../utils/spatialMatcher';
 import { expandSchedule, timeToSeconds, secondsToTime } from './scheduleExpander';
+import { describeFare, fareKey, pickRouteFare, resolveRouteFare } from './fares';
+import type { ResolvedFare } from './fares';
 import type {
   GeoJSONFeature,
   GTFSAgency,
@@ -17,6 +19,7 @@ import type {
   GTFSFareRule,
   GTFSFeedInfo,
   DefaultFaresConfig,
+  FareResolver,
   FeedConfig,
   GeoJSONCoordinate,
   CustomStop,
@@ -371,31 +374,91 @@ export function routeBuilder(
   return routes;
 }
 
+/**
+ * Fares V1: one fare per `route_id`, one `fare_attributes` row per distinct
+ * (agency, price, currency, payment_method, transfers), and NO row for a
+ * route whose price nobody knows. See `./fares.ts` for the resolution
+ * order (OSM `charge=*` / `fee=no` → `fare` resolver → `defaultFares`).
+ *
+ * Several OSM relations (variants, directions) share a `route_id`; when
+ * they resolve to different fares the pick is deterministic (OSM-sourced
+ * first, then the lowest price) and a warning names the relations.
+ */
 export function fareBuilder(
   features: GeoJSONFeature[][],
-  defaultFares: DefaultFaresConfig
+  defaultFares: DefaultFaresConfig,
+  fareResolver?: FareResolver
 ): { attributes: GTFSFareAttribute[]; rules: GTFSFareRule[] } {
-  const fare: { attributes: GTFSFareAttribute[]; rules: GTFSFareRule[] } = {
-    attributes: [],
-    rules: [],
-  };
-  for (let feature of features) {
+  type Candidate = { fare: ResolvedFare; relationId: number | string };
+  const byRoute = new Map<
+    string | number,
+    { agencyId: number; label: string; candidates: Candidate[]; unknown: Array<number | string> }
+  >();
+
+  for (const feature of features) {
     const mainFeature = feature[0];
+    const routeId = mainFeature.gtfs?.route_id;
+    if (routeId === undefined) continue;
 
-    let fareId = fare.attributes.length;
-    let price = mainFeature.properties.fee === "yes" ? parseFloat(mainFeature.properties.charge) : 0
+    let entry = byRoute.get(routeId);
+    if (!entry) {
+      entry = {
+        agencyId: mainFeature.gtfs?.agency_id || 0,
+        label: mainFeature.properties.ref || mainFeature.properties.name || String(routeId),
+        candidates: [],
+        unknown: [],
+      };
+      byRoute.set(routeId, entry);
+    }
 
-    fare.attributes.push({
-      agency_id: mainFeature.gtfs?.agency_id || 0,
-      fare_id: fareId,
-      price: price || 0,
-      currency_type: defaultFares.currencyType,
-      payment_method: mainFeature.properties.paymentMethod || 0,
-    });
-
-    fare.rules.push({ fare_id: fareId, route_id: mainFeature.gtfs?.route_id });
+    const fare = resolveRouteFare(mainFeature, defaultFares, fareResolver);
+    if (fare) entry.candidates.push({ fare, relationId: mainFeature.properties.id });
+    else entry.unknown.push(mainFeature.properties.id);
   }
-  return fare;
+
+  const attributes: GTFSFareAttribute[] = [];
+  const rules: GTFSFareRule[] = [];
+  const fareIds = new Map<string, number>();
+
+  for (const [routeId, { agencyId, label, candidates, unknown }] of byRoute) {
+    if (candidates.length === 0) continue; // nobody knows the price → no row
+    if (unknown.length > 0) {
+      // A known fare beats "unknown", but variants of one route should not
+      // disagree on whether the fare is known — usually inconsistent tagging
+      // or a `fare` resolver rule that matches only some of them.
+      console.warn(
+        `fare: route ${label} (route_id ${routeId}) has ${unknown.length} variant(s) without a known fare (relation ${unknown.join(', ')}); using the fare of the others`
+      );
+    }
+    const distinct = new Set(candidates.map((c) => fareKey(agencyId, c.fare)));
+    const chosen = distinct.size === 1 ? candidates[0] : pickRouteFare(candidates);
+    if (distinct.size > 1) {
+      const variants = candidates
+        .map((c) => `${describeFare(c.fare)} [relation ${c.relationId}, ${c.fare.source}]`)
+        .join(', ');
+      console.warn(
+        `fare: route ${label} (route_id ${routeId}) has variants with different fares: ${variants}; using ${describeFare(chosen.fare)}`
+      );
+    }
+
+    const key = fareKey(agencyId, chosen.fare);
+    let fareId = fareIds.get(key);
+    if (fareId === undefined) {
+      fareId = attributes.length;
+      fareIds.set(key, fareId);
+      attributes.push({
+        agency_id: agencyId,
+        fare_id: fareId,
+        price: chosen.fare.price,
+        currency_type: chosen.fare.currency,
+        payment_method: chosen.fare.paymentMethod,
+        transfers: chosen.fare.transfers,
+      });
+    }
+    rules.push({ fare_id: fareId, route_id: routeId });
+  }
+
+  return { attributes, rules };
 }
 
 export function feedBuilder(feed: FeedConfig): GTFSFeedInfo[] {

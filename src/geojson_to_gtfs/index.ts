@@ -50,6 +50,7 @@ function geojsonToGtfs(
   const fare = fareBuilder(
     featuresArray,
     gtfsConfig.defaultFares || { currencyType: 'USD' },
+    gtfsConfig.fare,
   );
   const feeds = feedBuilder(
     gtfsConfig.feed || {
