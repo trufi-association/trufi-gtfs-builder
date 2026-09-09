@@ -3,7 +3,7 @@ import formatTime from './time/formater';
 import { loadCustomStops } from '../utils/customStopsLoader';
 import { findNearestStop, stopIdToNumber, distanceBetweenCoords, isPointOnRightSide } from '../utils/spatialMatcher';
 import { expandSchedule, timeToSeconds, secondsToTime } from './scheduleExpander';
-import { describeFare, fareKey, pickRouteFare, resolveRouteFare } from './fares';
+import { describeFare, fareKey, normalizeDefaultFares, pickRouteFare, resolveRouteFare } from './fares';
 import type { ResolvedFare } from './fares';
 import type {
   GeoJSONFeature,
@@ -390,6 +390,7 @@ export function fareBuilder(
   fareResolver?: FareResolver
 ): { attributes: GTFSFareAttribute[]; rules: GTFSFareRule[] } {
   type Candidate = { fare: ResolvedFare; relationId: number | string };
+  const defaults = normalizeDefaultFares(defaultFares); // throws on a bad config
   const byRoute = new Map<
     string | number,
     { agencyId: number; label: string; candidates: Candidate[]; unknown: Array<number | string> }
@@ -411,7 +412,7 @@ export function fareBuilder(
       byRoute.set(routeId, entry);
     }
 
-    const fare = resolveRouteFare(mainFeature, defaultFares, fareResolver);
+    const fare = resolveRouteFare(mainFeature, defaults, fareResolver);
     if (fare) entry.candidates.push({ fare, relationId: mainFeature.properties.id });
     else entry.unknown.push(mainFeature.properties.id);
   }

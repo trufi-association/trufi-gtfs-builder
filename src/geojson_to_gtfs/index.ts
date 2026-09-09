@@ -47,9 +47,11 @@ function geojsonToGtfs(
   const routes = routeBuilder(featuresArray, {
     routePerRelation: gtfsConfig.routePerRelation ?? false,
   });
+  // No implicit currency: without `defaultFares`, only `charge=*` values
+  // that carry their own ISO code can become a fare row.
   const fare = fareBuilder(
     featuresArray,
-    gtfsConfig.defaultFares || { currencyType: 'USD' },
+    gtfsConfig.defaultFares || { currencyType: '' },
     gtfsConfig.fare,
   );
   const feeds = feedBuilder(

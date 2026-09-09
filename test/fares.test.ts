@@ -48,18 +48,20 @@ describe('parseChargeEntries', () => {
     assert.equal(trufi130[4].unit, 'persona discapacitada');
   });
 
-  it('tolerates comma decimals, no space, currency-first, lower case and bare amounts', () => {
+  it('tolerates comma decimals, no space, currency-first and bare amounts', () => {
     assert.deepEqual(parseChargeEntries('3,50 BOB')[0], { price: 3.5, currency: 'BOB', unit: undefined, raw: '3,50 BOB' });
     assert.equal(parseChargeEntries('3BOB')[0].currency, 'BOB');
     assert.deepEqual(parseChargeEntries('BOB 3')[0], { price: 3, currency: 'BOB', unit: undefined, raw: 'BOB 3' });
-    assert.equal(parseChargeEntries('bob 3.5')[0].currency, 'BOB');
     assert.deepEqual(parseChargeEntries('3')[0], { price: 3, currency: undefined, unit: undefined, raw: '3' });
     assert.equal(parseChargeEntries(' 3 BOB ; 5 BOB ').length, 2);
   });
 
-  it('rejects currency signs, local abbreviations, words, negatives and non-strings', () => {
-    for (const bad of ['Bs 3', '$3', '3 Bs', 'free', 'yes', '-3 BOB', '', '   ', undefined, null, 3]) {
-      assert.deepEqual(parseChargeEntries(bad), [], `should reject ${JSON.stringify(bad)}`);
+  it('rejects currency signs, local abbreviations, non-ISO tokens, words, negatives and non-strings', () => {
+    // Only three upper-case letters pass as a currency (the ISO 4217 form);
+    // whether the code exists in the ISO list is not checked here.
+    const bad = ['Bs 3', '$3', '3 Bs', '3 bob', 'bob 3.5', '3bob', '3 BO', '3 BOBB', 'free', 'yes', '-3 BOB', '', '   ', undefined, null, 3];
+    for (const value of bad) {
+      assert.deepEqual(parseChargeEntries(value), [], `should reject ${JSON.stringify(value)}`);
     }
   });
 
@@ -104,11 +106,24 @@ describe('osmRouteFare', () => {
     assert.equal(warn.mock.callCount(), 1);
     assert.match(String(warn.mock.calls[0].arguments[0]), /charge="Bs 3".*relation\/42/);
   });
+
+  it('never invents a currency: a bare amount or fee=no without defaultFares.currencyType is unknown, with a specific warning', (t) => {
+    const warn = t.mock.method(console, 'warn', () => {});
+    assert.equal(osmRouteFare({ id: 7, charge: '3' }, ''), undefined);
+    assert.equal(osmRouteFare({ id: 8, fee: 'no' }, ''), undefined);
+    assert.equal(warn.mock.callCount(), 2);
+    assert.match(String(warn.mock.calls[0].arguments[0]), /charge="3" on .*relation\/7 has no currency code and defaultFares\.currencyType is not set/);
+    assert.match(String(warn.mock.calls[1].arguments[0]), /fee=no on .*relation\/8 but defaultFares\.currencyType is not set/);
+    // a value that carries its own code does not need the default
+    assert.deepEqual(osmRouteFare({ id: 9, charge: '3 BOB' }, ''), { price: 3, currency: 'BOB', source: 'osm' });
+  });
 });
 
 describe('fareBuilder', () => {
   const USD = { currencyType: 'USD' };
   const BOB3 = { currencyType: 'BOB', price: 3 };
+  // What geojsonToGtfs passes when the config has no `defaultFares` at all.
+  const NO_CURRENCY = { currencyType: '' };
 
   it('emits NO rows for a route whose price nobody knows (never a 0)', () => {
     const features = [
@@ -128,6 +143,31 @@ describe('fareBuilder', () => {
     assert.equal(attributes.length, 1);
     assert.equal(attributes[0].price, 0);
     assert.deepEqual(rules, [{ fare_id: 0, route_id: 0 }]);
+  });
+
+  it('without defaultFares.currencyType a bare charge amount gets no row instead of an invented currency', (t) => {
+    const warn = t.mock.method(console, 'warn', () => {});
+    const features = [
+      relation(1, { ref: '10', charge: '3' }, { agency_id: 0, route_id: 0 }),
+      relation(2, { ref: 'Roja', charge: '3.50 BOB/persona' }, { agency_id: 1, route_id: 1 }),
+    ];
+    const { attributes, rules } = fareBuilder(features, NO_CURRENCY);
+    assert.deepEqual(rules, [{ fare_id: 0, route_id: 1 }]);
+    assert.deepEqual(attributes.map((a) => [a.price, a.currency_type]), [[3.5, 'BOB']]);
+    assert.equal(warn.mock.callCount(), 1);
+    assert.match(String(warn.mock.calls[0].arguments[0]), /relation\/1 has no currency code and defaultFares\.currencyType is not set/);
+  });
+
+  it('without defaultFares.currencyType fee=no gets no row either (never "0 USD")', (t) => {
+    const warn = t.mock.method(console, 'warn', () => {});
+    const { attributes, rules } = fareBuilder(
+      [relation(1, { ref: 'F', fee: 'no' }, { agency_id: 0, route_id: 0 })],
+      NO_CURRENCY,
+    );
+    assert.deepEqual(attributes, []);
+    assert.deepEqual(rules, []);
+    assert.equal(warn.mock.callCount(), 1);
+    assert.match(String(warn.mock.calls[0].arguments[0]), /fee=no on .*relation\/1 but defaultFares\.currencyType is not set/);
   });
 
   it('takes the currency from charge=*, not from the config default', () => {
@@ -259,15 +299,41 @@ describe('fareBuilder', () => {
     assert.deepEqual(plain.attributes.map((a) => [a.payment_method, a.transfers]), [[0, 0]]);
   });
 
-  it('rejects an invalid fare from a resolver instead of writing it', (t) => {
-    const warn = t.mock.method(console, 'warn', () => {});
-    const { attributes } = fareBuilder(
-      [relation(1, { ref: '1' }, { agency_id: 0, route_id: 0 })],
-      { currencyType: 'BOB' },
-      () => ({ price: -1, currency: 'BOB' }),
-    );
-    assert.deepEqual(attributes, []);
-    assert.equal(warn.mock.callCount(), 1);
+  it('throws on an invalid fare from a resolver: a config bug is not written, dropped or rewritten', () => {
+    const features = [relation(1, { ref: '1' }, { agency_id: 0, route_id: 0 })];
+    const build = (fare: any) => () => fareBuilder(features, { currencyType: 'BOB' }, () => fare);
+    // GTFS fare_attributes: price non-negative, currency_type ISO 4217,
+    // payment_method 0 | 1, transfers 0 | 1 | 2 | empty (null here).
+    assert.throws(build({ price: -1, currency: 'BOB' }), /the fare resolver returned a price that is not a non-negative number for .*relation\/1/);
+    assert.throws(build({ price: NaN, currency: 'BOB' }), /price/);
+    assert.throws(build({ price: '3', currency: 'BOB' }), /price/);
+    assert.throws(build({ price: 3, currency: 'bob' }), /currency that is not an ISO 4217 code/);
+    assert.throws(build({ price: 3, currency: 'Bs' }), /currency/);
+    assert.throws(build({ price: 3, currency: '' }), /currency/);
+    assert.throws(build({ price: 3, currency: 'BOB', paymentMethod: 2 }), /paymentMethod outside 0 \| 1/);
+    assert.throws(build({ price: 3, currency: 'BOB', transfers: 5 }), /transfers outside 0 \| 1 \| 2 \| null/);
+    assert.throws(build({ price: 3, currency: 'BOB', transfers: '' }), /transfers/);
+    // the valid edges go through; a padded code is trimmed
+    const { attributes } = fareBuilder(features, { currencyType: 'BOB' }, () => ({
+      price: 0, currency: ' BOB ', paymentMethod: 1, transfers: 2,
+    }));
+    assert.deepEqual(attributes, [
+      { agency_id: 0, fare_id: 0, price: 0, currency_type: 'BOB', payment_method: 1, transfers: 2 },
+    ]);
+  });
+
+  it('throws on an invalid defaultFares, and trims its currencyType', () => {
+    const features = [relation(1, { ref: '1' }, { agency_id: 0, route_id: 0 })];
+    assert.throws(() => fareBuilder(features, { currencyType: 'bob' }), /defaultFares currencyType must be an ISO 4217 code/);
+    assert.throws(() => fareBuilder(features, { currencyType: 'Bs.' }), /currencyType/);
+    assert.throws(() => fareBuilder(features, { currencyType: '', price: 3 }), /price needs a currencyType/);
+    assert.throws(() => fareBuilder(features, { currencyType: 'BOB', price: -3 }), /price must be a non-negative number/);
+    assert.throws(() => fareBuilder(features, { currencyType: 'BOB', paymentMethod: 3 as any }), /paymentMethod must be 0 \| 1/);
+    assert.throws(() => fareBuilder(features, { currencyType: 'BOB', transfers: 4 as any }), /transfers must be 0 \| 1 \| 2 \| null/);
+    const { attributes } = fareBuilder(features, { currencyType: ' BOB ', price: 3, transfers: null });
+    assert.deepEqual(attributes, [
+      { agency_id: 0, fare_id: 0, price: 3, currency_type: 'BOB', payment_method: 0, transfers: '' },
+    ]);
   });
 
   it('skips features that never got a route_id', () => {
@@ -276,7 +342,7 @@ describe('fareBuilder', () => {
     assert.deepEqual(rules, []);
   });
 
-  it('works on top of routeBuilder: variants grouped by (agency, ref) get one fare', () => {
+  it('works on top of routeBuilder: relations that share a ref collapse into one route and one fare', () => {
     const features = [
       relation(1, { ref: '130', route: 'bus', name: 'Trufi 130: A → B', charge: TRUFI_130 }),
       relation(2, { ref: '130', route: 'bus', name: 'Trufi 130: B → A', charge: TRUFI_130 }),

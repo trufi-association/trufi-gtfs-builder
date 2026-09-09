@@ -343,9 +343,12 @@ export interface GTFSOptions {
   stopNameBuilder: (stops?: string[]) => string;
   /**
    * Fares V1 defaults: the currency assumed for `charge=*` values without
-   * an ISO code and for `price`; the price used when OSM has no
-   * `charge=*`. With no `price` and no OSM fare a route gets NO fare row.
-   * @default { currencyType: 'USD' }
+   * an ISO code, for `fee=no` and for `price`; the price used when OSM has
+   * no `charge=*`. With no `price` and no OSM fare a route gets NO fare
+   * row. There is no implicit currency: without `currencyType`, a bare
+   * `charge` amount or a `fee=no` is ignored with a warning — only values
+   * that carry their own ISO code become rows.
+   * @default none
    */
   defaultFares?: DefaultFaresConfig;
   /**
@@ -392,8 +395,9 @@ export interface GTFSOptions {
 }
 
 export interface DefaultFaresConfig {
-  /** ISO 4217 code (e.g. 'BOB'). Used for `price` and for `charge=*` values
-      that carry no currency. */
+  /** ISO 4217 code — three upper-case letters, e.g. 'BOB' (the code list
+      itself is not checked). Used for `price`, for `fee=no` and for
+      `charge=*` values that carry no currency. Empty = no currency known. */
   currencyType: string;
   /** Fare applied to routes without a `charge=*` tag. Omit it when the
       city-wide fare is unknown: no row is better than a false `0`. */
@@ -408,7 +412,7 @@ export interface DefaultFaresConfig {
 export interface RouteFare {
   /** Non-negative; 0 means the ride is free. */
   price: number;
-  /** ISO 4217 code. */
+  /** ISO 4217 code — three upper-case letters, e.g. 'BOB'. */
   currency: string;
   /** Defaults to `defaultFares.paymentMethod`, then 0. */
   paymentMethod?: 0 | 1;
@@ -423,7 +427,10 @@ export interface RouteFare {
  * Resolves the fare of a single route relation. `osmFare` is what
  * `charge=*` / `fee=no` on the relation say (undefined when they say
  * nothing). Return a fare to emit it, or `undefined` for "unknown" — the
- * route then gets no `fare_attributes` / `fare_rules` rows.
+ * route then gets no `fare_attributes` / `fare_rules` rows. A fare that
+ * GTFS cannot take (negative price, currency not `[A-Z]{3}`,
+ * `paymentMethod` outside 0 | 1, `transfers` outside 0 | 1 | 2 | null)
+ * throws: it is a config bug.
  */
 export type FareResolver = (
   routeFeature: GeoJSONFeature,
