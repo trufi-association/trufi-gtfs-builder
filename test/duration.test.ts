@@ -1,6 +1,10 @@
 import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
+import * as fs from 'fs';
+import * as os from 'os';
+import * as path from 'path';
 import distanceBetween from '@turf/distance';
+import { osmToGtfs } from '../src/index';
 import { stopTimesBuilder } from '../src/geojson_to_gtfs/gtfsBuilders';
 import {
   DEFAULT_VEHICLE_SPEED_KMH,
@@ -10,7 +14,7 @@ import {
   resolveTripDuration,
   stopOffsetsSeconds,
 } from '../src/geojson_to_gtfs/duration';
-import type { GeoJSONFeature, GeoJSONCoordinate } from '../src/types';
+import type { GeoJSONFeature, GeoJSONCoordinate, IOSMDataGetter } from '../src/types';
 
 /** Collect `console.warn` output while `fn` runs. */
 function withWarnings<T>(fn: () => T): { result: T; warnings: string[] } {
@@ -113,6 +117,9 @@ describe('stopOffsetsSeconds', () => {
     }
     // Sum of the rounded segments equals the total (no drift).
     assert.equal(offsets[offsets.length - 1], 1000);
+    // Rounded to nearest, not truncated: 1000 s over three equal segments
+    // is 333.3 / 666.7 → 333 / 667 (floor would give 666).
+    assert.deepEqual(stopOffsetsSeconds([0, 100, 100, 100], 1000, 40), [0, 333, 667, 1000]);
   });
 
   it('gives every stop offset 0 when the route has no length', () => {
@@ -382,5 +389,56 @@ describe('stopTimesBuilder', () => {
 
   it('the library default speed is 20 km/h', () => {
     assert.equal(DEFAULT_VEHICLE_SPEED_KMH, 20);
+  });
+});
+
+describe('osmToGtfs (end to end, in-memory OSM data)', () => {
+  /** Three nodes on the equator, one segment of ≈ 1112 m between each pair. */
+  const nodes = [100, 101, 102];
+  const geometry = EQUAL_STOPS.slice(0, 3).map(([lon, lat]) => ({ lat, lon }));
+  const segment = metersBetween(EQUAL_STOPS[0], EQUAL_STOPS[1]);
+  /** Two bus relations over the same way: one bare, one with an OSM duration. */
+  const osm: IOSMDataGetter = {
+    getRoutes: async () => ({
+      1: { type: 'relation', id: 1, tags: { type: 'route', route: 'bus', ref: 'T', name: 'Test' }, members: [{ type: 'way', ref: 10 }] },
+      2: { type: 'relation', id: 2, tags: { type: 'route', route: 'bus', ref: 'D', name: 'Timed', duration: '00:30' }, members: [{ type: 'way', ref: 10 }] },
+    }),
+    getWays: async () => ({ 10: { type: 'way', id: 10, tags: {}, nodes, geometry } }),
+    getStops: async () => ({}),
+  };
+
+  async function arrivalTimesByTrip(): Promise<Record<string, string[]>> {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'trufi-gtfs-builder-'));
+    try {
+      await osmToGtfs({
+        outputFiles: { outputDir: path.join(dir, 'out'), gtfs: true },
+        geojsonOptions: { osmDataGetter: osm },
+        // No vehicleSpeed, no tripDuration: the library defaults apply.
+        gtfsOptions: { stopsConfig: () => ({ mode: 'fakeStops' }) },
+      });
+      const [header, ...rows] = fs
+        .readFileSync(path.join(dir, 'out', 'gtfs', 'stop_times.txt'), 'utf8')
+        .trim()
+        .split('\n')
+        .map((line) => line.split(','));
+      const trip = header.indexOf('trip_id');
+      const arrival = header.indexOf('arrival_time');
+      const byTrip: Record<string, string[]> = {};
+      for (const row of rows) (byTrip[row[trip]] ??= []).push(row[arrival]);
+      return byTrip;
+    } finally {
+      fs.rmSync(dir, { recursive: true, force: true });
+    }
+  }
+
+  it('times a feed that sets no vehicleSpeed at the default 20 km/h, and honours an OSM duration', async () => {
+    const byTrip = await arrivalTimesByTrip();
+    // Relation 1: ceil(distance / speed) per segment at the wired default — the
+    // literal 20 here is on purpose: the test pins src/index.ts, not the constant.
+    const step = Math.ceil(segment / ((20 / 60 / 60) * 1000));
+    assert.deepEqual(byTrip['1'].map(hms), [0, step, 2 * step]);
+    assert.notEqual(step, Math.ceil(segment / ((50 / 60 / 60) * 1000)), 'the old default would give a different time');
+    // Relation 2: duration=00:30 spread over two equal segments.
+    assert.deepEqual(byTrip['2'], ['00:00:00', '00:15:00', '00:30:00']);
   });
 });
