@@ -42,6 +42,12 @@ npm run start:js
 - Service hours: Monday to Sunday, 6:00 AM - 10:00 PM
 - Average vehicle speed: 40 km/h
 
+### Fares
+- `charge=*` on the OSM relation wins (Mi Tren, the teleférico, Trufi 130, long-distance trufis)
+- Lines without a tag: Bs 3 (official Cercado tariff), unless `isIntermunicipal()` matches
+- `isIntermunicipal()` is a name-based rule, not a geographic one: it matches when `network` lists a municipality other than Cochabamba, when `ref` is 200-299 (the metropolitan trufi-bus series, all run by syndicates based outside the Cercado), or when the operator is named after another municipality. Those lines get no fare row — their price is unknown and `0` would mean "free"
+- Because the rule never looks at the shape, lines of Cercado-based operators that do cross into Colcapirhua, Quillacollo or Sacaba (micros E/S/L, trufis 8/14/25/46/106/150/W, Cotapachi, micro Q) still get Bs 3, and refs 200/252, whose mapped shape stays inside the Cercado, get none
+
 ### Transport Types
 - Bus
 - Share taxi (micros)

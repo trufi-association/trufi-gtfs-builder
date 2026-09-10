@@ -8,6 +8,8 @@ import geojsonToGtfs from './geojson_to_gtfs';
 import geojsonToTrufiTPData from './geojson_to_trufi_tp_data';
 import { loadCustomStops } from './utils/customStopsLoader';
 import { findNearestStop, stopIdToNumber } from './utils/spatialMatcher';
+import { parseCharge, parseChargeEntries } from './geojson_to_gtfs/fares';
+import type { ChargeEntry } from './geojson_to_gtfs/fares';
 import type {
   OsmToGtfsConfig,
   GeojsonOptions,
@@ -20,6 +22,9 @@ import type {
   FakeStopsConfig,
   OsmStopsConfig,
   CustomStopsModeConfig,
+  DefaultFaresConfig,
+  RouteFare,
+  FareResolver,
 } from './types';
 
 const defaultGeojsonOptions: GeojsonOptions = {
@@ -217,6 +222,8 @@ export {
   loadCustomStops,
   findNearestStop,
   stopIdToNumber,
+  parseCharge,
+  parseChargeEntries,
 };
 export type {
   CustomStop,
@@ -225,5 +232,18 @@ export type {
   FakeStopsConfig,
   OsmStopsConfig,
   CustomStopsModeConfig,
+  DefaultFaresConfig,
+  RouteFare,
+  FareResolver,
+  ChargeEntry,
 };
-export default { osmToGtfs: osmToGtfsFunc, OSMOverpassDownloader, OSMPBFReader, loadCustomStops, findNearestStop, stopIdToNumber };
+export default {
+  osmToGtfs: osmToGtfsFunc,
+  OSMOverpassDownloader,
+  OSMPBFReader,
+  loadCustomStops,
+  findNearestStop,
+  stopIdToNumber,
+  parseCharge,
+  parseChargeEntries,
+};

@@ -113,7 +113,7 @@ async function generateGTFS() {
       defaultCalendar: () => 'Mo-Su 06:00-23:00',
       frequencyHeadway: () => 300,
       vehicleSpeed: () => 50,
-      fakeStops: () => false,
+      stopsConfig: () => ({ mode: 'fakeStops' }),
       stopNameBuilder: (stops) => {
         if (!stops || stops.length === 0) return 'Unnamed';
         return stops.join(' and ');
@@ -207,8 +207,46 @@ dist/                        # Compiled JavaScript (generated)
 - `defaultCalendar`: Function to generate service calendar
 - `frequencyHeadway`: Function to determine frequency
 - `vehicleSpeed`: Function to calculate vehicle speed
-- `fakeStops`: Function to determine if fake stops should be created
+- `stopsConfig`: Function returning how stops are derived for each route (`fakeStops`, `osmStops` or `customStops`)
 - `stopNameBuilder`: Function to build stop names
+- `defaultFares`: Default currency and price for fares (see [Fares](#fares))
+- `fare`: Function to resolve the fare of each route (see [Fares](#fares))
+
+### Fares
+
+The builder writes GTFS-Fares V1 (`fare_attributes.txt` + `fare_rules.txt`), one fare per `route_id`. The price of a route is resolved in this order:
+
+1. **OSM.** `charge=*` on the route relation, in the wiki syntax `<amount> <ISO 4217 code>[/<unit>]` — e.g. `charge=3 BOB/person` or `3.50 BOB`. With several `;`-separated values (`3 BOB/person;1 BOB/student`) the first one is the fare; the others are kept by `parseChargeEntries()` for rider categories. Lenient variants are accepted too: `3,50 BOB`, `3BOB`, `BOB 3`, and a bare `3`, which takes `defaultFares.currencyType` (and is ignored, with a warning, when that is not set). The currency must be three upper-case letters — the ISO 4217 form; the code list itself is not checked — so currency signs, local abbreviations and lower-case codes (`$`, `Bs`, `bob`) are rejected with a warning. `fee=no` means the ride is free (price `0`); it also needs `defaultFares.currencyType`, since `currency_type` is required even for a free ride.
+2. **`fare` resolver** (optional). Called per route with the feature and the OSM fare (if any); its return value is final — return a fare to emit it, or `undefined` to emit nothing for that route.
+3. **`defaultFares.price`** (optional, only without a resolver).
+
+When nobody knows the price, the route gets **no fare row**: `fare_attributes.txt` is optional in GTFS, while a `price` of `0` states that the ride is free. There is no implicit currency either: `defaultFares` is optional, and without `currencyType` only `charge=*` values that carry their own code produce a row.
+
+A flat city-wide fare needs only the defaults — `charge=*` still wins where it is tagged:
+
+```typescript
+gtfsOptions: {
+  defaultFares: { currencyType: 'BOB', price: 3 },
+}
+```
+
+Exceptions go in a `fare` resolver, whose answer is final (`defaultFares.price` is then not applied for you):
+
+```typescript
+gtfsOptions: {
+  // Currency for `charge=*` values without an ISO code.
+  defaultFares: { currencyType: 'BOB' },
+  fare: (route, osmFare) => {
+    if (osmFare) return osmFare;                         // OSM knows best
+    if (route.properties.operator === 'Sindicato mixto de autotransporte Sacaba') {
+      return undefined;                                  // unknown → no fare row
+    }
+    return { price: 3, currency: 'BOB' };                // city default
+  },
+}
+```
+
+`payment_method` (default `0`, paid on board) and `transfers` (default `0`; `null` = unlimited) can be set in `defaultFares` or per fare. Both `defaultFares` and a resolver's fare must be valid GTFS — `price` a non-negative number, `currency` three upper-case letters, `paymentMethod` `0 | 1`, `transfers` `0 | 1 | 2 | null` — anything else throws, as a config bug. When the OSM relations that share a `route_id` (variants, directions) resolve to different fares, the OSM-tagged one wins, then the lowest price, and a warning lists the relations.
 
 ### OutputFiles
 - `outputDir`: Directory for output files

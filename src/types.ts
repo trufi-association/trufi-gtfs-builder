@@ -174,11 +174,13 @@ export interface GTFSFareAttribute {
   price: number;
   currency_type: string;
   payment_method: number;
+  /** 0 | 1 | 2 transfers, or '' (GTFS empty value = unlimited). Required column. */
+  transfers: number | '';
 }
 
 export interface GTFSFareRule {
   fare_id: number;
-  route_id: number;
+  route_id: string | number;
 }
 
 export interface GTFSFeedInfo {
@@ -224,7 +226,11 @@ export interface GTFSBuilders {
   agencyBuilder: (features: GeoJSONFeature[][], defaultAgencyInfo: Partial<GTFSAgency>) => GTFSAgency[];
   calendarBuilder: (features: GeoJSONFeature[][], defaultCalendar: (feature: GeoJSONFeature) => string) => GTFSCalendar[];
   routeBuilder: (features: GeoJSONFeature[][], options?: { routePerRelation?: boolean }) => GTFSRoute[];
-  fareBuilder: (features: GeoJSONFeature[][], defaultFares: DefaultFaresConfig) => { attributes: GTFSFareAttribute[]; rules: GTFSFareRule[] };
+  fareBuilder: (
+    features: GeoJSONFeature[][],
+    defaultFares: DefaultFaresConfig,
+    fareResolver?: FareResolver
+  ) => { attributes: GTFSFareAttribute[]; rules: GTFSFareRule[] };
   feedBuilder: (feed: FeedConfig) => GTFSFeedInfo[];
   tripBuilder: (
     features: GeoJSONFeature[][],
@@ -335,7 +341,24 @@ export interface GTFSOptions {
   frequencyHeadway: (feature: GeoJSONFeature) => number;
   vehicleSpeed: (feature: GeoJSONFeature) => number;
   stopNameBuilder: (stops?: string[]) => string;
+  /**
+   * Fares V1 defaults: the currency assumed for `charge=*` values without
+   * an ISO code, for `fee=no` and for `price`; the price used when OSM has
+   * no `charge=*`. With no `price` and no OSM fare a route gets NO fare
+   * row. There is no implicit currency: without `currencyType`, a bare
+   * `charge` amount or a `fee=no` is ignored with a warning — only values
+   * that carry their own ISO code become rows.
+   * @default none
+   */
   defaultFares?: DefaultFaresConfig;
+  /**
+   * Per-route fare override. Receives the route feature and the fare
+   * derived from OSM (`charge=*` / `fee=no`), if any; its return value is
+   * final: a `RouteFare` to emit, or `undefined` to emit no fare for that
+   * route. When set, `defaultFares.price` is not applied automatically —
+   * return it yourself where it holds.
+   */
+  fare?: FareResolver;
   feed?: FeedConfig;
   /**
    * Per-route stop generation. Required — no implicit default. Receives
@@ -372,8 +395,47 @@ export interface GTFSOptions {
 }
 
 export interface DefaultFaresConfig {
+  /** ISO 4217 code — three upper-case letters, e.g. 'BOB' (the code list
+      itself is not checked). Used for `price`, for `fee=no` and for
+      `charge=*` values that carry no currency. Empty = no currency known. */
   currencyType: string;
+  /** Fare applied to routes without a `charge=*` tag. Omit it when the
+      city-wide fare is unknown: no row is better than a false `0`. */
+  price?: number;
+  /** GTFS `payment_method`: 0 = paid on board (default), 1 = before boarding. */
+  paymentMethod?: 0 | 1;
+  /** GTFS `transfers`: 0 (default), 1, 2, or `null` for unlimited. */
+  transfers?: 0 | 1 | 2 | null;
 }
+
+/** The fare of one route, as returned by OSM parsing or a `fare` resolver. */
+export interface RouteFare {
+  /** Non-negative; 0 means the ride is free. */
+  price: number;
+  /** ISO 4217 code — three upper-case letters, e.g. 'BOB'. */
+  currency: string;
+  /** Defaults to `defaultFares.paymentMethod`, then 0. */
+  paymentMethod?: 0 | 1;
+  /** Defaults to `defaultFares.transfers`, then 0. `null` = unlimited. */
+  transfers?: 0 | 1 | 2 | null;
+  /** Where the fare came from ('osm' when parsed from `charge=*`). Used to
+      prefer OSM-sourced fares when a route's variants disagree. */
+  source?: string;
+}
+
+/**
+ * Resolves the fare of a single route relation. `osmFare` is what
+ * `charge=*` / `fee=no` on the relation say (undefined when they say
+ * nothing). Return a fare to emit it, or `undefined` for "unknown" — the
+ * route then gets no `fare_attributes` / `fare_rules` rows. A fare that
+ * GTFS cannot take (negative price, currency not `[A-Z]{3}`,
+ * `paymentMethod` outside 0 | 1, `transfers` outside 0 | 1 | 2 | null)
+ * throws: it is a config bug.
+ */
+export type FareResolver = (
+  routeFeature: GeoJSONFeature,
+  osmFare: RouteFare | undefined,
+) => RouteFare | undefined;
 
 export interface FeedConfig {
   publisherUrl: string;
