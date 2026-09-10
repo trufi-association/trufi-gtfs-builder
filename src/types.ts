@@ -251,7 +251,7 @@ export interface GTFSBuilders {
   stopTimesBuilder: (
     features: GeoJSONFeature[][],
     vehicleSpeed: (feature: GeoJSONFeature) => number,
-    gtfsConfig?: { useFrequencies?: boolean }
+    gtfsConfig?: { useFrequencies?: boolean; tripDuration?: TripDurationResolver }
   ) => GTFSStopTime[];
 }
 
@@ -339,7 +339,24 @@ export interface GTFSOptions {
   cityName?: string;
   defaultCalendar: (feature: GeoJSONFeature) => string;
   frequencyHeadway: (feature: GeoJSONFeature) => number;
+  /**
+   * Average speed, in km/h, used to time the stops of a route that has no
+   * usable running time (no `duration=*` on the OSM relation, no
+   * `tripDuration` answer). Called once per route with its feature, so a
+   * city can vary it by `properties.route` (bus vs light_rail vs
+   * aerialway), by `ref`, by operator… Must return a positive number.
+   * @default () => 20 — a bus in mixed urban traffic
+   */
   vehicleSpeed: (feature: GeoJSONFeature) => number;
+  /**
+   * Per-route running time override. Receives the route feature, the
+   * running time parsed from the relation's OSM `duration=*` tag (seconds;
+   * `undefined` when absent or malformed) and the route length in meters.
+   * Its answer is final: the trip's end-to-end running time in seconds, or
+   * `undefined` to time the trip from `vehicleSpeed`. Without a resolver
+   * the OSM duration is used whenever it is present and plausible.
+   */
+  tripDuration?: TripDurationResolver;
   stopNameBuilder: (stops?: string[]) => string;
   /**
    * Fares V1 defaults: the currency assumed for `charge=*` values without
@@ -436,6 +453,23 @@ export type FareResolver = (
   routeFeature: GeoJSONFeature,
   osmFare: RouteFare | undefined,
 ) => RouteFare | undefined;
+
+/**
+ * Resolves the running time of a single route relation. `osmDurationSeconds`
+ * is what `duration=*` on the relation says (undefined when absent or
+ * malformed); `routeLengthMeters` is the sum of straight-line distances
+ * between consecutive stops. Return seconds to use them, or `undefined` to
+ * fall back to `vehicleSpeed`. Anything that is not a positive finite
+ * number throws: it is a config bug. A value that implies an average speed
+ * outside the plausible range for the mode (below 3 km/h or above the
+ * gtfs-validator threshold, e.g. 150 km/h for buses) is ignored with a
+ * warning.
+ */
+export type TripDurationResolver = (
+  routeFeature: GeoJSONFeature,
+  osmDurationSeconds: number | undefined,
+  routeLengthMeters: number,
+) => number | undefined;
 
 export interface FeedConfig {
   publisherUrl: string;
