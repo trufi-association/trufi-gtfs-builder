@@ -9,6 +9,7 @@ import geojsonToTrufiTPData from './geojson_to_trufi_tp_data';
 import { loadCustomStops } from './utils/customStopsLoader';
 import { findNearestStop, stopIdToNumber } from './utils/spatialMatcher';
 import { parseCharge, parseChargeEntries } from './geojson_to_gtfs/fares';
+import { parseOsmDuration, DEFAULT_VEHICLE_SPEED_KMH } from './geojson_to_gtfs/duration';
 import type { ChargeEntry } from './geojson_to_gtfs/fares';
 import type {
   OsmToGtfsConfig,
@@ -25,6 +26,7 @@ import type {
   DefaultFaresConfig,
   RouteFare,
   FareResolver,
+  TripDurationResolver,
 } from './types';
 
 const defaultGeojsonOptions: GeojsonOptions = {
@@ -42,7 +44,7 @@ const defaultGtfsOptions: Partial<GTFSOptions> = {
   agencyUrl: 'https://www.example.com/',
   defaultCalendar: () => 'Mo-Su 06:00-23:00',
   frequencyHeadway: () => 300,
-  vehicleSpeed: () => 50,
+  vehicleSpeed: () => DEFAULT_VEHICLE_SPEED_KMH,
   stopNameBuilder: (stops) => {
     if (!stops) {
       stops = ['unnamed'];
@@ -224,6 +226,8 @@ export {
   stopIdToNumber,
   parseCharge,
   parseChargeEntries,
+  parseOsmDuration,
+  DEFAULT_VEHICLE_SPEED_KMH,
 };
 export type {
   CustomStop,
@@ -236,6 +240,7 @@ export type {
   RouteFare,
   FareResolver,
   ChargeEntry,
+  TripDurationResolver,
 };
 export default {
   osmToGtfs: osmToGtfsFunc,
@@ -246,4 +251,6 @@ export default {
   stopIdToNumber,
   parseCharge,
   parseChargeEntries,
+  parseOsmDuration,
+  DEFAULT_VEHICLE_SPEED_KMH,
 };

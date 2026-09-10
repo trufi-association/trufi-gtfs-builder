@@ -112,7 +112,7 @@ async function generateGTFS() {
       agencyUrl: 'https://www.example.com/',
       defaultCalendar: () => 'Mo-Su 06:00-23:00',
       frequencyHeadway: () => 300,
-      vehicleSpeed: () => 50,
+      vehicleSpeed: () => 20, // km/h, for routes without an OSM duration=*
       stopsConfig: () => ({ mode: 'fakeStops' }),
       stopNameBuilder: (stops) => {
         if (!stops || stops.length === 0) return 'Unnamed';
@@ -206,7 +206,8 @@ dist/                        # Compiled JavaScript (generated)
 - `agencyUrl`: URL of the transit agency
 - `defaultCalendar`: Function to generate service calendar
 - `frequencyHeadway`: Function to determine frequency
-- `vehicleSpeed`: Function to calculate vehicle speed
+- `vehicleSpeed`: Function returning the average speed (km/h) of each route, used when its OSM relation has no `duration=*` (see [Travel times](#travel-times))
+- `tripDuration`: Function to override the running time of each route (see [Travel times](#travel-times))
 - `stopsConfig`: Function returning how stops are derived for each route (`fakeStops`, `osmStops` or `customStops`)
 - `stopNameBuilder`: Function to build stop names
 - `defaultFares`: Default currency and price for fares (see [Fares](#fares))
@@ -247,6 +248,32 @@ gtfsOptions: {
 ```
 
 `payment_method` (default `0`, paid on board) and `transfers` (default `0`; `null` = unlimited) can be set in `defaultFares` or per fare. Both `defaultFares` and a resolver's fare must be valid GTFS — `price` a non-negative number, `currency` three upper-case letters, `paymentMethod` `0 | 1`, `transfers` `0 | 1 | 2 | null` — anything else throws, as a config bug. When the OSM relations that share a `route_id` (variants, directions) resolve to different fares, the OSM-tagged one wins, then the lowest price, and a warning lists the relations.
+
+### Travel times
+
+`stop_times.txt` carries estimates (`timepoint=0`); the builder has no timetable. The running time of each route is decided in this order:
+
+1. **OSM.** `duration=*` on the route relation — "the running time of the bus route as stated in official documents" — in the wiki forms `hh:mm` (recommended), `hh:mm:ss`, plain minutes (`45`) or ISO 8601 (`PT45M`). The time is spread over the stops in proportion to the straight-line distance between them, so the last stop lands exactly on the tagged duration. A malformed value is ignored with a warning, and so is one that implies an implausible average speed for the mode — below 3 km/h, or above the gtfs-validator `fast_travel_between_consecutive_stops` threshold (150 km/h for buses, 100 for light rail, 50 for aerial lifts): Cochabamba's teleférico is tagged `duration=02:00` for a 760 m ride.
+2. **`tripDuration` resolver** (optional). Called per route with the feature, the OSM duration in seconds (`undefined` when absent or malformed) and the route length in meters. Return the running time in seconds to use it, or `undefined` to fall back to the speed. Use it to plug in measured running times, or to accept or reject what OSM says per route. Anything other than a positive number or `undefined` throws, as a config bug.
+3. **`vehicleSpeed`** (km/h, per route). Every segment between consecutive stops takes `distance / speed`, rounded up to whole seconds. The default is `() => 20`, a bus in mixed urban traffic (Cochabamba's traffic authority measured 10–11 km/h in congestion and calls 25 km/h satisfactory). A tram or a cable car does not move like a minibus, so vary it by route type — the callback receives the route feature:
+
+```ts
+gtfsOptions: {
+  vehicleSpeed: (route) => {
+    switch (route.properties.route) {
+      case 'light_rail': return 32;   // what the line's own OSM duration implies
+      default: return 20;             // bus, minibus, share_taxi
+    }
+  },
+  // Optional: trust OSM only for rail, use measured times for two lines.
+  tripDuration: (route, osmSeconds) => {
+    if (route.properties.route === 'light_rail') return osmSeconds;
+    return MEASURED_RUNNING_TIME[route.properties.ref];   // undefined → vehicleSpeed
+  },
+}
+```
+
+Only the planners that read `stop_times` (OpenTripPlanner, MOTIS/Transitous, Google) see these times; `frequencies.txt` (`frequencyHeadway`) is not affected.
 
 ### OutputFiles
 - `outputDir`: Directory for output files

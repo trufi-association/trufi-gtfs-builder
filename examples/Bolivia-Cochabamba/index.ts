@@ -113,7 +113,29 @@ async function main() {
         cityName: 'cochabamba',
         defaultCalendar: () => 'Mo-Su 06:00-22:00',
         frequencyHeadway: () => 300, // 5 minutes
-        vehicleSpeed: () => 40, // 40 km/h average speed in city
+        // Travel times. `stop_times` are estimates (timepoint=0). Where the
+        // OSM relation carries `duration=*` — Mi Tren's three lines do — the
+        // builder spreads that running time over the stops; the speed below
+        // applies to everything else:
+        //  - bus / minibus / share_taxi (micros and trufis): 20 km/h. The
+        //    municipal Dirección de Tráfico y Vialidad measured 10–11 km/h in
+        //    congestion and calls 25 km/h "satisfactory" (Opinión, 2017-03-09);
+        //    the former 40 km/h placeholder gave 17-minute estimates for rides
+        //    that take an hour through La Cancha (#9).
+        //  - light_rail (Mi Tren): 32 km/h, what its own `duration=00:51` for
+        //    the 27 km Línea Verde implies — only used if a line lacks the tag.
+        //  - aerialway (Teleférico): unchanged. Its OSM `duration=02:00` (two
+        //    hours for 760 m) fails the plausibility check and is ignored.
+        vehicleSpeed: (route) => {
+          switch (route.properties.route) {
+            case 'light_rail':
+              return 32;
+            case 'aerialway':
+              return 40;
+            default:
+              return 20;
+          }
+        },
         // Cochabamba: most minibus lines have no physical stops mapped
         // in OSM, so they get `fakeStops` (a stop per shape node, then
         // segment-merge + gap-fill collapse them to `fakeStopsGapThreshold`
