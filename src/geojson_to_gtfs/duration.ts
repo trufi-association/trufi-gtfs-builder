@@ -62,16 +62,15 @@ const ISO_8601 = /^P(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?)?$/;
 /**
  * Parse an OSM `duration=*` value into seconds.
  *
- * Accepts the wiki forms `hh:mm`, `h:mm`, `hh:mm:ss`, plain minutes (`32`,
- * also as a number — PBF readers turn numeric tags into numbers) and ISO
- * 8601 (`PT45M`, `PT1H30M`, `P1DT2H`). Returns `undefined` for anything
+ * Accepts the wiki forms `hh:mm`, `h:mm`, `hh:mm:ss`, plain minutes (`32`)
+ * and ISO 8601 (`PT45M`, `PT1H30M`, `P1DT2H`). Only strings are parsed:
+ * both readers deliver every tag value as a string (`osm-pbf-parser` takes
+ * them from the block's string table, Overpass JSON has no other type), so
+ * a non-string here is not an OSM tag. Returns `undefined` for anything
  * else: empty values, out-of-range fields (`00:60`), negative numbers,
  * units (`30 min`, `1h30`), `;`-separated lists.
  */
 export function parseOsmDuration(value: unknown): number | undefined {
-  if (typeof value === 'number') {
-    return Number.isFinite(value) && value >= 0 ? Math.round(value * 60) : undefined;
-  }
   if (typeof value !== 'string') return undefined;
   const text = value.trim();
   if (text === '') return undefined;
@@ -138,7 +137,7 @@ export function resolveTripDuration(
     if (osmSeconds === undefined) {
       console.warn(
         `duration="${raw}" on ${relationUrl(feature)} is not a valid OSM duration ` +
-          `(expected hh:mm, hh:mm:ss or minutes); timing the trip from vehicleSpeed instead`,
+          `(expected hh:mm, hh:mm:ss, minutes or ISO 8601); timing the trip from vehicleSpeed instead`,
       );
     } else if (osmSeconds <= 0) {
       console.warn(

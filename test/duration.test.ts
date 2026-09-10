@@ -71,11 +71,10 @@ describe('parseOsmDuration', () => {
     assert.equal(parseOsmDuration(' 00:51 '), 51 * 60);
   });
 
-  it('reads a bare integer as minutes, also when the PBF reader made it a number', () => {
+  it('reads a bare integer as minutes', () => {
     assert.equal(parseOsmDuration('32'), 32 * 60);
     assert.equal(parseOsmDuration('2'), 120);
-    assert.equal(parseOsmDuration(45), 45 * 60);
-    assert.equal(parseOsmDuration(0), 0);
+    assert.equal(parseOsmDuration('0'), 0);
   });
 
   it('accepts ISO 8601 durations', () => {
@@ -86,10 +85,12 @@ describe('parseOsmDuration', () => {
     assert.equal(parseOsmDuration('PT90S'), 90);
   });
 
-  it('rejects malformed values', () => {
+  it('rejects malformed values, and anything that is not a string', () => {
+    // OSM readers (PBF and Overpass) deliver every tag as a string; a number
+    // can only come from a hand-built feature, and is not parsed.
     for (const bad of [
       '', ' ', 'abc', '00:60', '1:5', '12:', ':30', '-5', '1.5', '30 min', '1h30', '00:45;01:00',
-      '02:00:00:00', 'P', 'PT', 'PT1.5H', null, undefined, NaN, -1, Infinity, {}, [],
+      '02:00:00:00', 'P', 'PT', 'PT1.5H', null, undefined, 0, 45, 1.5, NaN, -1, Infinity, {}, [],
     ]) {
       assert.equal(parseOsmDuration(bad), undefined, `should reject ${JSON.stringify(bad)}`);
     }
