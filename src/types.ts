@@ -345,7 +345,7 @@ export interface GTFSOptions {
    * `tripDuration` answer). Called once per route with its feature, so a
    * city can vary it by `properties.route` (bus vs light_rail vs
    * aerialway), by `ref`, by operator… Must return a positive number.
-   * @default () => 20 — a bus in mixed urban traffic
+   * @default () => 50 — a placeholder; set the real speed(s) of your city
    */
   vehicleSpeed: (feature: GeoJSONFeature) => number;
   /**

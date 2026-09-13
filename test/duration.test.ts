@@ -387,8 +387,8 @@ describe('stopTimesBuilder', () => {
     }
   });
 
-  it('the library default speed is 20 km/h', () => {
-    assert.equal(DEFAULT_VEHICLE_SPEED_KMH, 20);
+  it('the library default speed is still 50 km/h', () => {
+    assert.equal(DEFAULT_VEHICLE_SPEED_KMH, 50);
   });
 });
 
@@ -431,13 +431,13 @@ describe('osmToGtfs (end to end, in-memory OSM data)', () => {
     }
   }
 
-  it('times a feed that sets no vehicleSpeed at the default 20 km/h, and honours an OSM duration', async () => {
+  it('times a feed that sets no vehicleSpeed at the unchanged default of 50 km/h, and honours an OSM duration', async () => {
     const byTrip = await arrivalTimesByTrip();
     // Relation 1: ceil(distance / speed) per segment at the wired default — the
-    // literal 20 here is on purpose: the test pins src/index.ts, not the constant.
-    const step = Math.ceil(segment / ((20 / 60 / 60) * 1000));
+    // literal 50 here is on purpose: the test pins src/index.ts, not the constant.
+    const step = Math.ceil(segment / ((50 / 60 / 60) * 1000));
     assert.deepEqual(byTrip['1'].map(hms), [0, step, 2 * step]);
-    assert.notEqual(step, Math.ceil(segment / ((50 / 60 / 60) * 1000)), 'the old default would give a different time');
+    assert.notEqual(step, Math.ceil(segment / ((20 / 60 / 60) * 1000)), 'a different default would give a different time');
     // Relation 2: duration=00:30 spread over two equal segments.
     assert.deepEqual(byTrip['2'], ['00:00:00', '00:15:00', '00:30:00']);
   });

@@ -14,12 +14,11 @@ import type { GeoJSONFeature, TripDurationResolver } from '../types';
 
 /**
  * Speed applied when a route has no usable duration and the config does not
- * set `vehicleSpeed`: 20 km/h, the commercial speed of a bus in mixed
- * traffic (Cochabamba's Dirección de Tráfico y Vialidad measured 10–11 km/h
- * in congestion and calls 25 km/h satisfactory). Rail, ferries and cable
- * cars should set their own value per route type (see README).
+ * set `vehicleSpeed`: 50 km/h, the value the library has always used. It is
+ * a placeholder, not a measurement — every city is expected to set its own
+ * speed(s) per route type in its config (see README, "Travel times").
  */
-export const DEFAULT_VEHICLE_SPEED_KMH = 20;
+export const DEFAULT_VEHICLE_SPEED_KMH = 50;
 
 /**
  * A running time whose implied average speed falls below this is treated as
