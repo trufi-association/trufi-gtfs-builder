@@ -40,7 +40,7 @@ npm run start:js
 ### Agency Settings
 - Timezone: `America/La_Paz`
 - Service hours: Monday to Sunday, 6:00 AM - 10:00 PM
-- Average vehicle speed: 40 km/h
+- Average vehicle speed: 40 km/h (routes whose OSM relation carries a plausible `duration=*` — Mi Tren's three lines — take that running time instead)
 
 ### Fares
 - `charge=*` on the OSM relation wins (Mi Tren, the teleférico, Trufi 130, long-distance trufis)

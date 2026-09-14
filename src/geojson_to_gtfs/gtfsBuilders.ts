@@ -4,6 +4,7 @@ import { loadCustomStops } from '../utils/customStopsLoader';
 import { findNearestStop, stopIdToNumber, distanceBetweenCoords, isPointOnRightSide } from '../utils/spatialMatcher';
 import { expandSchedule, timeToSeconds, secondsToTime } from './scheduleExpander';
 import { describeFare, fareKey, normalizeDefaultFares, pickRouteFare, resolveRouteFare } from './fares';
+import { resolveTripDuration, stopOffsetsSeconds } from './duration';
 import type { ResolvedFare } from './fares';
 import type {
   GeoJSONFeature,
@@ -25,6 +26,7 @@ import type {
   CustomStop,
   CustomStopsModeConfig,
   StopsConfigResolver,
+  TripDurationResolver,
 } from '../types';
 
 const CSS_COLORS: Record<string, string> = {
@@ -970,10 +972,24 @@ export function shapesBuilder(features: GeoJSONFeature[][]): GTFSShape[] {
   return shapes;
 }
 
+/**
+ * Straight-line distance, in meters, from each stop of a trip to the
+ * previous one (0 for the first stop) — the metric `stop_times` were always
+ * derived from, and the one gtfs-validator uses for travel speeds.
+ */
+function stopSegmentsMeters(coordinates: GeoJSONCoordinate[]): number[] {
+  const segments: number[] = new Array(coordinates.length);
+  for (let i = 0; i < coordinates.length; i++) {
+    segments[i] =
+      i === 0 ? 0 : distanceBetween(coordinates[i - 1], coordinates[i], { units: 'kilometers' }) * 1000;
+  }
+  return segments;
+}
+
 export function stopTimesBuilder(
   features: GeoJSONFeature[][],
   vehicleSpeed: (feature: GeoJSONFeature) => number,
-  gtfsConfig?: { useFrequencies?: boolean }
+  gtfsConfig?: { useFrequencies?: boolean; tripDuration?: TripDurationResolver }
 ): GTFSStopTime[] {
   const stopTimes: GTFSStopTime[] = [];
   const useFrequencies = gtfsConfig?.useFrequencies ?? true;
@@ -981,23 +997,30 @@ export function stopTimesBuilder(
   for (let feature of features) {
     const mainFeature = feature[0];
     if (!mainFeature.gtfs || !mainFeature.gtfs.filteredStops) continue;
-    const speed = (vehicleSpeed(mainFeature) / 60 / 60) * 1000;
+    const { nodes, coordinates } = mainFeature.gtfs.filteredStops;
+
+    // Running time of the trip: OSM `duration=*` / `tripDuration` resolver
+    // spread over the stops in proportion to distance, else `vehicleSpeed`.
+    const segments = stopSegmentsMeters(coordinates);
+    const lengthMeters = segments.reduce((sum, m) => sum + m, 0);
+    const duration = resolveTripDuration(mainFeature, lengthMeters, gtfsConfig?.tripDuration);
+    let speedKmh = 0;
+    if (!duration) {
+      speedKmh = vehicleSpeed(mainFeature);
+      if (typeof speedKmh !== 'number' || !Number.isFinite(speedKmh) || speedKmh <= 0) {
+        throw new Error(
+          `vehicleSpeed returned ${JSON.stringify(speedKmh)} for ` +
+            `https://www.osm.org/relation/${mainFeature.properties.id}; it must return km/h (a positive number)`,
+        );
+      }
+    }
+    const offsets = stopOffsetsSeconds(segments, duration?.seconds, speedKmh);
 
     for (const service of mainFeature.gtfs.services) {
       if (useFrequencies) {
         // FREQUENCY-BASED: Relative times from 00:00:00
-        let previousCoords: number[] | undefined;
-        let distance = 0;
-        let seconds = 0;
-        const { nodes, coordinates } = mainFeature.gtfs.filteredStops;
         for (const index in nodes) {
-          const coords = coordinates[index];
-          if (previousCoords) {
-            distance = distanceBetween(previousCoords, coords, { units: 'kilometers' });
-            seconds += Math.ceil((distance * 1000) / speed);
-          }
-          previousCoords = coords;
-          const arrival_time = secondsToTime(seconds);
+          const arrival_time = secondsToTime(offsets[index]);
           stopTimes.push({
             trip_id: service.trip_id!,
             stop_sequence: index,
@@ -1015,33 +1038,11 @@ export function stopTimesBuilder(
           continue;
         }
 
-        // Calculate travel times between stops (same for all trips)
-        const travelTimesSeconds: number[] = [];
-        let previousCoords: number[] | undefined;
-        const { nodes, coordinates } = mainFeature.gtfs.filteredStops;
-
-        for (const index in nodes) {
-          if (previousCoords) {
-            const coords = coordinates[index];
-            const distance = distanceBetween(previousCoords, coords, { units: 'kilometers' });
-            const travelSeconds = Math.ceil((distance * 1000) / speed);
-            travelTimesSeconds.push(travelSeconds);
-          } else {
-            travelTimesSeconds.push(0); // First stop has 0 travel time
-          }
-          previousCoords = coordinates[index];
-        }
-
-        // Generate stop times for each expanded trip
         for (const expandedTrip of expandedTrips) {
           const departureSecs = timeToSeconds(expandedTrip.departureTime.substring(0, 5));
-          let cumulativeSeconds = 0;
 
           for (const index in nodes) {
-            cumulativeSeconds += travelTimesSeconds[index];
-            const stopArrivalSecs = departureSecs + cumulativeSeconds;
-            const arrival_time = secondsToTime(stopArrivalSecs);
-
+            const arrival_time = secondsToTime(departureSecs + offsets[index]);
             stopTimes.push({
               trip_id: expandedTrip.trip_id,
               stop_sequence: index,

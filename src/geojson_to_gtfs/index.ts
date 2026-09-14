@@ -35,6 +35,7 @@ function geojsonToGtfs(
   const builderConfig = {
     useFrequencies: gtfsConfig.useFrequencies ?? true,
     frequencyHeadway: gtfsConfig.frequencyHeadway,
+    tripDuration: gtfsConfig.tripDuration,
   };
 
   const stopsConfig: StopsConfigResolver = gtfsConfig.stopsConfig;
