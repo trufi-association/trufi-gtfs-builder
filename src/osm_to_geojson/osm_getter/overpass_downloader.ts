@@ -26,9 +26,11 @@ export default class OSMOverpassDownloader implements IOSMDataGetter {
         const result = await this._doRequest(query);
         return result;
       } catch (err: any) {
-        if (attempt < retries && (err.message?.includes('429') || err.message?.includes('504'))) {
+        // 429 = rate limited, 502 = "server is currently at capacity" (the public
+          // instance answers that under load, not 503), 504 = query timed out.
+          if (attempt < retries && (err.message?.includes('429') || err.message?.includes('502') || err.message?.includes('504'))) {
           const waitTime = attempt * 15000;
-          console.log(`Overpass API rate limited (429). Waiting ${waitTime / 1000}s before retry ${attempt + 1}/${retries}...`);
+          console.log(`Overpass API busy (${err.message?.match(/\b(429|502|504)\b/)?.[1] ?? 'error'}). Waiting ${waitTime / 1000}s before retry ${attempt + 1}/${retries}...`);
           await new Promise(r => setTimeout(r, waitTime));
         } else {
           throw err;
