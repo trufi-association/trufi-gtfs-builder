@@ -28,6 +28,7 @@ import type {
   StopsConfigResolver,
   TripDurationResolver,
 } from '../types';
+import { attributionsBuilder } from './license';
 
 const CSS_COLORS: Record<string, string> = {
   aliceblue: 'F0F8FF', antiquewhite: 'FAEBD7', aqua: '00FFFF', aquamarine: '7FFFD4',
@@ -1065,6 +1066,7 @@ export default {
   routeBuilder,
   fareBuilder,
   feedBuilder,
+  attributionsBuilder,
   tripBuilder,
   frequenciesBuilder,
   stopsBuilder,

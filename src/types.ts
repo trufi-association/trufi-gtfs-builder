@@ -195,6 +195,32 @@ export interface GTFSFeedInfo {
   feed_id: string;
 }
 
+/**
+ * One row of `attributions.txt` — the fields of the GTFS reference
+ * (https://gtfs.org/documentation/schedule/reference/#attributionstxt).
+ * `organization_name` is required; at least one of `is_producer`,
+ * `is_operator`, `is_authority` must be `1`; at most one of `agency_id`,
+ * `route_id`, `trip_id` may be set (none = the whole dataset).
+ */
+export interface GTFSAttribution {
+  /** Unique within the file. `osm` is reserved for the OpenStreetMap row. */
+  attribution_id?: string;
+  agency_id?: string | number;
+  route_id?: string | number;
+  trip_id?: string | number;
+  organization_name: string;
+  is_producer?: 0 | 1;
+  is_operator?: 0 | 1;
+  is_authority?: 0 | 1;
+  /** Fully qualified: `http://` or `https://`. */
+  attribution_url?: string;
+  attribution_email?: string;
+  attribution_phone?: string;
+}
+
+/** The licenses the builder can write in full as a `LICENSE` file. */
+export type FeedLicense = 'ODbL-1.0';
+
 export interface GTFSData {
   agency: GTFSAgency[];
   calendar: GTFSCalendar[];
@@ -207,6 +233,7 @@ export interface GTFSData {
   fare_attributes: GTFSFareAttribute[];
   fare_rules: GTFSFareRule[];
   feed_info: GTFSFeedInfo[];
+  attributions: GTFSAttribution[];
 }
 
 export interface GeojsonToGtfsResult {
@@ -232,6 +259,7 @@ export interface GTFSBuilders {
     fareResolver?: FareResolver
   ) => { attributes: GTFSFareAttribute[]; rules: GTFSFareRule[] };
   feedBuilder: (feed: FeedConfig) => GTFSFeedInfo[];
+  attributionsBuilder: (features: GeoJSONFeature[][], attributions?: GTFSAttribution[]) => GTFSAttribution[];
   tripBuilder: (
     features: GeoJSONFeature[][],
     gtfsConfig?: { useFrequencies?: boolean; frequencyHeadway?: (feature: GeoJSONFeature) => number }
@@ -377,6 +405,27 @@ export interface GTFSOptions {
    */
   fare?: FareResolver;
   feed?: FeedConfig;
+  /**
+   * Extra rows of `attributions.txt`, e.g. the organisation that publishes
+   * the feed (`is_producer`) or the operator of a route (`is_operator` +
+   * `route_id`). The OpenStreetMap contributors row (`attribution_id`
+   * `osm`, `is_producer` 1) is always written first and cannot be removed:
+   * every feed this tool builds is derived from OSM, whose license requires
+   * the attribution. Rows are checked against the GTFS reference; a bad
+   * one throws, as a config bug.
+   * @default []
+   */
+  attributions?: GTFSAttribution[];
+  /**
+   * License written in full as a `LICENSE` file next to the GTFS .txt
+   * files, and therefore inside the zips. `false` writes no LICENSE file —
+   * the OSM attribution is still written, the ODbL requires it however
+   * the derivative is licensed; it is then up to the publisher to state
+   * the feed's license elsewhere. See "Licensing of the output" in the
+   * README.
+   * @default 'ODbL-1.0'
+   */
+  license?: FeedLicense | false;
   /**
    * Per-route stop generation. Required — no implicit default. Receives
    * the route feature and returns the `StopsConfig` to apply for that

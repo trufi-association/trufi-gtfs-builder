@@ -21,6 +21,7 @@ function geojsonToGtfs(
     routeBuilder,
     fareBuilder,
     feedBuilder,
+    attributionsBuilder,
     tripBuilder,
     frequenciesBuilder,
     stopsBuilder,
@@ -68,6 +69,8 @@ function geojsonToGtfs(
       id: '1',
     },
   );
+  // OpenStreetMap contributors first, then whatever the city config adds.
+  const attributions = attributionsBuilder(featuresArray, gtfsConfig.attributions);
   const trips = tripBuilder(featuresArray, builderConfig);
   const frequencies = frequenciesBuilder(
     featuresArray,
@@ -232,6 +235,7 @@ function geojsonToGtfs(
     fare_attributes: fare.attributes,
     fare_rules: fare.rules,
     feed_info: feeds,
+    attributions: attributions,
   };
 }
 
