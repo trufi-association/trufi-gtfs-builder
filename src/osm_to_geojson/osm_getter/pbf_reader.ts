@@ -3,6 +3,11 @@ import * as through from 'through2';
 const parseOSM = require('osm-pbf-parser');
 import type { OSMRelation, OSMWay, OSMNode, IOSMDataGetter } from '../../types';
 
+/** OSM stores coordinates as nanodegrees; the public API prints them with 7 decimals. */
+export function roundCoordinate(value: number): number {
+  return Math.round(value * 1e7) / 1e7;
+}
+
 export default class OSMPBFReader implements IOSMDataGetter {
   pbfPath: string;
 
@@ -47,8 +52,11 @@ export default class OSMPBFReader implements IOSMDataGetter {
               }
               way.nodes.push(node.id);
               way.geometry.push({
-                lat: node.lat,
-                lon: node.lon,
+                // osm-pbf-parser divides nanodegrees by 1e9, which leaves float noise
+                // (-16.404259500000002). OSM coordinates have 7 decimals; round to them so
+                // a PBF run writes the same bytes as an Overpass run of the same data.
+                lat: roundCoordinate(node.lat),
+                lon: roundCoordinate(node.lon),
               });
             }
           }
