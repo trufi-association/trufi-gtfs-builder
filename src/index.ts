@@ -3,6 +3,16 @@ import * as fs from 'fs';
 import archiver from 'archiver';
 import gtfsDefaultBuilders from './geojson_to_gtfs/gtfsBuilders';
 import writeGtfs from './geojson_to_gtfs/writeGtfs';
+import {
+  attributionsBuilder,
+  resolveLicense,
+  validateAttributions,
+  writeLicense,
+  DEFAULT_LICENSE,
+  OSM_ATTRIBUTION,
+} from './geojson_to_gtfs/license';
+import { ODBL_1_0 } from './geojson_to_gtfs/odbl-1.0';
+import { licenseSection } from './osm_to_geojson/readme_generator';
 import { osmToGeojson, OSMOverpassDownloader, OSMPBFReader } from './osm_to_geojson';
 import geojsonToGtfs from './geojson_to_gtfs';
 import geojsonToTrufiTPData from './geojson_to_trufi_tp_data';
@@ -27,6 +37,9 @@ import type {
   RouteFare,
   FareResolver,
   TripDurationResolver,
+  GTFSAttribution,
+  FeedLicense,
+  GTFSData,
 } from './types';
 
 const defaultGeojsonOptions: GeojsonOptions = {
@@ -45,6 +58,7 @@ const defaultGtfsOptions: Partial<GTFSOptions> = {
   defaultCalendar: () => 'Mo-Su 06:00-23:00',
   frequencyHeadway: () => 300,
   vehicleSpeed: () => DEFAULT_VEHICLE_SPEED_KMH,
+  license: DEFAULT_LICENSE,
   stopNameBuilder: (stops) => {
     if (!stops) {
       stops = ['unnamed'];
@@ -77,6 +91,17 @@ async function osmToGtfsFunc(config: OsmToGtfsConfig): Promise<void> {
   }
   const gtfsBuilders: GTFSBuilders = Object.assign({}, gtfsDefaultBuilders, config.gtfsBuilders || {});
   const { outputDir } = outputFiles;
+  // Licensing options fail here, before the OSM data is read: both are
+  // plain config, and a typo should not cost an Overpass download.
+  resolveLicense(gtfsOptions.license);
+  validateAttributions(gtfsOptions.attributions);
+  // Every GTFS directory — and so every zip built from one — carries the
+  // LICENSE file next to the .txt files (attributions.txt is a GTFS file
+  // and is written by writeGtfs like the others).
+  const writeFeed = (data: GTFSData, dir: string): void => {
+    writeGtfs(data, dir);
+    writeLicense(dir, gtfsOptions.license);
+  };
 
   // Validation: gtfsZip requires gtfs to be true
   if (outputFiles.gtfsZip && !outputFiles.gtfs) {
@@ -141,17 +166,21 @@ async function osmToGtfsFunc(config: OsmToGtfsConfig): Promise<void> {
           }
         }
       }
+      readme += licenseSection(
+        gtfsOptions.license,
+        gtfs ? gtfs.attributions : attributionsBuilder([], gtfsOptions.attributions),
+      );
       fs.writeFileSync(path.join(outputDir, 'README.md'), readme);
     }
     if (outputFiles.gtfs && gtfs) {
       fs.mkdirSync(path.join(outputDir, `gtfs`));
-      writeGtfs(gtfs, path.join(outputDir, 'gtfs'));
+      writeFeed(gtfs, path.join(outputDir, 'gtfs'));
     }
     if (outputFiles.gtfsZip && gtfs) {
       const gtfsDir = path.join(outputDir, 'gtfs');
       if (!fs.existsSync(gtfsDir)) {
         fs.mkdirSync(gtfsDir);
-        writeGtfs(gtfs, gtfsDir);
+        writeFeed(gtfs, gtfsDir);
       }
       
       const cityName = gtfsOptions.cityName || 'city';
@@ -182,7 +211,7 @@ async function osmToGtfsFunc(config: OsmToGtfsConfig): Promise<void> {
 
       const expandedDir = path.join(outputDir, '_gtfs-expanded');
       fs.mkdirSync(expandedDir);
-      writeGtfs(expandedGtfs, expandedDir);
+      writeFeed(expandedGtfs, expandedDir);
 
       const cityName = gtfsOptions.cityName || 'city';
       const zipFileName = `${cityName}.expanded.gtfs.zip`;
@@ -228,6 +257,8 @@ export {
   parseChargeEntries,
   parseOsmDuration,
   DEFAULT_VEHICLE_SPEED_KMH,
+  OSM_ATTRIBUTION,
+  ODBL_1_0,
 };
 export type {
   CustomStop,
@@ -241,6 +272,8 @@ export type {
   FareResolver,
   ChargeEntry,
   TripDurationResolver,
+  GTFSAttribution,
+  FeedLicense,
 };
 export default {
   osmToGtfs: osmToGtfsFunc,
@@ -253,4 +286,6 @@ export default {
   parseChargeEntries,
   parseOsmDuration,
   DEFAULT_VEHICLE_SPEED_KMH,
+  OSM_ATTRIBUTION,
+  ODBL_1_0,
 };

@@ -212,6 +212,8 @@ dist/                        # Compiled JavaScript (generated)
 - `stopNameBuilder`: Function to build stop names
 - `defaultFares`: Default currency and price for fares (see [Fares](#fares))
 - `fare`: Function to resolve the fare of each route (see [Fares](#fares))
+- `attributions`: Extra rows of `attributions.txt`, after the OpenStreetMap one (see [Licensing of the output](#licensing-of-the-output))
+- `license`: License written as a `LICENSE` file with the feed — `'ODbL-1.0'` (default) or `false` (see [Licensing of the output](#licensing-of-the-output))
 
 ### Fares
 
@@ -275,13 +277,47 @@ gtfsOptions: {
 
 Only the planners that read `stop_times` (OpenTripPlanner, MOTIS/Transitous, Google) see these times; `frequencies.txt` (`frequencyHeadway`) is not affected.
 
+### Licensing of the output
+
+Every feed this tool builds is a derivative database of [OpenStreetMap](https://www.openstreetmap.org/copyright), whose data the OpenStreetMap Foundation licenses under the [Open Data Commons Open Database License (ODbL) v1.0](https://opendatacommons.org/licenses/odbl/1-0/). The ODbL asks two things of a derivative that is used publicly: credit OpenStreetMap, and release the derivative under the ODbL as well (share-alike). The builder writes both into the output, so the license chain travels with the feed instead of living in a repository README that the zip never sees:
+
+- **`attributions.txt`** — the GTFS file for exactly this ([reference](https://gtfs.org/documentation/schedule/reference/#attributionstxt)). Always written, with one row for `OpenStreetMap contributors` (`attribution_id` `osm`, `is_producer` `1`, `attribution_url` `https://www.openstreetmap.org/copyright`) followed by the rows of `gtfsOptions.attributions`. It sits with the other `.txt` files, so it is in `<city>.gtfs.zip` and `<city>.expanded.gtfs.zip` too.
+- **`LICENSE`** — the full ODbL 1.0 text, written next to the `.txt` files of every GTFS directory and therefore inside both zips. `gtfsOptions.license` selects it: `'ODbL-1.0'` (the default) or `false`.
+- **`README.md`** (the generated one) — a *License* section with the chain above and a table of the attributions.
+
+```ts
+gtfsOptions: {
+  // Rows of attributions.txt after the OpenStreetMap one: who publishes
+  // the feed, who operates a line… Fields as in the GTFS reference.
+  attributions: [
+    {
+      attribution_id: 'trufi',
+      organization_name: 'Trufi Association',
+      is_producer: 1,
+      attribution_url: 'https://www.trufi-association.org/',
+      attribution_email: 'info@trufi-association.org',
+    },
+    { organization_name: 'Mi Teleférico', is_operator: 1, route_id: 'teleferico' },
+  ],
+  // license: false,   // write no LICENSE file (see below)
+}
+```
+
+Each row is checked against the reference before any OSM data is read, and a bad one throws, as a config bug: `organization_name` is required; at least one of `is_producer`, `is_operator`, `is_authority` must be `1`; at most one of `agency_id`, `route_id`, `trip_id` may be set (none = the whole feed); `attribution_id` must be unique, and `osm` is reserved. Whether a referenced `route_id` exists is not checked here — the [gtfs-validator](https://gtfs-validator.mobilitydata.org/) does that.
+
+`license: false` does not change what the feed is: a publicly used derivative of OSM still has to be ODbL, and the OpenStreetMap row is still written because the attribution is required however the derivative is licensed. Use it only when the license is stated somewhere the feed's users will see it (a `LICENSE` at the root of the repository that publishes the zip, a page behind `feed_publisher_url`), and say so there.
+
+When the feed is listed in a catalog, point the catalog's license field at the ODbL as well: the [Mobility Database](https://github.com/MobilityData/mobility-database-catalogs) entry has `urls.license`, a [Transitland](https://github.com/transitland/distributed-mobility-feed-registry) feed record has a `license` object (`spdx_identifier: "ODbL-1.0"`, `url`, `attribution_text`), and the OSM wiki's [List of GTFS feeds](https://wiki.openstreetmap.org/wiki/List_of_GTFS_feeds) has a license column. `feed_info.txt` has no license field: make `feed_publisher_url` lead to a page that states it (see issue #13 for how the Cochabamba feed was listed).
+
 ### OutputFiles
 - `outputDir`: Directory for output files
 - `routes`: Export route GeoJSON files
 - `log`: Export processing log
 - `stops`: Export stops data
-- `readme`: Generate README with route summary
-- `gtfs`: Export GTFS feed
+- `readme`: Generate README with route summary (and the *License* section)
+- `gtfs`: Export GTFS feed (`gtfs/` directory, with `attributions.txt` and `LICENSE`)
+- `gtfsZip`: Also zip it as `<cityName>.gtfs.zip`
+- `gtfsExpandedZip`: Also build the schedule-based variant (expanded trips, no `frequencies.txt`) as `<cityName>.expanded.gtfs.zip`
 - `trufiTPData`: Export Trufi trip planner data
 
 ## Troubleshooting
@@ -313,4 +349,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-ISC
+The code of this library is ISC. The feeds it produces are derivative databases of OpenStreetMap and are licensed under the ODbL 1.0 — see [Licensing of the output](#licensing-of-the-output).
