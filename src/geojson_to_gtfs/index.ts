@@ -48,6 +48,7 @@ function geojsonToGtfs(
   const calendar = calendarBuilder(featuresArray, gtfsConfig.defaultCalendar);
   const routes = routeBuilder(featuresArray, {
     routePerRelation: gtfsConfig.routePerRelation ?? false,
+    continuousStops: gtfsConfig.continuousStops,
   });
   // No implicit currency: without `defaultFares`, only `charge=*` values
   // that carry their own ISO code can become a fare row.

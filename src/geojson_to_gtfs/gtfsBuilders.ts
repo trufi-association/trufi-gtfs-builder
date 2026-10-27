@@ -27,6 +27,7 @@ import type {
   CustomStopsModeConfig,
   StopsConfigResolver,
   TripDurationResolver,
+  ContinuousStopsConfig,
 } from '../types';
 import { attributionsBuilder } from './license';
 
@@ -266,9 +267,10 @@ export function calendarBuilder(
 
 export function routeBuilder(
   features: GeoJSONFeature[][],
-  options?: { routePerRelation?: boolean }
+  options?: { routePerRelation?: boolean; continuousStops?: ContinuousStopsConfig }
 ): GTFSRoute[] {
   const perRelation = options?.routePerRelation ?? false;
+  const continuousStops = options?.continuousStops;
   const getRouteType = (feature: GeoJSONFeature): string => {
     const route = feature.properties.route;
     let response = '';
@@ -360,6 +362,20 @@ export function routeBuilder(
         route_color: route_color,
         route_type: getRouteType(mainFeature),
       };
+      if (continuousStops !== undefined) {
+        // Every route gets both columns (the CSV writer reads them off the
+        // first row): 0 = anywhere along the route, 1 = only at stops.
+        const anywhere =
+          typeof continuousStops === 'function' ? continuousStops(mainFeature) : continuousStops;
+        if (typeof anywhere !== 'boolean') {
+          throw new Error(
+            `continuousStops returned ${JSON.stringify(anywhere)} for route ${routeShortName} ` +
+              `(relation ${mainFeature.properties.id}); return true or false.`
+          );
+        }
+        route.continuous_pickup = anywhere ? 0 : 1;
+        route.continuous_drop_off = anywhere ? 0 : 1;
+      }
       routes.push(route);
     }
 
