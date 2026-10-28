@@ -295,6 +295,20 @@ export function routeBuilder(
   };
   const routes: GTFSRoute[] = [];
   const routeMap = new Map<string, number>(); // Maps routeKey to route_id
+  const routeById = new Map<number, GTFSRoute>();
+  // `false` is the same as leaving the option out: the columns are not
+  // written (the spec reads an empty value as 1).
+  const continuous = continuousStops !== undefined && continuousStops !== false;
+  const resolveAnywhere = (feature: GeoJSONFeature, label: string): boolean => {
+    const anywhere = typeof continuousStops === 'function' ? continuousStops(feature) : continuousStops;
+    if (typeof anywhere !== 'boolean') {
+      throw new Error(
+        `continuousStops returned ${JSON.stringify(anywhere)} for route ${label} ` +
+          `(relation ${feature.properties.id}); return true or false.`
+      );
+    }
+    return anywhere;
+  };
   let routeIdCounter = 0;
 
   for (let feature of features) {
@@ -362,21 +376,28 @@ export function routeBuilder(
         route_color: route_color,
         route_type: getRouteType(mainFeature),
       };
-      if (continuousStops !== undefined) {
+      if (continuous) {
         // Every route gets both columns (the CSV writer reads them off the
         // first row): 0 = anywhere along the route, 1 = only at stops.
-        const anywhere =
-          typeof continuousStops === 'function' ? continuousStops(mainFeature) : continuousStops;
-        if (typeof anywhere !== 'boolean') {
-          throw new Error(
-            `continuousStops returned ${JSON.stringify(anywhere)} for route ${routeShortName} ` +
-              `(relation ${mainFeature.properties.id}); return true or false.`
-          );
-        }
+        const anywhere = resolveAnywhere(mainFeature, routeShortName);
         route.continuous_pickup = anywhere ? 0 : 1;
         route.continuous_drop_off = anywhere ? 0 : 1;
       }
       routes.push(route);
+      routeById.set(routeId, route);
+    } else if (continuous) {
+      // Another relation of the same route (grouped by agency + ref): the
+      // resolver sees every variant. One that boards anywhere makes the
+      // route board-anywhere; the disagreement is logged, like fares do.
+      const route = routeById.get(routeId)!;
+      const anywhere = resolveAnywhere(mainFeature, routeShortName);
+      if (anywhere !== (route.continuous_pickup === 0)) {
+        console.warn(
+          `continuousStops: route ${routeShortName} (route_id ${routeId}) has variants that disagree: relation ${mainFeature.properties.id} says ${anywhere}; the route is marked board-anywhere`
+        );
+        route.continuous_pickup = 0;
+        route.continuous_drop_off = 0;
+      }
     }
 
     // Assign the shared route_id to this feature

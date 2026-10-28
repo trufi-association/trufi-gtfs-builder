@@ -208,13 +208,19 @@ dist/                        # Compiled JavaScript (generated)
 - `frequencyHeadway`: Function to determine frequency
 - `vehicleSpeed`: Function returning the average speed (km/h) of each route, used when its OSM relation has no `duration=*` (see [Travel times](#travel-times))
 - `tripDuration`: Function to override the running time of each route (see [Travel times](#travel-times))
-- `continuousStops`: `true`, or a function of the route feature, to write `continuous_pickup` / `continuous_drop_off` = 0 in `routes.txt`: the GTFS way to say that riders board and alight anywhere along the route, which `fakeStops` approximates with a stop every ~100 m (issue #11). Declarative only: OpenTripPlanner 2.x and trufi-core's offline planner still board at `stops.txt` (OTP routes "flag stops" only through its Flex sandbox), so keep `fakeStops` for routing and add this for correctness and for consumers that read it. Routes for which the function returns `false` get 1 ("only at stops"); when the option is absent the columns are not written.
+- `continuousStops`: `true`, or a function of the route feature, to write `continuous_pickup` / `continuous_drop_off` in `routes.txt` (see [Continuous stops](#continuous-stops))
 - `stopsConfig`: Function returning how stops are derived for each route (`fakeStops`, `osmStops` or `customStops`)
 - `stopNameBuilder`: Function to build stop names
 - `defaultFares`: Default currency and price for fares (see [Fares](#fares))
 - `fare`: Function to resolve the fare of each route (see [Fares](#fares))
 - `attributions`: Extra rows of `attributions.txt`, after the OpenStreetMap one (see [Licensing of the output](#licensing-of-the-output))
 - `license`: License written as a `LICENSE` file with the feed — `'ODbL-1.0'` (default) or `false` (see [Licensing of the output](#licensing-of-the-output))
+
+### Continuous stops
+
+`continuousStops: true`, or a function of the route feature, writes `continuous_pickup` / `continuous_drop_off` = 0 in `routes.txt`: the GTFS way to say that riders board and alight anywhere along the route, which `fakeStops` approximates with a stop every ~100 m (issue #11). Routes for which the function returns `false` get 1 ("only at stops"); when the option is absent or `false` the columns are not written at all, so existing feeds do not change. With routes grouped by agency + ref (the default) the function sees every relation of the group: one `true` marks the route, and a disagreement between variants is logged.
+
+Declarative only. No consumer routes with these columns yet: OpenTripPlanner 2.x drops them from `routes.txt` (its route model has no such field; the `stop_times.txt` ones it reads only to flag an invalid Flex combination, and continuous-stops routing itself is an unmerged draft, [opentripplanner/OpenTripPlanner#3457](https://github.com/opentripplanner/OpenTripPlanner/pull/3457)), and trufi-core's offline planner boards at `stops.txt` only. Keep `fakeStops` for routing and add this for correctness and for consumers that read it.
 
 ### Fares
 

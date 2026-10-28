@@ -27,6 +27,14 @@ describe('continuousStops', () => {
     }
   });
 
+  it('false is the same as leaving it out: the columns are not written', () => {
+    const routes = routeBuilder(features, { continuousStops: false });
+    for (const r of routes) {
+      assert.equal(r.continuous_pickup, undefined);
+      assert.equal(r.continuous_drop_off, undefined);
+    }
+  });
+
   it('true marks every route as board-anywhere (0)', () => {
     const routes = routeBuilder(features, { continuousStops: true });
     assert.equal(routes.length, 2);
@@ -45,6 +53,33 @@ describe('continuousStops', () => {
     assert.equal(byRef['130'].continuous_drop_off, 0);
     assert.equal(byRef['A'].continuous_pickup, 1);
     assert.equal(byRef['A'].continuous_drop_off, 1);
+  });
+
+  it('grouped relations: the resolver sees every variant, one true marks the route', () => {
+    // Relations 1 and 3 share ref 130 and collapse into one route.
+    const grouped = [...features, relation(3, { ref: '130', name: 'Trufi 130 (vuelta)' })];
+    const seen: number[] = [];
+    const warnings: string[] = [];
+    const warn = console.warn;
+    console.warn = (msg: string) => warnings.push(msg);
+    try {
+      const routes = routeBuilder(grouped, {
+        continuousStops: (f) => {
+          seen.push(f.properties.id);
+          return f.properties.id === 3;
+        },
+      });
+      assert.equal(routes.length, 2);
+      const byRef = Object.fromEntries(routes.map((r) => [r.route_short_name, r]));
+      assert.deepEqual(seen, [1, 2, 3]);
+      assert.equal(byRef['130'].continuous_pickup, 0);
+      assert.equal(byRef['130'].continuous_drop_off, 0);
+      assert.equal(byRef['A'].continuous_pickup, 1);
+      assert.equal(warnings.length, 1);
+      assert.match(warnings[0], /route 130 .* relation 3 says true/);
+    } finally {
+      console.warn = warn;
+    }
   });
 
   it('a resolver that returns something else is a config bug', () => {
