@@ -28,6 +28,10 @@
  *   fare_leg_rules.txt   one row per (network, product): a leg on a route
  *                        of the network is paid with the general product
  *                        or with the product of the rider's category.
+ *                        `leg_group_id` (one group per network, as in the
+ *                        gtfs.org guide) is optional in the reference but
+ *                        OpenTripPlanner 2.10 throws without it
+ *                        (FareLegRule.java: requireNonNull(legGroupId)).
  *
  * Not written, because the data has nothing to put in them:
  * `fare_media.txt` (V1 `payment_method` has no V2 field),
@@ -136,7 +140,12 @@ export function buildFaresV2(routes: RouteWithFare[]): FaresV2Rows {
       networkId = `fare_${networks.size}`;
       networks.set(key, networkId);
       rows.networks.push({ network_id: networkId });
-      rows.fare_leg_rules.push({ network_id: networkId, fare_product_id: product(fare.price, fare.currency) });
+      const legGroupId = `${networkId}_legs`;
+      rows.fare_leg_rules.push({
+        leg_group_id: legGroupId,
+        network_id: networkId,
+        fare_product_id: product(fare.price, fare.currency),
+      });
       for (const c of fare.riderCategories) {
         let category = categories.get(c.id);
         if (!category) {
@@ -144,7 +153,11 @@ export function buildFaresV2(routes: RouteWithFare[]): FaresV2Rows {
           categories.set(c.id, category);
           rows.rider_categories.push(category);
         }
-        rows.fare_leg_rules.push({ network_id: networkId, fare_product_id: product(c.price, fare.currency, category) });
+        rows.fare_leg_rules.push({
+          leg_group_id: legGroupId,
+          network_id: networkId,
+          fare_product_id: product(c.price, fare.currency, category),
+        });
       }
     }
     rows.route_networks.push({ network_id: networkId, route_id: routeId });

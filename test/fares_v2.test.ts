@@ -164,14 +164,14 @@ describe('fareBuilder with faresV2', () => {
       { network_id: 'fare_2', route_id: 3 },
     ]);
     assert.deepEqual(v2.fare_leg_rules, [
-      { network_id: 'fare_0', fare_product_id: 'BOB_3.00' },
-      { network_id: 'fare_1', fare_product_id: 'BOB_0.00' },
-      { network_id: 'fare_2', fare_product_id: 'BOB_3.00' },
-      { network_id: 'fare_2', fare_product_id: 'BOB_1.00_estudiante_primaria' },
-      { network_id: 'fare_2', fare_product_id: 'BOB_2.00_estudiante_secundaria' },
-      { network_id: 'fare_2', fare_product_id: 'BOB_2.00_estudiante_universitario' },
-      { network_id: 'fare_2', fare_product_id: 'BOB_2.50_persona_discapacitada' },
-      { network_id: 'fare_2', fare_product_id: 'BOB_1.50_adulto_mayor' },
+      { leg_group_id: 'fare_0_legs', network_id: 'fare_0', fare_product_id: 'BOB_3.00' },
+      { leg_group_id: 'fare_1_legs', network_id: 'fare_1', fare_product_id: 'BOB_0.00' },
+      { leg_group_id: 'fare_2_legs', network_id: 'fare_2', fare_product_id: 'BOB_3.00' },
+      { leg_group_id: 'fare_2_legs', network_id: 'fare_2', fare_product_id: 'BOB_1.00_estudiante_primaria' },
+      { leg_group_id: 'fare_2_legs', network_id: 'fare_2', fare_product_id: 'BOB_2.00_estudiante_secundaria' },
+      { leg_group_id: 'fare_2_legs', network_id: 'fare_2', fare_product_id: 'BOB_2.00_estudiante_universitario' },
+      { leg_group_id: 'fare_2_legs', network_id: 'fare_2', fare_product_id: 'BOB_2.50_persona_discapacitada' },
+      { leg_group_id: 'fare_2_legs', network_id: 'fare_2', fare_product_id: 'BOB_1.50_adulto_mayor' },
     ]);
     // V1 keeps one fare row per agency; V2 does not know agencies
     assert.deepEqual(v2.attributes.map((a) => [a.agency_id, a.fare_id, a.price]), [[0, 0, 3], [1, 1, 3], [2, 2, 0], [3, 3, 3]]);
@@ -181,7 +181,7 @@ describe('fareBuilder with faresV2', () => {
     const v2 = fareBuilder([features()[0], features()[1]], BOB3, undefined, { faresV2: true });
     assert.deepEqual(v2.rider_categories, []);
     assert.equal(v2.fare_products!.length, 1);
-    assert.deepEqual(v2.fare_leg_rules, [{ network_id: 'fare_0', fare_product_id: 'BOB_3.00' }]);
+    assert.deepEqual(v2.fare_leg_rules, [{ leg_group_id: 'fare_0_legs', network_id: 'fare_0', fare_product_id: 'BOB_3.00' }]);
   });
 
   it('a category id written by two routes is one row, named as first seen; the products are shared too', () => {
@@ -201,10 +201,10 @@ describe('fareBuilder with faresV2', () => {
       ['BOB_3.50', '3.50 BOB'],
     ]);
     assert.deepEqual(v2.fare_leg_rules, [
-      { network_id: 'fare_0', fare_product_id: 'BOB_3.00' },
-      { network_id: 'fare_0', fare_product_id: 'BOB_1.00_estudiante' },
-      { network_id: 'fare_1', fare_product_id: 'BOB_3.50' },
-      { network_id: 'fare_1', fare_product_id: 'BOB_1.00_estudiante' },
+      { leg_group_id: 'fare_0_legs', network_id: 'fare_0', fare_product_id: 'BOB_3.00' },
+      { leg_group_id: 'fare_0_legs', network_id: 'fare_0', fare_product_id: 'BOB_1.00_estudiante' },
+      { leg_group_id: 'fare_1_legs', network_id: 'fare_1', fare_product_id: 'BOB_3.50' },
+      { leg_group_id: 'fare_1_legs', network_id: 'fare_1', fare_product_id: 'BOB_1.00_estudiante' },
     ]);
   });
 
@@ -352,20 +352,20 @@ describe('osmToGtfs with faresV2 (fixture written by main, 16291a1)', () => {
         'fare_4,6',
       ]);
       assert.deepEqual(csvRows(path.join(gtfs, 'fare_leg_rules.txt')), [
-        'network_id,fare_product_id',
-        'fare_0,BOB_3.00',
-        'fare_1,BOB_0.00',
-        'fare_2,BOB_6.00',
-        'fare_3,BOB_3.00',
-        'fare_3,BOB_1.00_estudiante_primaria',
-        'fare_3,BOB_2.00_estudiante_secundaria',
-        'fare_3,BOB_2.00_estudiante_universitario',
-        'fare_3,BOB_2.50_persona_discapacitada',
-        'fare_3,BOB_1.50_adulto_mayor',
-        'fare_4,BOB_3.50',
-        'fare_4,BOB_2.50_interparadas',
-        'fare_4,BOB_2.00_preferencial',
-        'fare_4,BOB_1.00_estudiante',
+        'leg_group_id,network_id,fare_product_id',
+        'fare_0_legs,fare_0,BOB_3.00',
+        'fare_1_legs,fare_1,BOB_0.00',
+        'fare_2_legs,fare_2,BOB_6.00',
+        'fare_3_legs,fare_3,BOB_3.00',
+        'fare_3_legs,fare_3,BOB_1.00_estudiante_primaria',
+        'fare_3_legs,fare_3,BOB_2.00_estudiante_secundaria',
+        'fare_3_legs,fare_3,BOB_2.00_estudiante_universitario',
+        'fare_3_legs,fare_3,BOB_2.50_persona_discapacitada',
+        'fare_3_legs,fare_3,BOB_1.50_adulto_mayor',
+        'fare_4_legs,fare_4,BOB_3.50',
+        'fare_4_legs,fare_4,BOB_2.50_interparadas',
+        'fare_4_legs,fare_4,BOB_2.00_preferencial',
+        'fare_4_legs,fare_4,BOB_1.00_estudiante',
       ]);
     } finally {
       cleanup();

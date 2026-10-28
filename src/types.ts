@@ -217,6 +217,8 @@ export interface GTFSRiderCategory {
 }
 
 export interface GTFSFareLegRule {
+  /** Optional in the reference, but OpenTripPlanner 2.x requires it (`FareLegRule`); one group per network. */
+  leg_group_id: string;
   network_id: string;
   fare_product_id: string;
 }
