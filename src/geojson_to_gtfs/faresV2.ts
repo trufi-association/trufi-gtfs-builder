@@ -75,7 +75,8 @@ export function currencyMinorUnits(currency: string): number {
 export function formatCurrencyAmount(price: number, currency: string): string {
   const decimals = currencyMinorUnits(currency);
   const text = price.toFixed(decimals);
-  if (Number(text) !== price) {
+  // Tolerance: a resolver that adds prices gets 0.30000000000000004, which is 0.30, not a rounding.
+  if (Math.abs(Number(text) - price) > 1e-9) {
     console.warn(
       `faresV2: amount ${price} ${currency} rounded to ${text} (${currency} has ${decimals} decimal places)`,
     );
