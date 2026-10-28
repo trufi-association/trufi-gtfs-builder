@@ -131,7 +131,7 @@ describe('fareBuilder with faresV2', () => {
     const on = fareBuilder(features(), BOB3, undefined, { faresV2: true });
     assert.deepEqual(on.attributes, off.attributes);
     assert.deepEqual(on.rules, off.rules);
-    assert.deepEqual(Object.keys(on), ['attributes', 'rules', 'fare_products', 'rider_categories', 'fare_leg_rules', 'networks', 'route_networks']);
+    assert.deepEqual(Object.keys(on), ['attributes', 'rules', 'fare_products', 'rider_categories', 'fare_leg_rules', 'route_network_ids']);
   });
 
   it('one product per amount/currency/category, one network per fare shared across agencies, nothing for an unknown fare', () => {
@@ -155,14 +155,9 @@ describe('fareBuilder with faresV2', () => {
       { rider_category_id: 'persona_discapacitada', rider_category_name: 'persona discapacitada', is_default_fare_category: 0 },
       { rider_category_id: 'adulto_mayor', rider_category_name: 'adulto mayor', is_default_fare_category: 0 },
     ]);
-    // two agencies at 3 BOB share fare_0; Trufi 130 is also 3 BOB but its categories make another fare
-    assert.deepEqual(v2.networks, [{ network_id: 'fare_0' }, { network_id: 'fare_1' }, { network_id: 'fare_2' }]);
-    assert.deepEqual(v2.route_networks, [
-      { network_id: 'fare_0', route_id: 0 },
-      { network_id: 'fare_0', route_id: 1 },
-      { network_id: 'fare_1', route_id: 2 },
-      { network_id: 'fare_2', route_id: 3 },
-    ]);
+    // two agencies at 3 BOB share fare_0; Trufi 130 is also 3 BOB but its categories make another fare;
+    // route 4 (unknown fare) is in no network
+    assert.deepEqual([...v2.route_network_ids!], [[0, 'fare_0'], [1, 'fare_0'], [2, 'fare_1'], [3, 'fare_2']]);
     assert.deepEqual(v2.fare_leg_rules, [
       { leg_group_id: 'fare_0_legs', network_id: 'fare_0', fare_product_id: 'BOB_3.00' },
       { leg_group_id: 'fare_1_legs', network_id: 'fare_1', fare_product_id: 'BOB_0.00' },
@@ -272,7 +267,7 @@ describe('fareBuilder with faresV2', () => {
     const a = buildFaresV2([{ routeId: 'r1', fare: fare(3) }, { routeId: 'r2', fare: fare(3, [{ id: 'e', name: 'E', price: 1 }]) }]);
     const b = buildFaresV2([{ routeId: 'r1', fare: fare(3) }, { routeId: 'r2', fare: fare(3, [{ id: 'e', name: 'E', price: 1 }]) }]);
     assert.deepEqual(a, b);
-    assert.deepEqual(a.networks, [{ network_id: 'fare_0' }, { network_id: 'fare_1' }]);
+    assert.deepEqual([...a.route_network_ids], [['r1', 'fare_0'], ['r2', 'fare_1']]);
   });
 });
 
@@ -309,11 +304,16 @@ describe('osmToGtfs with faresV2 (fixture written by main, 16291a1)', () => {
     }
   });
 
-  it('on: the V1 files are still byte for byte what main wrote, and the five V2 files appear', async () => {
+  it('on: the V1 files are still byte for byte what main wrote (routes.txt gains network_id), and the three V2 files appear', async () => {
     const { gtfs, files, cleanup } = await build({ faresV2: true });
     try {
-      assert.deepEqual(files, [...fixtureFiles, 'fare_leg_rules.txt', 'fare_products.txt', 'networks.txt', 'rider_categories.txt', 'route_networks.txt'].sort());
-      assertBytesEqualToFixture(gtfs, fixtureFiles);
+      assert.deepEqual(files, [...fixtureFiles, 'fare_leg_rules.txt', 'fare_products.txt', 'rider_categories.txt'].sort());
+      assertBytesEqualToFixture(gtfs, fixtureFiles.filter((f) => f !== 'routes.txt'));
+      // routes.txt: main's rows plus the network column; the 233 (unknown fare) is in no network
+      assert.deepEqual(
+        csvRows(path.join(gtfs, 'routes.txt')),
+        csvRows(path.join(FIXTURE, 'routes.txt')).map((row, i) => `${row},${['network_id', 'fare_0', 'fare_0', 'fare_1', '', 'fare_2', 'fare_3', 'fare_4'][i]}`),
+      );
       assert.deepEqual(csvRows(path.join(gtfs, 'fare_products.txt')), [
         'fare_product_id,fare_product_name,rider_category_id,amount,currency',
         'BOB_3.00,3.00 BOB,,3.00,BOB',
@@ -340,17 +340,6 @@ describe('osmToGtfs with faresV2 (fixture written by main, 16291a1)', () => {
         'preferencial,preferencial,0',
         'estudiante,estudiante,0',
       ]);
-      assert.deepEqual(csvRows(path.join(gtfs, 'networks.txt')), ['network_id', 'fare_0', 'fare_1', 'fare_2', 'fare_3', 'fare_4']);
-      // route 3 (the 233, "unknown") is in no network; A and B (different agencies, Bs 3) share fare_0
-      assert.deepEqual(csvRows(path.join(gtfs, 'route_networks.txt')), [
-        'network_id,route_id',
-        'fare_0,0',
-        'fare_0,1',
-        'fare_1,2',
-        'fare_2,4',
-        'fare_3,5',
-        'fare_4,6',
-      ]);
       assert.deepEqual(csvRows(path.join(gtfs, 'fare_leg_rules.txt')), [
         'leg_group_id,network_id,fare_product_id',
         'fare_0_legs,fare_0,BOB_3.00',
@@ -375,13 +364,15 @@ describe('osmToGtfs with faresV2 (fixture written by main, 16291a1)', () => {
   it('on, with a flat fare everywhere: no rider_categories.txt, one product, one network', async () => {
     const { gtfs, files, cleanup } = await build({ faresV2: true, fare: () => ({ price: 3, currency: 'BOB' }) });
     try {
-      assert.deepEqual(files, [...fixtureFiles, 'fare_leg_rules.txt', 'fare_products.txt', 'networks.txt', 'route_networks.txt'].sort());
+      assert.deepEqual(files, [...fixtureFiles, 'fare_leg_rules.txt', 'fare_products.txt'].sort());
       assert.deepEqual(csvRows(path.join(gtfs, 'fare_products.txt')), [
         'fare_product_id,fare_product_name,rider_category_id,amount,currency',
         'BOB_3.00,3.00 BOB,,3.00,BOB',
       ]);
-      assert.deepEqual(csvRows(path.join(gtfs, 'networks.txt')), ['network_id', 'fare_0']);
-      assert.equal(csvRows(path.join(gtfs, 'route_networks.txt')).length, 8);
+      const routes = csvRows(path.join(gtfs, 'routes.txt'));
+      assert.equal(routes.length, 8);
+      assert.ok(routes.slice(1).every((row) => row.endsWith(',fare_0')), 'every route is in fare_0');
+      assert.deepEqual(csvRows(path.join(gtfs, 'fare_leg_rules.txt')), ['leg_group_id,network_id,fare_product_id', 'fare_0_legs,fare_0,BOB_3.00']);
     } finally {
       cleanup();
     }

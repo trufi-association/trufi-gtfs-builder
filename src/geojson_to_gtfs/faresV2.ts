@@ -20,11 +20,15 @@
  *                        `is_default_fare_category` 0: the general fare is
  *                        the product without a category, so no product has
  *                        several eligible categories to pick a default from.
- *   networks.txt +       one network per distinct fare (general product +
- *   route_networks.txt   categories), `fare_0`, `fare_1`… in order of first
+ *   routes.network_id    one network per distinct fare (general product +
+ *                        categories), `fare_0`, `fare_1`… in order of first
  *                        appearance; routes with the same fare share it
- *                        whatever their agency. Allowed because routes.txt
- *                        has no `network_id` column.
+ *                        whatever their agency. The column form, not
+ *                        networks.txt + route_networks.txt: the reference
+ *                        forbids both at once, and OpenTripPlanner 2.10.0
+ *                        attaches no fare product to any leg when the
+ *                        assignment comes from route_networks.txt (same
+ *                        feed, column form: products on every leg).
  *   fare_leg_rules.txt   one row per (network, product): a leg on a route
  *                        of the network is paid with the general product
  *                        or with the product of the rider's category.
@@ -39,13 +43,7 @@
  * paid, which is V1 `transfers` 0), `timeframes.txt`, `areas.txt`,
  * `stop_areas.txt` (no time- or zone-based prices).
  */
-import type {
-  GTFSFareLegRule,
-  GTFSFareProduct,
-  GTFSNetwork,
-  GTFSRiderCategory,
-  GTFSRouteNetwork,
-} from '../types';
+import type { GTFSFareLegRule, GTFSFareProduct, GTFSRiderCategory } from '../types';
 import { faresV2Key } from './fares';
 import type { ResolvedFare } from './fares';
 
@@ -89,8 +87,8 @@ export interface FaresV2Rows {
   fare_products: GTFSFareProduct[];
   rider_categories: GTFSRiderCategory[];
   fare_leg_rules: GTFSFareLegRule[];
-  networks: GTFSNetwork[];
-  route_networks: GTFSRouteNetwork[];
+  /** route_id → `routes.network_id`, in route order, for every route with a known fare. */
+  route_network_ids: Map<string | number, string>;
 }
 
 /** One route with the fare chosen for it, in `routes.txt` order. */
@@ -100,16 +98,16 @@ export interface RouteWithFare {
 }
 
 /**
- * Build the five files from the per-route fares. Pure and deterministic:
- * ids depend only on the fares and on the order of the routes.
+ * Build the three files and the route → network map from the per-route
+ * fares. Pure and deterministic: ids depend only on the fares and on the
+ * order of the routes.
  */
 export function buildFaresV2(routes: RouteWithFare[]): FaresV2Rows {
   const rows: FaresV2Rows = {
     fare_products: [],
     rider_categories: [],
     fare_leg_rules: [],
-    networks: [],
-    route_networks: [],
+    route_network_ids: new Map(),
   };
   const products = new Set<string>();
   const categories = new Map<string, GTFSRiderCategory>();
@@ -139,7 +137,6 @@ export function buildFaresV2(routes: RouteWithFare[]): FaresV2Rows {
     if (networkId === undefined) {
       networkId = `fare_${networks.size}`;
       networks.set(key, networkId);
-      rows.networks.push({ network_id: networkId });
       const legGroupId = `${networkId}_legs`;
       rows.fare_leg_rules.push({
         leg_group_id: legGroupId,
@@ -160,7 +157,7 @@ export function buildFaresV2(routes: RouteWithFare[]): FaresV2Rows {
         });
       }
     }
-    rows.route_networks.push({ network_id: networkId, route_id: routeId });
+    rows.route_network_ids.set(routeId, networkId);
   }
 
   if (notExpressed > 0) {

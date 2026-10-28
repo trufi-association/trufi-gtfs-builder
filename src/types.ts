@@ -132,6 +132,9 @@ export interface GTFSRoute {
   continuous_pickup?: number;
   /** GTFS `continuous_drop_off`, same values as `continuous_pickup`. */
   continuous_drop_off?: number;
+  /** Fares V2 network of the route (`fare_<n>`, one per distinct fare), '' when
+      its fare is unknown. Present on every row only with `GTFSOptions.faresV2`. */
+  network_id?: string;
 }
 
 export interface GTFSTrip {
@@ -219,17 +222,9 @@ export interface GTFSRiderCategory {
 export interface GTFSFareLegRule {
   /** Optional in the reference, but OpenTripPlanner 2.x requires it (`FareLegRule`); one group per network. */
   leg_group_id: string;
+  /** References `routes.network_id`. */
   network_id: string;
   fare_product_id: string;
-}
-
-export interface GTFSNetwork {
-  network_id: string;
-}
-
-export interface GTFSRouteNetwork {
-  network_id: string;
-  route_id: string | number;
 }
 
 export interface GTFSFeedInfo {
@@ -287,8 +282,6 @@ export interface GTFSData {
   fare_products?: GTFSFareProduct[];
   rider_categories?: GTFSRiderCategory[];
   fare_leg_rules?: GTFSFareLegRule[];
-  networks?: GTFSNetwork[];
-  route_networks?: GTFSRouteNetwork[];
 }
 
 export interface GeojsonToGtfsResult {
@@ -316,8 +309,8 @@ export interface FareBuilderResult {
   fare_products?: GTFSFareProduct[];
   rider_categories?: GTFSRiderCategory[];
   fare_leg_rules?: GTFSFareLegRule[];
-  networks?: GTFSNetwork[];
-  route_networks?: GTFSRouteNetwork[];
+  /** route_id → `routes.network_id` for every route with a known fare. */
+  route_network_ids?: Map<string | number, string>;
 }
 
 export interface GTFSBuilders {
@@ -487,11 +480,14 @@ export interface GTFSOptions {
    * resolved fares: `fare_products.txt` (one product per distinct amount,
    * currency and rider category), `rider_categories.txt` (only when some
    * `charge=*` carries further `/<unit>` values, e.g. `1 BOB/estudiante`),
-   * `networks.txt` + `route_networks.txt` (one network per distinct fare,
+   * a `network_id` column in `routes.txt` (one network per distinct fare,
    * so routes with the same fare share it whatever their agency) and
-   * `fare_leg_rules.txt` (one row per network and product). V1 stays what
-   * it was, byte for byte: the reference allows both in one dataset and
-   * recommends that consumers prefer V2. Not written: `fare_media.txt`,
+   * `fare_leg_rules.txt` (one row per network and product). The V1 files
+   * stay what they were, byte for byte; `routes.txt` only gains the
+   * column. The reference allows both versions in one dataset and
+   * recommends that consumers prefer V2. Not written: `networks.txt` /
+   * `route_networks.txt` (forbidden next to `routes.network_id`, and
+   * OpenTripPlanner 2.10 ignores them anyway), `fare_media.txt`,
    * `fare_transfer_rules.txt`, `timeframes.txt`, `areas.txt` — the data
    * has no media, transfer, time or zone pricing. No consumer of the
    * Trufi stack reads V2 yet (README, "Fares V2"): this enables an
