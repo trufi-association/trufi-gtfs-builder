@@ -243,13 +243,16 @@ function geojsonToGtfs(
   if (faresV2) {
     // Fares V2 next to V1 (the writer skips empty arrays, so a feed with
     // no rider categories gets no rider_categories.txt). Routes join their
-    // fare network through `routes.network_id`; every row gets the column
-    // (the writer reads the columns off the first row), '' = fare unknown.
+    // fare network through `routes.network_id`; when some route has a
+    // fare every row gets the column (the writer reads the columns off the
+    // first row), '' = fare unknown; when none has, routes.txt is untouched.
     data.fare_products = fare.fare_products ?? [];
     data.rider_categories = fare.rider_categories ?? [];
     data.fare_leg_rules = fare.fare_leg_rules ?? [];
     const networkIds = fare.route_network_ids ?? new Map<string | number, string>();
-    for (const route of routes) route.network_id = networkIds.get(route.route_id) ?? '';
+    if (networkIds.size > 0) {
+      for (const route of routes) route.network_id = networkIds.get(route.route_id) ?? '';
+    }
   }
   return data;
 }
