@@ -8,7 +8,7 @@ import { fareBuilder } from '../src/geojson_to_gtfs/gtfsBuilders';
 import { osmRouteFare, riderCategoryId } from '../src/geojson_to_gtfs/fares';
 import { buildFaresV2, currencyMinorUnits, formatCurrencyAmount } from '../src/geojson_to_gtfs/faresV2';
 import { datasetGtfsOptions, datasetOsm, MI_TREN_ROJA, TRUFI_130 } from './fixtures/fares_dataset';
-import type { GeoJSONFeature, OsmToGtfsConfig, RouteFare } from '../src/types';
+import type { GeoJSONFeature, IOSMDataGetter, OsmToGtfsConfig, RouteFare } from '../src/types';
 
 // What `main` (16291a1, before Fares V2) wrote for `fixtures/fares_dataset.ts`.
 const FIXTURE = path.join(__dirname, 'fixtures', 'fares-v1');
@@ -74,7 +74,7 @@ describe('osmRouteFare rider categories', () => {
     const cases: Array<[string, RegExp]> = [
       ['3 BOB/persona;2 BOB', /"2 BOB" on .*relation\/9 has no \/<unit>; not a rider category/],
       ['3 BOB/persona;1 USD/estudiante', /"1 USD\/estudiante" .* is in USD while the fare is in BOB/],
-      ['3 BOB/persona;2 BOB/persona', /"2 BOB\/persona" .* repeats the unit "persona"/],
+      ['3 BOB/adulto;2 BOB/adulto', /"2 BOB\/adulto" .* repeats the unit "adulto"/],
       ['3 BOB/persona;1 BOB/estudiante;1.50 BOB/Estudiante', /"1.50 BOB\/Estudiante" .* repeats the unit "Estudiante"/],
       ['3 BOB/persona;1 BOB/***', /"1 BOB\/\*\*\*" .* has a unit with no letters or digits/],
     ];
@@ -89,6 +89,26 @@ describe('osmRouteFare rider categories', () => {
     assert.deepEqual(osmRouteFare({ id: 9, charge: cases[3][0] }, 'BOB')!.riderCategories, [
       { id: 'estudiante', name: 'estudiante', price: 1 },
     ]);
+  });
+
+  it('skips the units the OSM wiki defines as time, vehicle, quantity or person, with a warning each', (t) => {
+    const warn = t.mock.method(console, 'warn', () => {});
+    const fare = osmRouteFare(
+      { id: 10, charge: '3 BOB/persona;10 BOB/hour;20 BOB/day;30 BOB/noche;5 BOB/vehicle;4 BOB/bus;2 BOB/100 litre;1 BOB/kWh;3 BOB/person;1 BOB/estudiante;1.50 BOB/adulto mayor' },
+      'BOB',
+    );
+    assert.deepEqual(fare!.riderCategories, [
+      { id: 'estudiante', name: 'estudiante', price: 1 },
+      { id: 'adulto_mayor', name: 'adulto mayor', price: 1.5 },
+    ]);
+    assert.equal(warn.mock.callCount(), 8);
+    const messages = warn.mock.calls.map((c) => String(c.arguments[0]));
+    for (const unit of ['hour', 'day', 'noche', 'vehicle', 'bus', '100 litre', 'kWh', 'person']) {
+      assert.ok(
+        messages.some((m) => m.includes(`has a time, vehicle, quantity or per-person unit ("${unit}")`) && m.endsWith('not a rider category')),
+        unit,
+      );
+    }
   });
 });
 
@@ -109,6 +129,11 @@ describe('currency amounts', () => {
     assert.equal(formatCurrencyAmount(200, 'JPY'), '200');
     assert.equal(formatCurrencyAmount(1.5, 'KWD'), '1.500');
     assert.equal(warn.mock.callCount(), 0);
+    // float artefacts are not roundings: 0.1 + 0.2 is 0.30
+    assert.equal(formatCurrencyAmount(0.1 + 0.2, 'BOB'), '0.30');
+    assert.equal(formatCurrencyAmount(2.675, 'JPY'), '3');
+    assert.equal(warn.mock.callCount(), 1);
+    warn.mock.resetCalls();
     assert.match(formatCurrencyAmount(3.505, 'BOB'), /^3\.5[01]$/);
     assert.equal(warn.mock.callCount(), 1);
     assert.match(String(warn.mock.calls[0].arguments[0]), /amount 3.505 BOB rounded to 3\.5[01] \(BOB has 2 decimal places\)/);
@@ -358,6 +383,51 @@ describe('osmToGtfs with faresV2 (fixture written by main, 16291a1)', () => {
       ]);
     } finally {
       cleanup();
+    }
+  });
+
+  it('on, with no fare known anywhere: no V2 file, and routes.txt does not even gain the column', async () => {
+    const { gtfs, files, cleanup } = await build({ faresV2: true, fare: () => undefined });
+    try {
+      // no fare → no V1 fare files either (as on main); everything else is main's bytes
+      const expected = fixtureFiles.filter((f) => f !== 'fare_attributes.txt' && f !== 'fare_rules.txt');
+      assert.deepEqual(files, expected);
+      assertBytesEqualToFixture(gtfs, expected);
+    } finally {
+      cleanup();
+    }
+  });
+
+  it('on, in a zero-decimal currency end to end: amounts without decimals, ids to match', async () => {
+    const osm: IOSMDataGetter = {
+      getRoutes: async () => ({
+        1: { type: 'relation', id: 1, tags: { type: 'route', route: 'bus', ref: '506', name: 'Red 506', operator: 'Transantiago', charge: '800 CLP/persona;270 CLP/estudiante' }, members: [{ type: 'way', ref: 10 }] },
+      }),
+      getWays: async () => ({ 10: { type: 'way', id: 10, tags: {}, nodes: [1, 2, 3], geometry: [[0, 0], [0.01, 0], [0.02, 0]].map(([lon, lat]) => ({ lat, lon })) } }),
+      getStops: async () => ({}),
+    };
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'trufi-gtfs-builder-clp-'));
+    try {
+      await osmToGtfs({
+        outputFiles: { outputDir: path.join(dir, 'out'), gtfs: true, readme: false },
+        geojsonOptions: { osmDataGetter: osm },
+        gtfsOptions: { stopsConfig: () => ({ mode: 'fakeStops' }), faresV2: true },
+      });
+      const gtfs = path.join(dir, 'out', 'gtfs');
+      assert.deepEqual(csvRows(path.join(gtfs, 'fare_products.txt')), [
+        'fare_product_id,fare_product_name,rider_category_id,amount,currency',
+        'CLP_800,800 CLP,,800,CLP',
+        'CLP_270_estudiante,270 CLP (estudiante),estudiante,270,CLP',
+      ]);
+      assert.deepEqual(csvRows(path.join(gtfs, 'fare_leg_rules.txt')), [
+        'leg_group_id,network_id,fare_product_id',
+        'fare_0_legs,fare_0,CLP_800',
+        'fare_0_legs,fare_0,CLP_270_estudiante',
+      ]);
+      assert.deepEqual(csvRows(path.join(gtfs, 'fare_attributes.txt'))[1], '0,0,800,CLP,0,0');
+      assert.ok(csvRows(path.join(gtfs, 'routes.txt'))[1].endsWith(',fare_0'));
+    } finally {
+      fs.rmSync(dir, { recursive: true, force: true });
     }
   });
 
