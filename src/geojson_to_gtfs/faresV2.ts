@@ -25,10 +25,12 @@
  *                        appearance; routes with the same fare share it
  *                        whatever their agency. The column form, not
  *                        networks.txt + route_networks.txt: the reference
- *                        forbids both at once, and OpenTripPlanner 2.10.0
- *                        attaches no fare product to any leg when the
- *                        assignment comes from route_networks.txt (same
- *                        feed, column form: products on every leg).
+ *                        forbids both at once, and in our runs
+ *                        OpenTripPlanner 2.10.0 attached no fare product
+ *                        to any leg when the assignment came from
+ *                        route_networks.txt (same feed, reproduced; cause
+ *                        not investigated), while the column form gave
+ *                        products on every leg.
  *   fare_leg_rules.txt   one row per (network, product): a leg on a route
  *                        of the network is paid with the general product
  *                        or with the product of the rider's category.

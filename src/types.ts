@@ -486,8 +486,9 @@ export interface GTFSOptions {
    * stay what they were, byte for byte; `routes.txt` only gains the
    * column. The reference allows both versions in one dataset and
    * recommends that consumers prefer V2. Not written: `networks.txt` /
-   * `route_networks.txt` (forbidden next to `routes.network_id`, and
-   * OpenTripPlanner 2.10 ignores them anyway), `fare_media.txt`,
+   * `route_networks.txt` (forbidden next to `routes.network_id`; with them
+   * OpenTripPlanner 2.10.0 attached no product to any leg in our runs,
+   * cause not investigated), `fare_media.txt`,
    * `fare_transfer_rules.txt`, `timeframes.txt`, `areas.txt` — the data
    * has no media, transfer, time or zone pricing. No consumer of the
    * Trufi stack reads V2 yet (README, "Fares V2"): this enables an
