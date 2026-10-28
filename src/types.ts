@@ -190,6 +190,46 @@ export interface GTFSFareRule {
   route_id: string | number;
 }
 
+/*
+ * GTFS-Fares V2 rows, written only with `GTFSOptions.faresV2`. Field names
+ * and presence follow the GTFS reference, Fares V2 section
+ * (https://gtfs.org/documentation/schedule/reference/#fare_productstxt).
+ * Optional columns the builder never fills (`fare_media_id`,
+ * `network_name`, `leg_group_id`, `eligibility_url`…) are not declared.
+ */
+export interface GTFSFareProduct {
+  /** `<currency>_<amount>` for a general fare, `<currency>_<amount>_<rider_category_id>` for a category. */
+  fare_product_id: string;
+  /** Non-empty: OpenTripPlanner 2.x requires a name (`FareProduct.of`). */
+  fare_product_name: string;
+  /** '' = eligible for any rider (the GTFS empty value). */
+  rider_category_id: string;
+  /** Formatted with the ISO 4217 minor units of `currency` ("3.00", "200"). */
+  amount: string;
+  currency: string;
+}
+
+export interface GTFSRiderCategory {
+  rider_category_id: string;
+  rider_category_name: string;
+  /** Required column; 0 = not the default category. */
+  is_default_fare_category: 0 | 1;
+}
+
+export interface GTFSFareLegRule {
+  network_id: string;
+  fare_product_id: string;
+}
+
+export interface GTFSNetwork {
+  network_id: string;
+}
+
+export interface GTFSRouteNetwork {
+  network_id: string;
+  route_id: string | number;
+}
+
 export interface GTFSFeedInfo {
   feed_publisher_url: string;
   feed_publisher_name: string;
@@ -241,6 +281,12 @@ export interface GTFSData {
   fare_rules: GTFSFareRule[];
   feed_info: GTFSFeedInfo[];
   attributions: GTFSAttribution[];
+  /** Fares V2, present only with `GTFSOptions.faresV2` (a file is written per non-empty array). */
+  fare_products?: GTFSFareProduct[];
+  rider_categories?: GTFSRiderCategory[];
+  fare_leg_rules?: GTFSFareLegRule[];
+  networks?: GTFSNetwork[];
+  route_networks?: GTFSRouteNetwork[];
 }
 
 export interface GeojsonToGtfsResult {
@@ -256,6 +302,22 @@ export interface LogEntry {
   error?: any;
 }
 
+export interface FareBuilderOptions {
+  /** Also derive the Fares V2 rows from the resolved fares (see `GTFSOptions.faresV2`). */
+  faresV2?: boolean;
+}
+
+export interface FareBuilderResult {
+  attributes: GTFSFareAttribute[];
+  rules: GTFSFareRule[];
+  /** Present only when `FareBuilderOptions.faresV2` was requested. */
+  fare_products?: GTFSFareProduct[];
+  rider_categories?: GTFSRiderCategory[];
+  fare_leg_rules?: GTFSFareLegRule[];
+  networks?: GTFSNetwork[];
+  route_networks?: GTFSRouteNetwork[];
+}
+
 export interface GTFSBuilders {
   agencyBuilder: (features: GeoJSONFeature[][], defaultAgencyInfo: Partial<GTFSAgency>) => GTFSAgency[];
   calendarBuilder: (features: GeoJSONFeature[][], defaultCalendar: (feature: GeoJSONFeature) => string) => GTFSCalendar[];
@@ -266,8 +328,9 @@ export interface GTFSBuilders {
   fareBuilder: (
     features: GeoJSONFeature[][],
     defaultFares: DefaultFaresConfig,
-    fareResolver?: FareResolver
-  ) => { attributes: GTFSFareAttribute[]; rules: GTFSFareRule[] };
+    fareResolver?: FareResolver,
+    options?: FareBuilderOptions
+  ) => FareBuilderResult;
   feedBuilder: (feed: FeedConfig) => GTFSFeedInfo[];
   attributionsBuilder: (features: GeoJSONFeature[][], attributions?: GTFSAttribution[]) => GTFSAttribution[];
   tripBuilder: (
@@ -417,6 +480,23 @@ export interface GTFSOptions {
    * return it yourself where it holds.
    */
   fare?: FareResolver;
+  /**
+   * Also write GTFS-Fares V2 next to the V1 files, derived from the same
+   * resolved fares: `fare_products.txt` (one product per distinct amount,
+   * currency and rider category), `rider_categories.txt` (only when some
+   * `charge=*` carries further `/<unit>` values, e.g. `1 BOB/estudiante`),
+   * `networks.txt` + `route_networks.txt` (one network per distinct fare,
+   * so routes with the same fare share it whatever their agency) and
+   * `fare_leg_rules.txt` (one row per network and product). V1 stays what
+   * it was, byte for byte: the reference allows both in one dataset and
+   * recommends that consumers prefer V2. Not written: `fare_media.txt`,
+   * `fare_transfer_rules.txt`, `timeframes.txt`, `areas.txt` — the data
+   * has no media, transfer, time or zone pricing. No consumer of the
+   * Trufi stack reads V2 yet (README, "Fares V2"): this enables an
+   * output, it does not switch one.
+   * @default false
+   */
+  faresV2?: boolean;
   feed?: FeedConfig;
   /**
    * Extra rows of `attributions.txt`, e.g. the organisation that publishes
@@ -518,16 +598,38 @@ export interface RouteFare {
   /** Where the fare came from ('osm' when parsed from `charge=*`). Used to
       prefer OSM-sourced fares when a route's variants disagree. */
   source?: string;
+  /**
+   * Rider-category prices of the route, Fares V2 only (V1 has no such
+   * concept and ignores them). Parsed from the further `;`-separated
+   * values of `charge=*`: `3 BOB/persona;1 BOB/estudiante` gives one
+   * category `estudiante` at 1 BOB, in the fare's currency. A `fare`
+   * resolver may pass them through, drop or edit them.
+   */
+  riderCategories?: RiderCategoryFare[];
+}
+
+/** A rider-category price of a route, e.g. `1 BOB/estudiante` (Fares V2). */
+export interface RiderCategoryFare {
+  /** `rider_category_id`: the OSM unit text as ASCII (`estudiante primaria`
+      → `estudiante_primaria`), shared by every route that writes the same
+      text. Must be unique within the fare. */
+  id: string;
+  /** `rider_category_name`, as written in OSM. */
+  name: string;
+  /** Non-negative, in the currency of the route fare. */
+  price: number;
 }
 
 /**
  * Resolves the fare of a single route relation. `osmFare` is what
  * `charge=*` / `fee=no` on the relation say (undefined when they say
- * nothing). Return a fare to emit it, or `undefined` for "unknown" — the
+ * nothing; its `riderCategories` are the further `charge=*` values, see
+ * `RouteFare`). Return a fare to emit it, or `undefined` for "unknown" — the
  * route then gets no `fare_attributes` / `fare_rules` rows. A fare that
  * GTFS cannot take (negative price, currency not `[A-Z]{3}`,
  * `paymentMethod` outside 0 | 1, `transfers` outside 0 | 1 | 2 | null)
- * throws: it is a config bug.
+ * throws: it is a config bug — and so does an invalid `riderCategories`
+ * (ids missing or repeated, names missing, negative prices).
  */
 export type FareResolver = (
   routeFeature: GeoJSONFeature,

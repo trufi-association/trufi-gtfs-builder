@@ -52,10 +52,12 @@ function geojsonToGtfs(
   });
   // No implicit currency: without `defaultFares`, only `charge=*` values
   // that carry their own ISO code can become a fare row.
+  const faresV2 = gtfsConfig.faresV2 ?? false;
   const fare = fareBuilder(
     featuresArray,
     gtfsConfig.defaultFares || { currencyType: '' },
     gtfsConfig.fare,
+    { faresV2 },
   );
   const feeds = feedBuilder(
     gtfsConfig.feed || {
@@ -224,7 +226,7 @@ function geojsonToGtfs(
   const survivingIds = new Set(stopTimes.map((st) => st.stop_id));
   stops = stops.filter((s) => survivingIds.has(s.stop_id));
 
-  return {
+  const data: GTFSData = {
     agency: agencies,
     calendar: calendar,
     routes: routes,
@@ -238,6 +240,16 @@ function geojsonToGtfs(
     feed_info: feeds,
     attributions: attributions,
   };
+  if (faresV2) {
+    // Fares V2 next to V1 (the writer skips empty arrays, so a feed with
+    // no rider categories gets no rider_categories.txt).
+    data.fare_products = fare.fare_products ?? [];
+    data.rider_categories = fare.rider_categories ?? [];
+    data.fare_leg_rules = fare.fare_leg_rules ?? [];
+    data.networks = fare.networks ?? [];
+    data.route_networks = fare.route_networks ?? [];
+  }
+  return data;
 }
 
 export default geojsonToGtfs;
