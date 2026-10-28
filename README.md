@@ -213,6 +213,7 @@ dist/                        # Compiled JavaScript (generated)
 - `stopNameBuilder`: Function to build stop names
 - `defaultFares`: Default currency and price for fares (see [Fares](#fares))
 - `fare`: Function to resolve the fare of each route (see [Fares](#fares))
+- `faresV2`: `true` to also write the GTFS-Fares V2 files next to the V1 ones (see [Fares V2](#fares-v2))
 - `attributions`: Extra rows of `attributions.txt`, after the OpenStreetMap one (see [Licensing of the output](#licensing-of-the-output))
 - `license`: License written as a `LICENSE` file with the feed — `'ODbL-1.0'` (default) or `false` (see [Licensing of the output](#licensing-of-the-output))
 
@@ -226,7 +227,7 @@ Declarative only. No consumer routes with these columns yet: OpenTripPlanner 2.x
 
 The builder writes GTFS-Fares V1 (`fare_attributes.txt` + `fare_rules.txt`), one fare per `route_id`. The price of a route is resolved in this order:
 
-1. **OSM.** `charge=*` on the route relation, in the wiki syntax `<amount> <ISO 4217 code>[/<unit>]` — e.g. `charge=3 BOB/person` or `3.50 BOB`. With several `;`-separated values (`3 BOB/person;1 BOB/student`) the first one is the fare; the others are kept by `parseChargeEntries()` for rider categories. Lenient variants are accepted too: `3,50 BOB`, `3BOB`, `BOB 3`, and a bare `3`, which takes `defaultFares.currencyType` (and is ignored, with a warning, when that is not set). The currency must be three upper-case letters — the ISO 4217 form; the code list itself is not checked — so currency signs, local abbreviations and lower-case codes (`$`, `Bs`, `bob`) are rejected with a warning. `fee=no` means the ride is free (price `0`); it also needs `defaultFares.currencyType`, since `currency_type` is required even for a free ride.
+1. **OSM.** `charge=*` on the route relation, in the wiki syntax `<amount> <ISO 4217 code>[/<unit>]` — e.g. `charge=3 BOB/person` or `3.50 BOB`. With several `;`-separated values (`3 BOB/person;1 BOB/student`) the first one is the fare; the others are ignored by V1 and become rider categories in the [Fares V2](#fares-v2) output. Lenient variants are accepted too: `3,50 BOB`, `3BOB`, `BOB 3`, and a bare `3`, which takes `defaultFares.currencyType` (and is ignored, with a warning, when that is not set). The currency must be three upper-case letters — the ISO 4217 form; the code list itself is not checked — so currency signs, local abbreviations and lower-case codes (`$`, `Bs`, `bob`) are rejected with a warning. `fee=no` means the ride is free (price `0`); it also needs `defaultFares.currencyType`, since `currency_type` is required even for a free ride.
 2. **`fare` resolver** (optional). Called per route with the feature and the OSM fare (if any); its return value is final — return a fare to emit it, or `undefined` to emit nothing for that route.
 3. **`defaultFares.price`** (optional, only without a resolver).
 
@@ -257,6 +258,37 @@ gtfsOptions: {
 ```
 
 `payment_method` (default `0`, paid on board) and `transfers` (default `0`; `null` = unlimited) can be set in `defaultFares` or per fare. Both `defaultFares` and a resolver's fare must be valid GTFS — `price` a non-negative number, `currency` three upper-case letters, `paymentMethod` `0 | 1`, `transfers` `0 | 1 | 2 | null` — anything else throws, as a config bug. When the OSM relations that share a `route_id` (variants, directions) resolve to different fares, the OSM-tagged one wins, then the lowest price, and a warning lists the relations.
+
+### Fares V2
+
+`faresV2: true` also writes the [GTFS-Fares V2](https://gtfs.org/documentation/schedule/reference/#fare_attributestxt) files, derived from the same resolved fares (issue #12). The reference allows both versions in one dataset and recommends that consumers prefer V2; the V1 files stay byte for byte what they were (`test/fares_v2.test.ts` checks the whole feed against the output of the previous release), so a city can turn this on without changing anything for its current readers. Off by default: nothing in the Trufi stack reads V2 yet — see *Who reads it* below — so this is an output being enabled, not a switch.
+
+```typescript
+gtfsOptions: {
+  defaultFares: { currencyType: 'BOB' },
+  fare: (route, osmFare) => osmFare ?? { price: 3, currency: 'BOB' },
+  faresV2: true,
+}
+```
+
+What is written, and how the V1 data maps onto it:
+
+| File | Rows | Reference |
+|---|---|---|
+| `fare_products.txt` | one product per distinct amount, currency and rider category: `BOB_3.00` for a general fare (`rider_category_id` empty = any rider), `BOB_1.00_estudiante` for a category. `amount` carries the currency's ISO 4217 decimals (`3.00`; `200` for JPY). `fare_product_name` is the amount text (`3.00 BOB`, `1.00 BOB (estudiante)`): OSM has no product names, and OpenTripPlanner requires one. No `fare_media_id` column: empty means the media is unknown. | [fare_products.txt](https://gtfs.org/documentation/schedule/reference/#fare_productstxt) |
+| `rider_categories.txt` | only when some fare has rider categories: one row per category, `rider_category_name` as written in OSM, `is_default_fare_category` `0` — the general fare is the product without a category, so no product has several eligible categories to choose a default from. | [rider_categories.txt](https://gtfs.org/documentation/schedule/reference/#rider_categoriestxt) |
+| `networks.txt` + `route_networks.txt` | one network per distinct fare (general product plus categories), `fare_0`, `fare_1`… in order of first appearance; every route with a known fare is assigned to one, whatever its agency, so routes with the same fare share the network. Allowed because `routes.txt` has no `network_id` column. | [networks.txt](https://gtfs.org/documentation/schedule/reference/#networkstxt), [route_networks.txt](https://gtfs.org/documentation/schedule/reference/#route_networkstxt) |
+| `fare_leg_rules.txt` | one row per network and product: a leg on a route of the network is paid with the general product, or with the product of the rider's category. | [fare_leg_rules.txt](https://gtfs.org/documentation/schedule/reference/#fare_leg_rulestxt) |
+
+Rider categories come from the further `;`-separated values of `charge=*` (the OSM wiki form is `<amount> <currency>[/<unit>]`): in `3.50 BOB/persona;2 BOB/preferencial;1 BOB/estudiante` the first value is the general fare and each further value with a `/<unit>` becomes a category — `rider_category_id` is the unit text as printable ASCII (`estudiante primaria` → `estudiante_primaria`), shared by every route that writes the same text; `rider_category_name` is the text as written, from the first route that uses it. OSM does not say what a unit means, so `interparadas` (a short-hop price on Mi Tren) becomes a "category" exactly like `estudiante` does; a `fare` resolver gets them in `osmFare.riderCategories` and can drop or rename them (`{ ...osmFare, riderCategories: osmFare.riderCategories?.filter(c => c.id !== 'interparadas') }`). A value without a unit, in another currency, or repeating a unit is skipped with a warning. Routes whose price nobody knows are in no network and match no leg rule — the V2 way of saying "fare unknown", like the missing V1 row.
+
+Not written, because the data has nothing to put in them: `fare_media.txt` (V1's `payment_method` has no V2 field; an empty `fare_media_id` is the reference's "unknown"), `fare_transfer_rules.txt` (the builder knows no transfer pricing, so every leg is paid — what V1 `transfers` `0` says; `transfers` `1`, `2` or `null` and `payment_method` `1` are warned about and not translated), `timeframes.txt`, `areas.txt` and `stop_areas.txt` (no time- or zone-based prices). Checked with [gtfs-validator](https://gtfs-validator.mobilitydata.org/) 8.0.1 on the Cochabamba example: the feed with the Fares V2 files gets exactly the notices of the feed without them, none on the new files.
+
+**Who reads it (October 2026).** Nobody in the Trufi stack yet:
+
+- **trufi-core** reads neither V1 nor V2. The fares screen (`trufi_core_fares`) shows categories and prices that each app configures by hand; the offline planner (`trufi_core_planner`) reads `agency_fare_url` only, and the OpenTripPlanner client asks for no fare field.
+- **OpenTripPlanner 2.x** reads V1 completely. V2 is experimental and opt-in — `"fares": "gtfs"` in `build-config.json` plus `"otpFeatures": { "FaresV2": true }` in `otp-config.json` ([Fares sandbox docs](https://docs.opentripplanner.org/en/latest/sandbox/Fares/)). Its GTFS import maps `fare_products` (with rider category and media), `fare_leg_rules`, `fare_transfer_rules` and `route_networks` (2.10.0: `application/src/main/java/org/opentripplanner/gtfs/mapping/Fare*Mapper.java`, `RouteNetworkAssignmentMapper.java`); support arrived in 2.2.0 (#4338), was extended in 2.4.0 (#4917, #5227) and tightened in 2.8.0 (#6586), per the [changelog](https://docs.opentripplanner.org/en/latest/Changelog/). The matching products are listed per leg in the GraphQL API; no Trufi app queries them.
+- The **offline planner** of trufi-core computes no fares at all.
 
 ### Travel times
 
