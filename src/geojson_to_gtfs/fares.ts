@@ -122,12 +122,41 @@ export function riderCategoryId(unit: string): string {
 }
 
 /**
+ * Units the OSM wiki documents for `charge=*` that are not riders, matched
+ * on the ASCII id: time units ("hour", "day"; "night and day are used as
+ * well"), the vehicle categories of `access=*` ("the various vehicle
+ * categories defined in access=*"), quantities ("kWh", "litre"; see Map
+ * features/Units) and the per-person unit itself. English as in the wiki,
+ * plus the Spanish spellings the Trufi feeds use. A unit that starts with
+ * a number ("100 litre", "1 kWh") is a quantity too.
+ * https://wiki.openstreetmap.org/wiki/Key:charge
+ */
+const NOT_A_RIDER_UNIT = new Set([
+  // time
+  'minute', 'minutes', 'min', 'hour', 'hours', 'h', 'day', 'days', 'week', 'weeks', 'month', 'months',
+  'year', 'years', 'night', 'nights',
+  'minuto', 'minutos', 'hora', 'horas', 'dia', 'dias', 'semana', 'semanas', 'mes', 'meses', 'ano', 'anos',
+  'noche', 'noches',
+  // per person
+  'person', 'persons', 'people', 'persona', 'personas', 'pasajero', 'pasajeros',
+  // vehicles (access=*)
+  'vehicle', 'motor_vehicle', 'motorcar', 'car', 'motorcycle', 'moped', 'mofa', 'bicycle', 'bike', 'hgv',
+  'goods', 'bus', 'minibus', 'taxi', 'psv', 'caravan', 'trailer', 'agricultural', 'horse', 'truck', 'lorry',
+  'vehiculo', 'auto', 'coche', 'moto', 'bicicleta', 'camion',
+  // quantities
+  'kwh', 'litre', 'litres', 'liter', 'liters', 'litro', 'litros', 'kg', 'km', 'm', 'metre', 'meter',
+  'kilometre', 'kilometer', 'mile', 'miles',
+]);
+
+/**
  * The rider categories a `charge=*` tag carries after its general fare:
- * every further value with a `/<unit>`, in the general fare's currency.
- * OSM does not say what a unit means, so `interparadas` becomes a
- * category exactly like `estudiante` does; a `fare` resolver can drop it.
- * A value without a unit, in another currency, or repeating a unit cannot
- * be a category and is skipped with a warning.
+ * every further value with a `/<unit>`, in the general fare's currency,
+ * except the units the wiki defines as time, vehicle, quantity or person
+ * (`NOT_A_RIDER_UNIT`). OSM does not define rider categories, so what
+ * remains is taken as written: `interparadas` becomes a category exactly
+ * like `estudiante` does; a `fare` resolver can drop it. A value without a
+ * unit, in another currency, repeating a unit, or with one of those units
+ * is skipped with a warning.
  */
 function osmRiderCategories(entries: ChargeEntry[], currency: string, url: string): RiderCategoryFare[] {
   const categories: RiderCategoryFare[] = [];
@@ -149,6 +178,10 @@ function osmRiderCategories(entries: ChargeEntry[], currency: string, url: strin
     const id = riderCategoryId(entry.unit);
     if (!id) {
       skip('has a unit with no letters or digits');
+      continue;
+    }
+    if (NOT_A_RIDER_UNIT.has(id) || /^\d/.test(entry.unit.trim())) {
+      skip(`has a time, vehicle, quantity or per-person unit ("${entry.unit}")`);
       continue;
     }
     if (id === generalId || categories.some((c) => c.id === id)) {
