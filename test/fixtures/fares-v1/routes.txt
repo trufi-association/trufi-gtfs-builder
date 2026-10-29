@@ -1,0 +1,8 @@
+route_id,agency_id,route_short_name,route_long_name,route_color,route_type
+0,0,A,Micro A,,3
+1,1,B,Micro B,,3
+2,2,F,Bus gratuito,,3
+3,3,233,Minibus 233,,3
+4,0,LD,Trufi LD,,3
+5,4,130,Trufi 130,,3
+6,5,Roja,Mi Tren Roja,,0

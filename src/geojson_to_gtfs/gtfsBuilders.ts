@@ -3,7 +3,9 @@ import formatTime from './time/formater';
 import { loadCustomStops } from '../utils/customStopsLoader';
 import { findNearestStop, stopIdToNumber, distanceBetweenCoords, isPointOnRightSide } from '../utils/spatialMatcher';
 import { expandSchedule, timeToSeconds, secondsToTime } from './scheduleExpander';
-import { describeFare, fareKey, normalizeDefaultFares, pickRouteFare, resolveRouteFare } from './fares';
+import { describeFare, fareKey, faresV2Key, normalizeDefaultFares, pickRouteFare, resolveRouteFare } from './fares';
+import { buildFaresV2 } from './faresV2';
+import type { RouteWithFare } from './faresV2';
 import { resolveTripDuration, stopOffsetsSeconds } from './duration';
 import type { ResolvedFare } from './fares';
 import type {
@@ -20,6 +22,8 @@ import type {
   GTFSFareRule,
   GTFSFeedInfo,
   DefaultFaresConfig,
+  FareBuilderOptions,
+  FareBuilderResult,
   FareResolver,
   FeedConfig,
   GeoJSONCoordinate,
@@ -423,12 +427,17 @@ export function routeBuilder(
  * Several OSM relations (variants, directions) share a `route_id`; when
  * they resolve to different fares the pick is deterministic (OSM-sourced
  * first, then the lowest price) and a warning names the relations.
+ *
+ * With `options.faresV2` the same chosen fares also become the Fares V2
+ * rows (`./faresV2.ts`); the V1 rows are not affected by the option.
  */
 export function fareBuilder(
   features: GeoJSONFeature[][],
   defaultFares: DefaultFaresConfig,
-  fareResolver?: FareResolver
-): { attributes: GTFSFareAttribute[]; rules: GTFSFareRule[] } {
+  fareResolver?: FareResolver,
+  options?: FareBuilderOptions
+): FareBuilderResult {
+  const faresV2 = options?.faresV2 ?? false;
   type Candidate = { fare: ResolvedFare; relationId: number | string };
   const defaults = normalizeDefaultFares(defaultFares); // throws on a bad config
   const byRoute = new Map<
@@ -460,6 +469,7 @@ export function fareBuilder(
   const attributes: GTFSFareAttribute[] = [];
   const rules: GTFSFareRule[] = [];
   const fareIds = new Map<string, number>();
+  const chosenFares: RouteWithFare[] = [];
 
   for (const [routeId, { agencyId, label, candidates, unknown }] of byRoute) {
     if (candidates.length === 0) continue; // nobody knows the price → no row
@@ -472,13 +482,20 @@ export function fareBuilder(
       );
     }
     const distinct = new Set(candidates.map((c) => fareKey(agencyId, c.fare)));
-    const chosen = distinct.size === 1 ? candidates[0] : pickRouteFare(candidates);
+    // V1-equal candidates give the same rows whichever is picked; the pick
+    // still runs so that, for Fares V2, the variant with rider categories
+    // wins whatever the relation order.
+    const chosen = candidates.length === 1 ? candidates[0] : pickRouteFare(candidates);
     if (distinct.size > 1) {
       const variants = candidates
         .map((c) => `${describeFare(c.fare)} [relation ${c.relationId}, ${c.fare.source}]`)
         .join(', ');
       console.warn(
         `fare: route ${label} (route_id ${routeId}) has variants with different fares: ${variants}; using ${describeFare(chosen.fare)}`
+      );
+    } else if (faresV2 && candidates.some((c) => faresV2Key(c.fare) !== faresV2Key(chosen.fare))) {
+      console.warn(
+        `faresV2: route ${label} (route_id ${routeId}) has variants with different rider categories; using those of relation ${chosen.relationId}`
       );
     }
 
@@ -497,9 +514,12 @@ export function fareBuilder(
       });
     }
     rules.push({ fare_id: fareId, route_id: routeId });
+    chosenFares.push({ routeId, fare: chosen.fare });
   }
 
-  return { attributes, rules };
+  const result: FareBuilderResult = { attributes, rules };
+  if (faresV2) Object.assign(result, buildFaresV2(chosenFares));
+  return result;
 }
 
 export function feedBuilder(feed: FeedConfig): GTFSFeedInfo[] {

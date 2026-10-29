@@ -52,10 +52,12 @@ function geojsonToGtfs(
   });
   // No implicit currency: without `defaultFares`, only `charge=*` values
   // that carry their own ISO code can become a fare row.
+  const faresV2 = gtfsConfig.faresV2 ?? false;
   const fare = fareBuilder(
     featuresArray,
     gtfsConfig.defaultFares || { currencyType: '' },
     gtfsConfig.fare,
+    { faresV2 },
   );
   const feeds = feedBuilder(
     gtfsConfig.feed || {
@@ -224,7 +226,7 @@ function geojsonToGtfs(
   const survivingIds = new Set(stopTimes.map((st) => st.stop_id));
   stops = stops.filter((s) => survivingIds.has(s.stop_id));
 
-  return {
+  const data: GTFSData = {
     agency: agencies,
     calendar: calendar,
     routes: routes,
@@ -238,6 +240,21 @@ function geojsonToGtfs(
     feed_info: feeds,
     attributions: attributions,
   };
+  if (faresV2) {
+    // Fares V2 next to V1 (the writer skips empty arrays, so a feed with
+    // no rider categories gets no rider_categories.txt). Routes join their
+    // fare network through `routes.network_id`; when some route has a
+    // fare every row gets the column (the writer reads the columns off the
+    // first row), '' = fare unknown; when none has, routes.txt is untouched.
+    data.fare_products = fare.fare_products ?? [];
+    data.rider_categories = fare.rider_categories ?? [];
+    data.fare_leg_rules = fare.fare_leg_rules ?? [];
+    const networkIds = fare.route_network_ids ?? new Map<string | number, string>();
+    if (networkIds.size > 0) {
+      for (const route of routes) route.network_id = networkIds.get(route.route_id) ?? '';
+    }
+  }
+  return data;
 }
 
 export default geojsonToGtfs;

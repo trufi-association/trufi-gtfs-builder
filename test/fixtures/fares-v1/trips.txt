@@ -1,0 +1,9 @@
+trip_id,route_id,service_id,shape_id,trip_headsign,direction_id
+101,0,Mo-Su,101,Sur,0
+102,1,Mo-Su,102,Oeste,0
+103,2,Mo-Su,103,,0
+104,3,Mo-Su,104,Cochabamba,0
+105,4,Mo-Su,105,Punata,0
+9715360,5,Mo-Su,9715360,Cochabamba,0
+9717256,5,Mo-Su,9717256,Quillacollo,0
+11678428,6,Mo-Su,11678428,Cochabamba,0

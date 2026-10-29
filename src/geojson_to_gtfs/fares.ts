@@ -6,7 +6,8 @@
  *   - `charge=*`  — "<amount> <ISO 4217 code>[/<unit>]", several values
  *                    separated by `;` (e.g. `3 BOB/person;1 BOB/student`).
  *                    The FIRST value is the general fare; the rest are rider
- *                    categories, kept in `parseChargeEntries` for Fares V2.
+ *                    categories (`RouteFare.riderCategories`), written only
+ *                    by the Fares V2 output (`./faresV2.ts`).
  *                    https://wiki.openstreetmap.org/wiki/Key:charge
  *   - `fee=no`    — the route is free (price 0 is a true statement).
  *                    https://wiki.openstreetmap.org/wiki/Key:fee
@@ -19,7 +20,7 @@
  * whose currency nobody set is not written either.
  * https://gtfs.org/documentation/schedule/reference/#fare_attributestxt
  */
-import type { DefaultFaresConfig, FareResolver, GeoJSONFeature, RouteFare } from '../types';
+import type { DefaultFaresConfig, FareResolver, GeoJSONFeature, RiderCategoryFare, RouteFare } from '../types';
 
 /** One `charge=*` value, e.g. `3.50 BOB/persona`. */
 export interface ChargeEntry {
@@ -106,6 +107,93 @@ export function parseCharge(
 }
 
 /**
+ * `rider_category_id` from the unit text of a `charge=*` value: ASCII
+ * lower-case, accents stripped, anything else collapsed to `_`
+ * (`estudiante primaria` → `estudiante_primaria`, `niño` → `nino`) — the
+ * reference recommends printable ASCII for IDs. '' when nothing is left.
+ */
+export function riderCategoryId(unit: string): string {
+  return unit
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '_')
+    .replace(/^_+|_+$/g, '');
+}
+
+/**
+ * Units the OSM wiki documents for `charge=*` that are not riders, matched
+ * on the ASCII id: time units ("hour", "day"; "night and day are used as
+ * well"), the vehicle categories of `access=*` ("the various vehicle
+ * categories defined in access=*"), quantities ("kWh", "litre"; see Map
+ * features/Units) and the per-person unit itself. English as in the wiki,
+ * plus the Spanish spellings the Trufi feeds use. A unit that starts with
+ * a number ("100 litre", "1 kWh") is a quantity too.
+ * https://wiki.openstreetmap.org/wiki/Key:charge
+ */
+const NOT_A_RIDER_UNIT = new Set([
+  // time
+  'minute', 'minutes', 'min', 'hour', 'hours', 'h', 'day', 'days', 'week', 'weeks', 'month', 'months',
+  'year', 'years', 'night', 'nights',
+  'minuto', 'minutos', 'hora', 'horas', 'dia', 'dias', 'semana', 'semanas', 'mes', 'meses', 'ano', 'anos',
+  'noche', 'noches',
+  // per person
+  'person', 'persons', 'people', 'persona', 'personas', 'pasajero', 'pasajeros',
+  // vehicles (access=*)
+  'vehicle', 'motor_vehicle', 'motorcar', 'car', 'motorcycle', 'moped', 'mofa', 'bicycle', 'bike', 'hgv',
+  'goods', 'bus', 'minibus', 'taxi', 'psv', 'caravan', 'trailer', 'agricultural', 'horse', 'truck', 'lorry',
+  'vehiculo', 'auto', 'coche', 'moto', 'bicicleta', 'camion',
+  // quantities
+  'kwh', 'litre', 'litres', 'liter', 'liters', 'litro', 'litros', 'kg', 'km', 'm', 'metre', 'meter',
+  'kilometre', 'kilometer', 'mile', 'miles',
+]);
+
+/**
+ * The rider categories a `charge=*` tag carries after its general fare:
+ * every further value with a `/<unit>`, in the general fare's currency,
+ * except the units the wiki defines as time, vehicle, quantity or person
+ * (`NOT_A_RIDER_UNIT`). OSM does not define rider categories, so what
+ * remains is taken as written: `interparadas` becomes a category exactly
+ * like `estudiante` does; a `fare` resolver can drop it. A value without a
+ * unit, in another currency, repeating a unit, or with one of those units
+ * is skipped with a warning.
+ */
+function osmRiderCategories(entries: ChargeEntry[], currency: string, url: string): RiderCategoryFare[] {
+  const categories: RiderCategoryFare[] = [];
+  const [general, ...rest] = entries;
+  const generalId = general.unit ? riderCategoryId(general.unit) : '';
+  for (const entry of rest) {
+    const skip = (why: string): void => {
+      console.warn(`fare: charge value "${entry.raw}" on ${url} ${why}; not a rider category`);
+    };
+    if (!entry.unit) {
+      skip('has no /<unit>');
+      continue;
+    }
+    const entryCurrency = entry.currency ?? currency;
+    if (entryCurrency !== currency) {
+      skip(`is in ${entryCurrency} while the fare is in ${currency}`);
+      continue;
+    }
+    const id = riderCategoryId(entry.unit);
+    if (!id) {
+      skip('has a unit with no letters or digits');
+      continue;
+    }
+    if (NOT_A_RIDER_UNIT.has(id) || /^\d/.test(entry.unit.trim())) {
+      skip(`has a time, vehicle, quantity or per-person unit ("${entry.unit}")`);
+      continue;
+    }
+    if (id === generalId || categories.some((c) => c.id === id)) {
+      skip(`repeats the unit "${entry.unit}"`);
+      continue;
+    }
+    categories.push({ id, name: entry.unit, price: entry.price });
+  }
+  return categories;
+}
+
+/**
  * What OSM alone says about a route's fare: `charge=*` when present (wins
  * over `fee`), `fee=no` → free, otherwise unknown. `defaultCurrency` is
  * `defaultFares.currencyType` ('' when not configured): a bare amount or a
@@ -118,11 +206,17 @@ export function osmRouteFare(
 ): RouteFare | undefined {
   const url = `https://www.osm.org/relation/${properties.id}`;
   if (properties.charge !== undefined) {
-    const [first] = parseChargeEntries(properties.charge);
+    const entries = parseChargeEntries(properties.charge);
+    const [first] = entries;
     if (!first) {
       console.warn(`fare: could not parse charge="${properties.charge}" on ${url}; ignoring it`);
     } else if (first.currency || defaultCurrency) {
-      return { price: first.price, currency: first.currency ?? defaultCurrency, source: 'osm' };
+      const currency = first.currency ?? defaultCurrency;
+      const fare: RouteFare = { price: first.price, currency, source: 'osm' };
+      // Only set when there is something: V1 callers compare fares as plain objects.
+      const riderCategories = osmRiderCategories(entries, currency, url);
+      if (riderCategories.length > 0) fare.riderCategories = riderCategories;
+      return fare;
     } else {
       console.warn(
         `fare: charge="${properties.charge}" on ${url} has no currency code and defaultFares.currencyType is not set; ignoring it`,
@@ -175,6 +269,23 @@ function assertValidFare(fare: RouteFare, origin: string, url: string): void {
     reject('a paymentMethod outside 0 | 1');
   }
   if (!TRANSFERS.includes(fare.transfers)) reject('transfers outside 0 | 1 | 2 | null (unlimited)');
+  if (fare.riderCategories !== undefined) {
+    if (!Array.isArray(fare.riderCategories)) reject('riderCategories that is not an array');
+    const ids = new Set<string>();
+    for (const category of fare.riderCategories) {
+      if (!category || typeof category.id !== 'string' || !category.id.trim()) {
+        reject('a rider category without an id');
+      }
+      if (typeof category.name !== 'string' || !category.name.trim()) {
+        reject(`a rider category "${category.id}" without a name`);
+      }
+      if (!isNonNegativeNumber(category.price)) {
+        reject(`a rider category "${category.id}" whose price is not a non-negative number`);
+      }
+      if (ids.has(category.id.trim())) reject(`the rider category "${category.id}" twice`);
+      ids.add(category.id.trim());
+    }
+  }
 }
 
 /**
@@ -209,6 +320,8 @@ export interface ResolvedFare {
   /** 0 | 1 | 2, or '' for "unlimited" (GTFS: empty value). */
   transfers: 0 | 1 | 2 | '';
   source: string;
+  /** Rider-category prices, [] when none. Fares V2 only: V1 ignores them. */
+  riderCategories: RiderCategoryFare[];
 }
 
 /**
@@ -253,6 +366,11 @@ export function resolveRouteFare(
     // null = "unlimited transfers" → GTFS empty value; unset → 0.
     transfers: transfers === null ? '' : transfers ?? 0,
     source: fare.source ?? (fareResolver ? 'resolver' : 'config'),
+    riderCategories: (fare.riderCategories ?? []).map((c) => ({
+      id: c.id.trim(),
+      name: c.name.trim(),
+      price: c.price,
+    })),
   };
 }
 
@@ -262,10 +380,26 @@ export function fareKey(agencyId: number, fare: ResolvedFare): string {
 }
 
 /**
+ * Identity of a fare for Fares V2: amount, currency and rider categories.
+ * No agency, payment method or transfers — the V2 files written here have
+ * no field for them — so routes of different agencies with the same fare
+ * share one network.
+ */
+export function faresV2Key(fare: ResolvedFare): string {
+  const categories = [...fare.riderCategories]
+    .sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0))
+    .map((c) => `${c.id}=${c.price}`)
+    .join(',');
+  return `${fare.price}|${fare.currency}|${categories}`;
+}
+
+/**
  * Pick ONE fare for a route whose OSM relations (variants, directions)
  * resolved to different fares. Deterministic: fares that come from OSM
  * (`source === 'osm'`) beat config-derived ones; then the lowest price;
- * then a stable string order. The caller logs the disagreement.
+ * then a stable string order of the V1 fields; among V1-equal fares the
+ * one with more rider categories (it carries more information, and V1
+ * rows do not change either way). The caller logs the disagreement.
  */
 export function pickRouteFare(
   candidates: Array<{ fare: ResolvedFare; relationId: number | string }>,
@@ -277,7 +411,13 @@ export function pickRouteFare(
     if (a.fare.price !== b.fare.price) return a.fare.price - b.fare.price;
     const ka = fareKey(0, a.fare);
     const kb = fareKey(0, b.fare);
-    return ka < kb ? -1 : ka > kb ? 1 : 0;
+    if (ka !== kb) return ka < kb ? -1 : 1;
+    if (a.fare.riderCategories.length !== b.fare.riderCategories.length) {
+      return b.fare.riderCategories.length - a.fare.riderCategories.length;
+    }
+    const va = faresV2Key(a.fare);
+    const vb = faresV2Key(b.fare);
+    return va < vb ? -1 : va > vb ? 1 : 0;
   })[0];
 }
 
