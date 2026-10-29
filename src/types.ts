@@ -125,6 +125,13 @@ export interface GTFSRoute {
   route_long_name: string;
   route_color: string;
   route_type: string;
+  /** GTFS `continuous_pickup`: 0 = riders board anywhere along the route,
+      1 = only at stops. Present on every route when
+      `GTFSOptions.continuousStops` is on (`true` or a function; the CSV
+      writer takes its columns from the first row), absent otherwise. */
+  continuous_pickup?: number;
+  /** GTFS `continuous_drop_off`, same values as `continuous_pickup`. */
+  continuous_drop_off?: number;
 }
 
 export interface GTFSTrip {
@@ -252,7 +259,10 @@ export interface LogEntry {
 export interface GTFSBuilders {
   agencyBuilder: (features: GeoJSONFeature[][], defaultAgencyInfo: Partial<GTFSAgency>) => GTFSAgency[];
   calendarBuilder: (features: GeoJSONFeature[][], defaultCalendar: (feature: GeoJSONFeature) => string) => GTFSCalendar[];
-  routeBuilder: (features: GeoJSONFeature[][], options?: { routePerRelation?: boolean }) => GTFSRoute[];
+  routeBuilder: (
+    features: GeoJSONFeature[][],
+    options?: { routePerRelation?: boolean; continuousStops?: ContinuousStopsConfig }
+  ) => GTFSRoute[];
   fareBuilder: (
     features: GeoJSONFeature[][],
     defaultFares: DefaultFaresConfig,
@@ -314,6 +324,9 @@ export interface CustomStop {
  * as both a way member and a stop_position. For mixed-mode feeds where
  * each mode covers disjoint physical corridors this works naturally.
  */
+/** See `GTFSOptions.continuousStops`. */
+export type ContinuousStopsConfig = boolean | ((routeFeature: GeoJSONFeature) => boolean);
+
 export interface FakeStopsConfig {
   mode: 'fakeStops';
   // No per-route options. Density is controlled globally via
@@ -453,6 +466,24 @@ export interface GTFSOptions {
    * @default false
    */
   routePerRelation?: boolean;
+  /**
+   * Declare in `routes.txt` that riders board and alight anywhere along
+   * the route (`continuous_pickup` / `continuous_drop_off` = 0), the GTFS
+   * way to say what `fakeStops` approximates with a stop every ~100 m.
+   * `true` for every route, or a function of the route feature (return
+   * `true`/`false` per route; routes that return `false` get 1, "only at
+   * stops"). With routes grouped by agency + ref the function sees every
+   * relation of the group: one `true` marks the route, a disagreement is
+   * logged. The stops themselves are unchanged, and no consumer routes
+   * with these columns yet: OpenTripPlanner 2.x drops them from
+   * `routes.txt` (its route model has no such field; the `stop_times.txt`
+   * ones it reads only to flag an invalid Flex combination, continuous
+   * routing itself is an unmerged draft, opentripplanner/OpenTripPlanner#3457)
+   * and trufi-core's offline planner boards at `stops.txt` only, so keep
+   * `fakeStops` where riders wave the bus down. Off by default (absent or
+   * `false`): the two columns are not written at all.
+   */
+  continuousStops?: ContinuousStopsConfig;
   /**
    * @deprecated Use `outputFiles.gtfsExpandedZip` instead. Selects
    * frequency-based vs schedule-based GTFS. Default true.

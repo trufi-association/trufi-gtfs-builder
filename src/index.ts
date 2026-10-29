@@ -29,6 +29,7 @@ import type {
   GTFSBuilders,
   CustomStop,
   StopsConfig,
+  ContinuousStopsConfig,
   StopsConfigResolver,
   FakeStopsConfig,
   OsmStopsConfig,
@@ -263,6 +264,7 @@ export {
 export type {
   CustomStop,
   StopsConfig,
+  ContinuousStopsConfig,
   StopsConfigResolver,
   FakeStopsConfig,
   OsmStopsConfig,
